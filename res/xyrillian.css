@@ -10,21 +10,12 @@
 }
 
 html {
-  font-family: Raleway, sans-serif; /* TODO webfont */
+  font-family: Raleway, sans-serif;
   font-size: 18px; /* establish root-em */
-  background: #DDD;
+  background: #DDD url(/res/watermark.svg) fixed no-repeat;
+  background-position: bottom 0 left 0;
+  background-size: 20vw 20vw;
   margin: 0;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 800px;
-}
-@media(max-width:800px) {
-  body {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
 }
 
 a {
@@ -32,18 +23,70 @@ a {
   text-decoration: none !important;
 }
 
-header {
+/******************** for /index.html ********************/
+
+body.index {
+  margin: 5rem auto 0 auto;
+  width: 400px;
+  max-width: 80vw;
+}
+body.index main p {
+  margin: 0;
+  padding: 0;
+}
+body.index main p a img {
+  height: 128px;
+  max-width: 100%;
+}
+body.index main p a:hover img {
+  filter: drop-shadow(0 0 4px #CCF);
+}
+
+body.index footer {
+  position: fixed;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0;
+  text-align: right;
+  line-height: 2rem;
+}
+
+/******************** for /legal/ ********************/
+
+body.legal {
+  padding-left: 1rem;
+}
+
+/******************** for /noises/ ********************/
+
+body.noises {
+  margin: 0 auto;
+  max-width: 800px;
+}
+body.noises footer {
+  text-align: right;
+  margin: 1rem 0;
+}
+
+@media(max-width:800px) {
+  body.noises {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+body.noises header {
   margin: 0 0 1rem 0;
 }
-header img {
+body.noises header img {
   height: 92px;
   max-width: 100%;
 }
-header a {
+body.noises header a {
   color: blue !important;
 }
 
-article {
+body.noises article {
   background: white;
   box-shadow: 0 0 2px 3px #CCC;
   padding: 1px 0 1px 0;
@@ -52,52 +95,52 @@ article {
   --highlight-color: #666; /* default value */
   border-left: 5px solid var(--highlight-color);
 }
-article.episode-gnse {
+body.noises article.episode-gnse {
   --highlight-color: #499B35;
 }
-article img.coverart {
+body.noises article img.coverart {
   float: right;
   margin: 0.5rem;
   width: 160px; /* 20% of 800px */
   max-width: 20vw;
 }
 
-article h1, article h2, article p, article ul {
+body.noises article h1, article h2, article p, article ul {
   margin: 0.5rem;
   padding: 0;
 }
-article h1 {
+body.noises article h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1.5rem;
   line-height: 1.8rem;
 }
-article h2 {
+body.noises article h2 {
   margin-bottom: 0;
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
-article p {
+body.noises article p {
   line-height: 1.2rem;
 }
 
-article ul {
+body.noises article ul {
   margin-left: 1.5rem;
 }
-article li {
+body.noises article li {
   margin: 0;
   padding: 0;
   line-height: 1.2rem;
 }
 
-article .nav-hide {
+body.noises article .nav-hide {
   display: none;
 }
-article > nav {
+body.noises article > nav {
   clear: both;
   display: flex;
 }
-article > nav > button {
+body.noises article > nav > button {
   display: inline-block;
   width: 100%;
   background: white;
@@ -108,10 +151,10 @@ article > nav > button {
   font-family: inherit;
   font-size: 1rem;
 }
-article > nav > button:hover, article > nav > button:focus {
+body.noises article > nav > button:hover, article > nav > button:focus {
   background: #CCC;
 }
-article > nav > button.selected {
+body.noises article > nav > button.selected {
   color: white;
   background: var(--highlight-color);
 }
