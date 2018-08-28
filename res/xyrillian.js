@@ -19,7 +19,7 @@
       node.classList.toggle("nav-hide", !match);
     });
   };
-  foreach(document, "article > nav > button", function(button) {
+  foreach(document, "body.noises article > nav > button", function(button) {
     button.onclick = onclickHandler;
   });
 
