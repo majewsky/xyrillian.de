@@ -40,5 +40,24 @@
     <itunes:duration>08:27</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
   </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>Haben Sie eine Sekunde?</itunes:title>
+    <itunes:episode>2</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>Haben Sie eine Sekunde?</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.</itunes:summary>
+    <description>Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.</description>
+    <content:encoded>Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.</content:encoded>
+    <enclosure length="8571640" url="https://xyrillian.de/dl/gnse-002-time.mp3" type="audio/mpeg"/>
+    <enclosure length="7805743" url="https://xyrillian.de/dl/gnse-002-time.ogg" type="audio/ogg"/>
+    <enclosure length="3766080" url="https://xyrillian.de/dl/gnse-002-time.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/gnse/002/</guid>
+    <pubDate>Fri, 21 Sep 2018 22:00:00 GMT</pubDate>
+    <itunes:duration>08:38</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
 </channel>
 </rss>
