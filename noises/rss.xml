@@ -23,25 +23,6 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
-    <itunes:title>Wenn Computer sich die Hand reichen</itunes:title>
-    <itunes:episode>1</itunes:episode>
-    <itunes:season>1</itunes:season>
-    <title>Wenn Computer sich die Hand reichen</title>
-    <itunes:author>Xyrillian Noises</itunes:author>
-    <itunes:subtitle></itunes:subtitle>
-    <itunes:summary>Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?</itunes:summary>
-    <description>Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?</description>
-    <content:encoded>Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?</content:encoded>
-    <enclosure length="9821035" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.mp3" type="audio/mpeg"/>
-    <enclosure length="8194996" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.ogg" type="audio/ogg"/>
-    <enclosure length="6972029" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.opus" type="audio/opus"/>
-    <guid>https://xyrillian.de/id/gnse/001/</guid>
-    <pubDate>Tue, 28 Aug 2018 18:00:00 GMT</pubDate>
-    <itunes:duration>08:27</itunes:duration>
-    <itunes:explicit>no</itunes:explicit>
-  </item>
-  <item>
-    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>Haben Sie eine Sekunde?</itunes:title>
     <itunes:episode>2</itunes:episode>
     <itunes:season>1</itunes:season>
@@ -57,6 +38,25 @@
     <guid>https://xyrillian.de/id/gnse/002/</guid>
     <pubDate>Fri, 21 Sep 2018 22:00:00 GMT</pubDate>
     <itunes:duration>08:38</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>Wenn Computer sich die Hand reichen</itunes:title>
+    <itunes:episode>1</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>Wenn Computer sich die Hand reichen</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?</itunes:summary>
+    <description>Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?</description>
+    <content:encoded>Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?</content:encoded>
+    <enclosure length="9821035" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.mp3" type="audio/mpeg"/>
+    <enclosure length="8194996" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.ogg" type="audio/ogg"/>
+    <enclosure length="6972029" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/gnse/001/</guid>
+    <pubDate>Tue, 28 Aug 2018 18:00:00 GMT</pubDate>
+    <itunes:duration>08:27</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
   </item>
 </channel>
