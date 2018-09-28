@@ -32,9 +32,9 @@
     <itunes:summary>Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.</itunes:summary>
     <description>Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.</description>
     <content:encoded>Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.</content:encoded>
-    <enclosure length="8571640" url="https://xyrillian.de/dl/gnse-002-time.mp3" type="audio/mpeg"/>
-    <enclosure length="7805743" url="https://xyrillian.de/dl/gnse-002-time.ogg" type="audio/ogg"/>
-    <enclosure length="3766080" url="https://xyrillian.de/dl/gnse-002-time.opus" type="audio/opus"/>
+      <enclosure length="8571640" url="https://xyrillian.de/dl/gnse-002-time.mp3" type="audio/mpeg"/>
+      <enclosure length="7805743" url="https://xyrillian.de/dl/gnse-002-time.ogg" type="audio/ogg"/>
+      <enclosure length="3766080" url="https://xyrillian.de/dl/gnse-002-time.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/gnse/002/</guid>
     <pubDate>Fri, 21 Sep 2018 22:00:00 GMT</pubDate>
     <itunes:duration>08:38</itunes:duration>
@@ -51,9 +51,9 @@
     <itunes:summary>Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?</itunes:summary>
     <description>Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?</description>
     <content:encoded>Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?</content:encoded>
-    <enclosure length="9821035" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.mp3" type="audio/mpeg"/>
-    <enclosure length="8194996" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.ogg" type="audio/ogg"/>
-    <enclosure length="6972029" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.opus" type="audio/opus"/>
+      <enclosure length="9821035" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.mp3" type="audio/mpeg"/>
+      <enclosure length="8194996" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.ogg" type="audio/ogg"/>
+      <enclosure length="6972029" url="https://xyrillian.de/dl/gnse-001-modem-dialup-sound.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/gnse/001/</guid>
     <pubDate>Tue, 28 Aug 2018 18:00:00 GMT</pubDate>
     <itunes:duration>08:27</itunes:duration>

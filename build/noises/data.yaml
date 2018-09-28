@@ -1,0 +1,88 @@
+shows:
+  gnse:
+    title:       Gar nicht so einfach
+    subtitle:    Die unerwartete Komplexität der einfachen Dinge.
+    description: Eine Produktion von Xyrillian Noises. Neue Folgen einmal monatlich zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden.
+    category:    Technology
+
+    feed:  noises/rss.xml
+    href:  https://garnichtsoeinfach-podcast.de/
+
+    covers:
+      feed: cover-gnse.png
+      html: cover-gnse.svg
+
+  pentaradio:
+    external: true
+    title:    Pentaradio
+    covers:
+      html: logo-pentaradio.png
+
+files:
+
+  - show:     pentaradio
+    title:    'Gastbeitrag: Cloud Computing'
+    subtitle: Pentaradio vom 22. Juni 2018
+
+    markdown:
+      description: 'Ich war bei Pentaradio zu Gast und habe versucht, zu umreißen, was ich beruflich mache. Aber die Zeit hat nicht gereicht. **Und wie** sie nicht gereicht hat.'
+      notes: 'Beim C3D2 gibt es [die ganze Folge](https://c3d2.de/news/pentaradio24-20180626.html) zum Herunterladen und Im-Browser-Anhören.'
+
+  - show:     pentaradio
+    title:    'Gastbeitrag: I � Unicode'
+    subtitle: Pentaradio vom 24. Juli 2018
+
+    markdown:
+      description: 'Ich habe mich auf ausführliche und hoffentlich informative Weise darüber beschwert, wie schwer es ist, Software zu finden, die Text richtig darstellen kann.'
+      notes: 'Beim C3D2 gibt es [die ganze Folge](https://c3d2.de/news/pentaradio24-20180724.html) zum Herunterladen und Im-Browser-Anhören.'
+
+  - show:    gnse
+    episode: 1
+    slug:    gnse-001-modem-dialup-sound
+    title:   Wenn Computer sich die Hand reichen
+    pubtime: 1535479200 # 2018-08-28
+
+    markdown:
+      description: 'Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?'
+      notes: '**Sendetermin:** 28. August 2018, um 21:30 bei Pentaradio auf [coloRadio](https://coloradio.org/site/hoeren/)'
+      sources:
+        - '[The sound of the dialup, pictured](https://www.windytan.com/2012/11/the-sound-of-dialup-pictured.html) (englischer Artikel, mit [großem Wandposter](https://oona.windytan.com/posters/dialup-final.png) zum Thema)'
+
+    music:
+      - artist:  Josh Woodward
+        title:   Let It In
+        href:    https://www.joshwoodward.com/song/LetItIn
+        variant: GNSE Intro Remix
+
+      - artist:  Lee Rosevere
+        title:   I Bet You Wonder Why
+        href:    http://freemusicarchive.org/music/Lee_Rosevere/Music_For_Podcasts_5/Lee_Rosevere_-_Music_For_Podcasts_5_-_09_I_Bet_You_Wonder_Why
+
+      - artist:  Josh Woodward
+        title:   Soul Groove
+        href:    https://www.joshwoodward.com/song/SoulGroove
+        variant: 30 Second Version
+
+  - show:    gnse
+    episode: 2
+    slug:    gnse-002-time
+    title:   Haben Sie eine Sekunde?
+    pubtime: 1537567200 # 2018-09-22
+
+    markdown:
+      description: 'Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.'
+      notes: '**Sendetermin:** vrsl. 25. September 2018, um 21:30 bei Pentaradio auf [coloRadio](https://coloradio.org/site/hoeren/)'
+      sources:
+        - 'Zuständig für Schaltsekunden und Atomuhren: die [Fachabteilung 4.4 "Zeit und Frequenz"](https://www.ptb.de/cms/de/ptb/fachabteilungen/abt4/fb-44.html) der Physikalisch-Technischen Bundesanstalt.'
+        - 'Mehr über die vielen Sonderregelungen von Büsingen: bei [Wikipedia](https://de.wikipedia.org/wiki/B%C3%BCsingen_am_Hochrhein) oder auf der Seite der [hiesigen Stadtverwaltung](https://www.buesingen.de/de/Unser-Buesingen/Deutsche-Insel-in-der-Schweiz).'
+
+    music:
+      - artist:  Josh Woodward
+        title:   Let It In
+        href:    https://www.joshwoodward.com/song/LetItIn
+        variant: 15 Second Version
+
+      - artist:  Josh Woodward
+        title:   Soul Groove
+        href:    https://www.joshwoodward.com/song/SoulGroove
+        variant: Loop + 30 Second Version
