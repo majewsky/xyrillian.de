@@ -40,6 +40,7 @@ files:
     episode: 1
     slug:    gnse-001-modem-dialup-sound
     title:   Wenn Computer sich die Hand reichen
+    pubtime: 1535479200 # 2018-08-28
 
     markdown:
       description: 'Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?'
@@ -66,6 +67,7 @@ files:
     episode: 2
     slug:    gnse-002-time
     title:   Haben Sie eine Sekunde?
+    pubtime: 1537567200 # 2018-09-22
 
     markdown:
       description: 'Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.'

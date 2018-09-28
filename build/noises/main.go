@@ -28,6 +28,7 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/golang-commonmark/markdown"
 	yaml "gopkg.in/yaml.v2"
@@ -39,11 +40,17 @@ func main() {
 		log.Fatal(err.Error())
 	}
 
-	//load input data
 	var data struct {
-		Shows map[string]show `yaml:"shows"`
-		Files []*file         `yaml:"files"`
+		Shows         map[string]show `yaml:"shows"`
+		Files         []*file         `yaml:"files"`
+		CurrentShowID string          `yaml:"-"`
+		XMLIntro      template.HTML   `yaml:"-"`
 	}
+	//this needs to be interpolated by the template, otherwise html/template
+	//breaks the <? opener
+	data.XMLIntro = `<?xml version="1.0" encoding="UTF-8"?>`
+
+	//load input data
 	err = yaml.Unmarshal(inputBytes, &data)
 	if err != nil {
 		log.Fatal(err.Error())
@@ -57,6 +64,7 @@ func main() {
 		"reverseFiles":          reverseFiles,
 		"readableFileSize":      readableFileSize,
 		"readableLengthSeconds": readableLengthSeconds,
+		"unixTimeToRFC1123":     unixTimeToRFC1123,
 	}
 
 	//render noises/index.html
@@ -76,6 +84,30 @@ func main() {
 	err = tmpl.Execute(out, data)
 	if err != nil {
 		log.Fatal(err.Error())
+	}
+
+	//render RSS feeds
+	tmplBytes, err = ioutil.ReadFile("build/noises/rss.xml.tpl")
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	tmpl, err = template.New("noises/rss.xml").Funcs(templateFuncs).Parse(string(tmplBytes))
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	for showID, show := range data.Shows {
+		if show.FeedPath != "" {
+			data.CurrentShowID = showID
+			out, err := os.Create(show.FeedPath)
+			if err != nil {
+				log.Fatal(err.Error())
+			}
+			defer out.Close()
+			err = tmpl.Execute(out, data)
+			if err != nil {
+				log.Fatal(err.Error())
+			}
+		}
 	}
 }
 
@@ -104,6 +136,8 @@ type file struct {
 	Episode  uint   `yaml:"episode"`
 	Slug     string `yaml:"slug"`
 
+	PublicationTimeUnix uint64 `yaml:"pubtime"`
+
 	Markdown struct {
 		Description string   `yaml:"description"`
 		Notes       string   `yaml:"notes"`
@@ -125,6 +159,7 @@ type file struct {
 
 	Downloads []struct {
 		Format    string
+		MIMEType  string
 		FileName  string
 		SizeBytes uint64
 	} `yaml:"-"`
@@ -164,11 +199,12 @@ func (f *file) FindDownloads() {
 	formats := []struct {
 		Extension string
 		Name      string
+		MIMEType  string
 	}{
-		{"mp3", "MP3"},
-		{"ogg", "Ogg Vorbis"},
-		{"opus", "Opus"},
-		{"flac", "FLAC"},
+		{"mp3", "MP3", "audio/mpeg"},
+		{"ogg", "Ogg Vorbis", "audio/ogg"},
+		{"opus", "Opus", "audio/opus"},
+		{"flac", "FLAC", "audio/flac"},
 	}
 
 	hasFLAC := false
@@ -188,10 +224,12 @@ func (f *file) FindDownloads() {
 		f.Downloads = append(f.Downloads,
 			struct {
 				Format    string
+				MIMEType  string
 				FileName  string
 				SizeBytes uint64
 			}{
 				Format:    fmt.Name,
+				MIMEType:  fmt.MIMEType,
 				FileName:  fileName,
 				SizeBytes: uint64(fi.Size()),
 			},
@@ -242,4 +280,9 @@ func readableFileSize(sizeBytes uint64) string {
 
 func readableLengthSeconds(lengthSeconds uint) string {
 	return fmt.Sprintf("%02d:%02d", lengthSeconds/60, lengthSeconds%60)
+}
+
+func unixTimeToRFC1123(in uint64) string {
+	gmt := time.FixedZone("GMT", 0)
+	return time.Unix(int64(in), 0).In(gmt).Format(time.RFC1123)
 }
