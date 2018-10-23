@@ -23,6 +23,25 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>Der Herzschlag eines ganzen Kontinents</itunes:title>
+    <itunes:episode>3</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>Der Herzschlag eines ganzen Kontinents</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Auch wenn Großkraftwerke ausfallen, gehen in Deutschland nicht die Lichter aus, dank einer ausgeklügelten Kette von automatischen und manuellen Regelungsmechanismen.</itunes:summary>
+    <description>Auch wenn Großkraftwerke ausfallen, gehen in Deutschland nicht die Lichter aus, dank einer ausgeklügelten Kette von automatischen und manuellen Regelungsmechanismen.</description>
+    <content:encoded>Auch wenn Großkraftwerke ausfallen, gehen in Deutschland nicht die Lichter aus, dank einer ausgeklügelten Kette von automatischen und manuellen Regelungsmechanismen.</content:encoded>
+      <enclosure length="6641608" url="https://xyrillian.de/dl/gnse-003-power-network-frequency.mp3" type="audio/mpeg"/>
+      <enclosure length="7074091" url="https://xyrillian.de/dl/gnse-003-power-network-frequency.ogg" type="audio/ogg"/>
+      <enclosure length="3275516" url="https://xyrillian.de/dl/gnse-003-power-network-frequency.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/gnse/003/</guid>
+    <pubDate>Tue, 23 Oct 2018 19:00:00 GMT</pubDate>
+    <itunes:duration>07:34</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>Haben Sie eine Sekunde?</itunes:title>
     <itunes:episode>2</itunes:episode>
     <itunes:season>1</itunes:season>
