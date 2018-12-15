@@ -12,6 +12,16 @@ shows:
       feed: cover-gnse.png
       html: cover-gnse.svg
 
+    subscriptions:
+      - name: Bitlove
+        href: https://bitlove.org/xyrillian-noises/gar-nicht-so-einfach
+      - name: GPodder
+        href: https://gpodder.net/podcast/gar-nicht-so-einfach
+      - name: iTunes
+        href: https://itunes.apple.com/de/podcast/gar-nicht-so-einfach/id1435500811?l=de
+      - name: Stitcher
+        href: https://www.stitcher.com/s?fid=230739&refid=stpr
+
   pentaradio:
     external: true
     title:    Pentaradio
@@ -38,7 +48,7 @@ files:
 
   - show:    gnse
     episode: 1
-    slug:    gnse-001-modem-dialup-sound
+    slug:    001-modem-dialup-sound
     title:   Wenn Computer sich die Hand reichen
     pubtime: 1535479200 # 2018-08-28
 
@@ -65,7 +75,7 @@ files:
 
   - show:    gnse
     episode: 2
-    slug:    gnse-002-time
+    slug:    002-time
     title:   Haben Sie eine Sekunde?
     pubtime: 1537567200 # 2018-09-22
 
@@ -76,7 +86,7 @@ files:
         - 'Zuständig für Schaltsekunden und Atomuhren: die [Fachabteilung 4.4 "Zeit und Frequenz"](https://www.ptb.de/cms/de/ptb/fachabteilungen/abt4/fb-44.html) der Physikalisch-Technischen Bundesanstalt.'
         - 'Mehr über die vielen Sonderregelungen von Büsingen: bei [Wikipedia](https://de.wikipedia.org/wiki/B%C3%BCsingen_am_Hochrhein) oder auf der Seite der [hiesigen Stadtverwaltung](https://www.buesingen.de/de/Unser-Buesingen/Deutsche-Insel-in-der-Schweiz).'
 
-    music:
+    music: &music-like-gnse-002
       - artist:  Josh Woodward
         title:   Let It In
         href:    https://www.joshwoodward.com/song/LetItIn
@@ -89,9 +99,10 @@ files:
 
   - show:    gnse
     episode: 3
-    slug:    gnse-003-power-network-frequency
+    slug:    003-power-network-frequency
     title:   Der Herzschlag eines ganzen Kontinents
     pubtime: 1540321200 # 2018-10-23
+    music:   *music-like-gnse-002
 
     markdown:
       description: 'Auch wenn Großkraftwerke ausfallen, gehen in Deutschland nicht die Lichter aus, dank einer ausgeklügelten Kette von automatischen und manuellen Regelungsmechanismen.'
@@ -100,14 +111,3 @@ files:
         - '[Vorträge von Mathias Dalheimer zum Stromnetz, Smart Meter, etc.](https://media.ccc.de/search/?q=Mathias+Dalheimer)'
         - 'Wikipedia: [Regeltechnik im Stromnetz](https://de.wikipedia.org/wiki/Regelleistung_%28Stromnetz%29)'
         - 'Lexikon von "Next Kraftwerke": [Was ist Regelenergie?](https://www.next-kraftwerke.de/wissen/regelenergie) (Der Link ist keine Werbung. Ich unterhalte keine Geschäftsbeziehung mit Next. Das ist einfach eine informative Quelle.)'
-
-    music:
-      - artist:  Josh Woodward
-        title:   Let It In
-        href:    https://www.joshwoodward.com/song/LetItIn
-        variant: 15 Second Version
-
-      - artist:  Josh Woodward
-        title:   Soul Groove
-        href:    https://www.joshwoodward.com/song/SoulGroove
-        variant: Loop + 30 Second Version

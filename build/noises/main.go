@@ -25,6 +25,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"regexp"
 	"strconv"
 	"strings"
@@ -41,10 +42,11 @@ func main() {
 	}
 
 	var data struct {
-		Shows         map[string]show `yaml:"shows"`
-		Files         []*file         `yaml:"files"`
-		CurrentShowID string          `yaml:"-"`
-		XMLIntro      template.HTML   `yaml:"-"`
+		Shows            map[string]show `yaml:"shows"`
+		Files            []*file         `yaml:"files"`
+		CurrentShowID    string          `yaml:"-"`
+		CurrentFileIndex int             `yaml:"-"`
+		XMLIntro         template.HTML   `yaml:"-"`
 	}
 	//this needs to be interpolated by the template, otherwise html/template
 	//breaks the <? opener
@@ -84,6 +86,37 @@ func main() {
 	err = tmpl.Execute(out, data)
 	if err != nil {
 		log.Fatal(err.Error())
+	}
+
+	//render pages for individual episodes
+	tmplBytes, err = ioutil.ReadFile("build/noises/episode.html.tpl")
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	tmpl, err = template.New("noises/episode.html").Funcs(templateFuncs).Parse(string(tmplBytes))
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	for idx, file := range data.Files {
+		show := data.Shows[file.ShowID]
+		if show.IsExternal {
+			continue
+		}
+		dirPath := filepath.Join("noises", file.ShowID, file.Slug)
+		err = os.MkdirAll(dirPath, 0777)
+		if err != nil {
+			log.Fatal(err.Error())
+		}
+		out, err := os.Create(dirPath + "/index.html")
+		if err != nil {
+			log.Fatal(err.Error())
+		}
+		defer out.Close()
+		data.CurrentFileIndex = idx
+		err = tmpl.Execute(out, data)
+		if err != nil {
+			log.Fatal(err.Error())
+		}
 	}
 
 	//render RSS feeds
@@ -209,7 +242,7 @@ func (f *file) FindDownloads() {
 
 	hasFLAC := false
 	for _, fmt := range formats {
-		fileName := f.Slug + "." + fmt.Extension
+		fileName := f.ShowID + "-" + f.Slug + "." + fmt.Extension
 		fi, err := os.Stat("dl/" + fileName)
 		if err != nil {
 			if os.IsNotExist(err) {
@@ -239,7 +272,7 @@ func (f *file) FindDownloads() {
 	if hasFLAC {
 		//file(1) reports enough metadata from FLAC files to calculate the duration
 		//of the audio file from
-		path := "dl/" + f.Slug + ".flac"
+		path := "dl/" + f.ShowID + "-" + f.Slug + ".flac"
 		cmd := exec.Command("file", path)
 		cmd.Stderr = os.Stderr
 		output, err := cmd.Output()

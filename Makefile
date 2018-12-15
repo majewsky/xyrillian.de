@@ -1,6 +1,6 @@
 all: noises/index.html res/xyrillian.css
 
-noises/index.html: build/noises/data.yaml build/noises/*.go build/noises/*.tpl
+noises/index.html: build/noises/*
 	go run ./build/noises
 
 res/xyrillian.css: build/res/*.scss

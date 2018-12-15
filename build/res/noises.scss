@@ -1,7 +1,16 @@
 @media(max-width:800px) {
   body.noises {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    &, nav a {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    div.player {
+      display: block !important;
+      audio {
+        width: 90%;
+      }
+    }
   }
 }
 
@@ -9,42 +18,55 @@ body.noises {
   margin: 0 auto;
   max-width: 800px;
 
+  --highlight-color: #666; /* default value */
+  .episode-gnse, &.episode-gnse {
+    --highlight-color: #499B35;
+  }
+
+  p {
+    line-height: 1.2rem;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2rem;
+  }
+
   footer {
     text-align: right;
     margin: 1rem 0;
   }
 
-  header {
-    margin: 0 0 1rem 0;
-
-    img {
-      height: 92px;
-      max-width: 100%;
-    }
+  &.has-nav {
+    padding-top: 48px;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    line-height: 48px;
+    background: white;
+    box-shadow: 0 0 2px 3px #CCC;
 
     a {
-      color: blue !important;
+      display: block;
+      margin: 0 auto;
+      max-width: 800px;
+
+      img {
+        height: 48px;
+        border: 0 !important;
+        padding-left: 0.5rem;
+      }
     }
   }
 
-  article {
-    background: white;
-    box-shadow: 0 0 2px 3px #CCC;
-    padding: 1px 0 1px 0;
-    margin: 1rem 0;
-
-    --highlight-color: #666; /* default value */
-    &.episode-gnse {
-      --highlight-color: #499B35;
-    }
-
-    border-left: 5px solid var(--highlight-color);
-
+  header, article {
     img.coverart {
       float: right;
       margin: 0.5rem;
-      width: 160px; /* 20% of 800px */
-      max-width: 20vw;
     }
 
     h1, h2, p, ul {
@@ -62,45 +84,115 @@ body.noises {
       font-size: 1.2rem;
       line-height: 1.5rem;
     }
-    p {
+  }
+
+  header {
+    margin: 0 0 1rem 0;
+
+    img.sitelogo {
+      height: 92px;
+      max-width: 100%;
+    }
+
+    img.coverart {
+      width: 160px; /* 20% of 800px */
+      max-width: 20vw;
+    }
+
+    a {
+      color: blue !important;
+    }
+  }
+
+  article, section {
+    background: white;
+    box-shadow: 0 0 2px 3px #CCC;
+    margin-top: 1rem;
+    padding: 1px 0;
+    border-left: 5px solid var(--highlight-color);
+  }
+
+  article {
+    img.coverart {
+      width: 80px; /* 10% of 800px */
+      min-width: 10vh;
+    }
+  }
+
+  section {
+    clear: right;
+
+    h3 {
+      margin: 0.5rem 0;
+      padding: 0 0.5rem;
       line-height: 1.2rem;
-    }
+      font-weight: bold;
+      font-size: 1.2rem;
 
-    ul {
-      margin-left: 1.5rem;
-    }
-    li {
-      margin: 0;
-      padding: 0;
-      line-height: 1.2rem;
-    }
-
-    .nav-hide {
-      display: none;
-    }
-    & > nav {
-      clear: both;
-      display: flex;
-
-      & > button {
-        display: inline-block;
-        width: 100%;
-        background: white;
-        border: none;
-        line-height: 2rem;
-        font-weight: bold;
-        background: #DDD;
-        font-family: inherit;
-        font-size: 1rem;
-
-        &:hover, &:focus {
-          background: #CCC;
-        }
-        &.selected {
-          color: white;
-          background: var(--highlight-color);
-        }
+      span {
+        font-size: 0.8rem;
+        font-weight: normal;
       }
+    }
+    p, ul {
+      margin: 0.5rem;
+    }
+    h3 + * {
+      margin-top: 0;
+    }
+  }
+
+  & > audio {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: 0 0 2px 3px #CCC;
+  }
+
+  div.player {
+    display: flex;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+
+    & > * {
+      display: block;
+      flex: auto;
+      margin: 0.5rem 0 0 0.5rem;
+      height: 2rem;
+      line-height: 2rem;
+    }
+
+    audio {
+      flex-shrink: 1;
+    }
+
+    a {
+      display: inline-block;
+      flex: initial;
+      background: var(--highlight-color);
+      color: white;
+      padding: 0 0.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      box-shadow: 0 2px 1px #CCC;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+
+      &:hover, &:active, &:focus {
+        box-shadow: 0 2px 3px #888;
+      }
+    }
+  }
+
+  /* The <div> is always 2rem high, and the <span> is vertically centered
+   * within it no matter whether the line is broken or not. */
+  div.audio-not-supported {
+    display: table;
+
+    span {
+      display: table-cell;
+      vertical-align: middle;
+      color: #CCC;
+      line-height: 1rem;
+      font-size: 0.8rem;
     }
   }
 
