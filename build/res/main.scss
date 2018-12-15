@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Raleway;
+  src: local("Raleway"), url("/res/Raleway-Regular-Original.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Raleway;
+  src: local("Raleway"), url("/res/Raleway-SemiBold-Original.otf") format("opentype");
+  font-weight: bold;
+}
+
+html {
+  font-family: Raleway, sans-serif;
+  font-size: 18px; /* establish root-em */
+  background: #DDD url(/res/watermark.svg) fixed no-repeat;
+  background-position: bottom 0 left 0;
+  background-size: 20vw 20vw;
+  margin: 0;
+}
+
+a {
+  color: blue;
+  text-decoration: none !important;
+}
+
+@import 'index.scss'; /* for index.html */
+@import 'legal.scss';
+@import 'noises.scss';

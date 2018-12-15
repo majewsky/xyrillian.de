@@ -1,0 +1,28 @@
+body.index {
+  margin: 5rem auto 0 auto;
+  width: 400px;
+  max-width: 80vw;
+
+  main p {
+    margin: 0;
+    padding: 0;
+
+    a img {
+      height: 128px;
+      max-width: 100%;
+    }
+
+    a:hover img {
+      filter: drop-shadow(0 0 4px #CCF);
+    }
+  }
+
+  footer {
+    position: fixed;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0;
+    text-align: right;
+    line-height: 2rem;
+  }
+}
