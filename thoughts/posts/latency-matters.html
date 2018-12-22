@@ -1,0 +1,85 @@
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latency matters &ndash; Xyrillian Thoughts</title>
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml">
+  <meta property="article:published_time" content="2017-08-20T19:02:45Z" /><meta property="article:modified_time" content="2017-08-20T22:05:41Z" /><meta property="og:description" content="A month ago, danluu wrote about [terminal and shell performance](https://danluu.com/term-latency/). In that post, he
+measured the latency between a key being pressed and the corresponding character appearing in the terminal. Across
+terminals, median latencies ranged between 5 and 45 milliseconds, with the 99.9th percentile going as high as 110 ms for
+some terminals. Now I can see that more than 100 milliseconds is going to be noticeable, but I was certainly left
+wondering: Can I really perceive a difference between 5 ms latency and 45 ms latency?" /><meta property="og:type" content="article" /><meta property="og:site_name" content="Xyrillian Thoughts" /><meta property="og:title" content="Latency matters" /><meta property="og:url" content="/thoughts/posts/latency-matters.html" />
+</head>
+<body class="thoughts">
+  <header>
+    <h1><a href="/thoughts/">Stefan's Blog</a></h1>
+    <div class="scroll-indicator" />
+  </header>
+  <nav>
+    <a href="/thoughts/sitemap.html">Article index</a>
+    &mdash;
+    <a href="/thoughts/rss.xml">RSS feed</a>
+    &mdash;
+    <a href="https://github.com/majewsky/xyrillian.de">Report a bug</a>
+    &mdash;
+    <a href="/legal/en/">Imprint/Impressum</a>
+  </nav>
+  <main><h1>Latency matters</h1>
+<p>A month ago, danluu wrote about <a href="https://danluu.com/term-latency/">terminal and shell performance</a>. In that post, he
+measured the latency between a key being pressed and the corresponding character appearing in the terminal. Across
+terminals, median latencies ranged between 5 and 45 milliseconds, with the 99.9th percentile going as high as 110 ms for
+some terminals. Now I can see that more than 100 milliseconds is going to be noticeable, but I was certainly left
+wondering: Can I really perceive a difference between 5 ms latency and 45 ms latency?</p>
+<p>Turns out that I can.</p>
+<h2>Where I came from</h2>
+<p>Like probably all shell configurations, mine has a prompt, that is: It displays some contextual data when I can enter
+the next command. Most prompts include the username, hostname, and the current working directory. Mine can also include the
+current Git branch and commit, the current kubectl context, and which OpenStack credentials are currently loaded. It
+knows some quite unique tricks. For example, if the current working directory is not accessible anymore, it highlights
+the inaccessible path elements. Or, inside a Git repository, it highlights the path elements inside the repo.</p>
+<p><img src="/thoughts/img/screenshot-prettyprompt.png" alt="prettyprompt screenshot"></p>
+<p>Since that’s quite a lot of logic, I delegated the rendering of the entire prompt to a custom program. That program used
+to be a <a href="https://github.com/majewsky/devenv/blob/643a55f49b13401e6333fbb3a1413cd7dc59907f/bin/prettyprompt.py">Python 2
+script</a>, but since
+I'm not nearly as fluent in Python as I used to be, I didn’t dare touch it anymore. I therefore decided to rewrite it
+into a <a href="https://github.com/majewsky/gofu">Go program</a>. The feature set didn’t change, but here’s a thing that <em>did</em>
+change:</p>
+<pre><code class="language-bash">$ time ./bin/prettyprompt.py &gt; /dev/null; time prettyprompt &gt; /dev/null
+./bin/prettyprompt.py &gt; /dev/null  0,05s user 0,00s system 98% cpu 0,057 total
+prettyprompt &gt; /dev/null  0,00s user 0,00s system 92% cpu 0,003 total
+</code></pre>
+<p>The new prompt renders in 3 ms whereas the old one took 57 ms. That’s nothing to do with sloppy programming, that’s just
+how long it takes to start up the Python interpreter, as can be easily observed by running a Python interpreter without
+actually doing anything:</p>
+<pre><code class="language-bash">$ time python2 -c 0 &gt; /dev/null
+python2 -c 0 &gt; /dev/null  0,02s user 0,01s system 52% cpu 0,050 total
+</code></pre>
+<p>(By the way, all these measurements are on hot caches. The first execution of <code>python2</code> takes more than double as long.)</p>
+<p>The Go program, on the other hand, does not need to start a runtime. It’s probably short-lived enough to never even
+garbage-collect.</p>
+<h2>The “Wow effect”… I guess?</h2>
+<p>I did these measurements while I was still writing the Go program, just for fun. But only after switching to the new
+prompt did I realize how much snappier my terminal feels just because of this change. There was always this short gap
+between seeing the output of one command and being able to enter the next command, but I did never really understand
+that this was due to my slow prompt renderer, and not due to the behavior of the shell, the terminal, the OS scheduler,
+or any other entity involved in the process.</p>
+<p>When I press Enter in my shell now, the next prompt just appears instantaneously, without any perceivable latency
+between the keypress and the prompt being rendered. This feels so magical, I cannot even put it into words. It’s as if
+this were a new notebook, not the same one that I’ve been using for five years now.</p>
+<p>The point is, latency really <em>is</em> important for how an application or a system feels. I will definitely care more about
+responsiveness of my programs in the future after this experience.</p>
+<h2>Update</h2>
+<p>This has been <a href="https://news.ycombinator.com/item?id=15059795">discussed on Hacker News</a>, and lead to a semi-related
+<a href="/posts/latency-matters-aftermath.html">followup of mine</a>.</p>
+<p><i>Created: Sun, 20 Aug 2017 19:02:45 UTC</i><br><i>Last edited: <a href="https://github.com/majewsky/xyrillian.de/commits/master/build/thoughts/posts/latency-matters.md" title="Commit history">Sun, 20 Aug 2017 22:05:41 UTC</a></i></p></main>
+  <footer>
+    <img src="/res/avatar.jpg" alt="Author's face" />
+    <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. I hold a diploma in theoretical physics, but have been working in IT since graduation. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I can also be found on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
+    </p>
+    <p class="legal">This is my personal blog. The opinions expressed here are my own and not those of my employer. Content is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 International License</a>, unless otherwise noted.</p>
+  </footer>
+  <link rel="stylesheet" type="text/css" href="/res/xyrillian.css" />
+  <script type="text/javascript" src="/res/scroll-indicator.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes on API design in Go &ndash; Xyrillian Thoughts</title>
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml">
+  <meta property="og:description" content="At work, I have a working student who&#39;s implementing some features in the various Golang applications that I build and maintain. I&#39;m trying to pass some of my experience with real-world programming on to him, and [one particular pull request review](https://github.com/sapcc/go-bits/pull/2) escalated into a blog post on API design, so I might as well share it here for archival purposes (and to fill the desolate wasteland that is my RSS feed)." /><meta property="og:type" content="article" /><meta property="og:site_name" content="Xyrillian Thoughts" /><meta property="og:title" content="Notes on API design in Go" /><meta property="og:url" content="/thoughts/posts/golang-api-design.html" /><meta property="article:published_time" content="2018-08-09T11:14:32Z" /><meta property="article:modified_time" content="2018-08-09T11:14:32Z" />
+</head>
+<body class="thoughts">
+  <header>
+    <h1><a href="/thoughts/">Stefan's Blog</a></h1>
+    <div class="scroll-indicator" />
+  </header>
+  <nav>
+    <a href="/thoughts/sitemap.html">Article index</a>
+    &mdash;
+    <a href="/thoughts/rss.xml">RSS feed</a>
+    &mdash;
+    <a href="https://github.com/majewsky/xyrillian.de">Report a bug</a>
+    &mdash;
+    <a href="/legal/en/">Imprint/Impressum</a>
+  </nav>
+  <main><h1>Notes on API design in Go</h1>
+<p>At work, I have a working student who’s implementing some features in the various Golang applications that I build and maintain. I’m trying to pass some of my experience with real-world programming on to him, and <a href="https://github.com/sapcc/go-bits/pull/2">one particular pull request review</a> escalated into a blog post on API design, so I might as well share it here for archival purposes (and to fill the desolate wasteland that is my RSS feed).</p>
+<p>The concern of the pull request was to add a function to a utility library that implements exponential backoff. His proposed API looked like:</p>
+<pre><code class="language-go">//Retry takes a function (action) that returns an error, and two int64 values (x, y) as
+//parameters and creates a retry loop with an exponential backoff such that on failure (error return),
+//the action is called again after x seconds and this is incremented by a factor of 2 until y minutes
+//then it is keeps on repeating after y minutes till action succeeds (no error).
+func Retry(action func() error, x, y time.Duration) { ...  }
+</code></pre>
+<h2>The original comment</h2>
+<p>When you have a function that takes another function, I like to place the function argument at the end of the argument list. When the function argument is a long anonymous function, the other arguments otherwise get separated from the function call:</p>
+<pre><code class="language-go">err := doSomething(function() error {
+  if aLotOfThings.Happen() {
+    in.ThisFunction(AndMaybe {
+       There: &quot;are&quot;,
+       More: &quot;braces&quot;,
+       And: &quot;stuff&quot;,
+    })
+  }
+  then(Lines(100).DownBelow())
+  itIsNotClear = true
+}, 2, 4) //...which function call these arguments belong to
+</code></pre>
+<p>vs.</p>
+<pre><code class="language-go">err := doSomething(2, 4, function() error {
+  ...
+  ...
+  ...
+})
+</code></pre>
+<p>Finally, I would suggest a different API design altogether. The problem with function arguments is that it’s sometimes difficult to tell from context what the arguments mean. An extreme example (which I sadly cannot find on Google right now) is the Win32 API function for starting a new process which takes 22 arguments and it looks something like:</p>
+<pre><code>StartProcess(&quot;C:\Windows\system32\rundll.exe&quot;, null, null, null, null, null, null, null, null, true, true, false, false, null, false, true);
+</code></pre>
+<p>So unless you have the API docs open on your other monitor, it’s pretty impossible to tell what each of these arguments mean. To be able to give meaningful names to arguments, it’s common practice in Go APIs to collect all these switches and configuration options into an Options struct:</p>
+<pre><code class="language-go">type RetryOptions struct {
+  BackoffFactor int
+  MaxInterval time.Duration
+}
+func Retry(opts RetryOptions, action func() error) { ... }
+
+//usage example:
+Retry(RetryOptions { BackoffFactor: 2, MaxInterval: 5 * time.Second }, func() {
+  ...
+})
+</code></pre>
+<p>That’s much more verbose, but also much more obvious when you’re reading it. It also has the advantage that you can later add new fields to <code>RetryOptions</code> without breaking existing users of your API. (If you look at the API of <a href="https://godoc.org/github.com/majewsky/schwift">Schwift</a>, you’ll see these Options types all over the place for this reason.)</p>
+<p>Finally, here’s the API that I would propose:</p>
+<pre><code class="language-go">type RetryStrategy interface {
+  RetryUntilSuccessful(action func() error)
+}
+
+type ExponentialBackoff struct {
+  Factor int
+  MaxInterval time.Duration
+}
+func (eb ExponentialBackoff) RetryUntilSuccessful(action func() error) { ... }
+
+//usage example:
+ExponentialBackoff {
+  Factor: 2,
+  MaxInterval: 5 * time.Second,
+}.RetryUntilSuccessful(func() error {
+  ...
+})
+</code></pre>
+<p>This makes it easy to later add other implementations for <code>type RetryStrategy</code> (e.g. one that just retries for a given number of times and then gives up). It also allows other parts of the program to take a RetryStrategy as a parameter.</p>
+<h2>The morale</h2>
+<p>A good API design is based on two things: First, there are some fundamental values that the developer tries to optimize for. In my case, that’s extensibility and backwards-compatibility. (I’ve been bitten by updates with breaking changes a few times too often and don’t want to install this pain on others, or on myself.) Second, the language features inform how to translate these values into an API design. In Python, I wouldn’t work with Options types, because Python provides kwargs which serve the same purpose and are more idiomatic.</p>
+<p><i>Created: Thu, 09 Aug 2018 11:14:32 UTC</i></p></main>
+  <footer>
+    <img src="/res/avatar.jpg" alt="Author's face" />
+    <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. I hold a diploma in theoretical physics, but have been working in IT since graduation. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I can also be found on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
+    </p>
+    <p class="legal">This is my personal blog. The opinions expressed here are my own and not those of my employer. Content is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 International License</a>, unless otherwise noted.</p>
+  </footer>
+  <link rel="stylesheet" type="text/css" href="/res/xyrillian.css" />
+  <script type="text/javascript" src="/res/scroll-indicator.js"></script>
+</body>
+</html>
