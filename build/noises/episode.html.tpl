@@ -68,7 +68,7 @@
   {{- end }}
 
   <footer>
-    <a href="/legal/">Impressum/Datenschutz</a>
+    <a href="/legal/de/">Impressum/Datenschutz</a>
   </footer>
 </body>
 </html>
