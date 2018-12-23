@@ -5,29 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Xyrillian Thoughts</title>
   <link rel="alternate" type="application/rss+xml" href="/rss.xml">
-  <meta property="og:type" content="website" /><meta property="og:url" content="/thoughts/" /><meta property="og:title" content="Xyrillian Thoughts" />
+  <meta property="og:url" content="/thoughts/" /><meta property="og:title" content="Xyrillian Thoughts" /><meta property="og:type" content="website" />
 </head>
 <body class="thoughts has-nav-top-card">
   <div class="scroll-indicator"></div>
   <nav class="top-card">
-    <a href="/thoughts/">
-      <img class="sitelogo" src="/res/logo-thoughts.svg" alt="Xyrillian Thoughts: Personal blog">
-    </a>
+    <div>
+      <a href="/thoughts/">
+        <img class="sitelogo" src="/res/logo-thoughts.svg" alt="Xyrillian Thoughts: Personal blog">
+      </a>
+      <span>
+        <a class="iconlink" href="/thoughts/sitemap.html"><i class="icon large sitemap" title="Sitemap"></i></a>
+        <a class="iconlink" href="/thoughts/rss.xml"><i class="icon large rss-square" title="RSS feed"></i></a>
+        <a class="iconlink" href="https://github.com/majewsky/xyrillian.de"><i class="icon large bug" title="Report a bug"></i></a>
+      </span>
+    </div>
   </nav>
-<!--
-  <header>
-    <h1><a href="/thoughts/">Stefan's Blog</a></h1>
-  </header>
-  <nav>
-    <a href="/thoughts/sitemap.html">Article index</a>
-    &mdash;
-    <a href="/thoughts/rss.xml">RSS feed</a>
-    &mdash;
-    <a href="https://github.com/majewsky/xyrillian.de">Report a bug</a>
-    &mdash;
-    <a href="/legal/en/">Imprint/Impressum</a>
-  </nav>
--->
   <article><h1><a href="/thoughts/posts/golang-api-design.html" title="Permalink">[l]</a> Notes on API design in Go</h1>
 <p>At work, I have a working student who’s implementing some features in the various Golang applications that I build and maintain. I’m trying to pass some of my experience with real-world programming on to him, and <a href="https://github.com/sapcc/go-bits/pull/2">one particular pull request review</a> escalated into a blog post on API design, so I might as well share it here for archival purposes (and to fill the desolate wasteland that is my RSS feed).</p>
 <p>The concern of the pull request was to add a function to a utility library that implements exponential backoff. His proposed API looked like:</p>

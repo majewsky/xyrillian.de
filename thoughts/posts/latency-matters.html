@@ -5,33 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Latency matters &ndash; Xyrillian Thoughts</title>
   <link rel="alternate" type="application/rss+xml" href="/rss.xml">
-  <meta property="og:type" content="article" /><meta property="og:site_name" content="Xyrillian Thoughts" /><meta property="og:title" content="Latency matters" /><meta property="og:url" content="/thoughts/posts/latency-matters.html" /><meta property="article:published_time" content="2017-08-20T19:02:45Z" /><meta property="article:modified_time" content="2017-08-20T22:05:41Z" /><meta property="og:description" content="A month ago, danluu wrote about [terminal and shell performance](https://danluu.com/term-latency/). In that post, he
+  <meta property="article:published_time" content="2017-08-20T19:02:45Z" /><meta property="article:modified_time" content="2018-12-23T17:07:03Z" /><meta property="og:description" content="A month ago, danluu wrote about [terminal and shell performance](https://danluu.com/term-latency/). In that post, he
 measured the latency between a key being pressed and the corresponding character appearing in the terminal. Across
 terminals, median latencies ranged between 5 and 45 milliseconds, with the 99.9th percentile going as high as 110 ms for
 some terminals. Now I can see that more than 100 milliseconds is going to be noticeable, but I was certainly left
-wondering: Can I really perceive a difference between 5 ms latency and 45 ms latency?" />
+wondering: Can I really perceive a difference between 5 ms latency and 45 ms latency?" /><meta property="og:type" content="article" /><meta property="og:site_name" content="Xyrillian Thoughts" /><meta property="og:title" content="Latency matters" /><meta property="og:url" content="/thoughts/posts/latency-matters.html" />
 </head>
 <body class="thoughts has-nav-top-card">
   <div class="scroll-indicator"></div>
   <nav class="top-card">
-    <a href="/thoughts/">
-      <img class="sitelogo" src="/res/logo-thoughts.svg" alt="Xyrillian Thoughts: Personal blog">
-    </a>
+    <div>
+      <a href="/thoughts/">
+        <img class="sitelogo" src="/res/logo-thoughts.svg" alt="Xyrillian Thoughts: Personal blog">
+      </a>
+      <span>
+        <a class="iconlink" href="/thoughts/sitemap.html"><i class="icon large sitemap" title="Sitemap"></i></a>
+        <a class="iconlink" href="/thoughts/rss.xml"><i class="icon large rss-square" title="RSS feed"></i></a>
+        <a class="iconlink" href="https://github.com/majewsky/xyrillian.de"><i class="icon large bug" title="Report a bug"></i></a>
+      </span>
+    </div>
   </nav>
-<!--
-  <header>
-    <h1><a href="/thoughts/">Stefan's Blog</a></h1>
-  </header>
-  <nav>
-    <a href="/thoughts/sitemap.html">Article index</a>
-    &mdash;
-    <a href="/thoughts/rss.xml">RSS feed</a>
-    &mdash;
-    <a href="https://github.com/majewsky/xyrillian.de">Report a bug</a>
-    &mdash;
-    <a href="/legal/en/">Imprint/Impressum</a>
-  </nav>
--->
   <main><h1>Latency matters</h1>
 <p>A month ago, danluu wrote about <a href="https://danluu.com/term-latency/">terminal and shell performance</a>. In that post, he
 measured the latency between a key being pressed and the corresponding character appearing in the terminal. Across
@@ -79,7 +72,7 @@ responsiveness of my programs in the future after this experience.</p>
 <h2>Update</h2>
 <p>This has been <a href="https://news.ycombinator.com/item?id=15059795">discussed on Hacker News</a>, and lead to a semi-related
 <a href="latency-matters-aftermath.html">followup of mine</a>.</p>
-<ul class="timestamps"><li>Posted: Sun, 20 Aug 2017 19:02:45 UTC</li><li>Last edited: <a href="https://github.com/majewsky/xyrillian.de/commits/master/build/thoughts/posts/latency-matters.md" title="Commit history">Sun, 20 Aug 2017 22:05:41 UTC</a></li></ul></main>
+<ul class="timestamps"><li>Posted: Sun, 20 Aug 2017 19:02:45 UTC</li><li>Last edited: <a href="https://github.com/majewsky/xyrillian.de/commits/master/build/thoughts/posts/latency-matters.md" title="Commit history">Sun, 23 Dec 2018 17:07:03 UTC</a></li></ul></main>
   <aside class="bio-with-avatar">
     <div>
       <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I'm also on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
