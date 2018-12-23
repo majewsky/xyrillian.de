@@ -119,15 +119,39 @@ nav.top-card {
   height: 48px;
   line-height: 48px;
 
-  a {
-    display: block;
+  div {
     margin: 0 auto;
     max-width: 800px;
+    padding: 0 0.5rem;
 
-    img {
-      height: 48px;
-      border: 0 !important;
-      padding-left: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > * {
+      display: inline-block;
+      flex: 1;
+      flex-grow: 0;
+      white-space: nowrap;
+
+      img.sitelogo {
+        height: 48px;
+        border: 0 !important;
+      }
+
+      a.iconlink {
+        background: white;
+        border-radius: 5px;
+        padding: 0.5rem;
+
+        &:hover, &:active, &:focus {
+          background: #66F;
+
+          .icon {
+            filter: invert(100%);
+          }
+        }
+      }
     }
   }
 }
@@ -161,11 +185,39 @@ nav.top-card {
   }
 }
 
-
 footer.legal {
   text-align: right;
   margin: 1rem 0;
 }
+
+/*******************************************************************************
+ * FontAwesome icons
+ */
+
+.icon {
+  display: inline-block;
+  transform: translate(0px, 0px);
+  padding: 0 0.25rem;
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  vertical-align: -0.2rem;
+}
+.icon.large {
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  vertical-align: -0.4rem;
+}
+
+/* this is a separate file because the large base64 strings make vim's SCSS
+ * syntax highlighter choke */
+@import 'icons.scss';
 
 /*******************************************************************************
  * individual styling for the separate areas
