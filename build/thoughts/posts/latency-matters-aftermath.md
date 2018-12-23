@@ -1,6 +1,6 @@
 # Does the HN crowd show up in monitoring?
 
-So [my previous post](/posts/latency-matters.html) made [the frontpage on Hacker News](https://news.ycombinator.com/item?id=15059795).
+So [my previous post](latency-matters.html) made [the frontpage on Hacker News](https://news.ycombinator.com/item?id=15059795).
 Awesome! I have seen many websites collapse under the load of a HN crowd, so this is the perfect time to look at the monitoring.
 
 ![Munin charts](/thoughts/img/munin1.png)
