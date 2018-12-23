@@ -83,7 +83,7 @@ html [lang=en]:before {
 
 @mixin button($color) {
   display: inline-block;
-  background: var(--highlight-color);
+  background: $color;
   color: white;
   padding: 0 0.5rem;
   font-size: 1.2rem;
