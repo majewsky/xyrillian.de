@@ -1,17 +1,23 @@
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Does the HN crowd show up in monitoring? &ndash; Xyrillian Thoughts</title>
   <link rel="alternate" type="application/rss+xml" href="/rss.xml">
-  <meta property="og:url" content="/thoughts/posts/latency-matters-aftermath.html" /><meta property="article:published_time" content="2017-08-20T22:05:41Z" /><meta property="article:modified_time" content="2017-08-20T22:05:41Z" /><meta property="og:description" content="So [my previous post](/posts/latency-matters.html) made [the frontpage on Hacker News](https://news.ycombinator.com/item?id=15059795).
-Awesome! I have seen many websites collapse under the load of a HN crowd, so this is the perfect time to look at the monitoring." /><meta property="og:type" content="article" /><meta property="og:site_name" content="Xyrillian Thoughts" /><meta property="og:title" content="Does the HN crowd show up in monitoring?" />
+  <meta property="og:title" content="Does the HN crowd show up in monitoring?" /><meta property="og:url" content="/thoughts/posts/latency-matters-aftermath.html" /><meta property="article:published_time" content="2017-08-20T22:05:41Z" /><meta property="article:modified_time" content="2017-08-20T22:05:41Z" /><meta property="og:description" content="So [my previous post](latency-matters.html) made [the frontpage on Hacker News](https://news.ycombinator.com/item?id=15059795).
+Awesome! I have seen many websites collapse under the load of a HN crowd, so this is the perfect time to look at the monitoring." /><meta property="og:type" content="article" /><meta property="og:site_name" content="Xyrillian Thoughts" />
 </head>
-<body class="thoughts">
+<body class="thoughts has-nav-top-card">
+  <div class="scroll-indicator"></div>
+  <nav class="top-card">
+    <a href="/thoughts/">
+      <img class="sitelogo" src="/res/logo-thoughts.svg" alt="Xyrillian Thoughts: Personal blog">
+    </a>
+  </nav>
+<!--
   <header>
     <h1><a href="/thoughts/">Stefan's Blog</a></h1>
-    <div class="scroll-indicator" />
   </header>
   <nav>
     <a href="/thoughts/sitemap.html">Article index</a>
@@ -22,8 +28,9 @@ Awesome! I have seen many websites collapse under the load of a HN crowd, so thi
     &mdash;
     <a href="/legal/en/">Imprint/Impressum</a>
   </nav>
+-->
   <main><h1>Does the HN crowd show up in monitoring?</h1>
-<p>So <a href="/posts/latency-matters.html">my previous post</a> made <a href="https://news.ycombinator.com/item?id=15059795">the frontpage on Hacker News</a>.
+<p>So <a href="latency-matters.html">my previous post</a> made <a href="https://news.ycombinator.com/item?id=15059795">the frontpage on Hacker News</a>.
 Awesome! I have seen many websites collapse under the load of a HN crowd, so this is the perfect time to look at the monitoring.</p>
 <p><img src="/thoughts/img/munin1.png" alt="Munin charts"></p>
 <p>1 megabit per second? That’s lower than I anticipated, even with all the size optimizations that I implemented (or let’s
@@ -31,12 +38,17 @@ just say, all the bloat that I purposefully did not add). Same goes for CPU usag
 internet complain about how expensive TLS handshakes are, yet my virtual server handles all of this with less than six
 percent of a single core. It’s barely even visible on the CPU usage chart, and completely drowned out by noise on the
 load chart.</p>
-<p><i>Created: Sun, 20 Aug 2017 22:05:41 UTC</i></p></main>
-  <footer>
-    <img src="/res/avatar.jpg" alt="Author's face" />
-    <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. I hold a diploma in theoretical physics, but have been working in IT since graduation. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I can also be found on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
-    </p>
-    <p class="legal">This is my personal blog. The opinions expressed here are my own and not those of my employer. Content is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 International License</a>, unless otherwise noted.</p>
+<ul class="timestamps"><li>Posted: Sun, 20 Aug 2017 22:05:41 UTC</li></p></main>
+  <aside class="bio-with-avatar">
+    <div>
+      <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I'm also on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
+      </p>
+      <p class="legal">Opinions expressed here are my own. Content is available under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license unless otherwise noted.</p>
+    </div>
+    <img src="/res/avatar.jpg" alt="My face">
+  </aside>
+  <footer class="legal">
+    <a href="/legal/de/">Imprint</a>
   </footer>
   <link rel="stylesheet" type="text/css" href="/res/xyrillian.css" />
   <script type="text/javascript" src="/res/scroll-indicator.js"></script>

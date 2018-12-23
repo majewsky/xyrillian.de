@@ -1,16 +1,22 @@
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Notes on API design in Go &ndash; Xyrillian Thoughts</title>
   <link rel="alternate" type="application/rss+xml" href="/rss.xml">
-  <meta property="og:description" content="At work, I have a working student who&#39;s implementing some features in the various Golang applications that I build and maintain. I&#39;m trying to pass some of my experience with real-world programming on to him, and [one particular pull request review](https://github.com/sapcc/go-bits/pull/2) escalated into a blog post on API design, so I might as well share it here for archival purposes (and to fill the desolate wasteland that is my RSS feed)." /><meta property="og:type" content="article" /><meta property="og:site_name" content="Xyrillian Thoughts" /><meta property="og:title" content="Notes on API design in Go" /><meta property="og:url" content="/thoughts/posts/golang-api-design.html" /><meta property="article:published_time" content="2018-08-09T11:14:32Z" /><meta property="article:modified_time" content="2018-08-09T11:14:32Z" />
+  <meta property="og:site_name" content="Xyrillian Thoughts" /><meta property="og:title" content="Notes on API design in Go" /><meta property="og:url" content="/thoughts/posts/golang-api-design.html" /><meta property="article:published_time" content="2018-08-09T11:14:32Z" /><meta property="article:modified_time" content="2018-08-09T11:14:32Z" /><meta property="og:description" content="At work, I have a working student who&#39;s implementing some features in the various Golang applications that I build and maintain. I&#39;m trying to pass some of my experience with real-world programming on to him, and [one particular pull request review](https://github.com/sapcc/go-bits/pull/2) escalated into a blog post on API design, so I might as well share it here for archival purposes (and to fill the desolate wasteland that is my RSS feed)." /><meta property="og:type" content="article" />
 </head>
-<body class="thoughts">
+<body class="thoughts has-nav-top-card">
+  <div class="scroll-indicator"></div>
+  <nav class="top-card">
+    <a href="/thoughts/">
+      <img class="sitelogo" src="/res/logo-thoughts.svg" alt="Xyrillian Thoughts: Personal blog">
+    </a>
+  </nav>
+<!--
   <header>
     <h1><a href="/thoughts/">Stefan's Blog</a></h1>
-    <div class="scroll-indicator" />
   </header>
   <nav>
     <a href="/thoughts/sitemap.html">Article index</a>
@@ -21,6 +27,7 @@
     &mdash;
     <a href="/legal/en/">Imprint/Impressum</a>
   </nav>
+-->
   <main><h1>Notes on API design in Go</h1>
 <p>At work, I have a working student who’s implementing some features in the various Golang applications that I build and maintain. I’m trying to pass some of my experience with real-world programming on to him, and <a href="https://github.com/sapcc/go-bits/pull/2">one particular pull request review</a> escalated into a blog post on API design, so I might as well share it here for archival purposes (and to fill the desolate wasteland that is my RSS feed).</p>
 <p>The concern of the pull request was to add a function to a utility library that implements exponential backoff. His proposed API looked like:</p>
@@ -89,12 +96,17 @@ ExponentialBackoff {
 <p>This makes it easy to later add other implementations for <code>type RetryStrategy</code> (e.g. one that just retries for a given number of times and then gives up). It also allows other parts of the program to take a RetryStrategy as a parameter.</p>
 <h2>The morale</h2>
 <p>A good API design is based on two things: First, there are some fundamental values that the developer tries to optimize for. In my case, that’s extensibility and backwards-compatibility. (I’ve been bitten by updates with breaking changes a few times too often and don’t want to install this pain on others, or on myself.) Second, the language features inform how to translate these values into an API design. In Python, I wouldn’t work with Options types, because Python provides kwargs which serve the same purpose and are more idiomatic.</p>
-<p><i>Created: Thu, 09 Aug 2018 11:14:32 UTC</i></p></main>
-  <footer>
-    <img src="/res/avatar.jpg" alt="Author's face" />
-    <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. I hold a diploma in theoretical physics, but have been working in IT since graduation. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I can also be found on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
-    </p>
-    <p class="legal">This is my personal blog. The opinions expressed here are my own and not those of my employer. Content is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 International License</a>, unless otherwise noted.</p>
+<ul class="timestamps"><li>Posted: Thu, 09 Aug 2018 11:14:32 UTC</li></p></main>
+  <aside class="bio-with-avatar">
+    <div>
+      <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I'm also on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
+      </p>
+      <p class="legal">Opinions expressed here are my own. Content is available under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license unless otherwise noted.</p>
+    </div>
+    <img src="/res/avatar.jpg" alt="My face">
+  </aside>
+  <footer class="legal">
+    <a href="/legal/de/">Imprint</a>
   </footer>
   <link rel="stylesheet" type="text/css" href="/res/xyrillian.css" />
   <script type="text/javascript" src="/res/scroll-indicator.js"></script>

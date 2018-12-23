@@ -164,11 +164,11 @@ func (p *Post) Render() {
 	mtime := p.LastEditedTime().Format(time.RFC1123)
 
 	if ctime == mtime {
-		str += fmt.Sprintf("<p><i>Created: %s</i></p>", ctime)
+		str += fmt.Sprintf(`<ul class="timestamps"><li>Posted: %s</li></p>`, ctime)
 	} else {
 		historyURL := fmt.Sprintf("%s/commits/master/build/thoughts/posts/%s.md", SourceURL, p.Slug)
 		str += fmt.Sprintf(
-			"<p><i>Created: %s</i><br><i>Last edited: <a href=\"%s\" title=\"Commit history\">%s</a></i></p>",
+			`<ul class="timestamps"><li>Posted: %s</li><li>Last edited: <a href="%s" title="Commit history">%s</a></li></ul>`,
 			ctime, historyURL, mtime)
 	}
 
@@ -186,5 +186,6 @@ func (p *Post) Render() {
 		metadata["og:description"] = desc
 	}
 
+	str = "<main>" + str + "</main>"
 	writeFile(strings.TrimPrefix(p.OutputURL(), "/"), p.Title(), str, metadata)
 }

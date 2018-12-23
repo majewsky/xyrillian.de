@@ -1,4 +1,4 @@
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,10 +7,16 @@
   <link rel="alternate" type="application/rss+xml" href="/rss.xml">
   
 </head>
-<body class="thoughts">
+<body class="thoughts has-nav-top-card">
+  <div class="scroll-indicator"></div>
+  <nav class="top-card">
+    <a href="/thoughts/">
+      <img class="sitelogo" src="/res/logo-thoughts.svg" alt="Xyrillian Thoughts: Personal blog">
+    </a>
+  </nav>
+<!--
   <header>
     <h1><a href="/thoughts/">Stefan's Blog</a></h1>
-    <div class="scroll-indicator" />
   </header>
   <nav>
     <a href="/thoughts/sitemap.html">Article index</a>
@@ -21,12 +27,18 @@
     &mdash;
     <a href="/legal/en/">Imprint/Impressum</a>
   </nav>
-  <main><section class="sitemap"><h2>Aug 2018</h2><ul><li><a href="/thoughts/posts/golang-api-design.html">Notes on API design in Go</a></li></ul><h2>May 2018</h2><ul><li><a href="/thoughts/posts/gdpr-ahoy.html">GDPR ahoy!</a></li></ul><h2>Aug 2017</h2><ul><li><a href="/thoughts/posts/latency-matters-aftermath.html">Does the HN crowd show up in monitoring?</a></li><li><a href="/thoughts/posts/latency-matters.html">Latency matters</a></li></ul><h2>Jul 2017</h2><ul><li><a href="/thoughts/posts/gift-guide.html">How to choose a gift for me</a></li></ul><h2>Feb 2017</h2><ul><li><a href="/thoughts/posts/how-i-run-certbot.html">How I run Certbot (as non-root and automated)</a></li></ul><h2>Nov 2016</h2><ul><li><a href="/thoughts/posts/donation-letsencrypt.html">Donation to Let’s Encrypt</a></li></ul><h2>Oct 2016</h2><ul><li><a href="/thoughts/posts/argh-pm.html">Argh-P-M! – Dissecting the RPM file format</a></li><li><a href="/thoughts/posts/rss.html">Blog Update: RSS</a></li><li><a href="/thoughts/posts/hello-world.html">Hello World</a></li></ul></section></main>
-  <footer>
-    <img src="/res/avatar.jpg" alt="Author's face" />
-    <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. I hold a diploma in theoretical physics, but have been working in IT since graduation. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I can also be found on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
-    </p>
-    <p class="legal">This is my personal blog. The opinions expressed here are my own and not those of my employer. Content is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 International License</a>, unless otherwise noted.</p>
+-->
+  <main class="sitemap"><h2>Aug 2018</h2><ul><li><a href="/thoughts/posts/golang-api-design.html">Notes on API design in Go</a></li></ul><h2>May 2018</h2><ul><li><a href="/thoughts/posts/gdpr-ahoy.html">GDPR ahoy!</a></li></ul><h2>Aug 2017</h2><ul><li><a href="/thoughts/posts/latency-matters-aftermath.html">Does the HN crowd show up in monitoring?</a></li><li><a href="/thoughts/posts/latency-matters.html">Latency matters</a></li></ul><h2>Jul 2017</h2><ul><li><a href="/thoughts/posts/gift-guide.html">How to choose a gift for me</a></li></ul><h2>Feb 2017</h2><ul><li><a href="/thoughts/posts/how-i-run-certbot.html">How I run Certbot (as non-root and automated)</a></li></ul><h2>Nov 2016</h2><ul><li><a href="/thoughts/posts/donation-letsencrypt.html">Donation to Let’s Encrypt</a></li></ul><h2>Oct 2016</h2><ul><li><a href="/thoughts/posts/argh-pm.html">Argh-P-M! – Dissecting the RPM file format</a></li><li><a href="/thoughts/posts/rss.html">Blog Update: RSS</a></li><li><a href="/thoughts/posts/hello-world.html">Hello World</a></li></ul></main>
+  <aside class="bio-with-avatar">
+    <div>
+      <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I'm also on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
+      </p>
+      <p class="legal">Opinions expressed here are my own. Content is available under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license unless otherwise noted.</p>
+    </div>
+    <img src="/res/avatar.jpg" alt="My face">
+  </aside>
+  <footer class="legal">
+    <a href="/legal/de/">Imprint</a>
   </footer>
   <link rel="stylesheet" type="text/css" href="/res/xyrillian.css" />
   <script type="text/javascript" src="/res/scroll-indicator.js"></script>
