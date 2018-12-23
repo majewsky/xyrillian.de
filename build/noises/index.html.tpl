@@ -42,7 +42,7 @@
     </article>
   {{- end }}
 
-  <footer>
+  <footer class="legal">
     <a href="/legal/de/">Impressum/Datenschutz</a>
   </footer>
 </body>

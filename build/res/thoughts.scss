@@ -1,0 +1,83 @@
+body.thoughts {
+  main, article, section {
+    p, ul, ol, li, blockquote {
+      font-family: "Source Serif Pro", serif;
+      line-height: 1.4;
+      text-rendering: optimizeLegibility;
+      font-variant-ligatures: common-ligatures;
+      font-kerning: normal;
+    }
+
+    li {
+      margin: 0.2rem 0;
+    }
+
+    p {
+      hyphens: auto;
+      -ms-hyphens: auto;
+      -webkit-hyphens: auto;
+      text-align: justify;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    pre {
+      @extend %card;
+      border-left: 5px solid #666;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      font-variant-ligatures: none;
+      max-width: 100%;
+      overflow-x: auto;
+    }
+
+    blockquote {
+      @extend %card;
+      border-left: 5px solid #666;
+      margin: 1rem 0;
+    }
+  }
+
+  ul.timestamps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+    font-family: inherit;
+
+    li {
+      flex: 1;
+      flex-grow: 0;
+      white-space: nowrap;
+      margin: 0 0.5rem;
+      padding: 0;
+      color: #666;
+      font-family: inherit;
+    }
+  }
+
+  main.sitemap + aside.bio-with-avatar {
+    display: none;
+  }
+  aside.bio-with-avatar div p {
+    margin-left: 0;
+  }
+  footer.legal {
+    margin-top: 0;
+  }
+
+  .scroll-indicator {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: #666;
+  }
+}

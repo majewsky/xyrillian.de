@@ -120,7 +120,7 @@ func RenderAll(posts []*Post) {
 
 	items = strings.TrimPrefix(items, "</ul>")
 	writeFile("thoughts/sitemap.html", "Article list",
-		"<section class=\"sitemap\">"+items+"</ul></section>",
+		"<main class=\"sitemap\">"+items+"</ul></main>",
 		map[string]string{},
 	)
 }

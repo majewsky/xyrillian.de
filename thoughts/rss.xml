@@ -4,7 +4,7 @@
   <link>https://xyrillian.de/thoughts/</link>
   <description>Personal blog of Stefan Majewsky</description>
   <language>en</language>
-  <lastBuildDate>Sat, 22 Dec 2018 15:56:59 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 23 Dec 2018 17:06:51 +0000</lastBuildDate>
   <item>
     <title>Notes on API design in Go</title>
     <description>&lt;h1&gt;Notes on API design in Go&lt;/h1&gt;
@@ -45,7 +45,7 @@ have analytics&lt;/a&gt;.&lt;/p&gt;
   <item>
     <title>Does the HN crowd show up in monitoring?</title>
     <description>&lt;h1&gt;Does the HN crowd show up in monitoring?&lt;/h1&gt;
-&lt;p&gt;So &lt;a href=&quot;/posts/latency-matters.html&quot;&gt;my previous post&lt;/a&gt; made &lt;a href=&quot;https://news.ycombinator.com/item?id=15059795&quot;&gt;the frontpage on Hacker News&lt;/a&gt;.
+&lt;p&gt;So &lt;a href=&quot;latency-matters.html&quot;&gt;my previous post&lt;/a&gt; made &lt;a href=&quot;https://news.ycombinator.com/item?id=15059795&quot;&gt;the frontpage on Hacker News&lt;/a&gt;.
 Awesome! I have seen many websites collapse under the load of a HN crowd, so this is the perfect time to look at the monitoring.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/thoughts/img/munin1.png&quot; alt=&quot;Munin charts&quot;&gt;&lt;/p&gt;
 &lt;p&gt;1 megabit per second? That’s lower than I anticipated, even with all the size optimizations that I implemented (or let’s
