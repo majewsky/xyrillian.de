@@ -1,5 +1,5 @@
 body.thoughts {
-  main, article, section {
+  main, article {
     p, ul, ol, li, blockquote {
       font-family: "Source Serif Pro", serif;
       line-height: 1.4;
@@ -25,19 +25,47 @@ body.thoughts {
     }
 
     pre {
-      @extend %card;
-      border-left: 5px solid #666;
-      padding: 0.5rem;
       font-size: 0.8rem;
       font-variant-ligatures: none;
       max-width: 100%;
       overflow-x: auto;
+    }
+  }
+
+  main {
+    h1, h2 {
+      margin-top: 1rem;
+    }
+
+    pre {
+      @extend %card;
+      border-left: 5px solid #666;
+      padding: 0.5rem;
     }
 
     blockquote {
       @extend %card;
       border-left: 5px solid #666;
       margin: 1rem 0;
+    }
+  }
+
+  article {
+    @extend %card;
+    margin-top: 0.5rem;
+
+    pre {
+      margin: 0 0.5rem;
+      padding: 0;
+    }
+
+    p.more {
+      font-family: inherit;
+      text-align: right;
+
+      a {
+        @include button(#66F);
+      }
     }
   }
 
