@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Does the HN crowd show up in monitoring? &ndash; Xyrillian Thoughts</title>
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml">
+  <meta property="og:site_name" content="Xyrillian Thoughts" /><meta property="og:title" content="Does the HN crowd show up in monitoring?" /><meta property="og:url" content="/thoughts/posts/latency-matters-aftermath.html" /><meta property="article:published_time" content="2017-08-20T22:05:41Z" /><meta property="article:modified_time" content="2018-12-23T17:07:03Z" /><meta property="og:description" content="So [my previous post](latency-matters.html) made [the frontpage on Hacker News](https://news.ycombinator.com/item?id=15059795).
+Awesome! I have seen many websites collapse under the load of a HN crowd, so this is the perfect time to look at the monitoring." /><meta property="og:type" content="article" />
+</head>
+<body class="thoughts has-nav-top-card">
+  <div class="scroll-indicator"></div>
+  <nav class="top-card">
+    <div>
+      <a href="/thoughts/">
+        <img class="sitelogo" src="/res/logo-thoughts.svg" alt="Xyrillian Thoughts: Personal blog">
+      </a>
+      <span>
+        <a class="iconlink" href="/thoughts/sitemap.html"><i class="icon large sitemap" title="Sitemap"></i></a>
+        <a class="iconlink" href="/thoughts/rss.xml"><i class="icon large rss-square" title="RSS feed"></i></a>
+        <a class="iconlink" href="https://github.com/majewsky/xyrillian.de"><i class="icon large bug" title="Report a bug"></i></a>
+      </span>
+    </div>
+  </nav>
+  <main><h1>Does the HN crowd show up in monitoring?</h1>
+<p>So <a href="latency-matters.html">my previous post</a> made <a href="https://news.ycombinator.com/item?id=15059795">the frontpage on Hacker News</a>.
+Awesome! I have seen many websites collapse under the load of a HN crowd, so this is the perfect time to look at the monitoring.</p>
+<p><img src="/thoughts/img/munin1.png" alt="Munin charts"></p>
+<p>1 megabit per second? That’s lower than I anticipated, even with all the size optimizations that I implemented (or let’s
+just say, all the bloat that I purposefully did not add). Same goes for CPU usage: I’ve heard so many people on the
+internet complain about how expensive TLS handshakes are, yet my virtual server handles all of this with less than six
+percent of a single core. It’s barely even visible on the CPU usage chart, and completely drowned out by noise on the
+load chart.</p>
+<ul class="timestamps"><li>Posted: Sun, 20 Aug 2017 22:05:41 UTC</li><li>Last edited: <a href="https://github.com/majewsky/xyrillian.de/commits/master/build/thoughts/posts/latency-matters-aftermath.md" title="Commit history">Sun, 23 Dec 2018 17:07:03 UTC</a></li></ul></main>
+  <aside class="bio-with-avatar">
+    <div>
+      <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I'm also on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
+      </p>
+      <p class="legal">Opinions expressed here are my own. Content is available under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license unless otherwise noted.</p>
+    </div>
+    <img src="/res/avatar.jpg" alt="My face">
+  </aside>
+  <footer class="legal">
+    <a href="/legal/de/">Imprint</a>
+  </footer>
+  <link rel="stylesheet" type="text/css" href="/res/xyrillian.css" />
+  <script type="text/javascript" src="/res/scroll-indicator.js"></script>
+</body>
+</html>

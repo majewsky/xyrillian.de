@@ -1,19 +1,42 @@
+@media(min-width: 800px) {
+  header.bio-with-avatar {
+    align-items: center;
+  }
+}
+
 body.index {
-  margin: 5rem auto 0 auto;
-  width: 400px;
-  max-width: 80vw;
 
-  main p {
-    margin: 0;
-    padding: 0;
+  header.bio-with-avatar {
+    margin: 0.5rem;
+  }
 
-    a img {
-      height: 128px;
-      max-width: 100%;
-    }
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 4rem; /* leave room for <footer> */
 
-    a:hover img {
-      filter: drop-shadow(0 0 4px #CCF);
+    & > a {
+      @extend %card;
+      margin: 0.5rem;
+      border-left: 5px solid #666;
+      flex: 1;
+      flex-grow: 1;
+
+      &:hover, &:active, &:focus {
+        border-left: 5px solid #66F;
+      }
+
+      &[lang]:before {
+        display: inline;
+        margin: 0.25rem 0.5rem;
+        float: right;
+      }
+
+      p {
+        margin: 0.5rem;
+        padding: 0;
+        color: black !important;
+      }
     }
   }
 
@@ -21,8 +44,15 @@ body.index {
     position: fixed;
     left: 0.5rem;
     right: 0.5rem;
-    bottom: 0;
+    bottom: 0.5rem;
     text-align: right;
     line-height: 2rem;
+    z-index: -1;
+
+    p {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5rem;
+    }
   }
 }

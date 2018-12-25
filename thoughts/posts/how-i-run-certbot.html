@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How I run Certbot (as non-root and automated) &ndash; Xyrillian Thoughts</title>
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml">
+  <meta property="og:site_name" content="Xyrillian Thoughts" /><meta property="og:title" content="How I run Certbot (as non-root and automated)" /><meta property="og:url" content="/thoughts/posts/how-i-run-certbot.html" /><meta property="article:published_time" content="2017-02-24T16:49:59Z" /><meta property="article:modified_time" content="2017-02-24T16:49:59Z" /><meta property="og:description" content="I have previously noted that I get all my TLS certificates from [Let&#39;s Encrypt][le], but since my usage of the client
+deviates quite a bit from the standard, I figured I should take a few minutes to describe my setup." /><meta property="og:type" content="article" />
+</head>
+<body class="thoughts has-nav-top-card">
+  <div class="scroll-indicator"></div>
+  <nav class="top-card">
+    <div>
+      <a href="/thoughts/">
+        <img class="sitelogo" src="/res/logo-thoughts.svg" alt="Xyrillian Thoughts: Personal blog">
+      </a>
+      <span>
+        <a class="iconlink" href="/thoughts/sitemap.html"><i class="icon large sitemap" title="Sitemap"></i></a>
+        <a class="iconlink" href="/thoughts/rss.xml"><i class="icon large rss-square" title="RSS feed"></i></a>
+        <a class="iconlink" href="https://github.com/majewsky/xyrillian.de"><i class="icon large bug" title="Report a bug"></i></a>
+      </span>
+    </div>
+  </nav>
+  <main><h1>How I run Certbot (as non-root and automated)</h1>
+<p>I have previously noted that I get all my TLS certificates from <a href="https://letsencrypt.org">Let’s Encrypt</a>, but since my usage of the client
+deviates quite a bit from the standard, I figured I should take a few minutes to describe my setup.</p>
+<h2>Prelude: Configuration management</h2>
+<p>My system configuration is formatted as holograms that can be compiled with <a href="https://github.com/holocm/holo-build">holo-build</a> and applied with
+<a href="https://github.com/holocm/holo">Holo</a>. This article is about my <code>hologram-letsencrypt</code>, so I’ll be linking to <a href="https://github.com/majewsky/system-configuration/blob/master/hologram-letsencrypt.pkg.toml">its source code</a> a few times. If
+you don’t know about Holo, don’t worry; the source code should be clear enough as to instruct you how to port this setup
+to other configuration management schemes.</p>
+<h2>Choosing the challenge method</h2>
+<p>In the ACME protocol, you need to prove your control over the domain name for which you are requesting a certificate.
+The two most common methods are the <em>DNS challenge</em> (where you need to place a certain TXT record in the domain’s DNS)
+and the <em>webroot challenge</em> (where you need to configure your webserver to serve a certain file at a certain defined URL
+on that domain). Since I want a method that works regardless of DNS providers (I have a lot of these, some without
+automatable DNS zone API), I went with the webroot challenge.</p>
+<p>This means that every server that wants to get TLS certificates needs to run an HTTP server on port 80 to respond to the
+webroot challenge. I chose nginx, which is my go-to choice for HTTP servers, and <a href="https://github.com/majewsky/system-configuration/blob/1ca1026a02a1a69324879af23ff379532c6eb1bf/hologram-letsencrypt.pkg.toml#L15-L48">configured it</a> to</p>
+<ul>
+<li>serve the <code>.well-known/acme-challenge/</code> path from <code>/srv/letsencrypt</code> (this is where the webroot challenge looks for
+the expected file), and</li>
+<li>upgrade all other requests to HTTPS via status code 302 and the <code>Location</code> header.</li>
+</ul>
+<p>The latter implies that all my web domains exclusively use HTTPS, which is the case on all my servers since I don’t care
+about ad servers or other garbage.</p>
+<p>The webserver is activated as a systemd unit called <code>nginx-for-letsencrypt.service</code>. When there are actual websites on
+that server, another nginx will be listening on port 443 to serve these. This separation is useful to break a circular
+dependency: The nginx that listens on port 443 needs the TLS certificates to start, but Certbot can only run if nginx is
+running on port 80. If both nginx were the same, manual intervention would be required to resolve this dependency cycle
+when setting up a new server or a new website. It’s also nice because the nginx on port 443 can be left out entirely
+when not needed, i. e. when the server needs TLS certificates for services that are not HTTPS
+(e. g. XMPP or mail).</p>
+<p><strong>Side-note:</strong> This is also the reason why I haven’t looked at webservers with integrated Let’s Encrypt support, such as
+<a href="https://caddyserver.com/">Caddy</a>. If you only serve HTTPS, then Caddy is probably a good idea, but my method allows me to issue certificates
+for all TLS-enabled protocols using the same procedure.</p>
+<h2>Certbot</h2>
+<p>I started to use Certbot back in 2015 when it was still called <code>letsencrypt</code>. There were no other mature ACME clients at
+this point, so I played it safe by going with the reference implementation. The big drawback of Certbot is that it
+supposedly only runs with root privileges. I found this to be very untrue. I’m running it under user/group
+<code>letsencrypt</code>. All that it takes is to <code>chown letsencrypt:letsencrypt</code> <a href="https://github.com/majewsky/system-configuration/blob/1ca1026a02a1a69324879af23ff379532c6eb1bf/hologram-letsencrypt.pkg.toml#L80-L120">a few things</a>:</p>
+<ul>
+<li><code>/etc/letsencrypt</code> (where Certbot puts the certificates, private keys, etc.)</li>
+<li><code>/var/log/letsencrypt</code></li>
+<li><code>/srv/letsencrypt</code> (the document root for the webroot challenge, which is served by the nginx; see above)</li>
+<li><code>/var/lib/letsencrypt</code> (the home directory of the <code>letsencrypt</code> user account; this may not even be necessary)</li>
+</ul>
+<p>Now I can invoke Certbot like this:</p>
+<pre><code class="language-bash">sudo -u letsencrypt -g letsencrypt \
+  certbot certonly --quiet --non-interactive --agree-tos \
+  --keep-until-expiring --webroot -w /srv/letsencrypt/ -d &quot;$domain&quot;
+</code></pre>
+<p>That’s a mouthful, so let’s take this apart:</p>
+<ul>
+<li><code>sudo -u letsencrypt -g letsencrypt certbot</code>: Run Certbot under that user and group instead of as root.</li>
+<li><code>certonly</code>: Do not touch the webserver configuration, just provision the certificate.</li>
+<li><code>--quiet --non-interactive</code>: Be less chatty and don’t ask questions.</li>
+<li><code>--agree-tos</code>: Without this switch, the first invocation will fail since one needs to agree to the ToS, but
+<code>--non-interactive</code> forbids the client to ask for agreement.</li>
+<li><code>--keep-until-expiring</code>: This switch is generally useful when you’re invoking Certbot from a cronjob. It means that
+Certbot will do nothing when there is already a valid certificate for the given domain, unless it will expire
+soon-ish.</li>
+<li><code>--webroot -w /srv/letsencrypt/</code>: Use the webroot challenge method, where the document root is <code>/srv/letsencrypt</code>.
+We need to state the document root explicitly because we chose <code>certonly</code> earlier on and thus forbade Certbot from
+determining the document root from the webserver configuration.</li>
+<li><code>-d &quot;$domain&quot;</code>: Get a certificate for that domain.</li>
+</ul>
+<h2>Finding out which domains to handle</h2>
+<p>Now we basically just need to call Certbot once for every domain that we need a TLS certificate for. (You can also issue
+certificates for multiple domain names at once, but I like to keep things neatly separated.) I use the fact that every
+TLS certificate and private key must be mentioned in the configuration file of the server that provides the TLS-secured
+endpoint. For example, an nginx configuration will have a statement like this:</p>
+<pre><code>ssl_certificate /etc/letsencrypt/live/www.example.org/fullchain.pem;
+</code></pre>
+<p>With some <code>grep</code> and <code>cut</code>, you can easily extract the domain names from the <code>nginx.conf</code>. This is what <em>collector
+scripts</em> do in my setup. I have one for each service with TLS support, e. g.  for <a href="https://github.com/majewsky/system-configuration/blob/1ca1026a02a1a69324879af23ff379532c6eb1bf/hologram-nginx.pkg.toml#L106-L114">nginx</a> or for
+<a href="https://github.com/majewsky/system-configuration/blob/1ca1026a02a1a69324879af23ff379532c6eb1bf/hologram-bethselamin-prosody.pkg.toml#L61-L67">Prosody</a>.</p>
+<p>A small shell script, fittingly called <a href="https://github.com/majewsky/system-configuration/blob/1ca1026a02a1a69324879af23ff379532c6eb1bf/hologram-letsencrypt.pkg.toml#L122-L148"><code>letsencrypt-allofthem</code></a>, runs all of these collectors and then invokes
+Certbot once for each of the collected domains. That script also has hooks that allow to reload or restart services
+afterwards, so that the new certificates and keys can be loaded before the old ones in memory expire.</p>
+<h2>End-to-end example: Deploying a TLS-enabled static website in just 2 minutes</h2>
+<p>I have some further automation for static websites. I just dump the HTML files etc. into a directory
+<code>/data/static-web/www.example.org</code>. Now only two steps are left: <a href="https://github.com/holocm/holo"><code>sudo holo apply</code></a> renders an nginx configuration
+like this:</p>
+<pre><code>$ cat /etc/nginx/sites-enabled/static-web.conf
+server {
+    server_name www.example.org;
+    include     /etc/nginx/server-baseline-https.inc;
+
+    # CSP includes unsafe-inline to allow &lt;style&gt; tags in hand-written HTML
+    add_header  Content-Security-Policy &quot;default-src 'self' 'unsafe-inline'&quot; always;
+
+    ssl_certificate     /etc/letsencrypt/live/www.example.org/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/www.example.org/privkey.pem;
+    ssl_trusted_certificate /etc/letsencrypt/live/www.example.org/chain.pem;
+
+    location / {
+        root    /data/static-web/www.example.org;
+        index   index.html index.htm;
+        charset utf-8;
+    }
+}
+</code></pre>
+<p>The second step is <code>sudo letsencrypt-allofthem</code>, which provisions the TLS certificate and key for that domain, and
+because that also reloads nginx at the end, the new configuration takes effect immediately.</p>
+<ul class="timestamps"><li>Posted: Fri, 24 Feb 2017 16:49:59 UTC</li></p></main>
+  <aside class="bio-with-avatar">
+    <div>
+      <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I'm also on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
+      </p>
+      <p class="legal">Opinions expressed here are my own. Content is available under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license unless otherwise noted.</p>
+    </div>
+    <img src="/res/avatar.jpg" alt="My face">
+  </aside>
+  <footer class="legal">
+    <a href="/legal/de/">Imprint</a>
+  </footer>
+  <link rel="stylesheet" type="text/css" href="/res/xyrillian.css" />
+  <script type="text/javascript" src="/res/scroll-indicator.js"></script>
+</body>
+</html>
