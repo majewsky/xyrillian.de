@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GDPR ahoy! &ndash; Xyrillian Thoughts</title>
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml">
+  <meta property="og:site_name" content="Xyrillian Thoughts" /><meta property="og:title" content="GDPR ahoy!" /><meta property="og:url" content="/thoughts/posts/gdpr-ahoy.html" /><meta property="article:published_time" content="2018-05-25T00:51:46Z" /><meta property="article:modified_time" content="2018-05-25T00:51:46Z" /><meta property="og:description" content="The [General Data Protection Regulation][gdpr] comes into full force today. I
+took the opportunity to add a data privacy statement to the blog. Here is it
+in its full glory:" /><meta property="og:type" content="article" />
+</head>
+<body class="thoughts has-nav-top-card">
+  <div class="scroll-indicator"></div>
+  <nav class="top-card">
+    <div>
+      <a href="/thoughts/">
+        <img class="sitelogo" src="/res/logo-thoughts.svg" alt="Xyrillian Thoughts: Personal blog">
+      </a>
+      <span>
+        <a class="iconlink" href="/thoughts/sitemap.html"><i class="icon large sitemap" title="Sitemap"></i></a>
+        <a class="iconlink" href="/thoughts/rss.xml"><i class="icon large rss-square" title="RSS feed"></i></a>
+        <a class="iconlink" href="https://github.com/majewsky/xyrillian.de"><i class="icon large bug" title="Report a bug"></i></a>
+      </span>
+    </div>
+  </nav>
+  <main><h1>GDPR ahoy!</h1>
+<p>The <a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">General Data Protection Regulation</a> comes into full force today. I
+took the opportunity to add a data privacy statement to the blog. Here is it
+in its full glory:</p>
+<blockquote>
+<p>No system under my control records any personal data of users of this website.</p>
+</blockquote>
+<p>This is true because I disabled the nginx access log a long time ago, and
+because I restricted the nginx error log to not report 404 errors. So the logs
+are basically empty now (except for alert messages from nginx). <a href="https://github.com/majewsky/system-configuration/blob/da7f81133dee981f771dafd3c066ad28e7a09a8f/hologram-nginx.pkg.toml#L102-L103">These are the
+relevant lines in my nginx config.</a></p>
+<p>No idea why any blogger would be panicking about GDPR.</p>
+<p>Side-note: Even though I choose not to wiretap my users’ browsers, <a href="https://blog.bethselamin.de/posts/latency-matters-aftermath.html">I still
+have analytics</a>.</p>
+<ul class="timestamps"><li>Posted: Fri, 25 May 2018 00:51:46 UTC</li></p></main>
+  <aside class="bio-with-avatar">
+    <div>
+      <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I'm also on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
+      </p>
+      <p class="legal">Opinions expressed here are my own. Content is available under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license unless otherwise noted.</p>
+    </div>
+    <img src="/res/avatar.jpg" alt="My face">
+  </aside>
+  <footer class="legal">
+    <a href="/legal/de/">Imprint</a>
+  </footer>
+  <link rel="stylesheet" type="text/css" href="/res/xyrillian.css" />
+  <script type="text/javascript" src="/res/scroll-indicator.js"></script>
+</body>
+</html>

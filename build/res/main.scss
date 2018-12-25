@@ -9,6 +9,10 @@
   font-weight: bold;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: Raleway, sans-serif;
   font-size: 18px; /* establish root-em */
@@ -18,11 +22,208 @@ html {
   margin: 0;
 }
 
+body {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+@media(max-width:800px) {
+  body, nav.top-card a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+h1, h2, p, ul {
+  margin: 0.5rem;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+h2 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+p {
+  line-height: 1.2rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2rem;
+}
+
 a {
   color: blue;
   text-decoration: none !important;
 }
 
+html [lang]:before {
+  display: inline;
+  margin-right: 0.5rem;
+}
+html [lang=de]:before {
+  content: '🇩🇪';
+}
+html [lang=en]:before {
+  content: '🇬🇧';
+}
+
+/*******************************************************************************
+ * mixins and base styles
+ */
+
+@mixin button($color) {
+  display: inline-block;
+  background: $color;
+  color: white;
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 1px #CCC;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+
+  &:hover, &:active, &:focus {
+    box-shadow: 0 2px 3px #888;
+  }
+}
+
+@mixin card-style() {
+  display: block;
+  background: white;
+  box-shadow: 0 0 2px 3px #CCC;
+}
+
+%card {
+  @include card-style();
+  padding: 1px 0;
+}
+
+body.has-nav-top-card {
+  padding-top: 48px;
+}
+nav.top-card {
+  @include card-style();
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  line-height: 48px;
+
+  div {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 0.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > * {
+      display: inline-block;
+      flex: 1;
+      flex-grow: 0;
+      white-space: nowrap;
+
+      img.sitelogo {
+        height: 48px;
+        border: 0 !important;
+      }
+
+      a.iconlink {
+        background: white;
+        border-radius: 5px;
+        padding: 0.5rem;
+
+        &:hover, &:active, &:focus {
+          background: #66F;
+
+          .icon {
+            filter: invert(100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.bio-with-avatar {
+  margin: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+
+  div {
+    flex: 1;
+    flex-grow: 1;
+
+    p {
+      margin-left: 0;
+    }
+    p.legal {
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+  }
+
+  img {
+    flex: 1;
+    flex-grow: 0;
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+  }
+}
+
+footer.legal {
+  text-align: right;
+  margin: 1rem 0;
+}
+
+/*******************************************************************************
+ * FontAwesome icons
+ */
+
+.icon {
+  display: inline-block;
+  transform: translate(0px, 0px);
+  padding: 0 0.25rem;
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  vertical-align: -0.2rem;
+}
+.icon.large {
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  vertical-align: -0.4rem;
+}
+
+/* this is a separate file because the large base64 strings make vim's SCSS
+ * syntax highlighter choke */
+@import 'icons.scss';
+
+/*******************************************************************************
+ * individual styling for the separate areas
+ */
+
 @import 'index.scss'; /* for index.html */
 @import 'legal.scss';
 @import 'noises.scss';
+@import 'thoughts.scss';

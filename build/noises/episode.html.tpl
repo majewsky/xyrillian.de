@@ -8,11 +8,13 @@
   <title>Xyrillian Noises Hörfunkproduktion</title>
   <link rel="stylesheet" type="text/css" href="/res/xyrillian.css" />
 </head>
-<body class="noises episode-{{$file.ShowID}} has-nav">
-  <nav>
-    <a href="/noises/">
-      <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
-    </a>
+<body class="noises episode-{{$file.ShowID}} has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
   </nav>
   <header>
     <img class="coverart" src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
@@ -67,8 +69,8 @@
     </section>
   {{- end }}
 
-  <footer>
-    <a href="/legal/">Impressum/Datenschutz</a>
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
   </footer>
 </body>
 </html>
