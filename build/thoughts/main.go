@@ -208,12 +208,19 @@ func writeFile(path, title, contents string, metadata map[string]string) {
 	}
 	str = strings.Replace(str, "%CONTENT%", contents, -1)
 
+	//sort metadata keys deterministically to avoid diff noise
+	metadataKeys := make([]string, 0, len(metadata))
+	for key := range metadata {
+		metadataKeys = append(metadataKeys, key)
+	}
+	sort.Strings(metadataKeys)
+
 	//format metadata according to http://ogp.me/
 	var metadataStr string
-	for key, val := range metadata {
+	for _, key := range metadataKeys {
 		metadataStr += fmt.Sprintf(
 			`<meta property="%s" content="%s" />`,
-			template.HTMLEscapeString(key), template.HTMLEscapeString(val),
+			template.HTMLEscapeString(key), template.HTMLEscapeString(metadata[key]),
 		)
 	}
 	str = strings.Replace(str, "%META%", metadataStr, -1)
