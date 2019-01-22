@@ -23,6 +23,25 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>Ein Kessel Buntes</itunes:title>
+    <itunes:episode>4</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>Ein Kessel Buntes</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wer möchte, dass das Bild auf dem Monitor genauso schön aussieht wie nachher auf dem Ausdruck, sollte sich ein paar Gedanken über den richtigen Farbraum machen.</itunes:summary>
+    <description>Wer möchte, dass das Bild auf dem Monitor genauso schön aussieht wie nachher auf dem Ausdruck, sollte sich ein paar Gedanken über den richtigen Farbraum machen.</description>
+    <content:encoded>Wer möchte, dass das Bild auf dem Monitor genauso schön aussieht wie nachher auf dem Ausdruck, sollte sich ein paar Gedanken über den richtigen Farbraum machen.</content:encoded>
+      <enclosure length="7168912" url="https://xyrillian.de/dl/gnse-004-color-spaces.mp3" type="audio/mpeg"/>
+      <enclosure length="6029864" url="https://xyrillian.de/dl/gnse-004-color-spaces.ogg" type="audio/ogg"/>
+      <enclosure length="3419457" url="https://xyrillian.de/dl/gnse-004-color-spaces.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/gnse/004/</guid>
+    <pubDate>Tue, 22 Jan 2019 19:00:00 GMT</pubDate>
+    <itunes:duration>08:11</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>Der Herzschlag eines ganzen Kontinents</itunes:title>
     <itunes:episode>3</itunes:episode>
     <itunes:season>1</itunes:season>

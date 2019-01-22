@@ -111,3 +111,16 @@ files:
         - '[Vorträge von Mathias Dalheimer zum Stromnetz, Smart Meter, etc.](https://media.ccc.de/search/?q=Mathias+Dalheimer)'
         - 'Wikipedia: [Regeltechnik im Stromnetz](https://de.wikipedia.org/wiki/Regelleistung_%28Stromnetz%29)'
         - 'Lexikon von "Next Kraftwerke": [Was ist Regelenergie?](https://www.next-kraftwerke.de/wissen/regelenergie) (Der Link ist keine Werbung. Ich unterhalte keine Geschäftsbeziehung mit Next. Das ist einfach eine informative Quelle.)'
+
+  - show:    gnse
+    episode: 4
+    slug:    004-color-spaces
+    title:   Ein Kessel Buntes
+    pubtime: 1548183600 # 2019-01-22
+    music:   *music-like-gnse-002
+
+    markdown:
+      description: 'Wer möchte, dass das Bild auf dem Monitor genauso schön aussieht wie nachher auf dem Ausdruck, sollte sich ein paar Gedanken über den richtigen Farbraum machen.'
+      notes: '**Sendetermin:** 22. Januar 2019, um 21:30 bei Pentaradio auf [coloRadio](https://coloradio.org/site/hoeren/)'
+      sources:
+        - 'Wikipedia: [CMYK](https://de.wikipedia.org/wiki/CMYK-Farbmodell), [RGB und Varianten](https://de.wikipedia.org/wiki/RGB-Farbraum), [CIELAB](https://de.wikipedia.org/wiki/Lab-Farbraum)'
