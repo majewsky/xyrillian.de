@@ -2,7 +2,7 @@ shows:
   gnse:
     title:       Gar nicht so einfach
     subtitle:    Die unerwartete Komplexität der einfachen Dinge.
-    description: Eine Produktion von Xyrillian Noises. Neue Folgen einmal monatlich zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden.
+    description: "Eine Produktion von Xyrillian Noises. Neue Folgen alle zwei Monate, im Wechsel mit \"Space Tourist\", jeweils zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden."
     category:    Technology
 
     feed:  noises/rss.xml
@@ -21,6 +21,21 @@ shows:
         href: https://itunes.apple.com/de/podcast/gar-nicht-so-einfach/id1435500811?l=de
       - name: Stitcher
         href: https://www.stitcher.com/s?fid=230739&refid=stpr
+
+  st:
+    title:       Space Tourist
+    subtitle:    Eine Reise durch die deutschsprachige Hackerspace-Landschaft
+    description: "Eine Produktion von Xyrillian Noises. Neue Folgen alle zwei Monate, im Wechsel mit \"Gar nicht so einfach\", jeweils zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden."
+    category:    Technology
+
+    feed: noises/st/rss.xml
+    href: https://xyrillian.de/noises/
+
+    covers:
+      feed: cover-st.png
+      html: cover-st.svg
+
+    # TODO subscriptions
 
   pentaradio:
     external: true
@@ -124,3 +139,25 @@ files:
       notes: '**Sendetermin:** 22. Januar 2019, um 21:30 bei Pentaradio auf [coloRadio](https://coloradio.org/site/hoeren/)'
       sources:
         - 'Wikipedia: [CMYK](https://de.wikipedia.org/wiki/CMYK-Farbmodell), [RGB und Varianten](https://de.wikipedia.org/wiki/RGB-Farbraum), [CIELAB](https://de.wikipedia.org/wiki/Lab-Farbraum)'
+
+  - show: st
+    episode: 1
+    slug: 001-eigenbaukombinat-halle
+    title: Eigenbaukombinat Halle
+    pubtime: 1551132000 # 2019-02-25
+
+    markdown:
+      description: 'Meine Reise durch die deutsche Hackerspace-Landschaft beginnt beim Junghackertag im EBK in Halle an der Saale.'
+      sources:
+        - 'Mehr Informationen auf der [Website des Eigenbaukombinats](https://eigenbaukombinat.de/).'
+
+    music: # Deep Space, Introducing the Pre-roll, Starfields
+      - artist: The Freeharmonic Orchestra
+        title: Deep Space
+        href: http://freemusicarchive.org/music/The_Freeharmonic_Orchestra/Space_Robots_the_Future/06_-_Deep_Space
+      - artist: Lee Rosevere
+        title: Introducing the Pre-roll
+        href: http://freemusicarchive.org/music/Lee_Rosevere/Music_For_Podcasts_5/Lee_Rosevere_-_Music_For_Podcasts_5_-_01_Introducing_the_Pre-roll
+      - artist: Steve Combs & Delta Is
+        title: Starfields
+        href: http://freemusicarchive.org/music/Steve_Combs__Delta_Is/Symphony_For_Spaceman_Bonus_Tracks/Delta_Is_-_Symphony_For_Spaceman_-_03_Starfields

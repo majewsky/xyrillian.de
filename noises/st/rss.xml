@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>Space Tourist</title>
+  <link>https://xyrillian.de/noises/</link>
+  <language>de</language>
+  <copyright>&#xA9; 2018 Stefan Majewsky</copyright>
+  <itunes:subtitle>Eine Reise durch die deutschsprachige Hackerspace-Landschaft</itunes:subtitle>
+  <itunes:author>Xyrillian Noises</itunes:author>
+  <itunes:summary>Eine Produktion von Xyrillian Noises. Neue Folgen alle zwei Monate, im Wechsel mit &#34;Gar nicht so einfach&#34;, jeweils zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden.</itunes:summary>
+  <description>Eine Produktion von Xyrillian Noises. Neue Folgen alle zwei Monate, im Wechsel mit &#34;Gar nicht so einfach&#34;, jeweils zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden.</description>
+  <itunes:type>episodic</itunes:type>
+  <itunes:owner>
+  <itunes:name>Stefan Majewsky</itunes:name>
+  <itunes:email>majewsky@posteo.de</itunes:email>
+  </itunes:owner>
+  <image>
+    <url>https://xyrillian.de/res/cover-st.png</url>
+    <link>https://xyrillian.de/noises/</link>
+  </image>
+  <itunes:image href="https://xyrillian.de/res/cover-st.png"/>
+  <itunes:category text="Technology"/>
+  <itunes:explicit>no</itunes:explicit>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>Eigenbaukombinat Halle</itunes:title>
+    <itunes:episode>1</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>Eigenbaukombinat Halle</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Meine Reise durch die deutsche Hackerspace-Landschaft beginnt beim Junghackertag im EBK in Halle an der Saale.</itunes:summary>
+    <description>Meine Reise durch die deutsche Hackerspace-Landschaft beginnt beim Junghackertag im EBK in Halle an der Saale.</description>
+    <content:encoded>Meine Reise durch die deutsche Hackerspace-Landschaft beginnt beim Junghackertag im EBK in Halle an der Saale.</content:encoded>
+      <enclosure length="8725158" url="https://xyrillian.de/dl/st-001-eigenbaukombinat-halle.mp3" type="audio/mpeg"/>
+      <enclosure length="7118518" url="https://xyrillian.de/dl/st-001-eigenbaukombinat-halle.ogg" type="audio/ogg"/>
+      <enclosure length="4090129" url="https://xyrillian.de/dl/st-001-eigenbaukombinat-halle.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/st/001/</guid>
+    <pubDate>Mon, 25 Feb 2019 22:00:00 GMT</pubDate>
+    <itunes:duration>10:04</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+</channel>
+</rss>
