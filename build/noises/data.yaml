@@ -43,6 +43,12 @@ shows:
     covers:
       html: logo-pentaradio.png
 
+  dienstagsdirekt:
+    external: true
+    title: 'MDR Sachsenradio: Dienstags direkt'
+    covers:
+      html: logo-mdr-dienstags-direkt.png
+
 files:
 
   - show:     pentaradio
@@ -140,6 +146,14 @@ files:
       sources:
         - 'Wikipedia: [CMYK](https://de.wikipedia.org/wiki/CMYK-Farbmodell), [RGB und Varianten](https://de.wikipedia.org/wiki/RGB-Farbraum), [CIELAB](https://de.wikipedia.org/wiki/Lab-Farbraum)'
 
+  - show:     dienstagsdirekt
+    title:    'Gastbeitrag: Safer Internet Day'
+    subtitle: 'MDR "Dienstags Direkt" vom 5. Februar 2019'
+
+    markdown:
+      description: 'Ein Großteil des Lebens spielt sich heute im Internet ab. Allerdings machen wir uns mit der Preisgabe der Daten auch angreifbar. "Sicherheit im Netz" war das Thema einer Diskussionsrunde im MDR Sachsenradio, bei der ich für den CCC Dresden zu Gast war.'
+      notes: 'Beim MDR gibt es [die ganze Folge](https://www.mdr.de/sachsenradio/podcast/audio-956750.html) zum Herunterladen und Im-Browser-Anhören.'
+
   - show: st
     episode: 1
     slug: 001-eigenbaukombinat-halle
@@ -149,7 +163,7 @@ files:
     markdown:
       description: 'Meine Reise durch die deutsche Hackerspace-Landschaft beginnt beim Junghackertag im EBK in Halle an der Saale.'
       sources:
-        - 'Mehr Informationen auf der [Website des Eigenbaukombinats](https://eigenbaukombinat.de/).'
+        - 'Mehr Informationen gibt es auf der [Website des Eigenbaukombinats](https://eigenbaukombinat.de/).'
 
     music: # Deep Space, Introducing the Pre-roll, Starfields
       - artist: The Freeharmonic Orchestra
