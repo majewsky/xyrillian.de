@@ -42,11 +42,11 @@ func main() {
 	}
 
 	var data struct {
-		Shows            map[string]show `yaml:"shows"`
-		Files            []*file         `yaml:"files"`
-		CurrentShowID    string          `yaml:"-"`
-		CurrentFileIndex int             `yaml:"-"`
-		XMLIntro         template.HTML   `yaml:"-"`
+		Shows            map[string]*show `yaml:"shows"`
+		Files            []*file          `yaml:"files"`
+		CurrentShowID    string           `yaml:"-"`
+		CurrentFileIndex int              `yaml:"-"`
+		XMLIntro         template.HTML    `yaml:"-"`
 	}
 	//this needs to be interpolated by the template, otherwise html/template
 	//breaks the <? opener
@@ -56,6 +56,9 @@ func main() {
 	err = yaml.Unmarshal(inputBytes, &data)
 	if err != nil {
 		log.Fatal(err.Error())
+	}
+	for _, show := range data.Shows {
+		show.CompileMarkdown()
 	}
 	for _, file := range data.Files {
 		file.CompileMarkdown()
@@ -86,6 +89,36 @@ func main() {
 	err = tmpl.Execute(out, data)
 	if err != nil {
 		log.Fatal(err.Error())
+	}
+
+	//render pages for individual shows
+	tmplBytes, err = ioutil.ReadFile("build/noises/show.html.tpl")
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	tmpl, err = template.New("noises/show.html").Funcs(templateFuncs).Parse(string(tmplBytes))
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	for showID, show := range data.Shows {
+		if show.IsExternal {
+			continue
+		}
+		dirPath := filepath.Join("noises", showID)
+		err = os.MkdirAll(dirPath, 0777)
+		if err != nil {
+			log.Fatal(err.Error())
+		}
+		out, err := os.Create(dirPath + "/index.html")
+		if err != nil {
+			log.Fatal(err.Error())
+		}
+		defer out.Close()
+		data.CurrentShowID = showID
+		err = tmpl.Execute(out, data)
+		if err != nil {
+			log.Fatal(err.Error())
+		}
 	}
 
 	//render pages for individual episodes
@@ -148,18 +181,24 @@ func main() {
 // data structures
 
 type show struct {
-	Title       string `yaml:"title"`
-	Subtitle    string `yaml:"subtitle"`
-	Description string `yaml:"description"`
-	Category    string `yaml:"category"` //iTunes podcast category, e.g. "Technology"
-	FeedPath    string `yaml:"feed"`
-	URL         string `yaml:"href"`
-	IsExternal  bool   `yaml:"external"`
+	Title           string        `yaml:"title"`
+	Subtitle        string        `yaml:"subtitle"`
+	Description     string        `yaml:"description"`
+	DescriptionHTML template.HTML `yaml:"-"`
+	Category        string        `yaml:"category"` //iTunes podcast category, e.g. "Technology"
+	FeedPath        string        `yaml:"feed"`
+	URL             string        `yaml:"href"`
+	IsExternal      bool          `yaml:"external"`
 
 	Covers struct {
 		ForFeed string `yaml:"feed"`
 		ForHTML string `yaml:"html"`
 	} `yaml:"covers"`
+
+	Subscriptions []struct {
+		Name string `yaml:"name"`
+		URL  string `yaml:"href"`
+	}
 }
 
 type file struct {
@@ -199,26 +238,30 @@ type file struct {
 	LengthSeconds uint `yaml:"-"`
 }
 
-func (f *file) CompileMarkdown() {
+func compileMarkdown(input string) template.HTML {
 	md := markdown.New(
 		markdown.HTML(true),
 		markdown.Typographer(false),
 	)
-	compile := func(input string) template.HTML {
-		if input == "" {
-			return ""
-		}
-		out := strings.TrimSpace(md.RenderToString([]byte(input)))
-		out = strings.TrimPrefix(out, "<p>")
-		out = strings.TrimSuffix(out, "</p>")
-		return template.HTML(out)
+	if input == "" {
+		return ""
 	}
+	out := strings.TrimSpace(md.RenderToString([]byte(input)))
+	out = strings.TrimPrefix(out, "<p>")
+	out = strings.TrimSuffix(out, "</p>")
+	return template.HTML(out)
+}
 
-	f.HTML.Description = compile(f.Markdown.Description)
-	f.HTML.Notes = compile(f.Markdown.Notes)
+func (s *show) CompileMarkdown() {
+	s.DescriptionHTML = compileMarkdown(s.Description)
+}
+
+func (f *file) CompileMarkdown() {
+	f.HTML.Description = compileMarkdown(f.Markdown.Description)
+	f.HTML.Notes = compileMarkdown(f.Markdown.Notes)
 	f.HTML.Sources = make([]template.HTML, len(f.Markdown.Sources))
 	for idx, str := range f.Markdown.Sources {
-		f.HTML.Sources[idx] = compile(str)
+		f.HTML.Sources[idx] = compileMarkdown(str)
 	}
 }
 

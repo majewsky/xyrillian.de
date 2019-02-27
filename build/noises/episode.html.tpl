@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Xyrillian Noises Hörfunkproduktion</title>
+  <title>{{$file.Title}} - Xyrillian Noises</title>
   <link rel="stylesheet" type="text/css" href="/res/xyrillian.css" />
 </head>
 <body class="noises episode-{{$file.ShowID}} has-nav-top-card">

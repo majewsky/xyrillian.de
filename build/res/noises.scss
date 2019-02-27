@@ -24,17 +24,27 @@ body.noises {
       margin: 0.5rem;
     }
 
-    h1 {
-      margin-top: 0;
+    h1, h2 {
       margin-bottom: 0;
     }
-    h2 {
-      margin-bottom: 0;
+    h1 + h2, h2 + h1 {
+      margin-top: 0;
+    }
+
+    p.subscribe-options {
+      font-size: 0.8rem;
+
+      a.rss-feed {
+        display: inline-block;
+        height: 2rem;
+        line-height: 2rem;
+        @include button(var(--highlight-color));
+      }
     }
   }
 
   header {
-    margin: 0 0 1rem 0;
+    margin: 0;
 
     img.sitelogo {
       height: 92px;
@@ -44,6 +54,18 @@ body.noises {
     img.coverart {
       width: 160px; /* 20% of 800px */
       max-width: 20vw;
+    }
+
+    &:after {
+      content: ' ';
+      display: table;
+      clear: right; /* because of .coverart */
+    }
+
+    & + * {
+      /* the content of <header> has enough margin already; the card should add
+       * less to it */
+      margin-top: 0.5rem !important;
     }
   }
 
