@@ -10,8 +10,23 @@
   <header>
     <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
     <p>Beschallungen von und mit Stefan Majewsky. Alle Inhalte frei verfügbar unter <a href="https://creativecommons.org/licenses/by-sa/3.0/de/">CC BY-SA</a>.</p>
-    <p>Keine Folge verpassen! Jetzt die RSS-Feeds für <a href="/noises/rss.xml">&quot;Gar nicht so einfach&quot;</a> und <a href="/noises/st/rss.xml">&quot;Space Tourist&quot;</a> abonnieren. Gibt's auch bei <a href="https://bitlove.org/xyrillian-noises/gar-nicht-so-einfach">Bitlove</a>, <a href="https://gpodder.net/podcast/gar-nicht-so-einfach">GPodder</a>, <a href="https://itunes.apple.com/de/podcast/gar-nicht-so-einfach/id1435500811?l=de">iTunes</a> und <a href="https://www.stitcher.com/s?fid=230739&refid=stpr">Stitcher</a>.</p>
   </header>
+
+  <h1>Sendereihen</h1>
+
+  <nav class="shows">
+    {{- range $showID, $show := .Shows }}
+    {{- if not $show.IsExternal }}
+      <a href="/noises/{{$showID}}/" class="episode-{{$showID}}">
+        <img class="coverart" src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
+        <h2>{{$show.Title}}</h2>
+        <p>{{$show.Subtitle}}</p>
+      </a>
+    {{- end }}
+    {{- end }}
+  </nav>
+
+  <h1>Aktuelle Sendungen</h1>
 
   {{- range (.Files | reverseFiles) }}
   {{- $show := index $.Shows .ShowID }}
