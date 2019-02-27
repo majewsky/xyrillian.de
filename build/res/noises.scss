@@ -18,12 +18,12 @@ body.noises {
     --highlight-color: #C01212;
   }
 
-  header, article {
-    img.coverart {
-      float: right;
-      margin: 0.5rem;
-    }
+  img.coverart {
+    float: right;
+    margin: 0.5rem;
+  }
 
+  header, article {
     h1, h2 {
       margin-bottom: 0;
     }
@@ -66,6 +66,40 @@ body.noises {
       /* the content of <header> has enough margin already; the card should add
        * less to it */
       margin-top: 0.5rem !important;
+    }
+  }
+
+  nav.shows {
+    display: flex;
+    flex-flow: row wrap;
+
+    position: relative;
+    left: -0.5rem;
+    width: calc(100% + 1rem);
+
+    img.coverart {
+      width: 80px; /* 10% of 800px */
+      min-width: 10vh;
+    }
+
+    & > a {
+      @extend %card;
+      min-width: 240px; /* 3x coverart width */
+      margin: 0.5rem;
+      border-left: 5px solid var(--highlight-color);
+      flex: 1;
+      flex-grow: 1;
+
+      &:hover, &:active, &:focus {
+        border-left: 5px solid #66F;
+      }
+
+      h2, p {
+        margin: 0.5rem;
+        padding: 0;
+        color: black !important;
+      }
+
     }
   }
 
