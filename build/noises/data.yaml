@@ -2,7 +2,12 @@ shows:
   gnse:
     title:       Gar nicht so einfach
     subtitle:    Die unerwartete Komplexität der einfachen Dinge.
-    description: "Eine Produktion von Xyrillian Noises. Neue Folgen alle zwei Monate, im Wechsel mit \"Space Tourist\", jeweils zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden."
+    description: |
+      Jeden Tag kapitulieren wir vor Komplexität. Im Angesicht unverständlicher Computerprogramme und unkooperativer Bandansagen möchten viele gerne gleich zurück in die "gute alte Zeit".
+
+      Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. Ordentlich gezähmt und organisiert sind komplexe Systeme der Grund für die Annehmlichkeiten des modernen Alltags. In dieser Serie blicke ich mit Euch in einige dieser Systeme.
+
+      Neue Folgen alle zwei Monate, im Wechsel mit "Space Tourist", jeweils zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden.
     category:    Technology
 
     feed:  noises/rss.xml
@@ -25,7 +30,10 @@ shows:
   st:
     title:       Space Tourist
     subtitle:    Eine Reise durch die deutschsprachige Hackerspace-Landschaft
-    description: "Eine Produktion von Xyrillian Noises. Neue Folgen alle zwei Monate, im Wechsel mit \"Gar nicht so einfach\", jeweils zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden."
+    description: |
+      In jeder Folge besuche ich einen neuen Hackerspace im deutschsprachigen Raum. Ich zeige Euch, was diesen Hackerspace besonders macht, und erkläre nebenbei auch, was ein Hackerspace ist und wie er funktioniert.
+
+      Neue Folgen alle zwei Monate, im Wechsel mit "Gar nicht so einfach", jeweils zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden.
     category:    Technology
 
     feed: noises/st/rss.xml
@@ -35,7 +43,15 @@ shows:
       feed: cover-st.png
       html: cover-st.svg
 
-    # TODO subscriptions
+    subscriptions:
+      - name: Bitlove
+        href: https://bitlove.org/xyrillian-noises/space-tourist
+      # - name: GPodder
+      #   href: TODO
+      # - name: iTunes
+      #   href: TODO
+      - name: Stitcher
+        href: https://www.stitcher.com/s?fid=377309&refid=stpr
 
   pentaradio:
     external: true
