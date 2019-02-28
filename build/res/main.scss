@@ -2,11 +2,13 @@
   font-family: Raleway;
   src: local("Raleway"), url("/res/Raleway-Regular-Original.otf") format("opentype");
   font-weight: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: Raleway;
   src: local("Raleway"), url("/res/Raleway-SemiBold-Original.otf") format("opentype");
   font-weight: bold;
+  font-display: swap;
 }
 
 * {
