@@ -21,6 +21,8 @@ body.noises {
   img.coverart {
     float: right;
     margin: 0.5rem;
+    width: 20vw;
+    max-width: 120px; /* 20% of 800px */
   }
 
   header, article {
@@ -51,11 +53,6 @@ body.noises {
       max-width: 100%;
     }
 
-    img.coverart {
-      width: 160px; /* 20% of 800px */
-      max-width: 20vw;
-    }
-
     &:after {
       content: ' ';
       display: table;
@@ -77,14 +74,9 @@ body.noises {
     left: -0.5rem;
     width: calc(100% + 1rem);
 
-    img.coverart {
-      width: 80px; /* 10% of 800px */
-      min-width: 10vh;
-    }
-
     & > a {
       @extend %card;
-      min-width: 240px; /* 3x coverart width */
+      min-width: 360px; /* 3x coverart width */
       margin: 0.5rem;
       border-left: 5px solid var(--highlight-color);
       flex: 1;
@@ -107,13 +99,6 @@ body.noises {
     @extend %card;
     margin-top: 1rem;
     border-left: 5px solid var(--highlight-color);
-  }
-
-  article {
-    img.coverart {
-      width: 80px; /* 10% of 800px */
-      min-width: 10vh;
-    }
   }
 
   section {
