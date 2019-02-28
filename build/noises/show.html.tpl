@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{$show.Title}} - Xyrillian Noises</title>
-  <link rel="stylesheet" type="text/css" href="/res/xyrillian.css" />
+  <link rel="stylesheet" href="/res/xyrillian.css" />
 </head>
 <body class="noises episode-{{.CurrentShowID}} has-nav-top-card">
   <nav class="top-card">
