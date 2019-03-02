@@ -30,6 +30,7 @@
 
   {{- range (.Files | reverseFiles) }}
   {{- $show := index $.Shows .ShowID }}
+  {{- if or (gt .Episode 0) $show.IsExternal }}
     <article class="episode-{{.ShowID}}">
       <img class="coverart" src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
       <h2>{{if .Subtitle}}{{.Subtitle}}{{else}}{{$show.Title}} #{{.Episode}}{{end}}</h2>
@@ -55,6 +56,7 @@
         </div>
       {{- end }}
     </article>
+  {{- end }}
   {{- end }}
 
   <footer class="legal">

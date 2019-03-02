@@ -181,7 +181,7 @@ files:
       sources:
         - 'Mehr Informationen gibt es auf der [Website des Eigenbaukombinats](https://eigenbaukombinat.de/).'
 
-    music: # Deep Space, Introducing the Pre-roll, Starfields
+    music:
       - artist: The Freeharmonic Orchestra
         title: Deep Space
         href: http://freemusicarchive.org/music/The_Freeharmonic_Orchestra/Space_Robots_the_Future/06_-_Deep_Space
@@ -191,3 +191,12 @@ files:
       - artist: Steve Combs & Delta Is
         title: Starfields
         href: http://freemusicarchive.org/music/Steve_Combs__Delta_Is/Symphony_For_Spaceman_Bonus_Tracks/Delta_Is_-_Symphony_For_Spaceman_-_03_Starfields
+
+  - show: gnse
+    episode: null # bonus
+    slug: outtakes-01
+    title: Ankündigung und Outtakes
+    pubtime: 1551560400 # 2019-03-02
+
+    markdown:
+      description: 'Keine ganze Folge, sondern nur eine Zugabe. Meinen neuen Podcast findet ihr auf <https://xyrillian.de/noises>.'
