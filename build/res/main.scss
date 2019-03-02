@@ -83,6 +83,14 @@ html [lang=en]:before {
  * mixins and base styles
  */
 
+@mixin clear-after($side) {
+  &:after {
+    content: ' ';
+    display: table;
+    clear: $side;
+  }
+}
+
 @mixin button($color) {
   display: inline-block;
   background: $color;
