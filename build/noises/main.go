@@ -132,7 +132,7 @@ func main() {
 	}
 	for idx, file := range data.Files {
 		show := data.Shows[file.ShowID]
-		if show.IsExternal {
+		if show.IsExternal || file.Episode == 0 {
 			continue
 		}
 		dirPath := filepath.Join("noises", file.ShowID, file.Slug)

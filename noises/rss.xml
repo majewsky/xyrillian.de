@@ -32,6 +32,24 @@ Neue Folgen alle zwei Monate, im Wechsel mit &#34;Space Tourist&#34;, jeweils zu
   <itunes:category text="Technology"/>
   <itunes:explicit>no</itunes:explicit>
   <item>
+    <itunes:episodeType>bonus</itunes:episodeType>
+    <itunes:title>Ankündigung und Outtakes</itunes:title>
+    <itunes:season>1</itunes:season>
+    <title>Ankündigung und Outtakes</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Keine ganze Folge, sondern nur eine Zugabe. Meinen neuen Podcast findet ihr auf <a href="https://xyrillian.de/noises">https://xyrillian.de/noises</a>.</itunes:summary>
+    <description>Keine ganze Folge, sondern nur eine Zugabe. Meinen neuen Podcast findet ihr auf <a href="https://xyrillian.de/noises">https://xyrillian.de/noises</a>.</description>
+    <content:encoded>Keine ganze Folge, sondern nur eine Zugabe. Meinen neuen Podcast findet ihr auf <a href="https://xyrillian.de/noises">https://xyrillian.de/noises</a>.</content:encoded>
+      <enclosure length="3517838" url="https://xyrillian.de/dl/gnse-outtakes-01.mp3" type="audio/mpeg"/>
+      <enclosure length="3754414" url="https://xyrillian.de/dl/gnse-outtakes-01.ogg" type="audio/ogg"/>
+      <enclosure length="1540336" url="https://xyrillian.de/dl/gnse-outtakes-01.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/gnse/outtakes-01/</guid>
+    <pubDate>Sat, 02 Mar 2019 21:00:00 GMT</pubDate>
+    <itunes:duration>04:11</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>Ein Kessel Buntes</itunes:title>
     <itunes:episode>4</itunes:episode>

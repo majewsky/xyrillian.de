@@ -31,6 +31,7 @@
   </header>
 
   {{- range (.Files | reverseFiles) }}
+  {{- if gt .Episode 0 }}
   {{- if eq .ShowID $.CurrentShowID }}
     <article class="episode-{{.ShowID}}">
       <h2>{{if .Subtitle}}{{.Subtitle}}{{else}}{{$show.Title}} #{{.Episode}}{{end}}</h2>
@@ -56,6 +57,7 @@
         </div>
       {{- end }}
     </article>
+  {{- end }}
   {{- end }}
   {{- end }}
 

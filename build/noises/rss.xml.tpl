@@ -25,9 +25,11 @@
   {{- range (.Files | reverseFiles) }}
   {{- if eq .ShowID $.CurrentShowID }}
   <item>
-    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:episodeType>{{if .Episode}}full{{else}}bonus{{end}}</itunes:episodeType>
     <itunes:title>{{.Title}}</itunes:title>
+    {{- if .Episode }}
     <itunes:episode>{{.Episode}}</itunes:episode>
+    {{- end }}
     <itunes:season>1</itunes:season>
     <title>{{.Title}}</title>
     <itunes:author>Xyrillian Noises</itunes:author>
@@ -40,7 +42,7 @@
       <enclosure length="{{.SizeBytes}}" url="https://xyrillian.de/dl/{{.FileName}}" type="{{.MIMEType}}"/>
     {{- end }}
     {{- end }}
-    <guid>https://xyrillian.de/id/{{.ShowID}}/{{printf "%03d" .Episode}}/</guid>
+    <guid>https://xyrillian.de/id/{{.ShowID}}/{{if .Episode}}{{printf "%03d" .Episode}}{{else}}{{.Slug}}{{end}}/</guid>
     <pubDate>{{.PublicationTimeUnix | unixTimeToRFC1123 }}</pubDate>
     <itunes:duration>{{.LengthSeconds | readableLengthSeconds}}</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
