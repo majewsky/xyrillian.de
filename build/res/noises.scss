@@ -1,11 +1,9 @@
 @media(max-width:800px) {
-  body.noises {
-    div.player {
-      display: block !important;
-      audio {
-        width: 90%;
-      }
-    }
+  body.noises div.player audio {
+    /* do not use the width of the audio controls; the actual value does not
+     * matter because the flex container makes the <audio> grow/shrink to fit
+     */
+    width: 50%;
   }
 }
 
@@ -53,11 +51,7 @@ body.noises {
       max-width: 100%;
     }
 
-    &:after {
-      content: ' ';
-      display: table;
-      clear: right; /* because of .coverart */
-    }
+    @include clear-after(right); /* because of .coverart */
 
     & + * {
       /* the content of <header> has enough margin already; the card should add
@@ -133,6 +127,7 @@ body.noises {
   div.player {
     display: flex;
     margin: 0.5rem 0.5rem 0.5rem 0;
+    clear: right; /* because of .coverart */
 
     & > * {
       display: block;
@@ -143,6 +138,7 @@ body.noises {
     }
 
     audio {
+      display: block;
       flex-shrink: 1;
     }
 
