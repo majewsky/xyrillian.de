@@ -18,7 +18,13 @@
   </nav>
   <header>
     <img class="coverart" src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
-    <h2>{{if $file.Subtitle}}{{$file.Subtitle}}{{else}}{{$show.Title}} #{{$file.Episode}}{{end}}</h2>
+    <h2>
+      {{- if $file.Subtitle}}
+        {{- $file.Subtitle}}
+      {{- else}}
+        {{- $show.Title}} #{{$file.Episode}} vom {{$file.PublicationTimeUnix | unixTimeToReadableDate }}
+      {{- end -}}
+    </h2>
     <h1>{{$file.Title}}</h1>
     {{- if $file.HTML.Description }}
       <p>{{$file.HTML.Description}}</p>

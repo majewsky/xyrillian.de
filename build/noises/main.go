@@ -66,10 +66,11 @@ func main() {
 	}
 
 	templateFuncs := template.FuncMap{
-		"reverseFiles":          reverseFiles,
-		"readableFileSize":      readableFileSize,
-		"readableLengthSeconds": readableLengthSeconds,
-		"unixTimeToRFC1123":     unixTimeToRFC1123,
+		"reverseFiles":           reverseFiles,
+		"readableFileSize":       readableFileSize,
+		"readableLengthSeconds":  readableLengthSeconds,
+		"unixTimeToRFC1123":      unixTimeToRFC1123,
+		"unixTimeToReadableDate": unixTimeToReadableDate,
 	}
 
 	//render noises/index.html
@@ -361,4 +362,25 @@ func readableLengthSeconds(lengthSeconds uint) string {
 func unixTimeToRFC1123(in uint64) string {
 	gmt := time.FixedZone("GMT", 0)
 	return time.Unix(int64(in), 0).In(gmt).Format(time.RFC1123)
+}
+
+var germanMonths = map[time.Month]string{
+	time.January:   "Januar",
+	time.February:  "Februar",
+	time.March:     "März",
+	time.April:     "April",
+	time.May:       "Mai",
+	time.June:      "Juni",
+	time.July:      "Juli",
+	time.August:    "August",
+	time.September: "September",
+	time.October:   "Oktober",
+	time.November:  "November",
+	time.December:  "Dezember",
+}
+
+func unixTimeToReadableDate(in uint64) string {
+	t := time.Unix(int64(in), 0).In(time.FixedZone("GMT", 0))
+	str := t.Format("2. XXX 2006")
+	return strings.Replace(str, "XXX", germanMonths[t.Month()], -1)
 }
