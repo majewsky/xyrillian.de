@@ -21,7 +21,7 @@
     <h2>{{$show.Subtitle}}</h2>
     <p>{{$show.DescriptionHTML}}</p>
     <p class="subscribe-options">
-      <a class="rss-feed">RSS-Feed abonnieren</a>
+      <a class="rss-feed" href="/{{$show.FeedPath}}">RSS-Feed abonnieren</a>
       oder über
       {{ range $idx, $sub := $show.Subscriptions -}}
         {{ if gt $idx 0 }}, {{ end -}}
