@@ -34,7 +34,13 @@
   {{- if gt .Episode 0 }}
   {{- if eq .ShowID $.CurrentShowID }}
     <article class="episode-{{.ShowID}}">
-      <h2>{{if .Subtitle}}{{.Subtitle}}{{else}}{{$show.Title}} #{{.Episode}}{{end}}</h2>
+      <h2>
+        {{- if .Subtitle}}
+          {{- .Subtitle}}
+        {{- else}}
+          {{- $show.Title}} #{{.Episode}} vom {{.PublicationTimeUnix | unixTimeToReadableDate }}
+        {{- end -}}
+      </h2>
       <h1>{{.Title}}</h1>
       {{- if .HTML.Description }}
         <p>{{.HTML.Description}}</p>

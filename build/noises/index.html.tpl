@@ -33,7 +33,13 @@
   {{- if or (gt .Episode 0) $show.IsExternal }}
     <article class="episode-{{.ShowID}}">
       <img class="coverart" src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
-      <h2>{{if .Subtitle}}{{.Subtitle}}{{else}}{{$show.Title}} #{{.Episode}}{{end}}</h2>
+      <h2>
+        {{- if .Subtitle}}
+          {{- .Subtitle}}
+        {{- else}}
+          {{- $show.Title}} #{{.Episode}} vom {{.PublicationTimeUnix | unixTimeToReadableDate }}
+        {{- end -}}
+      </h2>
       <h1>{{.Title}}</h1>
       {{- if .HTML.Description }}
         <p>{{.HTML.Description}}</p>
