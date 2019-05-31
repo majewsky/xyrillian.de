@@ -6,8 +6,6 @@ shows:
       Jeden Tag kapitulieren wir vor Komplexität. Im Angesicht unverständlicher Computerprogramme und unkooperativer Bandansagen möchten viele gerne gleich zurück in die "gute alte Zeit".
 
       Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. Ordentlich gezähmt und organisiert sind komplexe Systeme der Grund für die Annehmlichkeiten des modernen Alltags. In dieser Serie blicke ich mit Euch in einige dieser Systeme.
-
-      Neue Folgen alle zwei Monate, im Wechsel mit "Space Tourist", jeweils zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden.
     category:    Technology
 
     feed:  noises/rss.xml
@@ -32,8 +30,6 @@ shows:
     subtitle:    Eine Reise durch die deutschsprachige Hackerspace-Landschaft
     description: |
       In jeder Folge besuche ich einen neuen Hackerspace im deutschsprachigen Raum. Ich zeige Euch, was diesen Hackerspace besonders macht, und erkläre nebenbei auch, was ein Hackerspace ist und wie er funktioniert.
-
-      Neue Folgen alle zwei Monate, im Wechsel mit "Gar nicht so einfach", jeweils zum Sendetermin von Pentaradio vom Chaos Computer Club Dresden.
     category:    Technology
 
     feed: noises/st/rss.xml
