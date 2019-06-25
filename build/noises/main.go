@@ -218,9 +218,15 @@ type file struct {
 	} `yaml:"markdown"`
 
 	HTML struct {
-		Description template.HTML
-		Notes       template.HTML
-		Sources     []template.HTML
+		Description                 template.HTML
+		Notes                       template.HTML
+		Sources                     []template.HTML
+		DescriptionIncludingSources template.HTML
+	} `yaml:"-"`
+
+	RSS struct {
+		Description string
+		ShowNotes   string
 	} `yaml:"-"`
 
 	Music []struct {
@@ -260,9 +266,20 @@ func (s *show) CompileMarkdown() {
 func (f *file) CompileMarkdown() {
 	f.HTML.Description = compileMarkdown(f.Markdown.Description)
 	f.HTML.Notes = compileMarkdown(f.Markdown.Notes)
+
 	f.HTML.Sources = make([]template.HTML, len(f.Markdown.Sources))
+	rssSources := make([]string, len(f.Markdown.Sources))
 	for idx, str := range f.Markdown.Sources {
 		f.HTML.Sources[idx] = compileMarkdown(str)
+		rssSources[idx] = string(f.HTML.Sources[idx])
+	}
+
+	f.RSS.Description = string(f.HTML.Description)
+	f.RSS.ShowNotes = fmt.Sprintf(`<p>%s</p>`, f.HTML.Description)
+	if len(rssSources) > 0 {
+		f.RSS.ShowNotes += fmt.Sprintf(`<h2>Quellen und Links</h2><ul><li>%s</li></ul>`,
+			strings.Join(rssSources, `</li><li>`),
+		)
 	}
 }
 
@@ -284,10 +301,11 @@ func (f *file) FindDownloads() {
 		{"flac", "FLAC", "audio/flac"},
 	}
 
-	hasFLAC := false
+	firstPath := ""
 	for _, fmt := range formats {
 		fileName := f.ShowID + "-" + f.Slug + "." + fmt.Extension
-		fi, err := os.Stat("dl/" + fileName)
+		path := "dl/" + fileName
+		fi, err := os.Stat(path)
 		if err != nil {
 			if os.IsNotExist(err) {
 				continue
@@ -295,9 +313,10 @@ func (f *file) FindDownloads() {
 			log.Fatal(err.Error())
 		}
 
-		if fmt.Extension == "flac" {
-			hasFLAC = true
+		if firstPath == "" {
+			firstPath = path
 		}
+
 		f.Downloads = append(f.Downloads,
 			struct {
 				Format    string
@@ -313,30 +332,20 @@ func (f *file) FindDownloads() {
 		)
 	}
 
-	if hasFLAC {
-		//file(1) reports enough metadata from FLAC files to calculate the duration
-		//of the audio file from
-		path := "dl/" + f.ShowID + "-" + f.Slug + ".flac"
-		cmd := exec.Command("file", path)
-		cmd.Stderr = os.Stderr
-		output, err := cmd.Output()
-		if err != nil {
-			log.Fatal(err.Error())
-		}
-		match := regexp.MustCompile(`([0-9.]+) kHz, ([0-9]+) samples`).FindStringSubmatch(string(output))
-		if match == nil {
-			log.Fatalf("unexpected output from `file %s`: %q\n", path, string(output))
-		}
-		sampleRateKHz, err := strconv.ParseFloat(match[1], 64)
-		if err != nil {
-			log.Fatal(err.Error())
-		}
-		sampleCount, err := strconv.ParseUint(match[2], 10, 64)
-		if err != nil {
-			log.Fatal(err.Error())
-		}
-		f.LengthSeconds = uint(float64(sampleCount) / (sampleRateKHz * 1000))
+	//use ffprobe(1) to determine the duration of the audio file
+	cmd := exec.Command("ffprobe", firstPath)
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		log.Fatal(err.Error())
 	}
+	match := regexp.MustCompile(`(?m)\s*Duration:\s*([0-9][0-9]):([0-9][0-9]):([0-9][0-9])\.[0-9]+,`).FindStringSubmatch(string(output))
+	if match == nil {
+		log.Fatalf("unexpected output from `ffprobe %s`: %q\n", firstPath, string(output))
+	}
+	hours, _ := strconv.ParseUint(match[1], 10, 16)
+	minutes, _ := strconv.ParseUint(match[2], 10, 16)
+	seconds, _ := strconv.ParseUint(match[3], 10, 16)
+	f.LengthSeconds = uint(hours*3600 + minutes*60 + seconds)
 }
 
 ////////////////////////////////////////////////////////////////////////////////

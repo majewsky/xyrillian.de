@@ -195,4 +195,46 @@ files:
     pubtime: 1551560400 # 2019-03-02
 
     markdown:
-      description: 'Keine ganze Folge, sondern nur eine Zugabe. Meinen neuen Podcast findet ihr auf <https://xyrillian.de/noises>.'
+      description: 'Keine ganze Folge, sondern nur eine Zugabe.'
+      sources:
+        - 'Meinen neuen Podcast findet ihr auf <https://xyrillian.de/noises>.'
+
+  - show: st
+    episode: 2
+    slug: 002-cbase-berlin
+    title: c-base Berlin
+    pubtime: 1561478400 # 2019-06-25
+
+    markdown:
+      description: 'Im Untergrund von Berlin gibt es viel zu entdecken: U-Bahn-Schächte, Weltkriegsbunker... und eine Raumstation.'
+      sources:
+        - '[Website der c-base](https://c-base.org)'
+        - '[Hyperbandrauschen](https://hybr.de), die Radiosendung der c-base'
+        - '[Damals™](https://damals-tm-podcast.de), der Podcast von Ajuvo'
+
+    music:
+      - artist: Lee Rosevere
+        title: Introducing the Pre-roll
+        href: http://freemusicarchive.org/music/Lee_Rosevere/Music_For_Podcasts_5/Lee_Rosevere_-_Music_For_Podcasts_5_-_01_Introducing_the_Pre-roll
+      - artist: Steve Combs & Delta Is
+        title: Starfields
+        href: http://freemusicarchive.org/music/Steve_Combs__Delta_Is/Symphony_For_Spaceman_Bonus_Tracks/Delta_Is_-_Symphony_For_Spaceman_-_03_Starfields
+      - artist: Josh Woodward
+        title: Coin Op
+        href: https://www.joshwoodward.com
+        variant: in der Bonusfolge
+
+  - show: st
+    episode: null # bonus
+    slug: 002-bonus-interview
+    title: 'Bonus: Interview mit Ajuvo'
+    pubtime: 1561478400 # 2019-06-25
+
+    markdown:
+      description: "Das ganze Interview zu Folge 2 aus der c-base Berlin."
+      sources:
+        - '[Website der c-base](https://c-base.org)'
+        - '[Hyperbandrauschen](https://hybr.de), die Radiosendung der c-base'
+        - '[Damals™](https://damals-tm-podcast.de), der Podcast von Ajuvo'
+        - '[Libreflip](https://libreflip.org/)'
+        - 'Noch ein Projekt von Ajuvo: [flux.fail](https://flux.fail/)'
