@@ -34,9 +34,9 @@
     <title>{{.Title}}</title>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
-    <itunes:summary>{{.HTML.Description}}</itunes:summary>
-    <description>{{.HTML.Description}}</description>
-    <content:encoded>{{.HTML.Description}}</content:encoded>
+    <itunes:summary>{{.RSS.Description}}</itunes:summary>
+    <description>{{.RSS.Description}}</description>
+    <content:encoded>{{.RSS.ShowNotes}}</content:encoded>
     {{- range .Downloads }}
     {{- if ne .Format "FLAC" }}
       <enclosure length="{{.SizeBytes}}" url="https://xyrillian.de/dl/{{.FileName}}" type="{{.MIMEType}}"/>

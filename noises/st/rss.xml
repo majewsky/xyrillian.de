@@ -24,6 +24,43 @@
   <itunes:category text="Technology"/>
   <itunes:explicit>no</itunes:explicit>
   <item>
+    <itunes:episodeType>bonus</itunes:episodeType>
+    <itunes:title>Bonus: Interview mit Ajuvo</itunes:title>
+    <itunes:season>1</itunes:season>
+    <title>Bonus: Interview mit Ajuvo</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Das ganze Interview zu Folge 2 aus der c-base Berlin.</itunes:summary>
+    <description>Das ganze Interview zu Folge 2 aus der c-base Berlin.</description>
+    <content:encoded>&lt;p&gt;Das ganze Interview zu Folge 2 aus der c-base Berlin.&lt;/p&gt;&lt;h2&gt;Quellen und Links&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&#34;https://c-base.org&#34;&gt;Website der c-base&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;https://hybr.de&#34;&gt;Hyperbandrauschen&lt;/a&gt;, die Radiosendung der c-base&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;https://damals-tm-podcast.de&#34;&gt;Damals™&lt;/a&gt;, der Podcast von Ajuvo&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;https://libreflip.org/&#34;&gt;Libreflip&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Noch ein Projekt von Ajuvo: &lt;a href=&#34;https://flux.fail/&#34;&gt;flux.fail&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+      <enclosure length="34454973" url="https://xyrillian.de/dl/st-002-bonus-interview.mp3" type="audio/mpeg"/>
+      <enclosure length="28309567" url="https://xyrillian.de/dl/st-002-bonus-interview.ogg" type="audio/ogg"/>
+      <enclosure length="15240516" url="https://xyrillian.de/dl/st-002-bonus-interview.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/st/002-bonus-interview/</guid>
+    <pubDate>Tue, 25 Jun 2019 16:00:00 GMT</pubDate>
+    <itunes:duration>40:42</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>c-base Berlin</itunes:title>
+    <itunes:episode>2</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>c-base Berlin</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Im Untergrund von Berlin gibt es viel zu entdecken: U-Bahn-Schächte, Weltkriegsbunker... und eine Raumstation.</itunes:summary>
+    <description>Im Untergrund von Berlin gibt es viel zu entdecken: U-Bahn-Schächte, Weltkriegsbunker... und eine Raumstation.</description>
+    <content:encoded>&lt;p&gt;Im Untergrund von Berlin gibt es viel zu entdecken: U-Bahn-Schächte, Weltkriegsbunker... und eine Raumstation.&lt;/p&gt;&lt;h2&gt;Quellen und Links&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&#34;https://c-base.org&#34;&gt;Website der c-base&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;https://hybr.de&#34;&gt;Hyperbandrauschen&lt;/a&gt;, die Radiosendung der c-base&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;https://damals-tm-podcast.de&#34;&gt;Damals™&lt;/a&gt;, der Podcast von Ajuvo&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+      <enclosure length="6905618" url="https://xyrillian.de/dl/st-002-cbase-berlin.mp3" type="audio/mpeg"/>
+      <enclosure length="5846059" url="https://xyrillian.de/dl/st-002-cbase-berlin.ogg" type="audio/ogg"/>
+      <enclosure length="3260813" url="https://xyrillian.de/dl/st-002-cbase-berlin.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/st/002/</guid>
+    <pubDate>Tue, 25 Jun 2019 16:00:00 GMT</pubDate>
+    <itunes:duration>07:55</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>Eigenbaukombinat Halle</itunes:title>
     <itunes:episode>1</itunes:episode>
@@ -33,7 +70,7 @@
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Meine Reise durch die deutsche Hackerspace-Landschaft beginnt beim Junghackertag im EBK in Halle an der Saale.</itunes:summary>
     <description>Meine Reise durch die deutsche Hackerspace-Landschaft beginnt beim Junghackertag im EBK in Halle an der Saale.</description>
-    <content:encoded>Meine Reise durch die deutsche Hackerspace-Landschaft beginnt beim Junghackertag im EBK in Halle an der Saale.</content:encoded>
+    <content:encoded>&lt;p&gt;Meine Reise durch die deutsche Hackerspace-Landschaft beginnt beim Junghackertag im EBK in Halle an der Saale.&lt;/p&gt;&lt;h2&gt;Quellen und Links&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Mehr Informationen gibt es auf der &lt;a href=&#34;https://eigenbaukombinat.de/&#34;&gt;Website des Eigenbaukombinats&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;</content:encoded>
       <enclosure length="8725158" url="https://xyrillian.de/dl/st-001-eigenbaukombinat-halle.mp3" type="audio/mpeg"/>
       <enclosure length="7118518" url="https://xyrillian.de/dl/st-001-eigenbaukombinat-halle.ogg" type="audio/ogg"/>
       <enclosure length="4090129" url="https://xyrillian.de/dl/st-001-eigenbaukombinat-halle.opus" type="audio/opus"/>
