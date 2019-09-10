@@ -61,6 +61,12 @@ shows:
     covers:
       html: logo-mdr-dienstags-direkt.png
 
+  akronymisierbar:
+    external: true
+    title: "Akronymisierbar"
+    covers:
+      html: logo-akronymisierbar.jpg
+
 files:
 
   - show:     pentaradio
@@ -238,3 +244,11 @@ files:
         - '[Damals™](https://damals-tm-podcast.de), der Podcast von Ajuvo'
         - '[Libreflip](https://libreflip.org/)'
         - 'Noch ein Projekt von Ajuvo: [flux.fail](https://flux.fail/)'
+
+  - show:     akronymisierbar
+    title:    "Was mit Medien"
+    subtitle: "Akronymisierbar #32"
+
+    markdown:
+      description: 'Akronymisierbar ist ein Podcast über Programmiersprachen und Mate von [@hoodie_de](https://twitter.com/hoodie_de) und [@kiliankoe](https://twitter.com/kiliankoe). In Folge 32 habe ich zwei Stunden lang meine besten Informatiker-Anekdoten zum Besten gegeben'
+      notes: 'Die ganze Folge gibt es [auf akronymisier.bar](https://akronymisier.bar/episodes/032).'
