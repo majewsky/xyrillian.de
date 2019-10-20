@@ -71,14 +71,14 @@ a.ipa {
   font-size: 80%;
 }
 
-html [lang]:before {
+html [lang]:not(.no-flag):before {
   display: inline;
   margin-right: 0.5rem;
 }
-html [lang=de]:before {
+html [lang=de]:not(.no-flag):before {
   content: '🇩🇪';
 }
-html [lang=en]:before {
+html [lang=en]:not(.no-flag):before {
   content: '🇬🇧';
 }
 
