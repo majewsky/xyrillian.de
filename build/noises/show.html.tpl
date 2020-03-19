@@ -1,4 +1,5 @@
 {{- $show := index .Shows .CurrentShowID -}}
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
