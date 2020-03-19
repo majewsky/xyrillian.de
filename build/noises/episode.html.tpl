@@ -1,5 +1,6 @@
 {{- $file := index .Files .CurrentFileIndex -}}
 {{- $show := index .Shows $file.ShowID -}}
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
