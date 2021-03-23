@@ -63,6 +63,9 @@ func main() {
 	for _, file := range data.Files {
 		file.CompileMarkdown()
 		file.FindDownloads()
+		if file.Episode != nil {
+			file.EpisodeAsInt = *file.Episode
+		}
 	}
 
 	templateFuncs := template.FuncMap{
@@ -133,7 +136,7 @@ func main() {
 	}
 	for idx, file := range data.Files {
 		show := data.Shows[file.ShowID]
-		if show.IsExternal || file.Episode == 0 {
+		if show.IsExternal || file.Episode == nil {
 			continue
 		}
 		dirPath := filepath.Join("noises", file.ShowID, file.Slug)
@@ -203,11 +206,12 @@ type show struct {
 }
 
 type file struct {
-	ShowID   string `yaml:"show"`
-	Title    string `yaml:"title"`
-	Subtitle string `yaml:"subtitle"`
-	Episode  uint   `yaml:"episode"`
-	Slug     string `yaml:"slug"`
+	ShowID       string `yaml:"show"`
+	Title        string `yaml:"title"`
+	Subtitle     string `yaml:"subtitle"`
+	Episode      *uint  `yaml:"episode"`
+	EpisodeAsInt uint   `yaml:"-"`
+	Slug         string `yaml:"slug"`
 
 	PublicationTimeUnix uint64 `yaml:"pubtime"`
 

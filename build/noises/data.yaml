@@ -2,11 +2,11 @@ shows:
   gnse:
     title:       Gar nicht so einfach
     subtitle:    Die unerwartete Komplexität der einfachen Dinge
+    category:    Technology
     description: |
       Jeden Tag kapitulieren wir vor Komplexität. Im Angesicht unverständlicher Computerprogramme und unkooperativer Bandansagen möchten viele gerne gleich zurück in die "gute alte Zeit".
 
       Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. Ordentlich gezähmt und organisiert sind komplexe Systeme der Grund für die Annehmlichkeiten des modernen Alltags. In dieser Serie blicke ich mit Euch in einige dieser Systeme.
-    category:    Technology
 
     feed:  noises/rss.xml
     href:  https://garnichtsoeinfach-podcast.de/
@@ -28,9 +28,9 @@ shows:
   st:
     title:       Space Tourist
     subtitle:    Eine Reise durch die deutschsprachige Hackerspace-Landschaft
+    category:    Technology
     description: |
       In jeder Folge besuche ich einen neuen Hackerspace im deutschsprachigen Raum. Ich zeige Euch, was diesen Hackerspace besonders macht, und erkläre nebenbei auch, was ein Hackerspace ist und wie er funktioniert.
-    category:    Technology
 
     feed: noises/st/rss.xml
     href: https://xyrillian.de/noises/
@@ -48,6 +48,22 @@ shows:
         href: https://itunes.apple.com/de/podcast/space-tourist/id1454308732?l=en
       - name: Stitcher
         href: https://www.stitcher.com/s?fid=377309&refid=stpr
+
+  stp:
+    title:       Schlüsseltechnologie
+    subtitle:    Coming soon...
+    category:    Technology
+    description: |
+      Hier geht es bald los.
+
+    feed: noises/stp/rss.xml
+    href: https://schlüsseltechnologie-podcast.de/
+
+    covers:
+      feed: cover-stp.png
+      html: cover-stp.svg
+
+    subscriptions: [] # TODO
 
   pentaradio:
     external: true
@@ -252,3 +268,12 @@ files:
     markdown:
       description: 'Akronymisierbar ist ein Podcast über Programmiersprachen, Matesorten und mehr von [@hoodie_de](https://twitter.com/hoodie_de) und [@kiliankoe](https://twitter.com/kiliankoe). In Folge 32 habe ich zwei Stunden lang meine besten Informatiker-Anekdoten zum Besten gegeben'
       notes: 'Die ganze Folge gibt es [auf akronymisier.bar](https://akronymisier.bar/episodes/032).'
+
+  - show: stp
+    episode: null # bonus
+    slug: feed-testfolge
+    title: Feed-Test
+    pubtime: 1616531949 # 2021-03-23
+
+    markdown:
+      description: "Hier ist Platz für die Shownotes."

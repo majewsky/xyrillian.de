@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>Schlüsseltechnologie</title>
+  <link>https://schlüsseltechnologie-podcast.de/</link>
+  <language>de</language>
+  <copyright>&#xA9; 2018 Stefan Majewsky</copyright>
+  <itunes:subtitle>Coming soon...</itunes:subtitle>
+  <itunes:author>Xyrillian Noises</itunes:author>
+  <itunes:summary>Hier geht es bald los.
+</itunes:summary>
+  <description>Hier geht es bald los.
+</description>
+  <itunes:type>episodic</itunes:type>
+  <itunes:owner>
+  <itunes:name>Stefan Majewsky</itunes:name>
+  <itunes:email>majewsky@posteo.de</itunes:email>
+  </itunes:owner>
+  <image>
+    <url>https://xyrillian.de/res/cover-stp.png</url>
+    <link>https://schlüsseltechnologie-podcast.de/</link>
+  </image>
+  <itunes:image href="https://xyrillian.de/res/cover-stp.png"/>
+  <itunes:category text="Technology"/>
+  <itunes:explicit>no</itunes:explicit>
+  <item>
+    <itunes:episodeType>bonus</itunes:episodeType>
+    <itunes:title>Feed-Test</itunes:title>
+    <itunes:season>1</itunes:season>
+    <title>Feed-Test</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Hier ist Platz für die Shownotes.</itunes:summary>
+    <description>Hier ist Platz für die Shownotes.</description>
+    <content:encoded>&lt;p&gt;Hier ist Platz für die Shownotes.&lt;/p&gt;</content:encoded>
+      <enclosure length="648421" url="https://xyrillian.de/dl/stp-feed-testfolge.mp3" type="audio/mpeg"/>
+      <enclosure length="343224" url="https://xyrillian.de/dl/stp-feed-testfolge.ogg" type="audio/ogg"/>
+      <enclosure length="606056" url="https://xyrillian.de/dl/stp-feed-testfolge.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/feed-testfolge/</guid>
+    <pubDate>Tue, 23 Mar 2021 20:39:09 GMT</pubDate>
+    <itunes:duration>00:20</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+</channel>
+</rss>
