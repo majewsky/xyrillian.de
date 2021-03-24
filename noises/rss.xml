@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>Gar nicht so einfach</title>
   <link>https://garnichtsoeinfach-podcast.de/</link>
+  <atom:link href="https://xyrillian.de/noises/rss.xml" rel="self" type="application/rss+xml" />
   <language>de</language>
   <copyright>&#xA9; 2018 Stefan Majewsky</copyright>
   <itunes:subtitle>Die unerwartete Komplexität der einfachen Dinge</itunes:subtitle>
@@ -23,6 +24,7 @@ Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. O
   <image>
     <url>https://xyrillian.de/res/cover-gnse.png</url>
     <link>https://garnichtsoeinfach-podcast.de/</link>
+    <title>Coverart</title>
   </image>
   <itunes:image href="https://xyrillian.de/res/cover-gnse.png"/>
   <itunes:category text="Technology"/>

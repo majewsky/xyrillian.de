@@ -1,9 +1,10 @@
 {{- .XMLIntro }}
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 {{- $show := index .Shows .CurrentShowID }}
 <channel>
   <title>{{$show.Title}}</title>
   <link>{{$show.URL}}</link>
+  <atom:link href="https://xyrillian.de/{{$show.FeedPath}}" rel="self" type="application/rss+xml" />
   <language>de</language>
   <copyright>&#xA9; 2018 Stefan Majewsky</copyright>
   <itunes:subtitle>{{$show.Subtitle}}</itunes:subtitle>
@@ -18,6 +19,7 @@
   <image>
     <url>https://xyrillian.de/res/{{$show.Covers.ForFeed}}</url>
     <link>{{$show.URL}}</link>
+    <title>Coverart</title>
   </image>
   <itunes:image href="https://xyrillian.de/res/{{$show.Covers.ForFeed}}"/>
   <itunes:category text="{{$show.Category}}"/>
