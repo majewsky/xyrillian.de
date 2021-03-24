@@ -16,14 +16,12 @@ shows:
       html: cover-gnse.svg
 
     subscriptions:
-      - name: Bitlove
-        href: https://bitlove.org/xyrillian-noises/gar-nicht-so-einfach
       - name: GPodder
         href: https://gpodder.net/podcast/gar-nicht-so-einfach
       - name: iTunes
         href: https://itunes.apple.com/de/podcast/gar-nicht-so-einfach/id1435500811?l=de
       - name: Stitcher
-        href: https://www.stitcher.com/s?fid=230739&refid=stpr
+        href: https://www.stitcher.com/show/gar-nicht-so-einfach
 
   st:
     title:       Space Tourist
@@ -40,14 +38,12 @@ shows:
       html: cover-st.svg
 
     subscriptions:
-      - name: Bitlove
-        href: https://bitlove.org/xyrillian-noises/space-tourist
-      # - name: GPodder
-      #   href: TODO
+      - name: GPodder
+        href: https://gpodder.net/podcast/space-tourist
       - name: iTunes
         href: https://itunes.apple.com/de/podcast/space-tourist/id1454308732?l=en
       - name: Stitcher
-        href: https://www.stitcher.com/s?fid=377309&refid=stpr
+        href: https://www.stitcher.com/show/space-tourist
 
   stp:
     title:       Schlüsseltechnologie
