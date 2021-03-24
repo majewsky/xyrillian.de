@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel>
   <title>Schlüsseltechnologie</title>
-  <link>https://schlüsseltechnologie-podcast.de/</link>
+  <link>https://xn--schlsseltechnologie-podcast-l3c.de/</link>
   <language>de</language>
   <copyright>&#xA9; 2018 Stefan Majewsky</copyright>
   <itunes:subtitle>Coming soon...</itunes:subtitle>
@@ -18,7 +18,7 @@
   </itunes:owner>
   <image>
     <url>https://xyrillian.de/res/cover-stp.png</url>
-    <link>https://schlüsseltechnologie-podcast.de/</link>
+    <link>https://xn--schlsseltechnologie-podcast-l3c.de/</link>
   </image>
   <itunes:image href="https://xyrillian.de/res/cover-stp.png"/>
   <itunes:category text="Technology"/>
