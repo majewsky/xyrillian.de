@@ -19,7 +19,7 @@
   <image>
     <url>https://xyrillian.de/res/{{$show.Covers.ForFeed}}</url>
     <link>{{$show.URL}}</link>
-    <title>Coverart</title>
+    <title>{{$show.Title}}</title>
   </image>
   <itunes:image href="https://xyrillian.de/res/{{$show.Covers.ForFeed}}"/>
   <itunes:category text="{{$show.Category}}"/>
