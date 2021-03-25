@@ -16,6 +16,8 @@ shows:
       html: cover-gnse.svg
 
     subscriptions:
+      - name: Fyyd
+        href: https://fyyd.de/podcast/gar-nicht-so-einfach/0
       - name: GPodder
         href: https://gpodder.net/podcast/gar-nicht-so-einfach
       - name: iTunes
@@ -38,10 +40,12 @@ shows:
       html: cover-st.svg
 
     subscriptions:
+      - name: Fyyd
+        href: https://fyyd.de/podcast/space-tourist/0
       - name: GPodder
         href: https://gpodder.net/podcast/space-tourist
       - name: iTunes
-        href: https://itunes.apple.com/de/podcast/space-tourist/id1454308732?l=en
+        href: https://itunes.apple.com/de/podcast/space-tourist/id1454308732?l=de
       - name: Stitcher
         href: https://www.stitcher.com/show/space-tourist
 
@@ -53,13 +57,17 @@ shows:
       Hier geht es bald los.
 
     feed: noises/stp/rss.xml
-    href: https://xn--schlsseltechnologie-podcast-l3c.de/
+    href: https://schluesseltechnologie-podcast.de/
 
     covers:
       feed: cover-stp.png
       html: cover-stp.svg
 
-    subscriptions: [] # TODO
+    subscriptions: # TODO: GPodder?, iTunes
+      - name: Fyyd
+        href: https://fyyd.de/podcast/schluesseltechnologie/0
+      - name: Stitcher
+        href: https://www.stitcher.com/show/schlusseltechnologie
 
   pentaradio:
     external: true
