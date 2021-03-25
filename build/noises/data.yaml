@@ -21,7 +21,7 @@ shows:
       - name: GPodder
         href: https://gpodder.net/podcast/gar-nicht-so-einfach
       - name: iTunes
-        href: https://itunes.apple.com/de/podcast/gar-nicht-so-einfach/id1435500811?l=de
+        href: https://podcasts.apple.com/de/podcast/gar-nicht-so-einfach/id1435500811
       - name: Stitcher
         href: https://www.stitcher.com/show/gar-nicht-so-einfach
 
@@ -45,7 +45,7 @@ shows:
       - name: GPodder
         href: https://gpodder.net/podcast/space-tourist
       - name: iTunes
-        href: https://itunes.apple.com/de/podcast/space-tourist/id1454308732?l=de
+        href: https://podcasts.apple.com/de/podcast/space-tourist/id1454308732
       - name: Stitcher
         href: https://www.stitcher.com/show/space-tourist
 
@@ -66,6 +66,8 @@ shows:
     subscriptions: # TODO: GPodder?, iTunes
       - name: Fyyd
         href: https://fyyd.de/podcast/schluesseltechnologie/0
+      - name: iTunes
+        href: https://podcasts.apple.com/de/podcast/schl%C3%BCsseltechnologie/id1559995829
       - name: Stitcher
         href: https://www.stitcher.com/show/schlusseltechnologie
 
