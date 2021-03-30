@@ -19,6 +19,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"html/template"
 	"io/ioutil"
@@ -27,7 +28,6 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
-	"regexp"
 	"strconv"
 	"strings"
 	"time"
@@ -257,7 +257,15 @@ type file struct {
 		FileName  string
 		SizeBytes uint64
 	} `yaml:"-"`
-	LengthSeconds uint `yaml:"-"`
+	LengthSeconds uint      `yaml:"-"`
+	Chapters      []chapter `yaml:"-"`
+}
+
+type chapter struct {
+	StartSeconds float64
+	EndSeconds   float64
+	Title        string
+	URL          string
 }
 
 func compileMarkdown(input string) template.HTML {
@@ -350,7 +358,7 @@ func (f *file) FindDownloads() {
 		{"flac", "FLAC", "audio/flac"},
 	}
 
-	firstPath := ""
+	firstOggPath := ""
 	for _, fmt := range formats {
 		fileName := f.ShowID + "-" + f.Slug + "." + fmt.Extension
 		path := "dl/" + fileName
@@ -362,8 +370,8 @@ func (f *file) FindDownloads() {
 			log.Fatal(err.Error())
 		}
 
-		if firstPath == "" {
-			firstPath = path
+		if (fmt.Extension == "ogg" || fmt.Extension == "opus") && firstOggPath == "" {
+			firstOggPath = path
 		}
 
 		f.Downloads = append(f.Downloads,
@@ -381,20 +389,63 @@ func (f *file) FindDownloads() {
 		)
 	}
 
-	//use ffprobe(1) to determine the duration of the audio file
-	cmd := exec.Command("ffprobe", firstPath)
-	output, err := cmd.CombinedOutput()
+	//use ffprobe(1) to read audio metadata (we use Ogg files for this since
+	//ffprobe only reads chapter URLs reliably from these)
+	cmd := exec.Command("ffprobe", "-v", "quiet", "-of", "json", "-show_chapters", "-show_format", "-show_streams", firstOggPath)
+	cmd.Stderr = os.Stderr
+	output, err := cmd.Output()
 	if err != nil {
 		log.Fatal(err.Error())
 	}
-	match := regexp.MustCompile(`(?m)\s*Duration:\s*([0-9][0-9]):([0-9][0-9]):([0-9][0-9])\.[0-9]+,`).FindStringSubmatch(string(output))
-	if match == nil {
-		log.Fatalf("unexpected output from `ffprobe %s`: %q\n", firstPath, string(output))
+
+	type ffprobeStream struct {
+		CodecType       string            `json:"codec_type"`
+		DurationSecsStr string            `json:"duration"`
+		Tags            map[string]string `json:"tags"`
 	}
-	hours, _ := strconv.ParseUint(match[1], 10, 16)
-	minutes, _ := strconv.ParseUint(match[2], 10, 16)
-	seconds, _ := strconv.ParseUint(match[3], 10, 16)
-	f.LengthSeconds = uint(hours*3600 + minutes*60 + seconds)
+	var data struct {
+		Streams  []ffprobeStream `json:"streams"`
+		Chapters []struct {
+			StartSecsStr string `json:"start_time"`
+			EndSecsStr   string `json:"end_time"`
+			Tags         struct {
+				Title string `json:"title"`
+			} `json:"tags"`
+		} `json:"chapters"`
+	}
+	err = json.Unmarshal(output, &data)
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+
+	var audioStream ffprobeStream
+	for _, stream := range data.Streams {
+		if stream.CodecType == "audio" {
+			audioStream = stream
+			break
+		}
+	}
+	f.LengthSeconds = uint(mustParseFloat(audioStream.DurationSecsStr))
+
+	if len(data.Chapters) > 0 {
+		f.Chapters = make([]chapter, len(data.Chapters))
+		for idx, ch := range data.Chapters {
+			f.Chapters[idx] = chapter{
+				StartSeconds: mustParseFloat(ch.StartSecsStr),
+				EndSeconds:   mustParseFloat(ch.EndSecsStr),
+				Title:        ch.Tags.Title,
+				URL:          audioStream.Tags[fmt.Sprintf("CHAPTER%03dURL", idx+1)],
+			}
+		}
+	}
+}
+
+func mustParseFloat(in string) float64 {
+	val, err := strconv.ParseFloat(in, 10)
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	return val
 }
 
 ////////////////////////////////////////////////////////////////////////////////

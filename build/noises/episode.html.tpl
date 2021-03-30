@@ -48,6 +48,14 @@
         <span>Webplayer nicht vom Browser unterstützt</span>
       </div>
     </audio>
+    {{- if $file.Chapters }}
+    <section>
+      <h3>DEBUG: Chapter marks</h3>
+      {{- range $file.Chapters }}
+      <p><code>{{printf "%g-%g: %q <%s>" .StartSeconds .EndSeconds .Title .URL }}</code></p>
+      {{- end }}
+    </section>
+    {{- end }}
     <section>
       <h3>Download</h3>
       <ul>
