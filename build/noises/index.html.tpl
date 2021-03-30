@@ -27,7 +27,7 @@
     {{- end }}
   </nav>
 
-  <h1>Aktuelle Sendungen</h1>
+  <h1>Alle Sendungen</h1>
 
   {{- range (.Files | reverseFiles) }}
   {{- $show := index $.Shows .ShowID }}

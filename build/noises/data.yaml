@@ -77,12 +77,6 @@ shows:
     covers:
       html: logo-pentaradio.png
 
-  dienstagsdirekt:
-    external: true
-    title: 'MDR Sachsenradio: Dienstags direkt'
-    covers:
-      html: logo-mdr-dienstags-direkt.png
-
   akronymisierbar:
     external: true
     title: "Akronymisierbar"
@@ -90,22 +84,6 @@ shows:
       html: logo-akronymisierbar.jpg
 
 files:
-
-  - show:     pentaradio
-    title:    'Gastbeitrag: Cloud Computing'
-    subtitle: Pentaradio vom 22. Juni 2018
-
-    markdown:
-      description: 'Ich war bei Pentaradio zu Gast und habe versucht, zu umreißen, was ich beruflich mache. Aber die Zeit hat nicht gereicht. **Und wie** sie nicht gereicht hat.'
-      notes: 'Beim C3D2 gibt es [die ganze Folge](https://c3d2.de/news/pentaradio24-20180626.html) zum Herunterladen und Im-Browser-Anhören.'
-
-  - show:     pentaradio
-    title:    'Gastbeitrag: I � Unicode'
-    subtitle: Pentaradio vom 24. Juli 2018
-
-    markdown:
-      description: 'Ich habe mich auf ausführliche und hoffentlich informative Weise darüber beschwert, wie schwer es ist, Software zu finden, die Text richtig darstellen kann.'
-      notes: 'Beim C3D2 gibt es [die ganze Folge](https://c3d2.de/news/pentaradio24-20180724.html) zum Herunterladen und Im-Browser-Anhören.'
 
   - show:    gnse
     episode: 1
@@ -185,14 +163,6 @@ files:
       notes: '**Sendetermin:** 22. Januar 2019, um 21:30 bei Pentaradio auf [coloRadio](https://coloradio.org/site/hoeren/)'
       sources:
         - 'Wikipedia: [CMYK](https://de.wikipedia.org/wiki/CMYK-Farbmodell), [RGB und Varianten](https://de.wikipedia.org/wiki/RGB-Farbraum), [CIELAB](https://de.wikipedia.org/wiki/Lab-Farbraum)'
-
-  - show:     dienstagsdirekt
-    title:    'Gastbeitrag: Safer Internet Day'
-    subtitle: 'MDR "Dienstags Direkt" vom 5. Februar 2019'
-
-    markdown:
-      description: 'Ein Großteil des Lebens spielt sich heute im Internet ab. Allerdings machen wir uns mit der Preisgabe der Daten auch angreifbar. "Sicherheit im Netz" war das Thema einer Diskussionsrunde im MDR Sachsenradio, bei der ich für den CCC Dresden zu Gast war.'
-      notes: 'Beim MDR gibt es [die ganze Folge](https://www.mdr.de/sachsenradio/podcast/audio-956750.html) zum Herunterladen und Im-Browser-Anhören.'
 
   - show: st
     episode: 1
