@@ -23,6 +23,7 @@ import (
 	"html/template"
 	"io/ioutil"
 	"log"
+	"math"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -57,7 +58,8 @@ func main() {
 	if err != nil {
 		log.Fatal(err.Error())
 	}
-	for _, show := range data.Shows {
+	for showID, show := range data.Shows {
+		show.ComputeCopyright(showID, data.Files)
 		show.CompileMarkdown()
 	}
 	for _, file := range data.Files {
@@ -203,6 +205,11 @@ type show struct {
 		Name string `yaml:"name"`
 		URL  string `yaml:"href"`
 	}
+
+	Copyright struct {
+		MinYear int
+		MaxYear int
+	} `yaml:"-"`
 }
 
 type file struct {
@@ -261,6 +268,31 @@ func compileMarkdown(input string) template.HTML {
 	out = strings.TrimPrefix(out, "<p>")
 	out = strings.TrimSuffix(out, "</p>")
 	return template.HTML(out)
+}
+
+func (s *show) ComputeCopyright(showID string, allFiles []*file) {
+	min := math.MaxInt32
+	max := math.MinInt32
+	for _, f := range allFiles {
+		if showID != f.ShowID {
+			continue
+		}
+		year := time.Unix(int64(f.PublicationTimeUnix), 0).Year()
+		if min > year {
+			min = year
+		}
+		if max < year {
+			max = year
+		}
+	}
+	if min > max { //no files for this show
+		currentYear := time.Now().Year()
+		s.Copyright.MinYear = currentYear
+		s.Copyright.MaxYear = currentYear
+	} else {
+		s.Copyright.MinYear = min
+		s.Copyright.MaxYear = max
+	}
 }
 
 func (s *show) CompileMarkdown() {
