@@ -42,7 +42,7 @@
           {{- $show.Title}} #{{.Episode}} vom {{.PublicationTimeUnix | unixTimeToReadableDate }}
         {{- end -}}
       </h2>
-      <h1>{{.Title}}</h1>
+      <h1><a href="/noises/{{.ShowID}}/{{.Slug}}">{{.Title}}</a></h1>
       {{- if .HTML.Description }}
         <p>{{.HTML.Description}}</p>
       {{- end }}

@@ -32,15 +32,23 @@
   {{- $show := index $.Shows .ShowID }}
   {{- if or .Episode $show.ExternalURL }}
     <article class="episode-{{.ShowID}}">
-      <img class="coverart" src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
+      <a class="coverart" href="/noises/{{.ShowID}}/{{.Slug}}">
+        <img src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
+      </a>
       <h2>
         {{- if .Subtitle}}
           {{- .Subtitle}}
-        {{- else}}
-          {{- $show.Title}} #{{.Episode}} vom {{.PublicationTimeUnix | unixTimeToReadableDate }}
+        {{- else -}}
+          <a href="/noises/{{.ShowID}}">{{$show.Title}}</a> #{{.Episode}} vom {{.PublicationTimeUnix | unixTimeToReadableDate }}
         {{- end -}}
       </h2>
-      <h1>{{.Title}}</h1>
+      <h1>
+        {{- if $show.ExternalURL -}}
+          {{.Title}}
+        {{- else -}}
+          <a href="/noises/{{.ShowID}}/{{.Slug}}">{{.Title}}</a>
+        {{- end -}}
+      </h1>
       {{- if .HTML.Description }}
         <p>{{.HTML.Description}}</p>
       {{- end }}

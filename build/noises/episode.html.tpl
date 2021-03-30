@@ -18,12 +18,14 @@
     </div>
   </nav>
   <header>
-    <img class="coverart" src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
+    <a class="coverart" href="/noises/{{$file.ShowID}}/">
+      <img src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
+    </a>
     <h2>
       {{- if $file.Subtitle}}
         {{- $file.Subtitle}}
-      {{- else}}
-        {{- $show.Title}} #{{$file.Episode}} vom {{$file.PublicationTimeUnix | unixTimeToReadableDate }}
+      {{- else -}}
+        <a href="/noises/{{$file.ShowID}}">{{$show.Title}}</a> #{{$file.Episode}} vom {{$file.PublicationTimeUnix | unixTimeToReadableDate }}
       {{- end -}}
     </h2>
     <h1>{{$file.Title}}</h1>
