@@ -17,7 +17,6 @@
 
   <nav class="shows">
     {{- range $showID, $show := .Shows }}
-    {{- if ne $showID "stp" }}
     {{- if not $show.IsExternal }}
       <a href="/noises/{{$showID}}/" class="episode-{{$showID}}">
         <img class="coverart" src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
@@ -26,14 +25,13 @@
       </a>
     {{- end }}
     {{- end }}
-    {{- end }}
   </nav>
 
   <h1>Aktuelle Sendungen</h1>
 
   {{- range (.Files | reverseFiles) }}
   {{- $show := index $.Shows .ShowID }}
-  {{- if and (ne .ShowID "stp") (or .Episode $show.IsExternal) }}
+  {{- if or .Episode $show.IsExternal }}
     <article class="episode-{{.ShowID}}">
       <img class="coverart" src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
       <h2>
