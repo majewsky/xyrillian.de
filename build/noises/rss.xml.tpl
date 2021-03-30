@@ -45,7 +45,13 @@
       <enclosure length="{{.SizeBytes}}" url="https://xyrillian.de/dl/{{.FileName}}" type="{{.MIMEType}}"/>
     {{- end }}
     {{- end }}
-    <guid>https://xyrillian.de/id/{{.ShowID}}/{{if .Episode}}{{printf "%03d" .EpisodeAsInt}}{{else}}{{.Slug}}{{end}}/</guid>
+    <guid>
+      {{- if .LegacyGUID -}}
+        https://xyrillian.de/id/{{.ShowID}}/{{if .Episode}}{{printf "%03d" .EpisodeAsInt}}{{else}}{{.Slug}}{{end}}/
+      {{- else -}}
+        https://xyrillian.de/id/{{.ShowID}}/{{if .Episode}}{{printf "%03d-" .EpisodeAsInt}}{{end}}{{.Slug}}/
+      {{- end -}}
+    </guid>
     <pubDate>{{.PublicationTimeUnix | unixTimeToRFC1123 }}</pubDate>
     <itunes:duration>{{.LengthSeconds | readableLengthSeconds}}</itunes:duration>
     <itunes:explicit>no</itunes:explicit>

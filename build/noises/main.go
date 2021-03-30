@@ -222,6 +222,7 @@ type file struct {
 	Slug         string `yaml:"slug"`
 
 	PublicationTimeUnix uint64 `yaml:"pubtime"`
+	LegacyGUID          bool   `yaml:"legacyGUID"`
 
 	Markdown struct {
 		Description string   `yaml:"description"`

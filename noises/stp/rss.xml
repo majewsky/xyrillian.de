@@ -48,7 +48,7 @@
       <enclosure length="648421" url="https://xyrillian.de/dl/stp-feed-testfolge.mp3" type="audio/mpeg"/>
       <enclosure length="343224" url="https://xyrillian.de/dl/stp-feed-testfolge.ogg" type="audio/ogg"/>
       <enclosure length="606056" url="https://xyrillian.de/dl/stp-feed-testfolge.opus" type="audio/opus"/>
-    <guid>https://xyrillian.de/id/stp/000/</guid>
+    <guid>https://xyrillian.de/id/stp/000-feed-testfolge/</guid>
     <pubDate>Tue, 23 Mar 2021 20:39:09 GMT</pubDate>
     <itunes:duration>00:20</itunes:duration>
     <itunes:explicit>no</itunes:explicit>

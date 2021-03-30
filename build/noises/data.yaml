@@ -93,6 +93,7 @@ files:
     slug:    001-modem-dialup-sound
     title:   Wenn Computer sich die Hand reichen
     pubtime: 1535479200 # 2018-08-28
+    legacyGUID: true
 
     markdown:
       description: 'Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?'
@@ -120,6 +121,7 @@ files:
     slug:    002-time
     title:   Haben Sie eine Sekunde?
     pubtime: 1537567200 # 2018-09-22
+    legacyGUID: true
 
     markdown:
       description: 'Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.'
@@ -145,6 +147,7 @@ files:
     title:   Der Herzschlag eines ganzen Kontinents
     pubtime: 1540321200 # 2018-10-23
     music:   *music-like-gnse-002
+    legacyGUID: true
 
     markdown:
       description: 'Auch wenn Großkraftwerke ausfallen, gehen in Deutschland nicht die Lichter aus, dank einer ausgeklügelten Kette von automatischen und manuellen Regelungsmechanismen.'
@@ -160,6 +163,7 @@ files:
     title:   Ein Kessel Buntes
     pubtime: 1548183600 # 2019-01-22
     music:   *music-like-gnse-002
+    legacyGUID: true
 
     markdown:
       description: 'Wer möchte, dass das Bild auf dem Monitor genauso schön aussieht wie nachher auf dem Ausdruck, sollte sich ein paar Gedanken über den richtigen Farbraum machen.'
@@ -172,6 +176,7 @@ files:
     slug: 001-eigenbaukombinat-halle
     title: Eigenbaukombinat Halle
     pubtime: 1551132000 # 2019-02-25
+    legacyGUID: true
 
     markdown:
       description: 'Meine Reise durch die deutsche Hackerspace-Landschaft beginnt beim Junghackertag im EBK in Halle an der Saale.'
@@ -205,6 +210,7 @@ files:
     slug: 002-cbase-berlin
     title: c-base Berlin
     pubtime: 1561478400 # 2019-06-25
+    legacyGUID: true
 
     markdown:
       description: 'Im Untergrund von Berlin gibt es viel zu entdecken: U-Bahn-Schächte, Weltkriegsbunker... und eine Raumstation.'
