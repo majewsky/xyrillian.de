@@ -46,7 +46,7 @@
       {{- if .HTML.Description }}
         <p>{{.HTML.Description}}</p>
       {{- end }}
-      {{- if $show.IsExternal }}
+      {{- if $show.ExternalURL }}
         {{- if .HTML.Notes }}
           <p>{{.HTML.Notes}}</p>
         {{- end }}

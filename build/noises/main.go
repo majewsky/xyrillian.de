@@ -43,6 +43,7 @@ func main() {
 	}
 
 	var data struct {
+		FeaturedShows    []string         `yaml:"featuredShows"`
 		Shows            map[string]*show `yaml:"shows"`
 		Files            []*file          `yaml:"files"`
 		CurrentShowID    string           `yaml:"-"`
@@ -107,7 +108,7 @@ func main() {
 		log.Fatal(err.Error())
 	}
 	for showID, show := range data.Shows {
-		if show.IsExternal {
+		if show.ExternalURL != "" {
 			continue
 		}
 		dirPath := filepath.Join("noises", showID)
@@ -138,7 +139,7 @@ func main() {
 	}
 	for idx, file := range data.Files {
 		show := data.Shows[file.ShowID]
-		if show.IsExternal || file.Episode == nil {
+		if show.ExternalURL != "" || file.Episode == nil {
 			continue
 		}
 		dirPath := filepath.Join("noises", file.ShowID, file.Slug)
@@ -194,7 +195,7 @@ type show struct {
 	Category        string        `yaml:"category"` //iTunes podcast category, e.g. "Technology"
 	FeedPath        string        `yaml:"feed"`
 	URL             string        `yaml:"href"`
-	IsExternal      bool          `yaml:"external"`
+	ExternalURL     string        `yaml:"external"`
 
 	Covers struct {
 		ForFeed string `yaml:"feed"`

@@ -16,14 +16,13 @@
   <h1>Sendereihen</h1>
 
   <nav class="shows">
-    {{- range $showID, $show := .Shows }}
-    {{- if not $show.IsExternal }}
-      <a href="/noises/{{$showID}}/" class="episode-{{$showID}}">
+    {{- range $showID := .FeaturedShows }}
+    {{- $show := index $.Shows $showID }}
+      <a href="{{if $show.ExternalURL}}{{$show.ExternalURL}}{{else}}/noises/{{$showID}}/{{end}}" class="episode-{{$showID}}">
         <img class="coverart" src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
         <h2>{{$show.Title}}</h2>
         <p>{{$show.Subtitle}}</p>
       </a>
-    {{- end }}
     {{- end }}
   </nav>
 
@@ -31,7 +30,7 @@
 
   {{- range (.Files | reverseFiles) }}
   {{- $show := index $.Shows .ShowID }}
-  {{- if or .Episode $show.IsExternal }}
+  {{- if or .Episode $show.ExternalURL }}
     <article class="episode-{{.ShowID}}">
       <img class="coverart" src="/res/{{$show.Covers.ForHTML}}" alt="Cover-Art für: {{$show.Title}}">
       <h2>
@@ -45,7 +44,7 @@
       {{- if .HTML.Description }}
         <p>{{.HTML.Description}}</p>
       {{- end }}
-      {{- if $show.IsExternal }}
+      {{- if $show.ExternalURL }}
         {{- if .HTML.Notes }}
           <p>{{.HTML.Notes}}</p>
         {{- end }}
