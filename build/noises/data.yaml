@@ -249,10 +249,11 @@ files:
       notes: 'Die ganze Folge gibt es [auf akronymisier.bar](https://akronymisier.bar/episodes/032).'
 
   - show: stp
-    episode: null # bonus
+    episode: 0
     slug: feed-testfolge
     title: Feed-Test
     pubtime: 1616531949 # 2021-03-23
 
     markdown:
-      description: "Hier ist Platz für die Shownotes."
+      description: "Hier ist Platz für eine kurze Beschreibung der Episode."
+      shownotes: true # in file

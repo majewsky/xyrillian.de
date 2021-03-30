@@ -26,19 +26,29 @@
   <itunes:category text="Technology"/>
   <itunes:explicit>no</itunes:explicit>
   <item>
-    <itunes:episodeType>bonus</itunes:episodeType>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>Feed-Test</itunes:title>
+    <itunes:episode>0</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>Feed-Test</title>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
-    <itunes:summary>Hier ist Platz für die Shownotes.</itunes:summary>
-    <description>Hier ist Platz für die Shownotes.</description>
-    <content:encoded>&lt;p&gt;Hier ist Platz für die Shownotes.&lt;/p&gt;</content:encoded>
+    <itunes:summary>Hier ist Platz für eine kurze Beschreibung der Episode.</itunes:summary>
+    <description>Hier ist Platz für eine kurze Beschreibung der Episode.</description>
+    <content:encoded>&lt;p&gt;Hier ist Platz für eine kurze Beschreibung der Episode.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Abschnitt 1:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Punkt 1.1&lt;/li&gt;
+&lt;li&gt;Punkt 1.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Abschnitt 2:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Punkt 2.1&lt;/li&gt;
+&lt;li&gt;Punkt 2.2&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
       <enclosure length="648421" url="https://xyrillian.de/dl/stp-feed-testfolge.mp3" type="audio/mpeg"/>
       <enclosure length="343224" url="https://xyrillian.de/dl/stp-feed-testfolge.ogg" type="audio/ogg"/>
       <enclosure length="606056" url="https://xyrillian.de/dl/stp-feed-testfolge.opus" type="audio/opus"/>
-    <guid>https://xyrillian.de/id/stp/feed-testfolge/</guid>
+    <guid>https://xyrillian.de/id/stp/000/</guid>
     <pubDate>Tue, 23 Mar 2021 20:39:09 GMT</pubDate>
     <itunes:duration>00:20</itunes:duration>
     <itunes:explicit>no</itunes:explicit>

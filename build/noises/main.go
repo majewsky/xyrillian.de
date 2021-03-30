@@ -227,13 +227,14 @@ type file struct {
 		Description string   `yaml:"description"`
 		Notes       string   `yaml:"notes"`
 		Sources     []string `yaml:"sources"`
+		ShowNotes   bool     `yaml:"shownotes"`
 	} `yaml:"markdown"`
 
 	HTML struct {
-		Description                 template.HTML
-		Notes                       template.HTML
-		Sources                     []template.HTML
-		DescriptionIncludingSources template.HTML
+		Description template.HTML
+		Notes       template.HTML
+		Sources     []template.HTML
+		ShowNotes   template.HTML
 	} `yaml:"-"`
 
 	RSS struct {
@@ -317,6 +318,15 @@ func (f *file) CompileMarkdown() {
 		f.RSS.ShowNotes += fmt.Sprintf(`<h2>Quellen und Links</h2><ul><li>%s</li></ul>`,
 			strings.Join(rssSources, `</li><li>`),
 		)
+	}
+
+	if f.Markdown.ShowNotes {
+		buf, err := ioutil.ReadFile(fmt.Sprintf("build/noises/shownotes/%s/%s.md", f.ShowID, f.Slug))
+		if err != nil {
+			log.Fatal(err.Error())
+		}
+		f.HTML.ShowNotes = compileMarkdown(string(buf))
+		f.RSS.ShowNotes += `<h2>Shownotes</h2>` + string(f.HTML.ShowNotes)
 	}
 }
 

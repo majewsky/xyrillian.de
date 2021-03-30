@@ -55,6 +55,12 @@
       </ul>
     </section>
   {{- end }}
+  {{- if $file.HTML.ShowNotes }}
+    <section>
+      <h3>Shownotes</h3>
+      <p>{{- $file.HTML.ShowNotes }}</p>
+    </section>
+  {{- end }}
   {{- if $file.HTML.Sources }}
     <section>
       <h3>Quellen</h3>
