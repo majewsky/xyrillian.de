@@ -192,6 +192,7 @@ type show struct {
 	Subtitle        string        `yaml:"subtitle"`
 	Description     string        `yaml:"description"`
 	DescriptionHTML template.HTML `yaml:"-"`
+	ExtraAuthor     string        `yaml:"extraAuthor"`
 	Category        string        `yaml:"category"` //iTunes podcast category, e.g. "Technology"
 	FeedPath        string        `yaml:"feed"`
 	URL             string        `yaml:"href"`

@@ -53,10 +53,11 @@ shows:
 
   stp:
     title:       Schlüsseltechnologie
-    subtitle:    Coming soon...
+    subtitle:    Computertechnik, von Grund auf erklärt
+    extraAuthor: ttimeless
     category:    Technology
     description: |
-      Hier geht es bald los.
+      Die IT hat unser Leben in den letzten Jahrzehnten von Grund auf verändert. Aber wie funktioniert sie wirklich? Das möchte ttimeless mal erklärt bekommen. Zum Glück hat Xyrill Antworten.
 
     feed: noises/stp/rss.xml
     href: https://schluesseltechnologie-podcast.de/
@@ -263,3 +264,14 @@ files:
     markdown:
       description: "Hier ist Platz für eine kurze Beschreibung der Episode."
       shownotes: true # in file
+
+    music:
+      - artist: MastersDisaster
+        title: Switch ON - Livingroom (Sample)
+        href: https://freesound.org/people/MastersDisaster/sounds/218115/
+      - artist: Konrad Zuse
+        title: HR-Fernsehbericht von 1958
+        href: https://www.youtube.com/watch?v=n8Yo-wD-QTo&t=129s
+      - artist: Donald Knuth
+        title: Lehrveranstaltung von 1981
+        href: https://www.youtube.com/watch?v=jbrMBOF61e0&t=9s

@@ -75,7 +75,7 @@
   {{- end }}
   {{- if $file.Music }}
     <section>
-      <h3>Musiktitel<span>&nbsp;in Abspielreihenfolge</span></h3>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
       <ul>
         {{- range $file.Music }}
           <li><a href="{{.URL}}">{{.Artist}}: &quot;{{.Title}}&quot;</a>{{if .Variant}} ({{.Variant}}){{end}}</li>

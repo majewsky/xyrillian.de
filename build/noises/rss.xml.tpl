@@ -7,7 +7,7 @@
   <link>{{$show.URL}}</link>
   <atom:link href="https://xyrillian.de/{{$show.FeedPath}}" rel="self" type="application/rss+xml" />
   <language>de</language>
-  <copyright>&#xA9; {{$c.MinYear}}{{if ne $c.MinYear $c.MaxYear}}-{{$c.MaxYear}}{{end}} Stefan Majewsky</copyright>
+  <copyright>&#xA9; {{$c.MinYear}}{{if ne $c.MinYear $c.MaxYear}}-{{$c.MaxYear}}{{end}} Stefan Majewsky{{if $show.ExtraAuthor}}, {{$show.ExtraAuthor}}{{end}}</copyright>
   <itunes:subtitle>{{$show.Subtitle}}</itunes:subtitle>
   <itunes:author>Xyrillian Noises</itunes:author>
   <itunes:summary>{{$show.Description}}</itunes:summary>
