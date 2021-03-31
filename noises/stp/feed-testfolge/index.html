@@ -32,11 +32,18 @@
         <span>Webplayer nicht vom Browser unterstützt</span>
       </div>
     </audio>
-    <section>
-      <h3>DEBUG: Chapter marks</h3>
-      <p><code>0-12: &#34;Erstes Kapitel&#34; &lt;&gt;</code></p>
-      <p><code>12-20.797: &#34;Zweites Kapitel&#34; &lt;https://example.org&gt;</code></p>
-    </section>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="12">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Erstes Kapitel</span>
+      </div>
+      <div class="chapter" data-start="12" data-end="20.797">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:12</span>
+        <span class="chapter-title"><a href="https://example.org">Zweites Kapitel</a></span>
+      </div>
+    </div>
     <section>
       <h3>Download</h3>
       <ul>
@@ -70,5 +77,6 @@
   <footer class="legal">
     <a href="/legal/de/">Impressum/Datenschutz</a>
   </footer>
+  <script async src="/res/chapter-marks.js"></script>
 </body>
 </html>

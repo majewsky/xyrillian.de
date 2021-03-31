@@ -33,14 +33,33 @@
         <span>Webplayer nicht vom Browser unterstützt</span>
       </div>
     </audio>
-    <section>
-      <h3>DEBUG: Chapter marks</h3>
-      <p><code>0-59: &#34;Intro&#34; &lt;&gt;</code></p>
-      <p><code>59-115: &#34;Lexikon: Was ist ein Hackerspace?&#34; &lt;&gt;</code></p>
-      <p><code>115-274: &#34;Vorstellung Eigenbaukombinat&#34; &lt;&gt;</code></p>
-      <p><code>274-536: &#34;Postkarte: Junghackertag&#34; &lt;&gt;</code></p>
-      <p><code>536-604.877: &#34;Outro&#34; &lt;&gt;</code></p>
-    </section>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="59">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="59" data-end="115">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:59</span>
+        <span class="chapter-title">Lexikon: Was ist ein Hackerspace?</span>
+      </div>
+      <div class="chapter" data-start="115" data-end="274">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">01:55</span>
+        <span class="chapter-title">Vorstellung Eigenbaukombinat</span>
+      </div>
+      <div class="chapter" data-start="274" data-end="536">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">04:34</span>
+        <span class="chapter-title">Postkarte: Junghackertag</span>
+      </div>
+      <div class="chapter" data-start="536" data-end="604.877">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">08:56</span>
+        <span class="chapter-title">Outro</span>
+      </div>
+    </div>
     <section>
       <h3>Download</h3>
       <ul>
@@ -68,5 +87,6 @@
   <footer class="legal">
     <a href="/legal/de/">Impressum/Datenschutz</a>
   </footer>
+  <script async src="/res/chapter-marks.js"></script>
 </body>
 </html>

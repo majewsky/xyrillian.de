@@ -34,18 +34,53 @@
         <span>Webplayer nicht vom Browser unterstützt</span>
       </div>
     </audio>
-    <section>
-      <h3>DEBUG: Chapter marks</h3>
-      <p><code>0-15: &#34;Intro&#34; &lt;&gt;</code></p>
-      <p><code>15-71: &#34;Bedrucktes ist allgegenwärtig&#34; &lt;&gt;</code></p>
-      <p><code>71-169: &#34;CMYK: Subtraktive Farbmischung&#34; &lt;&gt;</code></p>
-      <p><code>169-227: &#34;RGB: Additive Farbmischung&#34; &lt;&gt;</code></p>
-      <p><code>227-306: &#34;Standardisierung von Farbräumen&#34; &lt;&gt;</code></p>
-      <p><code>306-357: &#34;Farbwahrnehmung des menschlichen Auges&#34; &lt;&gt;</code></p>
-      <p><code>357-400: &#34;Wahrnehmungsspezifischer Farbraum CIELAB&#34; &lt;&gt;</code></p>
-      <p><code>400-461: &#34;Warum die Wahl des Farbraumes wichtig ist&#34; &lt;&gt;</code></p>
-      <p><code>461-491.821: &#34;Outro&#34; &lt;&gt;</code></p>
-    </section>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="15">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="15" data-end="71">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:15</span>
+        <span class="chapter-title">Bedrucktes ist allgegenwärtig</span>
+      </div>
+      <div class="chapter" data-start="71" data-end="169">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">01:11</span>
+        <span class="chapter-title">CMYK: Subtraktive Farbmischung</span>
+      </div>
+      <div class="chapter" data-start="169" data-end="227">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">02:49</span>
+        <span class="chapter-title">RGB: Additive Farbmischung</span>
+      </div>
+      <div class="chapter" data-start="227" data-end="306">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">03:47</span>
+        <span class="chapter-title">Standardisierung von Farbräumen</span>
+      </div>
+      <div class="chapter" data-start="306" data-end="357">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">05:06</span>
+        <span class="chapter-title">Farbwahrnehmung des menschlichen Auges</span>
+      </div>
+      <div class="chapter" data-start="357" data-end="400">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">05:57</span>
+        <span class="chapter-title">Wahrnehmungsspezifischer Farbraum CIELAB</span>
+      </div>
+      <div class="chapter" data-start="400" data-end="461">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">06:40</span>
+        <span class="chapter-title">Warum die Wahl des Farbraumes wichtig ist</span>
+      </div>
+      <div class="chapter" data-start="461" data-end="491.821">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">07:41</span>
+        <span class="chapter-title">Outro</span>
+      </div>
+    </div>
     <section>
       <h3>Download</h3>
       <ul>
@@ -72,5 +107,6 @@
   <footer class="legal">
     <a href="/legal/de/">Impressum/Datenschutz</a>
   </footer>
+  <script async src="/res/chapter-marks.js"></script>
 </body>
 </html>

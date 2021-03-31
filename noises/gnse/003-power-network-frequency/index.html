@@ -34,13 +34,28 @@
         <span>Webplayer nicht vom Browser unterstützt</span>
       </div>
     </audio>
-    <section>
-      <h3>DEBUG: Chapter marks</h3>
-      <p><code>0-67: &#34;Intro&#34; &lt;&gt;</code></p>
-      <p><code>67-283: &#34;Selbsttätige Steuerung der Netzfrequenz&#34; &lt;&gt;</code></p>
-      <p><code>283-381: &#34;Ein Großkraftwerk fällt aus&#34; &lt;&gt;</code></p>
-      <p><code>381-454.256: &#34;Outro&#34; &lt;&gt;</code></p>
-    </section>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="67">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="67" data-end="283">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">01:07</span>
+        <span class="chapter-title">Selbsttätige Steuerung der Netzfrequenz</span>
+      </div>
+      <div class="chapter" data-start="283" data-end="381">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">04:43</span>
+        <span class="chapter-title">Ein Großkraftwerk fällt aus</span>
+      </div>
+      <div class="chapter" data-start="381" data-end="454.256">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">06:21</span>
+        <span class="chapter-title">Outro</span>
+      </div>
+    </div>
     <section>
       <h3>Download</h3>
       <ul>
@@ -69,5 +84,6 @@
   <footer class="legal">
     <a href="/legal/de/">Impressum/Datenschutz</a>
   </footer>
+  <script async src="/res/chapter-marks.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 @media(max-width:800px) {
+  width: 20vw;
   body.noises div.player audio {
     /* do not use the width of the audio controls; the actual value does not
      * matter because the flex container makes the <audio> grow/shrink to fit
@@ -168,6 +169,57 @@ body.noises {
       color: #CCC;
       line-height: 1rem;
       font-size: 0.8rem;
+    }
+  }
+
+  div#chapters {
+    display: none; /* this gets overridden by JS */
+    margin: 1rem 0;
+
+    div.chapter {
+      display: flex;
+      margin: 0.5rem 0;
+
+      & > * {
+        display: block;
+        flex: none;
+      }
+
+      & > div.chapter-progress {
+        @include card-style();
+        width: 20vw;
+        max-width: 120px; /* 20% of 800px */
+        position: relative;
+
+        & > div.chapter-progress-filler {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 0%; /* this gets overridden by JS */
+          background: var(--highlight-color);
+          opacity: 50%;
+        }
+      }
+
+      & > span.chapter-start {
+        width: 5rem;
+        text-align: center;
+
+        color: blue;
+        cursor: pointer;
+      }
+
+      & > span.chapter-title {
+        flex: 1;
+      }
+
+      &.current > div.chapter-progress > div.chapter-progress-filler {
+        opacity: 100%;
+      }
+      &.current > span.chapter-title {
+        font-weight: bold;
+      }
     }
   }
 

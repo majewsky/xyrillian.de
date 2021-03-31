@@ -33,13 +33,28 @@
         <span>Webplayer nicht vom Browser unterstützt</span>
       </div>
     </audio>
-    <section>
-      <h3>DEBUG: Chapter marks</h3>
-      <p><code>0-52: &#34;Intro&#34; &lt;&gt;</code></p>
-      <p><code>52-318: &#34;Postkarte: Die große Antenne&#34; &lt;&gt;</code></p>
-      <p><code>318-425: &#34;Space-Lexikon: Hackerspaces als Medienhäuser&#34; &lt;&gt;</code></p>
-      <p><code>425-474.96: &#34;Outro&#34; &lt;&gt;</code></p>
-    </section>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="52">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="52" data-end="318">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:52</span>
+        <span class="chapter-title">Postkarte: Die große Antenne</span>
+      </div>
+      <div class="chapter" data-start="318" data-end="425">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">05:18</span>
+        <span class="chapter-title">Space-Lexikon: Hackerspaces als Medienhäuser</span>
+      </div>
+      <div class="chapter" data-start="425" data-end="474.96">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">07:05</span>
+        <span class="chapter-title">Outro</span>
+      </div>
+    </div>
     <section>
       <h3>Download</h3>
       <ul>
@@ -69,5 +84,6 @@
   <footer class="legal">
     <a href="/legal/de/">Impressum/Datenschutz</a>
   </footer>
+  <script async src="/res/chapter-marks.js"></script>
 </body>
 </html>

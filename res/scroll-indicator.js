@@ -1,3 +1,8 @@
+/*******************************************************************************
+* Copyright 2017 Stefan Majewsky <majewsky@gmx.net>
+* SPDX-License-Identifier: GPL-3.0
+*******************************************************************************/
+
 (function() {
   var si = document.querySelector(".scroll-indicator");
   var onscroll = function() {

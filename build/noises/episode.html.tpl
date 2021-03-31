@@ -49,12 +49,15 @@
       </div>
     </audio>
     {{- if $file.Chapters }}
-    <section>
-      <h3>DEBUG: Chapter marks</h3>
+    <div id="chapters">
       {{- range $file.Chapters }}
-      <p><code>{{printf "%g-%g: %q <%s>" .StartSeconds .EndSeconds .Title .URL }}</code></p>
+      <div class="chapter" data-start="{{.StartSeconds}}" data-end="{{.EndSeconds}}">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">{{.StartSeconds | floatToUint | readableLengthSeconds }}</span>
+        <span class="chapter-title">{{if .URL}}<a href="{{.URL}}">{{.Title}}</a>{{else}}{{.Title}}{{end}}</span>
+      </div>
       {{- end }}
-    </section>
+    </div>
     {{- end }}
     <section>
       <h3>Download</h3>
@@ -95,5 +98,6 @@
   <footer class="legal">
     <a href="/legal/de/">Impressum/Datenschutz</a>
   </footer>
+  <script async src="/res/chapter-marks.js"></script>
 </body>
 </html>

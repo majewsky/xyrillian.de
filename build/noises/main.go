@@ -72,6 +72,7 @@ func main() {
 	}
 
 	templateFuncs := template.FuncMap{
+		"floatToUint":            floatToUint,
 		"reverseFiles":           reverseFiles,
 		"readableFileSize":       readableFileSize,
 		"readableLengthSeconds":  readableLengthSeconds,
@@ -450,6 +451,10 @@ func mustParseFloat(in string) float64 {
 
 ////////////////////////////////////////////////////////////////////////////////
 // template helper functions
+
+func floatToUint(x float64) uint {
+	return uint(x)
+}
 
 func reverseFiles(in []*file) (out []*file) {
 	out = make([]*file, len(in))

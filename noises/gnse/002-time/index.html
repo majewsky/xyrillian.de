@@ -34,14 +34,33 @@
         <span>Webplayer nicht vom Browser unterstützt</span>
       </div>
     </audio>
-    <section>
-      <h3>DEBUG: Chapter marks</h3>
-      <p><code>0-28: &#34;Intro&#34; &lt;&gt;</code></p>
-      <p><code>28-88: &#34;Schaltjahre&#34; &lt;&gt;</code></p>
-      <p><code>88-281: &#34;Schaltsekunden&#34; &lt;&gt;</code></p>
-      <p><code>281-444: &#34;Zeitzonen in Deutschland&#34; &lt;&gt;</code></p>
-      <p><code>444-518.108: &#34;Outro&#34; &lt;&gt;</code></p>
-    </section>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="28">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="28" data-end="88">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:28</span>
+        <span class="chapter-title">Schaltjahre</span>
+      </div>
+      <div class="chapter" data-start="88" data-end="281">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">01:28</span>
+        <span class="chapter-title">Schaltsekunden</span>
+      </div>
+      <div class="chapter" data-start="281" data-end="444">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">04:41</span>
+        <span class="chapter-title">Zeitzonen in Deutschland</span>
+      </div>
+      <div class="chapter" data-start="444" data-end="518.108">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">07:24</span>
+        <span class="chapter-title">Outro</span>
+      </div>
+    </div>
     <section>
       <h3>Download</h3>
       <ul>
@@ -69,5 +88,6 @@
   <footer class="legal">
     <a href="/legal/de/">Impressum/Datenschutz</a>
   </footer>
+  <script async src="/res/chapter-marks.js"></script>
 </body>
 </html>
