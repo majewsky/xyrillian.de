@@ -45,6 +45,10 @@
 &lt;li&gt;Punkt 2.1&lt;/li&gt;
 &lt;li&gt;Punkt 2.2&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Erstes Kapitel"  />
+          <chapter start="00:00:12" title="Zweites Kapitel" href="https://example.org" />
+      </chapters>
       <enclosure length="648421" url="https://xyrillian.de/dl/stp-feed-testfolge.mp3" type="audio/mpeg"/>
       <enclosure length="343224" url="https://xyrillian.de/dl/stp-feed-testfolge.ogg" type="audio/ogg"/>
       <enclosure length="606056" url="https://xyrillian.de/dl/stp-feed-testfolge.opus" type="audio/opus"/>

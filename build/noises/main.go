@@ -76,6 +76,7 @@ func main() {
 		"reverseFiles":           reverseFiles,
 		"readableFileSize":       readableFileSize,
 		"readableLengthSeconds":  readableLengthSeconds,
+		"startSecondsToHHMMSS":   startSecondsToHHMMSS,
 		"unixTimeToRFC1123":      unixTimeToRFC1123,
 		"unixTimeToReadableDate": unixTimeToReadableDate,
 	}
@@ -471,6 +472,13 @@ func readableFileSize(sizeBytes uint64) string {
 
 func readableLengthSeconds(lengthSeconds uint) string {
 	return fmt.Sprintf("%02d:%02d", lengthSeconds/60, lengthSeconds%60)
+}
+
+func startSecondsToHHMMSS(startSecondsFloat float64) string {
+	startSeconds := uint(startSecondsFloat)
+	startMinutes := startSeconds / 60
+	startHours := startMinutes / 60
+	return fmt.Sprintf("%02d:%02d:%02d", startHours, startMinutes%60, startSeconds%60)
 }
 
 func unixTimeToRFC1123(in uint64) string {

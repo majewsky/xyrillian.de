@@ -39,6 +39,10 @@ Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. O
     <itunes:summary>Keine ganze Folge, sondern nur eine Zugabe.</itunes:summary>
     <description>Keine ganze Folge, sondern nur eine Zugabe.</description>
     <content:encoded>&lt;p&gt;Keine ganze Folge, sondern nur eine Zugabe.&lt;/p&gt;&lt;h2&gt;Quellen und Links&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Meinen neuen Podcast findet ihr auf &lt;a href=&#34;https://xyrillian.de/noises&#34;&gt;https://xyrillian.de/noises&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Ankündigung: Neuer Podcast &#34;Space Tourist&#34;" href="https://xyrillian.de/noises/st/" />
+          <chapter start="00:00:48" title="Outtakes"  />
+      </chapters>
       <enclosure length="3517838" url="https://xyrillian.de/dl/gnse-outtakes-01.mp3" type="audio/mpeg"/>
       <enclosure length="3754414" url="https://xyrillian.de/dl/gnse-outtakes-01.ogg" type="audio/ogg"/>
       <enclosure length="1540336" url="https://xyrillian.de/dl/gnse-outtakes-01.opus" type="audio/opus"/>
@@ -58,6 +62,17 @@ Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. O
     <itunes:summary>Wer möchte, dass das Bild auf dem Monitor genauso schön aussieht wie nachher auf dem Ausdruck, sollte sich ein paar Gedanken über den richtigen Farbraum machen.</itunes:summary>
     <description>Wer möchte, dass das Bild auf dem Monitor genauso schön aussieht wie nachher auf dem Ausdruck, sollte sich ein paar Gedanken über den richtigen Farbraum machen.</description>
     <content:encoded>&lt;p&gt;Wer möchte, dass das Bild auf dem Monitor genauso schön aussieht wie nachher auf dem Ausdruck, sollte sich ein paar Gedanken über den richtigen Farbraum machen.&lt;/p&gt;&lt;h2&gt;Quellen und Links&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Wikipedia: &lt;a href=&#34;https://de.wikipedia.org/wiki/CMYK-Farbmodell&#34;&gt;CMYK&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/wiki/RGB-Farbraum&#34;&gt;RGB und Varianten&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/wiki/Lab-Farbraum&#34;&gt;CIELAB&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:00:15" title="Bedrucktes ist allgegenwärtig"  />
+          <chapter start="00:01:11" title="CMYK: Subtraktive Farbmischung"  />
+          <chapter start="00:02:49" title="RGB: Additive Farbmischung"  />
+          <chapter start="00:03:47" title="Standardisierung von Farbräumen"  />
+          <chapter start="00:05:06" title="Farbwahrnehmung des menschlichen Auges"  />
+          <chapter start="00:05:57" title="Wahrnehmungsspezifischer Farbraum CIELAB"  />
+          <chapter start="00:06:40" title="Warum die Wahl des Farbraumes wichtig ist"  />
+          <chapter start="00:07:41" title="Outro"  />
+      </chapters>
       <enclosure length="7168912" url="https://xyrillian.de/dl/gnse-004-color-spaces.mp3" type="audio/mpeg"/>
       <enclosure length="6029864" url="https://xyrillian.de/dl/gnse-004-color-spaces.ogg" type="audio/ogg"/>
       <enclosure length="3419457" url="https://xyrillian.de/dl/gnse-004-color-spaces.opus" type="audio/opus"/>
@@ -77,6 +92,12 @@ Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. O
     <itunes:summary>Auch wenn Großkraftwerke ausfallen, gehen in Deutschland nicht die Lichter aus, dank einer ausgeklügelten Kette von automatischen und manuellen Regelungsmechanismen.</itunes:summary>
     <description>Auch wenn Großkraftwerke ausfallen, gehen in Deutschland nicht die Lichter aus, dank einer ausgeklügelten Kette von automatischen und manuellen Regelungsmechanismen.</description>
     <content:encoded>&lt;p&gt;Auch wenn Großkraftwerke ausfallen, gehen in Deutschland nicht die Lichter aus, dank einer ausgeklügelten Kette von automatischen und manuellen Regelungsmechanismen.&lt;/p&gt;&lt;h2&gt;Quellen und Links&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&#34;https://media.ccc.de/search/?q=Mathias&#43;Dalheimer&#34;&gt;Vorträge von Mathias Dalheimer zum Stromnetz, Smart Meter, etc.&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Wikipedia: &lt;a href=&#34;https://de.wikipedia.org/wiki/Regelleistung_%28Stromnetz%29&#34;&gt;Regeltechnik im Stromnetz&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Lexikon von &amp;quot;Next Kraftwerke&amp;quot;: &lt;a href=&#34;https://www.next-kraftwerke.de/wissen/regelenergie&#34;&gt;Was ist Regelenergie?&lt;/a&gt; (Der Link ist keine Werbung. Ich unterhalte keine Geschäftsbeziehung mit Next. Das ist einfach eine informative Quelle.)&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:07" title="Selbsttätige Steuerung der Netzfrequenz"  />
+          <chapter start="00:04:43" title="Ein Großkraftwerk fällt aus"  />
+          <chapter start="00:06:21" title="Outro"  />
+      </chapters>
       <enclosure length="6641608" url="https://xyrillian.de/dl/gnse-003-power-network-frequency.mp3" type="audio/mpeg"/>
       <enclosure length="7074091" url="https://xyrillian.de/dl/gnse-003-power-network-frequency.ogg" type="audio/ogg"/>
       <enclosure length="3275516" url="https://xyrillian.de/dl/gnse-003-power-network-frequency.opus" type="audio/opus"/>
@@ -96,6 +117,13 @@ Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. O
     <itunes:summary>Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.</itunes:summary>
     <description>Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.</description>
     <content:encoded>&lt;p&gt;Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.&lt;/p&gt;&lt;h2&gt;Quellen und Links&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Zuständig für Schaltsekunden und Atomuhren: die &lt;a href=&#34;https://www.ptb.de/cms/de/ptb/fachabteilungen/abt4/fb-44.html&#34;&gt;Fachabteilung 4.4 &amp;quot;Zeit und Frequenz&amp;quot;&lt;/a&gt; der Physikalisch-Technischen Bundesanstalt.&lt;/li&gt;&lt;li&gt;Mehr über die vielen Sonderregelungen von Büsingen: bei &lt;a href=&#34;https://de.wikipedia.org/wiki/B%C3%BCsingen_am_Hochrhein&#34;&gt;Wikipedia&lt;/a&gt; oder auf der Seite der &lt;a href=&#34;https://www.buesingen.de/de/Unser-Buesingen/Deutsche-Insel-in-der-Schweiz&#34;&gt;hiesigen Stadtverwaltung&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:00:28" title="Schaltjahre"  />
+          <chapter start="00:01:28" title="Schaltsekunden"  />
+          <chapter start="00:04:41" title="Zeitzonen in Deutschland"  />
+          <chapter start="00:07:24" title="Outro"  />
+      </chapters>
       <enclosure length="8571640" url="https://xyrillian.de/dl/gnse-002-time.mp3" type="audio/mpeg"/>
       <enclosure length="7805743" url="https://xyrillian.de/dl/gnse-002-time.ogg" type="audio/ogg"/>
       <enclosure length="3766080" url="https://xyrillian.de/dl/gnse-002-time.opus" type="audio/opus"/>

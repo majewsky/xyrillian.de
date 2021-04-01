@@ -40,6 +40,13 @@
     <itunes:summary>{{.RSS.Description}}</itunes:summary>
     <description>{{.RSS.Description}}</description>
     <content:encoded>{{.RSS.ShowNotes}}</content:encoded>
+    {{- if .Chapters }}
+      <chapters xmlns="http://podlove.de/simple-chapters">
+        {{- range .Chapters }}
+          <chapter start="{{.StartSeconds | startSecondsToHHMMSS }}" title="{{.Title}}" {{if .URL}}href="{{.URL}}"{{end}} />
+        {{- end }}
+      </chapters>
+    {{- end }}
     {{- range .Downloads }}
     {{- if ne .Format "FLAC" }}
       <enclosure length="{{.SizeBytes}}" url="https://xyrillian.de/dl/{{.FileName}}" type="{{.MIMEType}}"/>
