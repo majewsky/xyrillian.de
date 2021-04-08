@@ -257,12 +257,15 @@ files:
 
   - show: stp
     episode: 0
-    slug: feed-testfolge
-    title: Feed-Test
-    pubtime: 1616531949 # 2021-03-23
+    slug: 000-was-ist-informatik
+    title: Was ist Informatik?
+    pubtime: 1617877800 # 2021-04-08
 
     markdown:
-      description: "Hier ist Platz für eine kurze Beschreibung der Episode."
+      description: |
+        In der ersten... nein, nullten Folge sprechen wir über die grundlegenden Muster von Informatik und Mathematik.
+        Dazu gehört, dass Informatik sowieso das einzig neue seit fließend Wasser, und Mathematik keine Naturwissenschaft ist.
+        Außerdem in dieser Folge: Was Trommeln im Stadion mit dem Wetter und Turing mit λ zu tun haben.
       shownotes: true # in file
 
     music:

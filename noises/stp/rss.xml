@@ -27,34 +27,113 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
-    <itunes:title>Feed-Test</itunes:title>
+    <itunes:title>Was ist Informatik?</itunes:title>
     <itunes:episode>0</itunes:episode>
     <itunes:season>1</itunes:season>
-    <title>Feed-Test</title>
+    <title>Was ist Informatik?</title>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
-    <itunes:summary>Hier ist Platz für eine kurze Beschreibung der Episode.</itunes:summary>
-    <description>Hier ist Platz für eine kurze Beschreibung der Episode.</description>
-    <content:encoded>&lt;p&gt;Hier ist Platz für eine kurze Beschreibung der Episode.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Abschnitt 1:&lt;/p&gt;
+    <itunes:summary>In der ersten... nein, nullten Folge sprechen wir über die grundlegenden Muster von Informatik und Mathematik.
+Dazu gehört, dass Informatik sowieso das einzig neue seit fließend Wasser, und Mathematik keine Naturwissenschaft ist.
+Außerdem in dieser Folge: Was Trommeln im Stadion mit dem Wetter und Turing mit λ zu tun haben.</itunes:summary>
+    <description>In der ersten... nein, nullten Folge sprechen wir über die grundlegenden Muster von Informatik und Mathematik.
+Dazu gehört, dass Informatik sowieso das einzig neue seit fließend Wasser, und Mathematik keine Naturwissenschaft ist.
+Außerdem in dieser Folge: Was Trommeln im Stadion mit dem Wetter und Turing mit λ zu tun haben.</description>
+    <content:encoded>&lt;p&gt;In der ersten... nein, nullten Folge sprechen wir über die grundlegenden Muster von Informatik und Mathematik.
+Dazu gehört, dass Informatik sowieso das einzig neue seit fließend Wasser, und Mathematik keine Naturwissenschaft ist.
+Außerdem in dieser Folge: Was Trommeln im Stadion mit dem Wetter und Turing mit λ zu tun haben.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Einleitung: Erklärung des Podcastkonzepts durch ttimeless&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Informatik ist das vllt. einzige wirklich neue eigenständige Studienfach des 20. Jh.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Punkt 1.1&lt;/li&gt;
-&lt;li&gt;Punkt 1.2&lt;/li&gt;
+&lt;li&gt;Crossover aus Mathematik (Strukturwissenschaft) und Elektrotechnik (Ingenieurwissenschaft)&lt;/li&gt;
+&lt;li&gt;mittlerweile eigenständig aufgrund Größe und unterschiedlicher Lernstruktur
+&lt;ul&gt;
+&lt;li&gt;ähnlich der Abgrenzung zwischen Medizin und Biologie&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Abschnitt 2:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;vielleicht vergleichbar mit der Bildung einer neuen Spezies: unterschiedlich genug zu allen anderen Disziplinen&lt;/li&gt;
+&lt;li&gt;Fokus in dieser Folge eher auf Mathematik als auf Elektrotechnik (Xyrill ist hier eher Theoretiker)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mathematik: keine Naturwissenschaft, sondern Strukturwissenschaft&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Punkt 2.1&lt;/li&gt;
-&lt;li&gt;Punkt 2.2&lt;/li&gt;
+&lt;li&gt;Untersuchung von &amp;quot;ausgedachten&amp;quot; Systemen&lt;/li&gt;
+&lt;li&gt;meist Bezug zu realen Dingen (z.B. Arithmetik, Rechnen mit Zahlen im Kopf und auf dem Zettel, ein grundsätzliches Element der Mathematik)&lt;/li&gt;
+&lt;li&gt;aber auch viel Grundlagenforschung (z.B. Primzahlen)&lt;/li&gt;
+&lt;li&gt;Teilbereiche der Mathematik sind erfolgreich, wenn sie reale Probleme lösen
+&lt;ul&gt;
+&lt;li&gt;Handel -&amp;gt; &lt;a href=&#34;https://de.wikipedia.org/wiki/Arithmetik&#34;&gt;Arithmetik&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Architektur -&amp;gt; &lt;a href=&#34;https://de.wikipedia.org/wiki/Geometrie&#34;&gt;Geometrie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wechselstromtechnik -&amp;gt; &lt;a href=&#34;https://de.wikipedia.org/wiki/Komplexe_Zahl&#34;&gt;Komplexe Zahlen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rechenmaschinen -&amp;gt; theoretische Informatik (Xyrill nennt es &amp;quot;Berechnungstheorie&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Warum &amp;quot;Berechnungstheorie&amp;quot;?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mathematik begnügt sich mit Aussagen wie &amp;quot;X ist lösbar&amp;quot;, &amp;quot;X existiert&amp;quot;&lt;/li&gt;
+&lt;li&gt;Informatik muss immer auch erklären, &lt;em&gt;wie&lt;/em&gt; etwas lösbar ist
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Ein &lt;a href=&#34;https://de.wikipedia.org/wiki/Algorithmus&#34;&gt;Algorithmus&lt;/a&gt; ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten.&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;Algorithmus&amp;quot;: benannt nach einem iranischen Universalgelehrten aus dem 8. Jhd. (al-Chwarizmi)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Algorithmen gab&#39;s also auch schon, bevor es &amp;quot;Informatik&amp;quot; hieß
+&lt;ul&gt;
+&lt;li&gt;Arithmetik: Primzahlen finden (Sieb des Erastothenes)&lt;/li&gt;
+&lt;li&gt;Geometrie: Umkreis eines Dreiecks finden&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Knotenkunde&#34;&gt;Knotenkunde&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;maschinelles Abarbeiten von Algorithmen erfordert besonders präzise Formulierung
+&lt;ul&gt;
+&lt;li&gt;Menschen kommen mit ungenauen Erläuterungen oder reinen Zielbeschreibungen klar&lt;/li&gt;
+&lt;li&gt;Beispiel: Wörter alphabetisch sortieren&lt;/li&gt;
+&lt;li&gt;Beispiel: Gegeben zwei Zahlen, welche ist kleiner und welche ist größer?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;Berechenbarkeit&amp;quot; ist ein universales Konzept
+&lt;ul&gt;
+&lt;li&gt;nicht an bestimmte Arten von Rechnenmaschinen gebunden&lt;/li&gt;
+&lt;li&gt;Algorithmen können auch von Hand ausgeführt werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Church-Turing-These&#34;&gt;Church-Turing-These&lt;/a&gt;: alle universellen Rechenmaschinen sind äquivalent (&lt;a href=&#34;https://de.wikipedia.org/wiki/Turingmaschine&#34;&gt;Turingmaschinen&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/wiki/Lambda-Kalk%C3%BCl&#34;&gt;Lambda-Kalkül&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/wiki/Primitiv-rekursive_Funktion&#34;&gt;Primitiv-rekursive Funktionen&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;nicht rigoros bewiesen, aber stimmt für alle bisher gefundenen universellen Rechenmaschinen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Durch das Aufschreiben von Algorithmen zeigen wir, dass wir ein Problem so gut verstanden haben, dass eine Maschine es für uns lösen kann.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Deswegen ist Informatik die Schlüsseltechnologie der modernen Welt.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       <chapters xmlns="http://podlove.de/simple-chapters">
-          <chapter start="00:00:00" title="Erstes Kapitel"  />
-          <chapter start="00:00:12" title="Zweites Kapitel" href="https://example.org" />
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:00:34" title="Wer sind wir und was tun wir hier?"  />
+          <chapter start="00:04:04" title="Gedanken über Mathematik"  />
+          <chapter start="00:06:37" title="Informatik als wissenschaftliche Neuerung"  />
+          <chapter start="00:15:46" title="Was genau ist eigentlich Mathematik"  />
+          <chapter start="00:23:58" title="Was kann und sollte Informatik leisten?"  />
+          <chapter start="00:36:10" title="Überlegungen zu Berechenbarkeit"  />
+          <chapter start="00:46:36" title="Letzte Worte und Abschied"  />
       </chapters>
-      <enclosure length="648421" url="https://xyrillian.de/dl/stp-feed-testfolge.mp3" type="audio/mpeg"/>
-      <enclosure length="343224" url="https://xyrillian.de/dl/stp-feed-testfolge.ogg" type="audio/ogg"/>
-      <enclosure length="606056" url="https://xyrillian.de/dl/stp-feed-testfolge.opus" type="audio/opus"/>
-    <guid>https://xyrillian.de/id/stp/000-feed-testfolge/</guid>
-    <pubDate>Tue, 23 Mar 2021 20:39:09 GMT</pubDate>
-    <itunes:duration>00:20</itunes:duration>
+      <enclosure length="23671644" url="https://xyrillian.de/dl/stp-000-was-ist-informatik.mp3" type="audio/mpeg"/>
+      <enclosure length="17083503" url="https://xyrillian.de/dl/stp-000-was-ist-informatik.ogg" type="audio/ogg"/>
+      <enclosure length="16964690" url="https://xyrillian.de/dl/stp-000-was-ist-informatik.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/000-was-ist-informatik/</guid>
+    <pubDate>Thu, 08 Apr 2021 10:30:00 GMT</pubDate>
+    <itunes:duration>48:39</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
   </item>
 </channel>

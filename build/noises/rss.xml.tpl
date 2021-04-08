@@ -56,7 +56,7 @@
       {{- if .LegacyGUID -}}
         https://xyrillian.de/id/{{.ShowID}}/{{if .Episode}}{{printf "%03d" .EpisodeAsInt}}{{else}}{{.Slug}}{{end}}/
       {{- else -}}
-        https://xyrillian.de/id/{{.ShowID}}/{{if .Episode}}{{printf "%03d-" .EpisodeAsInt}}{{end}}{{.Slug}}/
+        https://xyrillian.de/id/{{.ShowID}}/{{.Slug}}/
       {{- end -}}
     </guid>
     <pubDate>{{.PublicationTimeUnix | unixTimeToRFC1123 }}</pubDate>
