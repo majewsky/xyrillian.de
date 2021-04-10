@@ -29,12 +29,12 @@
   {{- if eq .ShowID $.CurrentShowID }}
   <item>
     <itunes:episodeType>{{if .Episode}}full{{else}}bonus{{end}}</itunes:episodeType>
-    <itunes:title>{{.Title}}</itunes:title>
+    <itunes:title>{{if and $show.FeedConfig.EpisodeNumberInTitle .Episode}}{{$show.FeedConfig.HumanReadableShowID}}{{printf "%03d" .EpisodeAsInt}}: {{end}}{{.Title}}</itunes:title>
     {{- if .Episode }}
     <itunes:episode>{{.Episode}}</itunes:episode>
     {{- end }}
     <itunes:season>1</itunes:season>
-    <title>{{.Title}}</title>
+    <title>{{if and $show.FeedConfig.EpisodeNumberInTitle .Episode}}{{$show.FeedConfig.HumanReadableShowID}}{{printf "%03d" .EpisodeAsInt}}: {{end}}{{.Title}}</title>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>{{.RSS.Description}}</itunes:summary>

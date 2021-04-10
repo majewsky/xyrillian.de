@@ -59,6 +59,10 @@ shows:
     description: |
       Die IT hat unser Leben in den letzten Jahrzehnten von Grund auf verändert. Aber wie funktioniert sie wirklich? Das möchte ttimeless mal erklärt bekommen. Zum Glück hat Xyrill Antworten.
 
+    feedConfig:
+      episodeNumberInTitle: true
+      humanReadableShowID: STP
+
     feed: noises/stp/rss.xml
     href: https://schluesseltechnologie-podcast.de/
 

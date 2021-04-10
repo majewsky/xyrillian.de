@@ -200,6 +200,11 @@ type show struct {
 	URL             string        `yaml:"href"`
 	ExternalURL     string        `yaml:"external"`
 
+	FeedConfig struct {
+		EpisodeNumberInTitle bool   `yaml:"episodeNumberInTitle"`
+		HumanReadableShowID  string `yaml:"humanReadableShowID"`
+	} `yaml:"feedConfig"`
+
 	Covers struct {
 		ForFeed string `yaml:"feed"`
 		ForHTML string `yaml:"html"`
