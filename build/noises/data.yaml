@@ -272,16 +272,42 @@ files:
         Außerdem in dieser Folge: Was Trommeln im Stadion mit dem Wetter und Turing mit λ zu tun haben.
       shownotes: true # in file
 
-    music:
-      - artist: MastersDisaster
+    music: &music-like-stp-000
+      - &music-stp-opener-001
+        artist: MastersDisaster
         title: Switch ON - Livingroom (Sample)
         href: https://freesound.org/people/MastersDisaster/sounds/218115/
-      - artist: Garuda1982
+      - &music-stp-opener-002
+        artist: Garuda1982
         title: Switch on the fluorescent tube sound effect
         href: https://freesound.org/people/Garuda1982/sounds/538915/
-      - artist: Konrad Zuse
+      - &music-stp-opener-003
+        artist: Konrad Zuse
         title: HR-Fernsehbericht von 1958
         href: https://www.youtube.com/watch?v=n8Yo-wD-QTo&t=129s
-      - artist: Donald Knuth
+      - &music-stp-opener-004
+        artist: Donald Knuth
         title: Lehrveranstaltung von 1981
         href: https://www.youtube.com/watch?v=jbrMBOF61e0&t=9s
+
+  - show: stp
+    episode: 1
+    slug: 001-zahlensysteme
+    title: Zahlensysteme
+    pubtime: 1619647200 # 2021-04-29
+
+    markdown:
+      description: |
+        Wir versuchen uns daran, verschiedene Zählsysteme zu erklären.
+        Xyrill will zum Wohl aller die Weltherrschaft an sich reißen, und wir hauen auf den Amerikanern rum.
+        Außerdem in dieser Folge: Liverechnen von Xyrill und spannende Dinge mit Fingern von ttimeless.
+      shownotes: true # in file
+
+    music:
+      - artist: Gracie Films/20th Television
+        title: "The Simpsons S17E19: »Girls Just Want to Have Sums«"
+        href: https://www.youtube.com/watch?v=64PKoAiWhjE&t=103s
+      - *music-stp-opener-001
+      - *music-stp-opener-002
+      - *music-stp-opener-003
+      - *music-stp-opener-004

@@ -27,6 +27,107 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP001: Zahlensysteme</itunes:title>
+    <itunes:episode>1</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP001: Zahlensysteme</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wir versuchen uns daran, verschiedene Zählsysteme zu erklären.
+Xyrill will zum Wohl aller die Weltherrschaft an sich reißen, und wir hauen auf den Amerikanern rum.
+Außerdem in dieser Folge: Liverechnen von Xyrill und spannende Dinge mit Fingern von ttimeless.</itunes:summary>
+    <description>Wir versuchen uns daran, verschiedene Zählsysteme zu erklären.
+Xyrill will zum Wohl aller die Weltherrschaft an sich reißen, und wir hauen auf den Amerikanern rum.
+Außerdem in dieser Folge: Liverechnen von Xyrill und spannende Dinge mit Fingern von ttimeless.</description>
+    <content:encoded>&lt;p&gt;Wir versuchen uns daran, verschiedene Zählsysteme zu erklären.
+Xyrill will zum Wohl aller die Weltherrschaft an sich reißen, und wir hauen auf den Amerikanern rum.
+Außerdem in dieser Folge: Liverechnen von Xyrill und spannende Dinge mit Fingern von ttimeless.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rekapitulation: Wie funktionieren die alltäglichen Zahlensysteme?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;römische Zahlen: &lt;a href=&#34;https://de.wikipedia.org/wiki/Additionssystem&#34;&gt;Additionssystem&lt;/a&gt; mit Fünferteilung&lt;/li&gt;
+&lt;li&gt;Maya-Zahlensystem: &lt;a href=&#34;https://de.wikipedia.org/wiki/Vigesimalsystem&#34;&gt;Vigesimalsystem&lt;/a&gt; zur Basis 20&lt;/li&gt;
+&lt;li&gt;arabische Zahlen: &lt;a href=&#34;https://de.wikipedia.org/wiki/Stellenwertsystem&#34;&gt;Stellenwertsystem&lt;/a&gt; zur Basis 10&lt;/li&gt;
+&lt;li&gt;Basis ist prinzipiell frei wählbar
+&lt;ul&gt;
+&lt;li&gt;Basis 10 wegen Fingerzählen&lt;/li&gt;
+&lt;li&gt;Basis 20, wenn man auch die Zehen dazu nimmt (Spuren in vielen europäischen Sprachen)&lt;/li&gt;
+&lt;li&gt;Basis 12 (&amp;quot;Dutzend&amp;quot;, Stundenteilung) erlaubt viele gerade Teilungen&lt;/li&gt;
+&lt;li&gt;ähnlich für Basis 60 (Babylon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hybridsystem aus Stellenwert- und Additionssystem: z.B. Aussprache arabischer Zahlen im Deutschen, z.B. chinesische/japanische Zahlen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Dualsystem&#34;&gt;Dualsystem/Binärsystem&lt;/a&gt;: Stellenwertsystem zur Basis 2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;praktisches Beispiel: ttimeless&#39; Binär-Armbandur&lt;/li&gt;
+&lt;li&gt;zuschauen wie Binärzahlen wachsen: &lt;a href=&#34;https://binary.onlineclock.net&#34;&gt;Onlinebinäruhr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;zuerst von Gottfried Wilhelm Leibniz für Logikberechnungen genutzt&lt;/li&gt;
+&lt;li&gt;vielseitig darstellbar in technischen Anwendungen
+&lt;ul&gt;
+&lt;li&gt;Mechanik: Klappe auf/zu&lt;/li&gt;
+&lt;li&gt;Elektronik: Strom an/aus&lt;/li&gt;
+&lt;li&gt;Pneumatik: Druck/kein Druck (Beispiel: &lt;a href=&#34;https://www.youtube.com/watch?v=058hRtaCWC0&#34;&gt;pneumatische Roboter&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Programmierung: true/false&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;z.B. in Elektronik: mehr als zwei Spannungswerte möglich, aber dann anfälliger für:
+&lt;ul&gt;
+&lt;li&gt;Störsignale im Kabel&lt;/li&gt;
+&lt;li&gt;Spannungsschwankungen (z.B. durch Entladen der Batterie)&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Abgrenzung &amp;quot;binär&amp;quot; vs. &amp;quot;digital&amp;quot; (Wortherkunft &amp;quot;digital&amp;quot;: lat. &amp;quot;digitus&amp;quot; = Finger)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Hexadezimalsystem&#34;&gt;Hexadezimalsystem&lt;/a&gt;: Basis 16&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;für die kompakte Notation von Binärzahlen&lt;/li&gt;
+&lt;li&gt;im Prinzip nur für Menschen bedeutsam&lt;/li&gt;
+&lt;li&gt;Ziffern 0-9, A-F&lt;/li&gt;
+&lt;li&gt;Notation in der Mathematik: Subskript mit der Basis (z.B. 42_10 = 24_16)&lt;/li&gt;
+&lt;li&gt;Notation in der Informatik: blanke Zahl ist dezimal (z.B. 42), Präfix &amp;quot;0x&amp;quot; ist hexadezimal (z.B. 0x24)
+&lt;ul&gt;
+&lt;li&gt;manchmal auch &amp;quot;0b100100&amp;quot; für binär und &amp;quot;0o52&amp;quot; für oktal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Größenordnungen oberhalb von 0/1&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Oktett_(Informatik)&#34;&gt;Oktett&lt;/a&gt;: 8 Bit (256 Zustände)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Byte&#34;&gt;Byte&lt;/a&gt;: kleinste einzeln addressierte Speichermenge (heutzutage so gut wie immer 8 Bit)&lt;/li&gt;
+&lt;li&gt;Kilobyte, Megabyte, Gigabyte, etc.: Multiplikator 1000 (KB,MB,GB)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Bin%C3%A4rpr%C3%A4fix&#34;&gt;Binärpräfixe&lt;/a&gt;  Kibibyte, Mebibyte, Gibibyte, etc.: Multiplikator 1024 (KiB,MiB,GiB)&lt;/li&gt;
+&lt;li&gt;Einheitensymbole: kleines &amp;quot;b&amp;quot; für Bit, großes &amp;quot;B&amp;quot; für Byte (wichtig für Netzwerktechnik, da Geschwindigkeiten oft in Megabit/Sekunde etc. angegeben sind)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:00:51" title="Einstieg und Zukunftspläne"  />
+          <chapter start="00:02:22" title="Stellwertsystem, Additionssystem und Hybridsystem"  />
+          <chapter start="00:15:19" title="Das Dualsystem/Binärsystem"  />
+          <chapter start="00:23:14" title="Binär vs Digital"  />
+          <chapter start="00:30:46" title="Hexadezimalsystem und Oktalsystem"  />
+          <chapter start="00:39:35" title="Größenordnungen oberhalb von 0 und 1"  />
+      </chapters>
+      <enclosure length="24981951" url="https://xyrillian.de/dl/stp-001-zahlensysteme.mp3" type="audio/mpeg"/>
+      <enclosure length="31098922" url="https://xyrillian.de/dl/stp-001-zahlensysteme.ogg" type="audio/ogg"/>
+      <enclosure length="18125770" url="https://xyrillian.de/dl/stp-001-zahlensysteme.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/001-zahlensysteme/</guid>
+    <pubDate>Wed, 28 Apr 2021 22:00:00 GMT</pubDate>
+    <itunes:duration>51:23</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP000: Was ist Informatik?</itunes:title>
     <itunes:episode>0</itunes:episode>
     <itunes:season>1</itunes:season>
