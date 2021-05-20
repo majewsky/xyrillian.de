@@ -27,6 +27,159 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP002: Aufruf einer Webseite</itunes:title>
+    <itunes:episode>2</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP002: Aufruf einer Webseite</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Die meisten tun es. Viele täglich. Teils hundertfach oder öfter.
+Aber was passiert eigentlich, wenn wir es tun?
+Die Rede ist natürlich von Webseiten.
+Wir sprechen darüber, wer alles am Aufrufen und Anzeigen von all den Informatinen beteiligt ist, die wir uns täglich beschaffen.
+Und über &lt;strong&gt;Kekse&lt;/strong&gt;!!!</itunes:summary>
+    <description>Die meisten tun es. Viele täglich. Teils hundertfach oder öfter.
+Aber was passiert eigentlich, wenn wir es tun?
+Die Rede ist natürlich von Webseiten.
+Wir sprechen darüber, wer alles am Aufrufen und Anzeigen von all den Informatinen beteiligt ist, die wir uns täglich beschaffen.
+Und über &lt;strong&gt;Kekse&lt;/strong&gt;!!!</description>
+    <content:encoded>&lt;p&gt;Die meisten tun es. Viele täglich. Teils hundertfach oder öfter.
+Aber was passiert eigentlich, wenn wir es tun?
+Die Rede ist natürlich von Webseiten.
+Wir sprechen darüber, wer alles am Aufrufen und Anzeigen von all den Informatinen beteiligt ist, die wir uns täglich beschaffen.
+Und über &lt;strong&gt;Kekse&lt;/strong&gt;!!!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 1: Webseitenadresse, z.B. &lt;a href=&#34;https://de.wikipedia.org/wiki/Computer&#34;&gt;https://de.wikipedia.org/wiki/Computer&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;https&lt;/code&gt;: Protokoll (wie wir mit der anderen Seite reden)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;de.wikipedia.org&lt;/code&gt;: Domain-Name (wo die andere Seite zu finden ist)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/wiki/Computer&lt;/code&gt;: Pfad (welches Dokument wir von der anderen Seite haben wollen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 2: Namensauflösung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Datenverbindungen im Internet gehen nur mit einer IP-Adresse (sieht aus wie &lt;code&gt;192.168.12.169&lt;/code&gt; oder &lt;code&gt;fe80::42e2:30ff:fe12:17b&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Webseitenadressen enthalten Domain-Namen, weil:
+&lt;ul&gt;
+&lt;li&gt;menschenlesbar&lt;/li&gt;
+&lt;li&gt;kann auf mehrere verschiedene Server verweisen (Lastverteilung, Redundanz, Geo-Routing)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Frage: Welche IP-Adresse gehört zu dem Domain-Namen? -&amp;gt; Namensauflösung mittels Domain Name System (DNS)&lt;/li&gt;
+&lt;li&gt;Computer der Benutzerin kennt einen DNS-Server (meist vom Internetanbieter)&lt;/li&gt;
+&lt;li&gt;DNS-Server kann zu jedem Domain-Namen die richtige IP-Adresse bestimmen&lt;/li&gt;
+&lt;li&gt;Privatsphäre-Relevanz: dein DNS-Server kennt alle Domains, die du besuchst&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 3: Verbindung zum Webserver&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Broadcast vs. Unicast
+&lt;ul&gt;
+&lt;li&gt;Fernsehen/Radio/etc. ist Broadcast (eine sendet einmal, viele empfangen)&lt;/li&gt;
+&lt;li&gt;Internet ist im Allgemeinen Unicast (eine sendet, eine empfängt) wie das Telefonnetz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;grobe Analogie: IP-Adressen zu Telefonnummern (Ländervorwahl, Ortsvorwahl, Durchwahl, etc.)&lt;/li&gt;
+&lt;li&gt;Datenleitung steht, jetzt können wir unser Protokoll (HTTPS) darüber sprechen
+&lt;ul&gt;
+&lt;li&gt;Wikipedia: &amp;quot;Ein Kommunikationsprotokoll ist eine Vereinbarung, nach der die Datenübertragung zwischen zwei oder mehreren Parteien abläuft. In seiner einfachsten Form kann ein Protokoll definiert werden als eine Menge von Regeln, die Syntax, Semantik und Synchronisation der Kommunikation bestimmen.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HTTPS verwendet Verschlüsselung, da sonst jeder entlang des Weges mitlesen könnte
+&lt;ul&gt;
+&lt;li&gt;TLS: Aushandlung einer Transportverschlüsselung, dann Überprüfung der Identität des Servers&lt;/li&gt;
+&lt;li&gt;Server muss dazu ein Zertifikat für seinen Domain-Namen haben&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Datenleitung mit Verschlüsselung steht, jetzt kann HTTP gesprochen werden (HTTPS = HTTP mit TLS)
+&lt;ul&gt;
+&lt;li&gt;HTTP: allgemein Protokoll zum Herunterladen und Hochladen von Dateien (Hochladen z.B. auch beim Abschicken von Webseiten-Formularen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 4: Webseite&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer der Benutzerin fragt über die bestehende HTTPS-Verbindung nach dem Dokument unter dem Pfad in der Webseitenadresse&lt;/li&gt;
+&lt;li&gt;Server liefert eine Datei, üblicherweise im HTML-Format&lt;/li&gt;
+&lt;li&gt;Hausaufgabe: im Browser Webseite öffnen und im Rechtsklick-Menü &amp;quot;Element untersuchen&amp;quot; wählen&lt;/li&gt;
+&lt;li&gt;HTML: Dokumentenformat
+&lt;ul&gt;
+&lt;li&gt;dieselbe Grundkategorie wie PDF oder DOC&lt;/li&gt;
+&lt;li&gt;aber mehr für die Bildschirmanzeige als für den Druck optimiert&lt;/li&gt;
+&lt;li&gt;seit 2000 zunehmend auch für dynamische Inhalte (&amp;quot;Webanwendungen&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 5: Ressourcen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML alleine enthält nur die Dokumentenstruktur und den Text&lt;/li&gt;
+&lt;li&gt;weitere Teile der Webseite liegen in anderen Dateien, auf die das HTML verweist und die der Browser separat herunterlädt
+&lt;ul&gt;
+&lt;li&gt;CSS: Darstellungsanweisungen (z.B. &amp;quot;alle Absätze mit 1,5 Zeilen Zeilenhöhe&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Bilder, Audios, Videos&lt;/li&gt;
+&lt;li&gt;Skripte für dynamische Inhalte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;siehe auch: Webseite wird schon angezeigt, aber Bilder erscheinen erst nach und nach&lt;/li&gt;
+&lt;li&gt;Verweise auch auf Dokumente auf anderen Domains möglich
+&lt;ul&gt;
+&lt;li&gt;Privatsphäre-Relevanz: Tracking-Pixel und Tracking-Skripte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 6: Cookies&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP an sich ist zustandslos: Anfrage nach einem Dokument ist nicht abhängig davon, was ich vorher angefragt hatte&lt;/li&gt;
+&lt;li&gt;Problem: Wie ordnet man die Anfrage nach einem Dokument zu einer Benutzerin zu? (z.B. um Anmeldestatus oder Warenkorb zu verfolgen)&lt;/li&gt;
+&lt;li&gt;Cookie: kleine Datei, die der Server bei einem Dokument mitschickt und die vom Browser aufbewahrt wird&lt;/li&gt;
+&lt;li&gt;beim nächsten Request werden alle Cookies von diesem Server wieder mitgeschickt&lt;/li&gt;
+&lt;li&gt;Privatsphäre-Relevanz: Tracking durch Facebook-Cookie etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exkurs: &amp;quot;Was passiert, wenn ich einen Podcast abrufe?&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;prinzipiell genauso, aber statt HTML anderes Dokumentenformat&lt;/li&gt;
+&lt;li&gt;RSS: &amp;quot;Really Simple Syndication&amp;quot; (&amp;quot;wirklich einfache Verbreitung&amp;quot;)&lt;/li&gt;
+&lt;li&gt;RSS-Dokument ist ein Feed
+&lt;ul&gt;
+&lt;li&gt;Feed = Liste von Nachrichten&lt;/li&gt;
+&lt;li&gt;vergleichbar mit dem Feed auf Twitter oder Facebook&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RSS ursprünglich für Blogs und Nachrichtenwebseiten entwickelt (Titel, Kurzbeschreibung, Link zur Webseite)&lt;/li&gt;
+&lt;li&gt;für Podcasts statt Link zur Webseite Links zu den Audio-Dateien&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:57" title="Bestandteile einer Webseitenadresse"  />
+          <chapter start="00:05:00" title="Namensauflösung per DNS"  />
+          <chapter start="00:12:33" title="Verbindung zum Webserver"  />
+          <chapter start="00:24:02" title="Webseite"  />
+          <chapter start="00:29:01" title="Ressourcen"  />
+          <chapter start="00:40:47" title="Cookies"  />
+          <chapter start="00:48:59" title="Was passiert, wenn ich einen Podcast abrufe?"  />
+      </chapters>
+      <enclosure length="26983760" url="https://xyrillian.de/dl/stp-002-aufruf-einer-webseite.mp3" type="audio/mpeg"/>
+      <enclosure length="35520202" url="https://xyrillian.de/dl/stp-002-aufruf-einer-webseite.ogg" type="audio/ogg"/>
+      <enclosure length="20380590" url="https://xyrillian.de/dl/stp-002-aufruf-einer-webseite.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/002-aufruf-einer-webseite/</guid>
+    <pubDate>Thu, 20 May 2021 20:30:00 GMT</pubDate>
+    <itunes:duration>55:33</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP001: Zahlensysteme</itunes:title>
     <itunes:episode>1</itunes:episode>
     <itunes:season>1</itunes:season>

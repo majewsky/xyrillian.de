@@ -311,3 +311,20 @@ files:
       - *music-stp-opener-002
       - *music-stp-opener-003
       - *music-stp-opener-004
+
+  - show: stp
+    episode: 2
+    slug: 002-aufruf-einer-webseite
+    title: Aufruf einer Webseite
+    pubtime: 1621542600 # 2021-05-20
+
+    markdown:
+      description: |
+        Die meisten tun es. Viele täglich. Teils hundertfach oder öfter.
+        Aber was passiert eigentlich, wenn wir es tun?
+        Die Rede ist natürlich von Webseiten.
+        Wir sprechen darüber, wer alles am Aufrufen und Anzeigen von all den Informatinen beteiligt ist, die wir uns täglich beschaffen.
+        Und über **Kekse**!!!
+      shownotes: true # in file
+
+    music: *music-like-stp-000
