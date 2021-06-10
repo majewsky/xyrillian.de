@@ -328,3 +328,19 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 3
+    slug: 003-logikgatter
+    title: Logikgatter
+    pubtime: 1623313800 # 2021-06-10
+
+    markdown:
+      description: |
+        Heute erklärt Xyrill Logikgatter. Und das, obwohl er selbst nicht so genau weiß, was da drin ist.
+        Das ist aber auch nicht zwingend nötig – sagt er –, denn es kommt ja darauf an, was sie tun.
+        Obwohl die meisten Logikgatter scheinbar sehr langweilig sind, schaffen wir es nur, damit zu addieren.
+        Allerdings ist das für ttimeless auch genug für den Anfang.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

@@ -27,6 +27,160 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP003: Logikgatter</itunes:title>
+    <itunes:episode>3</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP003: Logikgatter</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Heute erklärt Xyrill Logikgatter. Und das, obwohl er selbst nicht so genau weiß, was da drin ist.
+Das ist aber auch nicht zwingend nötig – sagt er –, denn es kommt ja darauf an, was sie tun.
+Obwohl die meisten Logikgatter scheinbar sehr langweilig sind, schaffen wir es nur, damit zu addieren.
+Allerdings ist das für ttimeless auch genug für den Anfang.</itunes:summary>
+    <description>Heute erklärt Xyrill Logikgatter. Und das, obwohl er selbst nicht so genau weiß, was da drin ist.
+Das ist aber auch nicht zwingend nötig – sagt er –, denn es kommt ja darauf an, was sie tun.
+Obwohl die meisten Logikgatter scheinbar sehr langweilig sind, schaffen wir es nur, damit zu addieren.
+Allerdings ist das für ttimeless auch genug für den Anfang.</description>
+    <content:encoded>&lt;p&gt;Heute erklärt Xyrill Logikgatter. Und das, obwohl er selbst nicht so genau weiß, was da drin ist.
+Das ist aber auch nicht zwingend nötig – sagt er –, denn es kommt ja darauf an, was sie tun.
+Obwohl die meisten Logikgatter scheinbar sehr langweilig sind, schaffen wir es nur, damit zu addieren.
+Allerdings ist das für ttimeless auch genug für den Anfang.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückblick STP001: Binärzahlen sind dargestellt als Folge von Bits&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. 16-Bit-Zahl entspricht 16 Stromleitungen, an denen die Spannung an oder aus ist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ziel: Berechnungen auf solchen Zahlen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. Addition zweiter 16-Bit-Zahlen: 2x16 = 32 Bit gehen rein, 16 neue Bit kommen raus&lt;/li&gt;
+&lt;li&gt;Wie kombiniert man Bits sinnfällig?&lt;/li&gt;
+&lt;li&gt;Logikgatter: Bausteine für solche Schaltkreise
+&lt;ul&gt;
+&lt;li&gt;allgemein ein oder zwei Eingänge und ein Ausgang&lt;/li&gt;
+&lt;li&gt;ansonsten Logikschaltung bzw. Logikbaustein, der aus mehreren Gattern zusammengesetzt ist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Logikgatter mit einem Eingang und einem Ausgang&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gatter unterscheiden sich in der Ausgabe bei Eingabe 0 (2 Optionen) und in der Ausgabe bei Eingabe 1 (2 Optionen)&lt;/li&gt;
+&lt;li&gt;insgesamt 2x2 = 4 mögliche Gatter
+&lt;ul&gt;
+&lt;li&gt;0 -&amp;gt; 0, 1 -&amp;gt; 0 -- Ausgang ist konstant Null (langweilig)&lt;/li&gt;
+&lt;li&gt;0 -&amp;gt; 0, 1 -&amp;gt; 1 -- Ausgang ist gleich Eingang (langweilig)&lt;/li&gt;
+&lt;li&gt;0 -&amp;gt; 1, 1 -&amp;gt; 0 -- Ausgang ist Negation des Eingangs (NOT-Gatter)&lt;/li&gt;
+&lt;li&gt;0 -&amp;gt; 1, 1 -&amp;gt; 1 -- Ausgang ist konstant Eins (langweilig)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Logikgatter mit zwei Eingängen und einem Ausgang&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vier mögliche Eingaben (00, 01, 10, 11) und je zwei mögliche Ausgaben (0, 1) -&amp;gt; 2^4=16 mögliche Gatter&lt;/li&gt;
+&lt;li&gt;darunter sechs langweilige Gatter
+&lt;ul&gt;
+&lt;li&gt;Ausgang ist konstant Null&lt;/li&gt;
+&lt;li&gt;Ausgang ist konstant Eins&lt;/li&gt;
+&lt;li&gt;Ausgang ist gleich Eingang 1&lt;/li&gt;
+&lt;li&gt;Ausgang ist gleich Eingang 2&lt;/li&gt;
+&lt;li&gt;Ausgang ist Negation von Eingang 1&lt;/li&gt;
+&lt;li&gt;Ausgang ist Negation von Eingang 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;sechs nützliche Gatter &lt;a href=&#34;https://de.wikipedia.org/wiki/Logikgatter&#34;&gt;Logikgatter&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;AND: Sind beide Eingänge 1?&lt;/li&gt;
+&lt;li&gt;OR: Ist wenigstens ein Eingang 1?&lt;/li&gt;
+&lt;li&gt;XOR: Ist genau ein Eingang 1? bzw. Sind beide Eingänge unterschiedlich?&lt;/li&gt;
+&lt;li&gt;NAND: Ist wenigstens ein Eingang 0?&lt;/li&gt;
+&lt;li&gt;NOR: Sind beide Eingänge 0?&lt;/li&gt;
+&lt;li&gt;NXOR, XNOR: Sind beide Eingänge gleich?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;vier verbleibende Gatter sind nicht so intuitiv, können aber bei Bedarf aus den obigen Gattern zusammengesetzt werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beispiel für eine Logikschaltung: Addiernetz&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee analog zum Addieren auf Papier wie in der Grundschule mit Übertrag
+&lt;ul&gt;
+&lt;li&gt;Beispiel hier: 35 &#43; 47 = 82&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Halbaddierer&#34;&gt;Halbaddierer&lt;/a&gt;: zwei Eingänge, zwei Ausgänge
+&lt;ul&gt;
+&lt;li&gt;Zwei Ein-Bit-Zahlen werden zu einer Zwei-Bit-Zahl addiert.&lt;/li&gt;
+&lt;li&gt;Ausgang 1 = XOR (erste Stelle der addierten Zahl)&lt;/li&gt;
+&lt;li&gt;Ausgang 2 = AND (zweite Stelle der addierten Zahl)&lt;/li&gt;
+&lt;li&gt;z.B. bei dezimal: 5 &#43; 7 = 2 &#43; Übertrag 1&lt;/li&gt;
+&lt;li&gt;in binär: Ausgang 1 = XOR, Ausgang 2 = AND&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Volladdierer&#34;&gt;Volladdierer&lt;/a&gt;: drei Eingänge, zwei Ausgänge
+&lt;ul&gt;
+&lt;li&gt;Wie der Halbaddierer, aber nimmt auch den Übertrag der vorherigen Stelle mit.&lt;/li&gt;
+&lt;li&gt;z.B. bei dezimal: 3 &#43; 4 &#43; Übertrag 1 = 8 &#43; Übertrag 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Addierwerk&#34;&gt;Addiernetz&lt;/a&gt; für N-Bit-Zahlen: 2N Eingänge, N Ausgänge
+&lt;ul&gt;
+&lt;li&gt;ein Halbaddierer für die erste Stelle&lt;/li&gt;
+&lt;li&gt;je ein Volladdierer für jede weitere Stelle&lt;/li&gt;
+&lt;li&gt;Überlauf: Was ist, wenn der finale Übertrag nicht 0 ist?
+&lt;ul&gt;
+&lt;li&gt;Option 1: als Zustand im Prozessor speichern, der später abgefragt werden kann&lt;/li&gt;
+&lt;li&gt;Option 2: als Fehler behandeln, Prozess oder Prozessor anhalten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Warum sind Logikgatter interessant?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;starke Abstraktionsebene: fast das gesamte Verhalten des Computers als Rechenmaschine ist aus Logikgattern zusammengesetzt&lt;/li&gt;
+&lt;li&gt;konkrete Hardware (z.B. konkrete Art von Transistoren) ist oberhalb der Ebene der Logikgatter fast unerheblich&lt;/li&gt;
+&lt;li&gt;aber natürlich: keine Abstraktion ist perfekt...&lt;/li&gt;
+&lt;li&gt;Beispiel: Schaltverzögerung -&amp;gt; Takt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Hallo"  />
+          <chapter start="00:02:15" title="Grundsätzlicher Aufbau und Zweck von Logikgattern"  />
+          <chapter start="00:05:40" title="Gatter mit nur einem Eingang"  />
+          <chapter start="00:07:35" title="Gatter mit zwei Eingängen"  />
+          <chapter start="00:10:11" title="AND-Gatter"  />
+          <chapter start="00:10:30" title="OR-Gatter"  />
+          <chapter start="00:10:52" title="XOR-Gatter"  />
+          <chapter start="00:12:33" title="NAND-Gatter"  />
+          <chapter start="00:14:40" title="NOR-Gatter"  />
+          <chapter start="00:15:28" title="NXOR/XNOR-Gatter"  />
+          <chapter start="00:16:39" title="Rechenlogik"  />
+          <chapter start="00:17:55" title="Halbaddierer"  />
+          <chapter start="00:23:21" title="Volladdierer"  />
+          <chapter start="00:24:47" title="Addiernetz"  />
+          <chapter start="00:25:51" title="Bitüberlauf"  />
+          <chapter start="00:29:39" title="Warum das ganze"  />
+          <chapter start="00:35:22" title="Schaltzeiten und Prozessortakt"  />
+      </chapters>
+      <enclosure length="20441158" url="https://xyrillian.de/dl/stp-003-logikgatter.mp3" type="audio/mpeg"/>
+      <enclosure length="26067582" url="https://xyrillian.de/dl/stp-003-logikgatter.ogg" type="audio/ogg"/>
+      <enclosure length="14778359" url="https://xyrillian.de/dl/stp-003-logikgatter.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/003-logikgatter/</guid>
+    <pubDate>Thu, 10 Jun 2021 08:30:00 GMT</pubDate>
+    <itunes:duration>41:55</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP002: Aufruf einer Webseite</itunes:title>
     <itunes:episode>2</itunes:episode>
     <itunes:season>1</itunes:season>
