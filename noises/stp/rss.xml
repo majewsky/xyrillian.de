@@ -27,6 +27,157 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP004: Passwörter</itunes:title>
+    <itunes:episode>4</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP004: Passwörter</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Es geht um die Gretchenfrage der IT-Sicherheit. Wie müssen Passwörter aussehen?
+Wie sollen sie gespeichert werden? Wieviel Salz muss an ein Passwort?
+Kann man sie ersetzen? Und vor allem, wie würde Xyrill das alles machen, würde ihm doch endlich die Weltherrschaft übertragen?</itunes:summary>
+    <description>Es geht um die Gretchenfrage der IT-Sicherheit. Wie müssen Passwörter aussehen?
+Wie sollen sie gespeichert werden? Wieviel Salz muss an ein Passwort?
+Kann man sie ersetzen? Und vor allem, wie würde Xyrill das alles machen, würde ihm doch endlich die Weltherrschaft übertragen?</description>
+    <content:encoded>&lt;p&gt;Es geht um die Gretchenfrage der IT-Sicherheit. Wie müssen Passwörter aussehen?
+Wie sollen sie gespeichert werden? Wieviel Salz muss an ein Passwort?
+Kann man sie ersetzen? Und vor allem, wie würde Xyrill das alles machen, würde ihm doch endlich die Weltherrschaft übertragen?&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Through twenty years of effort, we&#39;ve successfully trained everyone to use passwords that are hard for humans to remember, but easy for computers to guess.&lt;/p&gt;
+&lt;p&gt;Wir haben zwanzig [mittlerweile dreißig -- d. Red.] Jahre lang allen eingeredet, Passwörter zu verwenden, die schwer zu merken sind, aber leicht von Computern geraten werden können.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Quelle: Zitat aus &lt;a href=&#34;https://xkcd.com/936/&#34;&gt;XKCD Comic #936&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Motivation: Authentifizierung (Identitätsbeweis)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mögliche Auth.faktoren:
+&lt;ul&gt;
+&lt;li&gt;etwas, das ich weiß (z.B. Passwort, PIN, &lt;s&gt;Sicherheitsfrage&lt;/s&gt;)&lt;/li&gt;
+&lt;li&gt;etwas, das ich habe (z.B. Chipkarte, Hardware-Token, TOTP/HOTP)&lt;/li&gt;
+&lt;li&gt;etwas, das ich bin (z.B. Fingerabdruck, Iris-Abbild)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ein-Faktor-Auth. vs. Zwei-Faktor-Auth.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Theorie: Hash-Funktionen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Hashfunktion&#34;&gt;Hash-Funktion&lt;/a&gt;:
+&lt;ul&gt;
+&lt;li&gt;Wikipedia sagt als Begriff &amp;quot;Streuwertfunktion&amp;quot;, das erklärt es ganz gut&lt;/li&gt;
+&lt;li&gt;Anwendungsfelder: Hashtabellen, Prüfsummen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Kryptographische_Hashfunktion&#34;&gt;kryptografische Hash-Funktion&lt;/a&gt;:
+&lt;ul&gt;
+&lt;li&gt;kollisionsresistent und dadurch zur &amp;quot;Ein-Weg-Verschlüsselung&amp;quot; geeignet&lt;/li&gt;
+&lt;li&gt;typische Hash-Länge: 256 Bit = 32 Byte = 64 Hexadezimalziffern&lt;/li&gt;
+&lt;li&gt;Größenvergleich: 2^256 Nanosekunden = 3 Mio. Trio. Trio. Trio. Jahre&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ziel: Passwort nicht direkt auf dem Webserver speichern
+&lt;ul&gt;
+&lt;li&gt;Server speichert nur Hash vom Passwort&lt;/li&gt;
+&lt;li&gt;zur Überprüfung präsentiertes Passwort hashen und mit gespeichertem Hash vergleichen&lt;/li&gt;
+&lt;li&gt;Salting: zu jedem Hash noch ein Extra-Zufallstext, damit dasselbe Passwort nicht immer denselben Hash ergibt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was können Nutzer machen, um sich zu schützen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;schwer ratbare Passwörter verwenden
+&lt;ul&gt;
+&lt;li&gt;keine persönlichen Informationen hineinkodieren (Namen von Angehörigen oder nahestehenden Personen, Geburtsdaten, etc.)&lt;/li&gt;
+&lt;li&gt;NICHT &amp;quot;passwort&amp;quot; oder &amp;quot;123456&amp;quot; oder &amp;quot;123qwe&amp;quot;&lt;/li&gt;
+&lt;li&gt;z.B. XKCD-Schema: Wörterbuch aufschlagen, vier zufällige Wörter wählen&lt;/li&gt;
+&lt;li&gt;NICHT bekannte Phrasen (z.B. Bibelverse)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Passwörter nicht wiederverwenden
+&lt;ul&gt;
+&lt;li&gt;Wenn überall das gleiche Passwort verwendet wird, sind alle Konten gleichzeitig offen.&lt;/li&gt;
+&lt;li&gt;Mit dem Zugang zum E-Mail Konto kann die &amp;quot;Passwort zurücksetzen&amp;quot;-Funktion ausgenutzt werden.&lt;/li&gt;
+&lt;li&gt;Wenn du nur ein starkes Passwort benutzt, dann das für das E-Mail-Konto.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Passwort-Manager verwenden
+&lt;ul&gt;
+&lt;li&gt;auf dem lokalen PC: &lt;a href=&#34;https://keepassxc.org/&#34;&gt;KeePassXC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;oder cloud-basiert: &lt;a href=&#34;https://bitwarden.com/&#34;&gt;Bitwarden&lt;/a&gt; (Server kann man auch selbst betreiben)&lt;/li&gt;
+&lt;li&gt;oder für Nerds: &lt;a href=&#34;https://www.passwordstore.org/&#34;&gt;pass&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Passwörter nicht mit anderen teilen, auch nicht &amp;quot;nur mal schnell&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;siehe IT-Support-Scam&lt;/li&gt;
+&lt;li&gt;bei Mehrbenutzersystemen auch mehrere Benutzerkonten verwenden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Passwort nur auf vertrauenswürdigen Seiten eingeben
+&lt;ul&gt;
+&lt;li&gt;nicht Links in irgendwelchen Mails folgen (siehe Phishing-Scam), sondern direkt zur bekannten Webseite navigieren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://haveibeenpwned.com/&#34;&gt;Passwort für Webseiten ändern, bei denen die Datenbanken gestohlen wurden&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;in vielen Passwort-Managern als automatische Prüfung integriert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rant: Sicherheitsmaßnahmen, die nicht wirklich bessere Sicherheit bringen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sicherheitsfragen&lt;/li&gt;
+&lt;li&gt;Passwortbeschränkungen: maximal N Zeichen, mindestens ein Sonderzeichen etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arstechnica.com/information-technology/2019/06/microsoft-says-mandatory-password-changing-is-ancient-and-obsolete/&#34;&gt;Zwangswechsel nach N Monaten&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was können Webseitenbetreiber machen, um Auth. sicher zu machen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Passwörter nur mit starken Hashes ablegen (Argon2, SCrypt, BCrypt, notfalls auch PBKDF2)&lt;/li&gt;
+&lt;li&gt;2FA unterstützen&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://haveibeenpwned.com/API/v3&#34;&gt;HIBP-API&lt;/a&gt; verwenden, um Passwort-Wiederverwendung zu erschweren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gibt es eine Alternative zu Passwörtern?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;anderer Faktor (z.B. Hardware-Token oder Biometrie): nicht unbedingt besser, nur anders (Abwägungsfrage)&lt;/li&gt;
+&lt;li&gt;Zwei-Faktor-Auth.&lt;/li&gt;
+&lt;li&gt;Anmeldungslink per E-Mail&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Feedback"  />
+          <chapter start="00:05:21" title="Warum das Ganze"  />
+          <chapter start="00:06:02" title="Dinge die ich weiß"  />
+          <chapter start="00:07:04" title="Dinge die ich habe"  />
+          <chapter start="00:08:42" title="Dinge die ich bin"  />
+          <chapter start="00:09:06" title="Ein Faktor vs. zwei Faktoren"  />
+          <chapter start="00:18:23" title="Hash-Funktionen"  />
+          <chapter start="00:26:08" title="Kryptografische Hash-Funktionen"  />
+          <chapter start="00:37:47" title="Salting"  />
+          <chapter start="00:44:14" title="Wie schütze ich mich als Nutzer"  />
+          <chapter start="01:18:54" title="Rant: Sicherheitsmaßnahmen, die nicht wirklich bessere Sicherheit bringen"  />
+          <chapter start="01:23:23" title="Was tun Webseitenbetreiber um sicher zu authentifizieren"  />
+          <chapter start="01:24:43" title="Alternativen zu Passwörtern"  />
+      </chapters>
+      <enclosure length="43876549" url="https://xyrillian.de/dl/stp-004-passwoerter.mp3" type="audio/mpeg"/>
+      <enclosure length="55220724" url="https://xyrillian.de/dl/stp-004-passwoerter.ogg" type="audio/ogg"/>
+      <enclosure length="31765655" url="https://xyrillian.de/dl/stp-004-passwoerter.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/004-passwoerter/</guid>
+    <pubDate>Thu, 01 Jul 2021 15:45:00 GMT</pubDate>
+    <itunes:duration>90:45</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP003: Logikgatter</itunes:title>
     <itunes:episode>3</itunes:episode>
     <itunes:season>1</itunes:season>

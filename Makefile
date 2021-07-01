@@ -2,7 +2,7 @@
 
 all: noises/index.html thoughts/index.html res/xyrillian.css
 
-noises/index.html: build/noises/*
+noises/index.html: build/noises/* build/noises/shownotes/*
 	go run ./build/noises
 
 thoughts/index.html: build/thoughts/* build/thoughts/posts/*

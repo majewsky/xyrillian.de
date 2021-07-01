@@ -344,3 +344,26 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 4
+    slug: 004-passwoerter
+    title: Passwörter
+    pubtime: 1625154300 # 2021-07-01
+
+    markdown:
+      description: |
+        Es geht um die Gretchenfrage der IT-Sicherheit. Wie müssen Passwörter aussehen?
+        Wie sollen sie gespeichert werden? Wieviel Salz muss an ein Passwort?
+        Kann man sie ersetzen? Und vor allem, wie würde Xyrill das alles machen, würde ihm doch endlich die Weltherrschaft übertragen?
+      shownotes: true # in file
+
+    music:
+      - artist: Monty Python
+        title: "Die Brücke des Todes, aus »Die Ritter der Kokosnuß«"
+        href: https://www.youtube.com/watch?v=UM_mMtyz6ig&t=77s
+      - *music-stp-opener-001
+      - *music-stp-opener-002
+      - *music-stp-opener-003
+      - *music-stp-opener-004
+
