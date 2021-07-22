@@ -27,6 +27,202 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP005: Netzwerk-Schichtenmodell</itunes:title>
+    <itunes:episode>5</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP005: Netzwerk-Schichtenmodell</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wie in Folge 0 bereits erwähnt, tun wir viele Dinge mit Computern. Genauer tun wir sie in oder mit dem Internet.
+Damit das funktionert ist es nötig vielerlei Protokolle übereinander zu stapeln. Wir präsentieren -- den Network Stack.</itunes:summary>
+    <description>Wie in Folge 0 bereits erwähnt, tun wir viele Dinge mit Computern. Genauer tun wir sie in oder mit dem Internet.
+Damit das funktionert ist es nötig vielerlei Protokolle übereinander zu stapeln. Wir präsentieren -- den Network Stack.</description>
+    <content:encoded>&lt;p&gt;Wie in Folge 0 bereits erwähnt, tun wir viele Dinge mit Computern. Genauer tun wir sie in oder mit dem Internet.
+Damit das funktionert ist es nötig vielerlei Protokolle übereinander zu stapeln. Wir präsentieren -- den Network Stack.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vorbemerkung: Daten im Computer bzw. im Computernetzwerk sind immer nur Zahlen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wenn wir Texte haben, haben wir tatsächlich Zahlenfolgen, von denen jede Zahl für einen Buchstaben steht.&lt;/li&gt;
+&lt;li&gt;Wenn wir Bilder haben, haben wir tatsächlich Zahlenfolgen, von denen jede Zahl für den Farbwert eines Bildpunktes steht.&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rückerinnerung zu STP002: Protokolle&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wikipedia: &amp;quot;Ein Kommunikationsprotokoll ist eine Vereinbarung, nach der die Datenübertragung zwischen zwei oder mehreren Parteien abläuft. In seiner einfachsten Form kann ein Protokoll definiert werden als eine Menge von Regeln, die Syntax, Semantik und Synchronisation der Kommunikation bestimmen.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Beispiel aus dem normalen Leben: Interaktion zwischen Kunde und Verkäufer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Computer-Netzwerke brauchen einen ganzen Stapel von Protokollen, die aufeinander aufbauen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Problemlösung auf verschiedenen Ebenen: physikalische Signalübertragung, Suche von Verbindungspfaden, Fehlerkorrektur, finale Anwendung&lt;/li&gt;
+&lt;li&gt;Nachrichten einer höheren Schicht werden in Nachrichten der nächsttieferen Schicht eingewickelt
+&lt;ul&gt;
+&lt;li&gt;metaphorisches Beispiel: verpacktes Geschenk in Postpaket in Postwertsack in Cargo-Flugzeug&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Austauschbarkeit einzelner Teile des Stapels: z.B. höhere Protokollebenen hängen (fast) nicht davon ab, ob die Übertragung mittels Ethernet oder DSL oder WLAN oder LTE etc. läuft
+&lt;ul&gt;
+&lt;li&gt;innerhalb der Metapher: Paket kann sowohl über Luftpost als auch per Schiff zugestellt werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lehrmodell: &lt;a href=&#34;https://de.wikipedia.org/wiki/OSI-Modell&#34;&gt;OSI-Modell&lt;/a&gt; (Open Systems Interconnection) mit 7 Schichten; &lt;a href=&#34;https://computer.rip/2021-03-27-the-actual-osi-model.html&#34;&gt;entspricht aber nicht ganz der Realität&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schicht 1: Bitübertragungsschicht (&amp;quot;Physical Layer&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bei kabelgebundenen Wegen Spezifikation der Kabel (Aderanzahl, Materialien, Schirmung, etc.) und Stecker&lt;/li&gt;
+&lt;li&gt;bei kabellosen Wegen Spezifikation des Frequenzspektrums etc.&lt;/li&gt;
+&lt;li&gt;auf dieser Ebene im Allgemeinen nur Folgen von Bits (Nullen und Einsen)&lt;/li&gt;
+&lt;li&gt;Problem: echte Welt ist fehlerbehaftet (Störsignale)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schicht 2: Sicherungsschicht (&amp;quot;Data Layer&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Realisierung einer fehlerfreien Übertragung zwischen direkt miteinander verbundenen Geräten&lt;/li&gt;
+&lt;li&gt;Bitfolgen werden zu &lt;em&gt;Frames&lt;/em&gt; zusammengefasst und mit Prüfsummen versehen
+&lt;ul&gt;
+&lt;li&gt;zu Prüfsummen siehe STP004&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MTU: &lt;em&gt;Maximum Transfer Unit&lt;/em&gt; (maximale Nutzlast in einem Frame)&lt;/li&gt;
+&lt;li&gt;manchmal enthalten: Protokolle zum Neustarten fehlgeschlagener Übertragungen (z.B. WLAN), ansonsten nur Verwerfen kaputter Frames (z.B. Ethernet)&lt;/li&gt;
+&lt;li&gt;hier meist hohe Komplexität aufgrund strenger Anforderungen an Verarbeitungsgeschwindigkeit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schicht 3: Vermittlungsschicht (&amp;quot;Network Layer&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Schicht 1 und 2 war nur für Geräte, die direkt miteinander verbunden sind (bzw. maximal durch Switches und Repeater verbunden)&lt;/li&gt;
+&lt;li&gt;Schicht 3 verschaltet mehrere solche lokale Netzwerke miteinander&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Router&lt;/em&gt;: Computer, der mit mehreren Netzwerken verbunden ist und dazwischen vermittelt&lt;/li&gt;
+&lt;li&gt;Internet ist paketbasiert (wie die Post), nicht verbindungsbasiert (wie das Telefonnetz)&lt;/li&gt;
+&lt;li&gt;auf Schicht 3 große Einigkeit in den Protokollen, um Interoperabilität zu ermöglichen&lt;/li&gt;
+&lt;li&gt;IP (&lt;em&gt;Internet Protocol&lt;/em&gt;)
+&lt;ul&gt;
+&lt;li&gt;Zuweisung global gültiger Adressen (&amp;quot;IP-Adressen&amp;quot;), z.B. &lt;code&gt;91.198.174.192&lt;/code&gt; für IP-Version 4 oder &lt;code&gt;2620:0:862:ed1a::1&lt;/code&gt; für IP-Version 6&lt;/li&gt;
+&lt;li&gt;IP-Pakete können über Netzwerkgrenzen hinweg an den Adressaten zugestellt werden; enthalten Rückadresse für Antwortpakete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IP-Adressen nicht immer eindeutig auf einen Computer zugewiesen
+&lt;ul&gt;
+&lt;li&gt;eine global erreichbare Adresse für mehrere Computer, z.B. Anycast (vgl. Großkundenadressen bei der Post)&lt;/li&gt;
+&lt;li&gt;private Adressen für die Verwendung in lokalen Netzwerken (analog zu internen Adressen in der Hauspost einer einzelnen Firma)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ICMP (&lt;em&gt;Internet Control Message Protocol&lt;/em&gt;)
+&lt;ul&gt;
+&lt;li&gt;z.B. Ping, Pfad-MTU-Aushandlung, Anzeige von nicht verfügbaren Empfängern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NAT (&lt;em&gt;Network Address Translation&lt;/em&gt;)
+&lt;ul&gt;
+&lt;li&gt;Anwendungsfeld: ein ganzes lokales Netzwerk hat nur eine öffentliche IP-Adresse&lt;/li&gt;
+&lt;li&gt;Router übersetzt IP-Adressen beim Übergang aus dem lokalen Netzwerk oder ins lokale Netzwerk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;weitere Protokolle insb. für die dynamische Verschaltung von Netzwerken, z.B. BGP (&lt;em&gt;Border Gateway Protocol&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schicht 4: Transportschicht (&amp;quot;Transport Layer&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Erweiterung von Schicht 3 um Sitzungsverwaltung und Fehlerkorrektur (analog zum Verhältnis von Schicht 2 zu Schicht 1)&lt;/li&gt;
+&lt;li&gt;Problem: IP-Adressen identifizieren nur Computer, nicht die Programme auf dem Computer&lt;/li&gt;
+&lt;li&gt;getrennte Sitzungen mittels &lt;em&gt;Ports&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;Verbindung eindeutig identifizierbar durch die Verbindung aus Quelladresse, Quellport, Zieladresse und Zielport&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TCP (&lt;em&gt;Transmission Control Protocol&lt;/em&gt;)
+&lt;ul&gt;
+&lt;li&gt;garantierte fehlerfreie Zustellung der Datenpakete jeder Verbindung in der jeweils richtigen Reihenfolge&lt;/li&gt;
+&lt;li&gt;z.B. für große Downloads und Uploads (HTTP)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fehlerkorrektur in TCP
+&lt;ul&gt;
+&lt;li&gt;verpflichtendes Bestätigen erfolgreicher Übertragungen&lt;/li&gt;
+&lt;li&gt;Sender hält Daten in einem Sendefenster vor, bis der Empfang von der Gegenseite bestätigt wurde; analog Empfangsfenster beim Empfänger&lt;/li&gt;
+&lt;li&gt;Überfüllungskontrolle: Sendefenstergröße wird angepasst, wenn die Fehlerrate zunimmt (weil jemand auf dem Weg Pakete verwerfen muss)&lt;/li&gt;
+&lt;li&gt;für den Benutzer sichtbar als &amp;quot;TCP Slow Start&amp;quot; (Downloads fangen meist erst mit geringer Geschwindigkeit an und werden dann schneller, sobald die optimale Sendefenstergröße gefunden wurde)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;UDP (&lt;em&gt;User Datagram Protocol&lt;/em&gt;)
+&lt;ul&gt;
+&lt;li&gt;keine Fehlerkorrektur; im Prinzip nur IP &#43; Ports&lt;/li&gt;
+&lt;li&gt;z.B. für Echtzeit-Anwendungen (Voice over IP), wo geringe Verzögerung wichtiger ist und der Verlust einzelner Pakete hingenommen werden kann&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schicht 5-7: Anwendungsschicht (&amp;quot;Application Layer&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;feinere Aufteilung nicht wirklich hilfreich, da die verschiedenen Aspekte zunehmend schwer voneinander zu trennen sind&lt;/li&gt;
+&lt;li&gt;Protokolle auf dieser Ebene: z.B. HTTP/HTTPS (Webseiten), SMTP/IMAP (E-Mail), DNS (Namensauflösung)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grenzen des Schichtenmodells&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;tiefere Schichten können durch höhere Schichten abgebildet werden; Beispiel: VPN-Protokolle (&lt;em&gt;Virtual Private Network&lt;/em&gt;; Protokolle der Schicht 7, das einen Datenkanal der Schicht 3 darstellt)&lt;/li&gt;
+&lt;li&gt;Schicht 8? Schicht 9?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zum Weiterhören&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;der großartige Podcast &lt;a href=&#34;https://requestforcomments.de/&#34;&gt;Request for Comments&lt;/a&gt; (dessen Produzentin natürlich Baecker und nicht Bauer heißt; ttimeless nimmt alle  Schuld auf sich)&lt;/li&gt;
+&lt;li&gt;hier der erwähnte &lt;a href=&#34;https://requestforcomments.de/archives/254&#34;&gt;RFC-Podcast über TCP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;außerdem die angesprochene Episode vom &lt;a href=&#34;https://cre.fm/&#34;&gt;Chaosradio Express&lt;/a&gt;: &lt;a href=&#34;https://cre.fm/cre197-ipv6&#34;&gt;CRE197 IPv6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lesestoff ;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.revk.uk/2017/12/its-official-adsl-works-over-wet-string.html&#34;&gt;ADSL over wet string&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tools.ietf.org/html/rfc1925&#34;&gt;Twelve Networking Truths&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Richtigstellung vorab"  />
+          <chapter start="00:00:18" title="Intro und Hallo"  />
+          <chapter start="00:02:45" title="Vorbemerkung zur Natur der Daten"  />
+          <chapter start="00:04:58" title="Recap: Protokolle"  />
+          <chapter start="00:06:22" title="Warum ein ganzer Stapel Protokolle? Ein Erklärungsversuch"  />
+          <chapter start="00:14:36" title="Schicht 1: Bitübertragungsschicht (Physical Layer)"  />
+          <chapter start="00:16:49" title="Fantastische Technologie und nasser Faden"  />
+          <chapter start="00:19:32" title="Einschub: Protokolle und Sprache"  />
+          <chapter start="00:22:58" title="Warum Layer 2?"  />
+          <chapter start="00:27:33" title="Schicht 2: Sicherungsschicht (Data Layer)"  />
+          <chapter start="00:38:03" title="Schicht 3: Vermittlungsschicht (Network Layer)"  />
+          <chapter start="00:41:00" title="IP: Das Internetprotokoll"  />
+          <chapter start="00:53:11" title="ICMP (Internet Control Message Protocol)"  />
+          <chapter start="00:58:26" title="NAT (Network Address Translation)"  />
+          <chapter start="01:00:58" title="Schicht 4: Transportschicht (Transport Layer)"  />
+          <chapter start="01:02:55" title="Ports und Portnummern"  />
+          <chapter start="01:07:14" title="TCP (Transmission Control Protocol)"  />
+          <chapter start="01:12:15" title="UDP (User Datagram Protocol)"  />
+          <chapter start="01:16:15" title="Schicht 5-7: Anwendungsschicht (Application Layer)"  />
+          <chapter start="01:18:10" title="Grenzen des Schichtenmodells"  />
+          <chapter start="01:20:12" title="Layer 8 und 9"  />
+      </chapters>
+      <enclosure length="39564586" url="https://xyrillian.de/dl/stp-005-netzwerk-schichtenmodell.mp3" type="audio/mpeg"/>
+      <enclosure length="49462152" url="https://xyrillian.de/dl/stp-005-netzwerk-schichtenmodell.ogg" type="audio/ogg"/>
+      <enclosure length="28570713" url="https://xyrillian.de/dl/stp-005-netzwerk-schichtenmodell.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/005-netzwerk-schichtenmodell/</guid>
+    <pubDate>Thu, 22 Jul 2021 16:00:00 GMT</pubDate>
+    <itunes:duration>81:46</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP004: Passwörter</itunes:title>
     <itunes:episode>4</itunes:episode>
     <itunes:season>1</itunes:season>

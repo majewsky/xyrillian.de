@@ -367,3 +367,17 @@ files:
       - *music-stp-opener-003
       - *music-stp-opener-004
 
+  - show: stp
+    episode: 5
+    slug: 005-netzwerk-schichtenmodell
+    title: Netzwerk-Schichtenmodell
+    pubtime: 1626969600 # 2021-07-22
+
+    markdown:
+      description: |
+        Wie in Folge 0 bereits erwähnt, tun wir viele Dinge mit Computern. Genauer tun wir sie in oder mit dem Internet.
+        Damit das funktionert ist es nötig vielerlei Protokolle übereinander zu stapeln. Wir präsentieren -- den Network Stack.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
+
