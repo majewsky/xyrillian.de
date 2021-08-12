@@ -381,3 +381,15 @@ files:
 
     music: *music-like-stp-000
 
+  - show: stp
+    episode: 6
+    slug: 006-kommandozeilen-und-unix-philosophie
+    title: Kommandozeilen und Unix-Philosophie
+    pubtime: 1628760600 # 2021-08-12
+
+    markdown:
+      description: |
+        Computer haben heute unglaublich leistungsfähige Grafik. Warum verwenden so viele Computer-Experten dann immer noch textbasierte Terminals?
+      shownotes: true # in file
+
+    music: *music-like-stp-000

@@ -27,6 +27,233 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP006: Kommandozeilen und Unix-Philosophie</itunes:title>
+    <itunes:episode>6</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP006: Kommandozeilen und Unix-Philosophie</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Computer haben heute unglaublich leistungsfähige Grafik. Warum verwenden so viele Computer-Experten dann immer noch textbasierte Terminals?</itunes:summary>
+    <description>Computer haben heute unglaublich leistungsfähige Grafik. Warum verwenden so viele Computer-Experten dann immer noch textbasierte Terminals?</description>
+    <content:encoded>&lt;p&gt;Computer haben heute unglaublich leistungsfähige Grafik. Warum verwenden so viele Computer-Experten dann immer noch textbasierte Terminals?&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Begriffsklärung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Kommandozeile&lt;/strong&gt;: allgemein jede textbasierte Steueroberfläche&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Terminal&lt;/strong&gt; (&amp;quot;Endpunkt&amp;quot;): ursprünglich ein einfacher Computerarbeitsplatz, der an einen Großrechner angeschlossen ist und eine Kommandozeile zur Steuerung desselben bereitstellt; heutzutage synonym mit &lt;strong&gt;Terminal-Emulator&lt;/strong&gt; (ein Programm, das denselben Zweck erfüllt)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Shell&lt;/strong&gt; (auch &amp;quot;Befehlszeile&amp;quot; genannt): ein Programm, das die Grundstruktur der Befehlsinteraktion im Terminal bereitstellt und das Ausführen und Kombinieren konkreter Befehle ermöglicht&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Befehl&lt;/strong&gt;: ein Programm, das in der Shell ausgeführt wird und eine konkrete Aktion bewirkt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Warum werden Terminals oft gegenüber grafischen Oberflächen (GUI) bevorzugt?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;Weil es viel cooler ist.&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;bessere Handhabbarkeit eines großen Funktionsumfangs, nach entsprechender Einarbeitung (vgl. GUI mit 1000 Knöpfen vs. Kommandozeile mit 1000 Befehlen)&lt;/li&gt;
+&lt;li&gt;Programmierbarkeit: Textmakros sind einfacher und robuster als GUI-Makros&lt;/li&gt;
+&lt;li&gt;Kombinierbarkeit: Textbausteine sind auf offensichtliche Art und Weise kombinierbar, grafische Bearbeitungsschritte nur begrenzt&lt;/li&gt;
+&lt;li&gt;Fernwartung: Übertragung von Text braucht weniger Bandbreite als Übertragung einer GUI&lt;/li&gt;
+&lt;li&gt;Zugriff bei Problemen oder bei Neuinstallation: wenn GUI nicht mehr oder noch nicht geht, geht oft noch das Terminal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nachteile von Terminals&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;schlechtere Auffindbarkeit von Funktionen (&amp;quot;Discoverability&amp;quot;)&lt;/li&gt;
+&lt;li&gt;steile Lernkurve&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Befehlszeilen gibt es überall, aber besonders prägend ist die von Unix&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Unix&lt;/strong&gt;: Familie von Betriebssystemen&lt;/li&gt;
+&lt;li&gt;ursprünglich Anfang der 1970er bei &lt;a href=&#34;https://de.wikipedia.org/wiki/Bell_Laboratories&#34;&gt;Bell Laboratories&lt;/a&gt; entwickelt von
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Dennis_Ritchie&#34;&gt;Dennis Ritchie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Douglas_McIlroy&#34;&gt;Douglas McIlroy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Ken_Thompson&#34;&gt;Ken Thompson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Brian_Kernighan&#34;&gt;Brian W. Kernighan&lt;/a&gt; wurde im Gespräch auch erwähnt. Er schrieb viele Programme für Unix und half, awk zu entwickeln.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;wichtige aktuelle Vertreter: Linux (und damit Android), macOS, BSD-Familie&lt;/li&gt;
+&lt;li&gt;Gründe für den fortwährenden Einfluss des originalen Unix:
+&lt;ul&gt;
+&lt;li&gt;Quellcode war für universitäre Nutzung frei zugänglich&lt;/li&gt;
+&lt;li&gt;vergleichsweise einfacher und modularer Aufbau&lt;/li&gt;
+&lt;li&gt;dadurch einfach auf neue Systeme übertragbar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Unix-Philosophie&#34;&gt;Unix-Philosophie&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Formulierung von Douglas McIlroy: &amp;quot;Mache nur eine Sache und mache sie gut.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Formulierung von Richard P. Gabriel: &amp;quot;Schlechter ist besser.&amp;quot; (Einfachheit ist wichtiger als alle anderen Eigenschaften eines Programmes wie Fehlerfreiheit, Konsistenz oder Vollständigkeit, da die Weiterentwicklung vereinfacht wird.)&lt;/li&gt;
+&lt;li&gt;weitere Formulierungen siehe verlinkter Wikipedia-Artikel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unix-Philosophie im Kontext des Terminals&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;meist nicht ein Befehl, der die ganze Aufgabe erledigt; sondern viele kleine Befehle, die kombiniert werden können&lt;/li&gt;
+&lt;li&gt;gemeinsames Datenmodell: Ströme von Textdaten, die außerdem zumeist zeilenweise verarbeitet werden&lt;/li&gt;
+&lt;li&gt;Kombinieren der einzelnen Befehle erfolgt interaktiv (direkt in der Shell) und dadurch iterativ (schrittweise durch wiederholtes Probieren und Anpassen der Befehlszeile)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beispiel: Wir wollen aus einem gegebenen Text die häufigsten Wörter bestimmen.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eingabedatei: &lt;a href=&#34;https://github.com/bundestag/gesetze/raw/7c8a6a955bdefcf32632ff85ca671225e94513f9/b/bgb/index.md&#34;&gt;BGB als Markdown-Datei&lt;/a&gt; aus der inoffiziellen Quelle &lt;a href=&#34;https://github.com/bundestag/gesetze&#34;&gt;https://github.com/bundestag/gesetze&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Schritt 1: Einlesen der Datei
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cat index.md&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Schritt 2: jedes Wort auf eine eigene Zeile
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cat index.md | tr &#39; &#39; &#39;\n&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;passt nicht ganz, aber ist für unsere Zwecke gut genug (&amp;quot;Schlechter ist besser&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Schritt 3: Wörter sortieren, dann identische Wörter zusammengruppieren und zählen
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cat index.md | tr &#39; &#39; &#39;\n&#39; | sort | uniq -c&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Schritt 4: Wörter nach ihrer Häufigkeit sortieren
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cat index.md | tr &#39; &#39; &#39;\n&#39; | sort | uniq -c | sort -k1 -n&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Schritt 5: nur die letzten 20 Zeilen, die die häufigsten Wörter enthalten
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cat index.md | tr &#39; &#39; &#39;\n&#39; | sort | uniq -c | sort -k1 -n | tail -n 20&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;siehe unten: Auszüge aus den Ausgaben jedes einzelnen Schrittes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abendgedanken: Eine Lernkurve ist nicht unbedingt ein Nachteil. Es ist durchaus wertvoll, wenn ein Programm seinem Nutzer richtig kommuniziert, wie viel Einarbeitung und Wissen erforderlich ist. Siehe LaTeX vs. Word.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Im Gespräch erwähnt wurden auch:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Noam_Chomsky&#34;&gt;Noam Chomsky&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Alan_Turing&#34;&gt;Alan Turing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Steve_Jobs&#34;&gt;Steve Jobs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Errata: Der Begriff &amp;quot;Mem&amp;quot; wurde nicht von &lt;a href=&#34;https://de.wikipedia.org/wiki/Douglas_R._Hofstadter&#34;&gt;Douglas Hofstadter&lt;/a&gt; eingeführt, sondern von &lt;a href=&#34;https://de.wikipedia.org/wiki/Richard_Dawkins&#34;&gt;Richard Dawkins&lt;/a&gt; (in seinem Buch &lt;a href=&#34;https://de.wikipedia.org/wiki/Das_egoistische_Gen&#34;&gt;&amp;quot;Das egoistische Gen&amp;quot;&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Auszüge aus den einzelnen Schritten des Beispiels&lt;/h2&gt;
+&lt;p&gt;Jeweils mit &lt;code&gt;| head&lt;/code&gt;, um nur die ersten 10 Zeilen zu zeigen.&lt;/p&gt;
+&lt;h3&gt;Schritt 1&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ cat index.md | head
+---
+Title: Bürgerliches Gesetzbuch
+jurabk: BGB
+layout: default
+origslug: bgb
+slug: bgb
+
+---
+
+# Bürgerliches Gesetzbuch (BGB)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Schritt 2&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ cat index.md | tr &#39; &#39; &#39;\n&#39; | head
+---
+Title:
+Bürgerliches
+Gesetzbuch
+jurabk:
+BGB
+layout:
+default
+origslug:
+bgb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Schritt 3&lt;/h3&gt;
+&lt;p&gt;Hier sieht man keine Wörter im engeren Sinne, sondern Folgen von Sonderzeichen, deren Zeichen aus technischen Gründen vor den eigentlichen Buchstaben einsortiert werden. In der ganz ersten Zeile taucht die Anzahl von Zeilen auf, die nach Schritt 2 komplett leer waren (zum Beispiel Leerzeilen, die im Ursprungsdokument Absätze voneinander trennen).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cat index.md | tr &#39; &#39; &#39;\n&#39; | sort | uniq -c | head
+  18490
+      1 #
+      5 ##
+     35 ###
+    376 ####
+   1216 #####
+   1015 ######
+     24 (§
+      6 (§§
+      1 *
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Schritt 4&lt;/h3&gt;
+&lt;p&gt;Aufgrund der Sortierreihenfolge sehen wir hier besonders seltene Ergebnisse mit je einem Treffer.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cat index.md | tr &#39; &#39; &#39;\n&#39; | sort | uniq -c | sort -k1 -n | head
+      1 #
+      1 *
+      1 ,
+      1 0,75
+      1 1).
+      1 1\.
+      1 1005
+      1 1006
+      1 1007
+      1 1008
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Schritt 5&lt;/h3&gt;
+&lt;p&gt;Das Endergebnis.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cat index.md | tr &#39; &#39; &#39;\n&#39; | sort | uniq -c | sort -k1 -n | tail -n 20
+   1374 auf
+   1383 nach
+   1391 für
+   1448 ist
+   1523 von
+   1568 so
+   1574 das
+   1630 wenn
+   1692 in
+   1850 zu
+   1953 nicht
+   2127 und
+   2628 den
+   2737 dem
+   2909 oder
+   3584 §
+   4718 des
+   5980 die
+   8602 der
+  18490
+&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Begrüßung"  />
+          <chapter start="00:02:34" title="Begriffserklärung Kommandozeile und Terminal"  />
+          <chapter start="00:05:32" title="Begriffserklärung Terminal-Emulator"  />
+          <chapter start="00:07:01" title="Begriffserklärung Shell"  />
+          <chapter start="00:12:32" title="Warum überhaupt Terminals benutzen?"  />
+          <chapter start="00:24:21" title="Nachteile von Terminals"  />
+          <chapter start="00:32:24" title="Unix und die Unixfamilie"  />
+          <chapter start="00:43:45" title="Die Unix-Philosophie"  />
+          <chapter start="00:50:59" title="Unix-Philosophie im Kontext des Terminals"  />
+          <chapter start="00:53:06" title="Beispiel: Gesetzestextmanipulation"  />
+          <chapter start="01:10:54" title="Abendgedanken über den Wert einer Lernkurve"  />
+          <chapter start="01:26:42" title="Outro"  />
+      </chapters>
+      <enclosure length="42597030" url="https://xyrillian.de/dl/stp-006-kommandozeilen-und-unix-philosophie.mp3" type="audio/mpeg"/>
+      <enclosure length="55024669" url="https://xyrillian.de/dl/stp-006-kommandozeilen-und-unix-philosophie.ogg" type="audio/ogg"/>
+      <enclosure length="31286363" url="https://xyrillian.de/dl/stp-006-kommandozeilen-und-unix-philosophie.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/006-kommandozeilen-und-unix-philosophie/</guid>
+    <pubDate>Thu, 12 Aug 2021 09:30:00 GMT</pubDate>
+    <itunes:duration>88:05</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP005: Netzwerk-Schichtenmodell</itunes:title>
     <itunes:episode>5</itunes:episode>
     <itunes:season>1</itunes:season>
