@@ -27,6 +27,131 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP007: Speicherhierarchie</itunes:title>
+    <itunes:episode>7</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP007: Speicherhierarchie</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Für große Teile der Anwender liegt sie im Verborgenen. Versteckt unter Plastik- und Metallgehäusen ist die Welt der Speicher ein ebenso fremder wie faszinierender Ort. Doch auch hier herscht eine strenge Rangordnung, bestimmt allein von Geschwindigkeit und Ausdauer. Hört selbst, welch beschwerlicher Weg sich auftut, wenn Bits sich auf die Reise machen, um verarbeitet zu werden.</itunes:summary>
+    <description>Für große Teile der Anwender liegt sie im Verborgenen. Versteckt unter Plastik- und Metallgehäusen ist die Welt der Speicher ein ebenso fremder wie faszinierender Ort. Doch auch hier herscht eine strenge Rangordnung, bestimmt allein von Geschwindigkeit und Ausdauer. Hört selbst, welch beschwerlicher Weg sich auftut, wenn Bits sich auf die Reise machen, um verarbeitet zu werden.</description>
+    <content:encoded>&lt;p&gt;Für große Teile der Anwender liegt sie im Verborgenen. Versteckt unter Plastik- und Metallgehäusen ist die Welt der Speicher ein ebenso fremder wie faszinierender Ort. Doch auch hier herscht eine strenge Rangordnung, bestimmt allein von Geschwindigkeit und Ausdauer. Hört selbst, welch beschwerlicher Weg sich auftut, wenn Bits sich auf die Reise machen, um verarbeitet zu werden.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug zu STP003: Logikgatter&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;damit Rechnen möglich&lt;/li&gt;
+&lt;li&gt;für Eingabewerte und Ausgabewerte ist ein Speicher erforderlich&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kurzabriss zum Thema &lt;a href=&#34;https://de.wikipedia.org/wiki/Harvard-Architektur&#34;&gt;Harvard-Architektur&lt;/a&gt; vs. &lt;a href=&#34;https://de.wikipedia.org/wiki/Von-Neumann-Architektur&#34;&gt;Von-Neumann-Architektur&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;grundsätzliche Arten von Speichern&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;flüchtiger Speicher: braucht Strom zum Halten von Daten&lt;/li&gt;
+&lt;li&gt;nichtflüchtiger Speicher: behält Daten auch im ausgeschalteten Zustand&lt;/li&gt;
+&lt;li&gt;Der ideale Speicher wäre groß, schnell, nichtflüchtig, und beliebig oft wiederbeschreibbar.&lt;/li&gt;
+&lt;li&gt;da wir keinen idealen Speicher haben: &lt;strong&gt;Speicherhierarchie&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In der folgenden Liste der verschiedenen Hierarchiestufen sind alle konkreten Zahlenwerte nur illustrative Beispielwerte für Hardware der aktuellen Generation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Stufe 1: &lt;a href=&#34;https://de.wikipedia.org/wiki/Festplattenlaufwerk&#34;&gt;Festplatte&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nichtflüchtig, groß und günstig (ab etwa 25 Euro pro TiB)&lt;/li&gt;
+&lt;li&gt;Zugriffsgeschwindigkeit: 2.5 bis 10 ms (bei 3 GHz: 7,5 bis 30 Millionen Takte) plus Übertragungszeit&lt;/li&gt;
+&lt;li&gt;Zugriff immer mindestens in Blöcken zu 4 KiB, besonders effizient beim Zugriff auf Sequenzen aufeinanderfolgender Blöcke&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stufe 2: &lt;a href=&#34;https://de.wikipedia.org/wiki/Solid-State-Drive&#34;&gt;SSD&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;etwas teurer als Festplatten (ab etwa 90 Euro pro TiB)&lt;/li&gt;
+&lt;li&gt;aber Zugriffsgeschwindigkeit: 0.05 ms (bei 3 GHz: 150.000 Takte)&lt;/li&gt;
+&lt;li&gt;anders als bei Festplatten schneller Wahlzugriff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stufe 3: &lt;a href=&#34;https://de.wikipedia.org/wiki/Random-Access_Memory&#34;&gt;Arbeitsspeicher (RAM)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ab hier flüchtig (Vorteil: öfter wiederbeschreibbar ohne Qualitätsverlust)&lt;/li&gt;
+&lt;li&gt;deutlich teurer (ab etwa 4 Euro pro &lt;strong&gt;GiB&lt;/strong&gt;, entspr. ~4000 Euro pro TiB)&lt;/li&gt;
+&lt;li&gt;gerade deswegen meist kleiner als die nichtflüchtigen Speicher
+&lt;ul&gt;
+&lt;li&gt;übliche Größen: von 2-4 GiB bei Smartphones oder kleinen Notebooks bis mehrere TiB bei Servern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Zugriffsgeschwindigkeit: 15 ns Latenz plus Übertragungszeit, insgesamt z.B. 65 ns (bei 3 GHz: 200 Takte)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stufe 4: &lt;a href=&#34;https://en.wikipedia.org/wiki/CPU_cache&#34;&gt;Cache (Zwischenspeicher) des Prozessors&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ab hier fest in den Prozessor eingebaut&lt;/li&gt;
+&lt;li&gt;Abbilder von einzelnen Zeilen (je 64 Byte) aus dem Arbeitsspeicher&lt;/li&gt;
+&lt;li&gt;Größe: 4-16 MiB&lt;/li&gt;
+&lt;li&gt;Zugriffsgeschwindigkeit: 1-5 ns (bei 3 GHz: 3-15 Takte)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stufe 5: &lt;a href=&#34;https://en.wikipedia.org/wiki/Register_file&#34;&gt;Registerbank des Prozessors&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Größe: 64 bis einige 100 Byte&lt;/li&gt;
+&lt;li&gt;Zugriffsgeschwindigkeit: meist 1 Takt&lt;/li&gt;
+&lt;li&gt;nur dieser Speicher kann vom CPU direkt für Berechnungen verwendet werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;andere mögliche Hierarchiestufen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stufe 0: Speicher auf anderen Computern im Netzwerk&lt;/li&gt;
+&lt;li&gt;Stufe 2,5: nichtflüchtiger RAM (noch nicht weitverbreitet)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Speicher aus Sicht des Programmierers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Abstraktion: lineare Kette von bytegroßen Speicherzellen, die fortlaufend nummeriert sind (&lt;strong&gt;Speicheradressen&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Probleme mit dieser Abstraktion:
+&lt;ul&gt;
+&lt;li&gt;kleinste sinnvolle Schreibmengen (4/8 Bytes bei Registern, 64 Bytes bei RAM, 4 KiB bei Festplatte/SSD)&lt;/li&gt;
+&lt;li&gt;Caching-Verhalten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Einfluss auf effizientes Rechnen: viel wichtiger als schnelles Rechnen ist lokales Rechnen&lt;/li&gt;
+&lt;li&gt;Beispiel: Repräsentation von 2D-Feldern (z.B. Grafiken) und effizientes Bearbeiten derselben&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://akkadia.org/drepper/cpumemory.pdf&#34;&gt;&amp;quot;What every programmer should know about memory&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:00:38" title="Prolog und Ausblick"  />
+          <chapter start="00:02:24" title="Harvard-Architektur vs. Von-Neumann-Architektur"  />
+          <chapter start="00:05:58" title="Abwägung technischer Eigenschaften"  />
+          <chapter start="00:07:35" title="Grundsätzliche Arten von Speichern"  />
+          <chapter start="00:12:08" title="Festplatte (HDD)"  />
+          <chapter start="00:22:45" title="SSD"  />
+          <chapter start="00:29:11" title="Arbeitsspeicher(RAM)"  />
+          <chapter start="00:42:15" title="Prozessorcache"  />
+          <chapter start="00:53:01" title="Registerbank"  />
+          <chapter start="00:57:05" title="Speicher aus Sicht des Programmierers"  />
+      </chapters>
+      <enclosure length="30081141" url="https://xyrillian.de/dl/stp-007-speicherhierarchie.mp3" type="audio/mpeg"/>
+      <enclosure length="40115908" url="https://xyrillian.de/dl/stp-007-speicherhierarchie.ogg" type="audio/ogg"/>
+      <enclosure length="22557543" url="https://xyrillian.de/dl/stp-007-speicherhierarchie.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/007-speicherhierarchie/</guid>
+    <pubDate>Thu, 02 Sep 2021 00:00:00 GMT</pubDate>
+    <itunes:duration>62:01</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP006: Kommandozeilen und Unix-Philosophie</itunes:title>
     <itunes:episode>6</itunes:episode>
     <itunes:season>1</itunes:season>

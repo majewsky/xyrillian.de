@@ -393,3 +393,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 7
+    slug: 007-speicherhierarchie
+    title: Speicherhierarchie
+    pubtime: 1630540800 # 2021-09-02
+
+    markdown:
+      description: |
+        Für große Teile der Anwender liegt sie im Verborgenen. Versteckt unter Plastik- und Metallgehäusen ist die Welt der Speicher ein ebenso fremder wie faszinierender Ort. Doch auch hier herscht eine strenge Rangordnung, bestimmt allein von Geschwindigkeit und Ausdauer. Hört selbst, welch beschwerlicher Weg sich auftut, wenn Bits sich auf die Reise machen, um verarbeitet zu werden.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
