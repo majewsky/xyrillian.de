@@ -405,4 +405,16 @@ files:
         Für große Teile der Anwender liegt sie im Verborgenen. Versteckt unter Plastik- und Metallgehäusen ist die Welt der Speicher ein ebenso fremder wie faszinierender Ort. Doch auch hier herscht eine strenge Rangordnung, bestimmt allein von Geschwindigkeit und Ausdauer. Hört selbst, welch beschwerlicher Weg sich auftut, wenn Bits sich auf die Reise machen, um verarbeitet zu werden.
       shownotes: true # in file
 
+  - show: stp
+    episode: 8
+    slug: 008-2d-grafik
+    title: 2D-Grafik
+    pubtime: 1632415500 # 2021-09-23
+
+    markdown:
+      description: |
+        Hier nun der zweite Teil unserer Reihe über die Herkunft und Darstellung von Grafik.
+        Genießen sie heute Funfacts und Kaufberatung auf mittelmäßigem Niveau.
+      shownotes: true # in file
+
     music: *music-like-stp-000

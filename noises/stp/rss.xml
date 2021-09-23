@@ -27,6 +27,110 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP008: 2D-Grafik</itunes:title>
+    <itunes:episode>8</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP008: 2D-Grafik</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Hier nun der zweite Teil unserer Reihe über die Herkunft und Darstellung von Grafik.
+Genießen sie heute Funfacts und Kaufberatung auf mittelmäßigem Niveau.</itunes:summary>
+    <description>Hier nun der zweite Teil unserer Reihe über die Herkunft und Darstellung von Grafik.
+Genießen sie heute Funfacts und Kaufberatung auf mittelmäßigem Niveau.</description>
+    <content:encoded>&lt;p&gt;Hier nun der zweite Teil unserer Reihe über die Herkunft und Darstellung von Grafik.
+Genießen sie heute Funfacts und Kaufberatung auf mittelmäßigem Niveau.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;computergenerierte Bilder sind &lt;strong&gt;rasterisiert&lt;/strong&gt; (in Bildpunkte unterteilt)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jeder Bildpunkt hat genau eine Farbe&lt;/li&gt;
+&lt;li&gt;generell sind verschiedene Rasterisierungen möglich (z.B. bei Facettenaugen von Insekten meist hexagonale Rasterung)&lt;/li&gt;
+&lt;li&gt;bei Computern meist quadratische Pixelraster: vereinfacht Speicherabbildung und bestimmte Berechnungen, die Nachbarpixel einbeziehen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Farbe ist nicht eine einzige Zahl, sondern ein Punkt in einem mehrdimensionalen &lt;strong&gt;Farbraum&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;verschiedene Farbräume/Farbmodelle je nach Anwendung
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/RGB-Farbraum&#34;&gt;RGB&lt;/a&gt; (Rot-Grün-Blau): für selbstleuchtende Monitore mit drei verschiedenen Grundfarben (&lt;a href=&#34;https://commons.wikimedia.org/wiki/File:Lochmaske_makro.jpg&#34;&gt;Beispiel aus einem CRT-Monitor&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/YUV-Farbmodell&#34;&gt;YUV&lt;/a&gt; (Y-Luminanz, UV-Chrominanz) etc.: für Fernsehbildschirme (abwärtskompatibel zu Schwarzweißfernsehern, die UV ignorieren und nur Y anzeigen)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/HSV-Farbraum&#34;&gt;HSV&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/wiki/Lab-Farbraum&#34;&gt;CIELAB&lt;/a&gt;: modellieren die natürliche Farbwahrnehmung des Menschen&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/CMYK-Farbmodell&#34;&gt;CMYK&lt;/a&gt; (Cyan-Magenta-Yellow-Black): für Druckprozesse mit vier Standardtinten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Farbräume sind meistens dreidimensional, weil wir drei Arten von Farbrezeptoren im Auge haben (zum Vergleich: Fangschreckenkrebse haben bis zu 12 Rezeptorarten und bräuchten also einen zwölfdimensionalen Farbraum)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beispielrechnung: Wie groß ist der Datenstrom zu einem normalen Computermonitor?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;angenommen 4K-Auflösung: 3840x2160 Pixel&lt;/li&gt;
+&lt;li&gt;angenommen 8 Bit Farbtiefe: 8 Bit pro Pixel und Farbe, also 3 Byte pro Pixel (es gibt auch schon Monitore mit 10 Bit oder 12 Bit Farbtiefe)&lt;/li&gt;
+&lt;li&gt;angenommen 60 Hz, also 60 Bilder pro Sekunde&lt;/li&gt;
+&lt;li&gt;Ergebnis (ohne Datenkompression): 3840 * 2160 Pixel / Bild * 3 Byte / Pixel * 60 Bilder / Sekunde = 1.39 GiB/s bzw. 11.1 Gib/s&lt;/li&gt;
+&lt;li&gt;zum Vergleich: komprimiertes 4K-Video typischerweise 2 MiB/s (16 Mib/s), Kompressionsfaktor ~700&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bildaufbau in traditionellen Systemen mit 2D-Grafik (z.B. Spielkonsolen der 80er und frühen 90er) erfolgt meist mittels &lt;strong&gt;Sprites&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sprites: einzelne vorgefertigte Bilder (z.B. Glyphen einer Terminal-Schriftart oder einzelne Objekte in einem Videospiel)
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Pixel_art&#34;&gt;Pixel-Art&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Grafikprozessor erhält eine Liste von Sprites mit den entsprechenden Positionen, an denen diese eingefügt werden sollen&lt;/li&gt;
+&lt;li&gt;Bild entsteht als Überlagerung aller Sprites in ein Gesamtbild&lt;/li&gt;
+&lt;li&gt;Gesamtbild liegt somit im Videospeicher vor (einem separaten Speicher des Grafikprozessors) und kann dann zum Monitor geschickt werden (siehe auch &lt;a href=&#34;https://de.wikipedia.org/wiki/Doppelpufferung&#34;&gt;Double Buffering&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/wiki/Vertikale_Synchronisation&#34;&gt;V-Sync&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;in Abgrenzung dazu: &lt;strong&gt;Vektorgrafik&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beschreibung eines Bildes mittels grafischer Primitiven (Rechtecke, Kreise, Linien, Kurven)&lt;/li&gt;
+&lt;li&gt;Bildaufbau durch &lt;strong&gt;Rasterisierung&lt;/strong&gt; dieser Primitiven, z.B. mittels des &lt;a href=&#34;https://de.wikipedia.org/wiki/Bresenham-Algorithmus&#34;&gt;Bresenham-Algorithmus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;bis Ende der 90er oft mittels separater Koprozessoren (z.B. &lt;a href=&#34;https://de.wikipedia.org/wiki/Super_FX&#34;&gt;Super FX&lt;/a&gt;), da die normalen Prozessoren nicht schnell genug waren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bildaufbau in traditionellen Desktopsystemen (z.B. Windows 95 bis XP) ist eine Mischung aus beiden&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fensterrahmen, Knöpfe etc. als Vektorgrafik (teilweise in Sprites vorgerendert)&lt;/li&gt;
+&lt;li&gt;Textsatz ebenfalls auf Basis vorgerenderter Sprites für die einzelnen Zeichen, die wiederum als Vektorgrafik definiert sind&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;seit den 2000er-Jahren werden auch 2D-Bilder zunehmend auf der Grafikkarte berechnet, denn:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grafikkarten bzw. Grafikprozessoren (GPUs) sind seit diesem Punkt hinreichend allgegenwärtig&lt;/li&gt;
+&lt;li&gt;GPUs sind für diese Aufgabe deutlich effizienter (sowohl in Geschwindigkeit als auch Energieverbrauch)&lt;/li&gt;
+&lt;li&gt;GPUs können auch fortgeschrittene Effekte wie Schattierungen oder Animationen effizient berechnen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und einführende Worte"  />
+          <chapter start="00:01:41" title="Rasterisierung und Bildwahrnehmung"  />
+          <chapter start="00:10:06" title="Farbräume"  />
+          <chapter start="00:14:33" title="RGB-Farbraum"  />
+          <chapter start="00:17:31" title="YUV-Farbraum"  />
+          <chapter start="00:23:21" title="HSV- und CIELAB-Farbräume"  />
+          <chapter start="00:28:04" title="CMYK-Farbraum"  />
+          <chapter start="00:31:03" title="Der Datenstrom zum Monitor"  />
+          <chapter start="00:42:41" title="Bildaufbau mittels Sprites"  />
+          <chapter start="00:59:37" title="Vektorgrafik"  />
+          <chapter start="01:11:53" title="Bildaufbau in traditionellen Desktopsystemen"  />
+      </chapters>
+      <enclosure length="39780588" url="https://xyrillian.de/dl/stp-008-2d-grafik.mp3" type="audio/mpeg"/>
+      <enclosure length="52702252" url="https://xyrillian.de/dl/stp-008-2d-grafik.ogg" type="audio/ogg"/>
+      <enclosure length="30239041" url="https://xyrillian.de/dl/stp-008-2d-grafik.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/008-2d-grafik/</guid>
+    <pubDate>Thu, 23 Sep 2021 16:45:00 GMT</pubDate>
+    <itunes:duration>82:13</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP007: Speicherhierarchie</itunes:title>
     <itunes:episode>7</itunes:episode>
     <itunes:season>1</itunes:season>
