@@ -418,3 +418,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 9
+    slug: 009-fliesskommazahlen
+    title: Fließkommazahlen
+    pubtime: 1634229600 # 2021-10-14
+
+    markdown:
+      description: |
+        „Wir nehmen diese Ausrede Grafik, um in diesen Grundlagenfolgen Dinge zu erklären, die überhaupt nichts mit Grafik zu tun zu haben scheinen, aber dann machen wir den Bogen doch wieder zurück.“
+        Damit schafft Xyrill die passende Einleitung dieser dritten Folge unserer vierteiligen Reihe.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

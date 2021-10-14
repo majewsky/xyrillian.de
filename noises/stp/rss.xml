@@ -27,6 +27,137 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP009: Fließkommazahlen</itunes:title>
+    <itunes:episode>9</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP009: Fließkommazahlen</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>„Wir nehmen diese Ausrede Grafik, um in diesen Grundlagenfolgen Dinge zu erklären, die überhaupt nichts mit Grafik zu tun zu haben scheinen, aber dann machen wir den Bogen doch wieder zurück.“
+Damit schafft Xyrill die passende Einleitung dieser dritten Folge unserer vierteiligen Reihe.</itunes:summary>
+    <description>„Wir nehmen diese Ausrede Grafik, um in diesen Grundlagenfolgen Dinge zu erklären, die überhaupt nichts mit Grafik zu tun zu haben scheinen, aber dann machen wir den Bogen doch wieder zurück.“
+Damit schafft Xyrill die passende Einleitung dieser dritten Folge unserer vierteiligen Reihe.</description>
+    <content:encoded>&lt;p&gt;„Wir nehmen diese Ausrede Grafik, um in diesen Grundlagenfolgen Dinge zu erklären, die überhaupt nichts mit Grafik zu tun zu haben scheinen, aber dann machen wir den Bogen doch wieder zurück.“
+Damit schafft Xyrill die passende Einleitung dieser dritten Folge unserer vierteiligen Reihe.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug zu STP001: Ganzzahlen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. 8-Bit-Zahlen: ohne Vorzeichen 0 bis 255 oder mit Vorzeichen -128 bis 127&lt;/li&gt;
+&lt;li&gt;Problem 1: Wie stellt man Zahlen mit Nachkommastellen dar?&lt;/li&gt;
+&lt;li&gt;Problem 2: Wie stellt man sehr große Zahlen effizient dar?&lt;/li&gt;
+&lt;li&gt;zwei Optionen: Festkommazahlen und Fließkommazahlen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Festkommazahlen&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;im Prinzip dasselbe wie Ganzzahlen, aber zählt in Schritten von 0,1 oder 0,01 etc.&lt;/li&gt;
+&lt;li&gt;Beispiel: Währungsrechnungen oft mit 4 Nachkommastellen (also auf 0,01 Eurocent genau)&lt;/li&gt;
+&lt;li&gt;gegenüber Fließkommazahlen: schneller und genauer, aber nicht so flexibel (löst nur Problem 1, nicht Problem 2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Fließkommazahlen&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;grundsätzliche Idee: analog zur &lt;a href=&#34;https://de.wikipedia.org/wiki/Wissenschaftliche_Notation&#34;&gt;wissenschaftlichen Zahlennotation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. &amp;quot;1,2 Milliarden&amp;quot;: nicht als &lt;code&gt;1.200.000.000&lt;/code&gt;, sondern &lt;code&gt;1,2 x 10^9&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;z.B. &amp;quot;2 Hunderttausendstel&amp;quot;: nicht als &lt;code&gt;0,000002&lt;/code&gt;, sondern &lt;code&gt;2 x 10^-6&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vorteil: unabhängig von der Größenordnung kann immer die gleiche Zahl an Ziffern dargestellt werden&lt;/li&gt;
+&lt;li&gt;in Computern natürlich nicht zur Basis 10, sondern zur Basis 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bestandteile einer Fließkommazahl&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Exponent&lt;/strong&gt; (E): die Anzahl der Zweierpotenzen&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mantisse&lt;/strong&gt; (M): der Teil der Zahl, der nicht in der Potenz steht&lt;/li&gt;
+&lt;li&gt;insgesamt also &lt;code&gt;M * 2^E&lt;/code&gt; für positive oder &lt;code&gt;-M * 2^E&lt;/code&gt; für negative Zahlen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rechenoperationen ungefähr analog zum Rechenschieber&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. Addition: erst die Exponenten angleichen, dann die Mantissen addieren, dann eventuell nochmal den Exponenten anpassen, damit die finale Darstellung wieder schön kompakt ist&lt;/li&gt;
+&lt;li&gt;hier kommt das Überlaufbit aus STP003 wieder ins Spiel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kodierung: fast immer gemäß &lt;a href=&#34;https://de.wikipedia.org/wiki/IEEE_754&#34;&gt;IEEE-754-Standard&lt;/a&gt;
+* &lt;a href=&#34;https://de.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers&#34;&gt;IEEE&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem: wir wollen uns nicht merken müssen, wo in der Mantisse das Komma steht&lt;/li&gt;
+&lt;li&gt;Trick: wir schieben das Komma so hin, dass die Mantisse mit &lt;code&gt;1,&lt;/code&gt; anfängt, und speichern dann nur den Teil dahinter (&lt;strong&gt;normalisierte Zahlen&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Ausnahme: beim kleinsten Wert des Exponenten fängt die Mantisse mit &lt;code&gt;0,&lt;/code&gt; an, damit wir auch die Zahl 0 und sehr kleine Zahlen nahe 0 darstellen können (&lt;strong&gt;subnormale Zahlen&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;z.B. für 32 Bit: &lt;a href=&#34;https://de.wikipedia.org/wiki/Einfache_Genauigkeit&#34;&gt;einfache Genauigkeit&lt;/a&gt; (&amp;quot;Single Precision&amp;quot;)
+&lt;ul&gt;
+&lt;li&gt;1 Bit Vorzeichen&lt;/li&gt;
+&lt;li&gt;8 Bit Exponent (Ganzzahl zwischen -127 und 128)&lt;/li&gt;
+&lt;li&gt;23 Bit Signifikand (Mantisse ohne das führende &lt;code&gt;1,&lt;/code&gt; oder &lt;code&gt;0,&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Werte je nach Exponent:
+&lt;ul&gt;
+&lt;li&gt;Exponent = -127 -&amp;gt; subnormale Zahlen&lt;/li&gt;
+&lt;li&gt;Exponent = 128 -&amp;gt; spezielle Werte&lt;/li&gt;
+&lt;li&gt;ansonsten -&amp;gt; normalisierte Zahlen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;im Exponent 128 werden einige spezielle Werte kodiert, die man braucht, damit jede Rechenoperation immer eine gültige Fließkommazahl erzeugt:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;plus Unendlich&lt;/strong&gt;: z.B. &lt;code&gt;1 / 0 = &#43;∞&lt;/code&gt; oder &lt;code&gt;∞ &#43; ∞ = ∞&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;minus Unendlich&lt;/strong&gt;: z.B. &lt;code&gt;-1 / 0 = -∞&lt;/code&gt; oder &lt;code&gt;log2(0) = -∞&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;keine Zahl&lt;/strong&gt; (not a number, NaN): z.B. &lt;code&gt;∞ - ∞ = NaN&lt;/code&gt; oder &lt;code&gt;0 / 0 = NaN&lt;/code&gt; oder &lt;code&gt;log2(-1) = NaN&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implementation von Fließkommarechnungen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;initial in Software auf Basis von Ganzzahlen&lt;/li&gt;
+&lt;li&gt;seit den 1980ern zunehmend in Hardware (seit den 1990ern auch in PCs)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fallstricke bei Fließkommarechnungen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nicht alle kompakten Dezimalzahlen sind kompakte Binärzahlen: z.B. &lt;code&gt;0.3/0.2 = 1.4999999999999998&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;bei komplexen Berechnungen können sich kleine Rundungsfehler zu großen Fehlern aufschaukeln, siehe zum Beispiel &lt;a href=&#34;https://en.wikipedia.org/wiki/Kahan_summation_algorithm&#34;&gt;Kahan-Summenalgorithmus&lt;/a&gt; (leider in Wikipedia nur auf englisch)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Anwendungsbereiche üblicher Fließkommaformate&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;doppelte Genauigkeit (64 Bit): für wissenschaftliche Berechnungen&lt;/li&gt;
+&lt;li&gt;einfache Genauigkeit (32 Bit): für 3D-Grafik (siehe nächste Folge)&lt;/li&gt;
+&lt;li&gt;halbe Genauigkeit (16 Bit), Viertelgenauigkeit (8 Bit): für Training von neuronalen Netzwerken&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Vorrede"  />
+          <chapter start="00:02:19" title="Festkommazahlen"  />
+          <chapter start="00:04:28" title="Wissenschaftliche Zahlennotation"  />
+          <chapter start="00:09:25" title="Bestandteile einer Fließkommazahl"  />
+          <chapter start="00:10:29" title="Rechnen mit Fließkommazahlen"  />
+          <chapter start="00:14:03" title="Kodierung von Fließkommazahlen"  />
+          <chapter start="00:34:28" title="Implementation von Fließkommarechnungen"  />
+          <chapter start="00:38:26" title="Fallstricke bei Fließkommazahlen"  />
+          <chapter start="00:43:20" title="Anwendungsbereiche üblicher Fließkommaformate"  />
+      </chapters>
+      <enclosure length="24102965" url="https://xyrillian.de/dl/stp-009-fliesskommazahlen.mp3" type="audio/mpeg"/>
+      <enclosure length="31214808" url="https://xyrillian.de/dl/stp-009-fliesskommazahlen.ogg" type="audio/ogg"/>
+      <enclosure length="17970217" url="https://xyrillian.de/dl/stp-009-fliesskommazahlen.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/009-fliesskommazahlen/</guid>
+    <pubDate>Thu, 14 Oct 2021 16:40:00 GMT</pubDate>
+    <itunes:duration>49:33</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP008: 2D-Grafik</itunes:title>
     <itunes:episode>8</itunes:episode>
     <itunes:season>1</itunes:season>
