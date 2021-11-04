@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D-Grafik - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #10 vom 4. November 2021</h2>
+    <h1>3D-Grafik</h1>
+      <p>Heute geht es viel um Spiele. Denn anscheinend sind diese fast das Einzige, das Xyrill und ttimeless einfällt, wenn es um 3D-Grafik geht.
+Allgemeiner dreht sich diese Folge darum, was es alles braucht, um Körper in virtuellen Welten darzustellen.
+Der Abschluss der vierteiligen Reihe über Grafik, und was dazu notwendig ist.</p>
+      <p><strong>Länge:</strong> 69:00 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-010-3d-grafik.mp3" type="audio/mpeg">
+        <source src="/dl/stp-010-3d-grafik.ogg" type="audio/ogg">
+        <source src="/dl/stp-010-3d-grafik.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="817.022">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro, Begrüßung, Vorbemerkungen</span>
+      </div>
+      <div class="chapter" data-start="817.022" data-end="1045.027">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">13:37</span>
+        <span class="chapter-title">Schritt 1: 3D-Modell mit Polygonen</span>
+      </div>
+      <div class="chapter" data-start="1045.027" data-end="1620.017">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">17:25</span>
+        <span class="chapter-title">Schritt 2: Kamera</span>
+      </div>
+      <div class="chapter" data-start="1620.017" data-end="2420.009">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">27:00</span>
+        <span class="chapter-title">Schritt 3: Ausmalen der Polygone (Rasterisierung)</span>
+      </div>
+      <div class="chapter" data-start="2420.009" data-end="2846.019">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">40:20</span>
+        <span class="chapter-title">Schritt 4: Texturen</span>
+      </div>
+      <div class="chapter" data-start="2846.019" data-end="3118.012">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">47:26</span>
+        <span class="chapter-title">Einwurf: Was unterscheidet einen Grafikprozessor (GPU) von einem Hauptprozessor (CPU)?</span>
+      </div>
+      <div class="chapter" data-start="3118.012" data-end="4140.321">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">51:58</span>
+        <span class="chapter-title">Schritt 5: Shader</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-010-3d-grafik.mp3">MP3</a> (63,5 MiB)</li>
+          <li><a href="/dl/stp-010-3d-grafik.ogg">Ogg Vorbis</a> (39,7 MiB)</li>
+          <li><a href="/dl/stp-010-3d-grafik.opus">Opus</a> (24,3 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p>Vergleich zu 2D-Desktop-Grafik (STP008)</p>
+<ul>
+<li>Zeichenreihenfolge ist nicht so offensichtlich (Was ist vorne? Was ist hinten?)</li>
+<li>höherer Anspruch an Realismus: dynamische Beleuchtung, Texturierung, etc.</li>
+<li>Randbemerkung: auch 2D-Spiele werden heute meist in einer 3D-Szene aufgebaut</li>
+<li>Grundeinheit für 3D-Modelle: nicht der Pixel, sondern das Polygon (deswegen kommen wir um Fließkommazahlen nicht herum)</li>
+</ul>
+</li>
+<li>
+<p>Vorbemerkungen zu den folgenden Schritten:</p>
+<ul>
+<li>all dies passiert für jedes Einzelbild von vorne (also bei 60Hz 60-mal pro Sekunde)</li>
+<li>zur Illustration verlinken wir auf Beispielbilder aus den <a href="https://github.com/ssloy/tinyrenderer/wiki/Lesson-0:-getting-started">Übungsunterlagen für einen Kurs in 3D-Rendering-Grundlagen</a></li>
+</ul>
+</li>
+<li>
+<p>Schritt 1: 3D-Modell mit Polygonen</p>
+<ul>
+<li>Polygon heißt wörtlich &quot;Vieleck&quot;, aber 3D-Modelle bestehen meist nur aus Dreiecken</li>
+<li>Polygone mit vier und mehr Ecken können mittels <a href="https://de.wikipedia.org/wiki/Triangulation_(Fl%C3%A4che)">Triangulation</a> in Dreiecke zerlegt werden</li>
+<li><a href="https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/01-bresenham/5da6818190.png">Darstellung eines 3D-Modells als Gitternetz</a></li>
+</ul>
+</li>
+<li>
+<p>Schritt 2: Kamera</p>
+<ul>
+<li>grundsätzlich ein Paar aus Blickpunkt und Blickrichtung, aber mit einigen weiteren Parametern</li>
+<li>mathematische Grundlage: <a href="https://de.wikipedia.org/wiki/Quaternion">Quaternionen</a></li>
+<li><a href="https://de.wikipedia.org/wiki/Sichtfeld">Sichtfeld</a> (<strong>Field of View</strong>): beim Menschen 130°; bei Videospielen meist weniger, je nachdem, wieviel Platz der Bildschirm im Sichtfeld einnimmt (z.B. 90° am PC, 60° an Konsolen)</li>
+</ul>
+</li>
+<li>
+<p>Schritt 3: Ausmalen der Polygone (Rasterisierung)</p>
+<ul>
+<li><strong>Backface Culling</strong> (Rückseiten-Auslese): wir werfen alle Polygone weg, die von uns wegzeigen</li>
+<li><a href="https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/02-triangle/d5223f9b93.png">Beispiel mit ausgemalten Polygonen nach Backface Culling</a></li>
+<li><strong>Z-Buffer</strong>: wenn wir Polygone ausmalen, dann malen wir nur die Pixel aus, bei denen wir nicht schon Polygone gemalt haben, die näher an der Kamera dran sind</li>
+<li><a href="https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/03-zbuffer/f93a1fc1cbaebb9c4670ae0003e62947.png">Beispiel mit ausgemalten Polygonen unter Verwendung des Z-Buffers</a></li>
+</ul>
+</li>
+<li>
+<p>Schritt 4: Texturen</p>
+<ul>
+<li>bis jetzt war jedes Polygon einfarbig, jetzt kleben wir Bilder auf (analog zu Modellbausätzen)</li>
+<li>in der Praxis ein großes Bild für das ganze Modell</li>
+<li>jede Ecke jedes Polygons wird zu einem Punkt in der Textur zugeordnet</li>
+<li><a href="https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/03-zbuffer/73714966ad4a4377b8c4df60bef03777.png">Beispiel mit Polygonen, die mit ihrer Textur ausgemalt sind</a></li>
+</ul>
+</li>
+<li>
+<p>Einwurf: Was unterscheidet einen Grafikprozessor (GPU) von einem Hauptprozessor (CPU)?</p>
+<ul>
+<li>CPU-Kerne führen einzelne Befehle auf einzelnen Daten aus</li>
+<li>GPU führt einzelne Befehle auf vielen Daten gleichzeitig aus, z.B. Rasterisierung von 10000 Polygonen gleichzeitig oder Z-Buffer-Prüfung für 10000 Pixel gleichzeitig</li>
+<li>dadurch auch für andere massiv parallelisierbare Operationen interessant (&quot;GPGPU&quot;, General Purpose GPU), z.B. wissenschaftliche Simulationen, maschinelles Lernen, Passwortknacken</li>
+</ul>
+</li>
+<li>
+<p>Schritt 5: Shader</p>
+<ul>
+<li>bis jetzt haben wir die <strong>Fixed Function Pipeline</strong> beschrieben, eine im GPU-Treiber fest vorgegebene Kette von Rendering-Schritten</li>
+<li>neuere GPU (seit den frühen 2000ern) erlauben das Einbetten von eigenen Programmen (<strong>Shadern</strong>) in die Pipeline</li>
+<li><strong>Vertex Shader</strong>: wird einmal pro Vertex (Ecke eines Polygons) aufgerufen, um die 2D-Position auf dem Bildschirm zu berechnen (ansonsten normale Berechnung anhand der konfigurierten Kameraposition)</li>
+<li><strong>Fragment Shader</strong>: wird einmal pro Pixel aufgerufen, um gegebenenfalls die Farbe des Pixels zu modifizieren</li>
+<li><a href="https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/06-shaders/f2bf83c5994b9051aaba499cb05e65bf.png">Beispiel eines Fragment-Shaders, der eine Farbtextur auf 6 feste Farbstufen reduziert</a></li>
+</ul>
+</li>
+<li>
+<p>Schritt 6: Beleuchtung</p>
+<ul>
+<li>bei traditionallen 2D-Spielen mit Sprites war Beleuchtung meist global (z.B. jedes Objekt hat 2 Sprites, einmal für dunkle und einmal für helle Szenen)</li>
+<li>dynamische Beleuchtung: heute meist als Teil des Fragment Shaders</li>
+<li>Beispiel: <a href="https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/06-shaders/e3720a5dfedc49edb0bf70f8bc64204a.png">Phong's Approximation einer natürlichen Beleuchtung</a>
+<ul>
+<li>
+<ol>
+<li>Anteil: ambiente Beleuchtung (überall gleich stark, Grundausleuchtung wie in einem Fernsehstudio)</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Anteil: diffuse Beleuchtung (abhängig davon, wie sehr die beleuchtete Fläche zur Lichtquelle hingewendet ist)</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Anteil: spekulare Beleuchtung (Glänzen; stark überbetont auf Flächen, die fast exakt zur Lichtquelle hingewendet sind)</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>es gibt noch so viel mehr: Kantenglättung (Antialiasing), lineares und anisotropisches Filtern, Normal Mapping, Raytracing</p>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>

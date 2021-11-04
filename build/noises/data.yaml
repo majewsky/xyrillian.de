@@ -432,3 +432,18 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 10
+    slug: 010-3d-grafik
+    title: 3D-Grafik
+    pubtime: 1635984000 # 2021-11-04
+
+    markdown:
+      description: |
+        Heute geht es viel um Spiele. Denn anscheinend sind diese fast das Einzige, das Xyrill und ttimeless einfällt, wenn es um 3D-Grafik geht.
+        Allgemeiner dreht sich diese Folge darum, was es alles braucht, um Körper in virtuellen Welten darzustellen.
+        Der Abschluss der vierteiligen Reihe über Grafik, und was dazu notwendig ist.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

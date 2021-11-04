@@ -27,6 +27,138 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP010: 3D-Grafik</itunes:title>
+    <itunes:episode>10</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP010: 3D-Grafik</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Heute geht es viel um Spiele. Denn anscheinend sind diese fast das Einzige, das Xyrill und ttimeless einfällt, wenn es um 3D-Grafik geht.
+Allgemeiner dreht sich diese Folge darum, was es alles braucht, um Körper in virtuellen Welten darzustellen.
+Der Abschluss der vierteiligen Reihe über Grafik, und was dazu notwendig ist.</itunes:summary>
+    <description>Heute geht es viel um Spiele. Denn anscheinend sind diese fast das Einzige, das Xyrill und ttimeless einfällt, wenn es um 3D-Grafik geht.
+Allgemeiner dreht sich diese Folge darum, was es alles braucht, um Körper in virtuellen Welten darzustellen.
+Der Abschluss der vierteiligen Reihe über Grafik, und was dazu notwendig ist.</description>
+    <content:encoded>&lt;p&gt;Heute geht es viel um Spiele. Denn anscheinend sind diese fast das Einzige, das Xyrill und ttimeless einfällt, wenn es um 3D-Grafik geht.
+Allgemeiner dreht sich diese Folge darum, was es alles braucht, um Körper in virtuellen Welten darzustellen.
+Der Abschluss der vierteiligen Reihe über Grafik, und was dazu notwendig ist.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vergleich zu 2D-Desktop-Grafik (STP008)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zeichenreihenfolge ist nicht so offensichtlich (Was ist vorne? Was ist hinten?)&lt;/li&gt;
+&lt;li&gt;höherer Anspruch an Realismus: dynamische Beleuchtung, Texturierung, etc.&lt;/li&gt;
+&lt;li&gt;Randbemerkung: auch 2D-Spiele werden heute meist in einer 3D-Szene aufgebaut&lt;/li&gt;
+&lt;li&gt;Grundeinheit für 3D-Modelle: nicht der Pixel, sondern das Polygon (deswegen kommen wir um Fließkommazahlen nicht herum)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vorbemerkungen zu den folgenden Schritten:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;all dies passiert für jedes Einzelbild von vorne (also bei 60Hz 60-mal pro Sekunde)&lt;/li&gt;
+&lt;li&gt;zur Illustration verlinken wir auf Beispielbilder aus den &lt;a href=&#34;https://github.com/ssloy/tinyrenderer/wiki/Lesson-0:-getting-started&#34;&gt;Übungsunterlagen für einen Kurs in 3D-Rendering-Grundlagen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 1: 3D-Modell mit Polygonen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Polygon heißt wörtlich &amp;quot;Vieleck&amp;quot;, aber 3D-Modelle bestehen meist nur aus Dreiecken&lt;/li&gt;
+&lt;li&gt;Polygone mit vier und mehr Ecken können mittels &lt;a href=&#34;https://de.wikipedia.org/wiki/Triangulation_(Fl%C3%A4che)&#34;&gt;Triangulation&lt;/a&gt; in Dreiecke zerlegt werden&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/01-bresenham/5da6818190.png&#34;&gt;Darstellung eines 3D-Modells als Gitternetz&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 2: Kamera&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;grundsätzlich ein Paar aus Blickpunkt und Blickrichtung, aber mit einigen weiteren Parametern&lt;/li&gt;
+&lt;li&gt;mathematische Grundlage: &lt;a href=&#34;https://de.wikipedia.org/wiki/Quaternion&#34;&gt;Quaternionen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Sichtfeld&#34;&gt;Sichtfeld&lt;/a&gt; (&lt;strong&gt;Field of View&lt;/strong&gt;): beim Menschen 130°; bei Videospielen meist weniger, je nachdem, wieviel Platz der Bildschirm im Sichtfeld einnimmt (z.B. 90° am PC, 60° an Konsolen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 3: Ausmalen der Polygone (Rasterisierung)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Backface Culling&lt;/strong&gt; (Rückseiten-Auslese): wir werfen alle Polygone weg, die von uns wegzeigen&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/02-triangle/d5223f9b93.png&#34;&gt;Beispiel mit ausgemalten Polygonen nach Backface Culling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Z-Buffer&lt;/strong&gt;: wenn wir Polygone ausmalen, dann malen wir nur die Pixel aus, bei denen wir nicht schon Polygone gemalt haben, die näher an der Kamera dran sind&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/03-zbuffer/f93a1fc1cbaebb9c4670ae0003e62947.png&#34;&gt;Beispiel mit ausgemalten Polygonen unter Verwendung des Z-Buffers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 4: Texturen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bis jetzt war jedes Polygon einfarbig, jetzt kleben wir Bilder auf (analog zu Modellbausätzen)&lt;/li&gt;
+&lt;li&gt;in der Praxis ein großes Bild für das ganze Modell&lt;/li&gt;
+&lt;li&gt;jede Ecke jedes Polygons wird zu einem Punkt in der Textur zugeordnet&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/03-zbuffer/73714966ad4a4377b8c4df60bef03777.png&#34;&gt;Beispiel mit Polygonen, die mit ihrer Textur ausgemalt sind&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Einwurf: Was unterscheidet einen Grafikprozessor (GPU) von einem Hauptprozessor (CPU)?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU-Kerne führen einzelne Befehle auf einzelnen Daten aus&lt;/li&gt;
+&lt;li&gt;GPU führt einzelne Befehle auf vielen Daten gleichzeitig aus, z.B. Rasterisierung von 10000 Polygonen gleichzeitig oder Z-Buffer-Prüfung für 10000 Pixel gleichzeitig&lt;/li&gt;
+&lt;li&gt;dadurch auch für andere massiv parallelisierbare Operationen interessant (&amp;quot;GPGPU&amp;quot;, General Purpose GPU), z.B. wissenschaftliche Simulationen, maschinelles Lernen, Passwortknacken&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 5: Shader&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bis jetzt haben wir die &lt;strong&gt;Fixed Function Pipeline&lt;/strong&gt; beschrieben, eine im GPU-Treiber fest vorgegebene Kette von Rendering-Schritten&lt;/li&gt;
+&lt;li&gt;neuere GPU (seit den frühen 2000ern) erlauben das Einbetten von eigenen Programmen (&lt;strong&gt;Shadern&lt;/strong&gt;) in die Pipeline&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vertex Shader&lt;/strong&gt;: wird einmal pro Vertex (Ecke eines Polygons) aufgerufen, um die 2D-Position auf dem Bildschirm zu berechnen (ansonsten normale Berechnung anhand der konfigurierten Kameraposition)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fragment Shader&lt;/strong&gt;: wird einmal pro Pixel aufgerufen, um gegebenenfalls die Farbe des Pixels zu modifizieren&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/06-shaders/f2bf83c5994b9051aaba499cb05e65bf.png&#34;&gt;Beispiel eines Fragment-Shaders, der eine Farbtextur auf 6 feste Farbstufen reduziert&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schritt 6: Beleuchtung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bei traditionallen 2D-Spielen mit Sprites war Beleuchtung meist global (z.B. jedes Objekt hat 2 Sprites, einmal für dunkle und einmal für helle Szenen)&lt;/li&gt;
+&lt;li&gt;dynamische Beleuchtung: heute meist als Teil des Fragment Shaders&lt;/li&gt;
+&lt;li&gt;Beispiel: &lt;a href=&#34;https://raw.githubusercontent.com/ssloy/tinyrenderer/gh-pages/img/06-shaders/e3720a5dfedc49edb0bf70f8bc64204a.png&#34;&gt;Phong&#39;s Approximation einer natürlichen Beleuchtung&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;Anteil: ambiente Beleuchtung (überall gleich stark, Grundausleuchtung wie in einem Fernsehstudio)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Anteil: diffuse Beleuchtung (abhängig davon, wie sehr die beleuchtete Fläche zur Lichtquelle hingewendet ist)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Anteil: spekulare Beleuchtung (Glänzen; stark überbetont auf Flächen, die fast exakt zur Lichtquelle hingewendet sind)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;es gibt noch so viel mehr: Kantenglättung (Antialiasing), lineares und anisotropisches Filtern, Normal Mapping, Raytracing&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro, Begrüßung, Vorbemerkungen"  />
+          <chapter start="00:13:37" title="Schritt 1: 3D-Modell mit Polygonen"  />
+          <chapter start="00:17:25" title="Schritt 2: Kamera"  />
+          <chapter start="00:27:00" title="Schritt 3: Ausmalen der Polygone (Rasterisierung)"  />
+          <chapter start="00:40:20" title="Schritt 4: Texturen"  />
+          <chapter start="00:47:26" title="Einwurf: Was unterscheidet einen Grafikprozessor (GPU) von einem Hauptprozessor (CPU)?"  />
+          <chapter start="00:51:58" title="Schritt 5: Shader"  />
+      </chapters>
+      <enclosure length="66558263" url="https://xyrillian.de/dl/stp-010-3d-grafik.mp3" type="audio/mpeg"/>
+      <enclosure length="41584820" url="https://xyrillian.de/dl/stp-010-3d-grafik.ogg" type="audio/ogg"/>
+      <enclosure length="25502287" url="https://xyrillian.de/dl/stp-010-3d-grafik.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/010-3d-grafik/</guid>
+    <pubDate>Thu, 04 Nov 2021 00:00:00 GMT</pubDate>
+    <itunes:duration>69:00</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP009: Fließkommazahlen</itunes:title>
     <itunes:episode>9</itunes:episode>
     <itunes:season>1</itunes:season>
