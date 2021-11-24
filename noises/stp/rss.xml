@@ -27,6 +27,132 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP011: Programmsteuerung im Prozessor</itunes:title>
+    <itunes:episode>11</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP011: Programmsteuerung im Prozessor</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Die CPU ist als der zentrale Baustein praktisch aller Computer bekannt.
+Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht, wird das Richtige zur rechten Zeit zu tun.</itunes:summary>
+    <description>Die CPU ist als der zentrale Baustein praktisch aller Computer bekannt.
+Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht, wird das Richtige zur rechten Zeit zu tun.</description>
+    <content:encoded>&lt;p&gt;Die CPU ist als der zentrale Baustein praktisch aller Computer bekannt.
+Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht, wird das Richtige zur rechten Zeit zu tun.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückblick: Logikgatter (STP003)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;aus Gattern lassen sich Schaltkreise bilden, die konkrete Einzelberechnungen anstellen
+&lt;ul&gt;
+&lt;li&gt;hauptsächlich einfache Rechenoperationen wie &amp;quot;zwei 16-Bit-Zahlen addieren&amp;quot;&lt;/li&gt;
+&lt;li&gt;aber auch teils sehr komplexe Einzeloperationen, z.B. Teilschritte einer bestimmten Hashfunktion (siehe STP004) oder eines bestimmten Audio/Video-Codecs (heißt in Produktbeschreibungen meist &lt;strong&gt;Hardware-Beschleunigung&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Frage 1: Wie kann man mehrere Operationen nacheinander ausführen?&lt;/li&gt;
+&lt;li&gt;Frage 2: Wie kann man in einem einzelnen Taktschritt aus verschiedenen möglichen Operationen wählen?&lt;/li&gt;
+&lt;li&gt;Frage 3: Wie entsteht daraus ein ganzes Programm, also eine bestimmte Folge von verschiedenen Operationen?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Antwort auf Frage 1: &lt;a href=&#34;https://de.wikipedia.org/wiki/Taktgenerator_(Computer)&#34;&gt;Taktgenerator&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;analog zum Taktgeber in einer Uhr (Unruh bei mechanischen Uhren, Quartzoszillator bei elektronischen Uhren), aber als mikroeletronische Schaltung realisiert&lt;/li&gt;
+&lt;li&gt;Geschwindigkeitsvergleich: bei Quartzuhren hat der Oszillator meist 32768 Hz&lt;/li&gt;
+&lt;li&gt;heutzutage ist die Taktfrequenz meistens regelbar
+&lt;ul&gt;
+&lt;li&gt;1990er: Turbo-Schalter am Gehäuse zum Verdoppeln (bzw. in der anderen Richtung Halbieren) der Taktfrequenz&lt;/li&gt;
+&lt;li&gt;seit den 2000ern: &lt;a href=&#34;https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface&#34;&gt;ACPI&lt;/a&gt; und Co., Energiesparen durch bedarfsgerechtes Heruntertakten der CPU-Kerne&lt;/li&gt;
+&lt;li&gt;Heruntertakten als Schutz vor Überhitzung (nach Überlastung oder beim Versagen der Kühlung)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;unter Linux: aktuelle Taktfrequenz auslesen mittels &lt;code&gt;grep &#39;^cpu MHz&#39; /proc/cpuinfo&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Antwort auf Frage 2: &lt;a href=&#34;https://de.wikipedia.org/wiki/Arithmetisch-logische_Einheit&#34;&gt;Arithmetisch-logische Einheit&lt;/a&gt; (ALU)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee: neben 2N Eingängen für zwei N-Bit-Eingabezahlen noch weitere Eingänge, die einen &lt;strong&gt;Opcode&lt;/strong&gt; darstellen, also eine fortlaufende Nummer für die gewünschte Rechenoperation&lt;/li&gt;
+&lt;li&gt;Opcode bestimmt, von welchem Teilschaltkreis das Ergebnis nach außen durchgereicht wird&lt;/li&gt;
+&lt;li&gt;hierzu zusätzliche Logikschaltung am Ende: &lt;code&gt;Ausgabe = ((Opcode = 1) AND Ausgabe1) OR ((Opcode = 2) AND Ausgabe2) OR ...&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;analog zur ALU gibt es meist noch eine FPU für Fließkommazahl-Operationen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Antwort auf Frage 3: &lt;a href=&#34;https://de.wikipedia.org/wiki/Steuerwerk&#34;&gt;Steuerwerk&lt;/a&gt; in der CPU (oder GPU)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Programmdatei besteht aus einer Folge von Befehlen, die im Arbeitsspeicher vorliegen&lt;/li&gt;
+&lt;li&gt;Steuerwerk hat einen &lt;strong&gt;Befehlszeiger&lt;/strong&gt; (Instruction Pointer), der auf den jeweils nächsten Befehl zeigt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Befehle sind in &lt;strong&gt;Maschinensprache&lt;/strong&gt; kodiert&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;meist 16/32/64 Bit groß (je nach Prozessorarchitektur)&lt;/li&gt;
+&lt;li&gt;für Rechenbefehle wie &amp;quot;Addition&amp;quot; oder &amp;quot;Multiplikation&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;den Opcode (welche Berechnung auszuführen ist)&lt;/li&gt;
+&lt;li&gt;aus welchen Prozessorregister die Eingabe kommt (evtl. ist ein Eingabewert eine Konstante wie &amp;quot;0&amp;quot; oder &amp;quot;1&amp;quot; und steckt direkt im Befehl drin)&lt;/li&gt;
+&lt;li&gt;in welches Prozessorregister die Ausgabe geht&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;andere Befehlsarten:
+&lt;ul&gt;
+&lt;li&gt;Load: aus dem Hauptspeicher einen Wert in ein Prozessorregister holen (Parameter: Quelladresse und Zielregister)&lt;/li&gt;
+&lt;li&gt;Store: genau andersherum (Parameter: Quellregister und Zieladresse)&lt;/li&gt;
+&lt;li&gt;Compare: schickt zwei Zahlen aus Registern an die ALU, aber statt einer Ergebniszahl gibt es einen Satz von &lt;strong&gt;Flags&lt;/strong&gt; wie &amp;quot;A ist gleich B&amp;quot; oder &amp;quot;A ist kleiner als B&amp;quot; zurück&lt;/li&gt;
+&lt;li&gt;Jump: aktualisiert den Befehlszeiger, evtl. nur wenn ein bestimmtes Flag gesetzt ist (zum Beispiel Gleichheits-Flag aus einem vorherigen Compare oder Überlauf-Flag aus einer vorherigen Addition)&lt;/li&gt;
+&lt;li&gt;Call/Return: Call macht einen Sprung, aber speichert vorher die aktuelle Position in einen designierten Teil des Arbeitsspeichers; Return springt an den Ursprung des letzten Call zurück (damit verschachtelbare Unterprogramme realisierbar)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ausführung eines Befehls ist unterteilt in mehrere Schritte&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;grobe Skizze der Abarbeitung eines einzelnen Befehls (Schritt 2-5 jeweils nur, sofern für den entsprechenden Befehl zutreffend)
+&lt;ul&gt;
+&lt;li&gt;Schritt 1: Auslesen und Dekodieren des Befehls&lt;/li&gt;
+&lt;li&gt;Schritt 2: Laden der Eingabewerte aus den entsprechenden Registern&lt;/li&gt;
+&lt;li&gt;Schritt 3: Ausführen des Befehls (z.B. bei Rechenbefehlen mittels der ALU oder FPU)&lt;/li&gt;
+&lt;li&gt;Schritt 4: Speichern des Ausgabewertes im entsprechenden Zielregister&lt;/li&gt;
+&lt;li&gt;Schritt 5: Verschieben des Befehlszeigers auf den Folgebefehl&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;in der Praxis meist noch viel mehr Teilschritte (z.B. moderne x86-CPUs: über 40 Pipeline-Schritte)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pipelining&lt;/strong&gt;: wenn ein Befehl einen bestimmten Schritt durchlaufen hat, kann hier meist schon mit dem nächsten Befehl begonnen werden, auch wenn der vorherige Befehl noch nicht komplett abgearbeitet war&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;spekulative Ausführung&lt;/strong&gt; (&lt;em&gt;Speculative Execution&lt;/em&gt;): nachfolgende Befehle rechnen mit den Daten, von denen die CPU glaubt, dass sie wahrscheinlich aktuell sein werden, sobald derjenige Befehl tatsächlich an der Reihe ist&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sprungvorhersage&lt;/strong&gt; (&lt;em&gt;Branch Prediction&lt;/em&gt;): bei einem Sprungbefehl mit Vorbedingung muss die CPU möglichst gut abschätzen, ob die Vorbedingung eintritt und der Sprung vollzogen wird, um die nächsten Befehle vorhersagen zu können&lt;/li&gt;
+&lt;li&gt;Verbesserungen in spekulativer Ausführung und Sprungvorhersage sind einer der Hauptgründe, warum Desktop-CPUs auch ohne höhere Taktfrequenzen immer schneller geworden sind&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Überlegungen für schnelle Programme&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sprungbefehle sind für schnelle Programme ein Problem: wenn die CPU einen Sprung falsch vorhersagt, muss nach dem Ausführen des Sprungs die gesamte Pipeline verworfen und neu gefüllt werden&lt;/li&gt;
+&lt;li&gt;verschiedene Befehle dauern unterschiedlich lange in der Berechnung (z.B. Multiplikation ist langsamer als Addition ist langsamer als Bit-Shift); entsprechende Austauschungen finden in Compilern meist automatisch statt, z.B. &lt;code&gt;2 * x -&amp;gt; x &#43; x&lt;/code&gt; oder &lt;code&gt;8 * x -&amp;gt; x &amp;lt;&amp;lt; 3&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:31" title="Rückblick auf Logikgatter (STP003)"  />
+          <chapter start="00:07:14" title="Taktgenerator"  />
+          <chapter start="00:21:30" title="Arithmetisch-logische Einheit"  />
+          <chapter start="00:30:37" title="Steuerwerk"  />
+          <chapter start="00:36:56" title="Maschinensprache"  />
+          <chapter start="00:50:57" title="Schrittweise Befehlsausführung"  />
+          <chapter start="01:08:20" title="Überlegungen zu Codeoptimierung"  />
+      </chapters>
+      <enclosure length="71835930" url="https://xyrillian.de/dl/stp-011-programmsteuerung.mp3" type="audio/mpeg"/>
+      <enclosure length="44216224" url="https://xyrillian.de/dl/stp-011-programmsteuerung.ogg" type="audio/ogg"/>
+      <enclosure length="27392651" url="https://xyrillian.de/dl/stp-011-programmsteuerung.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/011-programmsteuerung/</guid>
+    <pubDate>Thu, 25 Nov 2021 00:00:00 GMT</pubDate>
+    <itunes:duration>74:30</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP010: 3D-Grafik</itunes:title>
     <itunes:episode>10</itunes:episode>
     <itunes:season>1</itunes:season>

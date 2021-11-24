@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programmsteuerung im Prozessor - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #11 vom 25. November 2021</h2>
+    <h1>Programmsteuerung im Prozessor</h1>
+      <p>Die CPU ist als der zentrale Baustein praktisch aller Computer bekannt.
+Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht, wird das Richtige zur rechten Zeit zu tun.</p>
+      <p><strong>Länge:</strong> 74:30 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-011-programmsteuerung.mp3" type="audio/mpeg">
+        <source src="/dl/stp-011-programmsteuerung.ogg" type="audio/ogg">
+        <source src="/dl/stp-011-programmsteuerung.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="91">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="91" data-end="434">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">01:31</span>
+        <span class="chapter-title">Rückblick auf Logikgatter (STP003)</span>
+      </div>
+      <div class="chapter" data-start="434" data-end="1290">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">07:14</span>
+        <span class="chapter-title">Taktgenerator</span>
+      </div>
+      <div class="chapter" data-start="1290" data-end="1837">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">21:30</span>
+        <span class="chapter-title">Arithmetisch-logische Einheit</span>
+      </div>
+      <div class="chapter" data-start="1837" data-end="2216">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">30:37</span>
+        <span class="chapter-title">Steuerwerk</span>
+      </div>
+      <div class="chapter" data-start="2216" data-end="3057">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">36:56</span>
+        <span class="chapter-title">Maschinensprache</span>
+      </div>
+      <div class="chapter" data-start="3057" data-end="4100">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">50:57</span>
+        <span class="chapter-title">Schrittweise Befehlsausführung</span>
+      </div>
+      <div class="chapter" data-start="4100" data-end="4470.189">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">68:20</span>
+        <span class="chapter-title">Überlegungen zu Codeoptimierung</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-011-programmsteuerung.mp3">MP3</a> (68,5 MiB)</li>
+          <li><a href="/dl/stp-011-programmsteuerung.ogg">Ogg Vorbis</a> (42,2 MiB)</li>
+          <li><a href="/dl/stp-011-programmsteuerung.opus">Opus</a> (26,1 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p>Rückblick: Logikgatter (STP003)</p>
+<ul>
+<li>aus Gattern lassen sich Schaltkreise bilden, die konkrete Einzelberechnungen anstellen
+<ul>
+<li>hauptsächlich einfache Rechenoperationen wie &quot;zwei 16-Bit-Zahlen addieren&quot;</li>
+<li>aber auch teils sehr komplexe Einzeloperationen, z.B. Teilschritte einer bestimmten Hashfunktion (siehe STP004) oder eines bestimmten Audio/Video-Codecs (heißt in Produktbeschreibungen meist <strong>Hardware-Beschleunigung</strong>)</li>
+</ul>
+</li>
+<li>Frage 1: Wie kann man mehrere Operationen nacheinander ausführen?</li>
+<li>Frage 2: Wie kann man in einem einzelnen Taktschritt aus verschiedenen möglichen Operationen wählen?</li>
+<li>Frage 3: Wie entsteht daraus ein ganzes Programm, also eine bestimmte Folge von verschiedenen Operationen?</li>
+</ul>
+</li>
+<li>
+<p>Antwort auf Frage 1: <a href="https://de.wikipedia.org/wiki/Taktgenerator_(Computer)">Taktgenerator</a></p>
+<ul>
+<li>analog zum Taktgeber in einer Uhr (Unruh bei mechanischen Uhren, Quartzoszillator bei elektronischen Uhren), aber als mikroeletronische Schaltung realisiert</li>
+<li>Geschwindigkeitsvergleich: bei Quartzuhren hat der Oszillator meist 32768 Hz</li>
+<li>heutzutage ist die Taktfrequenz meistens regelbar
+<ul>
+<li>1990er: Turbo-Schalter am Gehäuse zum Verdoppeln (bzw. in der anderen Richtung Halbieren) der Taktfrequenz</li>
+<li>seit den 2000ern: <a href="https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface">ACPI</a> und Co., Energiesparen durch bedarfsgerechtes Heruntertakten der CPU-Kerne</li>
+<li>Heruntertakten als Schutz vor Überhitzung (nach Überlastung oder beim Versagen der Kühlung)</li>
+</ul>
+</li>
+<li>unter Linux: aktuelle Taktfrequenz auslesen mittels <code>grep '^cpu MHz' /proc/cpuinfo</code></li>
+</ul>
+</li>
+<li>
+<p>Antwort auf Frage 2: <a href="https://de.wikipedia.org/wiki/Arithmetisch-logische_Einheit">Arithmetisch-logische Einheit</a> (ALU)</p>
+<ul>
+<li>Idee: neben 2N Eingängen für zwei N-Bit-Eingabezahlen noch weitere Eingänge, die einen <strong>Opcode</strong> darstellen, also eine fortlaufende Nummer für die gewünschte Rechenoperation</li>
+<li>Opcode bestimmt, von welchem Teilschaltkreis das Ergebnis nach außen durchgereicht wird</li>
+<li>hierzu zusätzliche Logikschaltung am Ende: <code>Ausgabe = ((Opcode = 1) AND Ausgabe1) OR ((Opcode = 2) AND Ausgabe2) OR ...</code></li>
+<li>analog zur ALU gibt es meist noch eine FPU für Fließkommazahl-Operationen</li>
+</ul>
+</li>
+<li>
+<p>Antwort auf Frage 3: <a href="https://de.wikipedia.org/wiki/Steuerwerk">Steuerwerk</a> in der CPU (oder GPU)</p>
+<ul>
+<li>Programmdatei besteht aus einer Folge von Befehlen, die im Arbeitsspeicher vorliegen</li>
+<li>Steuerwerk hat einen <strong>Befehlszeiger</strong> (Instruction Pointer), der auf den jeweils nächsten Befehl zeigt</li>
+</ul>
+</li>
+<li>
+<p>Befehle sind in <strong>Maschinensprache</strong> kodiert</p>
+<ul>
+<li>meist 16/32/64 Bit groß (je nach Prozessorarchitektur)</li>
+<li>für Rechenbefehle wie &quot;Addition&quot; oder &quot;Multiplikation&quot;
+<ul>
+<li>den Opcode (welche Berechnung auszuführen ist)</li>
+<li>aus welchen Prozessorregister die Eingabe kommt (evtl. ist ein Eingabewert eine Konstante wie &quot;0&quot; oder &quot;1&quot; und steckt direkt im Befehl drin)</li>
+<li>in welches Prozessorregister die Ausgabe geht</li>
+</ul>
+</li>
+<li>andere Befehlsarten:
+<ul>
+<li>Load: aus dem Hauptspeicher einen Wert in ein Prozessorregister holen (Parameter: Quelladresse und Zielregister)</li>
+<li>Store: genau andersherum (Parameter: Quellregister und Zieladresse)</li>
+<li>Compare: schickt zwei Zahlen aus Registern an die ALU, aber statt einer Ergebniszahl gibt es einen Satz von <strong>Flags</strong> wie &quot;A ist gleich B&quot; oder &quot;A ist kleiner als B&quot; zurück</li>
+<li>Jump: aktualisiert den Befehlszeiger, evtl. nur wenn ein bestimmtes Flag gesetzt ist (zum Beispiel Gleichheits-Flag aus einem vorherigen Compare oder Überlauf-Flag aus einer vorherigen Addition)</li>
+<li>Call/Return: Call macht einen Sprung, aber speichert vorher die aktuelle Position in einen designierten Teil des Arbeitsspeichers; Return springt an den Ursprung des letzten Call zurück (damit verschachtelbare Unterprogramme realisierbar)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Ausführung eines Befehls ist unterteilt in mehrere Schritte</p>
+<ul>
+<li>grobe Skizze der Abarbeitung eines einzelnen Befehls (Schritt 2-5 jeweils nur, sofern für den entsprechenden Befehl zutreffend)
+<ul>
+<li>Schritt 1: Auslesen und Dekodieren des Befehls</li>
+<li>Schritt 2: Laden der Eingabewerte aus den entsprechenden Registern</li>
+<li>Schritt 3: Ausführen des Befehls (z.B. bei Rechenbefehlen mittels der ALU oder FPU)</li>
+<li>Schritt 4: Speichern des Ausgabewertes im entsprechenden Zielregister</li>
+<li>Schritt 5: Verschieben des Befehlszeigers auf den Folgebefehl</li>
+</ul>
+</li>
+<li>in der Praxis meist noch viel mehr Teilschritte (z.B. moderne x86-CPUs: über 40 Pipeline-Schritte)</li>
+<li><strong>Pipelining</strong>: wenn ein Befehl einen bestimmten Schritt durchlaufen hat, kann hier meist schon mit dem nächsten Befehl begonnen werden, auch wenn der vorherige Befehl noch nicht komplett abgearbeitet war</li>
+<li><strong>spekulative Ausführung</strong> (<em>Speculative Execution</em>): nachfolgende Befehle rechnen mit den Daten, von denen die CPU glaubt, dass sie wahrscheinlich aktuell sein werden, sobald derjenige Befehl tatsächlich an der Reihe ist</li>
+<li><strong>Sprungvorhersage</strong> (<em>Branch Prediction</em>): bei einem Sprungbefehl mit Vorbedingung muss die CPU möglichst gut abschätzen, ob die Vorbedingung eintritt und der Sprung vollzogen wird, um die nächsten Befehle vorhersagen zu können</li>
+<li>Verbesserungen in spekulativer Ausführung und Sprungvorhersage sind einer der Hauptgründe, warum Desktop-CPUs auch ohne höhere Taktfrequenzen immer schneller geworden sind</li>
+</ul>
+</li>
+<li>
+<p>Überlegungen für schnelle Programme</p>
+<ul>
+<li>Sprungbefehle sind für schnelle Programme ein Problem: wenn die CPU einen Sprung falsch vorhersagt, muss nach dem Ausführen des Sprungs die gesamte Pipeline verworfen und neu gefüllt werden</li>
+<li>verschiedene Befehle dauern unterschiedlich lange in der Berechnung (z.B. Multiplikation ist langsamer als Addition ist langsamer als Bit-Shift); entsprechende Austauschungen finden in Compilern meist automatisch statt, z.B. <code>2 * x -&gt; x + x</code> oder <code>8 * x -&gt; x &lt;&lt; 3</code></li>
+</ul>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>

@@ -447,3 +447,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 11
+    slug: 011-programmsteuerung
+    title: Programmsteuerung im Prozessor
+    pubtime: 1637798400 # 2021-11-25
+
+    markdown:
+      description: |
+        Die CPU ist als der zentrale Baustein praktisch aller Computer bekannt.
+        Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht, wird das Richtige zur rechten Zeit zu tun.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
