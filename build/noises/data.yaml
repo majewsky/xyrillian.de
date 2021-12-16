@@ -461,3 +461,18 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 12
+    slug: 012-datenbanken
+    title: Datenbanken
+    pubtime: 1639673400 # 2021-12-16
+
+    markdown:
+      description: |
+        Wenn Sie diese Folge sehen, dann, weil sie in der Datenbank Ihrer Podcast-App gelandet ist.
+        Datenbanken sind überall, denn ohne sichere und effiziente Datenhaltung kommt kein technisches System zurecht.
+        Deswegen erklärt Xyrill uns heute, warum Biologen sich über Excel aufregen und was gute Datenspeicher mit Säure zu tun haben.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

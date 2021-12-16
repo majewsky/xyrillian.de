@@ -27,6 +27,137 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP012: Datenbanken</itunes:title>
+    <itunes:episode>12</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP012: Datenbanken</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wenn Sie diese Folge sehen, dann, weil sie in der Datenbank Ihrer Podcast-App gelandet ist.
+Datenbanken sind überall, denn ohne sichere und effiziente Datenhaltung kommt kein technisches System zurecht.
+Deswegen erklärt Xyrill uns heute, warum Biologen sich über Excel aufregen und was gute Datenspeicher mit Säure zu tun haben.</itunes:summary>
+    <description>Wenn Sie diese Folge sehen, dann, weil sie in der Datenbank Ihrer Podcast-App gelandet ist.
+Datenbanken sind überall, denn ohne sichere und effiziente Datenhaltung kommt kein technisches System zurecht.
+Deswegen erklärt Xyrill uns heute, warum Biologen sich über Excel aufregen und was gute Datenspeicher mit Säure zu tun haben.</description>
+    <content:encoded>&lt;p&gt;Wenn Sie diese Folge sehen, dann, weil sie in der Datenbank Ihrer Podcast-App gelandet ist.
+Datenbanken sind überall, denn ohne sichere und effiziente Datenhaltung kommt kein technisches System zurecht.
+Deswegen erklärt Xyrill uns heute, warum Biologen sich über Excel aufregen und was gute Datenspeicher mit Säure zu tun haben.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Datenbank&#34;&gt;Laut Wikipedia:&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Eine &lt;strong&gt;Datenbank&lt;/strong&gt;, auch &lt;strong&gt;Datenbanksystem&lt;/strong&gt; genannt, ist ein System zur elektronischen Datenverwaltung. Die wesentliche Aufgabe einer Datenbank ist es, große Datenmengen effizient, widerspruchsfrei und dauerhaft zu speichern und benötigte Teilmengen in unterschiedlichen, bedarfsgerechten Darstellungsformen für Benutzer und Anwendungsprogramme bereitzustellen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Beispiele für Datenbanken &lt;em&gt;im weitesten Sinne&lt;/em&gt;: Passen diese mit der Definition oben zusammen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spreadsheets (Excel etc.)
+&lt;ul&gt;
+&lt;li&gt;was funktioniert: unterschiedliche, bedarfsgerechte Darstellungsformen&lt;/li&gt;
+&lt;li&gt;keine widerspruchsfreie Speicherung: &lt;a href=&#34;https://www.heise.de/-6165902&#34;&gt;Beispiel Gen-Namen-Fehlformatierung&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;keine großen Datenmengen: &lt;a href=&#34;https://www.theguardian.com/politics/2020/oct/05/how-excel-may-have-caused-loss-of-16000-covid-tests-in-england&#34;&gt;Beispiel verlorene Covid-Patienten aufgrund Beschränkung auf 1 Mio. Zeilen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dateisystem
+&lt;ul&gt;
+&lt;li&gt;was funktioniert: große Datenmengen effizient und dauerhaft speichern&lt;/li&gt;
+&lt;li&gt;keine widerspruchsfreie Speicherung, da keine Beziehungen zwischen Dateiinhalten möglich&lt;/li&gt;
+&lt;li&gt;keine Unterstützung für bedarfsgerechte Darstellungsformen: jede Datei hat genau ein Format&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dateisysteme sind eine besondere Form von &lt;strong&gt;Key-Value-Datenbank&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Datenbasis = ein großer Haufen von &lt;strong&gt;Values&lt;/strong&gt; (Werte, im allgemeinen Fall beliebige Dateien), die alle einen Namen (&lt;strong&gt;Key&lt;/strong&gt;) haben&lt;/li&gt;
+&lt;li&gt;keine Datenbank im engeren Sinne (keine Sicherstellung von Widerspruchsfreiheit, keine Unterstützung für bedarfsgerechte Darstellungsformen)&lt;/li&gt;
+&lt;li&gt;aber in der Praxis eine sinnvolle Ergänzung zu stark strukturierten Datenbanken, da die einfache Datenstruktur es ermöglicht, sehr groß zu skalieren (bis Milliarden/Billionen von individuellen Objekten)&lt;/li&gt;
+&lt;li&gt;Praxisbeispiel: Cache für vorgerenderte Wikipedia-Seiten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Datenbanken im engeren Sinne: &lt;a href=&#34;https://de.wikipedia.org/wiki/Relationale_Datenbank&#34;&gt;relationale Datenbanken&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Daten liegen in einer bestimmten Struktur vor: gleichartige Objekte sind jeweils als &lt;strong&gt;Zeilen&lt;/strong&gt; in &lt;strong&gt;Tabellen&lt;/strong&gt; abgelegt, deren &lt;strong&gt;Spalten&lt;/strong&gt; im Voraus definiert sind (diese Grundstruktur nennt man &lt;strong&gt;Schema&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;&amp;quot;relational&amp;quot;: Kreuzreferenzen zwischen Tabellenspalten (Beispiel: wenn die Tabelle &amp;quot;Mitarbeiter&amp;quot; eine Spalte &amp;quot;Abteilungsnummer&amp;quot; hat, muss es für jeden Wert in dieser Spalte eine entsprechende Zeile in der Tabelle &amp;quot;Abteilungen&amp;quot; geben), unter anderem dadurch Sicherstellung der Widerspruchsfreiheit&lt;/li&gt;
+&lt;li&gt;strukturierte Datenhaltung ermöglicht komplexe Abfragen (z.B. &amp;quot;Wieviele Mitarbeiter in der Abteilung 172 haben ein Monatsgehalt über 3000€?&amp;quot;), typischerweise mittels &lt;a href=&#34;https://de.wikipedia.org/wiki/SQL&#34;&gt;SQL (Structured Query Language)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grundkriterien für das Verhalten von relationalen Datenbanken: &lt;a href=&#34;https://de.wikipedia.org/wiki/ACID&#34;&gt;ACID&lt;/a&gt; am Beispiel &amp;quot;Überweisung zwischen zwei Bankkonten&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Atomarität (Abgeschlossenheit)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Änderungen werden entweder ganz oder gar nicht vorgenommen&lt;/li&gt;
+&lt;li&gt;am Beispiel: Überweisung muss immer beide Bankkonten anfassen (oder komplett fehlschlagen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Konsistenzerhaltung&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;wie oben besprochen: Prüfung von Kreuzreferenzen oder Randbedingungen&lt;/li&gt;
+&lt;li&gt;am Beispiel: Überweisung darf nur durchgehen, wenn das Quellkonto genug Füllstand hat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Isolation (Abgrenzung)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;parallel laufende Änderungen dürfen nicht dieselbe Zeile anfassen&lt;/li&gt;
+&lt;li&gt;im Zweifelsfall muss eine Änderung warten, bis die andere fertig ist&lt;/li&gt;
+&lt;li&gt;am Beispiel: Deckungsprüfung im Quellkonto muss alle vorherigen Überweisungen einbeziehen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dauerhaftigkeit&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;wird eine Änderung als abgeschlossen gemeldet, darf auch ein Systemfehler (z.B. Systemabsturz oder Stromausfall) nicht zum Verlust der Änderung führen&lt;/li&gt;
+&lt;li&gt;Garantierung der Dauerhaftigkeit ist nichttrivial aufgrund der vielen Schichten der Speicherhierarchie (siehe STP007)&lt;/li&gt;
+&lt;li&gt;Sicherstellung meist in der Datenbanksoftware selbst mittels &lt;strong&gt;Write-Ahead Log&lt;/strong&gt; und drumherum mittels Betriebsprozeduren (Backups, Replikation)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;klassisches Problem mit relationalen Datenbanken: Wie klassifiziert man die Welt? Welche Attribute kann man bei Objekten voraussetzen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Welche Spalten kann man voraussetzen? z.B. Tabelle &amp;quot;Personen&amp;quot; mit Spalten &amp;quot;Name&amp;quot;, &amp;quot;Adresse&amp;quot;, &amp;quot;Geburtsdatum&amp;quot;, &amp;quot;Geburtsort&amp;quot; -&amp;gt; für alle diese Attribute gibt es Menschen, bei denen dieses Attribut nicht existiert oder unbekannt ist&lt;/li&gt;
+&lt;li&gt;Welche Datentypen haben Spalten? z.B. wird die Postleitzahl oft als Nummer abgelegt, sodass dann &amp;quot;01069 Dresden&amp;quot; als &amp;quot;1069 Dresden&amp;quot; fehlverarbeitet wird&lt;/li&gt;
+&lt;li&gt;allgemein: Entwurf des Datenbankschemas ist einer dieser Punkte, wo man sich manchmal als Programmierer bewusst wird, wie wenig man das Problemfeld eigentlich verstanden hat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;abseits von relationalen Datenbanken und SQL: &lt;a href=&#34;https://de.wikipedia.org/wiki/NoSQL&#34;&gt;NoSQL&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;großer Hype in den 2010ern vor allem aufgrund der Hoffnung, die lästige Schemaentwurf-Phase los zu werden&lt;/li&gt;
+&lt;li&gt;aber: Speichern von unstruktierten oder wenig strukturierten Daten verlagert das Problem nur in die Zukunft&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Arten von NoSQL-Datenbanken, die tatsächlich nützlich sind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Key-Value-Datenbanken (siehe oben)&lt;/li&gt;
+&lt;li&gt;Dokumentendatenbanken für Volltextsuche (z.B. Suchmaschinen)&lt;/li&gt;
+&lt;li&gt;Graphdatenbanken (z.B. soziale Graphen)&lt;/li&gt;
+&lt;li&gt;Datenströme (Darstellung der Welt als ein zeitlich geordneter Strom von Ereignissen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Prolog"  />
+          <chapter start="00:02:39" title="Was ist eine Datenbank?"  />
+          <chapter start="00:03:51" title="Beispiele für Datenbanken im weitesten Sinne"  />
+          <chapter start="00:14:43" title="Key-Value-Datenbanken"  />
+          <chapter start="00:27:09" title="Datenbanken im engeren Sinne: relationale Datenbanken"  />
+          <chapter start="00:42:23" title="ACID"  />
+          <chapter start="00:55:01" title="Probleme beim Design vom Datenbanken"  />
+          <chapter start="00:59:42" title="NoSQL"  />
+      </chapters>
+      <enclosure length="67288244" url="https://xyrillian.de/dl/stp-012-datenbanken.mp3" type="audio/mpeg"/>
+      <enclosure length="42118845" url="https://xyrillian.de/dl/stp-012-datenbanken.ogg" type="audio/ogg"/>
+      <enclosure length="25037941" url="https://xyrillian.de/dl/stp-012-datenbanken.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/012-datenbanken/</guid>
+    <pubDate>Thu, 16 Dec 2021 16:50:00 GMT</pubDate>
+    <itunes:duration>69:45</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP011: Programmsteuerung im Prozessor</itunes:title>
     <itunes:episode>11</itunes:episode>
     <itunes:season>1</itunes:season>
