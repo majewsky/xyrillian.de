@@ -457,7 +457,7 @@ files:
     markdown:
       description: |
         Die CPU ist als der zentrale Baustein praktisch aller Computer bekannt.
-        Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht, wird das Richtige zur rechten Zeit zu tun.
+        Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht wird, das Richtige zur rechten Zeit zu tun.
       shownotes: true # in file
 
     music: *music-like-stp-000
@@ -473,6 +473,20 @@ files:
         Wenn Sie diese Folge sehen, dann, weil sie in der Datenbank Ihrer Podcast-App gelandet ist.
         Datenbanken sind überall, denn ohne sichere und effiziente Datenhaltung kommt kein technisches System zurecht.
         Deswegen erklärt Xyrill uns heute, warum Biologen sich über Excel aufregen und was gute Datenspeicher mit Säure zu tun haben.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
+
+  - show: stp
+    episode: 13
+    slug: 013-textkodierung
+    title: Textkodierung
+    pubtime: 1641427200 # 2022-01-06
+
+    markdown:
+      description: |
+        Dies ist ein Text. Für den Computer besteht er nur aus Zahlen. Xyrill erklärt diesmal, wie es kommt, dass wir ihn trotzdem lesen können.
+        Und jedes andere geschriebene Wort, das je existiert hat… natürlich nur idealtypisch.
       shownotes: true # in file
 
     music: *music-like-stp-000

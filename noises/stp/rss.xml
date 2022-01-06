@@ -5,7 +5,7 @@
   <link>https://schluesseltechnologie-podcast.de/</link>
   <atom:link href="https://xyrillian.de/noises/stp/rss.xml" rel="self" type="application/rss+xml" />
   <language>de</language>
-  <copyright>&#xA9; 2021 Stefan Majewsky, ttimeless</copyright>
+  <copyright>&#xA9; 2021-2022 Stefan Majewsky, ttimeless</copyright>
   <itunes:subtitle>Computertechnik, von Grund auf erklärt</itunes:subtitle>
   <itunes:author>Xyrillian Noises</itunes:author>
   <itunes:summary>Die IT hat unser Leben in den letzten Jahrzehnten von Grund auf verändert. Aber wie funktioniert sie wirklich? Das möchte ttimeless mal erklärt bekommen. Zum Glück hat Xyrill Antworten.
@@ -25,6 +25,128 @@
   <itunes:image href="https://xyrillian.de/res/cover-stp.png"/>
   <itunes:category text="Technology"/>
   <itunes:explicit>no</itunes:explicit>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP013: Textkodierung</itunes:title>
+    <itunes:episode>13</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP013: Textkodierung</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Dies ist ein Text. Für den Computer besteht er nur aus Zahlen. Xyrill erklärt diesmal, wie es kommt, dass wir ihn trotzdem lesen können.
+Und jedes andere geschriebene Wort, das je existiert hat… natürlich nur idealtypisch.</itunes:summary>
+    <description>Dies ist ein Text. Für den Computer besteht er nur aus Zahlen. Xyrill erklärt diesmal, wie es kommt, dass wir ihn trotzdem lesen können.
+Und jedes andere geschriebene Wort, das je existiert hat… natürlich nur idealtypisch.</description>
+    <content:encoded>&lt;p&gt;Dies ist ein Text. Für den Computer besteht er nur aus Zahlen. Xyrill erklärt diesmal, wie es kommt, dass wir ihn trotzdem lesen können.
+Und jedes andere geschriebene Wort, das je existiert hat… natürlich nur idealtypisch.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Laut Wiktionary:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[&lt;strong&gt;Text&lt;/strong&gt; ist eine] mündliche oder schriftliche Folge von Sätzen, die miteinander syntaktisch und semantisch verbunden sind (Kohärenz, Kohäsion), eine abgeschlossene Einheit bilden (Kompletion) und eine bestimmte kommunikative Funktion (Textfunktion) erfüllen.&lt;/p&gt;
+&lt;p&gt;[Von] lateinisch &lt;em&gt;textus&lt;/em&gt; für &amp;quot;Inhalt&amp;quot; oder &amp;quot;Gewebe der Rede&amp;quot;, &amp;quot;Text&amp;quot;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;zur Definition&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wiktionary geht vom linguistischen Blickwinkel aus&lt;/li&gt;
+&lt;li&gt;in der Informatik: Zeichenketten (oder synonym &amp;quot;Zeichenfolgen&amp;quot;), in Programmiersprachen meist als &lt;a href=&#34;https://de.wikipedia.org/wiki/Zeichenkette&#34;&gt;String&lt;/a&gt; bezeichnet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Problem: Computer können nur Zahlen! Wie bilden wir Zeichenketten als Zahlenfolgen ab?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee 1: jedes Zeichen als eine Zahl einer bestimmten Größe, z.B. 1 Byte oder 2 Byte (&lt;em&gt;fixed-length code&lt;/em&gt;)
+&lt;ul&gt;
+&lt;li&gt;primitives Beispiel: alle Buchstaben des Alphabets durch ihre Position darstellen, z.B. &amp;quot;hallo&amp;quot; -&amp;gt; &amp;quot;08 01 12 12 15&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Idee 2: häufige Zeichen mit kurzen Bytefolgen darstellen, seltene Zeichen mit längeren Bytefolgen (&lt;em&gt;variable-length code&lt;/em&gt;, siehe &lt;a href=&#34;https://de.wikipedia.org/wiki/Entropiekodierung&#34;&gt;Entropiekodierung&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beispiel: &lt;a href=&#34;https://de.wikipedia.org/wiki/Morsezeichen&#34;&gt;Morse-Code&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;variable Länge: z.B. &amp;quot;e&amp;quot; ist am häufigsten und deswegen nur 1 Ton kurz, &amp;quot;q&amp;quot; ist sehr selten und deswegen 4 Töne lang&lt;/li&gt;
+&lt;li&gt;Kodiertabelle enthält nicht nur Buchstaben und Ziffern, sondern auch Sonderzeichen (Punkt, Komma, etc.) und Spezialzeichen wie &amp;quot;Spruchende&amp;quot; oder &amp;quot;Fehler, Wiederholung ab letztem vollständigem Wort&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;in der frühen Informatik (bis in die 1990er Jahre): &lt;strong&gt;Codepages&lt;/strong&gt; (Zeichentabellen)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Codes mit fester Länge von meist 1 Byte (7 oder 8 Bit) pro Zeichen&lt;/li&gt;
+&lt;li&gt;Beispiel mit 7 Bit: &lt;a href=&#34;https://de.wikipedia.org/wiki/ASCII&#34;&gt;ASCII&lt;/a&gt;, unter Linux siehe &lt;code&gt;man ascii&lt;/code&gt; (&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc20&#34;&gt;RFC 20&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Beispiel mit 8 Bit: &lt;a href=&#34;https://de.wikipedia.org/wiki/Codepage_437&#34;&gt;Codepage 437&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Standardisierung als &lt;a href=&#34;https://en.wikipedia.org/wiki/ISO/IEC_8859&#34;&gt;ISO/IEC 8859&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Problem: 8 Bit (256 Zeichen) sind zu wenig für alle in europäischen Sprachen verwendeten Zeichen, insb. wegen &lt;a href=&#34;https://de.wikipedia.org/wiki/Diakritisches_Zeichen&#34;&gt;diakritischer Zeichen&lt;/a&gt; -&amp;gt; verschiedene Codepages für verschiedene Sprachen -&amp;gt; &lt;a href=&#34;https://de.wikipedia.org/wiki/Zeichensalat&#34;&gt;Mojibake&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;spätestens mit zunehmend globaler Kommunikation im Internetzeitalter musste eine bessere Lösung her&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Unicode&#34;&gt;Unicode&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;keine Textkodierung im engeren Sinne, sondern erstmal nur eine durchnummerierte Liste aller möglichen Zeichen (die Nummer zu einem Zeichen heißt &lt;strong&gt;Codepunkt&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Anspruch: wenn ein Zeichen in tatsächlichen Textdokumenten verwendet wird oder wurde, gehört es in Unicode (von Buchstaben über Redigierungssymbole mittelalterlicher Typografen bis zu Hieroglyphen und Keilschrift)&lt;/li&gt;
+&lt;li&gt;Größe: 17 Ebenen (&lt;em&gt;Planes&lt;/em&gt;) zu je 65536 Codepunkten = 1.114.112 Codepunkte; davon sind 2048 Codepunkte aus technischen Gründen (für die Kodierung von Surrogatpaaren) unbelegbar, somit maximal möglich 1.112.064 Codepunkte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ebenen in Unicode&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ebene 0: &lt;strong&gt;Basic Multilingual Plane&lt;/strong&gt; mit allen zeitgenössischen und weitverbreiteten Schriftsystemen (&lt;a href=&#34;https://commons.wikimedia.org/wiki/File:Roadmap_to_Unicode_BMP_multilingual.svg&#34;&gt;Übersichtskarte&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Ebene 1: &lt;strong&gt;Supplementary Multilingual Plane&lt;/strong&gt; mit historischen Schriftsystemen und Obskuritäten wie Domino/Mahjongg-Steinen und 😍 Emoji 😍&lt;/li&gt;
+&lt;li&gt;Ebene 2: &lt;strong&gt;Supplementary Ideographic Plane&lt;/strong&gt; mit selten benutzten CJK-Schriftzeichen&lt;/li&gt;
+&lt;li&gt;Ebene 3-13: noch frei&lt;/li&gt;
+&lt;li&gt;Ebene 14: &lt;strong&gt;Supplementary Special-purpose Plane&lt;/strong&gt; mit Steuerzeichen zur Selektion alternativer Schriftzeichenformen&lt;/li&gt;
+&lt;li&gt;Ebene 15/16: für private Verwendung reserviert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kodierungen für Unicode mit fixer Länge&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;UCS-2: eine 16-Bit-Zahl pro Zeichen -&amp;gt; kann nur die BMP kodieren (UCS-2 stammt aus der Zeit, bevor Unicode mehrere Planes hatte)&lt;/li&gt;
+&lt;li&gt;UCS-4/UTF-32: eine 32-Bit-Zahl pro Zeichen -&amp;gt; extrem verschwenderisch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kodierungen für Unicode mit variabler Länge&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;UTF-16: BMP-Zeichen als eine 16-Bit-Zahl, andere Zeichen als zwei 16-Bit-Zahlen -&amp;gt; Probleme mit Endianness&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/UTF-8&#34;&gt;UTF-8&lt;/a&gt;: jedes ASCII-Zeichen als ein Byte, alle anderen Zeichen als eine Folge von 2-5 Bytes (unter Linux siehe &lt;code&gt;man utf-8&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;UTF-8 ist spektakulär: sehr kompakt, selbstsynchronisierend, einfach zu implementieren (auch in Hardware), sortierungserhaltend, ASCII-abwärtskompatibel, Nicht-ASCII-Zeichen enthalten niemals ASCII-Bytes; und wurde buchstäblich in einem Abend von Ken Thompson und Rob Pike auf einer Serviette entworfen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Probleme von Unicode&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Anspruch: jeder bestehende Kodierungsstandard soll Zeichen für Zeichen in Unicode abbildbar sein -&amp;gt; dadurch unnötig viele Codepunkte insb. für diakritische Zeichen und Probleme mit Normalisierung&lt;/li&gt;
+&lt;li&gt;allgemeiner: Was ist eigentlich ein Zeichen im Sinne von &amp;quot;ein Codepunkt&amp;quot;? (mehr dazu in der nächsten Folge) -&amp;gt; Unicode übernimmt hier oftmals teils kontroverse Klassifikationen aus nationalen Standards z.B. für indische und thailändische Schriften&lt;/li&gt;
+&lt;li&gt;am signifikantesten hier: &lt;a href=&#34;https://de.wikipedia.org/wiki/Han-Vereinheitlichung&#34;&gt;Han-Vereinheitlichung&lt;/a&gt; (&lt;a href=&#34;https://commons.wikimedia.org/wiki/File:Source_Han_Sans_Version_Difference.svg&#34;&gt;Beispiel&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Für die historische Herleitung von Schriftkodierung empfehlen wir wieder den großartigen Podcast &lt;a href=&#34;https://requestforcomments.de/&#34;&gt;Request for Comments&lt;/a&gt;. Diesmal &lt;a href=&#34;https://requestforcomments.de/archives/400&#34;&gt;die Folge über RFC 20 ASCII&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Das nächste Mal geht es dann um T̪͙̪̻̹̩̠͔͑͋ͥ͘ę̥͔̝̘ͦͬx̨̜̩̜͙̦̻̗̳̒̊͆t̯̳̓ͥ͐ͣ́d͔̱̗̯̪̭́͛͜ͅa̵͕̯͕̻̜ͮ͒ͭȓ̜͚͚̯͎͓̋̎̈́͘s̥̯̠̬̆̿͡t̫̱̺͉̱̓͒͑͐͢e̸͖̮̙̺̠̗̬̅ͅl̝͉͚ͪ͋ͤ͜l̵̦̪͔͈̉͑u̴̝̲̠̳̖̘͚̔n͙̹̍̆͊̈͢g̨͍̣̝̣͇̯̮̠̏.</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:00:52" title="Vorgeplänkel"  />
+          <chapter start="00:01:41" title="Was ist Text"  />
+          <chapter start="00:03:36" title="Das Problem mit den Zahlen"  />
+          <chapter start="00:06:22" title="Morse-Code"  />
+          <chapter start="00:10:04" title="Codepages"  />
+          <chapter start="00:26:17" title="Unicode"  />
+          <chapter start="00:32:46" title="Ebenen in Unicode"  />
+          <chapter start="00:40:39" title="Kodierungen für Unicode mit fixer Länge"  />
+          <chapter start="00:43:00" title="Kodierungen für Unicode mit variabler Länge"  />
+          <chapter start="00:45:13" title="UTF-8"  />
+          <chapter start="00:54:56" title="Probleme von Unicode"  />
+      </chapters>
+      <enclosure length="67905153" url="https://xyrillian.de/dl/stp-013-textkodierung.mp3" type="audio/mpeg"/>
+      <enclosure length="43351750" url="https://xyrillian.de/dl/stp-013-textkodierung.ogg" type="audio/ogg"/>
+      <enclosure length="25827684" url="https://xyrillian.de/dl/stp-013-textkodierung.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/013-textkodierung/</guid>
+    <pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate>
+    <itunes:duration>70:24</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP012: Datenbanken</itunes:title>
@@ -165,11 +287,11 @@ Deswegen erklärt Xyrill uns heute, warum Biologen sich über Excel aufregen und
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Die CPU ist als der zentrale Baustein praktisch aller Computer bekannt.
-Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht, wird das Richtige zur rechten Zeit zu tun.</itunes:summary>
+Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht wird, das Richtige zur rechten Zeit zu tun.</itunes:summary>
     <description>Die CPU ist als der zentrale Baustein praktisch aller Computer bekannt.
-Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht, wird das Richtige zur rechten Zeit zu tun.</description>
+Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht wird, das Richtige zur rechten Zeit zu tun.</description>
     <content:encoded>&lt;p&gt;Die CPU ist als der zentrale Baustein praktisch aller Computer bekannt.
-Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht, wird das Richtige zur rechten Zeit zu tun.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es heute darum gehen, wie dieser Baustein dazu gebracht wird, das Richtige zur rechten Zeit zu tun.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Rückblick: Logikgatter (STP003)&lt;/p&gt;
 &lt;ul&gt;
