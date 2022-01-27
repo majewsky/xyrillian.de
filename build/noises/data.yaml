@@ -490,3 +490,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 14
+    slug: 014-textdarstellung
+    title: Textdarstellung
+    pubtime: 1643248800 # 2022-01-27
+
+    markdown:
+      description: |
+        In dieser Folge unterhalten wir uns über allerlei Detailwissen zu verschiedenen Schriftarten, werfen mit schlecht vorbereiteten Beispielen um uns und haben starke Meinungen zu verschiedenen Dingen. Um Textdarstellung geht es dabei nebenbei auch.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

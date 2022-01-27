@@ -27,6 +27,134 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP014: Textdarstellung</itunes:title>
+    <itunes:episode>14</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP014: Textdarstellung</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>In dieser Folge unterhalten wir uns über allerlei Detailwissen zu verschiedenen Schriftarten, werfen mit schlecht vorbereiteten Beispielen um uns und haben starke Meinungen zu verschiedenen Dingen. Um Textdarstellung geht es dabei nebenbei auch.</itunes:summary>
+    <description>In dieser Folge unterhalten wir uns über allerlei Detailwissen zu verschiedenen Schriftarten, werfen mit schlecht vorbereiteten Beispielen um uns und haben starke Meinungen zu verschiedenen Dingen. Um Textdarstellung geht es dabei nebenbei auch.</description>
+    <content:encoded>&lt;p&gt;In dieser Folge unterhalten wir uns über allerlei Detailwissen zu verschiedenen Schriftarten, werfen mit schlecht vorbereiteten Beispielen um uns und haben starke Meinungen zu verschiedenen Dingen. Um Textdarstellung geht es dabei nebenbei auch.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Nachbemerkungen zum letzten Mal: bidirektionaler Text&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mischung aus LTR-Schrift (&lt;em&gt;left to right&lt;/em&gt;) und RTL-Schrift (&lt;em&gt;right to left&lt;/em&gt;), z.B. hebräische oder arabische Zitate in lateinischer Schrift&lt;/li&gt;
+&lt;li&gt;in der Zeichenkette entsprechend der logischen Reihenfolge&lt;/li&gt;
+&lt;li&gt;in der Darstellung: Zeichen können (aber müssen nicht) eine präferierte Schreibrichtung haben, explizite Umschaltung der Schreibrichtung mit Steuerzeichen möglich&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grundbegriffe&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Zeichen&amp;quot;: wird im Bereich von Unicode kaum verwendet, da nicht klar definiert&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Graphem&#34;&gt;Graphem&lt;/a&gt;: die kleinste bedeutungsunterscheidende (aber nicht bedeutungstragende) Einheit eines Schriftsystems (z.B. lateinische Schrift: Buchstaben, Ziffern, Sonderzeichen, Leerzeichen); in Unicode ungefähr gleichsetzbar mit einem Codepunkt (abgesehen von Steuerzeichen)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Glyphe&#34;&gt;Glyphe&lt;/a&gt;: die grafische Darstellung eines Graphems&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Schriftart&#34;&gt;Schriftart/Font&lt;/a&gt;: ein vollständiger Satz von Glyphen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unterschiede zwischen Schriftarten&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Serife&#34;&gt;Serifenschriften&lt;/a&gt; vs. serifenlose, insb. &lt;a href=&#34;https://de.wikipedia.org/wiki/Grotesk_(Schrift)&#34;&gt;Groteskschriften&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Proportionale_Schriftart&#34;&gt;Proportionalschriften&lt;/a&gt; vs. &lt;a href=&#34;https://de.wikipedia.org/wiki/Nichtproportionale_Schriftart&#34;&gt;Monospace-Schriften&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spezialanwendungen: &lt;a href=&#34;https://de.wikipedia.org/wiki/OCR-A&#34;&gt;OCR-A&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/FE-Schrift&#34;&gt;FE-Schrift&lt;/a&gt;, Schriften zur Unterstützung von Analphabeten (unter den bekannten Schriften insbesondere &lt;a href=&#34;https://de.wikipedia.org/wiki/Comic_Sans_MS&#34;&gt;Comic Sans&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Beispiel aus Asien: &lt;a href=&#34;https://de.wikipedia.org/wiki/Ming_(Schrift)&#34;&gt;Ming&lt;/a&gt; vs. &lt;a href=&#34;https://en.wikipedia.org/wiki/East_Asian_Gothic_typeface&#34;&gt;Gothic&lt;/a&gt; vs. &lt;a href=&#34;https://de.wikipedia.org/wiki/Chinesische_Kalligrafie&#34;&gt;Kalligrafie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 1: Textlayout&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Segmentierung in Wörter, Zeilen, Absätze, evtl. Seiten&lt;/li&gt;
+&lt;li&gt;abhängig von den Regeln der verwendeten Schriftsysteme, siehe z.B. &lt;a href=&#34;https://www.unicode.org/reports/tr14/&#34;&gt;UAX 14: Unicode Line Breaking Algorithm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;abhängig von der Schreibrichtung, interessant insbesondere bei bidirektionalem Text
+&lt;ul&gt;
+&lt;li&gt;Unicode beschreibt fast ausschließlich zeilenweises Layout mit LTR oder RTL&lt;/li&gt;
+&lt;li&gt;im Japanischen ist auch spaltenweises Layout mit TTB (&lt;em&gt;top to bottom&lt;/em&gt;) gängig, siehe &lt;a href=&#34;https://www.unicode.org/reports/tr50/&#34;&gt;UTR 50: Unicode Vertical Text Layout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Ruby_Annotation&#34;&gt;Ruby&lt;/a&gt;: Ausspracheannotationen an CJK-Schriftzeichen, außerhalb der eigentlichen Textzeile (in LTR darüber, in TTB rechts daneben)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 2: Schriftwahl&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;kaum ein Font deckt alle Grapheme ab -&amp;gt; im Allgemeinen Auswahl verschiedener Fonts je nach Schriftsystem notwendig (&lt;strong&gt;Font Stack&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;in europäischen Texten früher kaum relevant, heute wichtig wegen separater Emoji-Fonts&lt;/li&gt;
+&lt;li&gt;Schriftgröße früher wichtig, da manche Fonts nur als Bitmaps in festen Größen vorlagen; heute durch Vektorschriftarten kein Problem mehr&lt;/li&gt;
+&lt;li&gt;Schriftwahl beeinflusst Phase 1: verschiedene Schriften laufen unterschiedlich weit und ergeben somit andere Zeilenumbruchspunkte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 3: Glyphenwahl&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;einfacher Fall: eine Glyphe für ein Graphem&lt;/li&gt;
+&lt;li&gt;allgemeiner Fall: Bildung von &lt;strong&gt;Graphem-Clustern&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. Ligaturen: &amp;quot;f&amp;quot; &#43; &amp;quot;l&amp;quot; = &amp;quot;ﬂ&amp;quot;&lt;/li&gt;
+&lt;li&gt;z.B. kombinierende diakritische Zeichen: &amp;quot;a&amp;quot; &#43; &amp;quot;◌́&amp;quot; = &amp;quot;á&amp;quot;&lt;/li&gt;
+&lt;li&gt;z.B. Emoji-Hautfarben: &amp;quot;👨&amp;quot; &#43; &lt;a href=&#34;https://de.wikipedia.org/wiki/Hauttyp#Hauttypen_nach_Fitzpatrick&#34;&gt;Fitzpatrick&lt;/a&gt; Modifier 1-2 = &amp;quot;👨🏻&amp;quot;&lt;/li&gt;
+&lt;li&gt;z.B. Emoji-Flaggen: &amp;quot;🇩&amp;quot; &#43; &amp;quot;🇪&amp;quot; = &amp;quot;🇩🇪&amp;quot;&lt;/li&gt;
+&lt;li&gt;z.B. Fonts mit kreativer Verwendung von Ligaturen: &lt;a href=&#34;https://www.sansbullshitsans.com/&#34;&gt;Sans Bullshit Sans&lt;/a&gt;, &lt;a href=&#34;https://github.com/tonsky/FiraCode&#34;&gt;Fira Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;anspruchsvollster Fall: &lt;a href=&#34;https://en.wikipedia.org/wiki/Complex_text_layout&#34;&gt;Complex text layout&lt;/a&gt;, sprich: Anpassung von Glyphen an ihre Nachbarglyphen
+&lt;ul&gt;
+&lt;li&gt;v.a. im Arabischen und in indischen Schriften, aber auch z.B. in handschriftartigen Fonts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;auch Glyphenwahl beeinflusst Phase 1, aus demselben Grund wie oben&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 4: Darstellung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Glyphen aus &lt;a href=&#34;https://de.wikipedia.org/wiki/Vektorfont&#34;&gt;Vektorschriftarten&lt;/a&gt; werden in den gewünschten Schriftgrößen gerendert und vorgehalten&lt;/li&gt;
+&lt;li&gt;dann &amp;quot;einfach&amp;quot; Zusammensetzen der Glyphen zu einem Gesamtbild unter Anwendung der gewünschten Textfarbe&lt;/li&gt;
+&lt;li&gt;Ausnahme: Emoji-Glyphen folgen meist nicht der Schriftfarbe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://www.unicode.org/faq/specifications.html&#34;&gt;Spezifikationen und Reports des Unicode Consortium&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hörempfehlung: &lt;a href=&#34;https://cre.fm/cre080-geschichte-der-typographie&#34;&gt;CRE080 Geschichte der Typografie&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:00:53" title="Nachbemerkung zur letzten Folge"  />
+          <chapter start="00:10:57" title="Grundbegriffe"  />
+          <chapter start="00:13:02" title="Graphem"  />
+          <chapter start="00:17:40" title="Glyphe"  />
+          <chapter start="00:18:49" title="Schriftart/Font"  />
+          <chapter start="00:23:00" title="Unterschiede zwischen Schriftarten"  />
+          <chapter start="00:23:39" title="Serifenschriften"  />
+          <chapter start="00:25:23" title="Groteskschriften"  />
+          <chapter start="00:27:07" title="Proportionalschriften"  />
+          <chapter start="00:27:34" title="Monospace-Schriften"  />
+          <chapter start="00:28:56" title="OCR-A"  />
+          <chapter start="00:32:09" title="CJK-Schriften"  />
+          <chapter start="00:33:42" title="Ming-Schriften"  />
+          <chapter start="00:35:19" title="Gothic"  />
+          <chapter start="00:35:45" title="FE-Schrif"  />
+          <chapter start="00:37:39" title="Comic Sans"  />
+          <chapter start="00:39:48" title="Bildschirmanzeige vs. Druck"  />
+          <chapter start="00:43:51" title="Phase 1: Textlayout"  />
+          <chapter start="00:51:53" title="Ruby Annotation"  />
+          <chapter start="00:55:28" title="Phase 2: Schriftwahl"  />
+          <chapter start="01:01:31" title="Phase 3: Glyphenwahl"  />
+      </chapters>
+      <enclosure length="78400506" url="https://xyrillian.de/dl/stp-014-textdarstellung.mp3" type="audio/mpeg"/>
+      <enclosure length="47443537" url="https://xyrillian.de/dl/stp-014-textdarstellung.ogg" type="audio/ogg"/>
+      <enclosure length="28688583" url="https://xyrillian.de/dl/stp-014-textdarstellung.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/014-textdarstellung/</guid>
+    <pubDate>Thu, 27 Jan 2022 02:00:00 GMT</pubDate>
+    <itunes:duration>81:20</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP013: Textkodierung</itunes:title>
     <itunes:episode>13</itunes:episode>
     <itunes:season>1</itunes:season>
