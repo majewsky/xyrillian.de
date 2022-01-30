@@ -137,17 +137,18 @@
           <chapter start="00:32:09" title="CJK-Schriften"  />
           <chapter start="00:33:42" title="Ming-Schriften"  />
           <chapter start="00:35:19" title="Gothic"  />
-          <chapter start="00:35:45" title="FE-Schrif"  />
+          <chapter start="00:35:45" title="FE-Schriften"  />
           <chapter start="00:37:39" title="Comic Sans"  />
           <chapter start="00:39:48" title="Bildschirmanzeige vs. Druck"  />
           <chapter start="00:43:51" title="Phase 1: Textlayout"  />
           <chapter start="00:51:53" title="Ruby Annotation"  />
           <chapter start="00:55:28" title="Phase 2: Schriftwahl"  />
           <chapter start="01:01:31" title="Phase 3: Glyphenwahl"  />
+          <chapter start="01:18:16" title="Phase 4: Darstellung"  />
       </chapters>
-      <enclosure length="78400506" url="https://xyrillian.de/dl/stp-014-textdarstellung.mp3" type="audio/mpeg"/>
-      <enclosure length="47443537" url="https://xyrillian.de/dl/stp-014-textdarstellung.ogg" type="audio/ogg"/>
-      <enclosure length="28688583" url="https://xyrillian.de/dl/stp-014-textdarstellung.opus" type="audio/opus"/>
+      <enclosure length="78400582" url="https://xyrillian.de/dl/stp-014-textdarstellung.mp3" type="audio/mpeg"/>
+      <enclosure length="47442845" url="https://xyrillian.de/dl/stp-014-textdarstellung.ogg" type="audio/ogg"/>
+      <enclosure length="28686899" url="https://xyrillian.de/dl/stp-014-textdarstellung.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/014-textdarstellung/</guid>
     <pubDate>Thu, 27 Jan 2022 02:00:00 GMT</pubDate>
     <itunes:duration>81:20</itunes:duration>
