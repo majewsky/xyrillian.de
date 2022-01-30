@@ -42,6 +42,11 @@ func main() {
 		log.Fatal(err.Error())
 	}
 
+	_, err = os.Stat("./dl/")
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+
 	var data struct {
 		FeaturedShows    []string         `yaml:"featuredShows"`
 		Shows            map[string]*show `yaml:"shows"`
