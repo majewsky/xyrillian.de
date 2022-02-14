@@ -49,7 +49,7 @@
     {{- end }}
     {{- range .Downloads }}
     {{- if ne .Format "FLAC" }}
-      <enclosure length="{{.SizeBytes}}" url="https://xyrillian.de/dl/{{.FileName}}" type="{{.MIMEType}}"/>
+      <enclosure length="{{.SizeBytes}}" url="https://dl.xyrillian.de/noises/{{.FileName}}" type="{{.MIMEType}}"/>
     {{- end }}
     {{- end }}
     <guid>

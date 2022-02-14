@@ -146,9 +146,9 @@
           <chapter start="01:01:31" title="Phase 3: Glyphenwahl"  />
           <chapter start="01:18:16" title="Phase 4: Darstellung"  />
       </chapters>
-      <enclosure length="78400582" url="https://xyrillian.de/dl/stp-014-textdarstellung.mp3" type="audio/mpeg"/>
-      <enclosure length="47442845" url="https://xyrillian.de/dl/stp-014-textdarstellung.ogg" type="audio/ogg"/>
-      <enclosure length="28686899" url="https://xyrillian.de/dl/stp-014-textdarstellung.opus" type="audio/opus"/>
+      <enclosure length="78400582" url="https://dl.xyrillian.de/noises/stp-014-textdarstellung.mp3" type="audio/mpeg"/>
+      <enclosure length="47442845" url="https://dl.xyrillian.de/noises/stp-014-textdarstellung.ogg" type="audio/ogg"/>
+      <enclosure length="28686899" url="https://dl.xyrillian.de/noises/stp-014-textdarstellung.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/014-textdarstellung/</guid>
     <pubDate>Thu, 27 Jan 2022 02:00:00 GMT</pubDate>
     <itunes:duration>81:20</itunes:duration>
@@ -268,9 +268,9 @@ Und jedes andere geschriebene Wort, das je existiert hat… natürlich nur ideal
           <chapter start="00:45:13" title="UTF-8"  />
           <chapter start="00:54:56" title="Probleme von Unicode"  />
       </chapters>
-      <enclosure length="67905153" url="https://xyrillian.de/dl/stp-013-textkodierung.mp3" type="audio/mpeg"/>
-      <enclosure length="43351750" url="https://xyrillian.de/dl/stp-013-textkodierung.ogg" type="audio/ogg"/>
-      <enclosure length="25827684" url="https://xyrillian.de/dl/stp-013-textkodierung.opus" type="audio/opus"/>
+      <enclosure length="67905153" url="https://dl.xyrillian.de/noises/stp-013-textkodierung.mp3" type="audio/mpeg"/>
+      <enclosure length="43351750" url="https://dl.xyrillian.de/noises/stp-013-textkodierung.ogg" type="audio/ogg"/>
+      <enclosure length="25827684" url="https://dl.xyrillian.de/noises/stp-013-textkodierung.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/013-textkodierung/</guid>
     <pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate>
     <itunes:duration>70:24</itunes:duration>
@@ -399,9 +399,9 @@ Deswegen erklärt Xyrill uns heute, warum Biologen sich über Excel aufregen und
           <chapter start="00:55:01" title="Probleme beim Design vom Datenbanken"  />
           <chapter start="00:59:42" title="NoSQL"  />
       </chapters>
-      <enclosure length="67288244" url="https://xyrillian.de/dl/stp-012-datenbanken.mp3" type="audio/mpeg"/>
-      <enclosure length="42118845" url="https://xyrillian.de/dl/stp-012-datenbanken.ogg" type="audio/ogg"/>
-      <enclosure length="25037941" url="https://xyrillian.de/dl/stp-012-datenbanken.opus" type="audio/opus"/>
+      <enclosure length="67288244" url="https://dl.xyrillian.de/noises/stp-012-datenbanken.mp3" type="audio/mpeg"/>
+      <enclosure length="42118845" url="https://dl.xyrillian.de/noises/stp-012-datenbanken.ogg" type="audio/ogg"/>
+      <enclosure length="25037941" url="https://dl.xyrillian.de/noises/stp-012-datenbanken.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/012-datenbanken/</guid>
     <pubDate>Thu, 16 Dec 2021 16:50:00 GMT</pubDate>
     <itunes:duration>69:45</itunes:duration>
@@ -525,9 +525,9 @@ Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es 
           <chapter start="00:50:57" title="Schrittweise Befehlsausführung"  />
           <chapter start="01:08:20" title="Überlegungen zu Codeoptimierung"  />
       </chapters>
-      <enclosure length="71835930" url="https://xyrillian.de/dl/stp-011-programmsteuerung.mp3" type="audio/mpeg"/>
-      <enclosure length="44216224" url="https://xyrillian.de/dl/stp-011-programmsteuerung.ogg" type="audio/ogg"/>
-      <enclosure length="27392651" url="https://xyrillian.de/dl/stp-011-programmsteuerung.opus" type="audio/opus"/>
+      <enclosure length="71835930" url="https://dl.xyrillian.de/noises/stp-011-programmsteuerung.mp3" type="audio/mpeg"/>
+      <enclosure length="44216224" url="https://dl.xyrillian.de/noises/stp-011-programmsteuerung.ogg" type="audio/ogg"/>
+      <enclosure length="27392651" url="https://dl.xyrillian.de/noises/stp-011-programmsteuerung.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/011-programmsteuerung/</guid>
     <pubDate>Thu, 25 Nov 2021 00:00:00 GMT</pubDate>
     <itunes:duration>74:30</itunes:duration>
@@ -657,9 +657,9 @@ Der Abschluss der vierteiligen Reihe über Grafik, und was dazu notwendig ist.&l
           <chapter start="00:47:26" title="Einwurf: Was unterscheidet einen Grafikprozessor (GPU) von einem Hauptprozessor (CPU)?"  />
           <chapter start="00:51:58" title="Schritt 5: Shader"  />
       </chapters>
-      <enclosure length="66558263" url="https://xyrillian.de/dl/stp-010-3d-grafik.mp3" type="audio/mpeg"/>
-      <enclosure length="41584820" url="https://xyrillian.de/dl/stp-010-3d-grafik.ogg" type="audio/ogg"/>
-      <enclosure length="25502287" url="https://xyrillian.de/dl/stp-010-3d-grafik.opus" type="audio/opus"/>
+      <enclosure length="66558263" url="https://dl.xyrillian.de/noises/stp-010-3d-grafik.mp3" type="audio/mpeg"/>
+      <enclosure length="41584820" url="https://dl.xyrillian.de/noises/stp-010-3d-grafik.ogg" type="audio/ogg"/>
+      <enclosure length="25502287" url="https://dl.xyrillian.de/noises/stp-010-3d-grafik.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/010-3d-grafik/</guid>
     <pubDate>Thu, 04 Nov 2021 00:00:00 GMT</pubDate>
     <itunes:duration>69:00</itunes:duration>
@@ -788,9 +788,9 @@ Damit schafft Xyrill die passende Einleitung dieser dritten Folge unserer vierte
           <chapter start="00:38:26" title="Fallstricke bei Fließkommazahlen"  />
           <chapter start="00:43:20" title="Anwendungsbereiche üblicher Fließkommaformate"  />
       </chapters>
-      <enclosure length="24102965" url="https://xyrillian.de/dl/stp-009-fliesskommazahlen.mp3" type="audio/mpeg"/>
-      <enclosure length="31214808" url="https://xyrillian.de/dl/stp-009-fliesskommazahlen.ogg" type="audio/ogg"/>
-      <enclosure length="17970217" url="https://xyrillian.de/dl/stp-009-fliesskommazahlen.opus" type="audio/opus"/>
+      <enclosure length="24102965" url="https://dl.xyrillian.de/noises/stp-009-fliesskommazahlen.mp3" type="audio/mpeg"/>
+      <enclosure length="31214808" url="https://dl.xyrillian.de/noises/stp-009-fliesskommazahlen.ogg" type="audio/ogg"/>
+      <enclosure length="17970217" url="https://dl.xyrillian.de/noises/stp-009-fliesskommazahlen.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/009-fliesskommazahlen/</guid>
     <pubDate>Thu, 14 Oct 2021 16:40:00 GMT</pubDate>
     <itunes:duration>49:33</itunes:duration>
@@ -892,9 +892,9 @@ Genießen sie heute Funfacts und Kaufberatung auf mittelmäßigem Niveau.&lt;/p&
           <chapter start="00:59:37" title="Vektorgrafik"  />
           <chapter start="01:11:53" title="Bildaufbau in traditionellen Desktopsystemen"  />
       </chapters>
-      <enclosure length="39780588" url="https://xyrillian.de/dl/stp-008-2d-grafik.mp3" type="audio/mpeg"/>
-      <enclosure length="52702252" url="https://xyrillian.de/dl/stp-008-2d-grafik.ogg" type="audio/ogg"/>
-      <enclosure length="30239041" url="https://xyrillian.de/dl/stp-008-2d-grafik.opus" type="audio/opus"/>
+      <enclosure length="39780588" url="https://dl.xyrillian.de/noises/stp-008-2d-grafik.mp3" type="audio/mpeg"/>
+      <enclosure length="52702252" url="https://dl.xyrillian.de/noises/stp-008-2d-grafik.ogg" type="audio/ogg"/>
+      <enclosure length="30239041" url="https://dl.xyrillian.de/noises/stp-008-2d-grafik.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/008-2d-grafik/</guid>
     <pubDate>Thu, 23 Sep 2021 16:45:00 GMT</pubDate>
     <itunes:duration>82:13</itunes:duration>
@@ -1017,9 +1017,9 @@ Genießen sie heute Funfacts und Kaufberatung auf mittelmäßigem Niveau.&lt;/p&
           <chapter start="00:53:01" title="Registerbank"  />
           <chapter start="00:57:05" title="Speicher aus Sicht des Programmierers"  />
       </chapters>
-      <enclosure length="30081141" url="https://xyrillian.de/dl/stp-007-speicherhierarchie.mp3" type="audio/mpeg"/>
-      <enclosure length="40115908" url="https://xyrillian.de/dl/stp-007-speicherhierarchie.ogg" type="audio/ogg"/>
-      <enclosure length="22557543" url="https://xyrillian.de/dl/stp-007-speicherhierarchie.opus" type="audio/opus"/>
+      <enclosure length="30081141" url="https://dl.xyrillian.de/noises/stp-007-speicherhierarchie.mp3" type="audio/mpeg"/>
+      <enclosure length="40115908" url="https://dl.xyrillian.de/noises/stp-007-speicherhierarchie.ogg" type="audio/ogg"/>
+      <enclosure length="22557543" url="https://dl.xyrillian.de/noises/stp-007-speicherhierarchie.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/007-speicherhierarchie/</guid>
     <pubDate>Thu, 02 Sep 2021 00:00:00 GMT</pubDate>
     <itunes:duration>62:01</itunes:duration>
@@ -1244,9 +1244,9 @@ bgb
           <chapter start="01:10:54" title="Abendgedanken über den Wert einer Lernkurve"  />
           <chapter start="01:26:42" title="Outro"  />
       </chapters>
-      <enclosure length="42597030" url="https://xyrillian.de/dl/stp-006-kommandozeilen-und-unix-philosophie.mp3" type="audio/mpeg"/>
-      <enclosure length="55024669" url="https://xyrillian.de/dl/stp-006-kommandozeilen-und-unix-philosophie.ogg" type="audio/ogg"/>
-      <enclosure length="31286363" url="https://xyrillian.de/dl/stp-006-kommandozeilen-und-unix-philosophie.opus" type="audio/opus"/>
+      <enclosure length="42597030" url="https://dl.xyrillian.de/noises/stp-006-kommandozeilen-und-unix-philosophie.mp3" type="audio/mpeg"/>
+      <enclosure length="55024669" url="https://dl.xyrillian.de/noises/stp-006-kommandozeilen-und-unix-philosophie.ogg" type="audio/ogg"/>
+      <enclosure length="31286363" url="https://dl.xyrillian.de/noises/stp-006-kommandozeilen-und-unix-philosophie.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/006-kommandozeilen-und-unix-philosophie/</guid>
     <pubDate>Thu, 12 Aug 2021 09:30:00 GMT</pubDate>
     <itunes:duration>88:05</itunes:duration>
@@ -1440,9 +1440,9 @@ Damit das funktionert ist es nötig vielerlei Protokolle übereinander zu stapel
           <chapter start="01:18:10" title="Grenzen des Schichtenmodells"  />
           <chapter start="01:20:12" title="Layer 8 und 9"  />
       </chapters>
-      <enclosure length="39569965" url="https://xyrillian.de/dl/stp-005-netzwerk-schichtenmodell.mp3" type="audio/mpeg"/>
-      <enclosure length="49467388" url="https://xyrillian.de/dl/stp-005-netzwerk-schichtenmodell.ogg" type="audio/ogg"/>
-      <enclosure length="28575009" url="https://xyrillian.de/dl/stp-005-netzwerk-schichtenmodell.opus" type="audio/opus"/>
+      <enclosure length="39569965" url="https://dl.xyrillian.de/noises/stp-005-netzwerk-schichtenmodell.mp3" type="audio/mpeg"/>
+      <enclosure length="49467388" url="https://dl.xyrillian.de/noises/stp-005-netzwerk-schichtenmodell.ogg" type="audio/ogg"/>
+      <enclosure length="28575009" url="https://dl.xyrillian.de/noises/stp-005-netzwerk-schichtenmodell.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/005-netzwerk-schichtenmodell/</guid>
     <pubDate>Thu, 22 Jul 2021 16:00:00 GMT</pubDate>
     <itunes:duration>81:47</itunes:duration>
@@ -1591,9 +1591,9 @@ Kann man sie ersetzen? Und vor allem, wie würde Xyrill das alles machen, würde
           <chapter start="01:23:23" title="Was tun Webseitenbetreiber um sicher zu authentifizieren"  />
           <chapter start="01:24:43" title="Alternativen zu Passwörtern"  />
       </chapters>
-      <enclosure length="43876549" url="https://xyrillian.de/dl/stp-004-passwoerter.mp3" type="audio/mpeg"/>
-      <enclosure length="55220724" url="https://xyrillian.de/dl/stp-004-passwoerter.ogg" type="audio/ogg"/>
-      <enclosure length="31765655" url="https://xyrillian.de/dl/stp-004-passwoerter.opus" type="audio/opus"/>
+      <enclosure length="43876549" url="https://dl.xyrillian.de/noises/stp-004-passwoerter.mp3" type="audio/mpeg"/>
+      <enclosure length="55220724" url="https://dl.xyrillian.de/noises/stp-004-passwoerter.ogg" type="audio/ogg"/>
+      <enclosure length="31765655" url="https://dl.xyrillian.de/noises/stp-004-passwoerter.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/004-passwoerter/</guid>
     <pubDate>Thu, 01 Jul 2021 15:45:00 GMT</pubDate>
     <itunes:duration>90:45</itunes:duration>
@@ -1745,9 +1745,9 @@ Allerdings ist das für ttimeless auch genug für den Anfang.&lt;/p&gt;&lt;h2&gt
           <chapter start="00:29:39" title="Warum das ganze"  />
           <chapter start="00:35:22" title="Schaltzeiten und Prozessortakt"  />
       </chapters>
-      <enclosure length="20441158" url="https://xyrillian.de/dl/stp-003-logikgatter.mp3" type="audio/mpeg"/>
-      <enclosure length="26067582" url="https://xyrillian.de/dl/stp-003-logikgatter.ogg" type="audio/ogg"/>
-      <enclosure length="14778359" url="https://xyrillian.de/dl/stp-003-logikgatter.opus" type="audio/opus"/>
+      <enclosure length="20441158" url="https://dl.xyrillian.de/noises/stp-003-logikgatter.mp3" type="audio/mpeg"/>
+      <enclosure length="26067582" url="https://dl.xyrillian.de/noises/stp-003-logikgatter.ogg" type="audio/ogg"/>
+      <enclosure length="14778359" url="https://dl.xyrillian.de/noises/stp-003-logikgatter.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/003-logikgatter/</guid>
     <pubDate>Thu, 10 Jun 2021 08:30:00 GMT</pubDate>
     <itunes:duration>41:55</itunes:duration>
@@ -1898,9 +1898,9 @@ Und über &lt;strong&gt;Kekse&lt;/strong&gt;!!!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;
           <chapter start="00:40:47" title="Cookies"  />
           <chapter start="00:48:59" title="Was passiert, wenn ich einen Podcast abrufe?"  />
       </chapters>
-      <enclosure length="26983760" url="https://xyrillian.de/dl/stp-002-aufruf-einer-webseite.mp3" type="audio/mpeg"/>
-      <enclosure length="35520202" url="https://xyrillian.de/dl/stp-002-aufruf-einer-webseite.ogg" type="audio/ogg"/>
-      <enclosure length="20380590" url="https://xyrillian.de/dl/stp-002-aufruf-einer-webseite.opus" type="audio/opus"/>
+      <enclosure length="26983760" url="https://dl.xyrillian.de/noises/stp-002-aufruf-einer-webseite.mp3" type="audio/mpeg"/>
+      <enclosure length="35520202" url="https://dl.xyrillian.de/noises/stp-002-aufruf-einer-webseite.ogg" type="audio/ogg"/>
+      <enclosure length="20380590" url="https://dl.xyrillian.de/noises/stp-002-aufruf-einer-webseite.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/002-aufruf-einer-webseite/</guid>
     <pubDate>Thu, 20 May 2021 20:30:00 GMT</pubDate>
     <itunes:duration>55:33</itunes:duration>
@@ -1999,9 +1999,9 @@ Außerdem in dieser Folge: Liverechnen von Xyrill und spannende Dinge mit Finger
           <chapter start="00:30:46" title="Hexadezimalsystem und Oktalsystem"  />
           <chapter start="00:39:35" title="Größenordnungen oberhalb von 0 und 1"  />
       </chapters>
-      <enclosure length="24981951" url="https://xyrillian.de/dl/stp-001-zahlensysteme.mp3" type="audio/mpeg"/>
-      <enclosure length="31098922" url="https://xyrillian.de/dl/stp-001-zahlensysteme.ogg" type="audio/ogg"/>
-      <enclosure length="18125770" url="https://xyrillian.de/dl/stp-001-zahlensysteme.opus" type="audio/opus"/>
+      <enclosure length="24981951" url="https://dl.xyrillian.de/noises/stp-001-zahlensysteme.mp3" type="audio/mpeg"/>
+      <enclosure length="31098922" url="https://dl.xyrillian.de/noises/stp-001-zahlensysteme.ogg" type="audio/ogg"/>
+      <enclosure length="18125770" url="https://dl.xyrillian.de/noises/stp-001-zahlensysteme.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/001-zahlensysteme/</guid>
     <pubDate>Wed, 28 Apr 2021 22:00:00 GMT</pubDate>
     <itunes:duration>51:23</itunes:duration>
@@ -2110,9 +2110,9 @@ Außerdem in dieser Folge: Was Trommeln im Stadion mit dem Wetter und Turing mit
           <chapter start="00:36:10" title="Überlegungen zu Berechenbarkeit"  />
           <chapter start="00:46:36" title="Letzte Worte und Abschied"  />
       </chapters>
-      <enclosure length="23671644" url="https://xyrillian.de/dl/stp-000-was-ist-informatik.mp3" type="audio/mpeg"/>
-      <enclosure length="17083503" url="https://xyrillian.de/dl/stp-000-was-ist-informatik.ogg" type="audio/ogg"/>
-      <enclosure length="16964690" url="https://xyrillian.de/dl/stp-000-was-ist-informatik.opus" type="audio/opus"/>
+      <enclosure length="23671644" url="https://dl.xyrillian.de/noises/stp-000-was-ist-informatik.mp3" type="audio/mpeg"/>
+      <enclosure length="17083503" url="https://dl.xyrillian.de/noises/stp-000-was-ist-informatik.ogg" type="audio/ogg"/>
+      <enclosure length="16964690" url="https://dl.xyrillian.de/noises/stp-000-was-ist-informatik.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/000-was-ist-informatik/</guid>
     <pubDate>Thu, 08 Apr 2021 10:30:00 GMT</pubDate>
     <itunes:duration>48:39</itunes:duration>

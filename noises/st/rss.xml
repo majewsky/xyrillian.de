@@ -40,9 +40,9 @@
           <chapter start="00:15:50" title="Pause"  />
           <chapter start="00:16:17" title="Zweite Hälfte"  />
       </chapters>
-      <enclosure length="34454973" url="https://xyrillian.de/dl/st-002-bonus-interview.mp3" type="audio/mpeg"/>
-      <enclosure length="28309567" url="https://xyrillian.de/dl/st-002-bonus-interview.ogg" type="audio/ogg"/>
-      <enclosure length="15240516" url="https://xyrillian.de/dl/st-002-bonus-interview.opus" type="audio/opus"/>
+      <enclosure length="34454973" url="https://dl.xyrillian.de/noises/st-002-bonus-interview.mp3" type="audio/mpeg"/>
+      <enclosure length="28309567" url="https://dl.xyrillian.de/noises/st-002-bonus-interview.ogg" type="audio/ogg"/>
+      <enclosure length="15240516" url="https://dl.xyrillian.de/noises/st-002-bonus-interview.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/st/002-bonus-interview/</guid>
     <pubDate>Tue, 25 Jun 2019 16:00:00 GMT</pubDate>
     <itunes:duration>40:42</itunes:duration>
@@ -65,9 +65,9 @@
           <chapter start="00:05:18" title="Space-Lexikon: Hackerspaces als Medienhäuser"  />
           <chapter start="00:07:05" title="Outro"  />
       </chapters>
-      <enclosure length="6905618" url="https://xyrillian.de/dl/st-002-cbase-berlin.mp3" type="audio/mpeg"/>
-      <enclosure length="5846059" url="https://xyrillian.de/dl/st-002-cbase-berlin.ogg" type="audio/ogg"/>
-      <enclosure length="3260813" url="https://xyrillian.de/dl/st-002-cbase-berlin.opus" type="audio/opus"/>
+      <enclosure length="6905618" url="https://dl.xyrillian.de/noises/st-002-cbase-berlin.mp3" type="audio/mpeg"/>
+      <enclosure length="5846059" url="https://dl.xyrillian.de/noises/st-002-cbase-berlin.ogg" type="audio/ogg"/>
+      <enclosure length="3260813" url="https://dl.xyrillian.de/noises/st-002-cbase-berlin.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/st/002/</guid>
     <pubDate>Tue, 25 Jun 2019 16:00:00 GMT</pubDate>
     <itunes:duration>07:54</itunes:duration>
@@ -91,9 +91,9 @@
           <chapter start="00:04:34" title="Postkarte: Junghackertag"  />
           <chapter start="00:08:56" title="Outro"  />
       </chapters>
-      <enclosure length="8725158" url="https://xyrillian.de/dl/st-001-eigenbaukombinat-halle.mp3" type="audio/mpeg"/>
-      <enclosure length="7118518" url="https://xyrillian.de/dl/st-001-eigenbaukombinat-halle.ogg" type="audio/ogg"/>
-      <enclosure length="4090129" url="https://xyrillian.de/dl/st-001-eigenbaukombinat-halle.opus" type="audio/opus"/>
+      <enclosure length="8725158" url="https://dl.xyrillian.de/noises/st-001-eigenbaukombinat-halle.mp3" type="audio/mpeg"/>
+      <enclosure length="7118518" url="https://dl.xyrillian.de/noises/st-001-eigenbaukombinat-halle.ogg" type="audio/ogg"/>
+      <enclosure length="4090129" url="https://dl.xyrillian.de/noises/st-001-eigenbaukombinat-halle.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/st/001/</guid>
     <pubDate>Mon, 25 Feb 2019 22:00:00 GMT</pubDate>
     <itunes:duration>10:04</itunes:duration>
