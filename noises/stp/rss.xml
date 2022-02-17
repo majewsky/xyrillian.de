@@ -27,6 +27,98 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP015: Multitasking in Betriebssystemen</itunes:title>
+    <itunes:episode>15</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP015: Multitasking in Betriebssystemen</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Um viele Dinge gefühlt gleichzeitig tun zu können, ist die Computertechnik einen weiten Weg gegangen. In der heutigen Folge halten wir viele lose Fäden in der Hand und ständig merkt Xyrill, dass dies und jenes ja auch noch notwendig ist, um zum Ziel zu kommen: Zu Multitasking.</itunes:summary>
+    <description>Um viele Dinge gefühlt gleichzeitig tun zu können, ist die Computertechnik einen weiten Weg gegangen. In der heutigen Folge halten wir viele lose Fäden in der Hand und ständig merkt Xyrill, dass dies und jenes ja auch noch notwendig ist, um zum Ziel zu kommen: Zu Multitasking.</description>
+    <content:encoded>&lt;p&gt;Um viele Dinge gefühlt gleichzeitig tun zu können, ist die Computertechnik einen weiten Weg gegangen. In der heutigen Folge halten wir viele lose Fäden in der Hand und ständig merkt Xyrill, dass dies und jenes ja auch noch notwendig ist, um zum Ziel zu kommen: Zu Multitasking.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vorbemerkung: Begriffsklärung Programm vs. Prozess&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Programm: ein bestimmtes Stück Maschinencode, das zumeist auf der Festplatte vorgehalten wird&lt;/li&gt;
+&lt;li&gt;Prozess: eine bestimmte Laufzeitinstanz eines Programms&lt;/li&gt;
+&lt;li&gt;Prozess = Programm &#43; zugehörige Daten im Speicher &#43; zugehörige Berechtigungen etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Multitasking&#34;&gt;Multitasking&lt;/a&gt;: Ausführung mehrerer Aufgaben zur selben Zeit oder abwechselnd in kurzen Zeitabschnitten&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;konkurrente Ausführung: abwechselnd in kurzen Zeitabschnitten&lt;/li&gt;
+&lt;li&gt;parallelle Ausführung: zur selben Zeit (z.B. Parallelbearbeitung mehrerer Daten in der GPU, Parallelität in mehreren CPU-Kernen); heute nicht so sehr im Fokus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Analogie: Multitasking &lt;a href=&#34;https://de.wikipedia.org/wiki/Multitasking_(Psychologie)&#34;&gt;beim Menschen&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee 1: tatsächlich parallele Ausführung, z.B. gehen und gleichzeitig sprechen&lt;/li&gt;
+&lt;li&gt;Idee 2: Teilaufgaben an einer jeweils sinnvollen Stelle unterbrechen und während der Wartezeiten etwas anderes machen, z.B. Kochen/Backen (entspricht dem kooperativen Multitasking)&lt;/li&gt;
+&lt;li&gt;Idee 3: Teilaufgaben nach einer bestimmten Zeit oder bei äußeren Ereignissen unterbrechen, z.B. Büroarbeit (entspricht dem präemptiven Multitasking)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;kooperatives Multitasking: Prozesse unterbrechen sich selbst, wenn sich abzeichnet, dass sie warten müssen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. auf das Lesen von Daten von der Festplatte oder eine Antwort aus dem Netzwerk&lt;/li&gt;
+&lt;li&gt;Problem 1: jedes Programm muss Unterbrechungspunkte enthalten&lt;/li&gt;
+&lt;li&gt;Problem 2: unkooperative Programme (z.B. fehlerhafte oder Schadsoftware) können das gesamte System blockieren&lt;/li&gt;
+&lt;li&gt;weit verbreitet in der Ära der frühen Heimcomputer (C64, DOS-PCs, Macs bis Mac OS 9)&lt;/li&gt;
+&lt;li&gt;heute nicht mehr im Einsatz, da moderne Prozessoren interruptfähig sind und somit präemptives Multitasking möglich ist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;präemptives Multitasking: Prozesse werden nach dem Ablauf ihrer zugeteilten Zeitscheibe unterbrochen, damit jemand anderes drankommen kann&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bevor der Prozess drankommt, stellt das Betriebssystem einen Hardware-Timer in der CPU&lt;/li&gt;
+&lt;li&gt;nach Ablauf des Timers löst die CPU einen &lt;strong&gt;Interrupt&lt;/strong&gt; (eine Unterbrechung) aus&lt;/li&gt;
+&lt;li&gt;CPU unterbricht die Arbeit am Prozess und führt eine vom Betriebssystem definierte ISR (&lt;strong&gt;Interrupt Service Routine&lt;/strong&gt;) aus&lt;/li&gt;
+&lt;li&gt;ISR speichert den Zustand des Prozesses (insb. die Inhalte aller Prozessor-Register) und gibt die Ausführung zurück an den Scheduler&lt;/li&gt;
+&lt;li&gt;um Prozess später wiederherzustellen, werden im Prinzip einfach alle Prozessor-Register auf die gesicherten Werte zurückgesetzt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Scheduler&lt;/strong&gt; (Zeitplaner): Komponente des Betriebssystems, die den jeweils nächsten Prozess wählt, der laufen darf&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;interne Buchführung des Schedulers unterscheidet zwischen lauffähigen und nicht lauffähigen Prozessen&lt;/li&gt;
+&lt;li&gt;ist ein laufender Prozess nicht mehr lauffähig (weil auf I/O gewartet werden muss), kann er auch selbst einen Interrupt auslösen und wird dann im Scheduler als nicht lauffähig markiert&lt;/li&gt;
+&lt;li&gt;nächster Prozess wird immer aus der Liste der lauffähigen Prozesse gewählt, nach Kriterien wie Priorität (z.B. Audio-Prozesse)&lt;/li&gt;
+&lt;li&gt;gibt es keinen lauffähigen Prozess, kann die CPU bis zum nächsten Interrupt angehalten werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie werden Prozesse wieder lauffähig?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eingabe von der Hardwareseite (z.B. Netzwerk, Festplatte) erzeugt ebenfalls Interrupts, auf die das Betriebssystem reagiert&lt;/li&gt;
+&lt;li&gt;Eingabe von anderen Prozessen (z.B. via Pipes) landet direkt beim Betriebssystem&lt;/li&gt;
+&lt;li&gt;Betriebssystem stellt die Daten dem entsprechenden Prozess bereit und markiert diesen wieder als lauffähig&lt;/li&gt;
+&lt;li&gt;analog bei vollgelaufenen Ausgabepuffern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:40" title="Vorbemerkung Programm vs. Prozess"  />
+          <chapter start="00:04:44" title="Einleitung: Von der Lockarte zum Betriebssystem"  />
+          <chapter start="00:07:26" title="Definition von Multitasking"  />
+          <chapter start="00:10:00" title="Analogie: Multitasking beim Menschen"  />
+          <chapter start="00:14:21" title="kooperatives Multitasking"  />
+          <chapter start="00:21:58" title="präemptives Multitasking"  />
+          <chapter start="00:31:26" title="Scheduler"  />
+          <chapter start="00:41:42" title="Wie werden Prozesse wieder lauffähig?"  />
+      </chapters>
+      <enclosure length="67993380" url="https://dl.xyrillian.de/noises/stp-015-multitasking-in-betriebssystemen.mp3" type="audio/mpeg"/>
+      <enclosure length="43738148" url="https://dl.xyrillian.de/noises/stp-015-multitasking-in-betriebssystemen.ogg" type="audio/ogg"/>
+      <enclosure length="25665039" url="https://dl.xyrillian.de/noises/stp-015-multitasking-in-betriebssystemen.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/015-multitasking-in-betriebssystemen/</guid>
+    <pubDate>Thu, 17 Feb 2022 17:40:00 GMT</pubDate>
+    <itunes:duration>70:30</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP014: Textdarstellung</itunes:title>
     <itunes:episode>14</itunes:episode>
     <itunes:season>1</itunes:season>

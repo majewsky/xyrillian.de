@@ -503,3 +503,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 15
+    slug: 015-multitasking-in-betriebssystemen
+    title: Multitasking in Betriebssystemen
+    pubtime: 1645119600 # 2022-02-17
+
+    markdown:
+      description: |
+        Um viele Dinge gefühlt gleichzeitig tun zu können, ist die Computertechnik einen weiten Weg gegangen. In der heutigen Folge halten wir viele lose Fäden in der Hand und ständig merkt Xyrill, dass dies und jenes ja auch noch notwendig ist, um zum Ziel zu kommen: Zu Multitasking.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
