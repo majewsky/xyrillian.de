@@ -516,3 +516,19 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 16
+    slug: 016-zeitdarstellung
+    title: Zeitdarstellung
+    pubtime: 1646935200 # 2022-03-10
+
+    markdown:
+      description: |
+        Heute brechen wir das fünfte Bit an.
+        Das tun wir mit einem Thema, das scheinbar einfach ist, sich allerdings bei genauerer Betrachtung als tückisch herausstellt.
+        Es geht um Zeit und ihre Darstellung. Und darum, dass es nicht immer sinnvoll ist, sich seinen eigenen Kalender auzudenken.
+        Außerdem überzeugt ttimeless duch überragende Excel-Kentnisse.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

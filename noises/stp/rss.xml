@@ -27,6 +27,120 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP016: Zeitdarstellung</itunes:title>
+    <itunes:episode>16</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP016: Zeitdarstellung</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Heute brechen wir das fünfte Bit an.
+Das tun wir mit einem Thema, das scheinbar einfach ist, sich allerdings bei genauerer Betrachtung als tückisch herausstellt.
+Es geht um Zeit und ihre Darstellung. Und darum, dass es nicht immer sinnvoll ist sich seinen eigenen Kalender auzudenken.
+Außerdem überzeugt ttimeless duch überragende Excel-Kentnisse.</itunes:summary>
+    <description>Heute brechen wir das fünfte Bit an.
+Das tun wir mit einem Thema, das scheinbar einfach ist, sich allerdings bei genauerer Betrachtung als tückisch herausstellt.
+Es geht um Zeit und ihre Darstellung. Und darum, dass es nicht immer sinnvoll ist sich seinen eigenen Kalender auzudenken.
+Außerdem überzeugt ttimeless duch überragende Excel-Kentnisse.</description>
+    <content:encoded>&lt;p&gt;Heute brechen wir das fünfte Bit an.
+Das tun wir mit einem Thema, das scheinbar einfach ist, sich allerdings bei genauerer Betrachtung als tückisch herausstellt.
+Es geht um Zeit und ihre Darstellung. Und darum, dass es nicht immer sinnvoll ist sich seinen eigenen Kalender auzudenken.
+Außerdem überzeugt ttimeless duch überragende Excel-Kentnisse.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Zeiteinteilung ist ganz schön unhandlich
+&lt;ul&gt;
+&lt;li&gt;Kalender orientieren sich an astronomischen Fakten, die leider keine schönen ganzzahligen Einteilungen erlauben (1 Sonnenjahr = 365,242... Tage, 1 Mondmonat = 29.530... Tage, etc.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Atomuhr&#34;&gt;präzise Definition von kleinen Zeiteinheiten wie Sekunden&lt;/a&gt; zeigt, dass die astronomischen Fakten schwanken -&amp;gt; &lt;a href=&#34;https://de.wikipedia.org/wiki/Schaltsekunde&#34;&gt;Schaltsekunden&lt;/a&gt;; später mehr&lt;/li&gt;
+&lt;li&gt;Zielkonflikt: möglichst gleichmäßige Zeitentwicklung oder möglichst intuitive Handhabung&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Internationale_Atomzeit&#34;&gt;Internationale Atomzeit (TAI)&lt;/a&gt;: exakt gleichmäßig (im Rahmen der Genauigkeit der Atomuhr), berücksichtigt nicht Schwankungen in der Tageslänge durch Änderungen der Erdrotationsgeschwindigkeit&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Koordinierte_Weltzeit&#34;&gt;Koordinierte Weltzeit (UTC)&lt;/a&gt;: TAI zuzüglich Schaltsekunden (zurzeit TAI = UTC &#43; 37s), sodass der Tagesbeginn am nullten Breitengrad immer bei 00:00:00 Uhr UTC bleibt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wie können Computer Zeit darstellen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Option 1: separate Zahlen für Jahr, Monat, Tag, Stunde, Minute, Sekunde&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verwendung vor allem an Stellen, wo der Nutzer es sehen kann (Zeitanzeigen, Zeitstempel in Dateinamen etc.)&lt;/li&gt;
+&lt;li&gt;Vorteil: sofort menschenlesbar&lt;/li&gt;
+&lt;li&gt;Nachteil: muss für Eindeutigkeit immer mit Zeitzoneninformation verknüpft sein; Gültigkeit von zukünftigen Zeitangaben evtl. durch nicht vorhergesehene Zeitzonenänderungen beeinträchtigt&lt;/li&gt;
+&lt;li&gt;Nachteil: textuelle Darstellung je nach Kulturkreis uneindeutig (z.B. &amp;quot;4/7/2021&amp;quot; kann entweder für den 4. Juli oder den 7. April stehen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Option 2: eine einzelne Zahl, die die vergangene Zeit in einer bestimmten Einheit (z.B. Sekunden oder Tage) seit einem Startzeitpunkt (der &lt;a href=&#34;https://de.wikipedia.org/wiki/Epoche_(Chronologie)&#34;&gt;Epoche&lt;/a&gt;) angibt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. Unix: Sekunden seit 1. Januar 1970 00:00:00 Uhr UTC (bzw. 01:00:00 Uhr deutscher Zeit)&lt;/li&gt;
+&lt;li&gt;z.B. &lt;a href=&#34;https://de.wikipedia.org/wiki/Julianisches_Datum&#34;&gt;julianisches Datum&lt;/a&gt;: Tage seit 1. Januar 4713 v.u.Z.&lt;/li&gt;
+&lt;li&gt;z.B. Excel, LibreOffice Calc, etc.: Tage seit 1. Januar 1900, mit Nachkommastellen für Zeitpunkte innerhalb eines Tages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Probleme durch Überlauf in Datumsfeldern&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Jahr-2000-Problem&#34;&gt;Y2K-Problem&lt;/a&gt;: Überlauf in der Jahreszahl, die damals zweistellig angegeben war (z.B. &amp;quot;76&amp;quot; für 1976)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Jahr-2038-Problem&#34;&gt;Y2038-Problem&lt;/a&gt;: Überlauf in einem 32-Bit-Unix-Zeitstempel (am Dienstag, dem 19. Januar 2038 um 04:14:07 Uhr deutscher Zeit)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/GPS-Woche&#34;&gt;GPS-Wochen-Rollover&lt;/a&gt;: Überlauf in der Wochenzahl des Zeitstempel-Formats von GPS; erstmals 1999, zuletzt 2019, nächstes Mal 2038&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Probleme durch astronomische/politische Fakten&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Berechnungen wie &amp;quot;10 Tage dazuaddieren&amp;quot; mühselig aufgrund Kalenderregeln (Monatswechsel, Schalttage etc.)
+&lt;ul&gt;
+&lt;li&gt;Beispiel: in einer Terminserie wie &amp;quot;täglich um 15 Uhr&amp;quot; hat wegen Sommerzeitwechsel nicht jeder Termin genau 24 Stunden Abstand zueinander&lt;/li&gt;
+&lt;li&gt;Beispiel: &lt;a href=&#34;https://de.wikipedia.org/wiki/Sommerzeit#%C3%96ffentliche_Verkehrsmittel&#34;&gt;Sommerzeitumstellung bei der Eisenbahn&lt;/a&gt; (diesen Abschnitt können wir im Prinzip direkt vorlesen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Schaltsekunden lassen UTC springen und erzeugen unerwartete Zeitzustände wie &amp;quot;23:59:60&amp;quot;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Zeitzonen-Datenbank&#34;&gt;Zeitzonendefinitionen&lt;/a&gt; folgen politischen Entscheidungen
+&lt;ul&gt;
+&lt;li&gt;z.B. Deutschland besteht in tzdata aus zwei Zeitzonen&lt;/li&gt;
+&lt;li&gt;z.B. 2015 &lt;a href=&#34;https://codeofmatt.com/on-the-timing-of-time-zone-changes/&#34;&gt;Chaos in der Türkei&lt;/a&gt; durch eine Änderung der Sommerzeitregel mit zu wenig Vorlauf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Probleme durch technische Einflüsse&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hardware-Uhren sind nicht hinreichend genau und driften mit der Zeit: in verteilten Systemen mögliche Verwirrung über die Reihenfolge von Aktionen&lt;/li&gt;
+&lt;li&gt;Zeitsynchronisation mittels NTP (Network Time Protocol): im Moment der Richtigstellung der Uhr mögliche Verwirrung durch einen kleinen Sprung rückwärts in der Zeit&lt;/li&gt;
+&lt;li&gt;Suspend/Standby: im Moment des Wiederanschaltens mögliche Verwirrung durch einen drastischen Sprung vorwärts in der Zeit&lt;/li&gt;
+&lt;li&gt;monotonische Uhren: zählen die Zeit, die der Computer seit Systemstart gelaufen sind (z.B. mittels &lt;a href=&#34;https://en.wikipedia.org/wiki/Time_Stamp_Counter&#34;&gt;TSC&lt;/a&gt;; damit zuverlässige Messung von Laufzeitspannen etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;positiver Ausblick: Es könnte noch viel schlimmer sein!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gregorianischer Kalender hat sich weltweit für den Geschäftsverkehr durchgesetzt&lt;/li&gt;
+&lt;li&gt;Beispiel für einen alternativen Kalender: &lt;a href=&#34;https://de.wikipedia.org/wiki/Japanische_Zeitrechnung&#34;&gt;Japanische Zeitrechnung&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;kryptografisch abgesicherte Zeitstempel: &lt;a href=&#34;https://requestforcomments.de/archives/559?t=07%3A55&#34;&gt;RFC Podcast #15 Crypto for the Masses&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Begrüßung"  />
+          <chapter start="00:02:16" title="Unhandliche Zeitdarstellung"  />
+          <chapter start="00:18:04" title="Wie können Computer Zeit darstellen?"  />
+          <chapter start="00:18:43" title="Option 1: separate Zahlen"  />
+          <chapter start="00:29:38" title="Option 2: eine einzelne Zahl"  />
+          <chapter start="00:40:10" title="Probleme durch Überlauf in Datumsfeldern"  />
+          <chapter start="00:54:10" title="Probleme durch astronomische/politische Fakten"  />
+          <chapter start="01:05:19" title="Probleme durch technische Einflüsse"  />
+          <chapter start="01:13:10" title="Ausblick: Es könnte schlimmer sein"  />
+      </chapters>
+      <enclosure length="76537224" url="https://dl.xyrillian.de/noises/stp-016-zeitdarstellung.mp3" type="audio/mpeg"/>
+      <enclosure length="48010134" url="https://dl.xyrillian.de/noises/stp-016-zeitdarstellung.ogg" type="audio/ogg"/>
+      <enclosure length="29230312" url="https://dl.xyrillian.de/noises/stp-016-zeitdarstellung.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/016-zeitdarstellung/</guid>
+    <pubDate>Thu, 10 Mar 2022 18:00:00 GMT</pubDate>
+    <itunes:duration>79:22</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP015: Multitasking in Betriebssystemen</itunes:title>
     <itunes:episode>15</itunes:episode>
     <itunes:season>1</itunes:season>
