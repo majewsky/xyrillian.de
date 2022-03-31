@@ -532,3 +532,18 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 17
+    slug: 017-lokalisierung
+    title: Lokalisierung
+    pubtime: 1648744200 # 2022-03-31
+
+    markdown:
+      description: |
+        Mit den Eigenheiten verschiedener Kultur- und Sprachräume hat wohl jeder schon so seine Erfahrungen gesammelt.
+        In der aktuellen Episode soll es um die ortsbezogenen Einstellungen von Computersystemen gehen.
+        Und natürlich gibt uns das ein weiteres Mal die Möglichkeit, abschätzig über imperiale Einheiten zu sprechen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

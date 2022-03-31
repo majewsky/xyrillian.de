@@ -27,6 +27,110 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP017: Lokalisierung</itunes:title>
+    <itunes:episode>17</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP017: Lokalisierung</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Mit den Eigenheiten verschiedener Kultur- und Sprachräume hat wohl jeder schon so seine Erfahrungen gesammelt.
+In der aktuellen Episode soll es um die ortsbezogenen Einstellungen von Computersystemen gehen.
+Und natürlich gibt uns das ein weiteres Mal die Möglichkeit, abschätzig über imperiale Einheiten zu sprechen.</itunes:summary>
+    <description>Mit den Eigenheiten verschiedener Kultur- und Sprachräume hat wohl jeder schon so seine Erfahrungen gesammelt.
+In der aktuellen Episode soll es um die ortsbezogenen Einstellungen von Computersystemen gehen.
+Und natürlich gibt uns das ein weiteres Mal die Möglichkeit, abschätzig über imperiale Einheiten zu sprechen.</description>
+    <content:encoded>&lt;p&gt;Mit den Eigenheiten verschiedener Kultur- und Sprachräume hat wohl jeder schon so seine Erfahrungen gesammelt.
+In der aktuellen Episode soll es um die ortsbezogenen Einstellungen von Computersystemen gehen.
+Und natürlich gibt uns das ein weiteres Mal die Möglichkeit, abschätzig über imperiale Einheiten zu sprechen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Letztes Mal hatten wir Komplikationen wegen der Zeit, diesmal wegen des Raumes. :)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;vergleiche: &lt;a href=&#34;https://de.wikipedia.org/wiki/Multimedialokalisierung&#34;&gt;Lokalisierung bei Filmen&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Übersetzung als Untertitel, Voice-Over oder Synchronisation&lt;/li&gt;
+&lt;li&gt;viele Schwierigkeiten der Medienlokalisierung spiegeln sich im Softwarefall
+&lt;ul&gt;
+&lt;li&gt;Beispiel: Formulierung der Übersetzung muss sich an die verfügbare Zeit im Film anpassen&lt;/li&gt;
+&lt;li&gt;in Software müssen übersetzte Beschriftungen in das ursprüngliche Layout reinpassen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Softwarelokalisierung: zwei getrennte Schritte&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Internationalisierung_(Softwareentwicklung)&#34;&gt;Internationalisierung&lt;/a&gt; (&lt;strong&gt;i18n&lt;/strong&gt;): Gestaltung des Programms derart, dass es einfach an verschiedene Sprachen und Kulturen angepasst werden kann -&amp;gt; Aufgabe für den Entwickler&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Lokalisierung_(Softwareentwicklung)&#34;&gt;Lokalisierung&lt;/a&gt; (&lt;strong&gt;l10n&lt;/strong&gt;): der Akt der Anpassung an eine Zielsprache -&amp;gt; Aufgabe für den Übersetzer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aspekte von Internationalisierung anhand der Locale-Einstellungen in Unix-Systemen (siehe &lt;a href=&#34;https://de.wikipedia.org/wiki/Alphabetische_Sortierung#Sortierregeln_nach_Sprachen&#34;&gt;&lt;code&gt;man 7 locale&lt;/code&gt;&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LC_MESSAGES&lt;/strong&gt;: Sprache für übersetzte Texte&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LC_TIME&lt;/strong&gt;, &lt;strong&gt;LC_DATE&lt;/strong&gt;: Darstellung von Datums- und Zeitangaben (siehe &lt;a href=&#34;https://xkcd.com/2562/&#34;&gt;XKCD 2562&lt;/a&gt; und &lt;a href=&#34;https://xkcd.com/1179/&#34;&gt;XKCD 1179&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LC_COLLATE&lt;/strong&gt;: alphabetische Sortierreihenfolge (&lt;a href=&#34;https://de.wikipedia.org/wiki/Alphabetische_Sortierung#Sortierregeln_nach_Sprachen&#34;&gt;siehe Wikipedia&lt;/a&gt;, z.B. Deutsch sortiert &amp;quot;ä&amp;quot; wie &amp;quot;a&amp;quot;, aber Dänisch sortiert &amp;quot;ä&amp;quot; hinter &amp;quot;z&amp;quot;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LC_NUMERIC&lt;/strong&gt;, &lt;strong&gt;LC_MONETARY&lt;/strong&gt;: Darstellung von Zahlen und Währungsangaben (z.B. Dezimalpunkt vs. Komma, Tausendertrennzeichen, Währungszeichen vor oder hinter dem Wert)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LC_NAME&lt;/strong&gt;: Anreden (z.B. &amp;quot;Herr&amp;quot; und &amp;quot;Frau&amp;quot; im Deutschen)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LC_MEASUREMENT&lt;/strong&gt;: Größenangaben in imperialen oder metrischen Einheiten&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LC_PAPER&lt;/strong&gt;: Standard-Papierformat für Dokumente (z.B. DIN A4 in Deutschland, aber Letter in USA)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LC_CTYPE&lt;/strong&gt; (&lt;em&gt;character type&lt;/em&gt;): Standard-Zeichensatz für Dateien&lt;/li&gt;
+&lt;li&gt;usw.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mögliche Werte für eine Locale-Wahl in Unix&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;klassisch: &lt;code&gt;de_DE&lt;/code&gt;, &lt;code&gt;de_AT&lt;/code&gt;, &lt;code&gt;de_CH&lt;/code&gt;, &lt;code&gt;en_US&lt;/code&gt;, &lt;code&gt;en_GB&lt;/code&gt; usw.&lt;/li&gt;
+&lt;li&gt;mit UTF-8-Präferenz: &lt;code&gt;de_DE.UTF-8&lt;/code&gt;, &lt;code&gt;en_US.UTF-8&lt;/code&gt; usw.&lt;/li&gt;
+&lt;li&gt;Spezialfall: &lt;code&gt;LC_MESSAGES=C&lt;/code&gt; zeigt Texte, wie sie im originalen Quelltext stehen&lt;/li&gt;
+&lt;li&gt;gemischte Konfiguration möglich, z.B. &lt;a href=&#34;https://github.com/majewsky/system-configuration/blob/c42f3e38d6d84a10b69ada6eb59d7617065b3bfc/hologram-base.pkg.toml#L63-L68&#34;&gt;Xyrill hat fast überall &lt;code&gt;de_DE.UTF-8&lt;/code&gt;, aber &lt;code&gt;LC_MESSAGES=C&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aufgaben des Softwareentwicklers bei i18n&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verwendung von internationalisierbaren Betriebssystemfunktionen oder Programmbibliotheken, wann immer Ein- und Ausgaben lokalitätsabhängig sind&lt;/li&gt;
+&lt;li&gt;Testen von grafischen Oberflächen im Right-to-Left-Modus (in Sprachen mit RTL-Schrift läuft auch das GUI-Layout von rechts nach links, siehe z.B. &lt;a href=&#34;https://ar.wikipedia.org/&#34;&gt;arabische Wikipedia&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Formulierung von übersetzbaren Texten derart, dass die Übersetzer möglichst gut arbeiten können
+&lt;ul&gt;
+&lt;li&gt;Angabe von Kontext (z.B. Beschriftungstext &amp;quot;Match&amp;quot; -&amp;gt; Ist das das Verb &amp;quot;Abgleichen&amp;quot; oder das Substantiv &amp;quot;Treffer&amp;quot;? Oder gar &amp;quot;Streichholz&amp;quot;?)&lt;/li&gt;
+&lt;li&gt;bei Textbaustein mit Zahlenparameter Berücksichtigung sprachabhängiger Pluralformen (im meist englischen Original wird ein Singulartext und ein Pluraltext bereitgestellt, z.B. &lt;code&gt;1 match&lt;/code&gt; und &lt;code&gt;%d matches&lt;/code&gt;; die Übersetzer können je nach Notwendigkeit beliebig viele Formen angeben)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Arbeitsablauf für Übersetzung am Beispiel &lt;a href=&#34;https://www.gnu.org/software/gettext/manual/gettext.html&#34;&gt;GNU gettext&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Programmierer fügt Textmeldungen (&amp;quot;Nachrichten&amp;quot;) im englischen Original in den Quelltext ein&lt;/li&gt;
+&lt;li&gt;Maintainer erstellt mittels Hilfsprogramm aus dem Quelltext einen Nachrichtenkatalog für jede gewünschte Zielsprache (meist automatisiert, z.B. täglich oder wöchentlich)&lt;/li&gt;
+&lt;li&gt;Übersetzer erhält den Nachrichtenkatalog und füllt die Übersetzungen ein&lt;/li&gt;
+&lt;li&gt;zukünftige Änderungen der Originalnachrichten werden mit den bestehenden Nachrichtenkatalogen zusammengeführt&lt;/li&gt;
+&lt;li&gt;Anekdote: &lt;code&gt;x-test&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fundstück: &lt;a href=&#34;https://de.wikipedia.org/wiki/Amtssprachen_der_Europ%C3%A4ischen_Union&#34;&gt;Amtssprachen der Europäischen Union&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Hallo"  />
+          <chapter start="00:01:51" title="Lokalisierung bei Filmen"  />
+          <chapter start="00:04:57" title="Softwarelokalisierung: zwei getrennte Schritte"  />
+          <chapter start="00:08:40" title="Aspekte von Internationalisierung"  />
+          <chapter start="00:25:21" title="mögliche Werte für eine Locale-Wahl in Unix"  />
+          <chapter start="00:34:23" title="Aufgaben des Softwareentwicklers bei i18n"  />
+          <chapter start="00:48:56" title="Arbeitsablauf für Übersetzung"  />
+      </chapters>
+      <enclosure length="55408234" url="https://dl.xyrillian.de/noises/stp-017-lokalisierung.mp3" type="audio/mpeg"/>
+      <enclosure length="33956132" url="https://dl.xyrillian.de/noises/stp-017-lokalisierung.ogg" type="audio/ogg"/>
+      <enclosure length="20705097" url="https://dl.xyrillian.de/noises/stp-017-lokalisierung.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/017-lokalisierung/</guid>
+    <pubDate>Thu, 31 Mar 2022 16:30:00 GMT</pubDate>
+    <itunes:duration>57:22</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP016: Zeitdarstellung</itunes:title>
     <itunes:episode>16</itunes:episode>
     <itunes:season>1</itunes:season>
@@ -35,15 +139,15 @@
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Heute brechen wir das fünfte Bit an.
 Das tun wir mit einem Thema, das scheinbar einfach ist, sich allerdings bei genauerer Betrachtung als tückisch herausstellt.
-Es geht um Zeit und ihre Darstellung. Und darum, dass es nicht immer sinnvoll ist sich seinen eigenen Kalender auzudenken.
+Es geht um Zeit und ihre Darstellung. Und darum, dass es nicht immer sinnvoll ist, sich seinen eigenen Kalender auzudenken.
 Außerdem überzeugt ttimeless duch überragende Excel-Kentnisse.</itunes:summary>
     <description>Heute brechen wir das fünfte Bit an.
 Das tun wir mit einem Thema, das scheinbar einfach ist, sich allerdings bei genauerer Betrachtung als tückisch herausstellt.
-Es geht um Zeit und ihre Darstellung. Und darum, dass es nicht immer sinnvoll ist sich seinen eigenen Kalender auzudenken.
+Es geht um Zeit und ihre Darstellung. Und darum, dass es nicht immer sinnvoll ist, sich seinen eigenen Kalender auzudenken.
 Außerdem überzeugt ttimeless duch überragende Excel-Kentnisse.</description>
     <content:encoded>&lt;p&gt;Heute brechen wir das fünfte Bit an.
 Das tun wir mit einem Thema, das scheinbar einfach ist, sich allerdings bei genauerer Betrachtung als tückisch herausstellt.
-Es geht um Zeit und ihre Darstellung. Und darum, dass es nicht immer sinnvoll ist sich seinen eigenen Kalender auzudenken.
+Es geht um Zeit und ihre Darstellung. Und darum, dass es nicht immer sinnvoll ist, sich seinen eigenen Kalender auzudenken.
 Außerdem überzeugt ttimeless duch überragende Excel-Kentnisse.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Zeiteinteilung ist ganz schön unhandlich
 &lt;ul&gt;
