@@ -27,6 +27,184 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP018: DNS im Detail</itunes:title>
+    <itunes:episode>18</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP018: DNS im Detail</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nachdem wir das Thema in STP002 schon einmal gestreift haben, wollen wir in dieser Episode genauer darauf eingehen.
+Woher weiß unser Computer eigentlich, welche IP-Adresse er aufrufen muss, um uns all die schönen Katzenvideos zu zeigen?</itunes:summary>
+    <description>Nachdem wir das Thema in STP002 schon einmal gestreift haben, wollen wir in dieser Episode genauer darauf eingehen.
+Woher weiß unser Computer eigentlich, welche IP-Adresse er aufrufen muss, um uns all die schönen Katzenvideos zu zeigen?</description>
+    <content:encoded>&lt;p&gt;Nachdem wir das Thema in STP002 schon einmal gestreift haben, wollen wir in dieser Episode genauer darauf eingehen.
+Woher weiß unser Computer eigentlich, welche IP-Adresse er aufrufen muss, um uns all die schönen Katzenvideos zu zeigen?&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Nicht die Desoxyribonukleinsäure, sondern das &lt;a href=&#34;https://de.wikipedia.org/wiki/Domain_Name_System&#34;&gt;Domain Name System&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezüge&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zu STP002 (Aufruf einer Webseite): Webserver haben Domain-Namen, die aufgelöst werden müssen&lt;/li&gt;
+&lt;li&gt;zu STP012 (Datenbanken): DNS ist eine globale, verteilte (aber nicht dezentrale!), hierarchische Datenbank&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grundaufgabe: Namensauflösung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;menschenlesbare und stabile Server-Namen anstatt unlesbarer und möglicherweise wechselnder IP-Adressen&lt;/li&gt;
+&lt;li&gt;aber auch andere Abfragen möglich, siehe unten&lt;/li&gt;
+&lt;li&gt;historischer Vorgänger: &lt;code&gt;/etc/hosts&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aufteilung des Internet in &lt;strong&gt;Domains&lt;/strong&gt; (Domänen) und verschachtelte &lt;strong&gt;Subdomains&lt;/strong&gt; (Unterdomänen)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://commons.wikimedia.org/wiki/File:Dns-raum.svg&#34;&gt;Beispiel:&lt;/a&gt; Wurzeldomain &amp;quot;.&amp;quot; enthält Domain &amp;quot;org&amp;quot; enthält Domain &amp;quot;&lt;a href=&#34;http://wikipedia.org&#34;&gt;wikipedia.org&lt;/a&gt;&amp;quot; enthält Domain &amp;quot;&lt;a href=&#34;http://de.wikipedia.org&#34;&gt;de.wikipedia.org&lt;/a&gt;&amp;quot; -&amp;gt; deswegen &lt;em&gt;hierarchische&lt;/em&gt; Datenbank&lt;/li&gt;
+&lt;li&gt;wenn die Subdomain einer anderen Person oder Organisation gehört als die Domain darüber, hat man eine neue &lt;strong&gt;Zone&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;jeder Inhaber einer Zone hält auf einem (oder mehreren) Webserver(n) die Inhalte seiner Zone (also Domain-Daten und Zonenreferenzen) in einem &lt;strong&gt;Nameserver&lt;/strong&gt; -&amp;gt; deswegen &lt;em&gt;verteilte&lt;/em&gt; Datenbank&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wurzelzone ist unter der Kontrolle der &lt;a href=&#34;https://de.wikipedia.org/wiki/Internet_Corporation_for_Assigned_Names_and_Numbers&#34;&gt;ICANN&lt;/a&gt; -&amp;gt; deswegen &lt;em&gt;nicht dezentrale&lt;/em&gt; Datenbank&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verteilung der Wurzelzone durch die &lt;a href=&#34;https://de.wikipedia.org/wiki/Root-Nameserver&#34;&gt;Root-Nameserver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;finanzieller Anreiz zum Erlauben von immer mehr Top-Level-Domains (TLD)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Einträge in einer DNS-Zone heißen &lt;strong&gt;Records&lt;/strong&gt; (Datensätze), mehrere Record Types möglich:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A, AAAA: IP-Adresse zu einer Domain (A = IPv4, AAAA = IPv6)&lt;/li&gt;
+&lt;li&gt;CNAME: Domain-Alias (anstatt direkt eine IP zu erhalten, erhält man eine andere Domain, die man stattdessen nach der finalen IP fragen muss)&lt;/li&gt;
+&lt;li&gt;PTR: Rückwärtsabfrage, Domain zu einer IP-Adresse&lt;/li&gt;
+&lt;li&gt;MX: Mail-Server zu einer Domain&lt;/li&gt;
+&lt;li&gt;SRV: ähnlich wie MX, aber für beliebige Dienste (z.B. XMPP)&lt;/li&gt;
+&lt;li&gt;TXT: beliebige Textinformationen (wird zum Beispiel für Mail-Empfangsregeln verwendet)&lt;/li&gt;
+&lt;li&gt;NS: Zonendelegation, die entsprechende Domain ist der Ausgangspunkt einer Unterzone und der Record enthält den autoritativen Nameserver für diese Zone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abfrage einer bestimmten Domain&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grundidee: zuerst Root-Nameserver fragen, der delegiert an den Nameserver der TLD, der delegiert an den Nameserver der Second-Level-Domain, etc.&lt;/li&gt;
+&lt;li&gt;Problem: absurd hohe Last auf die Root-Nameserver&lt;/li&gt;
+&lt;li&gt;Lösung 1: jeder Eintrag in einer Nameserver-Datenbank hat eine TTL (&amp;quot;Time to Live&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Lösung 2: Endnutzer reden nicht direkt mit den autoritativen Nameservern, sondern mit Vermittlern (&lt;strong&gt;Resolver&lt;/strong&gt;), die sie sich mit anderen Endnutzern teilen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Komplexbeispiel: Abfrage von &lt;code&gt;de.wikipedia.org&lt;/code&gt; über die Root-Nameserver mit dem Unix-Tool &lt;code&gt;dig&lt;/code&gt; (Ausgaben stark gekürzt)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ dig A de.wikipedia.org @m.root-servers.net
+
+;; QUESTION SECTION:
+;de.wikipedia.org.              IN      A
+;; AUTHORITY SECTION:
+org.                    172800  IN      NS      a0.org.afilias-nst.info.
+...
+;; ADDITIONAL SECTION:
+a0.org.afilias-nst.info. 172800 IN      A       199.19.56.1
+...
+
+$ dig A de.wikipedia.org @199.19.56.1
+
+;; QUESTION SECTION:
+;de.wikipedia.org.              IN      A
+;; AUTHORITY SECTION:
+wikipedia.org.          86400   IN      NS      ns0.wikimedia.org.
+...
+;; ADDITIONAL SECTION:
+ns0.wikimedia.org.      86400   IN      A       208.80.154.238
+...
+
+$ dig A de.wikipedia.org @208.80.154.238
+
+;; QUESTION SECTION:
+;de.wikipedia.org.              IN      A
+;; ANSWER SECTION:
+de.wikipedia.org.       86400   IN      CNAME   dyna.wikimedia.org.
+
+$ dig A dyna.wikimedia.org @199.19.56.1
+
+;; QUESTION SECTION:
+;dyna.wikimedia.org.            IN      A
+;; AUTHORITY SECTION:
+wikimedia.org.          86400   IN      NS      ns0.wikimedia.org.
+...
+;; ADDITIONAL SECTION:
+ns0.wikimedia.org.      86400   IN      A       208.80.154.238
+...
+
+$ dig A dyna.wikimedia.org @208.80.154.238
+
+;; QUESTION SECTION:
+;dyna.wikimedia.org.            IN      A
+;; ANSWER SECTION:
+dyna.wikimedia.org.     600     IN      A       91.198.174.192
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;zum Vergleich: Abfrage von &lt;code&gt;de.wikipedia.org&lt;/code&gt; über einen öffentlichen Resolver (beachte die unterschiedlichen TTL-Werte)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ dig A de.wikipedia.org @9.9.9.9
+
+;; QUESTION SECTION:
+;de.wikipedia.org.              IN      A
+;; ANSWER SECTION:
+de.wikipedia.org.       32533   IN      CNAME   dyna.wikimedia.org.
+dyna.wikimedia.org.     227     IN      A       91.198.174.192
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispiel: Rückwärtsabfrage der so erhaltenen IP mittels PTR-Record unter der Pseudo-Domain &lt;code&gt;in-addr.arpa&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;dig PTR 192.174.198.91.in-addr.arpa
+;; QUESTION SECTION:
+;192.174.198.91.in-addr.arpa.   IN      PTR
+
+;; ANSWER SECTION:
+192.174.198.91.in-addr.arpa. 1104 IN    PTR     text-lb.esams.wikimedia.org.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Woher kommt der Resolver?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;normalerweise über DHCP (auf demselben Wege, über den das eigene Gerät eine IP-Adresse vom Router bekommt; oder über den der Router eine IP-Adresse vom ISP bekommt), unter Unix siehe &lt;code&gt;/etc/resolv.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;somit meist ein Resolver unter Kontrolle des ISP&lt;/li&gt;
+&lt;li&gt;alternative Resolver: z.B. &lt;code&gt;1.1.1.1&lt;/code&gt; (Cloudflare), &lt;code&gt;8.8.8.8&lt;/code&gt; (Google), &lt;code&gt;9.9.9.{9,10,11}&lt;/code&gt; (&lt;a href=&#34;https://de.wikipedia.org/wiki/Quad9&#34;&gt;Quad9&lt;/a&gt;), &lt;code&gt;5.9.164.112&lt;/code&gt; (&lt;a href=&#34;https://digitalcourage.de/support/zensurfreier-dns-server&#34;&gt;Digitalcourage&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Resolverwahl: Implikationen für Privatsphäre und für Vertrauenswürdigkeit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DNS selbst ist unverschlüsselt -&amp;gt; neuere Entwicklung: DNS-over-TLS und DNS-over-HTTP&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;eigentlich würde DNS-over-TLS reichen, aber kann dann vom ISP geblockt werden; HTTP hingegen ist aus praktischen Gründen quasi unblockbar&lt;/li&gt;
+&lt;li&gt;Unterstützung in Betriebssystemen noch lückenhaft, aber Browser können DoT und DoH am Betriebssystem vorbei machen (Browsereinstellungen prüfen!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;alternative DNS-Roots: meist in privaten Netzen (z.B. Firmen-Intranet mit &lt;code&gt;.corp&lt;/code&gt;-Domains), aber es gibt auch alternative Roots mit globalem Anspruch (z.B. &lt;a href=&#34;https://en.wikipedia.org/wiki/Namecoin&#34;&gt;Namecoin&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Einführung"  />
+          <chapter start="00:03:22" title="Grundaufgabe: Namensauflösung"  />
+          <chapter start="00:14:06" title="Domains und Subdomains"  />
+          <chapter start="00:24:38" title="Die Wurzelzone"  />
+          <chapter start="00:30:41" title="DNS-Records"  />
+          <chapter start="00:49:32" title="Abfrage einer bestimmten Domain"  />
+          <chapter start="01:08:37" title="Woher kommt der Resolver?"  />
+          <chapter start="01:14:19" title="DNS und Sicherheit"  />
+          <chapter start="01:20:15" title="Alternative DNS-Roots"  />
+      </chapters>
+      <enclosure length="81856672" url="https://dl.xyrillian.de/noises/stp-018-dns-im-detail.mp3" type="audio/mpeg"/>
+      <enclosure length="50548306" url="https://dl.xyrillian.de/noises/stp-018-dns-im-detail.ogg" type="audio/ogg"/>
+      <enclosure length="30817292" url="https://dl.xyrillian.de/noises/stp-018-dns-im-detail.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/018-dns-im-detail/</guid>
+    <pubDate>Thu, 21 Apr 2022 16:15:00 GMT</pubDate>
+    <itunes:duration>84:55</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP017: Lokalisierung</itunes:title>
     <itunes:episode>17</itunes:episode>
     <itunes:season>1</itunes:season>

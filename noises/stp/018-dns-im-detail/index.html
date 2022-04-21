@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DNS im Detail - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #18 vom 21. April 2022</h2>
+    <h1>DNS im Detail</h1>
+      <p>Nachdem wir das Thema in STP002 schon einmal gestreift haben, wollen wir in dieser Episode genauer darauf eingehen.
+Woher weiß unser Computer eigentlich, welche IP-Adresse er aufrufen muss, um uns all die schönen Katzenvideos zu zeigen?</p>
+      <p><strong>Länge:</strong> 84:55 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-018-dns-im-detail.mp3" type="audio/mpeg">
+        <source src="/dl/stp-018-dns-im-detail.ogg" type="audio/ogg">
+        <source src="/dl/stp-018-dns-im-detail.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="202">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro und Einführung</span>
+      </div>
+      <div class="chapter" data-start="202" data-end="846">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">03:22</span>
+        <span class="chapter-title">Grundaufgabe: Namensauflösung</span>
+      </div>
+      <div class="chapter" data-start="846" data-end="1478">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">14:06</span>
+        <span class="chapter-title">Domains und Subdomains</span>
+      </div>
+      <div class="chapter" data-start="1478" data-end="1841">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">24:38</span>
+        <span class="chapter-title">Die Wurzelzone</span>
+      </div>
+      <div class="chapter" data-start="1841" data-end="2972.002">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">30:41</span>
+        <span class="chapter-title">DNS-Records</span>
+      </div>
+      <div class="chapter" data-start="2972.002" data-end="4117">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">49:32</span>
+        <span class="chapter-title">Abfrage einer bestimmten Domain</span>
+      </div>
+      <div class="chapter" data-start="4117" data-end="4459">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">68:37</span>
+        <span class="chapter-title">Woher kommt der Resolver?</span>
+      </div>
+      <div class="chapter" data-start="4459" data-end="4815">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">74:19</span>
+        <span class="chapter-title">DNS und Sicherheit</span>
+      </div>
+      <div class="chapter" data-start="4815" data-end="5095.298">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">80:15</span>
+        <span class="chapter-title">Alternative DNS-Roots</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-018-dns-im-detail.mp3">MP3</a> (78,1 MiB)</li>
+          <li><a href="/dl/stp-018-dns-im-detail.ogg">Ogg Vorbis</a> (48,2 MiB)</li>
+          <li><a href="/dl/stp-018-dns-im-detail.opus">Opus</a> (29,4 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p>Nicht die Desoxyribonukleinsäure, sondern das <a href="https://de.wikipedia.org/wiki/Domain_Name_System">Domain Name System</a>.</p>
+<ul>
+<li>
+<p>Rückbezüge</p>
+<ul>
+<li>zu STP002 (Aufruf einer Webseite): Webserver haben Domain-Namen, die aufgelöst werden müssen</li>
+<li>zu STP012 (Datenbanken): DNS ist eine globale, verteilte (aber nicht dezentrale!), hierarchische Datenbank</li>
+</ul>
+</li>
+<li>
+<p>Grundaufgabe: Namensauflösung</p>
+<ul>
+<li>menschenlesbare und stabile Server-Namen anstatt unlesbarer und möglicherweise wechselnder IP-Adressen</li>
+<li>aber auch andere Abfragen möglich, siehe unten</li>
+<li>historischer Vorgänger: <code>/etc/hosts</code></li>
+</ul>
+</li>
+<li>
+<p>Aufteilung des Internet in <strong>Domains</strong> (Domänen) und verschachtelte <strong>Subdomains</strong> (Unterdomänen)</p>
+<ul>
+<li><a href="https://commons.wikimedia.org/wiki/File:Dns-raum.svg">Beispiel:</a> Wurzeldomain &quot;.&quot; enthält Domain &quot;org&quot; enthält Domain &quot;<a href="http://wikipedia.org">wikipedia.org</a>&quot; enthält Domain &quot;<a href="http://de.wikipedia.org">de.wikipedia.org</a>&quot; -&gt; deswegen <em>hierarchische</em> Datenbank</li>
+<li>wenn die Subdomain einer anderen Person oder Organisation gehört als die Domain darüber, hat man eine neue <strong>Zone</strong></li>
+<li>jeder Inhaber einer Zone hält auf einem (oder mehreren) Webserver(n) die Inhalte seiner Zone (also Domain-Daten und Zonenreferenzen) in einem <strong>Nameserver</strong> -&gt; deswegen <em>verteilte</em> Datenbank</li>
+</ul>
+</li>
+<li>
+<p>Wurzelzone ist unter der Kontrolle der <a href="https://de.wikipedia.org/wiki/Internet_Corporation_for_Assigned_Names_and_Numbers">ICANN</a> -&gt; deswegen <em>nicht dezentrale</em> Datenbank</p>
+<ul>
+<li>Verteilung der Wurzelzone durch die <a href="https://de.wikipedia.org/wiki/Root-Nameserver">Root-Nameserver</a></li>
+<li>finanzieller Anreiz zum Erlauben von immer mehr Top-Level-Domains (TLD)</li>
+</ul>
+</li>
+<li>
+<p>Einträge in einer DNS-Zone heißen <strong>Records</strong> (Datensätze), mehrere Record Types möglich:</p>
+<ul>
+<li>A, AAAA: IP-Adresse zu einer Domain (A = IPv4, AAAA = IPv6)</li>
+<li>CNAME: Domain-Alias (anstatt direkt eine IP zu erhalten, erhält man eine andere Domain, die man stattdessen nach der finalen IP fragen muss)</li>
+<li>PTR: Rückwärtsabfrage, Domain zu einer IP-Adresse</li>
+<li>MX: Mail-Server zu einer Domain</li>
+<li>SRV: ähnlich wie MX, aber für beliebige Dienste (z.B. XMPP)</li>
+<li>TXT: beliebige Textinformationen (wird zum Beispiel für Mail-Empfangsregeln verwendet)</li>
+<li>NS: Zonendelegation, die entsprechende Domain ist der Ausgangspunkt einer Unterzone und der Record enthält den autoritativen Nameserver für diese Zone</li>
+</ul>
+</li>
+<li>
+<p>Abfrage einer bestimmten Domain</p>
+<ul>
+<li>Grundidee: zuerst Root-Nameserver fragen, der delegiert an den Nameserver der TLD, der delegiert an den Nameserver der Second-Level-Domain, etc.</li>
+<li>Problem: absurd hohe Last auf die Root-Nameserver</li>
+<li>Lösung 1: jeder Eintrag in einer Nameserver-Datenbank hat eine TTL (&quot;Time to Live&quot;)</li>
+<li>Lösung 2: Endnutzer reden nicht direkt mit den autoritativen Nameservern, sondern mit Vermittlern (<strong>Resolver</strong>), die sie sich mit anderen Endnutzern teilen</li>
+</ul>
+</li>
+<li>
+<p>Komplexbeispiel: Abfrage von <code>de.wikipedia.org</code> über die Root-Nameserver mit dem Unix-Tool <code>dig</code> (Ausgaben stark gekürzt)</p>
+</li>
+</ul>
+<pre><code>$ dig A de.wikipedia.org @m.root-servers.net
+
+;; QUESTION SECTION:
+;de.wikipedia.org.              IN      A
+;; AUTHORITY SECTION:
+org.                    172800  IN      NS      a0.org.afilias-nst.info.
+...
+;; ADDITIONAL SECTION:
+a0.org.afilias-nst.info. 172800 IN      A       199.19.56.1
+...
+
+$ dig A de.wikipedia.org @199.19.56.1
+
+;; QUESTION SECTION:
+;de.wikipedia.org.              IN      A
+;; AUTHORITY SECTION:
+wikipedia.org.          86400   IN      NS      ns0.wikimedia.org.
+...
+;; ADDITIONAL SECTION:
+ns0.wikimedia.org.      86400   IN      A       208.80.154.238
+...
+
+$ dig A de.wikipedia.org @208.80.154.238
+
+;; QUESTION SECTION:
+;de.wikipedia.org.              IN      A
+;; ANSWER SECTION:
+de.wikipedia.org.       86400   IN      CNAME   dyna.wikimedia.org.
+
+$ dig A dyna.wikimedia.org @199.19.56.1
+
+;; QUESTION SECTION:
+;dyna.wikimedia.org.            IN      A
+;; AUTHORITY SECTION:
+wikimedia.org.          86400   IN      NS      ns0.wikimedia.org.
+...
+;; ADDITIONAL SECTION:
+ns0.wikimedia.org.      86400   IN      A       208.80.154.238
+...
+
+$ dig A dyna.wikimedia.org @208.80.154.238
+
+;; QUESTION SECTION:
+;dyna.wikimedia.org.            IN      A
+;; ANSWER SECTION:
+dyna.wikimedia.org.     600     IN      A       91.198.174.192
+</code></pre>
+<ul>
+<li>zum Vergleich: Abfrage von <code>de.wikipedia.org</code> über einen öffentlichen Resolver (beachte die unterschiedlichen TTL-Werte)</li>
+</ul>
+<pre><code>$ dig A de.wikipedia.org @9.9.9.9
+
+;; QUESTION SECTION:
+;de.wikipedia.org.              IN      A
+;; ANSWER SECTION:
+de.wikipedia.org.       32533   IN      CNAME   dyna.wikimedia.org.
+dyna.wikimedia.org.     227     IN      A       91.198.174.192
+</code></pre>
+<ul>
+<li>Beispiel: Rückwärtsabfrage der so erhaltenen IP mittels PTR-Record unter der Pseudo-Domain <code>in-addr.arpa</code></li>
+</ul>
+<pre><code>dig PTR 192.174.198.91.in-addr.arpa
+;; QUESTION SECTION:
+;192.174.198.91.in-addr.arpa.   IN      PTR
+
+;; ANSWER SECTION:
+192.174.198.91.in-addr.arpa. 1104 IN    PTR     text-lb.esams.wikimedia.org.
+</code></pre>
+<ul>
+<li>
+<p>Woher kommt der Resolver?</p>
+<ul>
+<li>normalerweise über DHCP (auf demselben Wege, über den das eigene Gerät eine IP-Adresse vom Router bekommt; oder über den der Router eine IP-Adresse vom ISP bekommt), unter Unix siehe <code>/etc/resolv.conf</code></li>
+<li>somit meist ein Resolver unter Kontrolle des ISP</li>
+<li>alternative Resolver: z.B. <code>1.1.1.1</code> (Cloudflare), <code>8.8.8.8</code> (Google), <code>9.9.9.{9,10,11}</code> (<a href="https://de.wikipedia.org/wiki/Quad9">Quad9</a>), <code>5.9.164.112</code> (<a href="https://digitalcourage.de/support/zensurfreier-dns-server">Digitalcourage</a>)</li>
+<li>Resolverwahl: Implikationen für Privatsphäre und für Vertrauenswürdigkeit</li>
+</ul>
+</li>
+<li>
+<p>DNS selbst ist unverschlüsselt -&gt; neuere Entwicklung: DNS-over-TLS und DNS-over-HTTP</p>
+<ul>
+<li>eigentlich würde DNS-over-TLS reichen, aber kann dann vom ISP geblockt werden; HTTP hingegen ist aus praktischen Gründen quasi unblockbar</li>
+<li>Unterstützung in Betriebssystemen noch lückenhaft, aber Browser können DoT und DoH am Betriebssystem vorbei machen (Browsereinstellungen prüfen!)</li>
+</ul>
+</li>
+<li>
+<p>alternative DNS-Roots: meist in privaten Netzen (z.B. Firmen-Intranet mit <code>.corp</code>-Domains), aber es gibt auch alternative Roots mit globalem Anspruch (z.B. <a href="https://en.wikipedia.org/wiki/Namecoin">Namecoin</a>)</p>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>

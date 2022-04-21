@@ -547,3 +547,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 18
+    slug: 018-dns-im-detail
+    title: DNS im Detail
+    pubtime: 1650557700 # 2022-04-21
+
+    markdown:
+      description: |
+        Nachdem wir das Thema in STP002 schon einmal gestreift haben, wollen wir in dieser Episode genauer darauf eingehen.
+        Woher weiß unser Computer eigentlich, welche IP-Adresse er aufrufen muss, um uns all die schönen Katzenvideos zu zeigen?
+      shownotes: true # in file
+
+    music: *music-like-stp-000
