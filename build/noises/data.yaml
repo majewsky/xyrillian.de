@@ -561,3 +561,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 19
+    slug: 019-speicherschutz
+    title: Speicherschutz
+    pubtime: 1652374200 # 2022-05-12
+
+    markdown:
+      description: |
+        Nach einem glorreichen Intro mit perfekter Vorbereitung befassen Xyrill und ttimeless sich mit Speicherschutz.
+        Wie und warum und welchen Speicher überhaupt? Hört selbst.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

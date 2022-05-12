@@ -27,6 +27,102 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP019: Speicherschutz</itunes:title>
+    <itunes:episode>19</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP019: Speicherschutz</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nach einem glorreichen Intro mit perfekter Vorbereitung befassen Xyrill und ttimeless sich mit Speicherschutz.
+Wie und warum und welchen Speicher überhaupt? Hört selbst.</itunes:summary>
+    <description>Nach einem glorreichen Intro mit perfekter Vorbereitung befassen Xyrill und ttimeless sich mit Speicherschutz.
+Wie und warum und welchen Speicher überhaupt? Hört selbst.</description>
+    <content:encoded>&lt;p&gt;Nach einem glorreichen Intro mit perfekter Vorbereitung befassen Xyrill und ttimeless sich mit Speicherschutz.
+Wie und warum und welchen Speicher überhaupt? Hört selbst.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;Welchen Speicher müssen wir eigentlich schützen?&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hier nur Arbeitsspeicher und Gerätespeicher&lt;/li&gt;
+&lt;li&gt;andere Speicherarten (z.B. Festplatten) geschützt durch die Betriebssystem-Abstraktionen, siehe zukünftige Folge zu Privilegienkontrolle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aufgaben des Betriebssystems: Prozessisolation und Vermittlung des Hardwarezugriffs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem: das Betriebssystem ist auch nur &amp;quot;ein Programm&amp;quot;&lt;/li&gt;
+&lt;li&gt;Frage 1: Wie wird sichergestellt, dass das Betriebssystem die finale Kontrolle über Hardwarezugriffe hat?&lt;/li&gt;
+&lt;li&gt;Frage 2: Wie wird verhindert, dass ein Speicherbereich, den Prozess A verwendet, von Prozess B überschrieben (oder unberechtigterweise ausgelesen) wird?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Antwort auf Frage 1: &lt;a href=&#34;https://de.wikipedia.org/wiki/Ring_(CPU)&#34;&gt;Prozessor-Ringe&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Standardfunktion auf allen CPUs, die auf Mehrprozess-Betrieb ausgelegt sind (nicht immer im Embedded-Bereich)&lt;/li&gt;
+&lt;li&gt;zu jedem Zeitpunkt läuft der Prozess in einem von mehreren Ringen&lt;/li&gt;
+&lt;li&gt;sensible Operationen (v.a. Hardwarezugriff) sind nur in den höheren Ringen erlaubt und damit den Betriebssystemprozessen vorbehalten&lt;/li&gt;
+&lt;li&gt;Wechsel in einen niedrigeren Ring jederzeit möglich (z.B. Aktivierung eines Userspace-Prozesses durch das Betriebssystem)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie kommen wir von einem niedrigeren Ring wieder in einen höheren Ring?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Interrupts (siehe STP015): Eintreten eines Hardware-Ereignisses (z.B. ankommendes Netzwerk-Paket oder abgelaufener Hardware-Timer), das durch das Betriebssystem behandelt werden muss&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Syscalls&lt;/strong&gt;: niedrigprivilegierter Prozess fragt eine definierte Schnittstelle des Betriebssystems an, um eine höherprivilegierte Operation auszuführen&lt;/li&gt;
+&lt;li&gt;z.B. Dateisystem-Zugriff, Hardware-Zugriff, Ändern der Betriebssystem-Konfiguration, Starten von neuen Prozessen, Nachrichtenübermittlung an andere Prozesse&lt;/li&gt;
+&lt;li&gt;dadurch Realisierung der Prozessisolation, weil das Betriebssystem die Kontrolle über alle privilegierten Operationen hat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Antwort auf Frage 2: &lt;a href=&#34;https://de.wikipedia.org/wiki/Virtuelle_Speicherverwaltung&#34;&gt;Virtuelle Speicherverwaltung&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wenn Prozesse auf Speicher zugreifen, verwenden sie nur &amp;quot;virtuelle&amp;quot; Speicheradressen: z.B. Adresse 0x42 für Prozess A ist nicht unbedingt derselbe Speicher wie Adresse 0x42 für Prozess B&lt;/li&gt;
+&lt;li&gt;Abbildung auf physische Speicheradressen innerhalb der CPU durch eine &lt;strong&gt;Memory Management Unit&lt;/strong&gt; (MMU)&lt;/li&gt;
+&lt;li&gt;Konfiguration der MMU durch das Betriebssystem immer kurz vor der Übergabe der CPU an einen anderen Prozess&lt;/li&gt;
+&lt;li&gt;Aufteilung des physischen/virtuellen Speichers in Seiten (&lt;strong&gt;Pages&lt;/strong&gt;), z.B. bei x86-64 wahlweise 4 KiB oder 2 MiB oder 1 GiB&lt;/li&gt;
+&lt;li&gt;pro Page verschiedene Zugriffsberechtigungen möglich, z.B. zur Verhinderung des Schreibens in ausführbare Programmteile, oder für &lt;strong&gt;Shared Memory&lt;/strong&gt; als Kommunikationsweg zwischen Prozessen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Paging der MMU ermöglicht &lt;strong&gt;Swapping&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pages müssen nicht unbedingt im tatsächlichen Arbeitsspeicher gehalten werden, sondern können bei Nichtverwendung in eine Swap-Datei auf der Festplatte ausgelagert werden&lt;/li&gt;
+&lt;li&gt;dadurch über alle Programme summiert meist deutlich mehr virtueller Speicher zugewiesen, als tatsächlich physischer Speicher vorhanden ist&lt;/li&gt;
+&lt;li&gt;wenn ein Programm auf eine im Arbeitsspeicher fehlende Seite zugreift, erzeugt die MMU einen Interrupt (&lt;strong&gt;Page Fault&lt;/strong&gt;), sodass das Betriebssystem die fehlende Seite transparent nachladen kann&lt;/li&gt;
+&lt;li&gt;analog dazu: &lt;strong&gt;Memory-Mapping&lt;/strong&gt; von Dateiinhalten direkt in den Arbeitsspeicher&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;wenn wir schon mal über Speicheradressen reden: &lt;a href=&#34;https://de.wikipedia.org/wiki/Direct_Memory_Access&#34;&gt;Direct Memory Access&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Abbildung eines Arbeitsspeicher-Addressbereiches auf einen Speicher eines angeschlossenen Gerätes, zum Beispiel den Arbeitsspeicher der Grafikkarte oder eines Netzwerkadapters&lt;/li&gt;
+&lt;li&gt;dadurch direkter Transfer von Daten zwischen niedrigprivilegierten Prozessen und Hardware möglich, z.B. schnelles Hochladen von Texturen in die Grafikkarte durch ein 3D-Spiel&lt;/li&gt;
+&lt;li&gt;DMA braucht nicht unbedingt eine MMU (siehe &lt;a href=&#34;https://wiki.osdev.org/Printing_to_Screen&#34;&gt;VGA-Buffer bei &lt;code&gt;0xB8000&lt;/code&gt;&lt;/a&gt; in DOS-Ära-Betriebssystemen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:13" title="Welchen Speicher müssen wir eigentlich schützen?"  />
+          <chapter start="00:04:30" title="Aufgaben des Betriebssystems: Prozessisolation und Vermittlung des Hardwarezugriffs"  />
+          <chapter start="00:07:33" title="Antwort auf Frage 1: Prozessor-Ringe"  />
+          <chapter start="00:12:48" title="Wie kommen wir von einem niedrigeren in einen höheren Ring?"  />
+          <chapter start="00:21:45" title="Antwort auf Frage 2: Virtuelle Speicherverwaltung"  />
+          <chapter start="00:28:03" title="Paging"  />
+          <chapter start="00:30:22" title="Swapping"  />
+          <chapter start="00:44:48" title="Memory-Mapping"  />
+          <chapter start="00:46:36" title="Direct Memory Access"  />
+          <chapter start="00:50:05" title="Warum das alles? und Gesellschaftliche Indikationen"  />
+      </chapters>
+      <enclosure length="53718593" url="https://dl.xyrillian.de/noises/stp-019-speicherschutz.mp3" type="audio/mpeg"/>
+      <enclosure length="31359592" url="https://dl.xyrillian.de/noises/stp-019-speicherschutz.ogg" type="audio/ogg"/>
+      <enclosure length="19931270" url="https://dl.xyrillian.de/noises/stp-019-speicherschutz.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/019-speicherschutz/</guid>
+    <pubDate>Thu, 12 May 2022 16:50:00 GMT</pubDate>
+    <itunes:duration>55:36</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP018: DNS im Detail</itunes:title>
     <itunes:episode>18</itunes:episode>
     <itunes:season>1</itunes:season>
