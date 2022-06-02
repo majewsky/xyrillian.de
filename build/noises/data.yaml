@@ -575,3 +575,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 20
+    slug: 020-bootstrap
+    title: Bootstrap
+    pubtime: 1654189800 # 2022-06-02
+
+    markdown:
+      description: |
+        Strom an und Ohren auf! In dieser Episode nähern wir uns Computern im Dornröschenschlaf.
+        Genauer sehen wir uns an, was beim Erwachen geschieht.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

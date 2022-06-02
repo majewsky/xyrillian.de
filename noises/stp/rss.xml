@@ -27,6 +27,133 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP020: Bootstrap</itunes:title>
+    <itunes:episode>20</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP020: Bootstrap</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Strom an und Ohren auf! In dieser Episode nähern wir uns Computern im Dornröschenschlaf.
+Genauer sehen wir uns an, was beim Erwachen geschieht.</itunes:summary>
+    <description>Strom an und Ohren auf! In dieser Episode nähern wir uns Computern im Dornröschenschlaf.
+Genauer sehen wir uns an, was beim Erwachen geschieht.</description>
+    <content:encoded>&lt;p&gt;Strom an und Ohren auf! In dieser Episode nähern wir uns Computern im Dornröschenschlaf.
+Genauer sehen wir uns an, was beim Erwachen geschieht.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Zustand bei frühen Rechenmaschinen und Computern&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;kein Bootstrap: Strom an -&amp;gt; Programm starten, Programm beenden -&amp;gt; Strom aus (siehe &lt;a href=&#34;https://www.youtube.com/watch?v=n8Yo-wD-QTo&#34;&gt;Konrad-Zuse-Clip&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Programme waren spezifisch für die Hardware, auf der sie laufen&lt;/li&gt;
+&lt;li&gt;siehe auch: &lt;a href=&#34;https://damals-tm-podcast.de/&#34;&gt;damals (TM) Podcast&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;und &lt;a href=&#34;https://cre.fm/cre193-old-school-computing&#34;&gt;ChaosRadioExpress193 Old School Computing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zustand bei heutigen Computern&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Programme benötigen Funktionen des Betriebssystems, Betriebssystem muss sich mit der Hardware vertraut machen -&amp;gt; separate Startphase notwendig&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bootstrap&lt;/strong&gt; (oder kurz &lt;strong&gt;Boot&lt;/strong&gt;): sich selbst an den Schnürsenkeln aus dem Sumpf ziehen; aus einem einfachen System heraus ein komplexeres System aktivieren&lt;/li&gt;
+&lt;li&gt;Konzept taucht mehrmals in verschiedenen Kontexten auf (&amp;quot;Wie stellt man einen Hobel her, wenn man keinen Hobel hat?&amp;quot;), siehe z.B. Bootstrapping von Programmiersprachen&lt;/li&gt;
+&lt;li&gt;Hardware-Bootvorgang meist in mehreren aufeinanderfolgenden Phasen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 1: Firmware&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;minimales Startprogramm&lt;/li&gt;
+&lt;li&gt;in einen separaten &lt;a href=&#34;https://de.wikipedia.org/wiki/Flash-Speicher&#34;&gt;Flash-Speicher&lt;/a&gt; im Chip fest verbaut&lt;/li&gt;
+&lt;li&gt;Aufgabe: Hardware in einen definierten Zustand bringen (z.B. interne Speicher initialisieren), nächste Stufe finden und laden&lt;/li&gt;
+&lt;li&gt;heute mitunter alles andere als minimal: siehe &lt;a href=&#34;https://de.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface&#34;&gt;UEFI&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/wiki/Intel#Intel_Management_Engine_seit_2008&#34;&gt;Intel ME&lt;/a&gt;/&lt;a href=&#34;https://de.wikipedia.org/wiki/AMD_Security_Processor&#34;&gt;AMD PSP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;bei x86 früher &lt;a href=&#34;https://de.wikipedia.org/wiki/BIOS&#34;&gt;BIOS&lt;/a&gt;; heute ersetzt durch UEFI, dessen definierter Endzustand modernen Konventionen folgt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 2: Bootloader&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;immer noch ziemlich minimal&lt;/li&gt;
+&lt;li&gt;liegt auf einem Massenspeicher (Festplatte, USB-Stick)&lt;/li&gt;
+&lt;li&gt;Aufgabe: Massenspeicher nach Betriebssystemen durchsuchen, Auswahldialog anbieten, gewähltes Betriebssystem starten&lt;/li&gt;
+&lt;li&gt;unter Linux meistens &lt;a href=&#34;https://de.wikipedia.org/wiki/Grand_Unified_Bootloader&#34;&gt;GRUB&lt;/a&gt; oder &lt;a href=&#34;https://en.wikipedia.org/wiki/Systemd-boot&#34;&gt;systemd-boot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alternativen zum klassischen Bootloader&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;UEFI-Firmware kann direkt das Betriebssystem starten, sofern keine interaktive Auswahl erforderlich ist&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Netzboot&#34;&gt;Netzwerk-Boot&lt;/a&gt; (entweder durch die Firmware oder als Option in Bootloadern wie GRUB)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 3: Betriebssystem&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Erinnerung (siehe STP019): Kernel = Betriebssystemteile in höchster Privilegenstufe, Userspace = alle Programme in niedrigerer Privilegienstufe&lt;/li&gt;
+&lt;li&gt;Bootloader lädt und startet den Basisteil des Kernels&lt;/li&gt;
+&lt;li&gt;Kernel erkennt die verfügbare Hardware, lädt von der Festplatte die benötigten Kernel-Module nach und startet den System-Manager&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 4: System-Manager&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;unter Unix meist als &amp;quot;PID 1&amp;quot; benannt, weil dieser erste Prozess mit der Prozess-ID (PID) 1 läuft&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;klassischerweise &lt;a href=&#34;https://de.wikipedia.org/wiki/SysVinit&#34;&gt;sysvinit&lt;/a&gt;, heute unter Linux meist &lt;a href=&#34;https://de.wikipedia.org/wiki/Systemd&#34;&gt;systemd&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;startet alle Userspace-Programme, die als Teil des Betriebssystems aufgefasst werden können (im Unix-Sprech &amp;quot;Daemons&amp;quot;: Disk And Execution MONitors)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;auf Systemebene z.B. Druckwarteschlange, Bluetooth-Dienst, Netzwerk-Konfigurationsdienst, Zeitsynchronisation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;auf der Ebene einer grafischen Sitzung z.B. Dienste zum Auswählen von Tastaturlayout/Netzwerk, Einstellen der Lautstärke, Screen-Reader&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cre.fm/cre209-das-linux-system&#34;&gt;ChaosRadioExpress209 Das Linux System&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 5: Display-Manager&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bietet auf grafischen Systemen den Anmeldedialog&lt;/li&gt;
+&lt;li&gt;im Prinzip selbst eine komplette grafische Sitzung (Anekdote: GDM vs. LightDM)&lt;/li&gt;
+&lt;li&gt;startet nach erfolgreicher Anmeldung die entsprechende grafische Sitzung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 6: grafische Sitzung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Strukturierung je nach Desktopoberfläche&lt;/li&gt;
+&lt;li&gt;immer mit dabei: ein Window-Manager, der die einzelnen Fenster in ein Gesamtbild zusammensetzt (heutzutage auf der GPU, dann heißt der Window-Manager &amp;quot;Compositor&amp;quot;)&lt;/li&gt;
+&lt;li&gt;unter Windows ist der Window-Manager aus historischen Gründen Teil von &lt;code&gt;explorer.exe&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;wie besprochen: unter Linux Bootvorgang visualisieren mit &lt;code&gt;systemd-analyze plot &amp;gt; output.svg&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:42" title="Frühe Rechenmaschinen und Computer"  />
+          <chapter start="00:05:45" title="Zustand bei heutigen Computern"  />
+          <chapter start="00:11:53" title="Phase 1: Firmware"  />
+          <chapter start="00:23:55" title="Phase 2: Bootloader"  />
+          <chapter start="00:32:49" title="Netzwerkboot"  />
+          <chapter start="00:35:55" title="Phase 3: Betriebssystem"  />
+          <chapter start="00:49:28" title="Phase 4: System-Manager"  />
+          <chapter start="00:56:59" title="Phase 5: Display-Manager"  />
+          <chapter start="01:01:13" title="Phase 6: grafische Sitzung"  />
+      </chapters>
+      <enclosure length="69574497" url="https://dl.xyrillian.de/noises/stp-020-bootstrap.mp3" type="audio/mpeg"/>
+      <enclosure length="40262549" url="https://dl.xyrillian.de/noises/stp-020-bootstrap.ogg" type="audio/ogg"/>
+      <enclosure length="25259382" url="https://dl.xyrillian.de/noises/stp-020-bootstrap.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/020-bootstrap/</guid>
+    <pubDate>Thu, 02 Jun 2022 17:10:00 GMT</pubDate>
+    <itunes:duration>72:07</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP019: Speicherschutz</itunes:title>
     <itunes:episode>19</itunes:episode>
     <itunes:season>1</itunes:season>
@@ -113,8 +240,8 @@ Wie und warum und welchen Speicher überhaupt? Hört selbst.&lt;/p&gt;&lt;h2&gt;
           <chapter start="00:46:36" title="Direct Memory Access"  />
           <chapter start="00:50:05" title="Warum das alles? und Gesellschaftliche Indikationen"  />
       </chapters>
-      <enclosure length="53718593" url="https://dl.xyrillian.de/noises/stp-019-speicherschutz.mp3" type="audio/mpeg"/>
-      <enclosure length="31359592" url="https://dl.xyrillian.de/noises/stp-019-speicherschutz.ogg" type="audio/ogg"/>
+      <enclosure length="53718592" url="https://dl.xyrillian.de/noises/stp-019-speicherschutz.mp3" type="audio/mpeg"/>
+      <enclosure length="31359591" url="https://dl.xyrillian.de/noises/stp-019-speicherschutz.ogg" type="audio/ogg"/>
       <enclosure length="19931270" url="https://dl.xyrillian.de/noises/stp-019-speicherschutz.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/019-speicherschutz/</guid>
     <pubDate>Thu, 12 May 2022 16:50:00 GMT</pubDate>
