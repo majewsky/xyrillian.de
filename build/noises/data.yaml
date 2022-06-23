@@ -589,3 +589,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 21
+    slug: 021-regulaere-ausdruecke
+    title: Reguläre Ausdrücke
+    pubtime: 1656006300 # 2022-06-23
+
+    markdown:
+      description: |
+        ttimeless hat sich ein Thema gewünscht und mit Beginn von Xyrills Recherchen angefangen, es zu bereuen.
+        Es stellt sich heraus, dass das Thema zwar abstrakt, aber dennoch spannend ist. Außerdem gibt es im zweiten Teil der Sendung noch praktische Dinge zu lernen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

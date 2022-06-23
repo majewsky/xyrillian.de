@@ -27,6 +27,195 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP021: Reguläre Ausdrücke</itunes:title>
+    <itunes:episode>21</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP021: Reguläre Ausdrücke</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>ttimeless hat sich ein Thema gewünscht und mit Beginn von Xyrills Recherchen angefangen, es zu bereuen.
+Es stellt sich heraus, dass das Thema zwar abstrakt, aber dennoch spannend ist. Außerdem gibt es im zweiten Teil der Sendung noch praktische Dinge zu lernen.</itunes:summary>
+    <description>ttimeless hat sich ein Thema gewünscht und mit Beginn von Xyrills Recherchen angefangen, es zu bereuen.
+Es stellt sich heraus, dass das Thema zwar abstrakt, aber dennoch spannend ist. Außerdem gibt es im zweiten Teil der Sendung noch praktische Dinge zu lernen.</description>
+    <content:encoded>&lt;p&gt;ttimeless hat sich ein Thema gewünscht und mit Beginn von Xyrills Recherchen angefangen, es zu bereuen.
+Es stellt sich heraus, dass das Thema zwar abstrakt, aber dennoch spannend ist. Außerdem gibt es im zweiten Teil der Sendung noch praktische Dinge zu lernen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Motivation: reguläre Ausdrücke verstehen
+&lt;ul&gt;
+&lt;li&gt;etwas Theorie ist notwendig, um die Eigenschaften und Grenzen von regulären Ausdrücken zu verstehen&lt;/li&gt;
+&lt;li&gt;quasi eine Erstsemestervorlesung -&amp;gt; Anekdote Xyrill: Büchlein &amp;quot;Einblick ins Studium&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Grammatik&#34;&gt;Siehe Wikipedia&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Grammatik bezeichnet in der Linguistik jede Form einer systematischen Sprachbeschreibung. Dabei steht der Begriff der Grammatik einmal für das Regelwerk selbst, auf der anderen Seite aber auch für die Theorie über eine bestimmte Sprache oder Sprachfamilie.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;im Kontext der Informatik: &lt;strong&gt;formale Grammatiken&lt;/strong&gt; für &lt;strong&gt;formale Sprachen&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;formale Sprache: Menge von Symbolketten (&amp;quot;Wörter&amp;quot;), die aus Symbolen (&amp;quot;Alphabet&amp;quot;) zusammengesetzt werden&lt;/li&gt;
+&lt;li&gt;formale Grammatik: endlich große Beschreibung einer (im Allgemeinen unendlich großen) formalen Sprache&lt;/li&gt;
+&lt;li&gt;Beispiele: Programmiersprachen, Tastenkombos in Videospielen, Münzeinwurf in Verkaufsautomat&lt;/li&gt;
+&lt;li&gt;Abwägung: komplexere Grammatiken sind flexibler, aber auch aufwändiger (z.B. Tastatureingaben vs. Sprachsteuerung)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Chomsky-Hierarchie#%C3%9Cbersicht&#34;&gt;Chomsky-Hierarchie&lt;/a&gt;: Klassifikation von formalen Grammatiken in aufsteigender Striktheit und absteigender Flexibilität&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beschreibung der entsprechenden formalen Grammatiken: hier nicht, zu technisch&lt;/li&gt;
+&lt;li&gt;zu jeder Ebene der Chomsky-Hierarchie gehört ein Maschinenmodell, dass entsprechende Grammatiken akzeptieren kann&lt;/li&gt;
+&lt;li&gt;Typ 3: reguläre Grammatiken mittels endlichem Zustandsautomat (Beispiel: Münzeinwurf in Verkaufsautomat)&lt;/li&gt;
+&lt;li&gt;Typ 2: kontextfreie Grammatiken mittels Kellerautomat (Beispiel: balancierte Klammerpaare)&lt;/li&gt;
+&lt;li&gt;Typ 1 und 0 mittels Turingmaschinen (erst mit beschränktem, dann mit unbeschränktem Speicher)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beispiel für grafische Repräsentation von Grammatiken: &lt;a href=&#34;https://sqlite.org/lang_select.html&#34;&gt;siehe SQLite-Dokumentation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;reguläre Grammatiken im Alltag: &lt;a href=&#34;https://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck&#34;&gt;reguläre Ausdrücke&lt;/a&gt;; formale Definition mit vier Grundbausteinen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Grundbaustein&lt;/th&gt;
+&lt;th&gt;Beispielausdruck&lt;/th&gt;
+&lt;th&gt;Findet z.B.&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Zeichen(folge)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ausdruck&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ausdruck&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alternative&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ausdruck|Ausdrücke&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ausdruck&lt;/code&gt; und &lt;code&gt;Ausdrücke&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Gruppierung&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ausdr(uck|ücke)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ausdruck&lt;/code&gt; und &lt;code&gt;Ausdrücke&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sternquantor&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;to*ll&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;tll&lt;/code&gt;, &lt;code&gt;toll&lt;/code&gt;, &lt;code&gt;tooll&lt;/code&gt;, &lt;code&gt;toooll&lt;/code&gt;, etc.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;in der Praxis weitere Bausteine, um häufige Anwendungen zu vereinfachen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Zusatzbaustein&lt;/th&gt;
+&lt;th&gt;Definition&lt;/th&gt;
+&lt;th&gt;Beispielausdruck&lt;/th&gt;
+&lt;th&gt;Findet z.B.&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Zeichenklasse&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;[ABC...] = A|B|C|...&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;positive Ganzzahl: &lt;code&gt;0|[1-9][0-9]*&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0&lt;/code&gt;, &lt;code&gt;42&lt;/code&gt;, &lt;code&gt;900&lt;/code&gt;, aber nicht &lt;code&gt;0815&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;feste Zeichenklasse&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\s&lt;/code&gt; für Whitespace, &lt;code&gt;\d = [0-9]&lt;/code&gt; für Ziffern, etc.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;beliebiges Zeichen&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Klammerausdruck: &lt;code&gt;(.*)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;(2 &#43; 4)&lt;/code&gt;, &lt;code&gt;(siehe oben)&lt;/code&gt;, aber auch &lt;code&gt;(siehe oben (oder nicht)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fragezeichenquantor&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;A? = (|A)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Ganzzahl mit Vorzeichen: &lt;code&gt;[&#43;-]?(0|[1-9][0-9]*)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&#43;0&lt;/code&gt;, &lt;code&gt;-42&lt;/code&gt;, &lt;code&gt;23&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixquantor&lt;/td&gt;
+&lt;td&gt;z.B. &lt;code&gt;A{3} = AAA&lt;/code&gt;, &lt;code&gt;A{2,4} = AAA?A?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Postleitzahl: &lt;code&gt;[0-9]{5}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;01127&lt;/code&gt;, &lt;code&gt;50616&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Plusquantor&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;A&#43; = AA*&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Domainname: &lt;code&gt;([a-zA-Z0-9-]&#43;\.)*[a-zA-Z0-9-]&#43;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;www.example.com&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Anker&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;^&lt;/code&gt; für Zeilenanfang, &lt;code&gt;$&lt;/code&gt; für Zeilenende, &lt;code&gt;\b&lt;/code&gt; für Wortgrenze&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Schulz\b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Schulz&lt;/code&gt;, aber nicht &lt;code&gt;Schulze&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Problem in der Praxis: &lt;strong&gt;Escaping&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. Klammern sind Teil der Syntax; um eine Klammer im Eingabetext darzustellen, schreibt man &amp;quot;\(&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Regexen lernen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Online
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://regexlearn.com/learn/regex101&#34;&gt;LearnRegex&lt;/a&gt; ist ein interaktives Tutorial zum Erlernen von regulären Ausdrücken, in englischer Sprache.&lt;/li&gt;
+&lt;li&gt;Mit &lt;a href=&#34;https://regexcrossword.com&#34;&gt;Regex Crossword&lt;/a&gt; kann man spielerisch besonders das Lesen regulärer Ausdrücke üben.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Apps
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://f-droid.org/en/packages/de.chagemann.regexcrossword/&#34;&gt;Regex-Kreuzworträtsel auf dem Mobiltelefon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://f-droid.org/en/packages/com.phikal.regex/&#34;&gt;Mehrere Ausdrücke mit regulären Ausdrücken erfassen bzw. ausschließen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:03:00" title="Definition von Grammatik"  />
+          <chapter start="00:03:57" title="Grammatik in der Informatik"  />
+          <chapter start="00:18:26" title="Chomsky-Hierarchie"  />
+          <chapter start="00:22:16" title="Typ 3: reguläre Grammatiken"  />
+          <chapter start="00:24:08" title="Exkurs: menschliche Sprache und hidden Markov model"  />
+          <chapter start="00:27:39" title="Münzautomaten und Softwaretester"  />
+          <chapter start="00:33:10" title="Typ 2: kontextfreie Grammatiken"  />
+          <chapter start="00:44:01" title="Typ 1 und 0"  />
+          <chapter start="00:47:36" title="Dinge wegwerfen und Zeitsouveränität"  />
+          <chapter start="00:49:50" title="Beispiel für grafische Repräsentation von Grammatiken"  />
+          <chapter start="00:54:42" title="Praxisteil: Reguläre Ausdrücke"  />
+          <chapter start="01:06:41" title="Erweiterte Reguläre Ausdrücke"  />
+          <chapter start="01:30:18" title="Problem in der Praxis: **Escaping**"  />
+      </chapters>
+      <enclosure length="93238529" url="https://dl.xyrillian.de/noises/stp-021-regulaere-ausdruecke.mp3" type="audio/mpeg"/>
+      <enclosure length="58473028" url="https://dl.xyrillian.de/noises/stp-021-regulaere-ausdruecke.ogg" type="audio/ogg"/>
+      <enclosure length="35121828" url="https://dl.xyrillian.de/noises/stp-021-regulaere-ausdruecke.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/021-regulaere-ausdruecke/</guid>
+    <pubDate>Thu, 23 Jun 2022 17:45:00 GMT</pubDate>
+    <itunes:duration>96:46</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP020: Bootstrap</itunes:title>
     <itunes:episode>20</itunes:episode>
     <itunes:season>1</itunes:season>
@@ -144,12 +333,12 @@ Genauer sehen wir uns an, was beim Erwachen geschieht.&lt;/p&gt;&lt;h2&gt;Showno
           <chapter start="00:56:59" title="Phase 5: Display-Manager"  />
           <chapter start="01:01:13" title="Phase 6: grafische Sitzung"  />
       </chapters>
-      <enclosure length="69574497" url="https://dl.xyrillian.de/noises/stp-020-bootstrap.mp3" type="audio/mpeg"/>
-      <enclosure length="40262549" url="https://dl.xyrillian.de/noises/stp-020-bootstrap.ogg" type="audio/ogg"/>
-      <enclosure length="25259382" url="https://dl.xyrillian.de/noises/stp-020-bootstrap.opus" type="audio/opus"/>
+      <enclosure length="65087457" url="https://dl.xyrillian.de/noises/stp-020-bootstrap.mp3" type="audio/mpeg"/>
+      <enclosure length="40234830" url="https://dl.xyrillian.de/noises/stp-020-bootstrap.ogg" type="audio/ogg"/>
+      <enclosure length="24536752" url="https://dl.xyrillian.de/noises/stp-020-bootstrap.opus" type="audio/opus"/>
     <guid>https://xyrillian.de/id/stp/020-bootstrap/</guid>
     <pubDate>Thu, 02 Jun 2022 17:10:00 GMT</pubDate>
-    <itunes:duration>72:07</itunes:duration>
+    <itunes:duration>67:27</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
   </item>
   <item>
