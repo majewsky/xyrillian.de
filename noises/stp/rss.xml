@@ -27,6 +27,150 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP022: Das Web ist nicht das Internet</itunes:title>
+    <itunes:episode>22</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP022: Das Web ist nicht das Internet</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Heute geht es um das allseits bekannte und beliebte Interweb.
+Oder nicht, denn Web und Internet sind beileibe nicht dasselbe.
+Oder doch, oder nicht, denn sie werden erst dazu.
+Egal, Xyrill kann das besser erklären!</itunes:summary>
+    <description>Heute geht es um das allseits bekannte und beliebte Interweb.
+Oder nicht, denn Web und Internet sind beileibe nicht dasselbe.
+Oder doch, oder nicht, denn sie werden erst dazu.
+Egal, Xyrill kann das besser erklären!</description>
+    <content:encoded>&lt;p&gt;Heute geht es um das allseits bekannte und beliebte Interweb.
+Oder nicht, denn Web und Internet sind beileibe nicht dasselbe.
+Oder doch, oder nicht, denn sie werden erst dazu.
+Egal, Xyrill kann das besser erklären!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Geschichte des &lt;a href=&#34;https://de.wikipedia.org/wiki/Internet&#34;&gt;Internets&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1989-1991 initiale Entwicklung des World Wide Web&lt;/li&gt;
+&lt;li&gt;Internet aber bereits seit 1969 als Darpanet, ab 1981 bis 1983 Umstellung auf TCP/IP&lt;/li&gt;
+&lt;li&gt;über 20 Jahre Internet ohne Web -&amp;gt; das Web ist nur eine von vielen Anwendungen für das Internet&lt;/li&gt;
+&lt;li&gt;Internet vs. Web: Netzwerk von Computern vs. Netzwerk von Dokumenten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DNS: seit 1984, ausführlich siehe STP018&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/E-Mail&#34;&gt;E-Mail&lt;/a&gt;: seit 1971&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ablage von Mails in Mailboxen mittels &lt;a href=&#34;https://de.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol&#34;&gt;SMTP (Simple Mail Transfer Protocol)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Abruf von Mails aus Mailboxen zuerst durch direkten Login auf dem Zielsystem, ab 1984 mittels &lt;a href=&#34;https://de.wikipedia.org/wiki/Post_Office_Protocol&#34;&gt;POP3 (Post Office Protocol)&lt;/a&gt;, ab 1994 mittels &lt;a href=&#34;https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol&#34;&gt;IMAP (Internet Message Access Protocol)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;nicht dasselbe wie das Web: asynchrone Zustellung (siehe &lt;a href=&#34;https://de.wikipedia.org/wiki/E-Mail#Geschichte&#34;&gt;Wikipedia zur ersten E-Mail nach Deutschland&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Network_Time_Protocol&#34;&gt;NTP (Network Time Protocol)&lt;/a&gt;: seit 1985&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Synchronisation der Computeruhr mit der Uhr eines Servers und damit indirekt mit einer Atomuhr&lt;/li&gt;
+&lt;li&gt;Zeitdifferenzen werden (bei Nachgehen) durch Vorstellen oder (bei Vorgehen) durch Verlangsamen der lokalen Uhr korrigiert&lt;/li&gt;
+&lt;li&gt;nicht dasselbe wie das Web: nicht dokumentenbasiert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Telnet&#34;&gt;Telnet&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/wiki/Remote_Shell&#34;&gt;RSH (Remote Shell)&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/wiki/Secure_Shell&#34;&gt;SSH (Secure Shell)&lt;/a&gt;: seit 1974/1977/1995&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Telnet: Klartextaustausch mit einem entfernten Rechner&lt;/li&gt;
+&lt;li&gt;RSH/SSH: Abwicklung einer Kommandozeilen-Sitzung auf dem entfernten Rechner&lt;/li&gt;
+&lt;li&gt;nicht dasselbe wie das Web: bidirektionaler Datenstrom&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Internet_Relay_Chat&#34;&gt;IRC (Internet Relay Chat)&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol&#34;&gt;XMPP (Extensible Messaging and Presence Protocol)&lt;/a&gt;: seit 1988/1998&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IRC: textbasiertes Chatprotokoll zwischen vielen nutzerseitigen Clients und einigen untereinander vernetzten Servern&lt;/li&gt;
+&lt;li&gt;XMPP: ähnlich, statt Plain Text mittels Strömen von XML-Nachrichten&lt;/li&gt;
+&lt;li&gt;nicht dasselbe wie das Web: ebenfalls ein kontinuierlicher bidirektionaler Datenstrom&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Session_Initiation_Protocol&#34;&gt;SIP (Session Initiation Protocol)&lt;/a&gt;: seit 1999&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;und darauf folgend ein ganzer Zoo von Telefonie-Protokollen... ITU-Standards sind unser blinder Fleck :)&lt;/li&gt;
+&lt;li&gt;nicht dasselbe wie das Web: ebenfalls ein kontinuierlicher bidirektionaler Datenstrom&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/File_Transfer_Protocol&#34;&gt;FTP (File Transfer Protocol)&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/wiki/Network_File_System&#34;&gt;NFS (Network File System)&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/wiki/Server_Message_Block&#34;&gt;SMB (Server Message Block)&lt;/a&gt;: seit 1985/1984/1996&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zugriff (FTP) bzw. Einbindung (NFS/SMB) eines entfernten Dateisystem auf dem lokalen Rechner&lt;/li&gt;
+&lt;li&gt;Protokollbefehle wie &amp;quot;Dateien in Ordner auflisten&amp;quot; oder &amp;quot;Dateiinhalt lesen&amp;quot; oder &amp;quot;Datei löschen&amp;quot;&lt;/li&gt;
+&lt;li&gt;nicht dasselbe wie das Web: keine Dokumente mit Verweise untereinander, &amp;quot;nur&amp;quot; eine Struktur aus Dateien ohne bestimmte Anforderungen an den Dateiinhalt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol&#34;&gt;LDAP (Lightweight Directory Access Protocol)&lt;/a&gt;: seit 1993&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wenn DNS das Telefonbuch des Internets ist, dann sollte LDAP das Benutzerverzeichnis des Internets sein.&lt;/li&gt;
+&lt;li&gt;nicht dasselbe wie das Web: nicht dokumentenbasiert, sondern datensatzbasiert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;und dann natürlich &lt;a href=&#34;https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol&#34;&gt;HTTP (Hypertext Transfer Protocol)&lt;/a&gt;: seit 1991&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zunächst fokussiert auf Abruf von Hypertext-Dokumenten in HTML sowie der darin enthaltenen Ressourcen (zunächst vor allem Bilder)&lt;/li&gt;
+&lt;li&gt;dann erweitert um Hochladen von Daten zum Ausfüllen von Formularen&lt;/li&gt;
+&lt;li&gt;dann erweitert um Verwaltung von Sitzungsdaten mittels Cookies&lt;/li&gt;
+&lt;li&gt;dann erweitert um Methoden zum Durchlaufen von Dateisystemen (WebDAV, CalDAV, CardDAV, GroupDAV)&lt;/li&gt;
+&lt;li&gt;dann erweitert durch eine komplette Client-Server-Programmierumgebung (JavaScript, XHR)&lt;/li&gt;
+&lt;li&gt;dann erweitert durch serverseitige Benachrichtigungen (WebSockets, Server Sent Events)&lt;/li&gt;
+&lt;li&gt;dann erweitert... und erweitert... und erweitert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Plot-Twist: Web ist nur ein Teil des Internets, aber &lt;a href=&#34;https://twitter.com/fluepke/status/1504188393378430988&#34;&gt;alle anderen Teile des Internets werden immer webbiger&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jedes einzelne Protokoll profitiert tendenziell davon, wenn es auf HTTP aufsetzt:
+&lt;ul&gt;
+&lt;li&gt;Webbrowser können direkt HTTP verstehen&lt;/li&gt;
+&lt;li&gt;die meisten Entwickler kennen HTTP gut (auf jeden Fall besser als die ganzen anderen Protokolle)&lt;/li&gt;
+&lt;li&gt;in HTTP sind häufige Probleme wie Verschlüsselung/Caching/etc. schon gelöst (und die Lösungen sind milliardenfach getestet)&lt;/li&gt;
+&lt;li&gt;HTTP kommt am besten durch Firewalls durch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;quasi ein Netzwerkeffekt (&amp;quot;es ist populär, weil es alle benutzen, und alle benutzen es, weil es populär ist&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie sieht es mit den vorgenannten Protokollen aus?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DNS -&amp;gt; DoH (DNS over HTTPS), um Verschlüsselung hinzuzufügen&lt;/li&gt;
+&lt;li&gt;IRC, XMPP -&amp;gt; meist HTTP-basierte app-spezifische Chatprotokolle (z.B. Matrix)&lt;/li&gt;
+&lt;li&gt;LDAP -&amp;gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language&#34;&gt;SAML&lt;/a&gt; (Authentifizierung mittels Umleitungskette im Webbrowser)&lt;/li&gt;
+&lt;li&gt;SMTP, SSH, SIP, NFS, SMB: gibt&#39;s so noch, aber als Webapplikation ist die letzte Meile über HTTPS oder das eigentliche Protokoll ist in HTTPS-Websockets eingewickelt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro, Prolog"  />
+          <chapter start="00:02:20" title="Geschichte des Internets"  />
+          <chapter start="00:07:37" title="DNS: Heute nicht"  />
+          <chapter start="00:08:24" title="E-Mail"  />
+          <chapter start="00:15:36" title="NTP (Network Time Protocol)"  />
+          <chapter start="00:19:27" title="Telnet, RSH, SSH"  />
+          <chapter start="00:24:56" title="IRC, XMPP"  />
+          <chapter start="00:30:15" title="SIP (Session Initiation Protocol)"  />
+          <chapter start="00:32:35" title="FTP, NFS, SMB"  />
+          <chapter start="00:39:21" title="LDAP (Lightweight Directory Access Protocol)"  />
+          <chapter start="00:47:09" title="HTTP (Hypertext Transfer Protocol)"  />
+          <chapter start="00:55:14" title="Wie sieht es mit den vorgenannten Protokollen aus?"  />
+      </chapters>
+      <enclosure length="60285729" url="https://dl.xyrillian.de/noises/stp-022-das-web-ist-nicht-das-internet.mp3" type="audio/mpeg"/>
+      <enclosure length="38064990" url="https://dl.xyrillian.de/noises/stp-022-das-web-ist-nicht-das-internet.ogg" type="audio/ogg"/>
+      <enclosure length="22928296" url="https://dl.xyrillian.de/noises/stp-022-das-web-ist-nicht-das-internet.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/022-das-web-ist-nicht-das-internet/</guid>
+    <pubDate>Thu, 14 Jul 2022 00:00:00 GMT</pubDate>
+    <itunes:duration>62:27</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP021: Reguläre Ausdrücke</itunes:title>
     <itunes:episode>21</itunes:episode>
     <itunes:season>1</itunes:season>

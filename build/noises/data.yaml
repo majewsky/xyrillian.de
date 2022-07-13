@@ -603,3 +603,19 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 22
+    slug: 022-das-web-ist-nicht-das-internet
+    title: Das Web ist nicht das Internet
+    pubtime: 1657756800 # 2022-07-14
+
+    markdown:
+      description: |
+        Heute geht es um das allseits bekannte und beliebte Interweb.
+        Oder nicht, denn Web und Internet sind beileibe nicht dasselbe.
+        Oder doch, oder nicht, denn sie werden erst dazu.
+        Egal, Xyrill kann das besser erklären!
+      shownotes: true # in file
+
+    music: *music-like-stp-000
