@@ -27,6 +27,101 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP023: Virtualisierung, Container, Sandboxing, Simulation/Emulation</itunes:title>
+    <itunes:episode>23</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP023: Virtualisierung, Container, Sandboxing, Simulation/Emulation</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Die Sendung mit der Quersumme 5 beschäftigt sich damit, wie Computer so
+tun können, als wären sie andere Computer. Außerdem beginnt Xyrill
+damit, sein Mediensyndikat aufzubauen.</itunes:summary>
+    <description>Die Sendung mit der Quersumme 5 beschäftigt sich damit, wie Computer so
+tun können, als wären sie andere Computer. Außerdem beginnt Xyrill
+damit, sein Mediensyndikat aufzubauen.</description>
+    <content:encoded>&lt;p&gt;Die Sendung mit der Quersumme 5 beschäftigt sich damit, wie Computer so
+tun können, als wären sie andere Computer. Außerdem beginnt Xyrill
+damit, sein Mediensyndikat aufzubauen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Laut Wikipedia:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Virtualisierung_(Informatik)&#34;&gt;Virtualisierung&lt;/a&gt; bezeichnet in der Informatik die Nachbildung eines Hardware- oder Software-Objektes durch ein ähnliches Objekt vom selben Typ mithilfe einer Abstraktionsschicht.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;verschiedene Arten von Virtualisierung je nachdem, wo die Abstraktionsschicht liegt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Virtuelle Maschinen (VM): Hardware gleich, Betriebssysteme (OS) und Prozesse getrennt&lt;/li&gt;
+&lt;li&gt;Container: OS gleich, Prozesse getrennt&lt;/li&gt;
+&lt;li&gt;Sandboxing: getrennte Teile innerhalb eines Prozesses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Anwendungsfälle für VM (OS als Anwendung innerhalb eines anderen OS)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gleichzeitiger Betrieb von mehreren OS auf einem Computer (z.B. Linux als Hauptsystem, Windows-VM für bestimmte Anwendungen)&lt;/li&gt;
+&lt;li&gt;saubere Abgrenzung von verschiedenen Programmen durch das Einsperren in VMs mit festen Ressourcen-Zuteilungen und Zugriffsschranken&lt;/li&gt;
+&lt;li&gt;daraus folgend: Aufteilen einer einzelnen Server-Maschine in mehrere VMs für verschiedene Kunden&lt;/li&gt;
+&lt;li&gt;Ermöglichung der Verschiebung von Programmen zwischen Maschinen im laufenden Betrieb (&amp;quot;Live-Migration&amp;quot;, z.B. bei Hardwarefehlern)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ansätze für VMs (Wie kann der Gast-Kernel seinen administrativen Aufgaben nachgehen, ohne selber vollen Zugriff auf das System zu erhalten?) anhand von Meilensteinen auf x86-CPUs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;User Mode Linux (ab ca. 2000), Xen (ab 2003): &amp;quot;Paravirtualisierung&amp;quot;, Gast-Kernel ist von Anfang an so aufgebaut, dass er auch als Prozess unter einem anderen Kernel laufen kann (Hardware-Zugriff mittels Emulation, siehe unten)&lt;/li&gt;
+&lt;li&gt;VMware Workstation (ab 1999), VirtualBox (ab 2007), etc.: &amp;quot;Software-Virtualisierung&amp;quot;, Gast-Kernel läuft in einem teilprivilegierten Modus (z.B. Ring 1 bei x86), sodass Hardware-Zugriff einen Fehler auslöst; der Host-Kernel erhält die Kontrolle zurück und macht den Hardwarezugriff im Namen des Gast-Kernels (Problem: Performance-Verlust gegenüber Direktzugriff auf die Hardware) (&lt;a href=&#34;https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/swvirt-details.html&#34;&gt;detaillierte Erklärung in der VirtualBox-Dokumentation&lt;/a&gt;)1&lt;/li&gt;
+&lt;li&gt;Intel VT-x (ab 2005), AMD-V (ab 2006): &amp;quot;Hardware-Virtualisierung&amp;quot;, Host-Kernel richtet durch spezialisierte CPU-Instruktionen einen abgetrennten Bereich für den Gast-Kernel ein (beschränkter Speicherbereich, beschränkte CPU-Zeit, beschränkter Gerätezugriff), innerhalb dessen das System für den Gast-Kernel wie unvirtualisiert erscheint (somit so gut wie kein Performance-Unterschied zwischen nativem und virtualisiertem Kernel mehr)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Containervirtualisierung&#34;&gt;Container&lt;/a&gt;: isolierte Umgebungen innerhalb eines OS, aus denen Programme im Allgemeinen nicht ohne weiteres ausbrechen können&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vorteil gegenüber VM: ressourcenschonender (nur ein Kernel für alle), Container starten schneller als VM (kein Boot eines Gast-Kernels notwendig)&lt;/li&gt;
+&lt;li&gt;Urform des Containers: &lt;a href=&#34;https://de.wikipedia.org/wiki/Chroot&#34;&gt;chroot in Unix-Systemen&lt;/a&gt; (ab 1979) modifiziert für einen Prozess das sichtbare Dateisystem so, dass nur Dateien unterhalb eines bestimmten Verzeichnisses erreicht werden können (Intention war die Bereitstellung von angepassten Dateisystemstrukturen für bestimmte Programme; chroot ist kein wirklicher Container, da die allermeisten Ressourcen nicht eingeschränkt werden und ein privilegierter Prozess das chroot jederzeit durch Neukonfiguration umgehen kann)&lt;/li&gt;
+&lt;li&gt;echte Container ab ca. 2000: z.B. FreeBSD Jails ab 1999, Virtuozzo/OpenVZ ab 2000, Solaris Zones ab 2005, LXC (Linux Containers) ab 2008, Docker ab 2013&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ausführliche Besprechung von Containern unter Linux (Docker/Kubernetes) siehe &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20220524.html&#34;&gt;Pentaradio von 2022-05-24&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sandboxing: Container innerhalb einer Applikation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. Webbrowser führen JavaScript-Code aus dem Internet in separaten Prozessen mit geringen Privilegien aus, um Malware das Leben schwer zu machen&lt;/li&gt;
+&lt;li&gt;Begriffstrennung nicht ganz sauber; mitunter werden auch Container als eine Art von Sandboxing eingeordnet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simulation und Emulation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Simulation&#34;&gt;Simulation&lt;/a&gt;: Nachbildung eines realen Systems oder Szenarios mittels andersgearteter Technik (z.B. Fahrsimulation ohne echtes Auto, Militärsimulation ohne echtes Schlachtfeld, Simulation von quantenmechanischen Wellen mittels Ultraschallwellen... oder gleich mit Zahlen im Computer)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Emulator&#34;&gt;Emulation&lt;/a&gt;: Nachbildung eines Systems durch ein ähnliches, aber anderes System (z.B. Nachbildung des Verhaltens eines CPU-Typs als Programm auf einem anderen CPU-Typ)&lt;/li&gt;
+&lt;li&gt;Einsatz von Emulation hauptsächlich zum Nachbilden alter Systeme (siehe Emulation von Videospielen, wie besprochen im &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20220125.html&#34;&gt;Pentaradio vom Januar 2022&lt;/a&gt;) und zum Testen von Software auf besser zugänglichen Systemen (z.B. Testumgebungen für Smartphone-Apps auf PC-Betriebssystemen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Prolog"  />
+          <chapter start="00:01:49" title="Xyrill und die Vergangenheit"  />
+          <chapter start="00:03:21" title="Was sagt Wikipedia"  />
+          <chapter start="00:05:05" title="Verschiedene Arten von Virtualisierung"  />
+          <chapter start="00:06:05" title="Virtuelle Maschinen"  />
+          <chapter start="00:08:18" title="Container"  />
+          <chapter start="00:08:49" title="Sandboxing"  />
+          <chapter start="00:09:47" title="Anwendungsfälle für VM"  />
+          <chapter start="00:24:02" title="Zeitliche Entwicklung von VMs"  />
+          <chapter start="00:34:06" title="Container"  />
+          <chapter start="00:47:42" title="Sandboxing"  />
+          <chapter start="00:50:52" title="Simulation und Emulation"  />
+      </chapters>
+      <enclosure length="60241887" url="https://dl.xyrillian.de/noises/stp-023-virtualisierung.mp3" type="audio/mpeg"/>
+      <enclosure length="36427392" url="https://dl.xyrillian.de/noises/stp-023-virtualisierung.ogg" type="audio/ogg"/>
+      <enclosure length="22671509" url="https://dl.xyrillian.de/noises/stp-023-virtualisierung.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/023-virtualisierung/</guid>
+    <pubDate>Thu, 04 Aug 2022 18:15:00 GMT</pubDate>
+    <itunes:duration>62:24</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP022: Das Web ist nicht das Internet</itunes:title>
     <itunes:episode>22</itunes:episode>
     <itunes:season>1</itunes:season>

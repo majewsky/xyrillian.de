@@ -619,3 +619,18 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 23
+    slug: 023-virtualisierung
+    title: Virtualisierung, Container, Sandboxing, Simulation/Emulation
+    pubtime: 1659636900 # 2022-08-04
+
+    markdown:
+      description: |
+        Die Sendung mit der Quersumme 5 beschäftigt sich damit, wie Computer so
+        tun können, als wären sie andere Computer. Außerdem beginnt Xyrill
+        damit, sein Mediensyndikat aufzubauen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
