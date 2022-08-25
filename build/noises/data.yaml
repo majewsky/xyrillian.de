@@ -634,3 +634,23 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 24
+    slug: 024-cloud-computing
+    title: Cloud Computing
+    pubtime: 1661444400 # 2022-08-25
+
+    markdown:
+      description: |
+        Diese Episode beschäftigt sich mit anderer Leute Computer: warum man die überhaupt benutzen kann, und unter welchen Voraussetzungen das sinnvoll ist.
+      shownotes: true # in file
+
+    music:
+      - artist: Thich Nhat Hanh
+        title: "A Cloud Never Dies"
+        href: https://www.youtube.com/watch?v=2Dn9kqVrKzE
+      - *music-stp-opener-001
+      - *music-stp-opener-002
+      - *music-stp-opener-003
+      - *music-stp-opener-004

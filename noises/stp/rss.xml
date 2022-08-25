@@ -27,6 +27,90 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP024: Cloud Computing</itunes:title>
+    <itunes:episode>24</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP024: Cloud Computing</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Diese Episode beschäftigt sich mit anderer Leute Computer: warum man die überhaupt benutzen kann, und unter welchen Voraussetzungen das sinnvoll ist.</itunes:summary>
+    <description>Diese Episode beschäftigt sich mit anderer Leute Computer: warum man die überhaupt benutzen kann, und unter welchen Voraussetzungen das sinnvoll ist.</description>
+    <content:encoded>&lt;p&gt;Diese Episode beschäftigt sich mit anderer Leute Computer: warum man die überhaupt benutzen kann, und unter welchen Voraussetzungen das sinnvoll ist.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.pragmaticworks.com/hs-fs/hubfs/Pizza_Cloud.jpg?width=1868&amp;amp;name=Pizza_Cloud.jpg&#34;&gt;Cloud Computing erklärt anhand von Pizza&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;On-Premise: kein Cloud Computing, Nutzer betreibt seine eigene Hardware und Software&lt;/li&gt;
+&lt;li&gt;IaaS (Infrastructure as a Service): Cloud-Anbieter betreibt die Hardware, Nutzer bringt Betriebssystem und Software&lt;/li&gt;
+&lt;li&gt;PaaS (Platform as a Service): Cloud-Anbieter betreibt die Hardware und das Betriebssystem, Nutzer bringt die Anwendung&lt;/li&gt;
+&lt;li&gt;SaaS (Software as a Service): Cloud-Anbieter betreibt alles, Nutzer bedient die Anwendung nur noch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fünf Grundanforderungen gemäß &lt;a href=&#34;http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf&#34;&gt;Definition durch NIST&lt;/a&gt; (NIST ist dem Aufgabenspektrum nach mit der PTB und dem BSI vergleichbar):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;On-Demand Self-Service:&lt;/strong&gt; Nutzer kann selber Ressourcen klicken, ohne Mitarbeiter beim Dienstanbieter zu involvieren&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bsp. SaaS-Anwendungen wie Dropbox, GitHub, Netflix, etc.&lt;/li&gt;
+&lt;li&gt;Bsp. mal kurz ein dutzend VMs klicken, um eine komplizierte Server-Anwendung wie Kubernetes auszuprobieren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Broad Network Access:&lt;/strong&gt; Ressourcen sind über das Netz mittels &amp;quot;Standardmethoden&amp;quot; erreichbar, ohne durch eine anbieterspezifische Zugriffstechnologie gehen zu müssen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Was soll diese Anforderung ausschließen? Xyrills Vermutung: z.B. das Telefonnetz, ttimeless&#39; Vermutung: Mainframes und Universitäts-Rechenzentren (die nur aus dem entsprechenden Intranet zu erreichen sind)&lt;/li&gt;
+&lt;li&gt;zur Konfiguration und Administration jedoch meist anbieterspezifische Schnittstellen und Werkzeuge (entsprechend dem Funktionsumfang des jeweiligen Angebots) -&amp;gt; &lt;strong&gt;Vendor Lock-In&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Resource Pooling:&lt;/strong&gt; Ressourcen werden unter mehreren/allen Kunden nach Bedarf aufgeteilt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sowohl zwischen mehreren Kunden (&amp;quot;Public Cloud&amp;quot;) als auch innerhalb einer Firma oder innerhalb eines Teams (&amp;quot;Private Cloud&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Bsp. CDN (Content Delivery Network): mehrere Kunden teilen sich ein weltweites Rechenzentrumsnetz, das jeder alleine so nicht bezahlen könnte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Rapid Elasticity:&lt;/strong&gt; Ressourcen können kurzfristig zugeteilt und zurückgegeben werden&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bsp. Internet-Shop am Black Friday, Buchhaltungssystem am Quartalsende&lt;/li&gt;
+&lt;li&gt;Bsp. Cloud-Gaming (Gegenbeispiel: &lt;a href=&#34;https://knowyourmeme.com/memes/error-37&#34;&gt;Error 37&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Measured Service:&lt;/strong&gt; Messung und Abrechnung der genutzten Ressourcen mindestens zeitnah oder sogar in Echtzeit&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;wie bei der Telefonrechnung früher&amp;quot;&lt;/li&gt;
+&lt;li&gt;Bsp. sehr kurze Nutzung (z.B. einige Stunden) von leistungsstarker Hardware, z.B. um ein neuronales Netz zu trainieren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Probleme mit Cloud Computing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zentralisierung: wenn ein Amazon-Rechenzentrum Probleme hat, ist gefühlt das halbe Internet weg&lt;/li&gt;
+&lt;li&gt;Preistransparenz: siehe z.B. &lt;a href=&#34;https://www.troyhunt.com/how-i-got-pwned-by-my-cloud-costs/&#34;&gt;&amp;quot;I got pwned by my cloud costs&amp;quot;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro, Intro, Präludium"  />
+          <chapter start="00:03:02" title="Wolken und Pizza"  />
+          <chapter start="00:15:10" title="Definition durch NIST"  />
+          <chapter start="00:19:23" title="On-Demand Self-Service"  />
+          <chapter start="00:24:04" title="Broad Network Access"  />
+          <chapter start="00:27:31" title="Resource Pooling"  />
+          <chapter start="00:36:18" title="Rapid Elasticity"  />
+          <chapter start="00:42:48" title="Measured Service"  />
+          <chapter start="00:50:39" title="Probleme mit Cloud Computing"  />
+      </chapters>
+      <enclosure length="65456020" url="https://dl.xyrillian.de/noises/stp-024-cloud-computing.mp3" type="audio/mpeg"/>
+      <enclosure length="40588664" url="https://dl.xyrillian.de/noises/stp-024-cloud-computing.ogg" type="audio/ogg"/>
+      <enclosure length="24287187" url="https://dl.xyrillian.de/noises/stp-024-cloud-computing.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/024-cloud-computing/</guid>
+    <pubDate>Thu, 25 Aug 2022 16:20:00 GMT</pubDate>
+    <itunes:duration>67:50</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP023: Virtualisierung, Container, Sandboxing, Simulation/Emulation</itunes:title>
     <itunes:episode>23</itunes:episode>
     <itunes:season>1</itunes:season>
