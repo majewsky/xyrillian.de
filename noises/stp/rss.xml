@@ -27,6 +27,109 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP025: Datenkompression</itunes:title>
+    <itunes:episode>25</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP025: Datenkompression</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Trotz des Themas haben wir es nicht geschafft, uns kurz zu fassen. Xyrill musste den Preis dafür zahlen. In dieser Sendung: Ein Einstieg mit flachen Witzen, gezinkte Münzen, naive Betrachtungsweisen und schwierige Abwägungen.</itunes:summary>
+    <description>Trotz des Themas haben wir es nicht geschafft, uns kurz zu fassen. Xyrill musste den Preis dafür zahlen. In dieser Sendung: Ein Einstieg mit flachen Witzen, gezinkte Münzen, naive Betrachtungsweisen und schwierige Abwägungen.</description>
+    <content:encoded>&lt;p&gt;Trotz des Themas haben wir es nicht geschafft, uns kurz zu fassen. Xyrill musste den Preis dafür zahlen. In dieser Sendung: Ein Einstieg mit flachen Witzen, gezinkte Münzen, naive Betrachtungsweisen und schwierige Abwägungen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Einführungsbeispiel: simulierte schlechte Leitung (&amp;quot;xxxxxx heute xxxxxx Podcast xxxxxx Thema xxxxxx Kompression xxxxxx&amp;quot; -&amp;gt; &amp;quot;In unserer heutigen Folge unseres Podcasts ist das Thema die Datenkompression.&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;naiver Impuls eines Erstsemester-Linguistikstudenten: &amp;quot;Warum sagt man nicht gleich &#39;heute Podcast Thema Kompression&#39;?&amp;quot;&lt;/li&gt;
+&lt;li&gt;Sprache ist so gestaltet, dass auch teilweise fehlerhafte Informationen noch korrekt ankommen&lt;/li&gt;
+&lt;li&gt;beim Hören intuitiver Einsatz eines Vorhersagemodells, um kommende Silben/Wörter/Phrasen vorherzusagen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;theoretische Grundlagen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bit:&lt;/strong&gt; Basiseinheit für &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Informationsgehalt&amp;amp;oldid=219708601&#34;&gt;Informationsgehalt&lt;/a&gt; (enstprechend der Auswahl aus zwei gleich wahrscheinlichen Möglichkeiten), allerdings nicht im SI-System verankert&lt;/li&gt;
+&lt;li&gt;Beispiel Münzwurf:
+&lt;ul&gt;
+&lt;li&gt;ideale Münze (50% Kopf &#43; 50% Zahl) liefert 1 Bit pro Wurf&lt;/li&gt;
+&lt;li&gt;reelle Münze liefert mehr als 1 Bit pro Wurf (z.B. 49,5% Kopf &#43; 49,5% Zahl &#43; 1% Kante -&amp;gt; 1,07 Bit pro Wurf)&lt;/li&gt;
+&lt;li&gt;gezinkte Münze liefert weniger als 1 Bit pro Wurf (z.B. 10% Kopf &#43; 90% Zahl -&amp;gt; 0,469 Bit pro Wurf)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;gute Komprimierbarkeit = niedriger Informationsgehalt -&amp;gt; häufiger, als man denkt (Bsp. nebeneinanderliegende Pixel eines Bildes sind ähnlich)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Entropie&amp;amp;oldid=223480319#Geschichtlicher_%C3%9Cberblick&#34;&gt;Zusammenhang mit physikalischer Entropie:&lt;/a&gt; Systeme mit geringer Entropie (z.B. Eisblock) sind einfach vorherzusagen, Beobachtungen haben geringen Informationsgehalt; Systeme mit hoher Entropie (z.B. Wasserdampf) sind schwer vorherzusagen, Beobachtungen haben hohen Informationsgehalt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;naive&amp;quot; Kompressionsmethoden (die man auch als Mensch überblicken kann)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nutzung von Allgemeinwissen
+&lt;ul&gt;
+&lt;li&gt;Beispiel aus der Vorbereitung: &amp;quot;Schachbrett&amp;quot; im Kontext von Exponentialfunktionen ruft die Assoziation einer ganzen Geschichte auf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Wörterbuchmethode für Text
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Datenkompression&amp;amp;oldid=222957700#Text&#34;&gt;Beispiel aus Wikipedia&lt;/a&gt;: &amp;quot;wenn Fliegen hinter Fliegen fliegen, fliegen Fliegen Fliegen nach&amp;quot; -&amp;gt; &amp;quot;wenn Fliegen hinter \2 fliegen, \5 \2 \2 nach&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RLE (Run-Length Encoding) z.B. in Bildern wie &lt;a href=&#34;https://xyrillian.de/res/cover-stp.png&#34;&gt;dem Coverart dieses Podcasts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Datenkompression&amp;amp;oldid=222957700#Entropiekodierung&#34;&gt;Huffman-Kodierung&lt;/a&gt; wie im &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Morsecode&amp;amp;oldid=222300739#Standard-Codetabelle&#34;&gt;Morse-Code&lt;/a&gt; (Verbindung zur Linguistik!)&lt;/li&gt;
+&lt;li&gt;Minifizierung von Skripten
+&lt;ul&gt;
+&lt;li&gt;Beispiel: jQuery 3.6 &lt;a href=&#34;https://code.jquery.com/jquery-3.6.0.js&#34;&gt;ohne Minifizierung&lt;/a&gt; und &lt;a href=&#34;https://code.jquery.com/jquery-3.6.0.min.js&#34;&gt;mit Minifizierung&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;zwei fundamentale Abwägungen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geschwindigkeit vs. Stärke (z.B. Debian-Pakete mit zwei getrennten Bereichen, die verschiedene Kompressionsverfahren nutzen)&lt;/li&gt;
+&lt;li&gt;verlustfrei vs. verlustbehaftet (Bsp. Pentaradio vom Mai 2022: Radiofassung als FLAC 271,7 MiB; Endprodukt als Opus 52,0 MiB)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kompressionsmethoden im Audio-Video-Bereich beispielhaft anhand ihres Verlustverhaltens&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Blockartefakt&amp;amp;oldid=121557554&#34;&gt;Blockartefakte&lt;/a&gt; bei JPEG&lt;/li&gt;
+&lt;li&gt;Psychoakustik bei &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=MP3&amp;amp;oldid=223021491#Verfahren&#34;&gt;MP3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Datamoshing bei Videos (&lt;a href=&#34;https://www.youtube.com/watch?v=rMSsw4CZvKg&#34;&gt;Beispiel&lt;/a&gt;) illustriert Bedeutung von &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Intra-Frame&amp;amp;oldid=198265016&#34;&gt;Intra-Frames&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;siehe auch &lt;a href=&#34;https://www.youtube.com/watch?v=icruGcSsPp0&#34;&gt;dasselbe Video, 1000-mal komprimiert und dekomprimiert&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Einfluss fester Bitrate auf Audio/Videos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;theoretische Grenze: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kolmogorow-Komplexit%C3%A4t&amp;amp;oldid=207581838&#34;&gt;Kolmogorow-Komplexität&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fußnoten:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ttimeless fühlt sich verpflichtet, auf den &lt;a href=&#34;https://requestforcomments.de/archives/320&#34;&gt;RFC-Podcast zu verlinken&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;David Kriesel: &lt;a href=&#34;https://media.ccc.de/v/31c3_-_6558_-_de_-_saal_g_-_201412282300_-_traue_keinem_scan_den_du_nicht_selbst_gefalscht_hast_-_david_kriesel&#34;&gt;&amp;quot;Traue keinem Scan, den du nicht selbst gefälscht hast&amp;quot;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Einleitung"  />
+          <chapter start="00:02:18" title="Einführungsbeispiel"  />
+          <chapter start="00:06:32" title="Theoretische Grundlagen"  />
+          <chapter start="00:29:48" title="naive Kompressionsmethoden"  />
+          <chapter start="00:54:40" title="fundamentale Abwägungen"  />
+          <chapter start="01:06:16" title="Kompressionsmethoden im Audio-Video-Bereich beispielhaft anhand ihres Verlustverhaltens"  />
+      </chapters>
+      <enclosure length="78187804" url="https://dl.xyrillian.de/noises/stp-025-datenkompression.mp3" type="audio/mpeg"/>
+      <enclosure length="47801952" url="https://dl.xyrillian.de/noises/stp-025-datenkompression.ogg" type="audio/ogg"/>
+      <enclosure length="29130112" url="https://dl.xyrillian.de/noises/stp-025-datenkompression.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/025-datenkompression/</guid>
+    <pubDate>Thu, 15 Sep 2022 19:00:00 GMT</pubDate>
+    <itunes:duration>81:06</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP024: Cloud Computing</itunes:title>
     <itunes:episode>24</itunes:episode>
     <itunes:season>1</itunes:season>

@@ -654,3 +654,16 @@ files:
       - *music-stp-opener-002
       - *music-stp-opener-003
       - *music-stp-opener-004
+
+  - show: stp
+    episode: 25
+    slug: 025-datenkompression
+    title: Datenkompression
+    pubtime: 1663268400 # 2022-09-15
+
+    markdown:
+      description: |
+        Trotz des Themas haben wir es nicht geschafft, uns kurz zu fassen. Xyrill musste den Preis dafür zahlen. In dieser Sendung: Ein Einstieg mit flachen Witzen, gezinkte Münzen, naive Betrachtungsweisen und schwierige Abwägungen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

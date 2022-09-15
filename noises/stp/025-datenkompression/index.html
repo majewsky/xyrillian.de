@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenkompression - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #25 vom 15. September 2022</h2>
+    <h1>Datenkompression</h1>
+      <p>Trotz des Themas haben wir es nicht geschafft, uns kurz zu fassen. Xyrill musste den Preis dafür zahlen. In dieser Sendung: Ein Einstieg mit flachen Witzen, gezinkte Münzen, naive Betrachtungsweisen und schwierige Abwägungen.</p>
+      <p><strong>Länge:</strong> 81:06 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-025-datenkompression.mp3" type="audio/mpeg">
+        <source src="/dl/stp-025-datenkompression.ogg" type="audio/ogg">
+        <source src="/dl/stp-025-datenkompression.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="138">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro und Einleitung</span>
+      </div>
+      <div class="chapter" data-start="138" data-end="392">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">02:18</span>
+        <span class="chapter-title">Einführungsbeispiel</span>
+      </div>
+      <div class="chapter" data-start="392" data-end="1788">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">06:32</span>
+        <span class="chapter-title">Theoretische Grundlagen</span>
+      </div>
+      <div class="chapter" data-start="1788" data-end="3280">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">29:48</span>
+        <span class="chapter-title">naive Kompressionsmethoden</span>
+      </div>
+      <div class="chapter" data-start="3280" data-end="3976">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">54:40</span>
+        <span class="chapter-title">fundamentale Abwägungen</span>
+      </div>
+      <div class="chapter" data-start="3976" data-end="4866.006">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">66:16</span>
+        <span class="chapter-title">Kompressionsmethoden im Audio-Video-Bereich beispielhaft anhand ihres Verlustverhaltens</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-025-datenkompression.mp3">MP3</a> (74,6 MiB)</li>
+          <li><a href="/dl/stp-025-datenkompression.ogg">Ogg Vorbis</a> (45,6 MiB)</li>
+          <li><a href="/dl/stp-025-datenkompression.opus">Opus</a> (27,8 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p>Einführungsbeispiel: simulierte schlechte Leitung (&quot;xxxxxx heute xxxxxx Podcast xxxxxx Thema xxxxxx Kompression xxxxxx&quot; -&gt; &quot;In unserer heutigen Folge unseres Podcasts ist das Thema die Datenkompression.&quot;)</p>
+<ul>
+<li>naiver Impuls eines Erstsemester-Linguistikstudenten: &quot;Warum sagt man nicht gleich 'heute Podcast Thema Kompression'?&quot;</li>
+<li>Sprache ist so gestaltet, dass auch teilweise fehlerhafte Informationen noch korrekt ankommen</li>
+<li>beim Hören intuitiver Einsatz eines Vorhersagemodells, um kommende Silben/Wörter/Phrasen vorherzusagen</li>
+</ul>
+</li>
+<li>
+<p>theoretische Grundlagen</p>
+<ul>
+<li><strong>Bit:</strong> Basiseinheit für <a href="https://de.wikipedia.org/w/index.php?title=Informationsgehalt&amp;oldid=219708601">Informationsgehalt</a> (enstprechend der Auswahl aus zwei gleich wahrscheinlichen Möglichkeiten), allerdings nicht im SI-System verankert</li>
+<li>Beispiel Münzwurf:
+<ul>
+<li>ideale Münze (50% Kopf + 50% Zahl) liefert 1 Bit pro Wurf</li>
+<li>reelle Münze liefert mehr als 1 Bit pro Wurf (z.B. 49,5% Kopf + 49,5% Zahl + 1% Kante -&gt; 1,07 Bit pro Wurf)</li>
+<li>gezinkte Münze liefert weniger als 1 Bit pro Wurf (z.B. 10% Kopf + 90% Zahl -&gt; 0,469 Bit pro Wurf)</li>
+</ul>
+</li>
+<li>gute Komprimierbarkeit = niedriger Informationsgehalt -&gt; häufiger, als man denkt (Bsp. nebeneinanderliegende Pixel eines Bildes sind ähnlich)</li>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Entropie&amp;oldid=223480319#Geschichtlicher_%C3%9Cberblick">Zusammenhang mit physikalischer Entropie:</a> Systeme mit geringer Entropie (z.B. Eisblock) sind einfach vorherzusagen, Beobachtungen haben geringen Informationsgehalt; Systeme mit hoher Entropie (z.B. Wasserdampf) sind schwer vorherzusagen, Beobachtungen haben hohen Informationsgehalt</li>
+</ul>
+</li>
+<li>
+<p>&quot;naive&quot; Kompressionsmethoden (die man auch als Mensch überblicken kann)</p>
+<ul>
+<li>Nutzung von Allgemeinwissen
+<ul>
+<li>Beispiel aus der Vorbereitung: &quot;Schachbrett&quot; im Kontext von Exponentialfunktionen ruft die Assoziation einer ganzen Geschichte auf</li>
+</ul>
+</li>
+<li>Wörterbuchmethode für Text
+<ul>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Datenkompression&amp;oldid=222957700#Text">Beispiel aus Wikipedia</a>: &quot;wenn Fliegen hinter Fliegen fliegen, fliegen Fliegen Fliegen nach&quot; -&gt; &quot;wenn Fliegen hinter \2 fliegen, \5 \2 \2 nach&quot;</li>
+</ul>
+</li>
+<li>RLE (Run-Length Encoding) z.B. in Bildern wie <a href="https://xyrillian.de/res/cover-stp.png">dem Coverart dieses Podcasts</a></li>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Datenkompression&amp;oldid=222957700#Entropiekodierung">Huffman-Kodierung</a> wie im <a href="https://de.wikipedia.org/w/index.php?title=Morsecode&amp;oldid=222300739#Standard-Codetabelle">Morse-Code</a> (Verbindung zur Linguistik!)</li>
+<li>Minifizierung von Skripten
+<ul>
+<li>Beispiel: jQuery 3.6 <a href="https://code.jquery.com/jquery-3.6.0.js">ohne Minifizierung</a> und <a href="https://code.jquery.com/jquery-3.6.0.min.js">mit Minifizierung</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>zwei fundamentale Abwägungen</p>
+<ul>
+<li>Geschwindigkeit vs. Stärke (z.B. Debian-Pakete mit zwei getrennten Bereichen, die verschiedene Kompressionsverfahren nutzen)</li>
+<li>verlustfrei vs. verlustbehaftet (Bsp. Pentaradio vom Mai 2022: Radiofassung als FLAC 271,7 MiB; Endprodukt als Opus 52,0 MiB)</li>
+</ul>
+</li>
+<li>
+<p>Kompressionsmethoden im Audio-Video-Bereich beispielhaft anhand ihres Verlustverhaltens</p>
+<ul>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Blockartefakt&amp;oldid=121557554">Blockartefakte</a> bei JPEG</li>
+<li>Psychoakustik bei <a href="https://de.wikipedia.org/w/index.php?title=MP3&amp;oldid=223021491#Verfahren">MP3</a></li>
+<li>Datamoshing bei Videos (<a href="https://www.youtube.com/watch?v=rMSsw4CZvKg">Beispiel</a>) illustriert Bedeutung von <a href="https://de.wikipedia.org/w/index.php?title=Intra-Frame&amp;oldid=198265016">Intra-Frames</a>
+<ul>
+<li>siehe auch <a href="https://www.youtube.com/watch?v=icruGcSsPp0">dasselbe Video, 1000-mal komprimiert und dekomprimiert</a></li>
+</ul>
+</li>
+<li>Einfluss fester Bitrate auf Audio/Videos</li>
+</ul>
+</li>
+<li>
+<p>theoretische Grenze: <a href="https://de.wikipedia.org/w/index.php?title=Kolmogorow-Komplexit%C3%A4t&amp;oldid=207581838">Kolmogorow-Komplexität</a></p>
+</li>
+<li>
+<p>Fußnoten:</p>
+<ul>
+<li>ttimeless fühlt sich verpflichtet, auf den <a href="https://requestforcomments.de/archives/320">RFC-Podcast zu verlinken</a></li>
+<li>David Kriesel: <a href="https://media.ccc.de/v/31c3_-_6558_-_de_-_saal_g_-_201412282300_-_traue_keinem_scan_den_du_nicht_selbst_gefalscht_hast_-_david_kriesel">&quot;Traue keinem Scan, den du nicht selbst gefälscht hast&quot;</a></li>
+</ul>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>
