@@ -22,7 +22,22 @@
       </span>
     </div>
   </nav>
-  <article><h1><a href="/thoughts/posts/golang-api-design.html" title="Permalink">[l]</a> Notes on API design in Go</h1>
+  <article><h1><a href="/thoughts/posts/my-standard-service-architecture.html" title="Permalink">[l]</a> My standard service architecture</h1>
+<p>I have been working in the IT industry for over 10 years, first in a pure developer position, then ever so slowly
+transitioning into an architect role. Over this time, experience with all the systems I have worked on has compounded
+into a recurring design template that I apply to most of my services. In this post, I will describe this architecture,
+working my way up from data model to component model to runtime environment, and provide justification for the principal
+design decisions. Finally, I will acknowledge and discuss some limitations of this design.</p>
+<p>The design presented here is mostly agnostic towards:</p>
+<ul>
+<li><em>which programming language is used</em>: My services are implemented in <a href="https://golang.org">Go</a>, but the architecture should also
+be applicable to most other languages. (As a caveat, if you are using an opinionated framework like Ruby on Rails, it
+is usually a bad idea to go against your framework’s opinions.)</li>
+<li><em>the <a href="https://en.wikipedia.org/wiki/Microservices">microservice</a>/<a href="https://en.wikipedia.org/wiki/Monolithic_system">monolith</a> distinction</em>: Most of my services happen to be
+microservices because of how <a href="https://github.com/sapcc">my team</a>’s general stack looks like. But you can also build a monolith from this
+template. In fact, some of its characteristics are influenced by a monolith that I helped maintain for some years.</li>
+</ul>
+<p class="more"><a href="/thoughts/posts/my-standard-service-architecture.html">Read more...</a></p></article><article><h1><a href="/thoughts/posts/golang-api-design.html" title="Permalink">[l]</a> Notes on API design in Go</h1>
 <p>At work, I have a working student who’s implementing some features in the various Golang applications that I build and maintain. I’m trying to pass some of my experience with real-world programming on to him, and <a href="https://github.com/sapcc/go-bits/pull/2">one particular pull request review</a> escalated into a blog post on API design, so I might as well share it here for archival purposes (and to fill the desolate wasteland that is my RSS feed).</p>
 <p>The concern of the pull request was to add a function to a utility library that implements exponential backoff. His proposed API looked like:</p>
 <pre><code class="language-go">//Retry takes a function (action) that returns an error, and two int64 values (x, y) as

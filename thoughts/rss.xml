@@ -4,7 +4,29 @@
   <link>https://xyrillian.de/thoughts/</link>
   <description>Personal blog of Stefan Majewsky</description>
   <language>en</language>
-  <lastBuildDate>Sun, 18 Sep 2022 18:02:48 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 18 Sep 2022 20:35:44 +0000</lastBuildDate>
+  <item>
+    <title>My standard service architecture</title>
+    <description>&lt;h1&gt;My standard service architecture&lt;/h1&gt;
+&lt;p&gt;I have been working in the IT industry for over 10 years, first in a pure developer position, then ever so slowly
+transitioning into an architect role. Over this time, experience with all the systems I have worked on has compounded
+into a recurring design template that I apply to most of my services. In this post, I will describe this architecture,
+working my way up from data model to component model to runtime environment, and provide justification for the principal
+design decisions. Finally, I will acknowledge and discuss some limitations of this design.&lt;/p&gt;
+&lt;p&gt;The design presented here is mostly agnostic towards:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;which programming language is used&lt;/em&gt;: My services are implemented in &lt;a href=&quot;https://golang.org&quot;&gt;Go&lt;/a&gt;, but the architecture should also
+be applicable to most other languages. (As a caveat, if you are using an opinionated framework like Ruby on Rails, it
+is usually a bad idea to go against your framework’s opinions.)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;the &lt;a href=&quot;https://en.wikipedia.org/wiki/Microservices&quot;&gt;microservice&lt;/a&gt;/&lt;a href=&quot;https://en.wikipedia.org/wiki/Monolithic_system&quot;&gt;monolith&lt;/a&gt; distinction&lt;/em&gt;: Most of my services happen to be
+microservices because of how &lt;a href=&quot;https://github.com/sapcc&quot;&gt;my team&lt;/a&gt;’s general stack looks like. But you can also build a monolith from this
+template. In fact, some of its characteristics are influenced by a monolith that I helped maintain for some years.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class=&quot;more&quot;&gt;&lt;a href=&quot;/thoughts/posts/my-standard-service-architecture.html&quot;&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description>
+    <link>https://xyrillian.de/thoughts/posts/my-standard-service-architecture.html</link>
+    <guid>https://xyrillian.de/id/thoughts/my-standard-service-architecture</guid>
+    <pubDate>Sun, 18 Sep 2022 18:46:49 +0000</pubDate>
+  </item>
   <item>
     <title>Notes on API design in Go</title>
     <description>&lt;h1&gt;Notes on API design in Go&lt;/h1&gt;

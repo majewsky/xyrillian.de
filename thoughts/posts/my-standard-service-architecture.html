@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My standard service architecture &ndash; Xyrillian Thoughts</title>
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml">
+  <meta property="article:modified_time" content="2022-09-18T18:46:49Z" /><meta property="article:published_time" content="2022-09-18T18:46:49Z" /><meta property="og:description" content="I have been working in the IT industry for over 10 years, first in a pure developer position, then ever so slowly
+transitioning into an architect role. Over this time, experience with all the systems I have worked on has compounded
+into a recurring design template that I apply to most of my services. In this post, I will describe this architecture,
+working my way up from data model to component model to runtime environment, and provide justification for the principal
+design decisions. Finally, I will acknowledge and discuss some limitations of this design." /><meta property="og:site_name" content="Xyrillian Thoughts" /><meta property="og:title" content="My standard service architecture" /><meta property="og:type" content="article" /><meta property="og:url" content="/thoughts/posts/my-standard-service-architecture.html" />
+</head>
+<body class="thoughts has-nav-top-card">
+  <div class="scroll-indicator"></div>
+  <nav class="top-card">
+    <div>
+      <a href="/thoughts/">
+        <img class="sitelogo" src="/res/logo-thoughts.svg" alt="Xyrillian Thoughts: Personal blog">
+      </a>
+      <span>
+        <a class="iconlink" href="/thoughts/sitemap.html"><i class="icon large sitemap" title="Sitemap"></i></a>
+        <a class="iconlink" href="/thoughts/rss.xml"><i class="icon large rss-square" title="RSS feed"></i></a>
+        <a class="iconlink" href="https://github.com/majewsky/xyrillian.de"><i class="icon large bug" title="Report a bug"></i></a>
+      </span>
+    </div>
+  </nav>
+  <main><h1>My standard service architecture</h1>
+<p>I have been working in the IT industry for over 10 years, first in a pure developer position, then ever so slowly
+transitioning into an architect role. Over this time, experience with all the systems I have worked on has compounded
+into a recurring design template that I apply to most of my services. In this post, I will describe this architecture,
+working my way up from data model to component model to runtime environment, and provide justification for the principal
+design decisions. Finally, I will acknowledge and discuss some limitations of this design.</p>
+<p>The design presented here is mostly agnostic towards:</p>
+<ul>
+<li><em>which programming language is used</em>: My services are implemented in <a href="https://golang.org">Go</a>, but the architecture should also
+be applicable to most other languages. (As a caveat, if you are using an opinionated framework like Ruby on Rails, it
+is usually a bad idea to go against your framework’s opinions.)</li>
+<li><em>the <a href="https://en.wikipedia.org/wiki/Microservices">microservice</a>/<a href="https://en.wikipedia.org/wiki/Monolithic_system">monolith</a> distinction</em>: Most of my services happen to be
+microservices because of how <a href="https://github.com/sapcc">my team</a>’s general stack looks like. But you can also build a monolith from this
+template. In fact, some of its characteristics are influenced by a monolith that I helped maintain for some years.</li>
+</ul>
+<h2>Data model</h2>
+<p>I have some very tiny services where I can get away with storing all data in <a href="https://en.wikipedia.org/wiki/Object_storage">object storage</a>, so no
+database deployment is needed. Since we have an <a href="https://openstack.org">OpenStack</a> installation anyway, <a href="https://wiki.openstack.org/wiki/Swift">OpenStack Swift</a>
+is the obvious choice.</p>
+<p>Even if I have a traditional database, large blobs still get offloaded into object storage, and the database will only
+hold a reference to the object. This keeps the database footprint nice and small, which speeds up both regular accesses
+as well as maintenance operations like backups and vacuums.</p>
+<p>When I do need to store structured data, my database of choice is <a href="https://www.postgresql.org/">PostgreSQL</a>. I do not have a very strong
+reason to prefer PostgreSQL over other RDBMS like <a href="https://mariadb.com/">MariaDB</a>, but there is a lot to like about it: It has decent
+tooling. It has a phenomenal documentation. And most importantly, it is just rock solid: I trust it to never lose any
+data and to always correctly enforce the constraints that I put in the schema. I do have some notes on PostgreSQL,
+though, and they will be discussed in the “Limitations” section below.</p>
+<p>Finally, and this one should be a no-brainer, but it does feel worth mentioning: Whenever my services write into
+PostgreSQL, all writes belonging to one change are wrapped in a transaction. Besides helping to avoid accidental
+inconsistencies, this also simplifies my deployment model: Most components can just be restarted whenever I want,
+without any grace periods or controlled-shutdown procedures. Any transactions that were in flight will just be dropped
+by the database, and when the component comes back up, it will just pick up where it left off. It is true that this
+causes some duplicate work since the new process needs to reproduce the progress of the killed process, but this is
+entirely outweighed by the reduced implementation complexity.</p>
+<h2>Component model</h2>
+<p>There are up to three components that are run and scaled separately: APIs, an observer, and optionally workers.</p>
+<h3>API component</h3>
+<p>As the name suggests, this component answers all requests coming in from outside. For my own services, the API is always
+<a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST-like</a>, so we are looking at an HTTP API handling GET/POST/PUT/DELETE requests with JSON payloads. But in
+principle, the type of protocol and payload does not matter. Care is taken to ensure that concurrent requests can be
+parallelized (with the database and object storage acting as synchronization points), so the API component can easily be
+scaled horizontally to fit the actual request load.</p>
+<p>Unlike the other components, the API process needs some extra logic for controlled shutdown: If a shutdown would just
+terminate the process right away, any unanswered API requests would have their respective connections closed, resulting
+in unexpected errors on the client side. To avoid such errors, we use a two-step graceful shutdown procedure:</p>
+<ol>
+<li>
+<p>When SIGINT or SIGTERM is sent to the API process, the signal handler will stall for 10 seconds before actually
+initiating the shutdown. This gives the loadbalancer in front of the API ample time to drop the process from its
+backend pool, so no new requests will be sent to it.</p>
+</li>
+<li>
+<p>After this first grace period, the API process will cease listening on its socket, and then wait up to 30 seconds for
+all remaining request handlers to complete. (Note that this step usually takes much less time since we will already
+have not received new requests for several seconds.)</p>
+</li>
+</ol>
+<h3>Observer component</h3>
+<ul>
+<li>self-healing job loops: reconciliation of outside facts with our internal truth</li>
+<li>objects have DB columns like <code>next_validation_at</code> and <code>validation_error_message</code>, earlier approach <code>validated_at</code> has drawbacks in query construction and schedule flexibility</li>
+<li>not horizontally scaled, simplifies implementation; but it is a choke point, therefore:</li>
+</ul>
+<h3>Worker component</h3>
+<ul>
+<li>horizontally scalable</li>
+<li>relies on <code>FOR UPDATE SKIP LOCKED</code>; apparently supported in MariaDB with InnoDB since 2021 <a href="https://mariadb.com/kb/en/changes-improvements-in-mariadb-106/">https://mariadb.com/kb/en/changes-improvements-in-mariadb-106/</a></li>
+</ul>
+<h2>Runtime environment</h2>
+<ul>
+<li>Docker (Alpine)
+<ul>
+<li>small images replicate faster</li>
+</ul>
+</li>
+<li>Kubernetes
+<ul>
+<li>API and workers as Deployment with rolling-update</li>
+<li>observer as Deployment with recreate</li>
+<li>nginx-ingress in front of API for LB and TLS termination</li>
+</ul>
+</li>
+<li>logging: container logs -&gt; ELK
+<ul>
+<li>usually rather silent except for errors</li>
+<li>request logs, incl. error messages on 5xx’s, and sometimes paper trail for background jobs to aid in investigations</li>
+</ul>
+</li>
+<li>monitoring: Prometheus
+<ul>
+<li>Prometheus metrics at application level: operation counters (both success and failure)</li>
+<li>Prometheus metrics at DB level (via postgres-exporter): job loop backlog, number of objects with job error messages</li>
+</ul>
+</li>
+</ul>
+<h2>Limitations</h2>
+<ul>
+<li>generally speaking: an architecture suited for “average everything”, no consideration for extreme loads
+<ul>
+<li>current load example: Keppel Frankfurt = 100000 req/hour</li>
+</ul>
+</li>
+<li>Postgres on Kubernetes with really dumb setup
+<ul>
+<li>“if it looks stupid and works, it ain’t stupid”</li>
+<li>problematic in case of high SLA or very high load</li>
+</ul>
+</li>
+<li>5xx results during DB restart
+<ul>
+<li>managed Postgres not an option because no cloud and strict data placement policies</li>
+</ul>
+</li>
+<li>Postgres connection limit
+<ul>
+<li>run a tight ship on connection budget</li>
+<li>pgbouncer is an option</li>
+</ul>
+</li>
+</ul>
+<ul class="timestamps"><li>Posted: Sun, 18 Sep 2022 18:46:49 UTC</li></p></main>
+  <aside class="bio-with-avatar">
+    <div>
+      <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I'm also on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
+      </p>
+      <p class="legal">Opinions expressed here are my own. Content is available under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license unless otherwise noted.</p>
+    </div>
+    <img src="/res/avatar.jpg" alt="My face">
+  </aside>
+  <footer class="legal">
+    <a href="/legal/en/">Imprint</a>
+  </footer>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+  <script async src="/res/scroll-indicator.js"></script>
+</body>
+</html>
