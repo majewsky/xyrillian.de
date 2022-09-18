@@ -4,7 +4,7 @@
   <link>https://xyrillian.de/thoughts/</link>
   <description>Personal blog of Stefan Majewsky</description>
   <language>en</language>
-  <lastBuildDate>Thu, 28 Feb 2019 16:06:57 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 18 Sep 2022 18:02:48 +0000</lastBuildDate>
   <item>
     <title>Notes on API design in Go</title>
     <description>&lt;h1&gt;Notes on API design in Go&lt;/h1&gt;
@@ -71,22 +71,6 @@ wondering: Can I really perceive a difference between 5 ms latency and 45 ms lat
     <link>https://xyrillian.de/thoughts/posts/latency-matters.html</link>
     <guid>https://xyrillian.de/id/thoughts/latency-matters</guid>
     <pubDate>Sun, 20 Aug 2017 19:02:45 +0000</pubDate>
-  </item>
-  <item>
-    <title>How to choose a gift for me</title>
-    <description>&lt;h1&gt;How to choose a gift for me&lt;/h1&gt;
-&lt;p&gt;I&#39;ve noticed that a lot of gifts people give to me do not really evoke the
-positive feelings that they are supposed to. This happens often enough to
-warrant a blog post, in which I go through different categories of
-gifts and present my subjective verdict on each of them.&lt;/p&gt;
-&lt;p&gt;I want to emphasize that this lament is not directed towards anyone in
-particular. However, there is a focus on types of gifts that are most commonly
-given by family members and close relatives, since that’s where most of the
-gift-giving happens.&lt;/p&gt;
-&lt;p class=&quot;more&quot;&gt;&lt;a href=&quot;/thoughts/posts/gift-guide.html&quot;&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description>
-    <link>https://xyrillian.de/thoughts/posts/gift-guide.html</link>
-    <guid>https://xyrillian.de/id/thoughts/gift-guide</guid>
-    <pubDate>Wed, 05 Jul 2017 12:30:17 +0000</pubDate>
   </item>
   <item>
     <title>How I run Certbot (as non-root and automated)</title>
