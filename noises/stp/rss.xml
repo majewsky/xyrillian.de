@@ -27,6 +27,100 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP026: Energieeffizienz</itunes:title>
+    <itunes:episode>26</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP026: Energieeffizienz</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Seit der Zeit von Konrad Zuse, der seine Rechenmaschinen mit Relais baute, hat sich viel getan. Nicht nur, was die Geschwindigkeit, sondern auch, was die Effizienz betrifft. Wir beleuchten heute einige jüngere Ereignisse dieser Entwicklung.</itunes:summary>
+    <description>Seit der Zeit von Konrad Zuse, der seine Rechenmaschinen mit Relais baute, hat sich viel getan. Nicht nur, was die Geschwindigkeit, sondern auch, was die Effizienz betrifft. Wir beleuchten heute einige jüngere Ereignisse dieser Entwicklung.</description>
+    <content:encoded>&lt;p&gt;Seit der Zeit von Konrad Zuse, der seine Rechenmaschinen mit Relais baute, hat sich viel getan. Nicht nur, was die Geschwindigkeit, sondern auch, was die Effizienz betrifft. Wir beleuchten heute einige jüngere Ereignisse dieser Entwicklung.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Wortklärung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;effektiv&amp;quot;: die Fähigkeit besitzend, eine Aufgabe erfolgreich zu erledigen&lt;/li&gt;
+&lt;li&gt;&amp;quot;effizient&amp;quot;: fähig, viel Leistung in Relation zum Aufwand zu erbringen&lt;/li&gt;
+&lt;li&gt;Leitsatz: &amp;quot;Der einzige Weg, ein Programm effizienter zu machen, ist, weniger zu tun.&amp;quot; (Quelle unklar)&lt;/li&gt;
+&lt;li&gt;Welche Wege gibt es, weniger zu tun?&lt;/li&gt;
+&lt;li&gt;hängt vom Optimierungsziel ab: Speicherverbrauch vs. Zeitverbrauch vs. Energieverbrauch vs. Kosten bei Zugriff auf externe Systeme -&amp;gt; Analogie zum Navigationssystem im Auto&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Cache&#34;&gt;Caching&lt;/a&gt;: Ergebnisse wiederverwenden&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Abruf aus dem Arbeitsspeicher ist effizienter (in Zeit und Energie) als Abruf aus dem Netzwerk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Miniaturisierung&#34;&gt;Miniaturisierung&lt;/a&gt;: weniger Elektronen durch die Gegend schaufeln&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;viele Zahlen für wenig Wärme&amp;quot;&lt;/li&gt;
+&lt;li&gt;Transistoren sind ähnlich wie Relais-Schalter, die durch Auffüllen und Leeren einer Elektronenfalle umschalten&lt;/li&gt;
+&lt;li&gt;kleinere Transistoren = weniger Elektronen schaufeln = weniger Stromverbrauch (und weniger Abwärme)&lt;/li&gt;
+&lt;li&gt;zeitlicher Verlauf der &lt;a href=&#34;https://de.wikipedia.org/wiki/Strukturgr%C3%B6%C3%9Fe&#34;&gt;Strukturgrößen&lt;/a&gt; anhand von x86-Prozessoren (mit bildlichem Vergleich zu mechanischen Schaltern im Maßstab 1.000.000:1)
+&lt;ul&gt;
+&lt;li&gt;1971 (Intel 4004): 10µm (vgl. 10m = nur im Cartoon, etwa 3-4 Etagen hoch)&lt;/li&gt;
+&lt;li&gt;1993 (Intel Pentium): 800nm (vgl. 80cm = Weichenhebel in manuellem Stellwerk, kleiner Scherenstromabnehmer)&lt;/li&gt;
+&lt;li&gt;2007 (ohne Produktbezeichnung): 65nm (vgl. 65mm = Lichtschalter)&lt;/li&gt;
+&lt;li&gt;2019 (AMD Ryzen): 7nm (vgl. 7mm = Kippschalter an der Schreibtischlampe)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Heterogeneous_computing&#34;&gt;heterogene CPU-Architektur&lt;/a&gt;, z.B. &amp;quot;big.LITTLE&amp;quot; bei ARM&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;kleine CPU-Kerne (mit geringem Stromverbrauch) für Routinearbeit und Hintergrundprozesse&lt;/li&gt;
+&lt;li&gt;große CPU-Kerne (die meistens schlafen) für energieintensive Anwendungen (3D-Grafik bei Spielen, Enkodierung/Dekodierung bei Videoanrufen, etc.)&lt;/li&gt;
+&lt;li&gt;außerdem Betrieb der kleinen Kerne sehr stoßartig: lieber kurz mit hoher Taktfrequenz und dann gleich wieder schlafen als permanent langsam laufen lassen (Randbemerkung: anders als z.B. bei Verbrennungsmotoren, aber Parallelen zu Elektromotoren)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Zusammenhang damit: &amp;quot;Aufwachverschmelzung&amp;quot; (z.B. systemd.timer)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee: für geplante Hintergrundaktivitäten die Takte so verschieben, dass möglichst viele Aktivitäten gleichzeitig ausgeführt werden und die CPU-Kerne möglichst selten aufwachen müssen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ebenfalls im Zusammenhang damit: Push Gateways auf iOS/Android&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Netzwerkverbindungen = Energieverbrauch (für das Funken und das Verarbeiten in der CPU)&lt;/li&gt;
+&lt;li&gt;Netzwerkverbindung aufhalten = Energieverbrauch (für Keepalive-Pakete)&lt;/li&gt;
+&lt;li&gt;Idee: statt einer Netzwerkverbindung pro Messenger-App eine zentrale Netzwerkverbindung zu einem zentralen Relay-Server vom Betriebssystem-Anbieter&lt;/li&gt;
+&lt;li&gt;aber: aus Datenschutzsicht problematisch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Xyrills Abendgedanken: Wie kann es sein, dass alles soviel effizienter ist, aber wir machen nicht mehr damit? (siehe klassische Floskel: &amp;quot;modernes Smartphone ist mächtiger als die Computer in der Apollo-Kapsel&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wir erwarten gleichzeitig immer mehr von den Geräten (z.B. Grafikqualität: gleich komplizierte App, aber früher auf 80x25-Terminal und heute auf Full-HD-Bildschirm)&lt;/li&gt;
+&lt;li&gt;vgl. &lt;a href=&#34;https://de.wikipedia.org/wiki/Jevons-Paradoxon&#34;&gt;Jevons-Paradoxon&lt;/a&gt;: mehr Effizienz ermöglicht mehr Anwendungen, sodass letztlich der Energieverbrauch gleich bleibt oder sogar steigt&lt;/li&gt;
+&lt;li&gt;waghalsige Prognose: viel mehr E-Ink-Displays, wenn Energieeffizienz wichtiger wird&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:58" title="Wortklärung"  />
+          <chapter start="00:12:09" title="Cashing"  />
+          <chapter start="00:14:28" title="Transistoren: die Kurzfassung"  />
+          <chapter start="00:19:32" title="Miniaturisierung"  />
+          <chapter start="00:28:34" title="heterogene CPU-Architektur"  />
+          <chapter start="00:37:34" title="Aufwachverschmelzung"  />
+          <chapter start="00:41:38" title="Push Gateways"  />
+          <chapter start="00:48:24" title="Xyrills Abendgedanken"  />
+      </chapters>
+      <enclosure length="59256313" url="https://dl.xyrillian.de/noises/stp-026-energieeffizienz.mp3" type="audio/mpeg"/>
+      <enclosure length="36436290" url="https://dl.xyrillian.de/noises/stp-026-energieeffizienz.ogg" type="audio/ogg"/>
+      <enclosure length="22177301" url="https://dl.xyrillian.de/noises/stp-026-energieeffizienz.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/026-energieeffizienz/</guid>
+    <pubDate>Thu, 06 Oct 2022 18:50:00 GMT</pubDate>
+    <itunes:duration>61:22</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP025: Datenkompression</itunes:title>
     <itunes:episode>25</itunes:episode>
     <itunes:season>1</itunes:season>

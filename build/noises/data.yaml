@@ -667,3 +667,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 26
+    slug: 026-energieeffizienz
+    title: Energieeffizienz
+    pubtime: 1665082200 # 2022-10-06
+
+    markdown:
+      description: |
+        Seit der Zeit von Konrad Zuse, der seine Rechenmaschinen mit Relais baute, hat sich viel getan. Nicht nur, was die Geschwindigkeit, sondern auch, was die Effizienz betrifft. Wir beleuchten heute einige jüngere Ereignisse dieser Entwicklung.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
