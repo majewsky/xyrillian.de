@@ -680,3 +680,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 27
+    slug: 027-verteilte-systeme
+    title: Verteilte Systeme
+    pubtime: 1666823700 # 2022-10-27
+
+    markdown:
+      description: |
+        In dieser Episode bringt Xyrill uns versprengte Systeme näher. Dabei erfahren wir auch, dass Dinge, die wir als Grundvoraussetzung ansehen würden, bei genauerer Betrachtung gar nicht so selbstverständlich sind.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
