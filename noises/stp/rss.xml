@@ -27,6 +27,104 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP028: Autokonfiguration</itunes:title>
+    <itunes:episode>28</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP028: Autokonfiguration</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wenn Sie diese Nachricht lesen, hat sich diese Folge automatisch in ihren Podcast-Player konfiguriert. Heute geht es darum, warum es heute nicht mehr so kompliziert ist, einen Computer oder ein Netzwerk einzurichten.</itunes:summary>
+    <description>Wenn Sie diese Nachricht lesen, hat sich diese Folge automatisch in ihren Podcast-Player konfiguriert. Heute geht es darum, warum es heute nicht mehr so kompliziert ist, einen Computer oder ein Netzwerk einzurichten.</description>
+    <content:encoded>&lt;p&gt;Wenn Sie diese Nachricht lesen, hat sich diese Folge automatisch in ihren Podcast-Player konfiguriert. Heute geht es darum, warum es heute nicht mehr so kompliziert ist, einen Computer oder ein Netzwerk einzurichten.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Automatisierung:&lt;/strong&gt; nach DIN V 19233 definiert als &amp;quot;das Ausrüsten einer Einrichtung, sodass sie ganz oder teilweise ohne Mitwirkung des Menschen bestimmungsgemäß arbeitet&amp;quot; (&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Automatisierung&amp;amp;oldid=222194579#Arten&#34;&gt;Quelle: Wikipedia&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Was heißt &amp;quot;bestimmungsgemäß&amp;quot;? (siehe 33C3-Motto &amp;quot;Works for me&amp;quot;; siehe ebenfalls &amp;quot;Overly-Clever-Syndrom&amp;quot;)&lt;/li&gt;
+&lt;li&gt;heute feiern wir Autokonfiguration, die tatsächlich funktioniert&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autokonfiguration:&lt;/strong&gt; automatisierte Führung eines neu entstehenden Systems in einen arbeitsfähigen Zustand&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug zu STP020 (Bootstrap): Hardware-Erkennung während (und nach) dem Bootvorgang&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;früher: Betriebssysteme spezifisch für einzelne Computer-Modellreihen mit gleichartiger Hardware&lt;/li&gt;
+&lt;li&gt;heute: Betriebssysteme für ganze Kategorien von Computern, die oftmals vom Anwender selbst aus Komponenten zusammengestellt werden können&lt;/li&gt;
+&lt;li&gt;während des Bootvorgangs Abfrage der vorliegenden Hardware-Komponenten durch das Betriebssystem (siehe Xyrills Hardware-Upgrade)&lt;/li&gt;
+&lt;li&gt;nach dem Bootvorgang teilweise auch Neuerkennung möglich (Hotswap, USB, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ethernet&amp;amp;oldid=223634192&#34;&gt;Ethernet&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ausführliche Beschreibung siehe später; Grundprinzip: Netzwerk aus Switches, an denen die Endgeräte hängen&lt;/li&gt;
+&lt;li&gt;Autokonfiguration 1: früher separate Kabel für Verbindungen zu Switches (Patch-Kabel) und Direktverbindungen (Cross-Kabel), heute automatische Erkennung mittels &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Medium_Dependent_Interface&amp;amp;oldid=202484104#Auto_MDI-X&#34;&gt;Auto MDI-X&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;ähnlich dazu automatische Orientierungs-Erkennung in USB-C-Steckverbindungen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Autokonfiguration 2: früher Switches nicht in Schleifen verschaltbar (Broadcast-Stürme z.B. wegen ARP und DHCP)&lt;/li&gt;
+&lt;li&gt;heute automatische Bildung eines &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Spanning_Tree_Protocol&amp;amp;oldid=224259716&#34;&gt;Spannbaumes&lt;/a&gt; für eindeutiges Routing von Frames&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;apropos Ethernet: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Address_Resolution_Protocol&amp;amp;oldid=224525810&#34;&gt;ARP (Address Resolution Protocol)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Identifikation im Internet (Layer 3-7) durch IP-Adressen, aber in lokalen Netzen (Layer 1-2) durch adapterspezifische MAC-Adressen&lt;/li&gt;
+&lt;li&gt;IP-Adressen können Computer sich im Prinzip auch einfach selber geben, grundsätzlich keine zentrale Vergabe&lt;/li&gt;
+&lt;li&gt;ARP: Welche MAC-Adresse gehört zur gewünschten IP-Adresse?&lt;/li&gt;
+&lt;li&gt;MAC-Adressen und ARP gibt&#39;s auch im WiFi...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;apropos Ethernet und WiFi: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Dynamic_Host_Configuration_Protocol&amp;amp;oldid=224991751&#34;&gt;DHCP (Dynamic Host Configuration Protocol)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;grundsätzlich Selbstwahl der IP möglich, aber man muss im richtigen Netzbereich sein und es darf keine Kollisionen geben&lt;/li&gt;
+&lt;li&gt;meist bessere Lösung: automatische IP-Vergabe durch eine zentrale Stelle (Clients können IP-Adressen für eine gewisse Zeit pachten)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;apropos DHCP: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Trivial_File_Transfer_Protocol&amp;amp;oldid=224254220&#34;&gt;TFTP (Trivial File Transfer Protocol)&lt;/a&gt; -&amp;gt; per DHCP automatisches Ankündigen von verfügbaren Betriebssystem-Images, Abholen der Images über TFTP für Booten mit leerer Festplatte&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;siehe auch: &lt;a href=&#34;https://discussions.apple.com/thread/7645024?answerId=7645024021#7645024021&#34;&gt;Installieren von macOS auf Apple Macs mit leerer Festplatte via Internet Recovery&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IPv6 (Router Advertisement etc.) &lt;a href=&#34;https://requestforcomments.de/archives/412&#34;&gt;siehe RFC-Podcast&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Autokonfiguration im Cloud-Computing-Umfeld&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;virtuelle Maschinen in der Cloud werden aus Abbildern (Images) erzeugt und müssen sich dann an die Laufzeitumgebung (IP-Adressen, verfügbare Netzwerk-Festplatten, etc.) anpassen&lt;/li&gt;
+&lt;li&gt;von Cloud-Seite: Metadata-Service meist auf der magischen IP-Adresse &lt;code&gt;169.254.169.254&lt;/code&gt; (siehe z.B. &lt;a href=&#34;https://docs.openstack.org/nova/yoga/user/metadata.html#metadata-openstack-format&#34;&gt;Dokumentation bei OpenStack&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;von VM-Seite: Initialisierung mittels dieser Metadaten mit z.B. &lt;a href=&#34;https://cloudinit.readthedocs.io/en/latest/index.html&#34;&gt;cloud-init&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Präludium"  />
+          <chapter start="00:01:33" title="Definition"  />
+          <chapter start="00:12:21" title="Hardware-Erkennung"  />
+          <chapter start="00:20:00" title="Ethernet"  />
+          <chapter start="00:21:22" title="Exkurs: USB"  />
+          <chapter start="00:24:26" title="Zurück zum Ethernet: Patch- vs Cross-Kabel"  />
+          <chapter start="00:28:55" title="Ethernet: Spanning Tree Protocol"  />
+          <chapter start="00:37:30" title="Rant: Ethernet vs WIFI"  />
+          <chapter start="00:42:57" title="ARP (Address Resolution Protocol"  />
+          <chapter start="00:48:19" title="DHCP"  />
+          <chapter start="00:56:35" title="apropos DHCP: TFTP Trivial File Transfer Protocol"  />
+          <chapter start="01:03:38" title="IPv6"  />
+          <chapter start="01:05:00" title="Autokonfiguration im Cloud-Computing-Umfeld"  />
+      </chapters>
+      <enclosure length="67469639" url="https://dl.xyrillian.de/noises/stp-028-autokonfiguration.mp3" type="audio/mpeg"/>
+      <enclosure length="41766229" url="https://dl.xyrillian.de/noises/stp-028-autokonfiguration.ogg" type="audio/ogg"/>
+      <enclosure length="25368509" url="https://dl.xyrillian.de/noises/stp-028-autokonfiguration.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/028-autokonfiguration/</guid>
+    <pubDate>Thu, 17 Nov 2022 16:05:00 GMT</pubDate>
+    <itunes:duration>69:56</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP027: Verteilte Systeme</itunes:title>
     <itunes:episode>27</itunes:episode>
     <itunes:season>1</itunes:season>

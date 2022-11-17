@@ -693,3 +693,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 28
+    slug: 028-autokonfiguration
+    title: Autokonfiguration
+    pubtime: 1668701100 # 2022-11-17
+
+    markdown:
+      description: |
+        Wenn Sie diese Nachricht lesen, hat sich diese Folge automatisch in ihren Podcast-Player konfiguriert. Heute geht es darum, warum es heute nicht mehr so kompliziert ist, einen Computer oder ein Netzwerk einzurichten.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
