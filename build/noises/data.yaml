@@ -706,3 +706,18 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 29
+    slug: 029-algorithmische-komplexitaet
+    title: Algorithmische Komplexität
+    pubtime: 1670501700 # 2022-12-08
+
+    markdown:
+      description: |
+        In dieser Episode möchte Xyrill gern eine Vorlesung halten über ein Thema, das in der Informatik zu den Grundlagen für das erste Semester gehört.
+        Zwischendurch ist ttimeless etwas schwer von Begriff. Zu hoffen ist, dass ihr trotzdem durchhaltet.
+        Und haltet ein paar Skatkarten bereit!
+      shownotes: true # in file
+
+    music: *music-like-stp-000

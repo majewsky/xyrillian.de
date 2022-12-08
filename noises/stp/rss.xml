@@ -27,6 +27,98 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP029: Algorithmische Komplexität</itunes:title>
+    <itunes:episode>29</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP029: Algorithmische Komplexität</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>In dieser Episode möchte Xyrill gern eine Vorlesung halten über ein Thema, das in der Informatik zu den Grundlagen für das erste Semester gehört.
+Zwischendurch ist ttimeless etwas schwer von Begriff. Zu hoffen ist, dass ihr trotzdem durchhaltet.
+Und haltet ein paar Skatkarten bereit!</itunes:summary>
+    <description>In dieser Episode möchte Xyrill gern eine Vorlesung halten über ein Thema, das in der Informatik zu den Grundlagen für das erste Semester gehört.
+Zwischendurch ist ttimeless etwas schwer von Begriff. Zu hoffen ist, dass ihr trotzdem durchhaltet.
+Und haltet ein paar Skatkarten bereit!</description>
+    <content:encoded>&lt;p&gt;In dieser Episode möchte Xyrill gern eine Vorlesung halten über ein Thema, das in der Informatik zu den Grundlagen für das erste Semester gehört.
+Zwischendurch ist ttimeless etwas schwer von Begriff. Zu hoffen ist, dass ihr trotzdem durchhaltet.
+Und haltet ein paar Skatkarten bereit!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Komplexität&lt;/strong&gt;: Ressourcenbedarf eines Algorithmus (Zeitkomplexität, Platzkomplexität; vielleicht auch Kostenkomplexität etc.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Forschungsgegenstand der Komplexitätstheorie&lt;/li&gt;
+&lt;li&gt;hier hauptsächlich Zeitkomplexität&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;einfaches Beispielproblem: &amp;quot;Gegeben ist eine sortierte Liste von Wörtern (Schlagwörter im Wörterbuch). Finde ein bestimmtes Wort.&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;naive Idee: jedes Wort nacheinander anschauen -&amp;gt; lineare Laufzeit (Verdopplung der Wörtermenge verdoppelt die zu erwartende Suchzeit)&lt;/li&gt;
+&lt;li&gt;kluge Idee: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Bisektion&amp;amp;oldid=194714676&#34;&gt;Bisektion&lt;/a&gt; -&amp;gt; logarithmische Laufzeit (Verdopplung der Wörtermenge erfordert nur einen zusätzlichen Schritt)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beschreibung von Komplexität: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Landau-Symbole&amp;amp;oldid=217959469&#34;&gt;&lt;strong&gt;Landau-Symbole&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wichtigste Form: &lt;code&gt;f = O(g)&lt;/code&gt; heißt, dass &lt;code&gt;f&lt;/code&gt; &amp;quot;nicht wesentlich schneller als &lt;code&gt;g&lt;/code&gt; wächst (sprich: &lt;code&gt;f(n)/g(n)&lt;/code&gt; bleibt beschränkt, wenn &lt;code&gt;n -&amp;gt; ∞&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Beispiel: naive Suche über eine Liste von &lt;code&gt;n&lt;/code&gt; Elementen hat eine Laufzeit in &lt;code&gt;O(n)&lt;/code&gt;, Bisektion hat eine Laufzeit in &lt;code&gt;O(log n)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;etwas komplexeres Beispiel: Sortieralgorithmen (&amp;quot;Gegeben ist eine Liste von Zahlen/Wörtern/etc. Sortiere diese Liste.&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Live-Beispiel: Skatkarten mischen und dann sortieren -&amp;gt; Auf welche Art und Weise sortieren wir intuitiv?&lt;/li&gt;
+&lt;li&gt;Sortieralgorithmen auf Computern: zwei Grundbausteine
+&lt;ul&gt;
+&lt;li&gt;Vergleich von zwei Elementen&lt;/li&gt;
+&lt;li&gt;Tauschen von zwei Elementen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;anhand von Skatkarten diskutierbar:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Insertionsort&amp;amp;oldid=222921729&#34;&gt;Insertionsort&lt;/a&gt;: &lt;code&gt;O(n^2)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Quicksort&amp;amp;oldid=224184691&#34;&gt;Quicksort&lt;/a&gt;: &lt;code&gt;O(n log n)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Mergesort&amp;amp;oldid=223738956&#34;&gt;Mergesort&lt;/a&gt;: &lt;code&gt;O(n log n)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;wünschenswerte Eigenschaften:
+&lt;ul&gt;
+&lt;li&gt;Lokalität (&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Timsort&amp;amp;oldid=217156701&#34;&gt;Timsort&lt;/a&gt;!, siehe STP007)&lt;/li&gt;
+&lt;li&gt;Stabilität (Mergesort!)&lt;/li&gt;
+&lt;li&gt;Codegröße (Quicksort!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schauempfehlung (mit Epilepsie-Warnung): &lt;a href=&#34;https://www.youtube.com/watch?v=8MsTNqK3o_w&#34;&gt;Visualisierung verschiedener Sortieralgorithmen&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Bacon-Zahl&amp;amp;oldid=214690502&#34;&gt;Bacon-Zahl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Erd%C5%91s-Zahl&amp;amp;oldid=222414205&#34;&gt;Erdős-Zahl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://czep.net/weblog/52cards.html&#34;&gt;How large is 52 factorial?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:03:39" title="Was ist Komplexität?"  />
+          <chapter start="00:11:40" title="einfaches Beispielproblem: Suche in einer sortierten Liste"  />
+          <chapter start="00:22:34" title="Beschreibung von Komplexität: Landau-Symbole"  />
+          <chapter start="00:25:40" title="komplexeres Beispiel: Sortieralgorithmen"  />
+          <chapter start="00:58:15" title="Linkempfehlungen"  />
+      </chapters>
+      <enclosure length="63782806" url="https://dl.xyrillian.de/noises/stp-029-algorithmische-komplexitaet.mp3" type="audio/mpeg"/>
+      <enclosure length="39941954" url="https://dl.xyrillian.de/noises/stp-029-algorithmische-komplexitaet.ogg" type="audio/ogg"/>
+      <enclosure length="24493270" url="https://dl.xyrillian.de/noises/stp-029-algorithmische-komplexitaet.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/029-algorithmische-komplexitaet/</guid>
+    <pubDate>Thu, 08 Dec 2022 12:15:00 GMT</pubDate>
+    <itunes:duration>66:05</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP028: Autokonfiguration</itunes:title>
     <itunes:episode>28</itunes:episode>
     <itunes:season>1</itunes:season>

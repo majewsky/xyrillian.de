@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algorithmische Komplexität - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #29 vom 8. Dezember 2022</h2>
+    <h1>Algorithmische Komplexität</h1>
+      <p>In dieser Episode möchte Xyrill gern eine Vorlesung halten über ein Thema, das in der Informatik zu den Grundlagen für das erste Semester gehört.
+Zwischendurch ist ttimeless etwas schwer von Begriff. Zu hoffen ist, dass ihr trotzdem durchhaltet.
+Und haltet ein paar Skatkarten bereit!</p>
+      <p><strong>Länge:</strong> 66:05 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-029-algorithmische-komplexitaet.mp3" type="audio/mpeg">
+        <source src="/dl/stp-029-algorithmische-komplexitaet.ogg" type="audio/ogg">
+        <source src="/dl/stp-029-algorithmische-komplexitaet.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="219">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="219" data-end="700">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">03:39</span>
+        <span class="chapter-title">Was ist Komplexität?</span>
+      </div>
+      <div class="chapter" data-start="700" data-end="1354">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">11:40</span>
+        <span class="chapter-title">einfaches Beispielproblem: Suche in einer sortierten Liste</span>
+      </div>
+      <div class="chapter" data-start="1354" data-end="1540">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">22:34</span>
+        <span class="chapter-title">Beschreibung von Komplexität: Landau-Symbole</span>
+      </div>
+      <div class="chapter" data-start="1540" data-end="3495">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">25:40</span>
+        <span class="chapter-title">komplexeres Beispiel: Sortieralgorithmen</span>
+      </div>
+      <div class="chapter" data-start="3495" data-end="3965.703">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">58:15</span>
+        <span class="chapter-title">Linkempfehlungen</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-029-algorithmische-komplexitaet.mp3">MP3</a> (60,8 MiB)</li>
+          <li><a href="/dl/stp-029-algorithmische-komplexitaet.ogg">Ogg Vorbis</a> (38,1 MiB)</li>
+          <li><a href="/dl/stp-029-algorithmische-komplexitaet.opus">Opus</a> (23,4 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p><strong>Komplexität</strong>: Ressourcenbedarf eines Algorithmus (Zeitkomplexität, Platzkomplexität; vielleicht auch Kostenkomplexität etc.)</p>
+<ul>
+<li>Forschungsgegenstand der Komplexitätstheorie</li>
+<li>hier hauptsächlich Zeitkomplexität</li>
+</ul>
+</li>
+<li>
+<p>einfaches Beispielproblem: &quot;Gegeben ist eine sortierte Liste von Wörtern (Schlagwörter im Wörterbuch). Finde ein bestimmtes Wort.&quot;</p>
+<ul>
+<li>naive Idee: jedes Wort nacheinander anschauen -&gt; lineare Laufzeit (Verdopplung der Wörtermenge verdoppelt die zu erwartende Suchzeit)</li>
+<li>kluge Idee: <a href="https://de.wikipedia.org/w/index.php?title=Bisektion&amp;oldid=194714676">Bisektion</a> -&gt; logarithmische Laufzeit (Verdopplung der Wörtermenge erfordert nur einen zusätzlichen Schritt)</li>
+</ul>
+</li>
+<li>
+<p>Beschreibung von Komplexität: <a href="https://de.wikipedia.org/w/index.php?title=Landau-Symbole&amp;oldid=217959469"><strong>Landau-Symbole</strong></a></p>
+<ul>
+<li>wichtigste Form: <code>f = O(g)</code> heißt, dass <code>f</code> &quot;nicht wesentlich schneller als <code>g</code> wächst (sprich: <code>f(n)/g(n)</code> bleibt beschränkt, wenn <code>n -&gt; ∞</code>)</li>
+<li>Beispiel: naive Suche über eine Liste von <code>n</code> Elementen hat eine Laufzeit in <code>O(n)</code>, Bisektion hat eine Laufzeit in <code>O(log n)</code></li>
+</ul>
+</li>
+<li>
+<p>etwas komplexeres Beispiel: Sortieralgorithmen (&quot;Gegeben ist eine Liste von Zahlen/Wörtern/etc. Sortiere diese Liste.&quot;)</p>
+<ul>
+<li>Live-Beispiel: Skatkarten mischen und dann sortieren -&gt; Auf welche Art und Weise sortieren wir intuitiv?</li>
+<li>Sortieralgorithmen auf Computern: zwei Grundbausteine
+<ul>
+<li>Vergleich von zwei Elementen</li>
+<li>Tauschen von zwei Elementen</li>
+</ul>
+</li>
+<li>anhand von Skatkarten diskutierbar:
+<ul>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Insertionsort&amp;oldid=222921729">Insertionsort</a>: <code>O(n^2)</code></li>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Quicksort&amp;oldid=224184691">Quicksort</a>: <code>O(n log n)</code></li>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Mergesort&amp;oldid=223738956">Mergesort</a>: <code>O(n log n)</code></li>
+</ul>
+</li>
+<li>wünschenswerte Eigenschaften:
+<ul>
+<li>Lokalität (<a href="https://de.wikipedia.org/w/index.php?title=Timsort&amp;oldid=217156701">Timsort</a>!, siehe STP007)</li>
+<li>Stabilität (Mergesort!)</li>
+<li>Codegröße (Quicksort!)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Schauempfehlung (mit Epilepsie-Warnung): <a href="https://www.youtube.com/watch?v=8MsTNqK3o_w">Visualisierung verschiedener Sortieralgorithmen</a></p>
+</li>
+<li>
+<p>im Gespräch erwähnt:</p>
+<ul>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Bacon-Zahl&amp;oldid=214690502">Bacon-Zahl</a></li>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Erd%C5%91s-Zahl&amp;oldid=222414205">Erdős-Zahl</a></li>
+<li><a href="https://czep.net/weblog/52cards.html">How large is 52 factorial?</a></li>
+</ul>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>
