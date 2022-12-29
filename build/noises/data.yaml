@@ -721,3 +721,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 30
+    slug: 030-arbeitsalltag-in-der-it
+    title: Arbeitsalltag in der IT
+    pubtime: 1672317900 # 2022-12-29
+
+    markdown:
+      description: |
+        In dieser etwas länger geratenen Episode sricht Xyrill über seinen Alltag und den seiner Kollegen, Unterstellten und Vorgesetzten.
+        Derweil darf ttimeless darf derweil munter drauflosraten, womit diese Leute denn so ihren Alltag verbringen (zumindest den professionellen).
+      shownotes: true # in file
+
+    music: *music-like-stp-000

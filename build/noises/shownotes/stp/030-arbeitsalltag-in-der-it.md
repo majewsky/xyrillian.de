@@ -1,0 +1,39 @@
+- Ausgangsfrage: "Ist Programmieren eigentlich ein Handwerk, eine Kunst oder eine Wissenschaft?"
+    - vgl. [Artes mechanicae](https://de.wikipedia.org/w/index.php?title=Artes_mechanicae&oldid=219632496 ) und [Artes liberales](https://de.wikipedia.org/w/index.php?title=Sieben_freie_K%C3%BCnste&oldid=227043485 )
+    - im Gespräch erwähnt: [xkcd 1205](https://xkcd.com/1205/ )
+    - Vergleich: Industrie (effiziente Massenfertigung) vs. Handwerk (Nutzer der Industrieprodukte, Lieferant der Industrieanlagen) -> These: Programmieren als Manufakturbetrieb
+    - Berufskrankheit: [Hochstapler-Syndrom](https://de.wikipedia.org/w/index.php?title=Hochstapler-Syndrom&oldid=224109737 )
+        - These: Internet verschafft den fähigsten Leuten sehr viel Sichtbarkeit und schafft Gelegenheit, sich relativ dazu inadäquat zu fühlen
+        - These: Grund ist die Abwesenheit festgelegter Berufsbilder und Ausbildungsgänge (vgl. Lehre und Meisterschule im Handwerk, Studium im Ingenieurwesen, Staatsexamen in Jura/Medizin)
+
+- grundsätzliche Gewerke in der IT
+    - technische Disziplinen
+        - [Software-Entwickler\*in](https://de.wikipedia.org/w/index.php?title=Softwareentwickler&oldid=224301831 )
+        - [Software-Architekt\*in](https://de.wikipedia.org/w/index.php?title=Softwarearchitekt&oldid=218525463 )
+        - [Tester\*in](https://de.wikipedia.org/w/index.php?title=Softwaretest&oldid=226000742 )
+            - im Gespräch erwähnt: [Pentaradio zu Resilienz](https://c3d2.de/news/pentaradio24-20210824.html )
+        - [Systemadministrator\*in](https://de.wikipedia.org/w/index.php?title=Systemadministrator&oldid=226131321 ): siehe auch [DevOps](https://de.wikipedia.org/w/index.php?title=DevOps&oldid=226542249 )
+        - [Kundendienst](https://de.wikipedia.org/w/index.php?title=Support_(Dienstleistung)&oldid=224980821 ): Level 1/2/3
+            - im Gespräch erwähnt: [xkcd 806](https://xkcd.com/806/ )
+        - Übersetzer\*in (siehe STP017)
+    - Designdisziplinen
+        - bei fast allen Applikationen: UI-Designer\*in
+        - in der Spieleentwicklung: Spieldesign, Leveldesign, Assetdesign
+    - Management-Disziplinen
+        - Projekt-Manager\*in
+        - Release-Manager\*in
+        - Scrum Master\*in
+
+- ["Gesetze" der Softwareentwicklung](https://www.netmeister.org/blog/software-engineering-laws.html )
+    - Conway's Law: "Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure."
+    - Brooks's Law: "Adding manpower to a late software project makes it later."
+    - Zawinski's Law: "Every program attempts to expand until it can send mail. Those programs which cannot so expand are replaced by ones which can." (heute wahrscheinlich eher "until it contains a web server")
+    - Parkinson's Law: "Work expands so as to fill the time available for its completion."
+    - Pareto's Fallacy: "When you're 80% done, you think you only have 20% left."
+    - Eagleson's Law: "Any code of your own that you haven't looked at for six or more months might as well have been written by someone else."
+    - Iceberg Fallacy: "The cost of development of a new software product is the only ~25% of the total cost of ownership management sees and budgets for."
+    - The LGTM Dilemma: "If you want to quickly ship a 10 line code change, hide it in a 1500 line pull request."
+
+- Lesetipp: ["Everything Easy is Hard Again"](https://frankchimero.com/blog/2018/everything-easy/ )
+    - Money Quote: "I wonder if I have twenty years of experience making websites, or if it is really five years of experience, repeated four times."
+    - Xyrills Beobachtung: Die Branche (selbst die Universitäten!) rennt viel zu sehr Trends hinterher bzw. steckt zu sehr im selbst propagierten Novelty Bias fest. Wir haben noch nicht hinreichend die unveränderlichen Prinzipien destilliert (bzw. als solche erkannt).

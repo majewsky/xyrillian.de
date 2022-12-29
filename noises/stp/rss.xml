@@ -27,6 +27,120 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP030: Arbeitsalltag in der IT</itunes:title>
+    <itunes:episode>30</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP030: Arbeitsalltag in der IT</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>In dieser etwas länger geratenen Episode sricht Xyrill über seinen Alltag und den seiner Kollegen, Unterstellten und Vorgesetzten.
+Derweil darf ttimeless darf derweil munter drauflosraten, womit diese Leute denn so ihren Alltag verbringen (zumindest den professionellen).</itunes:summary>
+    <description>In dieser etwas länger geratenen Episode sricht Xyrill über seinen Alltag und den seiner Kollegen, Unterstellten und Vorgesetzten.
+Derweil darf ttimeless darf derweil munter drauflosraten, womit diese Leute denn so ihren Alltag verbringen (zumindest den professionellen).</description>
+    <content:encoded>&lt;p&gt;In dieser etwas länger geratenen Episode sricht Xyrill über seinen Alltag und den seiner Kollegen, Unterstellten und Vorgesetzten.
+Derweil darf ttimeless darf derweil munter drauflosraten, womit diese Leute denn so ihren Alltag verbringen (zumindest den professionellen).&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ausgangsfrage: &amp;quot;Ist Programmieren eigentlich ein Handwerk, eine Kunst oder eine Wissenschaft?&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vgl. &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Artes_mechanicae&amp;amp;oldid=219632496&#34;&gt;Artes mechanicae&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Sieben_freie_K%C3%BCnste&amp;amp;oldid=227043485&#34;&gt;Artes liberales&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://xkcd.com/1205/&#34;&gt;xkcd 1205&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Vergleich: Industrie (effiziente Massenfertigung) vs. Handwerk (Nutzer der Industrieprodukte, Lieferant der Industrieanlagen) -&amp;gt; These: Programmieren als Manufakturbetrieb&lt;/li&gt;
+&lt;li&gt;Berufskrankheit: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Hochstapler-Syndrom&amp;amp;oldid=224109737&#34;&gt;Hochstapler-Syndrom&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;These: Internet verschafft den fähigsten Leuten sehr viel Sichtbarkeit und schafft Gelegenheit, sich relativ dazu inadäquat zu fühlen&lt;/li&gt;
+&lt;li&gt;These: Grund ist die Abwesenheit festgelegter Berufsbilder und Ausbildungsgänge (vgl. Lehre und Meisterschule im Handwerk, Studium im Ingenieurwesen, Staatsexamen in Jura/Medizin)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;grundsätzliche Gewerke in der IT&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;technische Disziplinen
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Softwareentwickler&amp;amp;oldid=224301831&#34;&gt;Software-Entwickler*in&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Softwarearchitekt&amp;amp;oldid=218525463&#34;&gt;Software-Architekt*in&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Softwaretest&amp;amp;oldid=226000742&#34;&gt;Tester*in&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20210824.html&#34;&gt;Pentaradio zu Resilienz&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Systemadministrator&amp;amp;oldid=226131321&#34;&gt;Systemadministrator*in&lt;/a&gt;: siehe auch &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=DevOps&amp;amp;oldid=226542249&#34;&gt;DevOps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Support_(Dienstleistung)&amp;amp;oldid=224980821&#34;&gt;Kundendienst&lt;/a&gt;: Level 1/2/3
+&lt;ul&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://xkcd.com/806/&#34;&gt;xkcd 806&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Übersetzer*in (siehe STP017)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Designdisziplinen
+&lt;ul&gt;
+&lt;li&gt;bei fast allen Applikationen: UI-Designer*in&lt;/li&gt;
+&lt;li&gt;in der Spieleentwicklung: Spieldesign, Leveldesign, Assetdesign&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Management-Disziplinen
+&lt;ul&gt;
+&lt;li&gt;Projekt-Manager*in&lt;/li&gt;
+&lt;li&gt;Release-Manager*in&lt;/li&gt;
+&lt;li&gt;Scrum Master*in&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.netmeister.org/blog/software-engineering-laws.html&#34;&gt;&amp;quot;Gesetze&amp;quot; der Softwareentwicklung&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Conway&#39;s Law: &amp;quot;Any organization that designs a system will produce a design whose structure is a copy of the organization&#39;s communication structure.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Brooks&#39;s Law: &amp;quot;Adding manpower to a late software project makes it later.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Zawinski&#39;s Law: &amp;quot;Every program attempts to expand until it can send mail. Those programs which cannot so expand are replaced by ones which can.&amp;quot; (heute wahrscheinlich eher &amp;quot;until it contains a web server&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Parkinson&#39;s Law: &amp;quot;Work expands so as to fill the time available for its completion.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Pareto&#39;s Fallacy: &amp;quot;When you&#39;re 80% done, you think you only have 20% left.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Eagleson&#39;s Law: &amp;quot;Any code of your own that you haven&#39;t looked at for six or more months might as well have been written by someone else.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Iceberg Fallacy: &amp;quot;The cost of development of a new software product is the only ~25% of the total cost of ownership management sees and budgets for.&amp;quot;&lt;/li&gt;
+&lt;li&gt;The LGTM Dilemma: &amp;quot;If you want to quickly ship a 10 line code change, hide it in a 1500 line pull request.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lesetipp: &lt;a href=&#34;https://frankchimero.com/blog/2018/everything-easy/&#34;&gt;&amp;quot;Everything Easy is Hard Again&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Money Quote: &amp;quot;I wonder if I have twenty years of experience making websites, or if it is really five years of experience, repeated four times.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Xyrills Beobachtung: Die Branche (selbst die Universitäten!) rennt viel zu sehr Trends hinterher bzw. steckt zu sehr im selbst propagierten Novelty Bias fest. Wir haben noch nicht hinreichend die unveränderlichen Prinzipien destilliert (bzw. als solche erkannt).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:02:49" title="Ausgangsfrage: &#34;Ist Programmieren eigentlich ein Handwerk, eine Kunst oder eine Wissenschaft?&#34;"  />
+          <chapter start="00:05:58" title="Vergleich: Industrie vs. Handwerk"  />
+          <chapter start="00:11:46" title="These: Programmieren als Manufakturbetrieb"  />
+          <chapter start="00:14:06" title="Berufskrankheit: Hochstapler-Syndrom"  />
+          <chapter start="00:17:51" title="Ausbildungsinhalt vs. Berufsalltag"  />
+          <chapter start="00:21:42" title="Heiteres Beruferaten: Softwareentwickler*in"  />
+          <chapter start="00:30:07" title="Beruferaten: Software-Architekt*in"  />
+          <chapter start="00:35:50" title="Beruferaten: Tester*in"  />
+          <chapter start="00:45:32" title="Beruferaten: Systemadministrator*in"  />
+          <chapter start="00:49:05" title="Beruferaten: Kundendienst"  />
+          <chapter start="00:56:41" title="Beruferaten: Übersetzer*in"  />
+          <chapter start="00:57:48" title="Beruferaten: UI-Designer*in"  />
+          <chapter start="01:01:06" title="Beruferaten in der Spieleentwicklung: Spieldesign, Leveldesign, Assetdesign"  />
+          <chapter start="01:07:59" title="Beruferaten: Projekt-Manager*in"  />
+          <chapter start="01:09:43" title="Beruferaten: Release-Manager*in"  />
+          <chapter start="01:13:08" title="Beruferaten: Scrum Master*in"  />
+          <chapter start="01:15:58" title="&#34;Gesetze&#34; der Softwareentwicklung"  />
+          <chapter start="01:34:30" title="Lesetipp"  />
+      </chapters>
+      <enclosure length="97319414" url="https://dl.xyrillian.de/noises/stp-030-arbeitsalltag-in-der-it.mp3" type="audio/mpeg"/>
+      <enclosure length="62551128" url="https://dl.xyrillian.de/noises/stp-030-arbeitsalltag-in-der-it.ogg" type="audio/ogg"/>
+      <enclosure length="36621438" url="https://dl.xyrillian.de/noises/stp-030-arbeitsalltag-in-der-it.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/030-arbeitsalltag-in-der-it/</guid>
+    <pubDate>Thu, 29 Dec 2022 12:45:00 GMT</pubDate>
+    <itunes:duration>101:01</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP029: Algorithmische Komplexität</itunes:title>
     <itunes:episode>29</itunes:episode>
     <itunes:season>1</itunes:season>
