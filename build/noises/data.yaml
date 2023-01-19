@@ -735,3 +735,24 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 31
+    slug: 031-dateisysteme
+    title: Festplatten und Dateisysteme
+    pubtime: 1674158400 # 2023-01-19
+
+    markdown:
+      description: |
+        Mit dieser Episode kehrt STP zum Ursprung zurück, denn das initiale Ereignis hatte ebenfalls mit Dateisystemen zu tun.
+        Hier sprechen wir aber über deutlich mehr und auch andere Sachen. Darunter: Dinge, von denen Xyrill wenig bis keine Ahnung hat (physikalische Anschlüsse) und Dinge, von denen Xyrill deutlich mehr Ahnung hat (die Software dahinter und deren Verwendung). ttimeless raschelt derweil mit einer dicken Winterjacke.
+      shownotes: true # in file
+
+    music:
+      - *music-stp-opener-001
+      - *music-stp-opener-002
+      - *music-stp-opener-003
+      - *music-stp-opener-004
+      - artist: Gracie Films/20th Television
+        title: "The Simpsons S04E12: »Marge vs. the Monorail«"
+        href: https://www.youtube.com/watch?v=JcU95OeY48I

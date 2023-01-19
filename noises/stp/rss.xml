@@ -5,7 +5,7 @@
   <link>https://schluesseltechnologie-podcast.de/</link>
   <atom:link href="https://xyrillian.de/noises/stp/rss.xml" rel="self" type="application/rss+xml" />
   <language>de</language>
-  <copyright>&#xA9; 2021-2022 Stefan Majewsky, ttimeless</copyright>
+  <copyright>&#xA9; 2021-2023 Stefan Majewsky, ttimeless</copyright>
   <itunes:subtitle>Computertechnik, von Grund auf erklärt</itunes:subtitle>
   <itunes:author>Xyrillian Noises</itunes:author>
   <itunes:summary>Die IT hat unser Leben in den letzten Jahrzehnten von Grund auf verändert. Aber wie funktioniert sie wirklich? Das möchte ttimeless mal erklärt bekommen. Zum Glück hat Xyrill Antworten.
@@ -25,6 +25,130 @@
   <itunes:image href="https://xyrillian.de/res/cover-stp.png"/>
   <itunes:category text="Technology"/>
   <itunes:explicit>no</itunes:explicit>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP031: Festplatten und Dateisysteme</itunes:title>
+    <itunes:episode>31</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP031: Festplatten und Dateisysteme</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Mit dieser Episode kehrt STP zum Ursprung zurück, denn das initiale Ereignis hatte ebenfalls mit Dateisystemen zu tun.
+Hier sprechen wir aber über deutlich mehr und auch andere Sachen. Darunter: Dinge, von denen Xyrill wenig bis keine Ahnung hat (physikalische Anschlüsse) und Dinge, von denen Xyrill deutlich mehr Ahnung hat (die Software dahinter und deren Verwendung). ttimeless raschelt derweil mit einer dicken Winterjacke.</itunes:summary>
+    <description>Mit dieser Episode kehrt STP zum Ursprung zurück, denn das initiale Ereignis hatte ebenfalls mit Dateisystemen zu tun.
+Hier sprechen wir aber über deutlich mehr und auch andere Sachen. Darunter: Dinge, von denen Xyrill wenig bis keine Ahnung hat (physikalische Anschlüsse) und Dinge, von denen Xyrill deutlich mehr Ahnung hat (die Software dahinter und deren Verwendung). ttimeless raschelt derweil mit einer dicken Winterjacke.</description>
+    <content:encoded>&lt;p&gt;Mit dieser Episode kehrt STP zum Ursprung zurück, denn das initiale Ereignis hatte ebenfalls mit Dateisystemen zu tun.
+Hier sprechen wir aber über deutlich mehr und auch andere Sachen. Darunter: Dinge, von denen Xyrill wenig bis keine Ahnung hat (physikalische Anschlüsse) und Dinge, von denen Xyrill deutlich mehr Ahnung hat (die Software dahinter und deren Verwendung). ttimeless raschelt derweil mit einer dicken Winterjacke.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Datenblock&#34;&gt;blockbasierter Speicher (&amp;quot;Block Storage&amp;quot;)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Festplatten handeln immer nur in festen Einheiten (Blöcken)&lt;/li&gt;
+&lt;li&gt;traditionellerweise 512 Byte, heutzutage 4 KiB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;kurzer Überblick zur physikalischen Anbindungen blockbasierter Speicher&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Universal_Serial_Bus&amp;amp;oldid=226444113&#34;&gt;USB (Universal Serial Bus)&lt;/a&gt;: für externe Festplatten, CD-Laufwerke, &lt;em&gt;*räusper*&lt;/em&gt; Mini-Raketenwerfer &lt;em&gt;*räusper*&lt;/em&gt;, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Serial_ATA&amp;amp;oldid=220865700&#34;&gt;SATA (Serial AT Attachment)&lt;/a&gt;: für interne Festplatten, kabelgebundene Punkt-zu-Punkt-Verbindungen&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Serial_Attached_SCSI&amp;amp;oldid=218079361&#34;&gt;SAS (Serial Attached SCSI)&lt;/a&gt;: für interne Festplatten, kabelgebundene Verbindungen auch mit Switching (mehrere Festplatten an einem Verteiler)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=NVM_Express&amp;amp;oldid=222566309&#34;&gt;NVMe (Non-Volatile Memory Express)&lt;/a&gt;: für interne Festplatten, direkte Steckverbindung via PCI Express&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20220929192234/https://old.reddit.com/r/explainlikeimfive/comments/5sgfzh/eli5_parallel_was_faster_than_serial_why_isnt/&#34;&gt;Warum alles immer seriell?&lt;/a&gt; Höhere Geschwindigkeiten = Synchronisierung immer schwieriger. Parallele Leitungen = Übersprechen/Interferenz = komplexe Kompensation notwendig bzw. bei flexiblen Systemen wie Kabeln nicht möglich.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug zu STP012: &amp;quot;Dateisysteme sind eine besondere Form von Key-Value-Datenbank&amp;quot;; keine Datenbank im engeren Sinne:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;keine widerspruchsfreie Speicherung, da keine Beziehungen zwischen verschiedenen Dateien möglich&lt;/li&gt;
+&lt;li&gt;keine Unterstützung für bedarfsgerechte Darstellungsformen; jede Datei hat genau ein Format&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;alternative Perspektive als Vergleich zum blockbasierten Speicher&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jede Datei ist ihr eigener &amp;quot;kleiner Massenspeicher&amp;quot;&lt;/li&gt;
+&lt;li&gt;zusätzlich noch Metadaten (Dateiname, Erstelldatum, Zugriffsrechte, etc.)&lt;/li&gt;
+&lt;li&gt;Dateisystem kümmert sich um die Zuteilung des tatsächlichen blockbasierten Speichers an die einzelnen Dateien&lt;/li&gt;
+&lt;li&gt;Praxisbeispiel zur Zuteilung von Speicherplatz: Unix-Befehl &lt;code&gt;du -h&lt;/code&gt; (&amp;quot;disk usage&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dateisystem-Struktur unter unixoiden Betriebssystemen: mittels &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Inode&amp;amp;oldid=226067530&#34;&gt;Inodes&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ein Inode enthält alle Metadaten zu einem bestimmten Dateisystemeintrag (einer Datei, einem Verzeichnis, einer Verknüpfung, etc.) sowie (bei normalen Dateien) einen Verweis auf den Speicherort der tatsächlichen Daten&lt;/li&gt;
+&lt;li&gt;Größe eines Inodes: immer ein Vielfaches der Blockgröße (4 KiB, 8 KiB, etc.)&lt;/li&gt;
+&lt;li&gt;bei sehr kleinen Dateien mitunter direktes Ablegen des Dateiinhaltes im Inode&lt;/li&gt;
+&lt;li&gt;bei großen Dateien meist fragmentierter Inhalt: Ablage in mehreren separaten Stücken (wegen späterer Umschreibung oder wegen Platzmangel)&lt;/li&gt;
+&lt;li&gt;Verzeichnisse: Inode mit einer Liste von Einträgen (Name &#43; Inode-Verweis)&lt;/li&gt;
+&lt;li&gt;Dateisystem = Inode-Liste &#43; Dateiinhalte &#43; Übersicht über noch freie Festplattenbereiche&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;aktuelle&amp;quot; Entwicklungen in Dateisystemen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Journaling-Dateisystem&amp;amp;oldid=214907336&#34;&gt;Journaling&lt;/a&gt; (in NTFS seit 1993, in ext3 seit 2001): Transaktionen werden in einem separaten Festplattenbereich vorgemerkt, bevor sie tatsächlich ausgeführt werden; ermöglicht Abgeschlossenheit und Dauerhaftigkeit analog zum Write-Ahead-Log bei Datenbanken (siehe STP012), außerdem schnelleren Start nach Systemausfall (keine Komplettprüfung des Dateisystems nötig)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Fragmentierung_(Dateisystem)&amp;amp;oldid=201408972&#34;&gt;Online-Defragmentierung&lt;/a&gt; bzw. optimierte Speicherzuteilung zur Vermeidung von Fragmentierung (aber: aktives Defragmentieren = mehr Schreibzyklen = mehr Abnutzung)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;antiintuitive Schlussfolgerungen aus dieser Struktur&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;sicheres Löschen&amp;quot;: einfaches Löschen einer Datei löscht nur den Inode, aber überschreibt nicht den Inhalt (selbst Überschreiben der Datei hilft nicht unbedingt, weil die neuen Daten vielleicht an einer anderen Stelle landen, oder weil die alten Daten trotzdem noch im Journal liegen)&lt;/li&gt;
+&lt;li&gt;Löschen von im Verbrauch befindlichen Dateien: kein Problem, eine &amp;quot;geöffnete Datei&amp;quot; ist nur ein Verweis auf einen Inode; &amp;quot;Löschen der Datei&amp;quot; löscht nur den Verzeichnis-Eintrag; der Inode bleibt noch so lang bestehen, wie ein Prozess einen Verweis auf den Inode hält&lt;/li&gt;
+&lt;li&gt;anders bei Windows: Verweis auf eine offene Datei blockiert das Löschen -&amp;gt; Konsequenzen für System-Updates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exkurs 1: virtuelles Dateisystem&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bis hier: physikalische Perspektive (Welche Bits stehen tatsächlich auf der Platte?)&lt;/li&gt;
+&lt;li&gt;jetzt: logische Perspektive (Was zeigt das Betriebssystem den Programmen?)&lt;/li&gt;
+&lt;li&gt;Unix: ein einziger Verzeichnisbaum, in das die verschiedenen Dateisysteme &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Mounten&amp;amp;oldid=199499166&#34;&gt;eingehängt&lt;/a&gt; werden können; anders als das System mit Laufwerksbuchstaben unter Windows&lt;/li&gt;
+&lt;li&gt;&amp;quot;Datei&amp;quot; und &amp;quot;Verzeichnis&amp;quot; als abstrakte Konzepte, die u.a. durch echte Dateisysteme abgebildet werden können, oder auch durch was anderes (vgl. &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Everything_is_a_file&amp;amp;oldid=223250415&#34;&gt;&amp;quot;Everything is a file.&amp;quot;&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Beispiel: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Procfs&amp;amp;oldid=222577559&#34;&gt;procfs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Beispiel: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=SSHFS&amp;amp;oldid=223439141&#34;&gt;sshfs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Beispiel: transparente Behandlung von Zip-Archiven im Windows Explorer&lt;/li&gt;
+&lt;li&gt;Beispiel: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=/dev/random&amp;amp;oldid=216549123&#34;&gt;/dev/random&lt;/a&gt; etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exkurs 2: Festplattenverschlüsselung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Option 1: auf der Ebene des Dateisystems (einzelne Dateien oder Verzeichnisse werden verschlüsselt)&lt;/li&gt;
+&lt;li&gt;Option 2: auf der Ebene des blockbasierten Speichers -&amp;gt; Dateisystem sieht als Speichermedium einen &lt;em&gt;virtuellen&lt;/em&gt; blockbasierten Speicher, der die Verschlüsselung vornimmt und erst dann auf den tatsächlichen blockbasierten Speicher schreibt -&amp;gt; schöne Arbeitsteilung&lt;/li&gt;
+&lt;li&gt;andere Anwendungsfälle für virtuelle blockbasierte Speicher: Netzwerklaufwerke, Dateisysteme innerhalb von Dateien&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:06:05" title="Blockbasierter Speicher"  />
+          <chapter start="00:12:23" title="Physikalische Anbindungen"  />
+          <chapter start="00:12:52" title="USB"  />
+          <chapter start="00:18:10" title="SATA"  />
+          <chapter start="00:19:47" title="SAS"  />
+          <chapter start="00:21:27" title="NVMe"  />
+          <chapter start="00:28:35" title="Warum immer alles seriell?"  />
+          <chapter start="00:32:30" title="Dateisysteme als Key-Value-Datenbank"  />
+          <chapter start="00:34:09" title="Alternative Betrachtung als Massenspeicher"  />
+          <chapter start="00:40:16" title="Unixoide Dateisysteme mittels Inodes"  />
+          <chapter start="00:48:32" title="aktuelle Entwicklungen in Dateisystemen"  />
+          <chapter start="00:49:20" title="Journaling"  />
+          <chapter start="00:53:03" title="Online-Defragmentierung"  />
+          <chapter start="00:59:00" title="antiintuitive Schlussfolgerungen aus Inodestruktur"  />
+          <chapter start="01:07:48" title="Einschub Exkurs 2: Festplattenverschlüsselung"  />
+          <chapter start="01:12:26" title="zurück zu antiintuitiven Schlussfolgerungen"  />
+          <chapter start="01:23:54" title="Exkurs 1: Virtuelles Dateisystem"  />
+          <chapter start="01:41:57" title="Outro"  />
+      </chapters>
+      <enclosure length="98648986" url="https://dl.xyrillian.de/noises/stp-031-dateisysteme.mp3" type="audio/mpeg"/>
+      <enclosure length="61366048" url="https://dl.xyrillian.de/noises/stp-031-dateisysteme.ogg" type="audio/ogg"/>
+      <enclosure length="37601783" url="https://dl.xyrillian.de/noises/stp-031-dateisysteme.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/031-dateisysteme/</guid>
+    <pubDate>Thu, 19 Jan 2023 20:00:00 GMT</pubDate>
+    <itunes:duration>102:24</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP030: Arbeitsalltag in der IT</itunes:title>

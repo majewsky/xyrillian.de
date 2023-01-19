@@ -401,6 +401,10 @@ func (f *file) FindDownloads() {
 		)
 	}
 
+	if firstOggPath == "" {
+		log.Fatal("cannot find .ogg file for " + f.Slug)
+	}
+
 	//use ffprobe(1) to read audio metadata (we use Ogg files for this since
 	//ffprobe only reads chapter URLs reliably from these)
 	cmd := exec.Command("ffprobe", "-v", "quiet", "-of", "json", "-show_chapters", "-show_format", "-show_streams", firstOggPath)
