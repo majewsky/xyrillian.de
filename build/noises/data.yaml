@@ -756,3 +756,17 @@ files:
       - artist: Gracie Films/20th Television
         title: "The Simpsons S04E12: »Marge vs. the Monorail«"
         href: https://www.youtube.com/watch?v=JcU95OeY48I
+
+  - show: stp
+    episode: 32
+    slug: 032-hochverfuegbarer-softwarebetrieb
+    title: Hochverfügbarer Softwarebetrieb
+    pubtime: 1675947900 # 2023-02-09
+
+    markdown:
+      description: |
+        Die heutige Episode beschäftigt sich neben dem offensichtlichen Hauptthema auch mit Prozenten, deren Bedeutung bedacht sein sollte, und dem Verhalten guter Manager.
+        Deshalb sei hiermit eine Politik-Triggerwarnung ausgesprochen... aber nur eine kleine.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

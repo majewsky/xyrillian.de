@@ -27,6 +27,97 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP032: Hochverfügbarer Softwarebetrieb</itunes:title>
+    <itunes:episode>32</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP032: Hochverfügbarer Softwarebetrieb</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Die heutige Episode beschäftigt sich neben dem offensichtlichen Hauptthema auch mit Prozenten, deren Bedeutung bedacht sein sollte, und dem Verhalten guter Manager.
+Deshalb sei hiermit eine Politik-Triggerwarnung ausgesprochen... aber nur eine kleine.</itunes:summary>
+    <description>Die heutige Episode beschäftigt sich neben dem offensichtlichen Hauptthema auch mit Prozenten, deren Bedeutung bedacht sein sollte, und dem Verhalten guter Manager.
+Deshalb sei hiermit eine Politik-Triggerwarnung ausgesprochen... aber nur eine kleine.</description>
+    <content:encoded>&lt;p&gt;Die heutige Episode beschäftigt sich neben dem offensichtlichen Hauptthema auch mit Prozenten, deren Bedeutung bedacht sein sollte, und dem Verhalten guter Manager.
+Deshalb sei hiermit eine Politik-Triggerwarnung ausgesprochen... aber nur eine kleine.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Schlagwort: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Site_Reliability_Engineering&amp;amp;oldid=218196182&#34;&gt;Site Reliability Engineering (SRE)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hauptziel: &amp;quot;Schaffung skalierbarer und hochzuverlässiger Softwaresysteme&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grundkonzept: Service Level&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Service-level_objective&amp;amp;oldid=1089474535&#34;&gt;SLO (Service Level Objective)&lt;/a&gt;: selbstgewählter Indikator soll bis zu einem bestimmten Grad an 100% herangeführt werden (z.B. Zeiten, zu denen der Dienst erreichbar ist; Anteil der Anfragen, die in weniger als 1 Sekunde beantwortet werden; Anteil der Anfragen, die erfolgreich beantwortet werden)&lt;/li&gt;
+&lt;li&gt;SLA (Service Level Agreement): SLO, der mit dem Kunden vertraglich vereinbart ist&lt;/li&gt;
+&lt;li&gt;Beispiel: 99% Verfügbarkeit = bis zu 3,65 Tage Ausfall; 99,9% = bis zu 8,77 Stunden; 99,99% = bis zu 52 Minuten; 99,999% = bis zu 5,2 Minuten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Problem: die Unbekannten in der Gleichung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Known Unknowns&lt;/strong&gt; (bekanntes Unwissen): ich weiß, dass ich etwas nicht weiß (z.B. wann meine Festplatte ausfallen wird)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unknown Unknowns&lt;/strong&gt; (unbekanntes Unwissen): ich weiß nicht mal, dass da etwas ist, was ich nicht weiß (z.B. &lt;a href=&#34;https://www.vice.com/en/article/akek8e/walmart-30tb-ssd-hard-drive-scam-sd-cards&#34;&gt;dass meine angebliche 30-TB-Festplatte in Wahrheit nur eine 32-GB-Speicherkarte in einem großen Gehäuse ist&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;siehe auch: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=There_are_known_knowns&amp;amp;oldid=222128371&#34;&gt;zur Wortherkunft der Begriffsgruppe &amp;quot;(un)known (un)knowns&amp;quot;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;strukturierter Einblick in Applikationen mittels Instrumentierung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Logging:&lt;/strong&gt; Ereignisse innerhalb der Applikation werden als textförmiger Bericht (Log) aus der Applikation ausgeleitet und in einem Log-System durchsuchbar gemacht&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring:&lt;/strong&gt; Zustand der Applikation wird in Form von Messdaten quantifiziert, in einer &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Zeitreihendatenbank&amp;amp;oldid=211779199&#34;&gt;Zeitseriendatenbank&lt;/a&gt; abgelegt und in Dashboards aufbereitet (&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Grafana&amp;amp;oldid=1123211485#/media/File:Grafana_dashboard.png&#34;&gt;Beispielbild&lt;/a&gt;); Messdaten entweder direkt aus der Applikation selbst oder durch ein Extraprogramm von außen erhoben&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alarmierung:&lt;/strong&gt; Menschen werden benachrichtigt, wenn ein bestimmter Messwert eine bestimmte Schwelle überschreitet (oder eine Überschreitung projiziert ist, z.B. &amp;quot;die Festplatte läuft gerade voll und in einer Stunde ist sie komplett voll&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;strukturierte Herangehensweisen beim Durchführen von Änderungen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Configuration as Code: Änderungen werden möglichst nie manuell vorgenommen, sondern es wird ein Programm geschrieben (bzw. die Konfiguration für jenes Program angepasst), das die Änderungen vornimmt; bei Problemen ist ein Zurückrollen auf den letzten funktionierenden Zustand möglich&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kontinuierliche_Integration&amp;amp;oldid=223309917&#34;&gt;Continuous Integration (CI)&lt;/a&gt;: Änderungen an Code und Konfiguration fließen in ein System, das automatisch standardisierte Tests ausführt, um die Änderung auf Fehler zu prüfen; bei Erfolg automatische Übernahme der vorgeschlagenen Änderung in den veröffentlichten Code-Stand&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Continuous_Delivery&amp;amp;oldid=218889976&#34;&gt;Continuous Delivery (CD)&lt;/a&gt;: automatisches oder stark automatisiertes Ausrollen von Änderungen an Code und Konfiguration von Testsystemen in Verifikationssysteme in Produktivsysteme&lt;/li&gt;
+&lt;li&gt;Rolling Upgrade: bei Systemen mit mehreren gleichartigen Komponenten werden die Komponenten nacheinander durch die neue Version ersetzt, damit das Ausrollen für den Kunden unsichtbar ist und bei Fehlern frühzeitig gestopppt werden kann&lt;/li&gt;
+&lt;li&gt;Canary Deployment: Ausrollen einer Änderung zunächst nur in einem kleinen Teil des Systems; bei Problemen ist nur der kleine Teil betroffen (siehe auch Ankündigungen der Form &amp;quot;diese Funktion ist zurzeit nur für ausgewählte Kunden verfügbar&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;strukturierter Umgang mit Alarmen/Fehlern&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;standardisierte Abläufe (&amp;quot;Playbooks&amp;quot;) für Alarme&lt;/li&gt;
+&lt;li&gt;Postmortem-Analyse mindestens nach signifikanten Fehlern (Was ist passiert? Was war der tatsächliche Grund? Was ist bei der Bekämpfung des Problems gut/schlecht gelaufen? Was können wir besser machen?)&lt;/li&gt;
+&lt;li&gt;Fehlerkultur: Das Hauptziel soll nicht sein, einen Schuldigen zu finden, sondern das Problem möglichst schnell zu beheben und dann dafür zu sorgen, dass das Problem nie wieder auftritt.&lt;/li&gt;
+&lt;li&gt;Parallelen zum &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Toyota-Produktionssystem&amp;amp;oldid=223213898&#34;&gt;Toyota-Produktionssystem&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt (im Kontext des Gesetzesvorhabens zur Chatkontrolle):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.c3d2.de/news/pentaradio24-20220524.html&#34;&gt;Phentaradio vom Mai 2022&lt;/a&gt; und ganz aktuell &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20230124.html&#34;&gt;vom Januar 2023&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://logbuch-netzpolitik.de/lnp429-endlich-sind-wir-am-anfang-angekommen&#34;&gt;LNP429: Endlich sind wir am Anfang angekommen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://logbuch-netzpolitik.de/lnp430-die-groesste-koalition-aller-zeiten&#34;&gt;LNP430: Die größte Koalition aller Zeiten&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro &#43; Präambel"  />
+          <chapter start="00:02:30" title="Service Level"  />
+          <chapter start="00:11:06" title="Exkurs: Politische Bedeutung von Prozentsätzen"  />
+          <chapter start="00:13:40" title="Site Reliability Engineering"  />
+          <chapter start="00:23:49" title="strukturierter Einblick in Applikationen mittels Instrumentierung"  />
+          <chapter start="00:43:48" title="Durchführen von Änderungen"  />
+          <chapter start="00:57:59" title="Rolling Upgrade"  />
+          <chapter start="01:01:01" title="Canary Deployment"  />
+          <chapter start="01:05:31" title="strukturierter Umgang mit Alarmen/Fehlern"  />
+      </chapters>
+      <enclosure length="73284353" url="https://dl.xyrillian.de/noises/stp-032-hochverfuegbarer-softwarebetrieb.mp3" type="audio/mpeg"/>
+      <enclosure length="46286048" url="https://dl.xyrillian.de/noises/stp-032-hochverfuegbarer-softwarebetrieb.ogg" type="audio/ogg"/>
+      <enclosure length="27530870" url="https://dl.xyrillian.de/noises/stp-032-hochverfuegbarer-softwarebetrieb.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/032-hochverfuegbarer-softwarebetrieb/</guid>
+    <pubDate>Thu, 09 Feb 2023 13:05:00 GMT</pubDate>
+    <itunes:duration>75:59</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP031: Festplatten und Dateisysteme</itunes:title>
     <itunes:episode>31</itunes:episode>
     <itunes:season>1</itunes:season>
