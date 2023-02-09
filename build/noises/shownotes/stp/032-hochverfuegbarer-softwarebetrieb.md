@@ -30,6 +30,6 @@
     - Parallelen zum [Toyota-Produktionssystem](https://de.wikipedia.org/w/index.php?title=Toyota-Produktionssystem&oldid=223213898 )
 
 - im Gespräch erwähnt (im Kontext des Gesetzesvorhabens zur Chatkontrolle):
-    - [Phentaradio vom Mai 2022](https://www.c3d2.de/news/pentaradio24-20220524.html) und ganz aktuell [vom Januar 2023](https://c3d2.de/news/pentaradio24-20230124.html)
+    - [Pentaradio vom Mai 2022](https://www.c3d2.de/news/pentaradio24-20220524.html) und ganz aktuell [vom Januar 2023](https://c3d2.de/news/pentaradio24-20230124.html)
     - [LNP429: Endlich sind wir am Anfang angekommen](https://logbuch-netzpolitik.de/lnp429-endlich-sind-wir-am-anfang-angekommen)
     - [LNP430: Die größte Koalition aller Zeiten](https://logbuch-netzpolitik.de/lnp430-die-groesste-koalition-aller-zeiten)
