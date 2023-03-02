@@ -770,3 +770,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 33
+    slug: 033-programmiersprachen
+    title: Programmiersprachen
+    pubtime: 1677780300 # 2023-03-02
+
+    markdown:
+      description: |
+        In dieser Episode wird die Antwort auf die Frage geliefert, warum wir Dinge wie Programmiersprachen brauchen, und vor allem, warum so viele. Es werden mal wieder starke Meinungen geäußert und es gibt einen zweiten Prolog in der Mitte der Episode. :)
+        Außerdem dabei: Linguisten, automatisierte Textilbearbeitung und unsichtbarer Programmcode.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

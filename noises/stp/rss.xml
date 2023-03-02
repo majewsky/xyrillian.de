@@ -27,6 +27,176 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP033: Programmiersprachen</itunes:title>
+    <itunes:episode>33</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP033: Programmiersprachen</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>In dieser Episode wird die Antwort auf die Frage geliefert, warum wir Dinge wie Programmiersprachen brauchen, und vor allem, warum so viele. Es werden mal wieder starke Meinungen geäußert und es gibt einen zweiten Prolog in der Mitte der Episode. :)
+Außerdem dabei: Linguisten, automatisierte Textilbearbeitung und unsichtbarer Programmcode.</itunes:summary>
+    <description>In dieser Episode wird die Antwort auf die Frage geliefert, warum wir Dinge wie Programmiersprachen brauchen, und vor allem, warum so viele. Es werden mal wieder starke Meinungen geäußert und es gibt einen zweiten Prolog in der Mitte der Episode. :)
+Außerdem dabei: Linguisten, automatisierte Textilbearbeitung und unsichtbarer Programmcode.</description>
+    <content:encoded>&lt;p&gt;In dieser Episode wird die Antwort auf die Frage geliefert, warum wir Dinge wie Programmiersprachen brauchen, und vor allem, warum so viele. Es werden mal wieder starke Meinungen geäußert und es gibt einen zweiten Prolog in der Mitte der Episode. :)
+Außerdem dabei: Linguisten, automatisierte Textilbearbeitung und unsichtbarer Programmcode.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Einordnung in das Sprachenuniversum&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Programmiersprachen sind formale Sprachen (d.h. ein Algorithmus kann in endlicher Zeit eindeutig entscheiden, ob ein gegebener Text Teil der Sprache ist) -&amp;gt; Rückbezug zu STP021&lt;/li&gt;
+&lt;li&gt;Programmiersprachen sind kein &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Maschinensprache&amp;amp;oldid=223307867&#34;&gt;Maschinencode&lt;/a&gt; (d.h. Programme in Bytefolgen, den ein Prozessor direkt ausführen kann) -&amp;gt; Rückbezug zu STP011&lt;/li&gt;
+&lt;li&gt;Abwägung zwischen Lesbarkeit für den Menschen und Lesbarkeit für den Computer&lt;/li&gt;
+&lt;li&gt;einfachste Form von Programmiersprachen: Maschinensprachen (stellen Maschinencode direkt lesbar dar)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beispiel anhand einer frühen Anwendung von Programmierbarkeit: Weben/Stricken/Häkeln&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maschinensprache: so etwas wie &amp;quot;zwei links, zwei rechts, zwei fallen lassen&amp;quot;&lt;/li&gt;
+&lt;li&gt;Maschinencode = Lochkarten-Kette für einen &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Jacquardwebstuhl&amp;amp;oldid=226034174&#34;&gt;Jacquard-Webstuhl&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;darstellendes Beispiel für moderne Maschinensprachen und Programmiersprachen: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Fibonacci-Folge&amp;amp;oldid=227809466&#34;&gt;Fibonacci-Funktion&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://godbolt.org/#g:!((g:!((g:!((h:codeEditor,i:(filename:&#39;1&#39;,fontScale:14,fontUsePx:&#39;0&#39;,j:1,lang:c%2B%2B,selection:(endColumn:2,endLineNumber:6,positionColumn:2,positionLineNumber:6,selectionStartColumn:2,selectionStartLineNumber:6,startColumn:2,startLineNumber:6),source:&#39;unsigned&#43;int&#43;fibonacci(unsigned&#43;int&#43;num)&#43;%7B%0A&#43;&#43;&#43;&#43;if&#43;(num&#43;%3D%3D&#43;0&#43;%7C%7C&#43;num&#43;%3D%3D&#43;1)&#43;%7B%0A&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;return&#43;num%3B%0A&#43;&#43;&#43;&#43;%7D%0A&#43;&#43;&#43;&#43;return&#43;fibonacci(num)&#43;%2B&#43;fibonacci(num&#43;%2B&#43;1)%3B%0A%7D&#39;),l:&#39;5&#39;,n:&#39;0&#39;,o:&#39;C%2B%2B&#43;source&#43;%231&#39;,t:&#39;0&#39;)),k:50,l:&#39;4&#39;,n:&#39;0&#39;,o:&#39;&#39;,s:0,t:&#39;0&#39;),(g:!((h:compiler,i:(compiler:g122,deviceViewOpen:&#39;1&#39;,filters:(b:&#39;0&#39;,binary:&#39;1&#39;,commentOnly:&#39;0&#39;,demangle:&#39;0&#39;,directives:&#39;0&#39;,execute:&#39;1&#39;,intel:&#39;0&#39;,libraryCode:&#39;0&#39;,trim:&#39;1&#39;),flagsViewOpen:&#39;1&#39;,fontScale:14,fontUsePx:&#39;0&#39;,j:1,lang:c%2B%2B,libs:!(),options:&#39;&#39;,selection:(endColumn:12,endLineNumber:27,positionColumn:12,positionLineNumber:27,selectionStartColumn:12,selectionStartLineNumber:27,startColumn:12,startLineNumber:27),source:1),l:&#39;5&#39;,n:&#39;0&#39;,o:&#39;&#43;x86-64&#43;gcc&#43;12.2&#43;(Editor&#43;%231)&#39;,t:&#39;0&#39;)),k:50,l:&#39;4&#39;,n:&#39;0&#39;,o:&#39;&#39;,s:0,t:&#39;0&#39;)),l:&#39;2&#39;,n:&#39;0&#39;,o:&#39;&#39;,t:&#39;0&#39;)),version:4&#34;&gt;interaktiv bei Godbolt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;reine Textform nachfolgend&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;unsigned int fibonacci(unsigned int x) {
+    if (x == 0 || x == 1) {
+        return x;
+    }
+    return fibonacci(x - 1) &#43; fibonacci(x - 2);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-x86asm&#34;&gt;fibonacci(unsigned int):
+    push    rbp
+    mov     rbp, rsp
+    push    rbx
+    sub     rsp, 24
+    mov     DWORD PTR [rbp-20], edi
+    cmp     DWORD PTR [rbp-20], 0
+    je      .L2
+    cmp     DWORD PTR [rbp-20], 1
+    jne     .L3
+.L2:
+    mov     eax, DWORD PTR [rbp-20]
+    jmp     .L4
+.L3:
+    mov     eax, DWORD PTR [rbp-20]
+    sub     eax, 1
+    mov     edi, eax
+    call    fibonacci(unsigned int)
+    mov     ebx, eax
+    mov     eax, DWORD PTR [rbp-20]
+    sub     eax, 2
+    mov     edi, eax
+    call    fibonacci(unsigned int)
+    add     eax, ebx
+.L4:
+    mov     rbx, QWORD PTR [rbp-8]
+    leave
+    ret
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Was unterscheidet hier die Programmiersprache von der Maschinensprache?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verwendung von benannten Variablen, um Werte zu halten
+&lt;ul&gt;
+&lt;li&gt;Maschinensprache: nur Speicheradressen und CPU-Register&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Variablen können feste Datentypen haben
+&lt;ul&gt;
+&lt;li&gt;Maschinensprache: alles nur Nullen und Einsen :)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Kontrollfluss-Strukturen (Subprozeduren, Abzweigungen, Schleifen)
+&lt;ul&gt;
+&lt;li&gt;Maschinensprache: nur lineare Ausführung und Sprungbefehle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;allgemein:
+&lt;ul&gt;
+&lt;li&gt;bessere Lesbarkeit (immerhin kann Maschinensprache heutzutage auch Freitext-Kommentare)&lt;/li&gt;
+&lt;li&gt;Portabilität (Unabhängigkeit von Details einer bestimmten Maschinen-Architektur)&lt;/li&gt;
+&lt;li&gt;formale Strukturen, die Fehler vermeiden (z.B. Typprüfungen, Kollisionsvermeidung bei nebenläufigen Programmen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Arten von Programmiersprachen (&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Programmierparadigma&amp;amp;oldid=226550386&#34;&gt;&amp;quot;Paradigma&amp;quot;&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;imperative Programmierung: Programme als Folgen von Befehlen&lt;/li&gt;
+&lt;li&gt;strukturierte Programmierung: Programme als ineinander verschachtelte Blöcke von Befehlsfolgen&lt;/li&gt;
+&lt;li&gt;modulare Programmierung: Programme als Verbund logischer Einheiten aus Prozeduren und Datenstrukturen&lt;/li&gt;
+&lt;li&gt;objektorientierte Programmierung: Programme als Verbund von datenhaltenden Objekten, die miteinander interagieren&lt;/li&gt;
+&lt;li&gt;logische Programmierung: Programme als Verbund von logischen Aussagen und Ableitungsregeln (&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Prolog_(Programmiersprache)&amp;amp;oldid=220556833&#34;&gt;Beispiele in der Sprache Prolog&lt;/a&gt;; Xyrill hat eine Anekdote zu Prolog)&lt;/li&gt;
+&lt;li&gt;funktionale Programmierung: Programme als Verbund von mathematischen Funktionen (insbesondere von Funktionen, die andere Funktionen als Werte nehmen)
+&lt;ul&gt;
+&lt;li&gt;Beispiel unten: Berechnung sämtlicher Primzahlen in der Sprache &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Haskell_(Programmiersprache)&amp;amp;oldid=227783196&#34;&gt;Haskell&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;reaktive Programmierung: Programme als voneinander abhängige Berechnungen (Beispiel: Tabellenkalkulation, Webanwendungen mit &lt;a href=&#34;https://reactjs.org/&#34;&gt;React&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;module Primes where
+
+isPrime :: Int -&amp;gt; Bool
+isPrime x = all (\y -&amp;gt; mod x y /= 0) $ takeWhile (\y -&amp;gt; y * y &amp;lt;= x) primes
+
+primes :: [Int]
+primes = 2 : filter isPrime [3..]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Exkurs: esoterische Programmiersprachen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Brainfuck&amp;amp;oldid=226945132&#34;&gt;Brainfuck&lt;/a&gt;: eine der minimalsten turing-vollständigen Programmiersprache; nur 8 verschiedene Befehle&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Befunge&amp;amp;oldid=225691979&#34;&gt;Befunge&lt;/a&gt;: anschauliches Beispiel für das Konzept einer &amp;quot;virtuellen Maschine&amp;quot; im Kontext von Programmiersprachen&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Chef_(Programmiersprache)&amp;amp;oldid=227112450&#34;&gt;Chef&lt;/a&gt;: viele esoterische Programmiersprachen sind vor allem clevere Textersetzung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Im Gespräch erwähnt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.c3d2.de/news/pentaradio24-20221227.html&#34;&gt;Pentaradio 2022-12 zu Komplexität&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Prolog"  />
+          <chapter start="00:02:55" title="Sprachen in Literatur und Film"  />
+          <chapter start="00:05:19" title="Formale Sprachen und Compiler"  />
+          <chapter start="00:18:43" title="Frühe Programmiersprachen"  />
+          <chapter start="00:21:04" title="Erste Anwendungen von Programmierbarkeit"  />
+          <chapter start="00:28:00" title="Beispiel: Fibonacci-Funktion"  />
+          <chapter start="00:38:53" title="Programmiersprache vs. Maschienensprache"  />
+          <chapter start="00:52:06" title="Arten von Programmiersprachen"  />
+          <chapter start="00:52:35" title="imperative Programmierung"  />
+          <chapter start="00:54:06" title="strukturierte Programmierung"  />
+          <chapter start="00:54:58" title="modulare Programmierung"  />
+          <chapter start="00:57:55" title="objektorientierte Programmierung"  />
+          <chapter start="01:00:02" title="logische Programmierung"  />
+          <chapter start="01:05:45" title="funktionale Programmierung"  />
+          <chapter start="01:09:10" title="Beispiel für Haskell"  />
+          <chapter start="01:19:27" title="reaktive Programmierung"  />
+          <chapter start="01:26:19" title="esoterische Programmiersprachen"  />
+      </chapters>
+      <enclosure length="93684937" url="https://dl.xyrillian.de/noises/stp-033-programmiersprachen.mp3" type="audio/mpeg"/>
+      <enclosure length="59276300" url="https://dl.xyrillian.de/noises/stp-033-programmiersprachen.ogg" type="audio/ogg"/>
+      <enclosure length="34837468" url="https://dl.xyrillian.de/noises/stp-033-programmiersprachen.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/033-programmiersprachen/</guid>
+    <pubDate>Thu, 02 Mar 2023 18:05:00 GMT</pubDate>
+    <itunes:duration>97:14</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP032: Hochverfügbarer Softwarebetrieb</itunes:title>
     <itunes:episode>32</itunes:episode>
     <itunes:season>1</itunes:season>
