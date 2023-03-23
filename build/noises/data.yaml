@@ -784,3 +784,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 34
+    slug: 034-compilerbau
+    title: Compilerbau
+    pubtime: 1679612340 # 2023-03-23
+
+
+    markdown:
+      description: |
+        In dieser Episode soll es detaillierter um Compiler gehen. Jene Programmme, die dafür zuständig sind, andere Programme zu erzeugen. Um es mit C3PO zu sagen: "... Wie pervers." :)
+      shownotes: true # in file
+
+    music: *music-like-stp-000

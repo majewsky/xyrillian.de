@@ -27,6 +27,118 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP034: Compilerbau</itunes:title>
+    <itunes:episode>34</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP034: Compilerbau</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>In dieser Episode soll es detaillierter um Compiler gehen. Jene Programmme, die dafür zuständig sind, andere Programme zu erzeugen. Um es mit C3PO zu sagen: &amp;quot;... Wie pervers.&amp;quot; :)</itunes:summary>
+    <description>In dieser Episode soll es detaillierter um Compiler gehen. Jene Programmme, die dafür zuständig sind, andere Programme zu erzeugen. Um es mit C3PO zu sagen: &amp;quot;... Wie pervers.&amp;quot; :)</description>
+    <content:encoded>&lt;p&gt;In dieser Episode soll es detaillierter um Compiler gehen. Jene Programmme, die dafür zuständig sind, andere Programme zu erzeugen. Um es mit C3PO zu sagen: &amp;quot;... Wie pervers.&amp;quot; :)&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Compiler&amp;amp;oldid=225542576&#34;&gt;Compiler&lt;/a&gt;: wandelt eine Programmiersprache (siehe STP033) in eine andere Programmiersprache oder Maschinensprache (siehe STP011)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;insb. Erkennung und Abweisung fehlerhafter Konstrukte (z.B. &lt;code&gt;42 &#43; 5&lt;/code&gt; ist okay, aber &lt;code&gt;42 &#43; &amp;quot;Test&amp;quot;&lt;/code&gt; nicht)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unterbegriffe zu &amp;quot;Compiler&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Interpreter&lt;/strong&gt;: anstatt Erzeugung eines Zielcodes direkte Ausführung&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;REPL&lt;/strong&gt;: Interpreter für die interaktive Verwendung (&amp;quot;Read Evaluate Print Loop&amp;quot;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JIT-Compiler&lt;/strong&gt;: direkte Ausführung wie ein Interpreter, aber es wird echter Maschinencode erzeugt (&amp;quot;Just In Time&amp;quot;)&lt;/li&gt;
+&lt;li&gt;z.B. portable Programme: Compiler erzeugt Maschinencode für ein virtuelles Maschinenmodell, Laufzeitumgebung ist ein Interpreter oder JIT-Compiler für diesen Maschinencode -&amp;gt; analog dazu Frontend/Backend-Aufteilung innerhalb eines Compilers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Frontend: Umformen der Texteingabe in eine Datenstruktur, Prüfung dieser Struktur auf inhaltliche Korrektheit (maschinenunabhängig, aber sprachabhängig)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lexikalische Analyse: Zerteilen des Eingabetextes in eine Folge von Tokens mittels regulärer Ausdrücke (siehe STP021; diese Vorstufe ist eine Optimierung, weil reguläre Ausdrücke schneller ausgewertet werden können)&lt;/li&gt;
+&lt;li&gt;syntaktische Analyse: Umformen der Tokenliste in einen &lt;strong&gt;Syntaxbaum&lt;/strong&gt; mittels eines kontextfreien Parsers (siehe &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Parser&amp;amp;oldid=225991691#Beispiel&#34;&gt;Beispiel bei Wikipedia&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;semantische Analyse: Prüfen des Syntaxbaums auf inhaltliche Korrektheit, meist mittels Markierungen an jedem Knoten des Baums (z.B. Welchen Typ hat der hier berechnete Wert? Passen die Werte des Elternknotens bzw. des Kindknotens dazu? etc.)&lt;/li&gt;
+&lt;li&gt;IR-Erzeugung: Umformung des Syntaxbaums in eine &lt;strong&gt;Intermediate Representation&lt;/strong&gt; (IR), die sich für maschinenunabhängige Optimierung eignet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fortsetzung des Beispiels aus Wikipedia (aber mit einer Eingabevariable &lt;code&gt;y&lt;/code&gt; und Ausgabevariable &lt;code&gt;x&lt;/code&gt;): mögliche IR für den Ausdruck &lt;code&gt;x = y &#43; (2 &#43; 2) - sin(pi)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$1 = 2
+$2 = $1 &#43; $1
+$3 = load %y
+$4 = $3 &#43; $2
+$5 = pi
+$6 = call sin($5)
+$7 = $4 - $6
+store %x, $7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Middleend: Optimierungsläufe auf IR (Auswahl)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Statische Formelauswertung zur Programmzeit: z.B. oben statt &lt;code&gt;$2 = $1 &#43; $1&lt;/code&gt; direkt &lt;code&gt;$2 = 4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Löschung von unerreichbarem Code: sehr einfach bei IR mit &lt;strong&gt;Static Single Assignment&lt;/strong&gt; (SSA) wie im Beispiel&lt;/li&gt;
+&lt;li&gt;Invariantenextraktion aus Schleifen: wenn z.B. für verschiedene Werte von &lt;code&gt;x&lt;/code&gt; der Ausdruck &lt;code&gt;sin(x) &#43; cos(y)&lt;/code&gt; berechnet wird, so kann man &lt;code&gt;cos(y)&lt;/code&gt; vor der Schleife ein einziges Mal berechnen und das Zwischenergebnis wiederverwenden&lt;/li&gt;
+&lt;li&gt;Inlining: ist eine Funktion sehr kurz, kann es effizienter sein, einen Funktionsaufruf durch eine Kopie der Funktion zu ersetzen (insb. wenn dann weitere Optimierungen möglich werden)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beispiel: optimierte Variante der IR von oben&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$3 = load %y
+$7 = $3 &#43; 4
+store %x, $7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Backend: Umwandlung der maschinenunabhängigen IR in tatsächlichen Maschinencode
+&lt;ul&gt;
+&lt;li&gt;Codeauswahl: für die einzelnen Operationen Auswahl der besten Maschinenbefehle
+&lt;ul&gt;
+&lt;li&gt;je nach Optimierungsziel: Geschwindigkeit, Speicherverbrauch, Energieverbrauch, etc. (z.B. &lt;code&gt;x * 3&lt;/code&gt; kann je nach Maschinenarchitektur gewinnbringend durch &lt;code&gt;x &#43; x &#43; x&lt;/code&gt; ersetzt werden)&lt;/li&gt;
+&lt;li&gt;schwieriger als gedacht wegen komplexen Befehlen (z.B. SIMD: Single Instruction Multiple Data)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Registerzuweisung: nummerierte Register aus der IR ersetzen durch die tatsächlich in der Maschine verfügbaren Register
+&lt;ul&gt;
+&lt;li&gt;reduzierbar auf ein &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=F%C3%A4rbung_(Graphentheorie)&amp;amp;oldid=228052439&#34;&gt;Graphenfärbungsproblem&lt;/a&gt;: Knoten = IR-Register, Kanten = gemeinsame Verwendung in Berechnungen, Farben = echte Register&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Scheduling: optimale Sortierung der einzelnen Maschinenbefehle (soweit umordenbar)
+&lt;ul&gt;
+&lt;li&gt;z.B. parallele Ausnutzung verschiedener Recheneinheiten in der CPU (für Ganzzahl- und Fließkommazahl-Operationen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;maschinenabhängige Optimierungen (aus Zeitgründen hier nicht)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Präludium"  />
+          <chapter start="00:04:48" title="Begriffsklärung: Compiler"  />
+          <chapter start="00:12:19" title="Unterbegriffe zu Compiler"  />
+          <chapter start="00:19:29" title="Tätigkeit  des Compilers, Frontend"  />
+          <chapter start="00:22:03" title="lexikalische Analyse"  />
+          <chapter start="00:25:12" title="syntaktischegc Analyse"  />
+          <chapter start="00:31:53" title="semantische Analyse"  />
+          <chapter start="00:39:15" title="IR-Erzeugung"  />
+          <chapter start="00:42:34" title="Middleend: Optimierungsläufe auf IR"  />
+          <chapter start="00:51:26" title="Backend: Umwandlung in Maschinencode"  />
+          <chapter start="00:52:37" title="Codeauswahl"  />
+          <chapter start="00:57:01" title="Registerzuweisung"  />
+          <chapter start="01:01:40" title="Scheduling"  />
+      </chapters>
+      <enclosure length="66865990" url="https://dl.xyrillian.de/noises/stp-034-compilerbau.mp3" type="audio/mpeg"/>
+      <enclosure length="42024636" url="https://dl.xyrillian.de/noises/stp-034-compilerbau.ogg" type="audio/ogg"/>
+      <enclosure length="25217597" url="https://dl.xyrillian.de/noises/stp-034-compilerbau.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/034-compilerbau/</guid>
+    <pubDate>Thu, 23 Mar 2023 22:59:00 GMT</pubDate>
+    <itunes:duration>69:18</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP033: Programmiersprachen</itunes:title>
     <itunes:episode>33</itunes:episode>
     <itunes:season>1</itunes:season>
