@@ -27,7 +27,7 @@ store %x, $7
 ```
 
 - Middleend: Optimierungsläufe auf IR (Auswahl)
-    - Statische Formelauswertung zur Programmzeit: z.B. oben statt `$2 = $1 + $1` direkt `$2 = 4`
+    - Statische Formelauswertung: z.B. oben statt `$2 = $1 + $1` direkt `$2 = 4`
     - Löschung von unerreichbarem Code: sehr einfach bei IR mit **Static Single Assignment** (SSA) wie im Beispiel
     - Invariantenextraktion aus Schleifen: wenn z.B. für verschiedene Werte von `x` der Ausdruck `sin(x) + cos(y)` berechnet wird, so kann man `cos(y)` vor der Schleife ein einziges Mal berechnen und das Zwischenergebnis wiederverwenden
     - Inlining: ist eine Funktion sehr kurz, kann es effizienter sein, einen Funktionsaufruf durch eine Kopie der Funktion zu ersetzen (insb. wenn dann weitere Optimierungen möglich werden)

@@ -151,7 +151,7 @@ store %x, $7
 <li>
 <p>Middleend: Optimierungsläufe auf IR (Auswahl)</p>
 <ul>
-<li>Statische Formelauswertung zur Programmzeit: z.B. oben statt <code>$2 = $1 + $1</code> direkt <code>$2 = 4</code></li>
+<li>Statische Formelauswertung: z.B. oben statt <code>$2 = $1 + $1</code> direkt <code>$2 = 4</code></li>
 <li>Löschung von unerreichbarem Code: sehr einfach bei IR mit <strong>Static Single Assignment</strong> (SSA) wie im Beispiel</li>
 <li>Invariantenextraktion aus Schleifen: wenn z.B. für verschiedene Werte von <code>x</code> der Ausdruck <code>sin(x) + cos(y)</code> berechnet wird, so kann man <code>cos(y)</code> vor der Schleife ein einziges Mal berechnen und das Zwischenergebnis wiederverwenden</li>
 <li>Inlining: ist eine Funktion sehr kurz, kann es effizienter sein, einen Funktionsaufruf durch eine Kopie der Funktion zu ersetzen (insb. wenn dann weitere Optimierungen möglich werden)</li>
