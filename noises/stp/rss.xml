@@ -27,6 +27,128 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP035: Aprilscherz-RFCs</itunes:title>
+    <itunes:episode>35</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP035: Aprilscherz-RFCs</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>April, April! Ha, erwischt. Hier eine Sonderfolge mit vergnüglichen RFCs, die einen niederschwelligen Einblick in technische Spezifikationen bieten.
+Viel Spass beim Hören und passt auf, ihr werdet alle gehirngewaschen.</itunes:summary>
+    <description>April, April! Ha, erwischt. Hier eine Sonderfolge mit vergnüglichen RFCs, die einen niederschwelligen Einblick in technische Spezifikationen bieten.
+Viel Spass beim Hören und passt auf, ihr werdet alle gehirngewaschen.</description>
+    <content:encoded>&lt;p&gt;April, April! Ha, erwischt. Hier eine Sonderfolge mit vergnüglichen RFCs, die einen niederschwelligen Einblick in technische Spezifikationen bieten.
+Viel Spass beim Hören und passt auf, ihr werdet alle gehirngewaschen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;vollständige Liste &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=April_Fools%27_Day_Request_for_Comments&amp;amp;oldid=1083880338&#34;&gt;siehe Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wir präsentieren hier nur eine kleine Auswahl&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc1097&#34;&gt;RFC 1097 (von 1989): TELNET-Option &amp;quot;Unterschwellige Botschaft&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zu TELNET siehe STP022&lt;/li&gt;
+&lt;li&gt;&amp;quot;Die Nutzung von Hinweisbannern und Newslettern ist oft nicht ausreichend, um widerspenstige Nutzer zum Upgrade auf die neueste Telnet-Version zu bewegen. Manche Nutzer werden die selben veralteten Versionen noch Jahre weiterverwenden. [...] Diese Nutzer müssen auf sanfte Weise &#39;überredet&#39; werden.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Kontext: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Unterschwelliger_Reiz&amp;amp;oldid=224495884#Konsum_und_Fernsehen&#34;&gt;Wikipedia zu unterschwelligen Botschaften im Fernsehen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc1149&#34;&gt;RFC 1149 (von 1990): IP-Übertragungen via Brieftaube&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gute Illustration des Netzwerk-Schichtenmodells (siehe STP005)&lt;/li&gt;
+&lt;li&gt;2001: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Internet_Protocol_over_Avian_Carriers&amp;amp;oldid=228505943&#34;&gt;Praxisversuch durch die Linux User Group im norwegischen Bergen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc2100&#34;&gt;RFC 2100 (von 1997): &amp;quot;The naming of hosts&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ein Gedicht zur Frage, was gute Namen für Computer sind&lt;/li&gt;
+&lt;li&gt;siehe auch &lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc1178&#34;&gt;RFC 1178: &amp;quot;Choosing a name for your computer&amp;quot;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc2324&#34;&gt;RFC 2324 (von 1998): Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ein früher Beitrag zur Heimautomatisierung aber für &amp;quot;Kaffee-mit-Milch-Trinker&amp;quot; eventuell mit Problemen behaftet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc3514&#34;&gt;RFC 3514 (von 2003): &amp;quot;The Security Flag in the IPv4 Header&amp;quot;&lt;/a&gt;
+-böswillige Teilnehmer des Internets werden aufgefordert ein ensprechendes Bit im Header zu setzen&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc5514&#34;&gt;RFC 5514 (von 2009): &amp;quot;IPv6 over Social Networks&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;schon wieder das Netzwerk-Schichtenmodell: wenn etwas Bytes übertragen kann, kann es IP-Pakete übertragen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc6919&#34;&gt;RFC 6919 (von 2013): Neue definierte Schlüsselwörter für Standard-Texte&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nimmt satirischen Bezug auf die Begriffsdefinitionen in &lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc2119&#34;&gt;RFC 2119&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc7168&#34;&gt;RFC 7168 (von 2014): Update für RFC2324 zur Zubereitung von Tee&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;geht in besonderem Maße auch auf verschiedene Teesorten und feste Zuschlagstoffe ein&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc7511&#34;&gt;RFC 7511 (von 2015): Malerische Routen für IP-Pakete&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nimmt satirischen Bezug auf Routenplanungsoptionen in Navigationssystemen (&amp;quot;schnelle&amp;quot; vs. &amp;quot;spritsparende&amp;quot; vs. &amp;quot;malerische&amp;quot; Route)&lt;/li&gt;
+&lt;li&gt;&amp;quot;In Zeiten von Green IT wird großer Aufwand getrieben, um den Energieverbrauch von Netzwerkgeräten und Computern zu reduzieren und damit die Umwelt zu schützen. Dieses Dokument beleuchtet Green IT aus einem anderen Winkel&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc8140&#34;&gt;RFC 8140 (von 2017): Eine Galerie mit ASCII Art&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Johannes Gutenberg entdeckte &lt;em&gt;und patentierte&lt;/em&gt; ASCII und die dazu passende Schriftart &#39;Courier New&#39; mit ihrer nunmehr berühmten &amp;quot;Zehn-Punkt&amp;quot;-Größe. Seither haben sich Kunsthandwerker darum bemüht, ihre Sicht der Welt in gedruckter Form abzubilden.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc9225&#34;&gt;RFC 9225 (von 2022): &amp;quot;Software Defects Considered Harmful&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Handlungsempfehlungen: 1. Software-Autoren DÜRFEN KEINE Fehler einbauen. 2. Wenn Fehler eingebaut werden, MÜSSEN sie klar dokumentiert werden. [...] 5. Nehmen Sie an, dass externe Eingaben das Ergebnis von Fehlern sind. [...] 6. Genau genommen sollten sie auch annehmen, dass &lt;strong&gt;interne&lt;/strong&gt; Eingaben das Ergebnis von Fehlern sind.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Kontext: &lt;a href=&#34;https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF&#34;&gt;&amp;quot;Goto Considered Harmful&amp;quot; von 1968&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;quot;Considered Harmful&amp;quot; ist ein &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Snowclone&amp;amp;oldid=1136199131&#34;&gt;Snowclone&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Im Gespäch erwähnt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://requestforcomments.de/archives/363&#34;&gt;RFC-Podcast Episode 011&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:00" title="Was sind RFCs?"  />
+          <chapter start="00:05:00" title="RFC 1097: TELNET-Option &#39;Unterschwellige Botschaft&#39;"  />
+          <chapter start="00:09:15" title="RFC 1149: IP-Übertragungen via Brieftaube"  />
+          <chapter start="00:17:58" title="RFC 2100: &#39;The naming of hosts&#39;"  />
+          <chapter start="00:21:47" title="RFC 2324: Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0)"  />
+          <chapter start="00:27:53" title="RFC 3514: &#39;The Security Flag in the IPv4 Header&#39;"  />
+          <chapter start="00:30:55" title="RFC 5514: &#39;IPv6 over Social Networks&#39;"  />
+          <chapter start="00:38:39" title="RFC 7168: Update für RFC2324 zur Zubereitung von Tee"  />
+          <chapter start="00:42:04" title="RFC 6919: Neue definierte Schlüsselwörter für Standard-Texte"  />
+          <chapter start="00:50:05" title="RFC 7511: Malerische Routen für IP-Pakete"  />
+          <chapter start="00:51:41" title="RFC 8140: Eine Galerie mit ASCII Art"  />
+          <chapter start="00:54:28" title="RFC 9225: &#39;Software Defects Considered Harmful&#39;"  />
+          <chapter start="00:58:28" title="Stöbern in alten RFCs"  />
+      </chapters>
+      <enclosure length="61541378" url="https://dl.xyrillian.de/noises/stp-035-aprilscherz-rfcs.mp3" type="audio/mpeg"/>
+      <enclosure length="38267489" url="https://dl.xyrillian.de/noises/stp-035-aprilscherz-rfcs.ogg" type="audio/ogg"/>
+      <enclosure length="23138675" url="https://dl.xyrillian.de/noises/stp-035-aprilscherz-rfcs.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/035-aprilscherz-rfcs/</guid>
+    <pubDate>Sat, 01 Apr 2023 00:00:00 GMT</pubDate>
+    <itunes:duration>63:45</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP034: Compilerbau</itunes:title>
     <itunes:episode>34</itunes:episode>
     <itunes:season>1</itunes:season>
