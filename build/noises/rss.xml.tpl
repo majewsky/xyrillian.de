@@ -40,14 +40,14 @@
     <itunes:summary>{{.RSS.Description}}</itunes:summary>
     <description>{{.RSS.Description}}</description>
     <content:encoded>{{.RSS.ShowNotes}}</content:encoded>
-    {{- if .Chapters }}
+    {{- if .AudioMetadata.Chapters }}
       <chapters xmlns="http://podlove.de/simple-chapters">
-        {{- range .Chapters }}
+        {{- range .AudioMetadata.Chapters }}
           <chapter start="{{.StartSeconds | startSecondsToHHMMSS }}" title="{{.Title}}" {{if .URL}}href="{{.URL}}"{{end}} />
         {{- end }}
       </chapters>
     {{- end }}
-    {{- range .Downloads }}
+    {{- range .AudioMetadata.Downloads }}
     {{- if ne .Format "FLAC" }}
       <enclosure length="{{.SizeBytes}}" url="https://dl.xyrillian.de/noises/{{.FileName}}" type="{{.MIMEType}}"/>
     {{- end }}
@@ -60,7 +60,7 @@
       {{- end -}}
     </guid>
     <pubDate>{{.PublicationTimeUnix | unixTimeToRFC1123 }}</pubDate>
-    <itunes:duration>{{.LengthSeconds | readableLengthSeconds}}</itunes:duration>
+    <itunes:duration>{{.AudioMetadata.LengthSeconds | readableLengthSeconds}}</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
   </item>
   {{- end }}

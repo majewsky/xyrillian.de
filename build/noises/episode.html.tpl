@@ -35,22 +35,22 @@
     {{- if $file.HTML.Notes }}
       <p>{{$file.HTML.Notes}}</p>
     {{- end }}
-    {{- if $file.LengthSeconds }}
-      <p><strong>Länge:</strong> {{$file.LengthSeconds | readableLengthSeconds}} Minuten</p>
+    {{- if $file.AudioMetadata.LengthSeconds }}
+      <p><strong>Länge:</strong> {{$file.AudioMetadata.LengthSeconds | readableLengthSeconds}} Minuten</p>
     {{- end }}
   </header>
-  {{- if $file.Downloads }}
+  {{- if $file.AudioMetadata.Downloads }}
     <audio controls preload="none">
-      {{- range $file.Downloads }}
+      {{- range $file.AudioMetadata.Downloads }}
         <source src="/dl/{{.FileName}}" type="{{.MIMEType}}">
       {{- end }}
       <div class="audio-not-supported">
         <span>Webplayer nicht vom Browser unterstützt</span>
       </div>
     </audio>
-    {{- if $file.Chapters }}
+    {{- if $file.AudioMetadata.Chapters }}
     <div id="chapters">
-      {{- range $file.Chapters }}
+      {{- range $file.AudioMetadata.Chapters }}
       <div class="chapter" data-start="{{.StartSeconds}}" data-end="{{.EndSeconds}}">
         <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
         <span class="chapter-start" title="Zur Kapitelmarke springen">{{.StartSeconds | floatToUint | readableLengthSeconds }}</span>
@@ -62,7 +62,7 @@
     <section>
       <h3>Download</h3>
       <ul>
-        {{- range $file.Downloads }}
+        {{- range $file.AudioMetadata.Downloads }}
           <li><a href="/dl/{{.FileName}}">{{.Format}}</a> ({{.SizeBytes | readableFileSize }})</li>
         {{- end }}
       </ul>

@@ -1,0 +1,2072 @@
+audio_metadata:
+  gnse:001-modem-dialup-sound:
+    length_secs: 507
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: gnse-001-modem-dialup-sound.mp3
+      size_bytes: 9821035
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: gnse-001-modem-dialup-sound.ogg
+      size_bytes: 8194996
+    - format: Opus
+      mime_type: audio/opus
+      filename: gnse-001-modem-dialup-sound.opus
+      size_bytes: 6972029
+    - format: FLAC
+      mime_type: audio/flac
+      filename: gnse-001-modem-dialup-sound.flac
+      size_bytes: 30538524
+    chapters: []
+  gnse:002-time:
+    length_secs: 518
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: gnse-002-time.mp3
+      size_bytes: 8571640
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: gnse-002-time.ogg
+      size_bytes: 7805743
+    - format: Opus
+      mime_type: audio/opus
+      filename: gnse-002-time.opus
+      size_bytes: 3766080
+    - format: FLAC
+      mime_type: audio/flac
+      filename: gnse-002-time.flac
+      size_bytes: 22331530
+    chapters:
+    - start_secs: 0
+      end_secs: 28
+      title: Intro
+    - start_secs: 28
+      end_secs: 88
+      title: Schaltjahre
+    - start_secs: 88
+      end_secs: 281
+      title: Schaltsekunden
+    - start_secs: 281
+      end_secs: 444
+      title: Zeitzonen in Deutschland
+    - start_secs: 444
+      end_secs: 518.108
+      title: Outro
+  gnse:003-power-network-frequency:
+    length_secs: 454
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: gnse-003-power-network-frequency.mp3
+      size_bytes: 6641608
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: gnse-003-power-network-frequency.ogg
+      size_bytes: 7074091
+    - format: Opus
+      mime_type: audio/opus
+      filename: gnse-003-power-network-frequency.opus
+      size_bytes: 3275516
+    - format: FLAC
+      mime_type: audio/flac
+      filename: gnse-003-power-network-frequency.flac
+      size_bytes: 20946970
+    chapters:
+    - start_secs: 0
+      end_secs: 67
+      title: Intro
+    - start_secs: 67
+      end_secs: 283
+      title: Selbsttätige Steuerung der Netzfrequenz
+    - start_secs: 283
+      end_secs: 381
+      title: Ein Großkraftwerk fällt aus
+    - start_secs: 381
+      end_secs: 454.256
+      title: Outro
+  gnse:004-color-spaces:
+    length_secs: 491
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: gnse-004-color-spaces.mp3
+      size_bytes: 7168912
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: gnse-004-color-spaces.ogg
+      size_bytes: 6029864
+    - format: Opus
+      mime_type: audio/opus
+      filename: gnse-004-color-spaces.opus
+      size_bytes: 3419457
+    - format: FLAC
+      mime_type: audio/flac
+      filename: gnse-004-color-spaces.flac
+      size_bytes: 28090166
+    chapters:
+    - start_secs: 0
+      end_secs: 15
+      title: Intro
+    - start_secs: 15
+      end_secs: 71
+      title: Bedrucktes ist allgegenwärtig
+    - start_secs: 71
+      end_secs: 169
+      title: 'CMYK: Subtraktive Farbmischung'
+    - start_secs: 169
+      end_secs: 227
+      title: 'RGB: Additive Farbmischung'
+    - start_secs: 227
+      end_secs: 306
+      title: Standardisierung von Farbräumen
+    - start_secs: 306
+      end_secs: 357
+      title: Farbwahrnehmung des menschlichen Auges
+    - start_secs: 357
+      end_secs: 400
+      title: Wahrnehmungsspezifischer Farbraum CIELAB
+    - start_secs: 400
+      end_secs: 461
+      title: Warum die Wahl des Farbraumes wichtig ist
+    - start_secs: 461
+      end_secs: 491.821
+      title: Outro
+  gnse:outtakes-01:
+    length_secs: 251
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: gnse-outtakes-01.mp3
+      size_bytes: 3517838
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: gnse-outtakes-01.ogg
+      size_bytes: 3754414
+    - format: Opus
+      mime_type: audio/opus
+      filename: gnse-outtakes-01.opus
+      size_bytes: 1540336
+    - format: FLAC
+      mime_type: audio/flac
+      filename: gnse-outtakes-01.flac
+      size_bytes: 11698916
+    chapters:
+    - start_secs: 0
+      end_secs: 48
+      title: 'Ankündigung: Neuer Podcast "Space Tourist"'
+      url: https://xyrillian.de/noises/st/
+    - start_secs: 48
+      end_secs: 251.077
+      title: Outtakes
+  st:001-eigenbaukombinat-halle:
+    length_secs: 604
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: st-001-eigenbaukombinat-halle.mp3
+      size_bytes: 8725158
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: st-001-eigenbaukombinat-halle.ogg
+      size_bytes: 7118518
+    - format: Opus
+      mime_type: audio/opus
+      filename: st-001-eigenbaukombinat-halle.opus
+      size_bytes: 4090129
+    - format: FLAC
+      mime_type: audio/flac
+      filename: st-001-eigenbaukombinat-halle.flac
+      size_bytes: 41306144
+    chapters:
+    - start_secs: 0
+      end_secs: 59
+      title: Intro
+    - start_secs: 59
+      end_secs: 115
+      title: 'Lexikon: Was ist ein Hackerspace?'
+    - start_secs: 115
+      end_secs: 274
+      title: Vorstellung Eigenbaukombinat
+    - start_secs: 274
+      end_secs: 536
+      title: 'Postkarte: Junghackertag'
+    - start_secs: 536
+      end_secs: 604.877
+      title: Outro
+  st:002-bonus-interview:
+    length_secs: 2442
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: st-002-bonus-interview.mp3
+      size_bytes: 34454973
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: st-002-bonus-interview.ogg
+      size_bytes: 28309567
+    - format: Opus
+      mime_type: audio/opus
+      filename: st-002-bonus-interview.opus
+      size_bytes: 15240516
+    chapters:
+    - start_secs: 0
+      end_secs: 950
+      title: Erste Hälfte
+    - start_secs: 950
+      end_secs: 977
+      title: Pause
+    - start_secs: 977
+      end_secs: 2442.798
+      title: Zweite Hälfte
+  st:002-cbase-berlin:
+    length_secs: 474
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: st-002-cbase-berlin.mp3
+      size_bytes: 6905618
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: st-002-cbase-berlin.ogg
+      size_bytes: 5846059
+    - format: Opus
+      mime_type: audio/opus
+      filename: st-002-cbase-berlin.opus
+      size_bytes: 3260813
+    - format: FLAC
+      mime_type: audio/flac
+      filename: st-002-cbase-berlin.flac
+      size_bytes: 31548639
+    chapters:
+    - start_secs: 0
+      end_secs: 52
+      title: Intro
+    - start_secs: 52
+      end_secs: 318
+      title: 'Postkarte: Die große Antenne'
+    - start_secs: 318
+      end_secs: 425
+      title: 'Space-Lexikon: Hackerspaces als Medienhäuser'
+    - start_secs: 425
+      end_secs: 474.96
+      title: Outro
+  stp:000-was-ist-informatik:
+    length_secs: 2919
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-000-was-ist-informatik.mp3
+      size_bytes: 23671644
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-000-was-ist-informatik.ogg
+      size_bytes: 17083503
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-000-was-ist-informatik.opus
+      size_bytes: 16964690
+    chapters:
+    - start_secs: 0
+      end_secs: 34.641
+      title: Intro
+    - start_secs: 34.641
+      end_secs: 244.559
+      title: Wer sind wir und was tun wir hier?
+    - start_secs: 244.559
+      end_secs: 397.098
+      title: Gedanken über Mathematik
+    - start_secs: 397.098
+      end_secs: 946.265
+      title: Informatik als wissenschaftliche Neuerung
+    - start_secs: 946.265
+      end_secs: 1438.169
+      title: Was genau ist eigentlich Mathematik
+    - start_secs: 1438.169
+      end_secs: 2170.066
+      title: Was kann und sollte Informatik leisten?
+    - start_secs: 2170.066
+      end_secs: 2796.064
+      title: Überlegungen zu Berechenbarkeit
+    - start_secs: 2796.064
+      end_secs: 2919.864
+      title: Letzte Worte und Abschied
+  stp:001-zahlensysteme:
+    length_secs: 3083
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-001-zahlensysteme.mp3
+      size_bytes: 24981951
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-001-zahlensysteme.ogg
+      size_bytes: 31098922
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-001-zahlensysteme.opus
+      size_bytes: 18125770
+    chapters:
+    - start_secs: 0
+      end_secs: 51.608
+      title: Intro
+    - start_secs: 51.608
+      end_secs: 142.761
+      title: Einstieg und Zukunftspläne
+    - start_secs: 142.761
+      end_secs: 919.208
+      title: Stellwertsystem, Additionssystem und Hybridsystem
+    - start_secs: 919.208
+      end_secs: 1394.008
+      title: Das Dualsystem/Binärsystem
+    - start_secs: 1394.008
+      end_secs: 1846.71
+      title: Binär vs Digital
+    - start_secs: 1846.71
+      end_secs: 2375.515
+      title: Hexadezimalsystem und Oktalsystem
+    - start_secs: 2375.515
+      end_secs: 3083.656
+      title: Größenordnungen oberhalb von 0 und 1
+  stp:002-aufruf-einer-webseite:
+    length_secs: 3333
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-002-aufruf-einer-webseite.mp3
+      size_bytes: 26983760
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-002-aufruf-einer-webseite.ogg
+      size_bytes: 35520202
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-002-aufruf-einer-webseite.opus
+      size_bytes: 20380590
+    chapters:
+    - start_secs: 0
+      end_secs: 117.587
+      title: Intro
+    - start_secs: 117.587
+      end_secs: 300.036
+      title: Bestandteile einer Webseitenadresse
+    - start_secs: 300.036
+      end_secs: 753.203
+      title: Namensauflösung per DNS
+    - start_secs: 753.203
+      end_secs: 1442.471
+      title: Verbindung zum Webserver
+    - start_secs: 1442.471
+      end_secs: 1741.929
+      title: Webseite
+    - start_secs: 1741.929
+      end_secs: 2447.372
+      title: Ressourcen
+    - start_secs: 2447.372
+      end_secs: 2939.773
+      title: Cookies
+    - start_secs: 2939.773
+      end_secs: 3333.883
+      title: Was passiert, wenn ich einen Podcast abrufe?
+  stp:003-logikgatter:
+    length_secs: 2515
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-003-logikgatter.mp3
+      size_bytes: 20441158
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-003-logikgatter.ogg
+      size_bytes: 26067582
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-003-logikgatter.opus
+      size_bytes: 14778359
+    chapters:
+    - start_secs: 0
+      end_secs: 135.725
+      title: Intro und Hallo
+    - start_secs: 135.725
+      end_secs: 340.143
+      title: Grundsätzlicher Aufbau und Zweck von Logikgattern
+    - start_secs: 340.143
+      end_secs: 455.786
+      title: Gatter mit nur einem Eingang
+    - start_secs: 455.786
+      end_secs: 611.811
+      title: Gatter mit zwei Eingängen
+    - start_secs: 611.811
+      end_secs: 630.844
+      title: AND-Gatter
+    - start_secs: 630.844
+      end_secs: 652.866
+      title: OR-Gatter
+    - start_secs: 652.866
+      end_secs: 753.212
+      title: XOR-Gatter
+    - start_secs: 753.212
+      end_secs: 880.026
+      title: NAND-Gatter
+    - start_secs: 880.026
+      end_secs: 928.306
+      title: NOR-Gatter
+    - start_secs: 928.306
+      end_secs: 999.07
+      title: NXOR/XNOR-Gatter
+    - start_secs: 999.07
+      end_secs: 1075.021
+      title: Rechenlogik
+    - start_secs: 1075.021
+      end_secs: 1401
+      title: Halbaddierer
+    - start_secs: 1401
+      end_secs: 1487.063
+      title: Volladdierer
+    - start_secs: 1487.063
+      end_secs: 1551
+      title: Addiernetz
+    - start_secs: 1551
+      end_secs: 1779
+      title: Bitüberlauf
+    - start_secs: 1779
+      end_secs: 2122.067
+      title: Warum das ganze
+    - start_secs: 2122.067
+      end_secs: 2515.988
+      title: Schaltzeiten und Prozessortakt
+  stp:004-passwoerter:
+    length_secs: 5445
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-004-passwoerter.mp3
+      size_bytes: 43876549
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-004-passwoerter.ogg
+      size_bytes: 55220724
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-004-passwoerter.opus
+      size_bytes: 31765655
+    chapters:
+    - start_secs: 0
+      end_secs: 321.097
+      title: Intro und Feedback
+    - start_secs: 321.097
+      end_secs: 362.861
+      title: Warum das Ganze
+    - start_secs: 362.861
+      end_secs: 424.501
+      title: Dinge die ich weiß
+    - start_secs: 424.501
+      end_secs: 522.236
+      title: Dinge die ich habe
+    - start_secs: 522.236
+      end_secs: 546.03
+      title: Dinge die ich bin
+    - start_secs: 546.03
+      end_secs: 1103.014
+      title: Ein Faktor vs. zwei Faktoren
+    - start_secs: 1103.014
+      end_secs: 1568.08
+      title: Hash-Funktionen
+    - start_secs: 1568.08
+      end_secs: 2267.019
+      title: Kryptografische Hash-Funktionen
+    - start_secs: 2267.019
+      end_secs: 2654.029
+      title: Salting
+    - start_secs: 2654.029
+      end_secs: 4734.007
+      title: Wie schütze ich mich als Nutzer
+    - start_secs: 4734.007
+      end_secs: 5003.463
+      title: 'Rant: Sicherheitsmaßnahmen, die nicht wirklich bessere Sicherheit bringen'
+    - start_secs: 5003.463
+      end_secs: 5083.026
+      title: Was tun Webseitenbetreiber um sicher zu authentifizieren
+    - start_secs: 5083.026
+      end_secs: 5445.427
+      title: Alternativen zu Passwörtern
+  stp:005-netzwerk-schichtenmodell:
+    length_secs: 4907
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-005-netzwerk-schichtenmodell.mp3
+      size_bytes: 39569965
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-005-netzwerk-schichtenmodell.ogg
+      size_bytes: 49467388
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-005-netzwerk-schichtenmodell.opus
+      size_bytes: 28575009
+    chapters:
+    - start_secs: 0
+      end_secs: 18.17
+      title: Richtigstellung vorab
+    - start_secs: 18.17
+      end_secs: 165.014
+      title: Intro und Hallo
+    - start_secs: 165.014
+      end_secs: 298.986
+      title: Vorbemerkung zur Natur der Daten
+    - start_secs: 298.986
+      end_secs: 382.437
+      title: 'Recap: Protokolle'
+    - start_secs: 382.437
+      end_secs: 876.51
+      title: Warum ein ganzer Stapel Protokolle? Ein Erklärungsversuch
+    - start_secs: 876.51
+      end_secs: 1009.975
+      title: 'Schicht 1: Bitübertragungsschicht (Physical Layer)'
+    - start_secs: 1009.975
+      end_secs: 1172.807
+      title: Fantastische Technologie und nasser Faden
+    - start_secs: 1172.807
+      end_secs: 1378.945
+      title: 'Einschub: Protokolle und Sprache'
+    - start_secs: 1378.945
+      end_secs: 1653.567
+      title: Warum Layer 2?
+    - start_secs: 1653.567
+      end_secs: 2283.619
+      title: 'Schicht 2: Sicherungsschicht (Data Layer)'
+    - start_secs: 2283.619
+      end_secs: 2460.079
+      title: 'Schicht 3: Vermittlungsschicht (Network Layer)'
+    - start_secs: 2460.079
+      end_secs: 3191.564
+      title: 'IP: Das Internetprotokoll'
+    - start_secs: 3191.564
+      end_secs: 3506.524
+      title: ICMP (Internet Control Message Protocol)
+    - start_secs: 3506.524
+      end_secs: 3658.519
+      title: NAT (Network Address Translation)
+    - start_secs: 3658.519
+      end_secs: 3775.959
+      title: 'Schicht 4: Transportschicht (Transport Layer)'
+    - start_secs: 3775.959
+      end_secs: 4034.543
+      title: Ports und Portnummern
+    - start_secs: 4034.543
+      end_secs: 4335.534
+      title: TCP (Transmission Control Protocol)
+    - start_secs: 4335.534
+      end_secs: 4575.513
+      title: UDP (User Datagram Protocol)
+    - start_secs: 4575.513
+      end_secs: 4690.8
+      title: 'Schicht 5-7: Anwendungsschicht (Application Layer)'
+    - start_secs: 4690.8
+      end_secs: 4812.868
+      title: Grenzen des Schichtenmodells
+    - start_secs: 4812.868
+      end_secs: 4907.014
+      title: Layer 8 und 9
+  stp:006-kommandozeilen-und-unix-philosophie:
+    length_secs: 5285
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-006-kommandozeilen-und-unix-philosophie.mp3
+      size_bytes: 42597030
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-006-kommandozeilen-und-unix-philosophie.ogg
+      size_bytes: 55024669
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-006-kommandozeilen-und-unix-philosophie.opus
+      size_bytes: 31286363
+    chapters:
+    - start_secs: 0
+      end_secs: 154.032
+      title: Intro und Begrüßung
+    - start_secs: 154.032
+      end_secs: 332.008
+      title: Begriffserklärung Kommandozeile und Terminal
+    - start_secs: 332.008
+      end_secs: 421.222
+      title: Begriffserklärung Terminal-Emulator
+    - start_secs: 421.222
+      end_secs: 752.186
+      title: Begriffserklärung Shell
+    - start_secs: 752.186
+      end_secs: 1461.027
+      title: Warum überhaupt Terminals benutzen?
+    - start_secs: 1461.027
+      end_secs: 1944.99
+      title: Nachteile von Terminals
+    - start_secs: 1944.99
+      end_secs: 2625.086
+      title: Unix und die Unixfamilie
+    - start_secs: 2625.086
+      end_secs: 3059.049
+      title: Die Unix-Philosophie
+    - start_secs: 3059.049
+      end_secs: 3186.003
+      title: Unix-Philosophie im Kontext des Terminals
+    - start_secs: 3186.003
+      end_secs: 4254.039
+      title: 'Beispiel: Gesetzestextmanipulation'
+    - start_secs: 4254.039
+      end_secs: 5202.839
+      title: Abendgedanken über den Wert einer Lernkurve
+    - start_secs: 5202.839
+      end_secs: 5285.481
+      title: Outro
+  stp:007-speicherhierarchie:
+    length_secs: 3721
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-007-speicherhierarchie.mp3
+      size_bytes: 30081141
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-007-speicherhierarchie.ogg
+      size_bytes: 40115908
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-007-speicherhierarchie.opus
+      size_bytes: 22557543
+    chapters:
+    - start_secs: 0
+      end_secs: 38.442
+      title: Intro
+    - start_secs: 38.442
+      end_secs: 144.013
+      title: Prolog und Ausblick
+    - start_secs: 144.013
+      end_secs: 358.014
+      title: Harvard-Architektur vs. Von-Neumann-Architektur
+    - start_secs: 358.014
+      end_secs: 455.008
+      title: Abwägung technischer Eigenschaften
+    - start_secs: 455.008
+      end_secs: 728.34
+      title: Grundsätzliche Arten von Speichern
+    - start_secs: 728.34
+      end_secs: 1365.012
+      title: Festplatte (HDD)
+    - start_secs: 1365.012
+      end_secs: 1751.027
+      title: SSD
+    - start_secs: 1751.027
+      end_secs: 2535.022
+      title: Arbeitsspeicher(RAM)
+    - start_secs: 2535.022
+      end_secs: 3181.528
+      title: Prozessorcache
+    - start_secs: 3181.528
+      end_secs: 3425.009
+      title: Registerbank
+    - start_secs: 3425.009
+      end_secs: 3721.024
+      title: Speicher aus Sicht des Programmierers
+  stp:008-2d-grafik:
+    length_secs: 4933
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-008-2d-grafik.mp3
+      size_bytes: 39780588
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-008-2d-grafik.ogg
+      size_bytes: 52702252
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-008-2d-grafik.opus
+      size_bytes: 30239041
+    chapters:
+    - start_secs: 0
+      end_secs: 101.851
+      title: Intro und einführende Worte
+    - start_secs: 101.851
+      end_secs: 606.301
+      title: Rasterisierung und Bildwahrnehmung
+    - start_secs: 606.301
+      end_secs: 873.01
+      title: Farbräume
+    - start_secs: 873.01
+      end_secs: 1051.061
+      title: RGB-Farbraum
+    - start_secs: 1051.061
+      end_secs: 1401.017
+      title: YUV-Farbraum
+    - start_secs: 1401.017
+      end_secs: 1684.364
+      title: HSV- und CIELAB-Farbräume
+    - start_secs: 1684.364
+      end_secs: 1863.017
+      title: CMYK-Farbraum
+    - start_secs: 1863.017
+      end_secs: 2561.931
+      title: Der Datenstrom zum Monitor
+    - start_secs: 2561.931
+      end_secs: 3577.037
+      title: Bildaufbau mittels Sprites
+    - start_secs: 3577.037
+      end_secs: 4313.048
+      title: Vektorgrafik
+    - start_secs: 4313.048
+      end_secs: 4933.458
+      title: Bildaufbau in traditionellen Desktopsystemen
+  stp:009-fliesskommazahlen:
+    length_secs: 2973
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-009-fliesskommazahlen.mp3
+      size_bytes: 24102965
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-009-fliesskommazahlen.ogg
+      size_bytes: 31214808
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-009-fliesskommazahlen.opus
+      size_bytes: 17970217
+    chapters:
+    - start_secs: 0
+      end_secs: 139.028
+      title: Intro und Vorrede
+    - start_secs: 139.028
+      end_secs: 268.004
+      title: Festkommazahlen
+    - start_secs: 268.004
+      end_secs: 565.024
+      title: Wissenschaftliche Zahlennotation
+    - start_secs: 565.024
+      end_secs: 629.025
+      title: Bestandteile einer Fließkommazahl
+    - start_secs: 629.025
+      end_secs: 843.028
+      title: Rechnen mit Fließkommazahlen
+    - start_secs: 843.028
+      end_secs: 2068.029
+      title: Kodierung von Fließkommazahlen
+    - start_secs: 2068.029
+      end_secs: 2306.021
+      title: Implementation von Fließkommarechnungen
+    - start_secs: 2306.021
+      end_secs: 2600.999
+      title: Fallstricke bei Fließkommazahlen
+    - start_secs: 2600.999
+      end_secs: 2973.748
+      title: Anwendungsbereiche üblicher Fließkommaformate
+  stp:010-3d-grafik:
+    length_secs: 4140
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-010-3d-grafik.mp3
+      size_bytes: 66558263
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-010-3d-grafik.ogg
+      size_bytes: 41584820
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-010-3d-grafik.opus
+      size_bytes: 25502287
+    chapters:
+    - start_secs: 0
+      end_secs: 817.022
+      title: Intro, Begrüßung, Vorbemerkungen
+    - start_secs: 817.022
+      end_secs: 1045.027
+      title: 'Schritt 1: 3D-Modell mit Polygonen'
+    - start_secs: 1045.027
+      end_secs: 1620.017
+      title: 'Schritt 2: Kamera'
+    - start_secs: 1620.017
+      end_secs: 2420.009
+      title: 'Schritt 3: Ausmalen der Polygone (Rasterisierung)'
+    - start_secs: 2420.009
+      end_secs: 2846.019
+      title: 'Schritt 4: Texturen'
+    - start_secs: 2846.019
+      end_secs: 3118.012
+      title: 'Einwurf: Was unterscheidet einen Grafikprozessor (GPU) von einem Hauptprozessor
+        (CPU)?'
+    - start_secs: 3118.012
+      end_secs: 4140.321
+      title: 'Schritt 5: Shader'
+  stp:011-programmsteuerung:
+    length_secs: 4470
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-011-programmsteuerung.mp3
+      size_bytes: 71835930
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-011-programmsteuerung.ogg
+      size_bytes: 44216224
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-011-programmsteuerung.opus
+      size_bytes: 27392651
+    chapters:
+    - start_secs: 0
+      end_secs: 91
+      title: Intro
+    - start_secs: 91
+      end_secs: 434
+      title: Rückblick auf Logikgatter (STP003)
+    - start_secs: 434
+      end_secs: 1290
+      title: Taktgenerator
+    - start_secs: 1290
+      end_secs: 1837
+      title: Arithmetisch-logische Einheit
+    - start_secs: 1837
+      end_secs: 2216
+      title: Steuerwerk
+    - start_secs: 2216
+      end_secs: 3057
+      title: Maschinensprache
+    - start_secs: 3057
+      end_secs: 4100
+      title: Schrittweise Befehlsausführung
+    - start_secs: 4100
+      end_secs: 4470.189
+      title: Überlegungen zu Codeoptimierung
+  stp:012-datenbanken:
+    length_secs: 4185
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-012-datenbanken.mp3
+      size_bytes: 67288244
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-012-datenbanken.ogg
+      size_bytes: 42118845
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-012-datenbanken.opus
+      size_bytes: 25037941
+    chapters:
+    - start_secs: 0
+      end_secs: 159
+      title: Intro und Prolog
+    - start_secs: 159
+      end_secs: 231
+      title: Was ist eine Datenbank?
+    - start_secs: 231
+      end_secs: 883
+      title: Beispiele für Datenbanken im weitesten Sinne
+    - start_secs: 883
+      end_secs: 1629
+      title: Key-Value-Datenbanken
+    - start_secs: 1629
+      end_secs: 2543
+      title: 'Datenbanken im engeren Sinne: relationale Datenbanken'
+    - start_secs: 2543
+      end_secs: 3301
+      title: ACID
+    - start_secs: 3301
+      end_secs: 3582
+      title: Probleme beim Design vom Datenbanken
+    - start_secs: 3582
+      end_secs: 4185.954
+      title: NoSQL
+  stp:013-textkodierung:
+    length_secs: 4224
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-013-textkodierung.mp3
+      size_bytes: 67905153
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-013-textkodierung.ogg
+      size_bytes: 43351750
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-013-textkodierung.opus
+      size_bytes: 25827684
+    chapters:
+    - start_secs: 0
+      end_secs: 52
+      title: Intro
+    - start_secs: 52
+      end_secs: 101
+      title: Vorgeplänkel
+    - start_secs: 101
+      end_secs: 216
+      title: Was ist Text
+    - start_secs: 216
+      end_secs: 382
+      title: Das Problem mit den Zahlen
+    - start_secs: 382
+      end_secs: 604
+      title: Morse-Code
+    - start_secs: 604
+      end_secs: 1577
+      title: Codepages
+    - start_secs: 1577
+      end_secs: 1966
+      title: Unicode
+    - start_secs: 1966
+      end_secs: 2439
+      title: Ebenen in Unicode
+    - start_secs: 2439
+      end_secs: 2580.009
+      title: Kodierungen für Unicode mit fixer Länge
+    - start_secs: 2580.009
+      end_secs: 2713
+      title: Kodierungen für Unicode mit variabler Länge
+    - start_secs: 2713
+      end_secs: 3296
+      title: UTF-8
+    - start_secs: 3296
+      end_secs: 4224.501
+      title: Probleme von Unicode
+  stp:014-textdarstellung:
+    length_secs: 4880
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-014-textdarstellung.mp3
+      size_bytes: 78400582
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-014-textdarstellung.ogg
+      size_bytes: 47442845
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-014-textdarstellung.opus
+      size_bytes: 28686899
+    chapters:
+    - start_secs: 0
+      end_secs: 53
+      title: Intro
+    - start_secs: 53
+      end_secs: 657
+      title: Nachbemerkung zur letzten Folge
+    - start_secs: 657
+      end_secs: 782
+      title: Grundbegriffe
+    - start_secs: 782
+      end_secs: 1060
+      title: Graphem
+    - start_secs: 1060
+      end_secs: 1129
+      title: Glyphe
+    - start_secs: 1129
+      end_secs: 1380
+      title: Schriftart/Font
+    - start_secs: 1380
+      end_secs: 1419
+      title: Unterschiede zwischen Schriftarten
+    - start_secs: 1419
+      end_secs: 1523
+      title: Serifenschriften
+    - start_secs: 1523
+      end_secs: 1627
+      title: Groteskschriften
+    - start_secs: 1627
+      end_secs: 1654
+      title: Proportionalschriften
+    - start_secs: 1654
+      end_secs: 1736
+      title: Monospace-Schriften
+    - start_secs: 1736
+      end_secs: 1929
+      title: OCR-A
+    - start_secs: 1929
+      end_secs: 2022
+      title: CJK-Schriften
+    - start_secs: 2022
+      end_secs: 2119
+      title: Ming-Schriften
+    - start_secs: 2119
+      end_secs: 2145
+      title: Gothic
+    - start_secs: 2145
+      end_secs: 2259
+      title: FE-Schriften
+    - start_secs: 2259
+      end_secs: 2388
+      title: Comic Sans
+    - start_secs: 2388
+      end_secs: 2631
+      title: Bildschirmanzeige vs. Druck
+    - start_secs: 2631
+      end_secs: 3113.459
+      title: 'Phase 1: Textlayout'
+    - start_secs: 3113.459
+      end_secs: 3328
+      title: Ruby Annotation
+    - start_secs: 3328
+      end_secs: 3691
+      title: 'Phase 2: Schriftwahl'
+    - start_secs: 3691
+      end_secs: 4696
+      title: 'Phase 3: Glyphenwahl'
+    - start_secs: 4696
+      end_secs: 4880.42
+      title: 'Phase 4: Darstellung'
+  stp:015-multitasking-in-betriebssystemen:
+    length_secs: 4230
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-015-multitasking-in-betriebssystemen.mp3
+      size_bytes: 67993380
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-015-multitasking-in-betriebssystemen.ogg
+      size_bytes: 43738148
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-015-multitasking-in-betriebssystemen.opus
+      size_bytes: 25665039
+    chapters:
+    - start_secs: 0
+      end_secs: 100
+      title: Intro
+    - start_secs: 100
+      end_secs: 284.003
+      title: Vorbemerkung Programm vs. Prozess
+    - start_secs: 284.003
+      end_secs: 446
+      title: 'Einleitung: Von der Lockarte zum Betriebssystem'
+    - start_secs: 446
+      end_secs: 600
+      title: Definition von Multitasking
+    - start_secs: 600
+      end_secs: 861
+      title: 'Analogie: Multitasking beim Menschen'
+    - start_secs: 861
+      end_secs: 1318
+      title: kooperatives Multitasking
+    - start_secs: 1318
+      end_secs: 1886.025
+      title: präemptives Multitasking
+    - start_secs: 1886.025
+      end_secs: 2502
+      title: Scheduler
+    - start_secs: 2502
+      end_secs: 4230.002
+      title: Wie werden Prozesse wieder lauffähig?
+  stp:016-zeitdarstellung:
+    length_secs: 4762
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-016-zeitdarstellung.mp3
+      size_bytes: 76537224
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-016-zeitdarstellung.ogg
+      size_bytes: 48010134
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-016-zeitdarstellung.opus
+      size_bytes: 29230312
+    chapters:
+    - start_secs: 0
+      end_secs: 136
+      title: Intro und Begrüßung
+    - start_secs: 136
+      end_secs: 1084
+      title: Unhandliche Zeitdarstellung
+    - start_secs: 1084
+      end_secs: 1123
+      title: Wie können Computer Zeit darstellen?
+    - start_secs: 1123
+      end_secs: 1778
+      title: 'Option 1: separate Zahlen'
+    - start_secs: 1778
+      end_secs: 2410
+      title: 'Option 2: eine einzelne Zahl'
+    - start_secs: 2410
+      end_secs: 3250
+      title: Probleme durch Überlauf in Datumsfeldern
+    - start_secs: 3250
+      end_secs: 3919
+      title: Probleme durch astronomische/politische Fakten
+    - start_secs: 3919
+      end_secs: 4390
+      title: Probleme durch technische Einflüsse
+    - start_secs: 4390
+      end_secs: 4762.826
+      title: 'Ausblick: Es könnte schlimmer sein'
+  stp:017-lokalisierung:
+    length_secs: 3442
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-017-lokalisierung.mp3
+      size_bytes: 55408234
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-017-lokalisierung.ogg
+      size_bytes: 33956132
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-017-lokalisierung.opus
+      size_bytes: 20705097
+    chapters:
+    - start_secs: 0
+      end_secs: 111
+      title: Intro und Hallo
+    - start_secs: 111
+      end_secs: 297
+      title: Lokalisierung bei Filmen
+    - start_secs: 297
+      end_secs: 520
+      title: 'Softwarelokalisierung: zwei getrennte Schritte'
+    - start_secs: 520
+      end_secs: 1521
+      title: Aspekte von Internationalisierung
+    - start_secs: 1521
+      end_secs: 2063
+      title: mögliche Werte für eine Locale-Wahl in Unix
+    - start_secs: 2063
+      end_secs: 2936
+      title: Aufgaben des Softwareentwicklers bei i18n
+    - start_secs: 2936
+      end_secs: 3442.292
+      title: Arbeitsablauf für Übersetzung
+  stp:018-dns-im-detail:
+    length_secs: 5095
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-018-dns-im-detail.mp3
+      size_bytes: 81856672
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-018-dns-im-detail.ogg
+      size_bytes: 50548306
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-018-dns-im-detail.opus
+      size_bytes: 30817292
+    chapters:
+    - start_secs: 0
+      end_secs: 202
+      title: Intro und Einführung
+    - start_secs: 202
+      end_secs: 846
+      title: 'Grundaufgabe: Namensauflösung'
+    - start_secs: 846
+      end_secs: 1478
+      title: Domains und Subdomains
+    - start_secs: 1478
+      end_secs: 1841
+      title: Die Wurzelzone
+    - start_secs: 1841
+      end_secs: 2972.002
+      title: DNS-Records
+    - start_secs: 2972.002
+      end_secs: 4117
+      title: Abfrage einer bestimmten Domain
+    - start_secs: 4117
+      end_secs: 4459
+      title: Woher kommt der Resolver?
+    - start_secs: 4459
+      end_secs: 4815
+      title: DNS und Sicherheit
+    - start_secs: 4815
+      end_secs: 5095.298
+      title: Alternative DNS-Roots
+  stp:019-speicherschutz:
+    length_secs: 3336
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-019-speicherschutz.mp3
+      size_bytes: 53718592
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-019-speicherschutz.ogg
+      size_bytes: 31359591
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-019-speicherschutz.opus
+      size_bytes: 19931270
+    chapters:
+    - start_secs: 0
+      end_secs: 73.44
+      title: Intro
+    - start_secs: 73.44
+      end_secs: 270.005
+      title: Welchen Speicher müssen wir eigentlich schützen?
+    - start_secs: 270.005
+      end_secs: 453
+      title: 'Aufgaben des Betriebssystems: Prozessisolation und Vermittlung des Hardwarezugriffs'
+    - start_secs: 453
+      end_secs: 768
+      title: 'Antwort auf Frage 1: Prozessor-Ringe'
+    - start_secs: 768
+      end_secs: 1305
+      title: Wie kommen wir von einem niedrigeren in einen höheren Ring?
+    - start_secs: 1305
+      end_secs: 1683
+      title: 'Antwort auf Frage 2: Virtuelle Speicherverwaltung'
+    - start_secs: 1683
+      end_secs: 1822
+      title: Paging
+    - start_secs: 1822
+      end_secs: 2688
+      title: Swapping
+    - start_secs: 2688
+      end_secs: 2796.02
+      title: Memory-Mapping
+    - start_secs: 2796.02
+      end_secs: 3005
+      title: Direct Memory Access
+    - start_secs: 3005
+      end_secs: 3336.648
+      title: Warum das alles? und Gesellschaftliche Indikationen
+  stp:020-bootstrap:
+    length_secs: 4047
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-020-bootstrap.mp3
+      size_bytes: 65087457
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-020-bootstrap.ogg
+      size_bytes: 40234830
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-020-bootstrap.opus
+      size_bytes: 24536752
+    chapters:
+    - start_secs: 0
+      end_secs: 102.726
+      title: Intro
+    - start_secs: 102.726
+      end_secs: 345
+      title: Frühe Rechenmaschinen und Computer
+    - start_secs: 345
+      end_secs: 713
+      title: Zustand bei heutigen Computern
+    - start_secs: 713
+      end_secs: 1435
+      title: 'Phase 1: Firmware'
+    - start_secs: 1435
+      end_secs: 1969
+      title: 'Phase 2: Bootloader'
+    - start_secs: 1969
+      end_secs: 2155
+      title: Netzwerkboot
+    - start_secs: 2155
+      end_secs: 2968
+      title: 'Phase 3: Betriebssystem'
+    - start_secs: 2968
+      end_secs: 3419
+      title: 'Phase 4: System-Manager'
+    - start_secs: 3419
+      end_secs: 3673
+      title: 'Phase 5: Display-Manager'
+    - start_secs: 3673
+      end_secs: 4047.224
+      title: 'Phase 6: grafische Sitzung'
+  stp:021-regulaere-ausdruecke:
+    length_secs: 5806
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-021-regulaere-ausdruecke.mp3
+      size_bytes: 93238529
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-021-regulaere-ausdruecke.ogg
+      size_bytes: 58473028
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-021-regulaere-ausdruecke.opus
+      size_bytes: 35121828
+    chapters:
+    - start_secs: 0
+      end_secs: 180
+      title: Intro
+    - start_secs: 180
+      end_secs: 237
+      title: Definition von Grammatik
+    - start_secs: 237
+      end_secs: 1106
+      title: Grammatik in der Informatik
+    - start_secs: 1106
+      end_secs: 1336
+      title: Chomsky-Hierarchie
+    - start_secs: 1336
+      end_secs: 1448
+      title: 'Typ 3: reguläre Grammatiken'
+    - start_secs: 1448
+      end_secs: 1659
+      title: 'Exkurs: menschliche Sprache und hidden Markov model'
+    - start_secs: 1659
+      end_secs: 1990.03
+      title: Münzautomaten und Softwaretester
+    - start_secs: 1990.03
+      end_secs: 2641
+      title: 'Typ 2: kontextfreie Grammatiken'
+    - start_secs: 2641
+      end_secs: 2856
+      title: Typ 1 und 0
+    - start_secs: 2856
+      end_secs: 2990
+      title: Dinge wegwerfen und Zeitsouveränität
+    - start_secs: 2990
+      end_secs: 3282
+      title: Beispiel für grafische Repräsentation von Grammatiken
+    - start_secs: 3282
+      end_secs: 4001
+      title: 'Praxisteil: Reguläre Ausdrücke'
+    - start_secs: 4001
+      end_secs: 5418
+      title: Erweiterte Reguläre Ausdrücke
+    - start_secs: 5418
+      end_secs: 5806.639
+      title: 'Problem in der Praxis: **Escaping**'
+  stp:022-das-web-ist-nicht-das-internet:
+    length_secs: 3747
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-022-das-web-ist-nicht-das-internet.mp3
+      size_bytes: 60285729
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-022-das-web-ist-nicht-das-internet.ogg
+      size_bytes: 38064990
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-022-das-web-ist-nicht-das-internet.opus
+      size_bytes: 22928296
+    chapters:
+    - start_secs: 0
+      end_secs: 140
+      title: Intro, Prolog
+    - start_secs: 140
+      end_secs: 457
+      title: Geschichte des Internets
+    - start_secs: 457
+      end_secs: 504
+      title: 'DNS: Heute nicht'
+    - start_secs: 504
+      end_secs: 936
+      title: E-Mail
+    - start_secs: 936
+      end_secs: 1167
+      title: NTP (Network Time Protocol)
+    - start_secs: 1167
+      end_secs: 1496
+      title: Telnet, RSH, SSH
+    - start_secs: 1496
+      end_secs: 1815
+      title: IRC, XMPP
+    - start_secs: 1815
+      end_secs: 1955
+      title: SIP (Session Initiation Protocol)
+    - start_secs: 1955
+      end_secs: 2361
+      title: FTP, NFS, SMB
+    - start_secs: 2361
+      end_secs: 2829
+      title: LDAP (Lightweight Directory Access Protocol)
+    - start_secs: 2829
+      end_secs: 3314
+      title: HTTP (Hypertext Transfer Protocol)
+    - start_secs: 3314
+      end_secs: 3747.106
+      title: Wie sieht es mit den vorgenannten Protokollen aus?
+  stp:023-virtualisierung:
+    length_secs: 3744
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-023-virtualisierung.mp3
+      size_bytes: 60241887
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-023-virtualisierung.ogg
+      size_bytes: 36427392
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-023-virtualisierung.opus
+      size_bytes: 22671509
+    chapters:
+    - start_secs: 0
+      end_secs: 109
+      title: Intro und Prolog
+    - start_secs: 109
+      end_secs: 201
+      title: Xyrill und die Vergangenheit
+    - start_secs: 201
+      end_secs: 305
+      title: Was sagt Wikipedia
+    - start_secs: 305
+      end_secs: 365
+      title: Verschiedene Arten von Virtualisierung
+    - start_secs: 365
+      end_secs: 498
+      title: Virtuelle Maschinen
+    - start_secs: 498
+      end_secs: 529
+      title: Container
+    - start_secs: 529
+      end_secs: 587
+      title: Sandboxing
+    - start_secs: 587
+      end_secs: 1442
+      title: Anwendungsfälle für VM
+    - start_secs: 1442
+      end_secs: 2046
+      title: Zeitliche Entwicklung von VMs
+    - start_secs: 2046
+      end_secs: 2862
+      title: Container
+    - start_secs: 2862
+      end_secs: 3052
+      title: Sandboxing
+    - start_secs: 3052
+      end_secs: 3744.37
+      title: Simulation und Emulation
+  stp:024-cloud-computing:
+    length_secs: 4070
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-024-cloud-computing.mp3
+      size_bytes: 65456020
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-024-cloud-computing.ogg
+      size_bytes: 40588664
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-024-cloud-computing.opus
+      size_bytes: 24287187
+    chapters:
+    - start_secs: 0
+      end_secs: 182
+      title: Intro, Intro, Präludium
+    - start_secs: 182
+      end_secs: 910
+      title: Wolken und Pizza
+    - start_secs: 910
+      end_secs: 1163
+      title: Definition durch NIST
+    - start_secs: 1163
+      end_secs: 1444
+      title: On-Demand Self-Service
+    - start_secs: 1444
+      end_secs: 1651
+      title: Broad Network Access
+    - start_secs: 1651
+      end_secs: 2178
+      title: Resource Pooling
+    - start_secs: 2178
+      end_secs: 2568
+      title: Rapid Elasticity
+    - start_secs: 2568
+      end_secs: 3039
+      title: Measured Service
+    - start_secs: 3039
+      end_secs: 4070.26
+      title: Probleme mit Cloud Computing
+  stp:025-datenkompression:
+    length_secs: 4866
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-025-datenkompression.mp3
+      size_bytes: 78187804
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-025-datenkompression.ogg
+      size_bytes: 47801952
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-025-datenkompression.opus
+      size_bytes: 29130112
+    chapters:
+    - start_secs: 0
+      end_secs: 138
+      title: Intro und Einleitung
+    - start_secs: 138
+      end_secs: 392
+      title: Einführungsbeispiel
+    - start_secs: 392
+      end_secs: 1788
+      title: Theoretische Grundlagen
+    - start_secs: 1788
+      end_secs: 3280
+      title: naive Kompressionsmethoden
+    - start_secs: 3280
+      end_secs: 3976
+      title: fundamentale Abwägungen
+    - start_secs: 3976
+      end_secs: 4866.006
+      title: Kompressionsmethoden im Audio-Video-Bereich beispielhaft anhand ihres
+        Verlustverhaltens
+  stp:026-energieeffizienz:
+    length_secs: 3682
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-026-energieeffizienz.mp3
+      size_bytes: 59256313
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-026-energieeffizienz.ogg
+      size_bytes: 36436290
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-026-energieeffizienz.opus
+      size_bytes: 22177301
+    chapters:
+    - start_secs: 0
+      end_secs: 118
+      title: Intro
+    - start_secs: 118
+      end_secs: 729
+      title: Wortklärung
+    - start_secs: 729
+      end_secs: 868
+      title: Cashing
+    - start_secs: 868
+      end_secs: 1172
+      title: 'Transistoren: die Kurzfassung'
+    - start_secs: 1172
+      end_secs: 1714.003
+      title: Miniaturisierung
+    - start_secs: 1714.003
+      end_secs: 2254
+      title: heterogene CPU-Architektur
+    - start_secs: 2254
+      end_secs: 2498
+      title: Aufwachverschmelzung
+    - start_secs: 2498
+      end_secs: 2904
+      title: Push Gateways
+    - start_secs: 2904
+      end_secs: 3682.789
+      title: Xyrills Abendgedanken
+  stp:027-verteilte-systeme:
+    length_secs: 3493
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-027-verteilte-systeme.mp3
+      size_bytes: 56233789
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-027-verteilte-systeme.ogg
+      size_bytes: 34663055
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-027-verteilte-systeme.opus
+      size_bytes: 20928865
+    chapters:
+    - start_secs: 0
+      end_secs: 67
+      title: Intro
+    - start_secs: 67
+      end_secs: 246
+      title: Definition
+    - start_secs: 246
+      end_secs: 564
+      title: Motivationen für verteilte Systeme
+    - start_secs: 564
+      end_secs: 900
+      title: CAP-Theorem
+    - start_secs: 900
+      end_secs: 1012
+      title: Ausflug Internetregulierung und Verschlüsselung
+    - start_secs: 1012
+      end_secs: 1814.003
+      title: Beispiele bekannter Systeme gemäß CAP-Klassifikation
+    - start_secs: 1814.003
+      end_secs: 2731
+      title: 'Komplexbeispiel: Verteilte Datenbank mit Raft-Konsensalgorithmus'
+    - start_secs: 2731
+      end_secs: 3000
+      title: Kurz zu byzantinischen Generälen
+    - start_secs: 3000
+      end_secs: 3220
+      title: Irrtümer der verteilten Datenverarbeitung
+    - start_secs: 3220
+      end_secs: 3377
+      title: Volunteer Computing
+    - start_secs: 3377
+      end_secs: 3493.855
+      title: 'Nachtrag: geführte Visualisierung des Raft-Algorithmus'
+  stp:028-autokonfiguration:
+    length_secs: 4196
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-028-autokonfiguration.mp3
+      size_bytes: 67469639
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-028-autokonfiguration.ogg
+      size_bytes: 41766229
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-028-autokonfiguration.opus
+      size_bytes: 25368509
+    chapters:
+    - start_secs: 0
+      end_secs: 93
+      title: Präludium
+    - start_secs: 93
+      end_secs: 741
+      title: Definition
+    - start_secs: 741
+      end_secs: 1200
+      title: Hardware-Erkennung
+    - start_secs: 1200
+      end_secs: 1282
+      title: Ethernet
+    - start_secs: 1282
+      end_secs: 1466
+      title: 'Exkurs: USB'
+    - start_secs: 1466
+      end_secs: 1735
+      title: 'Zurück zum Ethernet: Patch- vs Cross-Kabel'
+    - start_secs: 1735
+      end_secs: 2250
+      title: 'Ethernet: Spanning Tree Protocol'
+    - start_secs: 2250
+      end_secs: 2577
+      title: 'Rant: Ethernet vs WIFI'
+    - start_secs: 2577
+      end_secs: 2899
+      title: ARP (Address Resolution Protocol
+    - start_secs: 2899
+      end_secs: 3395
+      title: DHCP
+    - start_secs: 3395
+      end_secs: 3818
+      title: 'apropos DHCP: TFTP Trivial File Transfer Protocol'
+    - start_secs: 3818
+      end_secs: 3900
+      title: IPv6
+    - start_secs: 3900
+      end_secs: 4196.107
+      title: Autokonfiguration im Cloud-Computing-Umfeld
+  stp:029-algorithmische-komplexitaet:
+    length_secs: 3965
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-029-algorithmische-komplexitaet.mp3
+      size_bytes: 63782806
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-029-algorithmische-komplexitaet.ogg
+      size_bytes: 39941954
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-029-algorithmische-komplexitaet.opus
+      size_bytes: 24493270
+    chapters:
+    - start_secs: 0
+      end_secs: 219
+      title: Intro
+    - start_secs: 219
+      end_secs: 700
+      title: Was ist Komplexität?
+    - start_secs: 700
+      end_secs: 1354
+      title: 'einfaches Beispielproblem: Suche in einer sortierten Liste'
+    - start_secs: 1354
+      end_secs: 1540
+      title: 'Beschreibung von Komplexität: Landau-Symbole'
+    - start_secs: 1540
+      end_secs: 3495
+      title: 'komplexeres Beispiel: Sortieralgorithmen'
+    - start_secs: 3495
+      end_secs: 3965.703
+      title: Linkempfehlungen
+  stp:030-arbeitsalltag-in-der-it:
+    length_secs: 6061
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-030-arbeitsalltag-in-der-it.mp3
+      size_bytes: 97319414
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-030-arbeitsalltag-in-der-it.ogg
+      size_bytes: 62551128
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-030-arbeitsalltag-in-der-it.opus
+      size_bytes: 36621438
+    chapters:
+    - start_secs: 0
+      end_secs: 169
+      title: Intro
+    - start_secs: 169
+      end_secs: 358
+      title: 'Ausgangsfrage: "Ist Programmieren eigentlich ein Handwerk, eine Kunst
+        oder eine Wissenschaft?"'
+    - start_secs: 358
+      end_secs: 706
+      title: 'Vergleich: Industrie vs. Handwerk'
+    - start_secs: 706
+      end_secs: 846
+      title: 'These: Programmieren als Manufakturbetrieb'
+    - start_secs: 846
+      end_secs: 1071
+      title: 'Berufskrankheit: Hochstapler-Syndrom'
+    - start_secs: 1071
+      end_secs: 1302
+      title: Ausbildungsinhalt vs. Berufsalltag
+    - start_secs: 1302
+      end_secs: 1807
+      title: 'Heiteres Beruferaten: Softwareentwickler*in'
+    - start_secs: 1807
+      end_secs: 2150
+      title: 'Beruferaten: Software-Architekt*in'
+    - start_secs: 2150
+      end_secs: 2732
+      title: 'Beruferaten: Tester*in'
+    - start_secs: 2732
+      end_secs: 2945
+      title: 'Beruferaten: Systemadministrator*in'
+    - start_secs: 2945
+      end_secs: 3401
+      title: 'Beruferaten: Kundendienst'
+    - start_secs: 3401
+      end_secs: 3468
+      title: 'Beruferaten: Übersetzer*in'
+    - start_secs: 3468
+      end_secs: 3666
+      title: 'Beruferaten: UI-Designer*in'
+    - start_secs: 3666
+      end_secs: 4079
+      title: 'Beruferaten in der Spieleentwicklung: Spieldesign, Leveldesign, Assetdesign'
+    - start_secs: 4079
+      end_secs: 4183
+      title: 'Beruferaten: Projekt-Manager*in'
+    - start_secs: 4183
+      end_secs: 4388
+      title: 'Beruferaten: Release-Manager*in'
+    - start_secs: 4388
+      end_secs: 4558
+      title: 'Beruferaten: Scrum Master*in'
+    - start_secs: 4558
+      end_secs: 5670
+      title: '"Gesetze" der Softwareentwicklung'
+    - start_secs: 5670
+      end_secs: 6061.666
+      title: Lesetipp
+  stp:031-dateisysteme:
+    length_secs: 6144
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-031-dateisysteme.mp3
+      size_bytes: 98648986
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-031-dateisysteme.ogg
+      size_bytes: 61366048
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-031-dateisysteme.opus
+      size_bytes: 37601783
+    chapters:
+    - start_secs: 0
+      end_secs: 365
+      title: Intro
+    - start_secs: 365
+      end_secs: 743
+      title: Blockbasierter Speicher
+    - start_secs: 743
+      end_secs: 772
+      title: Physikalische Anbindungen
+    - start_secs: 772
+      end_secs: 1090
+      title: USB
+    - start_secs: 1090
+      end_secs: 1187
+      title: SATA
+    - start_secs: 1187
+      end_secs: 1287
+      title: SAS
+    - start_secs: 1287
+      end_secs: 1715
+      title: NVMe
+    - start_secs: 1715
+      end_secs: 1950
+      title: Warum immer alles seriell?
+    - start_secs: 1950
+      end_secs: 2049
+      title: Dateisysteme als Key-Value-Datenbank
+    - start_secs: 2049
+      end_secs: 2416
+      title: Alternative Betrachtung als Massenspeicher
+    - start_secs: 2416
+      end_secs: 2912
+      title: Unixoide Dateisysteme mittels Inodes
+    - start_secs: 2912
+      end_secs: 2960
+      title: aktuelle Entwicklungen in Dateisystemen
+    - start_secs: 2960
+      end_secs: 3183
+      title: Journaling
+    - start_secs: 3183
+      end_secs: 3540
+      title: Online-Defragmentierung
+    - start_secs: 3540
+      end_secs: 4068
+      title: antiintuitive Schlussfolgerungen aus Inodestruktur
+    - start_secs: 4068
+      end_secs: 4346
+      title: 'Einschub Exkurs 2: Festplattenverschlüsselung'
+    - start_secs: 4346
+      end_secs: 5034
+      title: zurück zu antiintuitiven Schlussfolgerungen
+    - start_secs: 5034
+      end_secs: 6117.275
+      title: 'Exkurs 1: Virtuelles Dateisystem'
+    - start_secs: 6117.275
+      end_secs: 6144.768
+      title: Outro
+  stp:032-hochverfuegbarer-softwarebetrieb:
+    length_secs: 4559
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-032-hochverfuegbarer-softwarebetrieb.mp3
+      size_bytes: 73284353
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-032-hochverfuegbarer-softwarebetrieb.ogg
+      size_bytes: 46286048
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-032-hochverfuegbarer-softwarebetrieb.opus
+      size_bytes: 27530870
+    chapters:
+    - start_secs: 0
+      end_secs: 150
+      title: Intro + Präambel
+    - start_secs: 150
+      end_secs: 666
+      title: Service Level
+    - start_secs: 666
+      end_secs: 820
+      title: 'Exkurs: Politische Bedeutung von Prozentsätzen'
+    - start_secs: 820
+      end_secs: 1429
+      title: Site Reliability Engineering
+    - start_secs: 1429
+      end_secs: 2628
+      title: strukturierter Einblick in Applikationen mittels Instrumentierung
+    - start_secs: 2628
+      end_secs: 3479
+      title: Durchführen von Änderungen
+    - start_secs: 3479
+      end_secs: 3661
+      title: Rolling Upgrade
+    - start_secs: 3661
+      end_secs: 3931
+      title: Canary Deployment
+    - start_secs: 3931
+      end_secs: 4559.536
+      title: strukturierter Umgang mit Alarmen/Fehlern
+  stp:033-programmiersprachen:
+    length_secs: 5834
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-033-programmiersprachen.mp3
+      size_bytes: 93684937
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-033-programmiersprachen.ogg
+      size_bytes: 59276300
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-033-programmiersprachen.opus
+      size_bytes: 34837468
+    chapters:
+    - start_secs: 0
+      end_secs: 175
+      title: Intro und Prolog
+    - start_secs: 175
+      end_secs: 319
+      title: Sprachen in Literatur und Film
+    - start_secs: 319
+      end_secs: 1123
+      title: Formale Sprachen und Compiler
+    - start_secs: 1123
+      end_secs: 1264
+      title: Frühe Programmiersprachen
+    - start_secs: 1264
+      end_secs: 1680
+      title: Erste Anwendungen von Programmierbarkeit
+    - start_secs: 1680
+      end_secs: 2333
+      title: 'Beispiel: Fibonacci-Funktion'
+    - start_secs: 2333
+      end_secs: 3126.003
+      title: Programmiersprache vs. Maschienensprache
+    - start_secs: 3126.003
+      end_secs: 3155
+      title: Arten von Programmiersprachen
+    - start_secs: 3155
+      end_secs: 3246
+      title: imperative Programmierung
+    - start_secs: 3246
+      end_secs: 3298
+      title: strukturierte Programmierung
+    - start_secs: 3298
+      end_secs: 3475
+      title: modulare Programmierung
+    - start_secs: 3475
+      end_secs: 3602
+      title: objektorientierte Programmierung
+    - start_secs: 3602
+      end_secs: 3945
+      title: logische Programmierung
+    - start_secs: 3945
+      end_secs: 4150
+      title: funktionale Programmierung
+    - start_secs: 4150
+      end_secs: 4767
+      title: Beispiel für Haskell
+    - start_secs: 4767
+      end_secs: 5179
+      title: reaktive Programmierung
+    - start_secs: 5179
+      end_secs: 5834.537
+      title: esoterische Programmiersprachen
+  stp:034-compilerbau:
+    length_secs: 4158
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-034-compilerbau.mp3
+      size_bytes: 66865990
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-034-compilerbau.ogg
+      size_bytes: 42024636
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-034-compilerbau.opus
+      size_bytes: 25217597
+    chapters:
+    - start_secs: 0
+      end_secs: 288
+      title: Intro und Präludium
+    - start_secs: 288
+      end_secs: 739
+      title: 'Begriffsklärung: Compiler'
+    - start_secs: 739
+      end_secs: 1169
+      title: Unterbegriffe zu Compiler
+    - start_secs: 1169
+      end_secs: 1323
+      title: Tätigkeit  des Compilers, Frontend
+    - start_secs: 1323
+      end_secs: 1512
+      title: lexikalische Analyse
+    - start_secs: 1512
+      end_secs: 1913
+      title: syntaktischegc Analyse
+    - start_secs: 1913
+      end_secs: 2355
+      title: semantische Analyse
+    - start_secs: 2355
+      end_secs: 2554
+      title: IR-Erzeugung
+    - start_secs: 2554
+      end_secs: 3086
+      title: 'Middleend: Optimierungsläufe auf IR'
+    - start_secs: 3086
+      end_secs: 3157
+      title: 'Backend: Umwandlung in Maschinencode'
+    - start_secs: 3157
+      end_secs: 3421
+      title: Codeauswahl
+    - start_secs: 3421
+      end_secs: 3700
+      title: Registerzuweisung
+    - start_secs: 3700
+      end_secs: 4158.37
+      title: Scheduling
+  stp:035-aprilscherz-rfcs:
+    length_secs: 3825
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-035-aprilscherz-rfcs.mp3
+      size_bytes: 61541378
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-035-aprilscherz-rfcs.ogg
+      size_bytes: 38267489
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-035-aprilscherz-rfcs.opus
+      size_bytes: 23138675
+    chapters:
+    - start_secs: 0
+      end_secs: 60
+      title: Intro
+    - start_secs: 60
+      end_secs: 300
+      title: Was sind RFCs?
+    - start_secs: 300
+      end_secs: 555
+      title: 'RFC 1097: TELNET-Option ''Unterschwellige Botschaft'''
+    - start_secs: 555
+      end_secs: 1078
+      title: 'RFC 1149: IP-Übertragungen via Brieftaube'
+    - start_secs: 1078
+      end_secs: 1307
+      title: 'RFC 2100: ''The naming of hosts'''
+    - start_secs: 1307
+      end_secs: 1673
+      title: 'RFC 2324: Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0)'
+    - start_secs: 1673
+      end_secs: 1855
+      title: 'RFC 3514: ''The Security Flag in the IPv4 Header'''
+    - start_secs: 1855
+      end_secs: 2319
+      title: 'RFC 5514: ''IPv6 over Social Networks'''
+    - start_secs: 2319
+      end_secs: 2524
+      title: 'RFC 7168: Update für RFC2324 zur Zubereitung von Tee'
+    - start_secs: 2524
+      end_secs: 3005
+      title: 'RFC 6919: Neue definierte Schlüsselwörter für Standard-Texte'
+    - start_secs: 3005
+      end_secs: 3101
+      title: 'RFC 7511: Malerische Routen für IP-Pakete'
+    - start_secs: 3101
+      end_secs: 3268
+      title: 'RFC 8140: Eine Galerie mit ASCII Art'
+    - start_secs: 3268
+      end_secs: 3508
+      title: 'RFC 9225: ''Software Defects Considered Harmful'''
+    - start_secs: 3508
+      end_secs: 3825.563
+      title: Stöbern in alten RFCs

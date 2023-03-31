@@ -22,7 +22,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"html/template"
-	"io/ioutil"
 	"log"
 	"math"
 	"os"
@@ -37,12 +36,18 @@ import (
 )
 
 func main() {
-	inputBytes, err := ioutil.ReadFile("build/noises/data.yaml")
+	_, err := os.Stat("./dl/")
 	if err != nil {
 		log.Fatal(err.Error())
 	}
 
-	_, err = os.Stat("./dl/")
+	//load metadata cache
+	cacheBytes, err := os.ReadFile("build/noises/cache.yaml")
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	var cache audioMetadataCache
+	err = yaml.Unmarshal(cacheBytes, &cache)
 	if err != nil {
 		log.Fatal(err.Error())
 	}
@@ -60,6 +65,10 @@ func main() {
 	data.XMLIntro = `<?xml version="1.0" encoding="UTF-8"?>`
 
 	//load input data
+	inputBytes, err := os.ReadFile("build/noises/data.yaml")
+	if err != nil {
+		log.Fatal(err.Error())
+	}
 	err = yaml.Unmarshal(inputBytes, &data)
 	if err != nil {
 		log.Fatal(err.Error())
@@ -70,10 +79,26 @@ func main() {
 	}
 	for _, file := range data.Files {
 		file.CompileMarkdown()
-		file.FindDownloads()
+		file.AudioMetadata = file.GetAudioMetadata(cache)
 		if file.Episode != nil {
 			file.EpisodeAsInt = *file.Episode
 		}
+	}
+
+	//update metadata cache
+	cache = audioMetadataCache{make(map[string]audioMetadata)}
+	for _, f := range data.Files {
+		if f.Slug != "" {
+			cache.AudioMetadata[f.CacheKey()] = f.AudioMetadata
+		}
+	}
+	cacheBytes, err = yaml.Marshal(cache)
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	err = os.WriteFile("build/noises/cache.yaml", cacheBytes, 0666)
+	if err != nil {
+		log.Fatal(err.Error())
 	}
 
 	templateFuncs := template.FuncMap{
@@ -87,7 +112,7 @@ func main() {
 	}
 
 	//render noises/index.html
-	tmplBytes, err := ioutil.ReadFile("build/noises/index.html.tpl")
+	tmplBytes, err := os.ReadFile("build/noises/index.html.tpl")
 	if err != nil {
 		log.Fatal(err.Error())
 	}
@@ -106,7 +131,7 @@ func main() {
 	}
 
 	//render pages for individual shows
-	tmplBytes, err = ioutil.ReadFile("build/noises/show.html.tpl")
+	tmplBytes, err = os.ReadFile("build/noises/show.html.tpl")
 	if err != nil {
 		log.Fatal(err.Error())
 	}
@@ -136,7 +161,7 @@ func main() {
 	}
 
 	//render pages for individual episodes
-	tmplBytes, err = ioutil.ReadFile("build/noises/episode.html.tpl")
+	tmplBytes, err = os.ReadFile("build/noises/episode.html.tpl")
 	if err != nil {
 		log.Fatal(err.Error())
 	}
@@ -167,7 +192,7 @@ func main() {
 	}
 
 	//render RSS feeds
-	tmplBytes, err = ioutil.ReadFile("build/noises/rss.xml.tpl")
+	tmplBytes, err = os.ReadFile("build/noises/rss.xml.tpl")
 	if err != nil {
 		log.Fatal(err.Error())
 	}
@@ -263,21 +288,31 @@ type file struct {
 		Variant string `yaml:"variant"` //optional
 	} `yaml:"music"`
 
-	Downloads []struct {
-		Format    string
-		MIMEType  string
-		FileName  string
-		SizeBytes uint64
-	} `yaml:"-"`
-	LengthSeconds uint      `yaml:"-"`
-	Chapters      []chapter `yaml:"-"`
+	AudioMetadata audioMetadata `yaml:"-"`
+}
+
+type download struct {
+	Format    string `yaml:"format"`
+	MIMEType  string `yaml:"mime_type"`
+	FileName  string `yaml:"filename"`
+	SizeBytes uint64 `yaml:"size_bytes"`
 }
 
 type chapter struct {
-	StartSeconds float64
-	EndSeconds   float64
-	Title        string
-	URL          string
+	StartSeconds float64 `yaml:"start_secs"`
+	EndSeconds   float64 `yaml:"end_secs"`
+	Title        string  `yaml:"title"`
+	URL          string  `yaml:"url,omitempty"`
+}
+
+type audioMetadata struct {
+	LengthSeconds uint       `yaml:"length_secs"`
+	Downloads     []download `yaml:"downloads"`
+	Chapters      []chapter  `yaml:"chapters"`
+}
+
+type audioMetadataCache struct {
+	AudioMetadata map[string]audioMetadata `yaml:"audio_metadata"`
 }
 
 func compileMarkdown(input string) template.HTML {
@@ -323,6 +358,10 @@ func (s *show) CompileMarkdown() {
 	s.DescriptionHTML = compileMarkdown(s.Description)
 }
 
+func (f file) CacheKey() string {
+	return fmt.Sprintf("%s:%s", f.ShowID, f.Slug)
+}
+
 func (f *file) CompileMarkdown() {
 	f.HTML.Description = compileMarkdown(f.Markdown.Description)
 	f.HTML.Notes = compileMarkdown(f.Markdown.Notes)
@@ -343,7 +382,7 @@ func (f *file) CompileMarkdown() {
 	}
 
 	if f.Markdown.ShowNotes {
-		buf, err := ioutil.ReadFile(fmt.Sprintf("build/noises/shownotes/%s/%s.md", f.ShowID, f.Slug))
+		buf, err := os.ReadFile(fmt.Sprintf("build/noises/shownotes/%s/%s.md", f.ShowID, f.Slug))
 		if err != nil {
 			log.Fatal(err.Error())
 		}
@@ -352,11 +391,12 @@ func (f *file) CompileMarkdown() {
 	}
 }
 
-func (f *file) FindDownloads() {
+func (f *file) GetAudioMetadata(cache audioMetadataCache) (result audioMetadata) {
 	if f.Slug == "" {
-		f.Downloads = nil
-		f.LengthSeconds = 0
-		return
+		return audioMetadata{}
+	}
+	if m, exists := cache.AudioMetadata[f.CacheKey()]; exists {
+		return m
 	}
 
 	formats := []struct {
@@ -386,19 +426,12 @@ func (f *file) FindDownloads() {
 			firstOggPath = path
 		}
 
-		f.Downloads = append(f.Downloads,
-			struct {
-				Format    string
-				MIMEType  string
-				FileName  string
-				SizeBytes uint64
-			}{
-				Format:    fmt.Name,
-				MIMEType:  fmt.MIMEType,
-				FileName:  fileName,
-				SizeBytes: uint64(fi.Size()),
-			},
-		)
+		result.Downloads = append(result.Downloads, download{
+			Format:    fmt.Name,
+			MIMEType:  fmt.MIMEType,
+			FileName:  fileName,
+			SizeBytes: uint64(fi.Size()),
+		})
 	}
 
 	if firstOggPath == "" {
@@ -441,12 +474,12 @@ func (f *file) FindDownloads() {
 			break
 		}
 	}
-	f.LengthSeconds = uint(mustParseFloat(audioStream.DurationSecsStr))
+	result.LengthSeconds = uint(mustParseFloat(audioStream.DurationSecsStr))
 
 	if len(data.Chapters) > 0 {
-		f.Chapters = make([]chapter, len(data.Chapters))
+		result.Chapters = make([]chapter, len(data.Chapters))
 		for idx, ch := range data.Chapters {
-			f.Chapters[idx] = chapter{
+			result.Chapters[idx] = chapter{
 				StartSeconds: mustParseFloat(ch.StartSecsStr),
 				EndSeconds:   mustParseFloat(ch.EndSecsStr),
 				Title:        ch.Tags.Title,
@@ -454,10 +487,12 @@ func (f *file) FindDownloads() {
 			}
 		}
 	}
+
+	return result
 }
 
 func mustParseFloat(in string) float64 {
-	val, err := strconv.ParseFloat(in, 10)
+	val, err := strconv.ParseFloat(in, 64)
 	if err != nil {
 		log.Fatal(err.Error())
 	}

@@ -54,7 +54,7 @@
         <div class="player">
           <a href="/noises/{{.ShowID}}/{{.Slug}}">Details</a>
           <audio controls preload="none">
-            {{- range .Downloads }}
+            {{- range .AudioMetadata.Downloads }}
               <source src="/dl/{{.FileName}}" type="{{.MIMEType}}">
             {{- end }}
             <div class="audio-not-supported">
