@@ -2070,3 +2070,49 @@ audio_metadata:
     - start_secs: 3508
       end_secs: 3825.563
       title: Stöbern in alten RFCs
+  stp:036-latex:
+    length_secs: 3642
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-036-latex.mp3
+      size_bytes: 58612724
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-036-latex.ogg
+      size_bytes: 34941415
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-036-latex.opus
+      size_bytes: 21716542
+    chapters:
+    - start_secs: 0
+      end_secs: 114
+      title: Intro und Prolog
+    - start_secs: 114
+      end_secs: 487
+      title: Donald Knuth
+    - start_secs: 487
+      end_secs: 723
+      title: Textsatz
+    - start_secs: 723
+      end_secs: 1066
+      title: Formelsatz
+    - start_secs: 1066
+      end_secs: 1308
+      title: TeX
+    - start_secs: 1308
+      end_secs: 1516
+      title: LaTeX
+    - start_secs: 1516
+      end_secs: 2842
+      title: Vorteile von LaTeX
+    - start_secs: 2842
+      end_secs: 3037
+      title: KOMA-Script
+    - start_secs: 3037
+      end_secs: 3486
+      title: Schwächen von LaTeX
+    - start_secs: 3486
+      end_secs: 3642.564
+      title: Epilog

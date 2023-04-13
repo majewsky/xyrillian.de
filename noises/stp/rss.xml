@@ -27,6 +27,83 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP036: LaTeX</itunes:title>
+    <itunes:episode>36</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP036: LaTeX</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Diesmal ist für ttimeless ein echtes Herzensthema an der Reihe. Dafür tritt man auch mal zum zweiten Aufnahmeversuch an. All das, um euch ein Textsatzpogramm nahezubringen, das im Kern 37 Jahre alt ist.</itunes:summary>
+    <description>Diesmal ist für ttimeless ein echtes Herzensthema an der Reihe. Dafür tritt man auch mal zum zweiten Aufnahmeversuch an. All das, um euch ein Textsatzpogramm nahezubringen, das im Kern 37 Jahre alt ist.</description>
+    <content:encoded>&lt;p&gt;Diesmal ist für ttimeless ein echtes Herzensthema an der Reihe. Dafür tritt man auch mal zum zweiten Aufnahmeversuch an. All das, um euch ein Textsatzpogramm nahezubringen, das im Kern 37 Jahre alt ist.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Zu dieser Sendung liegt ein &lt;a href=&#34;https://dl.xyrillian.de/noises/stp-036-shownotes/shownotes.pdf&#34;&gt;Begleitdokument&lt;/a&gt; mit zugehörigen &lt;a href=&#34;https://dl.xyrillian.de/noises/stp-036-shownotes/&#34;&gt;Quelldateien&lt;/a&gt; vor.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ein Mann, der nicht den Regeln folgt: Donald Knuth&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=The_Art_of_Computer_Programming&amp;amp;oldid=209769576&#34;&gt;The Art of Computer Programming&lt;/a&gt; -- szenische Lesung des ersten Unterabschnittes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www-cs-faculty.stanford.edu/~knuth/email.html&#34;&gt;Knuth vs. Email&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Email is a wonderful thing for people whose role in life is to be on top of things. But not for me; my role is to be on the bottom of things.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Satz_(Druck)&amp;amp;oldid=221497633&#34;&gt;Textsatz&lt;/a&gt;: &amp;quot;in einer Druckerei, einem Verlag o. Ä. der Arbeitsschritt, der durch ein technisches Verfahren aus einer Vorlage (einem Text, Grafiken, Bildern usw.) eine drucktaugliche Form herstellt&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;unter anderem unser Interesse: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Formelsatz&amp;amp;oldid=225284496&#34;&gt;Formelsatz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blütezeit Anfang der 1900er Jahre parallel zur Formalisierung der Mathematik&lt;/li&gt;
+&lt;li&gt;Tiefpunkt ab 1925 wegen rein auf Schreibmaschinen gesetzter Arbeiten&lt;/li&gt;
+&lt;li&gt;&amp;quot;Dieser Entwicklung hat Donald Knuth ab 1977 mit der Entwicklung von TeX Einhalt geboten. Ab etwa 1994 gilt es als schlechter Stil, mathematische Texte nicht mit TeX zu setzen.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=TeX&amp;amp;oldid=224007647&#34;&gt;TeX&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=LaTeX&amp;amp;oldid=225752838&#34;&gt;LaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=LaTeX&amp;amp;oldid=225752838#Aufbau_eines_Dokuments&#34;&gt;Beispieldokument&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kein WYSIWYG (What You See Is What You Get), stattdessen Beschreibung des Dokumentes durch Quelltext, dadurch sehr kompakt und leicht versionierbar&lt;/li&gt;
+&lt;li&gt;Logische Auszeichnung (&amp;quot;Kapitelüberschrift&amp;quot; statt &amp;quot;Arial, fett, 24 Punkt&amp;quot;), dadurch Maschinenlesbarkeit (z.B. automatische Erstellung von Inhaltsverzeichnissen)&lt;/li&gt;
+&lt;li&gt;Rechnerunabhängigkeit (heute gang und gäbe, damals revolutionär) sowohl der Software als auch der resultierenden Dokumente (ursprünglich DVI, heutzutage PDF)&lt;/li&gt;
+&lt;li&gt;Rückwärtskompatibilität&lt;/li&gt;
+&lt;li&gt;Open Source&lt;/li&gt;
+&lt;li&gt;Anpassbarkeit, Programmierbarkeit (z.B. AMSLaTeX, MusicTeX, TikZ, Beamer)&lt;/li&gt;
+&lt;li&gt;professionelles Aussehen entsprechend den Grundsätzen der Typografie (KOMA-Script!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ftp.rrzn.uni-hannover.de/pub/mirror/tex-archive/macros/latex/contrib/dinbrief/dinbrief.pdf&#34;&gt;dinbrief.cls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.druckkunst-museum.de/de/&#34;&gt;Museum für Druckkunst Leipzig&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cre.fm/cre127-tex-und-latex&#34;&gt;CRE zu TeX/LaTeX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cre.fm/cre080-geschichte-der-typographie&#34;&gt;CRE zu Typografie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://media.ccc.de/v/34c3-9007-hacker_jeopardy#t=5257&#34;&gt;Videobeweis von Xyrills Formelsatz-Lesefähigkeiten (ab 01:31:00)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Xyrills &lt;a href=&#34;https://nbn-resolving.org/urn:nbn:de:bsz:14-qucosa-83987&#34;&gt;Physik-Diplomarbeit&lt;/a&gt; und &lt;a href=&#34;https://github.com/majewsky/bachelor-thesis&#34;&gt;Informatik-Bachelorarbeit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Prolog"  />
+          <chapter start="00:01:54" title="Donald Knuth"  />
+          <chapter start="00:08:07" title="Textsatz"  />
+          <chapter start="00:12:03" title="Formelsatz"  />
+          <chapter start="00:17:46" title="TeX"  />
+          <chapter start="00:21:48" title="LaTeX"  />
+          <chapter start="00:25:16" title="Vorteile von LaTeX"  />
+          <chapter start="00:47:22" title="KOMA-Script"  />
+          <chapter start="00:50:37" title="Schwächen von LaTeX"  />
+          <chapter start="00:58:06" title="Epilog"  />
+      </chapters>
+      <enclosure length="58612724" url="https://dl.xyrillian.de/noises/stp-036-latex.mp3" type="audio/mpeg"/>
+      <enclosure length="34941415" url="https://dl.xyrillian.de/noises/stp-036-latex.ogg" type="audio/ogg"/>
+      <enclosure length="21716542" url="https://dl.xyrillian.de/noises/stp-036-latex.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/036-latex/</guid>
+    <pubDate>Thu, 13 Apr 2023 16:35:00 GMT</pubDate>
+    <itunes:duration>60:42</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP035: Aprilscherz-RFCs</itunes:title>
     <itunes:episode>35</itunes:episode>
     <itunes:season>1</itunes:season>

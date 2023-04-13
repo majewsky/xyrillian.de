@@ -818,3 +818,16 @@ files:
         href: https://www.youtube.com/watch?v=_m5PfKTwMFY
       - *music-stp-opener-003
       - *music-stp-opener-004
+
+  - show: stp
+    episode: 36
+    slug: 036-latex
+    title: LaTeX
+    pubtime: 1681403700 # 2023-04-13
+
+    markdown:
+      description: |
+        Diesmal ist für ttimeless ein echtes Herzensthema an der Reihe. Dafür tritt man auch mal zum zweiten Aufnahmeversuch an. All das, um euch ein Textsatzpogramm nahezubringen, das im Kern 37 Jahre alt ist.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
