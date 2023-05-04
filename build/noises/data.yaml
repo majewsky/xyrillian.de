@@ -831,3 +831,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 37
+    slug: 037-beruehmte-software-fehler
+    title: Berühmte Softwarefehler
+    pubtime: 1683215100 # 2023-05-04
+
+    markdown:
+      description: |
+        Wir alle machen Fehler. So gut, so trivial. Wenn allerdings Elektronenrechner im Spiel sind, kann das durchaus kritisch werden. In manchen Fällen sogar tödlich.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

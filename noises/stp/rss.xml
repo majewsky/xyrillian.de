@@ -27,6 +27,127 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP037: Berühmte Softwarefehler</itunes:title>
+    <itunes:episode>37</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP037: Berühmte Softwarefehler</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wir alle machen Fehler. So gut, so trivial. Wenn allerdings Elektronenrechner im Spiel sind, kann das durchaus kritisch werden. In manchen Fällen sogar tödlich.</itunes:summary>
+    <description>Wir alle machen Fehler. So gut, so trivial. Wenn allerdings Elektronenrechner im Spiel sind, kann das durchaus kritisch werden. In manchen Fällen sogar tödlich.</description>
+    <content:encoded>&lt;p&gt;Wir alle machen Fehler. So gut, so trivial. Wenn allerdings Elektronenrechner im Spiel sind, kann das durchaus kritisch werden. In manchen Fällen sogar tödlich.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Errata zu STP034 von Thomas aus Berlin:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Am Ende der Folge wundert sich ttimeless darüber, warum &lt;code&gt;sin(pi)&lt;/code&gt; auf dem Taschenrechner immer ein Ergebnis von 0,0548... produziert. Du versuchst, das dann mit möglichen Ungenauigkeiten der Abbildung von pi zu erklären.&lt;/p&gt;
+&lt;p&gt;Ich glaube, die Antwort ist viel einfacher: In der normalen Einstellung DEG erwartet der Taschenrechner die Eingabe in Grad und &lt;code&gt;sin(pi°) = 0,0548...&lt;/code&gt; ist damit auch korrekt. Stellt man den Taschenrechner auf RAD (Radiant), dann rechnet der Taschenrechner auch korrekt &lt;code&gt;sin(pi) = 0&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;Off by One&amp;quot; (&amp;quot;um eins daneben&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Diese Folge ist Nr. 37 und somit die 38. Folge dieses Podcasts!&lt;/li&gt;
+&lt;li&gt;häufige Konvention in der IT: Nummerierung fängt bei Null an
+&lt;ul&gt;
+&lt;li&gt;In einer Liste mit 10 Elementen das vorderste den Index 0 und das hinterste den Index 9.&lt;/li&gt;
+&lt;li&gt;formal plausibel, da Null die erste natürliche Zahl ist (ansonsten ist ℕ unter Addition keine Gruppe; siehe &lt;a href=&#34;https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html&#34;&gt;EWD831&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;technisch plausibel, da die Speicheradresse einer Liste für gewöhnlich die Speicheradresse des vordersten Elementes ist; dieses hat also einen Abstand von 0 zum Beginn der Liste&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;siehe auch &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Zaunpfahlfehler&amp;amp;oldid=228434264&#34;&gt;Zaunpfahlfehler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Thema heute: Wie katastrophal können die Auswirkungen solcher kleinen Fehler sein?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mechanische Fehler: &lt;a href=&#34;https://commons.wikimedia.org/w/index.php?title=File:First_Computer_Bug,_1945.jpg&amp;amp;oldid=682909364&#34;&gt;&amp;quot;First actual case of bug being found.&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Überlauf: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ariane_V88&amp;amp;oldid=222991385&#34;&gt;Ariane-Flug V88 (1996)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;erster Flug der Ariane 5&lt;/li&gt;
+&lt;li&gt;Steuerungssoftware war von der Ariane 4 übernommen und nicht auf derart große Horizontalgeschwindigkeiten ausgelegt&lt;/li&gt;
+&lt;li&gt;Überlauf bei Konvertierung von float64 in int16; aber bei dieser konkreten Variable keine Überlaufprüfung wegen Ressourcenknappheit&lt;/li&gt;
+&lt;li&gt;größeres Motiv laut Untersuchungsbericht: in der Gefahrenabschätzung wurde nicht hinreichend berücksichtigt, dass die Software (und nicht nur die Hardware) fehlerhaft sein könnte&lt;/li&gt;
+&lt;li&gt;Folge: erster großflächiger Einsatz von Fehlersuche mittels statischer Code-Analyse&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Überlauf: Y2K Bug -&amp;gt; siehe STP016&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Überlauf: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Heartbleed&amp;amp;oldid=229430945&#34;&gt;Heartbleed (2014)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Drift: &lt;a href=&#34;https://www-users.cse.umn.edu/~arnold/disasters/Patriot-dharan-skeel-siam.pdf&#34;&gt;Dhahran Missile Incident (1991)&lt;/a&gt;, &lt;a href=&#34;https://www.gao.gov/assets/imtec-92-26.pdf&#34;&gt;siehe auch&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hintergrund: 28 Amerikaner getötet durch Raketenbeschuss auf eine US-Basis in Saudi Arabien während des 1. Golfkriegs&lt;/li&gt;
+&lt;li&gt;Fehler im Raketenabwehrsystem: aufgrund Rundungsfehler driftet die interne Uhr um einen Faktor von 0,00000095&lt;/li&gt;
+&lt;li&gt;nach 100 Stunden Dauerbetrieb ist die Drift bei 0,34 Sekunden; entspricht bei Raketen mit Mach 4 einer Distanz von etwa 500 Metern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spezifikation falsch gelesen (oder Kommunikationsproblem): &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Mars_Climate_Orbiter&amp;amp;oldid=230063104&#34;&gt;Mars Climate Orbiter (1999)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NASA hatte metrische Einheiten verwendet (Impuls in Newtonsekunden), die Navigationssoftware von Lockheed Martin hingegen imperiale Einheiten (Impuls in Pound-Force-Sekunden)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clusterfuck: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Therac-25&amp;amp;oldid=222407363&#34;&gt;Therac-25 (1985-1987)&lt;/a&gt;, unter anderem:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;verteiltes&lt;/s&gt; verstreutes System: fehlerhafte Synchronisation zwischen einem Messprozess und einem parallel arbeitenden Steuerprozess&lt;/li&gt;
+&lt;li&gt;Benutzerführung: in bestimmten Situationen wurde nach der Eingabe neuer Daten der alte Datensatz weiterverwendet, obwohl die Benutzeroberfläche den neuen Datensatz anzeigte&lt;/li&gt;
+&lt;li&gt;Überlauf: 8-Bit-Flag für die Anzeige der Notwendigkeit einer Sicherheitsprüfung konnte von 255 auf 0 überlaufen und dadurch die Prüfung überspringen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;überfordert von Komplexität: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Corrupted_Blood_incident&amp;amp;oldid=1140307355&#34;&gt;Corrupted Blood (2005)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vor COVID-19 eines der wichtigsten Studienobjekte für das Verbreitungsmuster einer Pandemie, inklusive Tiervektoren und asymptomatisch infektiösen Patienten&lt;/li&gt;
+&lt;li&gt;ein bestimmter Bosskampf in &amp;quot;World of Warcraft&amp;quot; versieht Spielercharaktere mit einem negativen Statuseffekt, der sie langsam tötet und der auf naheliegende Charaktere ansteckend wirkt&lt;/li&gt;
+&lt;li&gt;Spieler sollten mit diesem Statuseffekt den Bosskampf nicht verlassen können, aber die  Reittiere der Spieler konnten es!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;analog zu Copy-Paste-Fehler: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Mariner_1&amp;amp;oldid=1136631227&#34;&gt;Mariner 1 (1962)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Programmcode wurde auf Papier geschrieben, dort wurde fehlerhafterweise mit &amp;quot;R&amp;quot; statt mit dem korrekten &amp;quot;R̅&amp;quot; (R mit Überstrich) gerechnet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy-Paste-Fehler: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Pentium-FDIV-Bug&amp;amp;oldid=226232131&#34;&gt;Pentium-FDIV-Bug&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Division von Fließkommazahlen (siehe STP009) beim Pentium verwendet einen Algorithmus, der zur Beschleunigung eine Tabelle von vorberechneten Werten verwendet&lt;/li&gt;
+&lt;li&gt;fünf Einträge in dieser Tabelle wurden nicht richtig in das finale Chip-Design übernommen&lt;/li&gt;
+&lt;li&gt;Ergebnis: bestimmte Divisionen liegen um einen Bruchteil eines ‰ daneben&lt;/li&gt;
+&lt;li&gt;Rückrufaktion im Wert von über 400 Millionen $&lt;/li&gt;
+&lt;li&gt;&amp;quot;Wie viele Intel-Mitarbeiter braucht man, um eine Glühbirne zu wechseln? 1,9999983256&amp;quot;&lt;/li&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Fast_inverse_square_root&amp;amp;oldid=1142010709&#34;&gt;Fast Inverse Square Root&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Feedback zu STP 034"  />
+          <chapter start="00:02:37" title="Intro und direkt zum &#39;Off By One&#39;"  />
+          <chapter start="00:13:28" title="Kurz zur weiteren Sendung"  />
+          <chapter start="00:14:15" title="Mechanische Fehler"  />
+          <chapter start="00:17:50" title="Überläufe: Ariane-Flug V88 (1996)"  />
+          <chapter start="00:25:15" title="Y2K Bug"  />
+          <chapter start="00:26:44" title="Anderer Überlauf: Heartblead"  />
+          <chapter start="00:36:03" title="Drift: Dhahran Missile Incident"  />
+          <chapter start="00:38:30" title="Einheitsfehler: Mars Climate Orbiter"  />
+          <chapter start="00:41:33" title="Clusterfuck: Therac-25"  />
+          <chapter start="00:46:39" title="Überfordert von Komplexität: Corrupted Blood"  />
+          <chapter start="00:53:57" title="Analog zu Copy-Paste-Fehler: Mariner 1"  />
+          <chapter start="00:56:59" title="Copy-Paste-Fehler: Pentium-FDIV-Bug"  />
+      </chapters>
+      <enclosure length="63372842" url="https://dl.xyrillian.de/noises/stp-037-beruehmte-software-fehler.mp3" type="audio/mpeg"/>
+      <enclosure length="39730316" url="https://dl.xyrillian.de/noises/stp-037-beruehmte-software-fehler.ogg" type="audio/ogg"/>
+      <enclosure length="23983655" url="https://dl.xyrillian.de/noises/stp-037-beruehmte-software-fehler.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/037-beruehmte-software-fehler/</guid>
+    <pubDate>Thu, 04 May 2023 15:45:00 GMT</pubDate>
+    <itunes:duration>65:40</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP036: LaTeX</itunes:title>
     <itunes:episode>36</itunes:episode>
     <itunes:season>1</itunes:season>

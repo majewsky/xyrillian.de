@@ -2116,3 +2116,58 @@ audio_metadata:
     - start_secs: 3486
       end_secs: 3642.564
       title: Epilog
+  stp:037-beruehmte-software-fehler:
+    length_secs: 3940
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-037-beruehmte-software-fehler.mp3
+      size_bytes: 63372842
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-037-beruehmte-software-fehler.ogg
+      size_bytes: 39730316
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-037-beruehmte-software-fehler.opus
+      size_bytes: 23983655
+    chapters:
+    - start_secs: 0
+      end_secs: 157
+      title: Feedback zu STP 034
+    - start_secs: 157
+      end_secs: 808
+      title: Intro und direkt zum 'Off By One'
+    - start_secs: 808
+      end_secs: 855
+      title: Kurz zur weiteren Sendung
+    - start_secs: 855
+      end_secs: 1070
+      title: Mechanische Fehler
+    - start_secs: 1070
+      end_secs: 1515
+      title: 'Überläufe: Ariane-Flug V88 (1996)'
+    - start_secs: 1515
+      end_secs: 1604
+      title: Y2K Bug
+    - start_secs: 1604
+      end_secs: 2163
+      title: 'Anderer Überlauf: Heartblead'
+    - start_secs: 2163
+      end_secs: 2310
+      title: 'Drift: Dhahran Missile Incident'
+    - start_secs: 2310
+      end_secs: 2493
+      title: 'Einheitsfehler: Mars Climate Orbiter'
+    - start_secs: 2493
+      end_secs: 2799
+      title: 'Clusterfuck: Therac-25'
+    - start_secs: 2799
+      end_secs: 3237
+      title: 'Überfordert von Komplexität: Corrupted Blood'
+    - start_secs: 3237
+      end_secs: 3419
+      title: 'Analog zu Copy-Paste-Fehler: Mariner 1'
+    - start_secs: 3419
+      end_secs: 3940.053
+      title: 'Copy-Paste-Fehler: Pentium-FDIV-Bug'
