@@ -2171,3 +2171,55 @@ audio_metadata:
     - start_secs: 3419
       end_secs: 3940.053
       title: 'Copy-Paste-Fehler: Pentium-FDIV-Bug'
+  stp:038-software-tests:
+    length_secs: 4925
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-038-software-tests.mp3
+      size_bytes: 79143901
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-038-software-tests.ogg
+      size_bytes: 49607961
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-038-software-tests.opus
+      size_bytes: 29862968
+    chapters:
+    - start_secs: 0
+      end_secs: 192
+      title: Intro, Einleitung
+    - start_secs: 192
+      end_secs: 978
+      title: Anforderungen an Tests
+    - start_secs: 978
+      end_secs: 1273
+      title: manuelle Tests
+    - start_secs: 1273
+      end_secs: 1492
+      title: automatisierte Tests
+    - start_secs: 1492
+      end_secs: 1831
+      title: Unit Tests
+    - start_secs: 1831
+      end_secs: 2509
+      title: Integration Tests
+    - start_secs: 2509
+      end_secs: 2823
+      title: End-to-End-Tests
+    - start_secs: 2823
+      end_secs: 3024
+      title: 'alternative Teilung: Blackbox vs. Whitebox'
+    - start_secs: 3024
+      end_secs: 3494
+      title: Test Driven Development
+    - start_secs: 3494
+      end_secs: 3960
+      title: Code Coverage
+    - start_secs: 3960
+      end_secs: 4555
+      title: Kann man das wegautomatisieren?
+    - start_secs: 4555
+      end_secs: 4925.742
+      title: Heisenbug

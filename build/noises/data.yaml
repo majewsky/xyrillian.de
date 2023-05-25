@@ -844,3 +844,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 38
+    slug: 038-software-tests
+    title: Berühmte Softwarefehler
+    pubtime: 1685051999 # 2023-05-25
+
+    markdown:
+      description: |
+        Nach der Episode über die Fehler, spechen wir heute darüber, wie man sie vermeidet. Wie nicht anders zu erwarten, ist auch dies ein Thema, bei dem reichhaltige Meinungsdiskurse geführt werden.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

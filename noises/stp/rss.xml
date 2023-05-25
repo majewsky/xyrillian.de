@@ -27,6 +27,138 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP038: Berühmte Softwarefehler</itunes:title>
+    <itunes:episode>38</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP038: Berühmte Softwarefehler</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nach der Episode über die Fehler, spechen wir heute darüber, wie man sie vermeidet. Wie nicht anders zu erwarten, ist auch dies ein Thema, bei dem reichhaltige Meinungsdiskurse geführt werden.</itunes:summary>
+    <description>Nach der Episode über die Fehler, spechen wir heute darüber, wie man sie vermeidet. Wie nicht anders zu erwarten, ist auch dies ein Thema, bei dem reichhaltige Meinungsdiskurse geführt werden.</description>
+    <content:encoded>&lt;p&gt;Nach der Episode über die Fehler, spechen wir heute darüber, wie man sie vermeidet. Wie nicht anders zu erwarten, ist auch dies ein Thema, bei dem reichhaltige Meinungsdiskurse geführt werden.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;img src=&#34;https://dl.xyrillian.de/noises/stp-038-intro.png&#34; alt=&#34;Bild&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Warum testen? -&amp;gt; siehe STP037&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Anforderungen an Tests&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;reproduzierbar: nicht abhängig von unerwarteten äußeren Einflüssen oder menschlicher Intervention&lt;/li&gt;
+&lt;li&gt;fokussiert: im Fehlerfall soll möglichst klar sein, wo das Problem liegt&lt;/li&gt;
+&lt;li&gt;schnell: damit man beim Ändern des Systems schnelles Feedback bekommt (siehe auch &lt;a href=&#34;https://xkcd.com/303/&#34;&gt;XKCD 303&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;realitätsnah: überprüft eine Funktion, die der Benutzer so tatsächlich benötigt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;manuelle Tests&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;kostenintensiv: &lt;a href=&#34;https://www.destructoid.com/apex-legends-qa-baton-rouge-layoffs-electronic-arts-ea/&#34;&gt;Online-Shooter braucht(e) 200 Tester&lt;/a&gt; (das Spiel erlaubt Matches mit bis zu 60 Teilnehmern)&lt;/li&gt;
+&lt;li&gt;erfüllt von den obigen Anforderungen nur die Realitätsnähe&lt;/li&gt;
+&lt;li&gt;wenn&#39;s geht, lieber automatisieren&lt;/li&gt;
+&lt;li&gt;gängige Strategie: manuelle Tests zur Fehlersuche, im Zweifelsfall durch die Kunden ;) -- dann Nachstellung des gefundenen Problems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;automatisierte Tests am Beispiel der &lt;a href=&#34;https://commons.wikimedia.org/w/index.php?title=File:Testing_Pyramid.png&amp;amp;oldid=731870968#/media/File:Testing_Pyramid.png&#34;&gt;Testpyramide&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Unit Tests&lt;/strong&gt;: Überprüfung einer einzelnen Komponente in Isolation
+&lt;ul&gt;
+&lt;li&gt;besonders wertvoll, wenn die Komponenten auf besonders reproduzierbare Weise arbeiten (zum Beispiel pure Berechnungen; Vorgänge, die &lt;em&gt;nicht&lt;/em&gt; Netzwerkzugriff/Festplattenzugriff/etc. erfolgen)&lt;/li&gt;
+&lt;li&gt;Problem: es reicht nicht, wenn jede Komponente für sich genommen funktioniert, aber sie nicht zusammen passen&lt;/li&gt;
+&lt;li&gt;Bewertung: reproduzierbar, fokussiert, schnell, aber nicht realitätsnah&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integration Tests&lt;/strong&gt;: Überprüfung des Zusammenspiels mehrerer Komponenten eines Gesamtsystems
+&lt;ul&gt;
+&lt;li&gt;nach Möglichkeit Eingrenzung äußerer Faktoren, z.B. statt Kommunikation mehrerer Komponenten über ein reales Netzwerk Simulation einer Netzwerkstruktur im Programm oder mittels Containern/VMs (siehe STP023)&lt;/li&gt;
+&lt;li&gt;Bewertung: tendenziell weniger reproduzierbar, etwas langsamer, weniger fokussiert, aber realitätsnäher&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;End-to-End-Tests&lt;/strong&gt; (E2E): Überprüfung des Verhaltens eines Gesamtsystems
+&lt;ul&gt;
+&lt;li&gt;analog zu den manuellen Tests, aber nach festem Algorithmus&lt;/li&gt;
+&lt;li&gt;höchster Aufwand in der Umsetzung, siehe insbesondere UI-Tests mittels &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Headless_browser&amp;amp;oldid=1106195952&#34;&gt;Headless Browser&lt;/a&gt; etc.&lt;/li&gt;
+&lt;li&gt;Bewertung: am wenigsten reproduzierbar (aufgrund der Vielzahl an Variablen), am unfokussiertesten, am langsamsten, aber am nächsten an der Realität&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;allgemeine Empfehlung: ganz viele kleine Unit Tests und einige mittelgroße Integrationstests für die schnelle Feedbackschleife, dazu einige wenige große E2E-Tests für den Abgleich mit der Realität&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;alternative Teilung: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Black-Box-Test&amp;amp;oldid=226194172&#34;&gt;Blackbox-Tests vs. Whitebox-Tests&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blackbox: Umsetzung eines Tests ohne innere Kenntnis der Struktur des Systems, z.B. anhand einer Spezifikation&lt;/li&gt;
+&lt;li&gt;Vorteil: ein Blackbox-Test durch ein anderes Team kann Missverständnisse des ursprünglichen Teams aufdecken&lt;/li&gt;
+&lt;li&gt;Nachteil: kann nur E2E sein&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;die reine Lehre: &lt;strong&gt;Test Driven Development&lt;/strong&gt; (&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Testgetriebene_Entwicklung&amp;amp;oldid=230163162&#34;&gt;Testgetriebene Entwicklung&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;neue Funktionalität darf man nur bauen, wenn es Testabdeckung dafür gibt&lt;/li&gt;
+&lt;li&gt;erst fehlschlagenden Test schreiben; dann Funktionalität einbauen, sodass der Test erfolgreich durchläuft; dann aufräumen&lt;/li&gt;
+&lt;li&gt;Xyrill macht lieber &amp;quot;Data Driven Development&amp;quot; und hat Bedenken&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kann man die Qualität eines Tests bewerten? -&amp;gt; Idee: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Code_coverage&amp;amp;oldid=1143329859&#34;&gt;Code Coverage&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Welcher Anteil des Programmcodes wird von meinem Test tatsächlich abgedeckt?&lt;/li&gt;
+&lt;li&gt;Was heißt eigentlich &amp;quot;Anteil&amp;quot;?
+&lt;ul&gt;
+&lt;li&gt;Beispiel: &lt;code&gt;if (a or b or c) { return &amp;quot;Kredit abgelehnt&amp;quot; }&lt;/code&gt; (einfach bei Zeilenabdeckung, schwierig bei Bedingungsabdeckung)&lt;/li&gt;
+&lt;li&gt;Beispiel: &amp;quot;Kommt ein Software-Tester in eine Bar.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Problem: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Goodharts_Gesetz&amp;amp;oldid=229408892&#34;&gt;Goodharts Gesetz&lt;/a&gt;, &amp;quot;Sobald eine Metrik zu einem Ziel wird, hört sie auf, eine gute Metrik zu sein.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Problem: für manche Zeilen sind Tests wichtiger als andere (wichtig für vertrackte Logik, weniger wichtig für Sofortabbruch bei unerwarteten Fehlern)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tests muss man trotzdem noch schreiben. Kann man das wegautomatisieren?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Statische_Code-Analyse&amp;amp;oldid=221804280&#34;&gt;Statische Analyse&lt;/a&gt;: automatische Suche nach bedenklichen Mustern (z.B. Datei wurde zum Schreiben geöffnet, wird aber am Ende nicht geschlossen -&amp;gt; Risiko des Datenverlusts; z.B. Verwendung veralteter kryptografischer Primitiven)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Fuzzing&amp;amp;oldid=225194301&#34;&gt;Fuzzing&lt;/a&gt;: anstatt eines Tests mit festen Werten (&amp;quot;bei Eingabe X wird Ausgabe Y erwartet&amp;quot;) nur Vorgabe einer Struktur (&amp;quot;wenn hier ein Text reingesteckt wird, kommt da eine Zahl raus&amp;quot;), dann automatische Suche nach Absturzbedingungen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Machen Tests die Sache immer besser?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Heisenbug&amp;amp;oldid=227133176&#34;&gt;Heisenbug&lt;/a&gt;: &amp;quot;ein Softwarefehler, der zu verschwinden oder sein Verhalten zu verändern scheint, wenn man versucht, ihn zu untersuchen&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/ISO_9001&#34;&gt;ISO9001&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://forschergeist.de/podcast/fg034-werner-heisenberg/&#34;&gt;FG034 zu Werner Heisenberg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro, Einleitung"  />
+          <chapter start="00:03:12" title="Anforderungen an Tests"  />
+          <chapter start="00:16:18" title="manuelle Tests"  />
+          <chapter start="00:21:13" title="automatisierte Tests"  />
+          <chapter start="00:24:52" title="Unit Tests"  />
+          <chapter start="00:30:31" title="Integration Tests"  />
+          <chapter start="00:41:49" title="End-to-End-Tests"  />
+          <chapter start="00:47:03" title="alternative Teilung: Blackbox vs. Whitebox"  />
+          <chapter start="00:50:24" title="Test Driven Development"  />
+          <chapter start="00:58:14" title="Code Coverage"  />
+          <chapter start="01:06:00" title="Kann man das wegautomatisieren?"  />
+          <chapter start="01:15:55" title="Heisenbug"  />
+      </chapters>
+      <enclosure length="79143901" url="https://dl.xyrillian.de/noises/stp-038-software-tests.mp3" type="audio/mpeg"/>
+      <enclosure length="49607961" url="https://dl.xyrillian.de/noises/stp-038-software-tests.ogg" type="audio/ogg"/>
+      <enclosure length="29862968" url="https://dl.xyrillian.de/noises/stp-038-software-tests.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/038-software-tests/</guid>
+    <pubDate>Thu, 25 May 2023 21:59:59 GMT</pubDate>
+    <itunes:duration>82:05</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP037: Berühmte Softwarefehler</itunes:title>
     <itunes:episode>37</itunes:episode>
     <itunes:season>1</itunes:season>
