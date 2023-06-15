@@ -27,6 +27,87 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP039: Authentifizierung und Autorisierung</itunes:title>
+    <itunes:episode>39</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP039: Authentifizierung und Autorisierung</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Die Frage, wer wir sind, beschäftigt nicht nur uns selbst, sondern auch alle Anbieter von Diensten aller Art, wenn sie mit Computern zu tun haben. Heute sprechen wir über die Mechanismen, die zur Feststellung einer Person oder ihrer Berechtigungen besonders im Netz verwendet werden.</itunes:summary>
+    <description>Die Frage, wer wir sind, beschäftigt nicht nur uns selbst, sondern auch alle Anbieter von Diensten aller Art, wenn sie mit Computern zu tun haben. Heute sprechen wir über die Mechanismen, die zur Feststellung einer Person oder ihrer Berechtigungen besonders im Netz verwendet werden.</description>
+    <content:encoded>&lt;p&gt;Die Frage, wer wir sind, beschäftigt nicht nur uns selbst, sondern auch alle Anbieter von Diensten aller Art, wenn sie mit Computern zu tun haben. Heute sprechen wir über die Mechanismen, die zur Feststellung einer Person oder ihrer Berechtigungen besonders im Netz verwendet werden.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;grundsätzliche Begriffsklärung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Authentifizierung&amp;amp;oldid=227594718&#34;&gt;Authentifizierung&lt;/a&gt;: Nachweis einer behaupteten Eigenschaft einer Entität; hier: der Nachweis der Identität einer Person, eines Gerätes oder eines Prozesses (&amp;quot;Wer ist dieser Benutzer?&amp;quot;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Autorisierung&amp;amp;oldid=224714316&#34;&gt;Autorisierung&lt;/a&gt;: die Einräumung von Rechten gegenüber einem interessierten Subjekt; hier: das initiale Zuweisen und das wiederholt einleitende Überprüfen von Zugriffsrechten (&amp;quot;Darf dieser Benutzer auf dieses Dokument zugreifen?&amp;quot;)&lt;/li&gt;
+&lt;li&gt;im englischen Sprachgebrauch &amp;quot;authentication&amp;quot; (AuthN) und &amp;quot;authorization&amp;quot; (AuthZ)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AuthN durch einen oder mehrere von drei wesentlichen Arten von Identitäts&lt;strong&gt;merkmalen&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wissen: etwas, dass ich weiß (Passwörter, PINs, etc.)&lt;/li&gt;
+&lt;li&gt;Besitz: etwas, dass ich habe (Chipkarte, Lichtbildausweis, Mobiltelefon, PC, etc.)&lt;/li&gt;
+&lt;li&gt;Inhärenz: etwas, dass ich bin (Fingerabdruck, Iris-Abbild, etc.) -&amp;gt; Achtung: Problematisch, weil nicht änderbar!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Multi-Faktor-Authentisierung&amp;amp;oldid=228949120&#34;&gt;Multifaktor-Authentifizierung&lt;/a&gt;: Wer eines der drei Merkmale gut angreifen kann, kann selten eins der anderen Merkmale gut angreifen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;schlechte Arten von Merkmalen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Magnetstreifen&amp;amp;oldid=226316253&#34;&gt;Magnetstreifenkarte&lt;/a&gt; (Besitz-Merkmal): trivial kopierbar -&amp;gt; deswegen heute meist &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Chipkarte&amp;amp;oldid=232317097&#34;&gt;Chipkarten&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Chipkarten sind kleine Computer, die sich per &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Challenge-Response-Authentifizierung&amp;amp;oldid=228328238&#34;&gt;Challenge-Response&lt;/a&gt; authentisieren können&lt;/li&gt;
+&lt;li&gt;siehe zum Beispiel &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Transaktionsnummer&amp;amp;oldid=230848111#TAN-Generator&#34;&gt;ChipTAN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code per SMS (Besitzfaktor): auf Telefonebene angreifbar durch Malware mit erschlichener SMS-Berechtigung, auf Netzwerkebene angreifbar durch Umleitung der SMS
+&lt;ul&gt;
+&lt;li&gt;als Besitzfaktor buchstäblich &amp;quot;besser als nichts&amp;quot;&lt;/li&gt;
+&lt;li&gt;besser ist eine Authentisierungs-App mit &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Time-based_One-time_Password_Algorithmus&amp;amp;oldid=222235161&#34;&gt;TOTP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;zu kreativen Angriffen auf Besitzmerkmale und Biometrie siehe &lt;a href=&#34;https://media.ccc.de/search/?q=starbug&#34;&gt;die Vorträge von Starbug&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Autorisierungs-Schemata&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;früher meist &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Access_Control_List&amp;amp;oldid=231251676&#34;&gt;Access Control Lists (ACL)&lt;/a&gt;: jedes Datenobjekt hat eine Liste mit zugriffsberechtigten Benutzerkonten und Gruppen&lt;/li&gt;
+&lt;li&gt;Beispiel ACL in Unix: Dateisystemeinträge haben rwx-Bits (Lesezugriff, Schreibzugriff, Ausführzugriff) jeweils für das besitzende Benutzerkonto, die besitzende Gruppe und alle Benutzerkonten&lt;/li&gt;
+&lt;li&gt;heute meist &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Role_Based_Access_Control&amp;amp;oldid=229433588&#34;&gt;Role-Based Access Control (RBAC)&lt;/a&gt; auf der Ebene von semantischen Operationen&lt;/li&gt;
+&lt;li&gt;Beispiel RBAC in &lt;a href=&#34;https://docs.openstack.org/oslo.policy/latest/&#34;&gt;OpenStack&lt;/a&gt;: Benutzerkonten oder Benutzergruppen können Rollenzuweisungen erhalten; die Menge der zugewiesenen Rollen bestimmt, welche Aktionen ein Benutzer ausführen kann&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Authentisierung im Webkontext: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Single_Sign-on&amp;amp;oldid=232103662&#34;&gt;Single Sign-On (SSO)&lt;/a&gt; via &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Security_Assertion_Markup_Language&amp;amp;oldid=222991238&#34;&gt;SAML&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=OpenID_Connect&amp;amp;oldid=230166769&#34;&gt;OIDC&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee: Authentisierung bei einem zentralen Identitätsanbieter, dann Verwendung dieser festgestellten Identität in einem Zielsystem&lt;/li&gt;
+&lt;li&gt;SSO könnte man auch mit LDAP haben, aber SAML/OIDC erlaubt eine Einschränkung, welche Identitätsdaten der autorisierende Dienst vom authentifizierenden Dienst erhält&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro &#43; Porlog"  />
+          <chapter start="00:02:23" title="Begriffsklärung"  />
+          <chapter start="00:07:32" title="Identitätsmerkmale"  />
+          <chapter start="00:21:08" title="schlechte Arten von Merkmalen"  />
+          <chapter start="00:43:29" title="Autorisierungs-Schemata"  />
+          <chapter start="00:43:38" title="Access Control Lists"  />
+          <chapter start="00:48:17" title="Role-Based Access Control"  />
+          <chapter start="00:50:43" title="Authentisierung im Webkontext"  />
+      </chapters>
+      <enclosure length="62080627" url="https://dl.xyrillian.de/noises/stp-039-authentifizierung-und-autorisierung.mp3" type="audio/mpeg"/>
+      <enclosure length="38849741" url="https://dl.xyrillian.de/noises/stp-039-authentifizierung-und-autorisierung.ogg" type="audio/ogg"/>
+      <enclosure length="23614177" url="https://dl.xyrillian.de/noises/stp-039-authentifizierung-und-autorisierung.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/039-authentifizierung-und-autorisierung/</guid>
+    <pubDate>Thu, 15 Jun 2023 19:55:00 GMT</pubDate>
+    <itunes:duration>64:19</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP038: Berühmte Softwarefehler</itunes:title>
     <itunes:episode>38</itunes:episode>
     <itunes:season>1</itunes:season>

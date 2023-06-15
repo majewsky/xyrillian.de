@@ -857,3 +857,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 39
+    slug: 039-authentifizierung-und-autorisierung
+    title: Authentifizierung und Autorisierung
+    pubtime: 1686858900 # 2023-06-15
+
+    markdown:
+      description: |
+        Die Frage, wer wir sind, beschäftigt nicht nur uns selbst, sondern auch alle Anbieter von Diensten aller Art, wenn sie mit Computern zu tun haben. Heute sprechen wir über die Mechanismen, die zur Feststellung einer Person oder ihrer Berechtigungen besonders im Netz verwendet werden.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

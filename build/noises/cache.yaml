@@ -2223,3 +2223,43 @@ audio_metadata:
     - start_secs: 4555
       end_secs: 4925.742
       title: Heisenbug
+  stp:039-authentifizierung-und-autorisierung:
+    length_secs: 3859
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-039-authentifizierung-und-autorisierung.mp3
+      size_bytes: 62080627
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-039-authentifizierung-und-autorisierung.ogg
+      size_bytes: 38849741
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-039-authentifizierung-und-autorisierung.opus
+      size_bytes: 23614177
+    chapters:
+    - start_secs: 0
+      end_secs: 143
+      title: Intro + Porlog
+    - start_secs: 143
+      end_secs: 452
+      title: Begriffsklärung
+    - start_secs: 452
+      end_secs: 1268
+      title: Identitätsmerkmale
+    - start_secs: 1268
+      end_secs: 2609
+      title: schlechte Arten von Merkmalen
+    - start_secs: 2609
+      end_secs: 2618
+      title: Autorisierungs-Schemata
+    - start_secs: 2618
+      end_secs: 2897
+      title: Access Control Lists
+    - start_secs: 2897
+      end_secs: 3043
+      title: Role-Based Access Control
+    - start_secs: 3043
+      end_secs: 3859.303
+      title: Authentisierung im Webkontext
