@@ -848,7 +848,7 @@ files:
   - show: stp
     episode: 38
     slug: 038-software-tests
-    title: Berühmte Softwarefehler
+    title: Software-Tests
     pubtime: 1685051999 # 2023-05-25
 
     markdown:

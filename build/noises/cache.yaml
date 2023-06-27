@@ -2241,7 +2241,7 @@ audio_metadata:
     chapters:
     - start_secs: 0
       end_secs: 143
-      title: Intro + Porlog
+      title: Intro + Prolog
     - start_secs: 143
       end_secs: 452
       title: Begriffsklärung

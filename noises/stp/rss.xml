@@ -89,7 +89,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       <chapters xmlns="http://podlove.de/simple-chapters">
-          <chapter start="00:00:00" title="Intro &#43; Porlog"  />
+          <chapter start="00:00:00" title="Intro &#43; Prolog"  />
           <chapter start="00:02:23" title="Begriffsklärung"  />
           <chapter start="00:07:32" title="Identitätsmerkmale"  />
           <chapter start="00:21:08" title="schlechte Arten von Merkmalen"  />
@@ -108,10 +108,10 @@
   </item>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
-    <itunes:title>STP038: Berühmte Softwarefehler</itunes:title>
+    <itunes:title>STP038: Software-Tests</itunes:title>
     <itunes:episode>38</itunes:episode>
     <itunes:season>1</itunes:season>
-    <title>STP038: Berühmte Softwarefehler</title>
+    <title>STP038: Software-Tests</title>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Nach der Episode über die Fehler, spechen wir heute darüber, wie man sie vermeidet. Wie nicht anders zu erwarten, ist auch dies ein Thema, bei dem reichhaltige Meinungsdiskurse geführt werden.</itunes:summary>
