@@ -870,3 +870,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 40
+    slug: 040-urheberrecht-bei-programmen
+    title: Urheberrecht bei Programmen
+    pubtime: 1688676000 # 2023-07-06
+
+    markdown:
+      description: |
+        In dieser Episode soll es darum gehen, wer, wann, wie ein Urheberrecht erhält und es nutzen kann. Im Zweifel sogar postmortal. Oder eben nicht. Auch geht es darum, wie lange ein Urheberrecht aus wissenschaftlicher Sicht sinnvoll ist. Und sogar Hitler hat es in die Sendung geschafft.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

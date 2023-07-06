@@ -2263,3 +2263,49 @@ audio_metadata:
     - start_secs: 3043
       end_secs: 3859.303
       title: Authentisierung im Webkontext
+  stp:040-urheberrecht-bei-programmen:
+    length_secs: 4825
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-040-urheberrecht-bei-programmen.mp3
+      size_bytes: 77534893
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-040-urheberrecht-bei-programmen.ogg
+      size_bytes: 48245417
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-040-urheberrecht-bei-programmen.opus
+      size_bytes: 29186496
+    chapters:
+    - start_secs: 0
+      end_secs: 71
+      title: Intro und Begrüßung
+    - start_secs: 71
+      end_secs: 237
+      title: Obligatorischer Disclaimer
+    - start_secs: 237
+      end_secs: 476
+      title: Programmcode als immaterielles Wirtschaftsgut
+    - start_secs: 476
+      end_secs: 663
+      title: Urheberrecht vs. Copyright
+    - start_secs: 663
+      end_secs: 1336
+      title: Urheberrechtspersönlichkeit
+    - start_secs: 1336
+      end_secs: 1848
+      title: Verwertungsrecht
+    - start_secs: 1848
+      end_secs: 2659
+      title: Schranken des Urheberrechts
+    - start_secs: 2659
+      end_secs: 3642
+      title: Freie Software
+    - start_secs: 3642
+      end_secs: 3966
+      title: 'Hinweis für Programmierer: Schaut auf eure SBOM!'
+    - start_secs: 3966
+      end_secs: 4825.188
+      title: netzpolitische Aspekte
