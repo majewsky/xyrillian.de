@@ -2309,3 +2309,55 @@ audio_metadata:
     - start_secs: 3966
       end_secs: 4825.188
       title: netzpolitische Aspekte
+  stp:041-grundlagen-der-kryptografie:
+    length_secs: 4022
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-041-grundlagen-der-kryptografie.mp3
+      size_bytes: 32507748
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-041-grundlagen-der-kryptografie.ogg
+      size_bytes: 44939604
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-041-grundlagen-der-kryptografie.opus
+      size_bytes: 24646992
+    chapters:
+    - start_secs: 0
+      end_secs: 75
+      title: Intro und Begrüßung
+    - start_secs: 75
+      end_secs: 186
+      title: Definition
+    - start_secs: 186
+      end_secs: 965
+      title: Warum Verschlüsselung? - Schutzziele
+    - start_secs: 965
+      end_secs: 1234
+      title: Begriffsklärung
+    - start_secs: 1234
+      end_secs: 1345
+      title: Schlüssellängen
+    - start_secs: 1345
+      end_secs: 1710
+      title: Kryptografische Primitiven
+    - start_secs: 1710
+      end_secs: 2577
+      title: Ansätze um Schlüssel zu knacken
+    - start_secs: 2577
+      end_secs: 2754
+      title: 'OPSEC: das Passwort am Monitor'
+    - start_secs: 2754
+      end_secs: 3540
+      title: Seitenkanalangriffe
+    - start_secs: 3540
+      end_secs: 3821
+      title: Polizei und Geheimdienste
+    - start_secs: 3821
+      end_secs: 3969
+      title: 'Eichhörnchentaktik: Schlüssel teilweise ermitteln'
+    - start_secs: 3969
+      end_secs: 4022
+      title: Ausblick

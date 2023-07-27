@@ -883,3 +883,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 41
+    slug: 041-grundlagen-der-kryptografie
+    title: Grundlagen der Kryptografie
+    pubtime: 1690475400 # 2023-07-27
+
+    markdown:
+      description: |
+        Diesmal gibt es den Einstieg in ein Thema, vor dem wir uns schon eine Weile gedrückt haben.
+        Dieses heutzutage essenzielle und gleichzeitug **subtile** Gebiet werden wir auch aufgrund seiner Tiefe über mehrere Episoden aufteilen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

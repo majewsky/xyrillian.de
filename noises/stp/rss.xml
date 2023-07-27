@@ -27,6 +27,106 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP041: Grundlagen der Kryptografie</itunes:title>
+    <itunes:episode>41</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP041: Grundlagen der Kryptografie</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Diesmal gibt es den Einstieg in ein Thema, vor dem wir uns schon eine Weile gedrückt haben.
+Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&gt; Gebiet werden wir auch aufgrund seiner Tiefe über mehrere Episoden aufteilen.</itunes:summary>
+    <description>Diesmal gibt es den Einstieg in ein Thema, vor dem wir uns schon eine Weile gedrückt haben.
+Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&gt; Gebiet werden wir auch aufgrund seiner Tiefe über mehrere Episoden aufteilen.</description>
+    <content:encoded>&lt;p&gt;Diesmal gibt es den Einstieg in ein Thema, vor dem wir uns schon eine Weile gedrückt haben.
+Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&gt; Gebiet werden wir auch aufgrund seiner Tiefe über mehrere Episoden aufteilen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Definition laut &lt;a href=&#34;https://de.wiktionary.org/w/index.php?title=Kryptografie&amp;amp;oldid=9657177&#34;&gt;Wiktionary&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Kryptografie&amp;quot;, aus griechisch κρυπτός (kryptos) „verborgen“ und -γραφία (graphia), zum Verb γράφειν (graphein) „schreiben“ gebildet&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Informatik, Mathematik:&lt;/em&gt; Wissenschaft der Verschlüsselung von Informationen&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Psychologie:&lt;/em&gt; absichtslos entstandene Kritzelzeichnung eines Erwachsenen&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Warum Verschlüsselung? Vier &lt;strong&gt;Schutzziele&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vertraulichkeit:&lt;/strong&gt; Eine Nachricht soll nur von berechtigten Personen oder Maschinen gelesen werden dürfen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrität:&lt;/strong&gt; Nachrichten sollen nachweislich vollständig und unverändert sein.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authentizität:&lt;/strong&gt; Die Nachricht soll ihrem tatsächlichen Absender zugeordnet werden können.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Verbindlichkeit:&lt;/strong&gt; Der Absender einer Nachricht soll seine Urheberschaft nicht abstreiten können.&lt;/li&gt;
+&lt;li&gt;Beispiele aus der analogen Welt: Verträge, Geheimnisträger:innen (Anwält:innen, Geistliche, Mediziner:innen, etc.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://digitalcourage.de/nichts-zu-verbergen&#34;&gt;&amp;quot;Ich hab doch nichts zu verbergen&amp;quot;&lt;/a&gt; -&amp;gt; Unterschied zwischen &amp;quot;privat&amp;quot; und &amp;quot;geheim&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Verschlüsselung im engeren Sinne: Übertragung eines &lt;strong&gt;Klartext&lt;/strong&gt; (&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Plaintext&amp;amp;oldid=1147935435&#34;&gt;Plaintext&lt;/a&gt;) in einen &lt;strong&gt;Geheimtext&lt;/strong&gt; (&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Plaintext&amp;amp;oldid=1147935435&#34;&gt;Ciphertext&lt;/a&gt;) und später wieder zurück&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispiel für (historisch signifikanten) Ciphertext: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Zimmermann-Depesche&amp;amp;oldid=232609215&#34;&gt;Zimmermann-Depesche&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;die Relation zwischen Klartext und Ciphertext wird vermittelt durch einen &lt;strong&gt;Schlüssel&lt;/strong&gt;, also eine Folge von Bits fester Länge (je nach Verfahren zwischen 128 Bits bis zu 4096 Bits)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grundbausteine eines Kryptosystems: &lt;strong&gt;Primitiven&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispiel für eine Klasse von Primitiven: symmetrische Verschlüsselung (Funktionsprinzip: Klartext &#43; Schlüssel -&amp;gt; Geheimtext, Geheimtext &#43; selber Schlüssel -&amp;gt; Klartext)&lt;/li&gt;
+&lt;li&gt;Qualitätsmaßstab: Angreifer mit Zugriff auf den Geheimtext soll nicht auf den Klartext schließen können&lt;/li&gt;
+&lt;li&gt;immer möglich: Angriff nach &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Brute-Force-Methode&amp;amp;oldid=230198355&#34;&gt;Brute-Force-Methode&lt;/a&gt;, also Durchprobieren aller möglichen Schlüssel (Beispiel: Zahlenschloss mit vierstelliger PIN)&lt;/li&gt;
+&lt;li&gt;praktischer Maßstab: Brechen einer Verschlüsselung soll nicht weniger als &lt;code&gt;2^100&lt;/code&gt; Rechenoperationen erfordern (&lt;code&gt;2^100 = 1.267... * 10^30&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Rechenbeispiel: Xyrills Grafikkarte kann im Idealfall etwa 64 TFLOPS liefern, also 64 Trillionen Rechenoperationen pro Sekunde; bei dieser Geschwindigkeit benötigen &lt;code&gt;2^100&lt;/code&gt; Rechenoperationen etwa 627 Millionen Jahre&lt;/li&gt;
+&lt;li&gt;Seitenleiste: Quantencomputer sind nicht automatisch Game Over, aber es gibt aktive Forschung an &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Post-Quanten-Kryptographie&amp;amp;oldid=228540985&#34;&gt;Post-Quanten-Kryptografie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Primitiven alleine machen noch kein vollständiges Kryptosystem&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;die tollste Festplattenverschlüsselung hilft nicht, wenn ich das Passwort am Monitor kleben habe :)&lt;/li&gt;
+&lt;li&gt;besonders spannend: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Seitenkanalattacke&amp;amp;oldid=218845820&#34;&gt;Seitenkanal-Angriffe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Beispiel: je nach Bitfolge im Schlüssel dauert das Entschlüsseln unterschiedlich lang oder braucht unterschiedlich viel Energie oder erzeugt unterschiedlich viel Strahlung&lt;/li&gt;
+&lt;li&gt;Beispiel: Login mit Benutzername und Passwort sollte sich bei falschem Passwort genauso verhalten wie bei nicht vorhandenem Benutzerkonto&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vorschau&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nächstes Mal (STP042) was ganz anderes... aber dann!&lt;/li&gt;
+&lt;li&gt;STP043: Überblick über Klassen von Primitiven (Fokus auf das allgemeine Verhalten anstatt auf konkrete mathematische Konstruktion)&lt;/li&gt;
+&lt;li&gt;STP044: Starke Kryptografie ist kein Zufall... oder doch?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://media.ccc.de/v/ds21-122-schlsseltechnologie-live-das-diffie-hellman-protokoll&#34;&gt;Schlüsseltechnologie Live: Das Diffie-Hellman-Protokoll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kerckhoffs%E2%80%99_Prinzip&amp;amp;oldid=213145792&#34;&gt;Kerckhoffs&#39; Prinzip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xkcd.com/538/&#34;&gt;XKCD 538: Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pkg.go.dev/crypto/subtle&#34;&gt;crypto/subtle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Begrüßung"  />
+          <chapter start="00:01:15" title="Definition"  />
+          <chapter start="00:03:06" title="Warum Verschlüsselung? - Schutzziele"  />
+          <chapter start="00:16:05" title="Begriffsklärung"  />
+          <chapter start="00:20:34" title="Schlüssellängen"  />
+          <chapter start="00:22:25" title="Kryptografische Primitiven"  />
+          <chapter start="00:28:30" title="Ansätze um Schlüssel zu knacken"  />
+          <chapter start="00:42:57" title="OPSEC: das Passwort am Monitor"  />
+          <chapter start="00:45:54" title="Seitenkanalangriffe"  />
+          <chapter start="00:59:00" title="Polizei und Geheimdienste"  />
+          <chapter start="01:03:41" title="Eichhörnchentaktik: Schlüssel teilweise ermitteln"  />
+          <chapter start="01:06:09" title="Ausblick"  />
+      </chapters>
+      <enclosure length="32507748" url="https://dl.xyrillian.de/noises/stp-041-grundlagen-der-kryptografie.mp3" type="audio/mpeg"/>
+      <enclosure length="44939604" url="https://dl.xyrillian.de/noises/stp-041-grundlagen-der-kryptografie.ogg" type="audio/ogg"/>
+      <enclosure length="24646992" url="https://dl.xyrillian.de/noises/stp-041-grundlagen-der-kryptografie.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/041-grundlagen-der-kryptografie/</guid>
+    <pubDate>Thu, 27 Jul 2023 16:30:00 GMT</pubDate>
+    <itunes:duration>67:02</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP040: Urheberrecht bei Programmen</itunes:title>
     <itunes:episode>40</itunes:episode>
     <itunes:season>1</itunes:season>
