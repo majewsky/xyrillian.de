@@ -897,3 +897,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 42
+    slug: 042-the-cursed-computer-iceberg-meme
+    title: Cursed Computer Iceberg Meme
+    pubtime: 1692308700 # 2023-08-17
+
+    markdown:
+      description: |
+        In der Episode mit dieser Nummer werden wir aus Günden vom normalen Programm abweichen. Während diese Gründe für den durchschnittlichen {Nerd|Geek} gut verständlich sein dürften, werden diese für alle Anderen ausführlich erklärt. Xyrill greift zu diesem Anlass völlig wahllos einige lustige und/oder deprimirende Aspekte aus dem Eisberg der Computerei heraus.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

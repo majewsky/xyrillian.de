@@ -2361,3 +2361,37 @@ audio_metadata:
     - start_secs: 3969
       end_secs: 4022
       title: Ausblick
+  stp:042-the-cursed-computer-iceberg-meme:
+    length_secs: 4983
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-042-the-cursed-computer-iceberg-meme.mp3
+      size_bytes: 80063592
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-042-the-cursed-computer-iceberg-meme.ogg
+      size_bytes: 48805554
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-042-the-cursed-computer-iceberg-meme.opus
+      size_bytes: 29871166
+    chapters:
+    - start_secs: 0
+      end_secs: 475
+      title: Intro und Prolog
+    - start_secs: 475
+      end_secs: 781
+      title: Einführung für Anhalterreisende
+    - start_secs: 781
+      end_secs: 1045
+      title: Cursed Computer Iceberg Meme
+    - start_secs: 1045
+      end_secs: 2745
+      title: Oberhalb des Eisberges
+    - start_secs: 2745
+      end_secs: 4108
+      title: Auf dem Eisberg
+    - start_secs: 4108
+      end_secs: 4983.255
+      title: Unter der Wasserlinie
