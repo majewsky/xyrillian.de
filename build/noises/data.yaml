@@ -24,8 +24,6 @@ shows:
         href: https://gpodder.net/podcast/gar-nicht-so-einfach
       - name: iTunes
         href: https://podcasts.apple.com/de/podcast/gar-nicht-so-einfach/id1435500811
-      - name: Stitcher
-        href: https://www.stitcher.com/show/gar-nicht-so-einfach
 
   st:
     title:       Space Tourist
@@ -48,8 +46,6 @@ shows:
         href: https://gpodder.net/podcast/space-tourist
       - name: iTunes
         href: https://podcasts.apple.com/de/podcast/space-tourist/id1454308732
-      - name: Stitcher
-        href: https://www.stitcher.com/show/space-tourist
 
   stp:
     title:       Schlüsseltechnologie
@@ -75,8 +71,6 @@ shows:
         href: https://fyyd.de/podcast/schluesseltechnologie/0
       - name: iTunes
         href: https://podcasts.apple.com/de/podcast/schl%C3%BCsseltechnologie/id1559995829
-      - name: Stitcher
-        href: https://www.stitcher.com/show/schlusseltechnologie
 
   pentaradio:
     external: https://c3d2.de/radio.html
