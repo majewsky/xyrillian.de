@@ -2395,3 +2395,58 @@ audio_metadata:
     - start_secs: 4108
       end_secs: 4983.255
       title: Unter der Wasserlinie
+  stp:043-kryptografische-primitiven:
+    length_secs: 4357
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-043-kryptografische-primitiven.mp3
+      size_bytes: 70055209
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-043-kryptografische-primitiven.ogg
+      size_bytes: 41450160
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-043-kryptografische-primitiven.opus
+      size_bytes: 25698560
+    chapters:
+    - start_secs: 0
+      end_secs: 83
+      title: Intro
+    - start_secs: 83
+      end_secs: 417
+      title: Vorbemerkung zu Primitiven
+    - start_secs: 417
+      end_secs: 648
+      title: Symmetrische Verschlüsselung
+    - start_secs: 648
+      end_secs: 1795
+      title: 'Problem 1: Wie verschlüsselt man mehr als einen Block?'
+    - start_secs: 1795
+      end_secs: 1895
+      title: 'Problem 2: Wie einigt man sich auf einen Schlüssel?'
+    - start_secs: 1895
+      end_secs: 2049
+      title: Abschweif zu bekannten Kryptografen
+    - start_secs: 2049
+      end_secs: 2495
+      title: Asymmetrische Verschlüsselung
+    - start_secs: 2495
+      end_secs: 2705
+      title: Erzeugung von Schlüsselpaaren
+    - start_secs: 2705
+      end_secs: 3022
+      title: Beispiel für Primfaktorzerlegung
+    - start_secs: 3022
+      end_secs: 3255
+      title: Das Problem mit dem Vertrauen
+    - start_secs: 3255
+      end_secs: 3467
+      title: Das Problem mit den Kosten
+    - start_secs: 3467
+      end_secs: 3787
+      title: Signaturen
+    - start_secs: 3787
+      end_secs: 4357.684
+      title: Geheimnisteilung

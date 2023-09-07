@@ -27,6 +27,162 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP043: Kryptografische Primiviten</itunes:title>
+    <itunes:episode>43</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP043: Kryptografische Primiviten</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Im zweiten Teil unserer Reihe über Kryptografie besehen wir uns einzelne Klassen von Bausteinen, welche dann zu Verschlüsselungsprotokollen zusammengesetzt werden können.</itunes:summary>
+    <description>Im zweiten Teil unserer Reihe über Kryptografie besehen wir uns einzelne Klassen von Bausteinen, welche dann zu Verschlüsselungsprotokollen zusammengesetzt werden können.</description>
+    <content:encoded>&lt;p&gt;Im zweiten Teil unserer Reihe über Kryptografie besehen wir uns einzelne Klassen von Bausteinen, welche dann zu Verschlüsselungsprotokollen zusammengesetzt werden können.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückblick zu STP041&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kryptografische Systeme dienen dem Erreichen der vier Schutzziele (Vertraulichkeit, Integrität, Authentizität, Verbindlichkeit)&lt;/li&gt;
+&lt;li&gt;Implementierung vollständiger Kryptosysteme braucht &lt;strong&gt;Primitiven&lt;/strong&gt; (Grundbausteine)&lt;/li&gt;
+&lt;li&gt;heute: Vorstellung grundlegender Klassen von Primitiven&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Symmetrisches_Kryptosystem&amp;amp;oldid=197227672&#34;&gt;Symmetrische Verschlüsselung&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Schritt 1: Klartext (Plaintext) &#43; Schlüssel (Key) -&amp;gt; Geheimtext (Ciphertext)&lt;/li&gt;
+&lt;li&gt;Schritt 2: Geheimtext &#43; selber Schlüssel -&amp;gt; Klartext&lt;/li&gt;
+&lt;li&gt;üblicherweise als &lt;strong&gt;Blockchiffre&lt;/strong&gt; mit Beschränkung des Klartexts auf eine Blockgröße von z.B. 128 oder 256 Bits, übliche Schlüsselgrößen ähnlich groß&lt;/li&gt;
+&lt;li&gt;zwei Probleme:
+&lt;ol&gt;
+&lt;li&gt;Wie verschlüsselt man mehr als einen Block?&lt;/li&gt;
+&lt;li&gt;Wie einigt man sich auf einen gemeinsamen Schlüssel, ohne dass Beobachter den Schlüssel abgreifen können?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;zu Problem 1: Erweiterung der Blockchiffre zu einem &lt;strong&gt;Stromchiffre&lt;/strong&gt; mittels eines geeigneten &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Betriebsmodus_(Kryptographie)&amp;amp;oldid=209978117&#34;&gt;Betriebsmodus&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Datenstrom wird in einzelne Blöcke der gewünschten Größe zerteilt; Betriebsmodus beschreibt dann die Anwendung des Blockchiffre auf die Folge von Blöcken&lt;/li&gt;
+&lt;li&gt;einfachster Betriebsmodus ist ECB (Electronic Codebook): der Blockchiffre wird auf jeden Block komplett separat angewendet -&amp;gt; &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Block_cipher_mode_of_operation&amp;amp;oldid=1154901199#Electronic_codebook_(ECB)&#34;&gt;offensichtliche Probleme (siehe Bild im verlinkten Abschnitt)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;bei den meisten modernen Betriebsmodi werden meist Daten aus dem aktuellen Blockchiffre in den nächsten Block übertragen, um die Analyse des Geheimtextes zu erschweren -&amp;gt; Problem: schwer parallelisierbar, Lesezugriff nur sequentiell&lt;/li&gt;
+&lt;li&gt;CTR-Betriebsmodus (Counter): jeder Block wird beim Verschlüsseln mit einem Zähler kombiniert, damit sich keine wiederkehrenden Muster wie bei ECB ergeben -&amp;gt; Vorteil: wahlfreier Schreib- und Lesezugriff möglich (interessant für Festplattenverschlüsselung)&lt;/li&gt;
+&lt;li&gt;siehe unten: Beispiel für die Geschwindigkeit moderner Stromchiffern insb. mit Hardwareunterstützung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ cryptsetup benchmark
+...
+#     Algorithm |       Key |      Encryption |      Decryption
+...
+        aes-xts        512b      3547,4 MiB/s      3540,4 MiB/s
+    serpent-xts        512b       742,7 MiB/s       729,4 MiB/s
+    twofish-xts        512b       398,9 MiB/s       404,8 MiB/s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;zu Problem 2 (Einigung auf einen gemeinsamen Schlüssel) zwei Ansätze:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Schlüsselaustausch-Protokolle wie &lt;a href=&#34;https://media.ccc.de/v/ds21-122-schlsseltechnologie-live-das-diffie-hellman-protokoll&#34;&gt;Diffie-Hellman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;asymmetrische Verschlüsselung&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Asymmetrisches_Kryptosystem&amp;amp;oldid=232100921&#34;&gt;Asymmetrische Verschlüsselung&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;statt einem einzelnen Schlüssel ein &lt;strong&gt;Schlüsselpaar&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;wir haben keine gute Bildmetapher dazu; Xyrills Vorschlag: zwei Ratschen; eine dreht nur nach rechts und eine nur nach links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Schritt 1: Klartext &#43; &lt;strong&gt;öffentlicher Schlüssel&lt;/strong&gt; -&amp;gt; Geheimtext&lt;/li&gt;
+&lt;li&gt;Schritt 2: Geheimtext &#43; &lt;strong&gt;privater Schlüssel&lt;/strong&gt; -&amp;gt; Klartext&lt;/li&gt;
+&lt;li&gt;Beispiel &lt;a href=&#34;https://www.youtube.com/playlist?list=PL6_AeYXBHF0OWS1GxV6lfivdReSyKhv3l&#34;&gt;RSA&lt;/a&gt;:
+&lt;ul&gt;
+&lt;li&gt;Grundgeheimnis sind zwei sehr große Primzahlen (&lt;code&gt;p&lt;/code&gt; und &lt;code&gt;q&lt;/code&gt;, jeweils z.B. 500 Dezimalstellen)&lt;/li&gt;
+&lt;li&gt;aus dem Produkt dieser Primzahlen (&lt;code&gt;N = p * q&lt;/code&gt;) werden zwei weitere Zahlen (&lt;code&gt;d&lt;/code&gt; und &lt;code&gt;e&lt;/code&gt;) mittels günstiger Rechenoperationen abgeleitet&lt;/li&gt;
+&lt;li&gt;dann ist der öffentliche Schlüssel das Zahlenpaar &lt;code&gt;d,N&lt;/code&gt; und der private Schlüssel das Zahlenpaar &lt;code&gt;e,N&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Ableitung des privaten aus dem öffentlichen Schlüssel erfordert Primzahlfaktorisierung von &lt;code&gt;N&lt;/code&gt;, was extrem teuer ist (siehe Beispiel unten)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Problem 1 teilweise gelöst: Empfänger muss nur seinen öffentlichen Schlüssel offenbaren, der kein Geheimnis enthält&lt;/li&gt;
+&lt;li&gt;Problem 2 ungelöst: auch asymmetrische Verschlüsselung arbeitet nur pro Block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ time factor 1350918345091284620469824069824602946802496824562049682046982406982406980
+1350918345091284620469824069824602946802496824562049682046982406982406980: 2 2 3 5 7 193 941 5077 3488395463852632669275489205712092360621005476304268749586169
+factor   1,92s user 0,00s system 99% cpu 1,926 total
+$ time factor 1350918345091284620469824069824602946802496824562049682046982406982406981
+1350918345091284620469824069824602946802496824562049682046982406982406981: 11 3931 5242879872157046321 5958863859256362497309559371496021100634736129421
+factor   462,19s user 0,01s system 99% cpu 7:43,24 total
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;neues Problem: asymmetrische Verfahren sind sehr viel rechenaufwändiger als symmetrische Verfahren -&amp;gt; &lt;strong&gt;hybrides Kryptosystem&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;asymmetrische Verschlüsselung wird nur zum Austausch eines symmetrischen Schlüssels verwendet&lt;/li&gt;
+&lt;li&gt;Beispiel &amp;quot;verschlüsselte E-Mail&amp;quot;: Alice hat den öffentlichen Schlüssel &lt;code&gt;O&lt;/code&gt;, Bob hat den privaten Schlüssel &lt;code&gt;P&lt;/code&gt; dazu
+&lt;ul&gt;
+&lt;li&gt;Alice erstellt die Nachricht &lt;code&gt;N&lt;/code&gt; im Klartext&lt;/li&gt;
+&lt;li&gt;Alice erzeugt einen zufälligen symmetrischen Schlüssel &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Alice verschlüsselt &lt;code&gt;N&lt;/code&gt; mit &lt;code&gt;S&lt;/code&gt; und einem Stromchiffre zu &lt;code&gt;N&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Alice verschlüsselt &lt;code&gt;S&lt;/code&gt; mit &lt;code&gt;O&lt;/code&gt; zu &lt;code&gt;S&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Alice schickt &lt;code&gt;N&#39;&lt;/code&gt; und &lt;code&gt;S&#39;&lt;/code&gt; an Bob&lt;/li&gt;
+&lt;li&gt;Bob entschlüsselt &lt;code&gt;S&#39;&lt;/code&gt; mit &lt;code&gt;P&lt;/code&gt; zu &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Bob entschlüsselt &lt;code&gt;N&#39;&lt;/code&gt; mit &lt;code&gt;S&lt;/code&gt; zu &lt;code&gt;N&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;zweite Anwendung von asymmetrischer Kryptografie: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Digitale_Signatur&amp;amp;oldid=234047519&#34;&gt;Signaturen&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verschlüsselung: vorwärts mit dem öffentlichen Schlüssel, rückwärts mit dem privaten Schlüssel&lt;/li&gt;
+&lt;li&gt;bei Signierung umgekehrt: vorwärts mit dem privaten Schlüssel (Erzeugung), rückwärts mit dem öffentlichen Schlüssel (Überprüfung)&lt;/li&gt;
+&lt;li&gt;im Detail: erst Komprimierung der zu signierenden Daten auf eine feste Größe mittels einer Hashfunktion (siehe STP004), dann Verschlüsselung dieses Hash-Wertes mit dem privaten Schlüssel&lt;/li&gt;
+&lt;li&gt;Überprüfung: Berechnung des Hashes auf dieselbe Weise, Vergleich mit entschlüsselter Signatur&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;noch eine Primitive zum Schluss: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Secret-Sharing&amp;amp;oldid=201132633&#34;&gt;Geheimnisteilung&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem: Ein Geheimnis soll in N Teile so aufgeteilt werden, dass M beliebige Teile zum Entschlüsseln genutzt werden können.&lt;/li&gt;
+&lt;li&gt;Beispiel: Backup des Passwortspeichers in 5 Fragmente aufteilen und bei 5 Freunden so einlagern, dass man später nur 3 beliebige Fragmente zum Wiederherstellen braucht&lt;/li&gt;
+&lt;li&gt;Illustrationen: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Visuelle_Kryptographie&amp;amp;oldid=204692019&#34;&gt;Visuelle Kryptografie&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Secret_sharing&amp;amp;oldid=1152303869#Blakley&#39;s_scheme&#34;&gt;Blakley-Schema&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://anerzaehlt.net/aes-256/&#34;&gt;Anerzählt Podcast zu AES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=lt7uW6vDk00&#34;&gt;Whitfield Diffie und Moxie Marlinspike und eine Flasche Whiskey auf der Bühne&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:23" title="Vorbemerkung zu Primitiven"  />
+          <chapter start="00:06:57" title="Symmetrische Verschlüsselung"  />
+          <chapter start="00:10:48" title="Problem 1: Wie verschlüsselt man mehr als einen Block?"  />
+          <chapter start="00:29:55" title="Problem 2: Wie einigt man sich auf einen Schlüssel?"  />
+          <chapter start="00:31:35" title="Abschweif zu bekannten Kryptografen"  />
+          <chapter start="00:34:09" title="Asymmetrische Verschlüsselung"  />
+          <chapter start="00:41:35" title="Erzeugung von Schlüsselpaaren"  />
+          <chapter start="00:45:05" title="Beispiel für Primfaktorzerlegung"  />
+          <chapter start="00:50:22" title="Das Problem mit dem Vertrauen"  />
+          <chapter start="00:54:15" title="Das Problem mit den Kosten"  />
+          <chapter start="00:57:47" title="Signaturen"  />
+          <chapter start="01:03:07" title="Geheimnisteilung"  />
+      </chapters>
+      <enclosure length="70055209" url="https://dl.xyrillian.de/noises/stp-043-kryptografische-primitiven.mp3" type="audio/mpeg"/>
+      <enclosure length="41450160" url="https://dl.xyrillian.de/noises/stp-043-kryptografische-primitiven.ogg" type="audio/ogg"/>
+      <enclosure length="25698560" url="https://dl.xyrillian.de/noises/stp-043-kryptografische-primitiven.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/043-kryptografische-primitiven/</guid>
+    <pubDate>Thu, 07 Sep 2023 18:50:00 GMT</pubDate>
+    <itunes:duration>72:37</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP042: Cursed Computer Iceberg Meme</itunes:title>
     <itunes:episode>42</itunes:episode>
     <itunes:season>1</itunes:season>
