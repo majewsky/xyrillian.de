@@ -22,30 +22,7 @@
       </span>
     </div>
   </nav>
-  <article><h1><a href="/thoughts/posts/golang-api-design.html" title="Permalink">[l]</a> Notes on API design in Go</h1>
-<p>At work, I have a working student who’s implementing some features in the various Golang applications that I build and maintain. I’m trying to pass some of my experience with real-world programming on to him, and <a href="https://github.com/sapcc/go-bits/pull/2">one particular pull request review</a> escalated into a blog post on API design, so I might as well share it here for archival purposes (and to fill the desolate wasteland that is my RSS feed).</p>
-<p>The concern of the pull request was to add a function to a utility library that implements exponential backoff. His proposed API looked like:</p>
-<pre><code class="language-go">//Retry takes a function (action) that returns an error, and two int64 values (x, y) as
-//parameters and creates a retry loop with an exponential backoff such that on failure (error return),
-//the action is called again after x seconds and this is incremented by a factor of 2 until y minutes
-//then it is keeps on repeating after y minutes till action succeeds (no error).
-func Retry(action func() error, x, y time.Duration) { ...  }
-</code></pre>
-<p class="more"><a href="/thoughts/posts/golang-api-design.html">Read more...</a></p></article><article><h1><a href="/thoughts/posts/gdpr-ahoy.html" title="Permalink">[l]</a> GDPR ahoy!</h1>
-<p>The <a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">General Data Protection Regulation</a> comes into full force today. I
-took the opportunity to add a data privacy statement to the blog. Here is it
-in its full glory:</p>
-<blockquote>
-<p>No system under my control records any personal data of users of this website.</p>
-</blockquote>
-<p>This is true because I disabled the nginx access log a long time ago, and
-because I restricted the nginx error log to not report 404 errors. So the logs
-are basically empty now (except for alert messages from nginx). <a href="https://github.com/majewsky/system-configuration/blob/da7f81133dee981f771dafd3c066ad28e7a09a8f/hologram-nginx.pkg.toml#L102-L103">These are the
-relevant lines in my nginx config.</a></p>
-<p>No idea why any blogger would be panicking about GDPR.</p>
-<p>Side-note: Even though I choose not to wiretap my users’ browsers, <a href="https://blog.bethselamin.de/posts/latency-matters-aftermath.html">I still
-have analytics</a>.</p>
-</article><article><h1><a href="/thoughts/posts/latency-matters-aftermath.html" title="Permalink">[l]</a> Does the HN crowd show up in monitoring?</h1>
+  <article><h1><a href="/thoughts/posts/latency-matters-aftermath.html" title="Permalink">[l]</a> Does the HN crowd show up in monitoring?</h1>
 <p>So <a href="latency-matters.html">my previous post</a> made <a href="https://news.ycombinator.com/item?id=15059795">the frontpage on Hacker News</a>.
 Awesome! I have seen many websites collapse under the load of a HN crowd, so this is the perfect time to look at the monitoring.</p>
 <p><img src="/thoughts/img/munin1.png" alt="Munin charts"></p>
@@ -64,14 +41,7 @@ wondering: Can I really perceive a difference between 5 ms latency and 45 ms lat
 <p class="more"><a href="/thoughts/posts/latency-matters.html">Read more...</a></p></article><article><h1><a href="/thoughts/posts/how-i-run-certbot.html" title="Permalink">[l]</a> How I run Certbot (as non-root and automated)</h1>
 <p>I have previously noted that I get all my TLS certificates from <a href="https://letsencrypt.org">Let’s Encrypt</a>, but since my usage of the client
 deviates quite a bit from the standard, I figured I should take a few minutes to describe my setup.</p>
-<p class="more"><a href="/thoughts/posts/how-i-run-certbot.html">Read more...</a></p></article><article><h1><a href="/thoughts/posts/donation-letsencrypt.html" title="Permalink">[l]</a> Donation to Let’s Encrypt</h1>
-<p>When you visit this blog, the connection will be encrypted and thus
-tamper-proof thanks to a free TLS certificate from
-<a href="https://letsencrypt.org">Let’s Encrypt</a>. They’re currently running a <a href="https://letsencrypt.org/donate/">crowdfunding campaign</a> to
-fund their operational costs. Since I use their service extensively, I gave 50
-dollars. If you, too, like the idea of a more secure and privacy-respecting
-web, please consider giving generously, too.</p>
-</article><article><h1><a href="/thoughts/posts/argh-pm.html" title="Permalink">[l]</a> Argh-P-M! – Dissecting the RPM file format</h1>
+<p class="more"><a href="/thoughts/posts/how-i-run-certbot.html">Read more...</a></p></article><article><h1><a href="/thoughts/posts/argh-pm.html" title="Permalink">[l]</a> Argh-P-M! – Dissecting the RPM file format</h1>
 <p>As the first actual content on my new blog, let me tell you the story of how I went absolutely crazy.</p>
 <p>On my private systems, I ship configuration as system packages. Every distribution has their own tooling and process for
 building these packages, but I eventually grew tired of the ceremony involved in it, and wrote <a href="https://github.com/holocm/holo-build">my own system package
@@ -83,20 +53,7 @@ write the Debian generator in two days, then surely RPM support wouldn’t take 
 I was embarking on a multi-month endeavor (including multiple week-long breaks to restore my sanity). To add insult to
 injury, I stubbornly refused to add dependencies and use existing tooling (i.e., the <code>rpm-build(1)</code> command). I wanted
 to serialize the format directly from my own code, like I did for Pacman and Debian packages.</p>
-<p class="more"><a href="/thoughts/posts/argh-pm.html">Read more...</a></p></article><article><h1><a href="/thoughts/posts/rss.html" title="Permalink">[l]</a> Blog Update: RSS</h1>
-<p>While I was at it, I added an <a href="https://blog.bethselamin.de/rss.xml">RSS feed</a>
-and changed the timestamps on an article’s page to reflect the
-<a href="https://github.com/majewsky/blog-data">git-log of the source file</a>.</p>
-</article><article><h1><a href="/thoughts/posts/hello-world.html" title="Permalink">[l]</a> Hello World</h1>
-<p>I had known for a long time that I need a new blog. I had one years ago in the cloud
-(<a href="https://majewsky.wordpress.com">it’s still live</a>), but I definitely wanted something self-hosted this time. I had a
-brief look at static website generators, and quickly decided that (as usual) I want a custom-tailored solution.</p>
-<p>The first iteration is an nginx serving static files rendered by a
-<a href="https://github.com/majewsky/blog-generator">tiny Go program</a>. Content comes from a
-<a href="https://github.com/majewsky/blog-data">GitHub repo</a> and is pulled every few minutes. Good enough for a first shot.
-I might change the cronjob to be triggered by a GitHub webhook later on, but only if the delay until the next cronjob
-run annoys me enough.</p>
-</article>
+<p class="more"><a href="/thoughts/posts/argh-pm.html">Read more...</a></p></article>
   <aside class="bio-with-avatar">
     <div>
       <p>I'm <strong>Stefan Majewsky</strong> aka <strong>Xyrill</strong>. At work, I take pride in replacing complex distributed systems by very small shell scripts. After work, I complain about the weather, politics, crappy devices, and literally everything else. I'm also on <a href="https://twitter.com/stefanmajewsky">Twitter</a> and on <a href="https://github.com/majewsky">GitHub</a>.
