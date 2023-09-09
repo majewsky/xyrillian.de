@@ -1074,6 +1074,3 @@ typedef enum rpmfileState_e {
     RPMFILE_STATE_WRONGCOLOR	= 4
 } rpmfileState;
 ```
-
-*P.S.* I plan to turn this post into a 30-minute talk. If you like the idea of me giving this talk at your hackfest or
-conference, please [contact me on Twitter](https://twitter.com/stefanmajewsky).
