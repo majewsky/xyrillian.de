@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zufall - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #44 vom 28. September 2023</h2>
+    <h1>Zufall</h1>
+      <p>Wir befassen uns unter anderem mit der Erstellung, Bewertung und dem Verbrauch von Zufall.
+Außerdem in dieser Folge: Quantenmechanik, wildes Tastendrücken und Schiffe versenken.</p>
+      <p><strong>Länge:</strong> 56:57 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-044-zufall.mp3" type="audio/mpeg">
+        <source src="/dl/stp-044-zufall.ogg" type="audio/ogg">
+        <source src="/dl/stp-044-zufall.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="221">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Richtigstellung zu STP019</span>
+      </div>
+      <div class="chapter" data-start="221" data-end="586">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">03:41</span>
+        <span class="chapter-title">Intro und Intro und Prolog</span>
+      </div>
+      <div class="chapter" data-start="586" data-end="1308">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">09:46</span>
+        <span class="chapter-title">Was ist guter Zufall?</span>
+      </div>
+      <div class="chapter" data-start="1308" data-end="1763">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">21:48</span>
+        <span class="chapter-title">Wo kommt der echte Zufall her?</span>
+      </div>
+      <div class="chapter" data-start="1763" data-end="2586">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">29:23</span>
+        <span class="chapter-title">Linearer Kongruenzgenerator</span>
+      </div>
+      <div class="chapter" data-start="2586" data-end="2759">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">43:06</span>
+        <span class="chapter-title">Kryptografisch sichere Zufallszahlengeneratoren</span>
+      </div>
+      <div class="chapter" data-start="2759" data-end="2904">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">45:59</span>
+        <span class="chapter-title">Abschweif: Schiffe versenken in Zelda</span>
+      </div>
+      <div class="chapter" data-start="2904" data-end="3333">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">48:24</span>
+        <span class="chapter-title">Die Saat des Zufalls auf Unixsystemen</span>
+      </div>
+      <div class="chapter" data-start="3333" data-end="3417.285">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">55:33</span>
+        <span class="chapter-title">Ausblick und Abschied</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-044-zufall.mp3">MP3</a> (52,5 MiB)</li>
+          <li><a href="/dl/stp-044-zufall.ogg">Ogg Vorbis</a> (32,2 MiB)</li>
+          <li><a href="/dl/stp-044-zufall.opus">Opus</a> (19,7 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p>Wir haben ein Errata zu STP019. Alex schreibt:</p>
+<blockquote>
+<p>DMA kenne ich anders, nicht das der Prozess direkt über die MMU auf ein Peripheriegerät durchgreift, sondern dass ein Peripheriegerät ohne Beteiligung der CPU Daten vom/zum Hauptspeicher übertragen kann.
+Man muss dem Kernel allerdings beim Reservieren von Speicher für DMA
+sagen, dass das ein DMA Buffer sein soll, weil DMA selbst nicht über die MMU läuft sondern vom Peripheriegerät direkt von/zur physikalischen Adresse.
+Den eigentlichen Transfer zwischen Buffer und Peripherie muss
+man dann aber per Software entsprechend aktivieren.</p>
+</blockquote>
+<p>Xyrill antwortet: <a href="https://de.wikipedia.org/w/index.php?title=Direct_Memory_Access&amp;oldid=232059711">Ja, stimmt.</a> Nun zur eigentlichen Folge:</p>
+<ul>
+<li>
+<p>Intro-Intro: in Referenz auf den klassischen Dilbert-Cartoon, den man <a href="https://www.americanscientist.org/article/the-quest-for-randomness">zum Beispiel hier</a> sieht</p>
+</li>
+<li>
+<p>Warum sind hochwertige Zufallszahlen wichtig?</p>
+<ul>
+<li>siehe STP043: Erzeugung eines RSA-Schlüsselpaars benötigt zwei große und <strong>geheime</strong> Primzahlen</li>
+<li>geheim = niemand anders kann es raten = zufällig</li>
+<li>oder zumindest von Zufall nicht zu unterscheiden (<strong>Pseudozufall</strong>)</li>
+</ul>
+</li>
+<li>
+<p>Was ist &quot;guter&quot; Zufall?</p>
+<ul>
+<li>erstaunlich schwer zu definieren</li>
+<li>vielleicht Periodenlänge (Dauer, bis sich die Zahlenfolge wiederholt)</li>
+<li>vielleicht Gleichverteilung der Auftrittshäufigkeit von Teilfolgen (jede einstellige/zweistellige/dreistellige/etc. Zahl sollte gleich oft in der Folge vorkommen)</li>
+<li>Problem: die Folge &quot;2236067977499789805051478...&quot; ist nach all diesen Maßstäben guter Zufall -- bis man bemerkt, dass das die Dezimalstellen der Quadratwurzel von 5 sind</li>
+<li>guter (aber unpraktikabler) Test: hohe <a href="https://de.wikipedia.org/w/index.php?title=Kolmogorow-Komplexit%C3%A4t&amp;oldid=207581838">Kolmogorow-Komplexität</a> (siehe STP025)</li>
+<li>Errata: Beim Nachhören ist mir aufgefallen, dass die Kolmogorow-Komplexität eines Pseudozufallszahlengenerators nie besonders groß sein kann, da der Zufallszahlengenerator ja gerade ein Programm ist, was die entsprechende Zahlenfolge erzeugen kann. Das ist kein praktisches Problem, da das Programm im Kolmogorow-Sinne auch die Startwerte des Zufallszahlengenerators umfassen müsste, die aber gerade geheim sind.</li>
+</ul>
+</li>
+<li>
+<p>&quot;echter&quot; Zufall kommt aus physikalischen Zufallszahlengeneratoren (Hardware-RNG)</p>
+<ul>
+<li>z.B. thermisches Rauschen eines elektrischen Widerstandes</li>
+<li>z.B. radioaktive Zerfallsvorgänge</li>
+<li>z.B. atmosphärisches Rauschen (Empfang auf einem Frequenzband, auf dem keiner sendet)</li>
+<li>z.B. <a href="https://www.semanticscholar.org/paper/True-Random-Number-Generator-using-Fish-Tank-Image-Katyal-Mishra/374875fdad184959a7e13eafe9c02bbd44e0aca7">Abfilmen eines Aquariums :)</a></li>
+<li>siehe auch: Würfeln, Lottozahlen</li>
+<li>Probleme: nicht in jedem Computer verfügbar, pro Zeiteinheit begrenzte Menge von Zufall</li>
+<li>Idee: Erzeugung beliebiger Mengen von Pseudozufall aus einem festen Algorithmus</li>
+</ul>
+</li>
+<li>
+<p>Beispiel: <a href="https://de.wikipedia.org/w/index.php?title=Kongruenzgenerator&amp;oldid=214494984#Linearer_Kongruenzgenerator">Linearer Kongruenzgenerator</a></p>
+<ul>
+<li>Parameter: geheime Ganzzahlen <code>a</code>, <code>b</code>, <code>m</code>; Startwert <code>y</code></li>
+<li>Erzeugung einer Folge von Pseudozufallszahlen durch die Formel <code>y' = (a * y + b) mod m</code></li>
+<li>Problem: bereits aus wenigen aufeinander folgenden <code>y</code>-Werten kann man auf die geheimen Zahlen zurückschließen (Ansatz vergleichbar mit Kryptoanalyse)</li>
+<li>in besseren Pseudozufallszahlengeneratoren wird nach jedem Schritt nur ein kleiner Teil des Zustands herausgegeben, um Analyse zu erschweren</li>
+<li>Anwendungsbereich für einfache Pseudozufallszahlengeneratoren: nicht sicherheitsrelevanter Pseudozufall, z.B. Ereignisse in Computerspielen oder Randomisierung von automatisierten Tests (hier kann Reproduzierbarkeit aus einem Startwert für spätere Nachvollziehung hilfreich sein)</li>
+</ul>
+</li>
+<li>
+<p>für sicherheitsrelevante Anwendungen: <a href="https://de.wikipedia.org/w/index.php?title=Kryptographisch_sicherer_Zufallszahlengenerator&amp;oldid=234755968">Kryptografisch sichere Zufallszahlengeneratoren</a></p>
+<ul>
+<li>Beispielidee: mit einem Hardware-RNG ein paar Bytes als Startwerte erzeugen, wiederholt mit AES-CTR (siehe STP043) verschlüsseln und die verschlüsselten Bits (oder Teile davon) als Ausgabe nehmen</li>
+<li>wenn man keinen Hardware-RNG hat, kann man Zufallsbits auch aus Beobachtung des normalen Betriebs extrahieren (z.B. Mikrosekundenbruchteile der Zeitstempel von Ereignissen wie Tastaturdrücken oder dem Empfang von Datenpaketen übers Netzwerk)</li>
+<li>unter Unix: <code>/dev/random</code> vs. <code>/dev/urandom</code> ; ist aber unter Linux mittlerweile so gut wie synonym (<a href="https://media.ccc.de/v/32c3-7441-the_plain_simple_reality_of_entropy">siehe auch</a>); Probleme nur beim Systemstart, wenn noch nicht genug Entropie vorliegt (siehe auch: haveged, VirtIO RNG, systemd-random-seed.service)</li>
+</ul>
+</li>
+<li>
+<p>im Gespräch erwähnt:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=1hs451PfFzQ">Video: &quot;How we solved the worst minigame in Zelda's history&quot;</a> (Errata: Xyrill hatte im Gespräch behauptet, dass das Video von Lowest Percent sei. Es ist aber von Linkus7.)</li>
+</ul>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>

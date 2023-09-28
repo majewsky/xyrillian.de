@@ -27,6 +27,107 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP044: Zufall</itunes:title>
+    <itunes:episode>44</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP044: Zufall</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wir befassen uns unter anderem mit der Erstellung, Bewertung und dem Verbrauch von Zufall.
+Außerdem in dieser Folge: Quantenmechanik, wildes Tastendrücken und Schiffe versenken.</itunes:summary>
+    <description>Wir befassen uns unter anderem mit der Erstellung, Bewertung und dem Verbrauch von Zufall.
+Außerdem in dieser Folge: Quantenmechanik, wildes Tastendrücken und Schiffe versenken.</description>
+    <content:encoded>&lt;p&gt;Wir befassen uns unter anderem mit der Erstellung, Bewertung und dem Verbrauch von Zufall.
+Außerdem in dieser Folge: Quantenmechanik, wildes Tastendrücken und Schiffe versenken.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Wir haben ein Errata zu STP019. Alex schreibt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DMA kenne ich anders, nicht das der Prozess direkt über die MMU auf ein Peripheriegerät durchgreift, sondern dass ein Peripheriegerät ohne Beteiligung der CPU Daten vom/zum Hauptspeicher übertragen kann.
+Man muss dem Kernel allerdings beim Reservieren von Speicher für DMA
+sagen, dass das ein DMA Buffer sein soll, weil DMA selbst nicht über die MMU läuft sondern vom Peripheriegerät direkt von/zur physikalischen Adresse.
+Den eigentlichen Transfer zwischen Buffer und Peripherie muss
+man dann aber per Software entsprechend aktivieren.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Xyrill antwortet: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Direct_Memory_Access&amp;amp;oldid=232059711&#34;&gt;Ja, stimmt.&lt;/a&gt; Nun zur eigentlichen Folge:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Intro-Intro: in Referenz auf den klassischen Dilbert-Cartoon, den man &lt;a href=&#34;https://www.americanscientist.org/article/the-quest-for-randomness&#34;&gt;zum Beispiel hier&lt;/a&gt; sieht&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Warum sind hochwertige Zufallszahlen wichtig?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;siehe STP043: Erzeugung eines RSA-Schlüsselpaars benötigt zwei große und &lt;strong&gt;geheime&lt;/strong&gt; Primzahlen&lt;/li&gt;
+&lt;li&gt;geheim = niemand anders kann es raten = zufällig&lt;/li&gt;
+&lt;li&gt;oder zumindest von Zufall nicht zu unterscheiden (&lt;strong&gt;Pseudozufall&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was ist &amp;quot;guter&amp;quot; Zufall?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;erstaunlich schwer zu definieren&lt;/li&gt;
+&lt;li&gt;vielleicht Periodenlänge (Dauer, bis sich die Zahlenfolge wiederholt)&lt;/li&gt;
+&lt;li&gt;vielleicht Gleichverteilung der Auftrittshäufigkeit von Teilfolgen (jede einstellige/zweistellige/dreistellige/etc. Zahl sollte gleich oft in der Folge vorkommen)&lt;/li&gt;
+&lt;li&gt;Problem: die Folge &amp;quot;2236067977499789805051478...&amp;quot; ist nach all diesen Maßstäben guter Zufall -- bis man bemerkt, dass das die Dezimalstellen der Quadratwurzel von 5 sind&lt;/li&gt;
+&lt;li&gt;guter (aber unpraktikabler) Test: hohe &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kolmogorow-Komplexit%C3%A4t&amp;amp;oldid=207581838&#34;&gt;Kolmogorow-Komplexität&lt;/a&gt; (siehe STP025)&lt;/li&gt;
+&lt;li&gt;Errata: Beim Nachhören ist mir aufgefallen, dass die Kolmogorow-Komplexität eines Pseudozufallszahlengenerators nie besonders groß sein kann, da der Zufallszahlengenerator ja gerade ein Programm ist, was die entsprechende Zahlenfolge erzeugen kann. Das ist kein praktisches Problem, da das Programm im Kolmogorow-Sinne auch die Startwerte des Zufallszahlengenerators umfassen müsste, die aber gerade geheim sind.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;echter&amp;quot; Zufall kommt aus physikalischen Zufallszahlengeneratoren (Hardware-RNG)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. thermisches Rauschen eines elektrischen Widerstandes&lt;/li&gt;
+&lt;li&gt;z.B. radioaktive Zerfallsvorgänge&lt;/li&gt;
+&lt;li&gt;z.B. atmosphärisches Rauschen (Empfang auf einem Frequenzband, auf dem keiner sendet)&lt;/li&gt;
+&lt;li&gt;z.B. &lt;a href=&#34;https://www.semanticscholar.org/paper/True-Random-Number-Generator-using-Fish-Tank-Image-Katyal-Mishra/374875fdad184959a7e13eafe9c02bbd44e0aca7&#34;&gt;Abfilmen eines Aquariums :)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;siehe auch: Würfeln, Lottozahlen&lt;/li&gt;
+&lt;li&gt;Probleme: nicht in jedem Computer verfügbar, pro Zeiteinheit begrenzte Menge von Zufall&lt;/li&gt;
+&lt;li&gt;Idee: Erzeugung beliebiger Mengen von Pseudozufall aus einem festen Algorithmus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beispiel: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kongruenzgenerator&amp;amp;oldid=214494984#Linearer_Kongruenzgenerator&#34;&gt;Linearer Kongruenzgenerator&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Parameter: geheime Ganzzahlen &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt;, &lt;code&gt;m&lt;/code&gt;; Startwert &lt;code&gt;y&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Erzeugung einer Folge von Pseudozufallszahlen durch die Formel &lt;code&gt;y&#39; = (a * y &#43; b) mod m&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Problem: bereits aus wenigen aufeinander folgenden &lt;code&gt;y&lt;/code&gt;-Werten kann man auf die geheimen Zahlen zurückschließen (Ansatz vergleichbar mit Kryptoanalyse)&lt;/li&gt;
+&lt;li&gt;in besseren Pseudozufallszahlengeneratoren wird nach jedem Schritt nur ein kleiner Teil des Zustands herausgegeben, um Analyse zu erschweren&lt;/li&gt;
+&lt;li&gt;Anwendungsbereich für einfache Pseudozufallszahlengeneratoren: nicht sicherheitsrelevanter Pseudozufall, z.B. Ereignisse in Computerspielen oder Randomisierung von automatisierten Tests (hier kann Reproduzierbarkeit aus einem Startwert für spätere Nachvollziehung hilfreich sein)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;für sicherheitsrelevante Anwendungen: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kryptographisch_sicherer_Zufallszahlengenerator&amp;amp;oldid=234755968&#34;&gt;Kryptografisch sichere Zufallszahlengeneratoren&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispielidee: mit einem Hardware-RNG ein paar Bytes als Startwerte erzeugen, wiederholt mit AES-CTR (siehe STP043) verschlüsseln und die verschlüsselten Bits (oder Teile davon) als Ausgabe nehmen&lt;/li&gt;
+&lt;li&gt;wenn man keinen Hardware-RNG hat, kann man Zufallsbits auch aus Beobachtung des normalen Betriebs extrahieren (z.B. Mikrosekundenbruchteile der Zeitstempel von Ereignissen wie Tastaturdrücken oder dem Empfang von Datenpaketen übers Netzwerk)&lt;/li&gt;
+&lt;li&gt;unter Unix: &lt;code&gt;/dev/random&lt;/code&gt; vs. &lt;code&gt;/dev/urandom&lt;/code&gt; ; ist aber unter Linux mittlerweile so gut wie synonym (&lt;a href=&#34;https://media.ccc.de/v/32c3-7441-the_plain_simple_reality_of_entropy&#34;&gt;siehe auch&lt;/a&gt;); Probleme nur beim Systemstart, wenn noch nicht genug Entropie vorliegt (siehe auch: haveged, VirtIO RNG, systemd-random-seed.service)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=1hs451PfFzQ&#34;&gt;Video: &amp;quot;How we solved the worst minigame in Zelda&#39;s history&amp;quot;&lt;/a&gt; (Errata: Xyrill hatte im Gespräch behauptet, dass das Video von Lowest Percent sei. Es ist aber von Linkus7.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Richtigstellung zu STP019"  />
+          <chapter start="00:03:41" title="Intro und Intro und Prolog"  />
+          <chapter start="00:09:46" title="Was ist guter Zufall?"  />
+          <chapter start="00:21:48" title="Wo kommt der echte Zufall her?"  />
+          <chapter start="00:29:23" title="Linearer Kongruenzgenerator"  />
+          <chapter start="00:43:06" title="Kryptografisch sichere Zufallszahlengeneratoren"  />
+          <chapter start="00:45:59" title="Abschweif: Schiffe versenken in Zelda"  />
+          <chapter start="00:48:24" title="Die Saat des Zufalls auf Unixsystemen"  />
+          <chapter start="00:55:33" title="Ausblick und Abschied"  />
+      </chapters>
+      <enclosure length="55008234" url="https://dl.xyrillian.de/noises/stp-044-zufall.mp3" type="audio/mpeg"/>
+      <enclosure length="33780124" url="https://dl.xyrillian.de/noises/stp-044-zufall.ogg" type="audio/ogg"/>
+      <enclosure length="20667275" url="https://dl.xyrillian.de/noises/stp-044-zufall.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/044-zufall/</guid>
+    <pubDate>Thu, 28 Sep 2023 20:30:00 GMT</pubDate>
+    <itunes:duration>56:57</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP043: Kryptografische Primiviten</itunes:title>
     <itunes:episode>43</itunes:episode>
     <itunes:season>1</itunes:season>

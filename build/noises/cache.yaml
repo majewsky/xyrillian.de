@@ -2450,3 +2450,46 @@ audio_metadata:
     - start_secs: 3787
       end_secs: 4357.684
       title: Geheimnisteilung
+  stp:044-zufall:
+    length_secs: 3417
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-044-zufall.mp3
+      size_bytes: 55008234
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-044-zufall.ogg
+      size_bytes: 33780124
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-044-zufall.opus
+      size_bytes: 20667275
+    chapters:
+    - start_secs: 0
+      end_secs: 221
+      title: Richtigstellung zu STP019
+    - start_secs: 221
+      end_secs: 586
+      title: Intro und Intro und Prolog
+    - start_secs: 586
+      end_secs: 1308
+      title: Was ist guter Zufall?
+    - start_secs: 1308
+      end_secs: 1763
+      title: Wo kommt der echte Zufall her?
+    - start_secs: 1763
+      end_secs: 2586
+      title: Linearer Kongruenzgenerator
+    - start_secs: 2586
+      end_secs: 2759
+      title: Kryptografisch sichere Zufallszahlengeneratoren
+    - start_secs: 2759
+      end_secs: 2904
+      title: 'Abschweif: Schiffe versenken in Zelda'
+    - start_secs: 2904
+      end_secs: 3333
+      title: Die Saat des Zufalls auf Unixsystemen
+    - start_secs: 3333
+      end_secs: 3417.285
+      title: Ausblick und Abschied

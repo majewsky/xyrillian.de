@@ -917,3 +917,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 44
+    slug: 044-zufall
+    title: Zufall
+    pubtime: 1695933000 # 2023-09-28
+
+    markdown:
+      description: |
+        Wir befassen uns unter anderem mit der Erstellung, Bewertung und dem Verbrauch von Zufall.
+        Außerdem in dieser Folge: Quantenmechanik, wildes Tastendrücken und Schiffe versenken.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
