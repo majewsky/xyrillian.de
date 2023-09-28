@@ -908,7 +908,7 @@ files:
   - show: stp
     episode: 43
     slug: 043-kryptografische-primitiven
-    title: Kryptografische Primiviten
+    title: Kryptografische Primitiven
     pubtime: 1694112600 # 2023-09-07
 
     markdown:
