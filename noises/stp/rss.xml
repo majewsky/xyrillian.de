@@ -27,6 +27,212 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP045: Speicherstruktur aus Programmsicht</itunes:title>
+    <itunes:episode>45</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP045: Speicherstruktur aus Programmsicht</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>In dieser Ausgabe greifen wir ein altes Thema erneut auf, bei dem ttimeless trotzdem stellenweise nur schwer folgen kann. Denn durch Wiederholung lernt man. Denn durch Wiederholung lernt man.</itunes:summary>
+    <description>In dieser Ausgabe greifen wir ein altes Thema erneut auf, bei dem ttimeless trotzdem stellenweise nur schwer folgen kann. Denn durch Wiederholung lernt man. Denn durch Wiederholung lernt man.</description>
+    <content:encoded>&lt;p&gt;In dieser Ausgabe greifen wir ein altes Thema erneut auf, bei dem ttimeless trotzdem stellenweise nur schwer folgen kann. Denn durch Wiederholung lernt man. Denn durch Wiederholung lernt man.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückblick: wir hatten schon einige Folgen zu Speicherverwaltung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;STP007: Speicherhierarchie (Festplatte und SSD, Arbeitsspeicher/RAM, Prozessor-Cache, Registerbank)&lt;/li&gt;
+&lt;li&gt;STP019: Speicherschutz (virtueller Speicher, Auslagerungsspeicher/Swap, Direct Memory Access)&lt;/li&gt;
+&lt;li&gt;Nachtrag/Linktipp: &lt;a href=&#34;https://www.linuxatemyram.com&#34;&gt;https://www.linuxatemyram.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;das war alles aus Sicht des Betriebssystems; diesmal Abläufe innerhalb des Prozesses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was stellt uns das Betriebssystem bereit? -&amp;gt; &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Virtuelle_Speicherverwaltung&amp;amp;oldid=233703410&#34;&gt;Virtueller Speicher&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nominale Größe: entsprechend der Adressbreite des Prozessors (für 32 Bit sind das 2^32 Bytes = 4 GiB, für 64 Bit sind es 2^64 Bytes = 16 EiB = 16.777.216 TiB)&lt;/li&gt;
+&lt;li&gt;nutzbar aber nur dort, wo das Betriebssystem für uns eine tatsächlich existierende Speicherseite einblendet&lt;/li&gt;
+&lt;li&gt;initiale Belegung (siehe Beispiel unten): hauptsächlich Programmdatei und benötigte Programmbibliotheken mit ihren entsprechenden Segmenten&lt;/li&gt;
+&lt;li&gt;Belegung (und Rückgabe) weiterer Speichersegmente mittels Syscalls (siehe STP019)&lt;/li&gt;
+&lt;li&gt;klassische Struktur des virtuellen Speichers: oben der Stapel, unten ein Haufen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vorher einige Bemerkungen zu klassischen Schutzmaßnahmen, die man im untenstehenden Beispiel sehen kann&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;die untersten paar KiB des Adressbereiches werden nie vergeben
+&lt;ul&gt;
+&lt;li&gt;dies verhindert versehentlichen Zugriff auf Nullzeiger mit hoher Wahrscheinlichkeit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Address_Space_Layout_Randomization&amp;amp;oldid=227389251&#34;&gt;Address Space Layout Randomization (ASLR)&lt;/a&gt;: Programmdateien und Programmbibliotheken werden an zufällig gewählten Speicheradressen eingeblendet, um es Angreifern zu erschweren, das Programm so zu manipulieren, dass es ungeplant in deren Code hineinspringt
+&lt;ul&gt;
+&lt;li&gt;klingt nach einer einfach umsetzbaren Schutzmaßnahme&lt;/li&gt;
+&lt;li&gt;war aber lange nicht weit verbreitet, weil der benötigte &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Position-independent_code&amp;amp;oldid=1164854994&#34;&gt;Position Independent Code (PIC)&lt;/a&gt; mit einem kleinen Geschwindigkeitsverlust (1-3%) einhergeht&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;oberer Teil (d.h. bei hohen Adressen): &lt;strong&gt;Stack&lt;/strong&gt; (Stapelspeicher)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Programme sind meist als ineinander verschachtelte Unterprogramme (Subroutinen) aufgebaut (siehe STP011)&lt;/li&gt;
+&lt;li&gt;Daten, die nur für die Dauer des jeweiligen Unterprogramms gebraucht werden, können im Stack aufgestapelt werden&lt;/li&gt;
+&lt;li&gt;Idee: Hauptroutine kriegt den ganzen Stack und knapst sich oben soviel ab, wie es selber braucht&lt;/li&gt;
+&lt;li&gt;nächste Unterroutine kriegt den Rest des Stacks und verfährt in derselben Weise&lt;/li&gt;
+&lt;li&gt;wenn die Unterroutine zurückkehrt, kann der von ihr benutzte Stack an die nächste Unterroutine weitergereicht werden -&amp;gt; keine aufwändige Speicherverwaltung nötig&lt;/li&gt;
+&lt;li&gt;bei Prozessen mit mehreren Threads (parallel lauffähigen Teilprozessen) teilen sich alle Threads grundsätzlich denselben virtuellen Speicher, aber kriegen jeweils eigene Stacks&lt;/li&gt;
+&lt;li&gt;Stack ist vom Betriebssystem in einer festen Größe angelegt (im Beispiel unten 132 KiB) -- bei zu vielen verschachtelten Subroutinen-Aufrufen kommt es zum berüchtigten &lt;strong&gt;Stack Overflow&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;unterer Teil (d.h. bei tiefen Adressen): &lt;strong&gt;Heap&lt;/strong&gt; (Haufenspeicher)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;keine Strukturvorgaben durch das Betriebssystem oder die Prozessorarchitektur&lt;/li&gt;
+&lt;li&gt;notwendig für Daten, deren Lebenszeit nicht der Struktur von Unterprogrammen folgt, oder deren Größe die 132 KiB des Stacks übersteigt&lt;/li&gt;
+&lt;li&gt;neue Frage: Wie kann man diesen unstrukturierten Haufen sinnvoll verwalten? -&amp;gt; Teil 2 folgt in STP047&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Randnotiz zu unserem Beispiel unten: &lt;a href=&#34;https://lwn.net/Articles/615809/&#34;&gt;Was sind vvar, vdso und vsyscall?&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Syscalls sind zeitaufwändig (in der Größenordnung von dutzenden Mikrosekunden), da man vom Prozess in den Kernel umschalten muss und wieder zurück&lt;/li&gt;
+&lt;li&gt;Idee: manche Syscalls kann der Kernel mit geschickter Planung im Prozess selbst beantworten, ohne Kontextwechsel&lt;/li&gt;
+&lt;li&gt;Beispiel: &lt;code&gt;gettimeofday&lt;/code&gt; (Abfrage der aktuellen Uhrzeit) kann man aus einem vorhergehenden Datenpunkt des Kernels anhand des Taktzählers des Prozessors fortschreiben (z.B. &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Time_Stamp_Counter&amp;amp;oldid=1160257061&#34;&gt;TSC&lt;/a&gt; auf x86)&lt;/li&gt;
+&lt;li&gt;vsyscall: erste derartige Implementation, mit zwei großen Problemen (Platzbegrenzung, kein PIC = kein ASLR); nur aus Kompatibilitätsgründen angeboten&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=VDSO&amp;amp;oldid=1146593908&#34;&gt;vDSO&lt;/a&gt; (&amp;quot;virtual dynamic shared object&amp;quot;): die aktuelle Implementation, verhält sich wie eine dynamisch nachgeladene Programmbibliothek&lt;/li&gt;
+&lt;li&gt;vvar: Datensegment für das vDSO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;pre&gt;&lt;code&gt;$ sleep 30 &amp;amp;
+[1] 4970
+$ cat /proc/$(pidof sleep)/maps
+# address                perms offset   dev   inode       pathname
+556ac29f4000-556ac29f6000 r--p 00000000 fe:00 10234368    /usr/bin/sleep
+556ac29f6000-556ac29f9000 r-xp 00002000 fe:00 10234368    /usr/bin/sleep
+556ac29f9000-556ac29fa000 r--p 00005000 fe:00 10234368    /usr/bin/sleep
+556ac29fa000-556ac29fb000 r--p 00006000 fe:00 10234368    /usr/bin/sleep
+556ac29fb000-556ac29fc000 rw-p 00007000 fe:00 10234368    /usr/bin/sleep
+556ac2f81000-556ac2fa2000 rw-p 00000000 00:00 0           [heap]
+7fe4dea00000-7fe4ded42000 r--p 00000000 fe:00 10321904    /usr/lib/locale/locale-archive
+7fe4deefc000-7fe4deeff000 rw-p 00000000 00:00 0
+7fe4deeff000-7fe4def21000 r--p 00000000 fe:00 10226583    /usr/lib/libc.so.6
+7fe4def21000-7fe4df07e000 r-xp 00022000 fe:00 10226583    /usr/lib/libc.so.6
+7fe4df07e000-7fe4df0d6000 r--p 0017f000 fe:00 10226583    /usr/lib/libc.so.6
+7fe4df0d6000-7fe4df0da000 r--p 001d6000 fe:00 10226583    /usr/lib/libc.so.6
+7fe4df0da000-7fe4df0dc000 rw-p 001da000 fe:00 10226583    /usr/lib/libc.so.6
+7fe4df0dc000-7fe4df0eb000 rw-p 00000000 00:00 0
+7fe4df11e000-7fe4df11f000 r--p 00000000 fe:00 10226556    /usr/lib/ld-linux-x86-64.so.2
+7fe4df11f000-7fe4df145000 r-xp 00001000 fe:00 10226556    /usr/lib/ld-linux-x86-64.so.2
+7fe4df145000-7fe4df14f000 r--p 00027000 fe:00 10226556    /usr/lib/ld-linux-x86-64.so.2
+7fe4df14f000-7fe4df151000 r--p 00031000 fe:00 10226556    /usr/lib/ld-linux-x86-64.so.2
+7fe4df151000-7fe4df153000 rw-p 00033000 fe:00 10226556    /usr/lib/ld-linux-x86-64.so.2
+7ffe3da15000-7ffe3da36000 rw-p 00000000 00:00 0           [stack]
+7ffe3da73000-7ffe3da77000 r--p 00000000 00:00 0           [vvar]
+7ffe3da77000-7ffe3da79000 r-xp 00000000 00:00 0           [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0   [vsyscall]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Randbemerkungen: Sofern ich die Ausgabe von &lt;code&gt;strace sleep 30&lt;/code&gt; richtig lese, wurde &lt;code&gt;[heap]&lt;/code&gt; hier mit &lt;code&gt;brk&lt;/code&gt; verwaltet. Die beiden anonymen Segmente gehen höchstwahrscheinlich auf das Konto des Laufzeit-Linkers (hier &lt;code&gt;ld-linux-x86-64.so.2&lt;/code&gt;), der die Programmbibliotheken (hier nur &lt;code&gt;libc.so.6&lt;/code&gt;) in den Prozess lädt.&lt;/p&gt;
+&lt;p&gt;Um das zu bestätigen, habe ich dann &lt;s&gt;mal schnell&lt;/s&gt; ein minimales Programm gebaut, dass ausschließlich &lt;code&gt;sleep&lt;/code&gt; gefolgt von &lt;code&gt;exit&lt;/code&gt; macht, und definitiv gar nichts anderes. Ich war in der Tat erfolgreich:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ strace ./target/release/minimal-memory-maps
+execve(&amp;quot;./target/release/minimal-memory-maps&amp;quot;, [&amp;quot;./target/release/minimal-memory-&amp;quot;...], 0x7ffd0c104b00 /* 67 vars */) = 0
+nanosleep({tv_sec=10, tv_nsec=0}, 0x7ffdaa084800) = 0
+exit(0)                                 = ?
+&#43;&#43;&#43; exited with 0 &#43;&#43;&#43;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Und dieses Programm hat nicht mal einen Heap, sondern nur den Stack und die Kernel-Schnittstellen:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cat /proc/$(pidof minimal-memory-maps)/maps
+# address                perms offset   dev   inode       pathname
+00400000-00401000         rwxp 00000000 fe:00 9309336     .../target/release/minimal-memory-maps
+7ffdaa066000-7ffdaa087000 rw-p 00000000 00:00 0           [stack]
+7ffdaa0ea000-7ffdaa0ee000 r--p 00000000 00:00 0           [vvar]
+7ffdaa0ee000-7ffdaa0f0000 r-xp 00000000 00:00 0           [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0   [vsyscall]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hier sieht man übrigens schön, dass ich mein Programm nicht mit PIC kompiliert habe, sodass für die Programmdatei selber keine ASLR vorgenommen werden konnte.&lt;/p&gt;
+&lt;p&gt;Der Vollständigkeit halber dokumentiere ich hier noch den Code, um mein Testprogramm zu reproduzieren. Der Code funktioniert nur auf Linux und x86-64. Und selbst da habe ich irgendwas nicht ganz richtig gemacht: Das Programm funktioniert nur, wenn man dem Compiler Optimierungen verbietet (?!?). Trotzdem ein Shoutout an &lt;a href=&#34;https://darkcoding.net/software/a-very-small-rust-binary-indeed/&#34;&gt;diesen Blogartikel&lt;/a&gt; und &lt;a href=&#34;https://sgibala.com/01-06-single-syscall-hello-world-part-2/&#34;&gt;diesen anderen Blogartikel&lt;/a&gt;, mit deren Hilfe ich das Kompilieren ohne libc und main zumindest hinreichend weit ans Laufen bekommen habe.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cat Makefile
+build:
+    RUSTFLAGS=&amp;quot;-Copt-level=0 -Ctarget-cpu=native -Clink-args=-nostartfiles -Clink-args=-Wl,-n,-N,--no-dynamic-linker&amp;quot; cargo build --release
+
+$ cat Cargo.toml
+[package]
+name = &amp;quot;minimal-memory-maps&amp;quot;
+version = &amp;quot;0.1.0&amp;quot;
+edition = &amp;quot;2021&amp;quot;
+[profile.dev]
+panic = &amp;quot;abort&amp;quot;
+[profile.release]
+panic = &amp;quot;abort&amp;quot;
+
+$ cat src/main.rs
+#![no_std]
+#![no_main]
+use core::arch::asm;
+
+#[repr(C)]
+struct Timespec {
+    pub tv_sec: i64,
+    pub tv_nsec: i64,
+}
+
+const NR_NANOSLEEP: usize = 35;
+const NR_EXIT: usize = 60;
+
+#[no_mangle]
+pub extern &amp;quot;C&amp;quot; fn _start() -&amp;gt; ! {
+    let req = Timespec { tv_sec: 10, tv_nsec: 0 };
+    let mut resp = Timespec { tv_sec: 0, tv_nsec: 0 };
+    unsafe {
+        // nanosleep(&amp;amp;req, &amp;amp;mut resp)
+        let req_ptr = (&amp;amp;req as *const Timespec) as usize;
+        let resp_ptr = (&amp;amp;mut resp as *mut Timespec) as usize;
+        let ret: usize;
+        asm!(
+            &amp;quot;syscall&amp;quot;,
+            inout(&amp;quot;rax&amp;quot;) NR_NANOSLEEP =&amp;gt; ret,
+            in(&amp;quot;rdi&amp;quot;) req_ptr,
+            in(&amp;quot;rsi&amp;quot;) resp_ptr,
+            out(&amp;quot;rcx&amp;quot;) _,
+            out(&amp;quot;r11&amp;quot;) _,
+        );
+        let exit_code = if ret == 0 { 0 } else { 1 };
+        // exit(0)
+        asm!(
+            &amp;quot;syscall&amp;quot;,
+            in(&amp;quot;rax&amp;quot;) NR_EXIT,
+            in(&amp;quot;rdi&amp;quot;) exit_code,
+            options(noreturn)
+        )
+    }
+}
+
+#[panic_handler]
+fn my_panic(_info: &amp;amp;core::panic::PanicInfo) -&amp;gt; ! {
+    loop {}
+}
+&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:42" title="Rückblick: Speicherverwaltung"  />
+          <chapter start="00:07:49" title="Was stellt uns das Betriebssystem bereit?"  />
+          <chapter start="00:24:28" title="Vorbemerkungen zu klassischen Schutzmaßnahmen"  />
+          <chapter start="00:40:39" title="Stack und Heap"  />
+          <chapter start="00:42:23" title="Der Stapelspeicher"  />
+          <chapter start="00:56:40" title="Der Haufenspeicher"  />
+          <chapter start="00:58:53" title="Xyrills minimales sleep"  />
+          <chapter start="01:02:47" title="Was sind vvar, vdso und vsyscall?"  />
+      </chapters>
+      <enclosure length="68049239" url="https://dl.xyrillian.de/noises/stp-045-speicherstruktur-aus-programmsicht.mp3" type="audio/mpeg"/>
+      <enclosure length="40105500" url="https://dl.xyrillian.de/noises/stp-045-speicherstruktur-aus-programmsicht.ogg" type="audio/ogg"/>
+      <enclosure length="24811179" url="https://dl.xyrillian.de/noises/stp-045-speicherstruktur-aus-programmsicht.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/045-speicherstruktur-aus-programmsicht/</guid>
+    <pubDate>Thu, 19 Oct 2023 19:45:00 GMT</pubDate>
+    <itunes:duration>70:32</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP044: Zufall</itunes:title>
     <itunes:episode>44</itunes:episode>
     <itunes:season>1</itunes:season>

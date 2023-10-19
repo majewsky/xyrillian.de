@@ -123,6 +123,13 @@ body.noises {
     p, ul, pre {
       margin: 0.5rem;
     }
+    pre {
+      font-size: 0.8rem;
+      font-variant-ligatures: none;
+      max-width: 100%;
+      overflow-x: auto;
+      padding: 0.5rem 0;
+    }
     h3 + * {
       margin-top: 0;
     }

@@ -2493,3 +2493,46 @@ audio_metadata:
     - start_secs: 3333
       end_secs: 3417.285
       title: Ausblick und Abschied
+  stp:045-speicherstruktur-aus-programmsicht:
+    length_secs: 4232
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-045-speicherstruktur-aus-programmsicht.mp3
+      size_bytes: 68049239
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-045-speicherstruktur-aus-programmsicht.ogg
+      size_bytes: 40105500
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-045-speicherstruktur-aus-programmsicht.opus
+      size_bytes: 24811179
+    chapters:
+    - start_secs: 0
+      end_secs: 102
+      title: Intro
+    - start_secs: 102
+      end_secs: 469
+      title: 'Rückblick: Speicherverwaltung'
+    - start_secs: 469
+      end_secs: 1468
+      title: Was stellt uns das Betriebssystem bereit?
+    - start_secs: 1468
+      end_secs: 2439
+      title: Vorbemerkungen zu klassischen Schutzmaßnahmen
+    - start_secs: 2439
+      end_secs: 2543
+      title: Stack und Heap
+    - start_secs: 2543
+      end_secs: 3400
+      title: Der Stapelspeicher
+    - start_secs: 3400
+      end_secs: 3533
+      title: Der Haufenspeicher
+    - start_secs: 3533
+      end_secs: 3767
+      title: Xyrills minimales sleep
+    - start_secs: 3767
+      end_secs: 4232.343
+      title: Was sind vvar, vdso und vsyscall?

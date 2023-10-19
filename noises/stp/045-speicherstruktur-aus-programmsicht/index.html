@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speicherstruktur aus Programmsicht - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #45 vom 19. Oktober 2023</h2>
+    <h1>Speicherstruktur aus Programmsicht</h1>
+      <p>In dieser Ausgabe greifen wir ein altes Thema erneut auf, bei dem ttimeless trotzdem stellenweise nur schwer folgen kann. Denn durch Wiederholung lernt man. Denn durch Wiederholung lernt man.</p>
+      <p><strong>Länge:</strong> 70:32 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-045-speicherstruktur-aus-programmsicht.mp3" type="audio/mpeg">
+        <source src="/dl/stp-045-speicherstruktur-aus-programmsicht.ogg" type="audio/ogg">
+        <source src="/dl/stp-045-speicherstruktur-aus-programmsicht.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="102">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="102" data-end="469">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">01:42</span>
+        <span class="chapter-title">Rückblick: Speicherverwaltung</span>
+      </div>
+      <div class="chapter" data-start="469" data-end="1468">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">07:49</span>
+        <span class="chapter-title">Was stellt uns das Betriebssystem bereit?</span>
+      </div>
+      <div class="chapter" data-start="1468" data-end="2439">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">24:28</span>
+        <span class="chapter-title">Vorbemerkungen zu klassischen Schutzmaßnahmen</span>
+      </div>
+      <div class="chapter" data-start="2439" data-end="2543">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">40:39</span>
+        <span class="chapter-title">Stack und Heap</span>
+      </div>
+      <div class="chapter" data-start="2543" data-end="3400">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">42:23</span>
+        <span class="chapter-title">Der Stapelspeicher</span>
+      </div>
+      <div class="chapter" data-start="3400" data-end="3533">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">56:40</span>
+        <span class="chapter-title">Der Haufenspeicher</span>
+      </div>
+      <div class="chapter" data-start="3533" data-end="3767">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">58:53</span>
+        <span class="chapter-title">Xyrills minimales sleep</span>
+      </div>
+      <div class="chapter" data-start="3767" data-end="4232.343">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">62:47</span>
+        <span class="chapter-title">Was sind vvar, vdso und vsyscall?</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-045-speicherstruktur-aus-programmsicht.mp3">MP3</a> (64,9 MiB)</li>
+          <li><a href="/dl/stp-045-speicherstruktur-aus-programmsicht.ogg">Ogg Vorbis</a> (38,2 MiB)</li>
+          <li><a href="/dl/stp-045-speicherstruktur-aus-programmsicht.opus">Opus</a> (23,7 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p>Rückblick: wir hatten schon einige Folgen zu Speicherverwaltung</p>
+<ul>
+<li>STP007: Speicherhierarchie (Festplatte und SSD, Arbeitsspeicher/RAM, Prozessor-Cache, Registerbank)</li>
+<li>STP019: Speicherschutz (virtueller Speicher, Auslagerungsspeicher/Swap, Direct Memory Access)</li>
+<li>Nachtrag/Linktipp: <a href="https://www.linuxatemyram.com">https://www.linuxatemyram.com</a></li>
+<li>das war alles aus Sicht des Betriebssystems; diesmal Abläufe innerhalb des Prozesses</li>
+</ul>
+</li>
+<li>
+<p>Was stellt uns das Betriebssystem bereit? -&gt; <a href="https://de.wikipedia.org/w/index.php?title=Virtuelle_Speicherverwaltung&amp;oldid=233703410">Virtueller Speicher</a></p>
+<ul>
+<li>nominale Größe: entsprechend der Adressbreite des Prozessors (für 32 Bit sind das 2^32 Bytes = 4 GiB, für 64 Bit sind es 2^64 Bytes = 16 EiB = 16.777.216 TiB)</li>
+<li>nutzbar aber nur dort, wo das Betriebssystem für uns eine tatsächlich existierende Speicherseite einblendet</li>
+<li>initiale Belegung (siehe Beispiel unten): hauptsächlich Programmdatei und benötigte Programmbibliotheken mit ihren entsprechenden Segmenten</li>
+<li>Belegung (und Rückgabe) weiterer Speichersegmente mittels Syscalls (siehe STP019)</li>
+<li>klassische Struktur des virtuellen Speichers: oben der Stapel, unten ein Haufen</li>
+</ul>
+</li>
+<li>
+<p>vorher einige Bemerkungen zu klassischen Schutzmaßnahmen, die man im untenstehenden Beispiel sehen kann</p>
+<ul>
+<li>die untersten paar KiB des Adressbereiches werden nie vergeben
+<ul>
+<li>dies verhindert versehentlichen Zugriff auf Nullzeiger mit hoher Wahrscheinlichkeit</li>
+</ul>
+</li>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Address_Space_Layout_Randomization&amp;oldid=227389251">Address Space Layout Randomization (ASLR)</a>: Programmdateien und Programmbibliotheken werden an zufällig gewählten Speicheradressen eingeblendet, um es Angreifern zu erschweren, das Programm so zu manipulieren, dass es ungeplant in deren Code hineinspringt
+<ul>
+<li>klingt nach einer einfach umsetzbaren Schutzmaßnahme</li>
+<li>war aber lange nicht weit verbreitet, weil der benötigte <a href="https://en.wikipedia.org/w/index.php?title=Position-independent_code&amp;oldid=1164854994">Position Independent Code (PIC)</a> mit einem kleinen Geschwindigkeitsverlust (1-3%) einhergeht</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>oberer Teil (d.h. bei hohen Adressen): <strong>Stack</strong> (Stapelspeicher)</p>
+<ul>
+<li>Programme sind meist als ineinander verschachtelte Unterprogramme (Subroutinen) aufgebaut (siehe STP011)</li>
+<li>Daten, die nur für die Dauer des jeweiligen Unterprogramms gebraucht werden, können im Stack aufgestapelt werden</li>
+<li>Idee: Hauptroutine kriegt den ganzen Stack und knapst sich oben soviel ab, wie es selber braucht</li>
+<li>nächste Unterroutine kriegt den Rest des Stacks und verfährt in derselben Weise</li>
+<li>wenn die Unterroutine zurückkehrt, kann der von ihr benutzte Stack an die nächste Unterroutine weitergereicht werden -&gt; keine aufwändige Speicherverwaltung nötig</li>
+<li>bei Prozessen mit mehreren Threads (parallel lauffähigen Teilprozessen) teilen sich alle Threads grundsätzlich denselben virtuellen Speicher, aber kriegen jeweils eigene Stacks</li>
+<li>Stack ist vom Betriebssystem in einer festen Größe angelegt (im Beispiel unten 132 KiB) -- bei zu vielen verschachtelten Subroutinen-Aufrufen kommt es zum berüchtigten <strong>Stack Overflow</strong></li>
+</ul>
+</li>
+<li>
+<p>unterer Teil (d.h. bei tiefen Adressen): <strong>Heap</strong> (Haufenspeicher)</p>
+<ul>
+<li>keine Strukturvorgaben durch das Betriebssystem oder die Prozessorarchitektur</li>
+<li>notwendig für Daten, deren Lebenszeit nicht der Struktur von Unterprogrammen folgt, oder deren Größe die 132 KiB des Stacks übersteigt</li>
+<li>neue Frage: Wie kann man diesen unstrukturierten Haufen sinnvoll verwalten? -&gt; Teil 2 folgt in STP047</li>
+</ul>
+</li>
+<li>
+<p>Randnotiz zu unserem Beispiel unten: <a href="https://lwn.net/Articles/615809/">Was sind vvar, vdso und vsyscall?</a></p>
+<ul>
+<li>Syscalls sind zeitaufwändig (in der Größenordnung von dutzenden Mikrosekunden), da man vom Prozess in den Kernel umschalten muss und wieder zurück</li>
+<li>Idee: manche Syscalls kann der Kernel mit geschickter Planung im Prozess selbst beantworten, ohne Kontextwechsel</li>
+<li>Beispiel: <code>gettimeofday</code> (Abfrage der aktuellen Uhrzeit) kann man aus einem vorhergehenden Datenpunkt des Kernels anhand des Taktzählers des Prozessors fortschreiben (z.B. <a href="https://en.wikipedia.org/w/index.php?title=Time_Stamp_Counter&amp;oldid=1160257061">TSC</a> auf x86)</li>
+<li>vsyscall: erste derartige Implementation, mit zwei großen Problemen (Platzbegrenzung, kein PIC = kein ASLR); nur aus Kompatibilitätsgründen angeboten</li>
+<li><a href="https://en.wikipedia.org/w/index.php?title=VDSO&amp;oldid=1146593908">vDSO</a> (&quot;virtual dynamic shared object&quot;): die aktuelle Implementation, verhält sich wie eine dynamisch nachgeladene Programmbibliothek</li>
+<li>vvar: Datensegment für das vDSO</li>
+</ul>
+</li>
+</ul>
+<hr>
+<pre><code>$ sleep 30 &amp;
+[1] 4970
+$ cat /proc/$(pidof sleep)/maps
+# address                perms offset   dev   inode       pathname
+556ac29f4000-556ac29f6000 r--p 00000000 fe:00 10234368    /usr/bin/sleep
+556ac29f6000-556ac29f9000 r-xp 00002000 fe:00 10234368    /usr/bin/sleep
+556ac29f9000-556ac29fa000 r--p 00005000 fe:00 10234368    /usr/bin/sleep
+556ac29fa000-556ac29fb000 r--p 00006000 fe:00 10234368    /usr/bin/sleep
+556ac29fb000-556ac29fc000 rw-p 00007000 fe:00 10234368    /usr/bin/sleep
+556ac2f81000-556ac2fa2000 rw-p 00000000 00:00 0           [heap]
+7fe4dea00000-7fe4ded42000 r--p 00000000 fe:00 10321904    /usr/lib/locale/locale-archive
+7fe4deefc000-7fe4deeff000 rw-p 00000000 00:00 0
+7fe4deeff000-7fe4def21000 r--p 00000000 fe:00 10226583    /usr/lib/libc.so.6
+7fe4def21000-7fe4df07e000 r-xp 00022000 fe:00 10226583    /usr/lib/libc.so.6
+7fe4df07e000-7fe4df0d6000 r--p 0017f000 fe:00 10226583    /usr/lib/libc.so.6
+7fe4df0d6000-7fe4df0da000 r--p 001d6000 fe:00 10226583    /usr/lib/libc.so.6
+7fe4df0da000-7fe4df0dc000 rw-p 001da000 fe:00 10226583    /usr/lib/libc.so.6
+7fe4df0dc000-7fe4df0eb000 rw-p 00000000 00:00 0
+7fe4df11e000-7fe4df11f000 r--p 00000000 fe:00 10226556    /usr/lib/ld-linux-x86-64.so.2
+7fe4df11f000-7fe4df145000 r-xp 00001000 fe:00 10226556    /usr/lib/ld-linux-x86-64.so.2
+7fe4df145000-7fe4df14f000 r--p 00027000 fe:00 10226556    /usr/lib/ld-linux-x86-64.so.2
+7fe4df14f000-7fe4df151000 r--p 00031000 fe:00 10226556    /usr/lib/ld-linux-x86-64.so.2
+7fe4df151000-7fe4df153000 rw-p 00033000 fe:00 10226556    /usr/lib/ld-linux-x86-64.so.2
+7ffe3da15000-7ffe3da36000 rw-p 00000000 00:00 0           [stack]
+7ffe3da73000-7ffe3da77000 r--p 00000000 00:00 0           [vvar]
+7ffe3da77000-7ffe3da79000 r-xp 00000000 00:00 0           [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0   [vsyscall]
+</code></pre>
+<p>Randbemerkungen: Sofern ich die Ausgabe von <code>strace sleep 30</code> richtig lese, wurde <code>[heap]</code> hier mit <code>brk</code> verwaltet. Die beiden anonymen Segmente gehen höchstwahrscheinlich auf das Konto des Laufzeit-Linkers (hier <code>ld-linux-x86-64.so.2</code>), der die Programmbibliotheken (hier nur <code>libc.so.6</code>) in den Prozess lädt.</p>
+<p>Um das zu bestätigen, habe ich dann <s>mal schnell</s> ein minimales Programm gebaut, dass ausschließlich <code>sleep</code> gefolgt von <code>exit</code> macht, und definitiv gar nichts anderes. Ich war in der Tat erfolgreich:</p>
+<pre><code>$ strace ./target/release/minimal-memory-maps
+execve(&quot;./target/release/minimal-memory-maps&quot;, [&quot;./target/release/minimal-memory-&quot;...], 0x7ffd0c104b00 /* 67 vars */) = 0
+nanosleep({tv_sec=10, tv_nsec=0}, 0x7ffdaa084800) = 0
+exit(0)                                 = ?
++++ exited with 0 +++
+</code></pre>
+<p>Und dieses Programm hat nicht mal einen Heap, sondern nur den Stack und die Kernel-Schnittstellen:</p>
+<pre><code>$ cat /proc/$(pidof minimal-memory-maps)/maps
+# address                perms offset   dev   inode       pathname
+00400000-00401000         rwxp 00000000 fe:00 9309336     .../target/release/minimal-memory-maps
+7ffdaa066000-7ffdaa087000 rw-p 00000000 00:00 0           [stack]
+7ffdaa0ea000-7ffdaa0ee000 r--p 00000000 00:00 0           [vvar]
+7ffdaa0ee000-7ffdaa0f0000 r-xp 00000000 00:00 0           [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0   [vsyscall]
+</code></pre>
+<p>Hier sieht man übrigens schön, dass ich mein Programm nicht mit PIC kompiliert habe, sodass für die Programmdatei selber keine ASLR vorgenommen werden konnte.</p>
+<p>Der Vollständigkeit halber dokumentiere ich hier noch den Code, um mein Testprogramm zu reproduzieren. Der Code funktioniert nur auf Linux und x86-64. Und selbst da habe ich irgendwas nicht ganz richtig gemacht: Das Programm funktioniert nur, wenn man dem Compiler Optimierungen verbietet (?!?). Trotzdem ein Shoutout an <a href="https://darkcoding.net/software/a-very-small-rust-binary-indeed/">diesen Blogartikel</a> und <a href="https://sgibala.com/01-06-single-syscall-hello-world-part-2/">diesen anderen Blogartikel</a>, mit deren Hilfe ich das Kompilieren ohne libc und main zumindest hinreichend weit ans Laufen bekommen habe.</p>
+<pre><code>$ cat Makefile
+build:
+    RUSTFLAGS=&quot;-Copt-level=0 -Ctarget-cpu=native -Clink-args=-nostartfiles -Clink-args=-Wl,-n,-N,--no-dynamic-linker&quot; cargo build --release
+
+$ cat Cargo.toml
+[package]
+name = &quot;minimal-memory-maps&quot;
+version = &quot;0.1.0&quot;
+edition = &quot;2021&quot;
+[profile.dev]
+panic = &quot;abort&quot;
+[profile.release]
+panic = &quot;abort&quot;
+
+$ cat src/main.rs
+#![no_std]
+#![no_main]
+use core::arch::asm;
+
+#[repr(C)]
+struct Timespec {
+    pub tv_sec: i64,
+    pub tv_nsec: i64,
+}
+
+const NR_NANOSLEEP: usize = 35;
+const NR_EXIT: usize = 60;
+
+#[no_mangle]
+pub extern &quot;C&quot; fn _start() -&gt; ! {
+    let req = Timespec { tv_sec: 10, tv_nsec: 0 };
+    let mut resp = Timespec { tv_sec: 0, tv_nsec: 0 };
+    unsafe {
+        // nanosleep(&amp;req, &amp;mut resp)
+        let req_ptr = (&amp;req as *const Timespec) as usize;
+        let resp_ptr = (&amp;mut resp as *mut Timespec) as usize;
+        let ret: usize;
+        asm!(
+            &quot;syscall&quot;,
+            inout(&quot;rax&quot;) NR_NANOSLEEP =&gt; ret,
+            in(&quot;rdi&quot;) req_ptr,
+            in(&quot;rsi&quot;) resp_ptr,
+            out(&quot;rcx&quot;) _,
+            out(&quot;r11&quot;) _,
+        );
+        let exit_code = if ret == 0 { 0 } else { 1 };
+        // exit(0)
+        asm!(
+            &quot;syscall&quot;,
+            in(&quot;rax&quot;) NR_EXIT,
+            in(&quot;rdi&quot;) exit_code,
+            options(noreturn)
+        )
+    }
+}
+
+#[panic_handler]
+fn my_panic(_info: &amp;core::panic::PanicInfo) -&gt; ! {
+    loop {}
+}
+</code></pre></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>

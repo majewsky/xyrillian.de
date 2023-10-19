@@ -931,3 +931,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 45
+    slug: 045-speicherstruktur-aus-programmsicht
+    title: Speicherstruktur aus Programmsicht
+    pubtime: 1697744700 # 2023-10-19
+
+    markdown:
+      description: |
+        In dieser Ausgabe greifen wir ein altes Thema erneut auf, bei dem ttimeless trotzdem stellenweise nur schwer folgen kann. Denn durch Wiederholung lernt man. Denn durch Wiederholung lernt man.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
