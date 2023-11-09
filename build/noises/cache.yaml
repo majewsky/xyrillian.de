@@ -2536,3 +2536,79 @@ audio_metadata:
     - start_secs: 3767
       end_secs: 4232.343
       title: Was sind vvar, vdso und vsyscall?
+  stp:046-bram-moolenaar-und-vim:
+    length_secs: 3855
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-046-bram-moolenaar-und-vim.mp3
+      size_bytes: 62016550
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-046-bram-moolenaar-und-vim.ogg
+      size_bytes: 38964778
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-046-bram-moolenaar-und-vim.opus
+      size_bytes: 23392014
+    chapters:
+    - start_secs: 0
+      end_secs: 88
+      title: Intro
+    - start_secs: 88
+      end_secs: 217
+      title: Bram Moolenaar ist gestorben
+    - start_secs: 217
+      end_secs: 762
+      title: Leben und  Werk von Bram Moolenaar
+    - start_secs: 762
+      end_secs: 1162
+      title: Was ist vim und warum ist es cool?
+    - start_secs: 1162
+      end_secs: 1185
+      title: vim und seine Ahnen
+    - start_secs: 1185
+      end_secs: 1409
+      title: 'ed: Der Standard-Unix-Editor'
+    - start_secs: 1409
+      end_secs: 1501
+      title: 'ex: eds Nachfloger'
+    - start_secs: 1501
+      end_secs: 1537
+      title: 'sed: Der Streameditor'
+    - start_secs: 1537
+      end_secs: 1579
+      title: vims Kompatibilitätsmodus
+    - start_secs: 1579
+      end_secs: 1653
+      title: Der Visual-Mode
+    - start_secs: 1653
+      end_secs: 1769
+      title: vi vs. vim
+    - start_secs: 1769
+      end_secs: 2356
+      title: Modales Editieren
+    - start_secs: 2356
+      end_secs: 2780
+      title: Aktionsgramatik
+    - start_secs: 2780
+      end_secs: 2881
+      title: 'Abschweif: Codegolf'
+    - start_secs: 2881
+      end_secs: 2944
+      title: Iteratives lernen
+    - start_secs: 2944
+      end_secs: 3014
+      title: Richtigstellung Befehlsmodus
+    - start_secs: 3014
+      end_secs: 3220
+      title: Zahlen als Quantoren
+    - start_secs: 3220
+      end_secs: 3406
+      title: Makrofuntion
+    - start_secs: 3406
+      end_secs: 3495
+      title: Visual Mode
+    - start_secs: 3495
+      end_secs: 3855.259
+      title: Anderes cooles Zeug und Bemerkungen

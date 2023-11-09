@@ -27,6 +27,115 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP046: Bram Moolenaar und vim</itunes:title>
+    <itunes:episode>46</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP046: Bram Moolenaar und vim</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Obwohl dies ein Technikpodcast ist, kommen wir um politische Themen oft nicht ganz herum. In dieser Folge jedoch stellen wir uns nun direkt ins Feuer. Und all das nur, weil Xyrill unbedingt seinen Lieblingseditor unters Volk bringen will.</itunes:summary>
+    <description>Obwohl dies ein Technikpodcast ist, kommen wir um politische Themen oft nicht ganz herum. In dieser Folge jedoch stellen wir uns nun direkt ins Feuer. Und all das nur, weil Xyrill unbedingt seinen Lieblingseditor unters Volk bringen will.</description>
+    <content:encoded>&lt;p&gt;Obwohl dies ein Technikpodcast ist, kommen wir um politische Themen oft nicht ganz herum. In dieser Folge jedoch stellen wir uns nun direkt ins Feuer. Und all das nur, weil Xyrill unbedingt seinen Lieblingseditor unters Volk bringen will.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Aus aktuellem Anlass: Anfang August 2023 ist Bram Moolenaar gestorben.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Bram_Moolenaar&amp;amp;oldid=236301189&#34;&gt;Bram Moolenaar&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jahrgang 1961, bis 1985 Studium der Elektrotechnik in Delft mit Abschlussarbeit zu Multiprozessor-Unix-Architektur&lt;/li&gt;
+&lt;li&gt;seit 1988 Entwicklung eines Klons des Texteditors vi mit dem Namen &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Vim&amp;amp;oldid=236190917&#34;&gt;vim&lt;/a&gt; (erst &amp;quot;vi imitation&amp;quot;, später &amp;quot;vi improved&amp;quot;; &amp;quot;vim&amp;quot; kann aber auch &amp;quot;Elan&amp;quot; bedeuten)&lt;/li&gt;
+&lt;li&gt;bis kurz vor seinem Tod (d.h. 35 Jahre) Leitung des vim-Projektes in seiner Freizeit (neben der Arbeit u.a. bei Google)&lt;/li&gt;
+&lt;li&gt;außerdem Engagement für die NGO &lt;a href=&#34;https://iccf.nl/index.html&#34;&gt;ICCF Holland&lt;/a&gt;, die Waisenkinder in Uganda unterstützt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;in diesem Zusammenhang: Was ist eigentlich vim? Und warum verbringt Xyrill sein halbes Leben darin? (Spoiler: man kann alle intellektuelle Arbeit als Texteditieren darstellen; siehe auch STP006)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;frühe 1970er-Jahre: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ed_(Texteditor)&amp;amp;oldid=207200962&#34;&gt;&lt;code&gt;ed&lt;/code&gt;&lt;/a&gt; -- der erste Unix-Texteditor; damals hatten Unix-Computer noch keinen Bildschirm, sondern nur Tastatur und Drucker&lt;/li&gt;
+&lt;li&gt;1976: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ex_(Texteditor)&amp;amp;oldid=217207358&#34;&gt;&lt;code&gt;ex&lt;/code&gt;&lt;/a&gt; -- eine von vielen Weiterentwicklungen von &lt;code&gt;ed&lt;/code&gt; mit zusätzlichen Funktionen&lt;/li&gt;
+&lt;li&gt;darin enthalten: ein neuartiger &amp;quot;visual mode&amp;quot;, der 1979 der Standard wurde -- &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Vi&amp;amp;oldid=234166542&#34;&gt;&lt;code&gt;vi&lt;/code&gt;&lt;/a&gt; ist geboren&lt;/li&gt;
+&lt;li&gt;1989 dann &lt;code&gt;vim&lt;/code&gt; als Weiterentwicklung von Brams Portierung von &lt;code&gt;vi&lt;/code&gt; auf Atari-Computer&lt;/li&gt;
+&lt;li&gt;sprich: im Großen und Ganzen eine 50 Jahre lang ungebrochene Evolutionslinie von Texteditoren, analog und parallel zu Unix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kernidee von vi-artigen Texteditoren: &lt;strong&gt;modales Editieren&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in herkömmlichen Texteditoren: jeder Tastendruck hat immer die gleiche Bedeutung (z.B. &amp;quot;u&amp;quot; fügt ein kleines U ein; z.B. &amp;quot;Strg&#43;Z&amp;quot; macht die letzte Operation rückgängig)&lt;/li&gt;
+&lt;li&gt;Nachteil: komplexe Operationen sind begrenzt darin, wieviele Tastenkombinationen man sich merken kann&lt;/li&gt;
+&lt;li&gt;in vi-artigen Editoren: Bedeutung eines Tastendrucks hängt vom aktuellen Modus ab (z.B. &amp;quot;u&amp;quot; im Eingabemodus fügt ein kleines U ein, jedoch &amp;quot;u&amp;quot; im Befehlsmodus macht die letzte Operation rückgängig)&lt;/li&gt;
+&lt;li&gt;erster Vorteil: mehr Befehle sind durch einfache Tastendrücke erreichbar, die sich einfacher tippen lassen als Akkorde wie &amp;quot;Strg&#43;Umschalt&#43;R&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;zweite Besonderheit: &lt;strong&gt;Aktionsgrammatik&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in herkömmlichen Texteditoren: viele Aktionen, die alle ziemlich ähnlich sind (z.B. ein Zeichen nach links löschen, ein Wort nach links löschen, ein Zeichen nach links auswählen, ein Wort nach links auswählen, etc.)&lt;/li&gt;
+&lt;li&gt;Befehlsmodus in vi: Befehle werden wie mit einer Grammatik zusammengesetzt
+&lt;ul&gt;
+&lt;li&gt;Substantive = Bewegungen (z.B. &amp;quot;w&amp;quot; = ein Wort nach rechts, &amp;quot;b&amp;quot; = ein Wort nach links, &amp;quot;j&amp;quot; = eine Zeile nach unten)&lt;/li&gt;
+&lt;li&gt;Zahlen = Vervielfältigungen (z.b. &amp;quot;3w&amp;quot; = drei Worte nach rechts, &amp;quot;5j&amp;quot; = fünf Zeilen nach unten)&lt;/li&gt;
+&lt;li&gt;Verben = Aktionen (z.B. &amp;quot;d&amp;quot; = löschen, &amp;quot;c&amp;quot; = ändern)&lt;/li&gt;
+&lt;li&gt;ganzer Befehl: nur eine Bewegung (bewegt den Cursor, z.B. &amp;quot;3w&amp;quot;) oder eine Aktion und eine Bewegung (z.B. &amp;quot;d5j&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;damit zweiter Vorteil: eine große Menge an komplexen Aktionen ist mit sehr kompakten Befehlen auszudrücken (z.B. &amp;quot;Ich möchte den Inhalt des Klammerpaars löschen, in dem mein Cursor steht&amp;quot; = &amp;quot;di(&amp;quot;, &amp;quot;ich möchte diesen Absatz und die nächsten drei Absätze automatisch formattieren&amp;quot; = &amp;quot;ga4p&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;weitere coole Funktionen in vim&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Makrofunktion: Folgen von Tastendrücken können aufgezeichnet und dann automatisiert abgespielt werden (gibt&#39;s auch in anderen Editoren, aber paart sich mit vi&#39;s Befehlssprache besser als mit denen der meisten anderen Texteditoren)&lt;/li&gt;
+&lt;li&gt;man kann damit &lt;a href=&#34;https://media.ccc.de/v/34c3-9007-hacker_jeopardy#t=1093&#34;&gt;Hacker Jeopardy&lt;/a&gt; gewinnen :3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kann man das lernen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ja, auf jeden Fall. Was man da an Zeit aufwendet, zahlt sich dann über Jahrzehnte aus.&lt;/li&gt;
+&lt;li&gt;Xyrill empfiehlt: Erstmal nur mit den Basics anfangen (Dateien öffnen und schließen, zwischen Modi wechseln). Dann schrittweise Befehle lernen, wann immer man das Gefühl hat, dass man was von Hand macht, was auch einfacher gehen sollte.&lt;/li&gt;
+&lt;li&gt;vim hat ein eingebautes Tutorial: &lt;code&gt;vimtutor&lt;/code&gt; auf der Kommandozeile ausführen&lt;/li&gt;
+&lt;li&gt;vim-Cheatsheet auf dem Schreibtisch bereitlegen (&lt;a href=&#34;https://cheatography.com/mipapo/cheat-sheets/vim-cheatsheet/&#34;&gt;Beispiel (deutsch)&lt;/a&gt;, &lt;a href=&#34;https://i.redd.it/ve1jv3m3qqj21.png&#34;&gt;Beispiel (englisch)&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=KyLqUf4cdwc&#34;&gt;Perl-Programm mit Spracherkennung schreiben&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://c3d2.de/news/pentaradio24-20210727.html&#34;&gt;Pentaradio zu Git (Versionsverwaltungssystem)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:28" title="Bram Moolenaar ist gestorben"  />
+          <chapter start="00:03:37" title="Leben und  Werk von Bram Moolenaar"  />
+          <chapter start="00:12:42" title="Was ist vim und warum ist es cool?"  />
+          <chapter start="00:19:22" title="vim und seine Ahnen"  />
+          <chapter start="00:19:45" title="ed: Der Standard-Unix-Editor"  />
+          <chapter start="00:23:29" title="ex: eds Nachfloger"  />
+          <chapter start="00:25:01" title="sed: Der Streameditor"  />
+          <chapter start="00:25:37" title="vims Kompatibilitätsmodus"  />
+          <chapter start="00:26:19" title="Der Visual-Mode"  />
+          <chapter start="00:27:33" title="vi vs. vim"  />
+          <chapter start="00:29:29" title="Modales Editieren"  />
+          <chapter start="00:39:16" title="Aktionsgramatik"  />
+          <chapter start="00:46:20" title="Abschweif: Codegolf"  />
+          <chapter start="00:48:01" title="Iteratives lernen"  />
+          <chapter start="00:49:04" title="Richtigstellung Befehlsmodus"  />
+          <chapter start="00:50:14" title="Zahlen als Quantoren"  />
+          <chapter start="00:53:40" title="Makrofuntion"  />
+          <chapter start="00:56:46" title="Visual Mode"  />
+          <chapter start="00:58:15" title="Anderes cooles Zeug und Bemerkungen"  />
+      </chapters>
+      <enclosure length="62016550" url="https://dl.xyrillian.de/noises/stp-046-bram-moolenaar-und-vim.mp3" type="audio/mpeg"/>
+      <enclosure length="38964778" url="https://dl.xyrillian.de/noises/stp-046-bram-moolenaar-und-vim.ogg" type="audio/ogg"/>
+      <enclosure length="23392014" url="https://dl.xyrillian.de/noises/stp-046-bram-moolenaar-und-vim.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/046-bram-moolenaar-und-vim/</guid>
+    <pubDate>Thu, 09 Nov 2023 13:05:00 GMT</pubDate>
+    <itunes:duration>64:15</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP045: Speicherstruktur aus Programmsicht</itunes:title>
     <itunes:episode>45</itunes:episode>
     <itunes:season>1</itunes:season>

@@ -944,3 +944,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 46
+    slug: 046-bram-moolenaar-und-vim
+    title: Bram Moolenaar und vim
+    pubtime: 1699535100 # 2023-11-09
+
+    markdown:
+      description: |
+        Obwohl dies ein Technikpodcast ist, kommen wir um politische Themen oft nicht ganz herum. In dieser Folge jedoch stellen wir uns nun direkt ins Feuer. Und all das nur, weil Xyrill unbedingt seinen Lieblingseditor unters Volk bringen will.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
