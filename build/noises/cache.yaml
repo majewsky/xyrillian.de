@@ -2612,3 +2612,61 @@ audio_metadata:
     - start_secs: 3495
       end_secs: 3855.259
       title: Anderes cooles Zeug und Bemerkungen
+  stp:047-speicherallokation:
+    length_secs: 4134
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-047-speicherallokation.mp3
+      size_bytes: 66486662
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-047-speicherallokation.ogg
+      size_bytes: 41753580
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-047-speicherallokation.opus
+      size_bytes: 24872141
+    chapters:
+    - start_secs: 0
+      end_secs: 217
+      title: CTA, Intro und Prolog
+    - start_secs: 217
+      end_secs: 362
+      title: Rückbezug auf STP045
+    - start_secs: 362
+      end_secs: 385
+      title: Das Grundproblem
+    - start_secs: 385
+      end_secs: 473
+      title: 'Abschweif: Notizen für die Klausur'
+    - start_secs: 473
+      end_secs: 557
+      title: Man braucht einen Allokator
+    - start_secs: 557
+      end_secs: 1283
+      title: malloc und free
+    - start_secs: 1283
+      end_secs: 1311
+      title: Fehlerquellen in der Speicherverwaltung
+    - start_secs: 1311
+      end_secs: 1533
+      title: Speicherleck
+    - start_secs: 1533
+      end_secs: 1847
+      title: Pufferüberlauf
+    - start_secs: 1847
+      end_secs: 2082
+      title: Use after free
+    - start_secs: 2082
+      end_secs: 2760
+      title: Automatische Speicherverwaltung
+    - start_secs: 2760
+      end_secs: 3113
+      title: Mark and Sweep
+    - start_secs: 3113
+      end_secs: 3644
+      title: Optimierung der Heap-Nutzung
+    - start_secs: 3644
+      end_secs: 4134.657
+      title: Caching

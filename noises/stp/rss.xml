@@ -27,6 +27,122 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP047: Speicherallokation</itunes:title>
+    <itunes:episode>47</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP047: Speicherallokation</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Ein weiteres Mal beschäftigen wir uns mit Speicher. Diesmal spezifisch mit Haufen davon. Wie man die wieder wegräumt oder gar nicht erst zu groß werden lässt, ist auch ein Thema. Außerdem gibt es ein Novum direkt am Beginn der Folge.</itunes:summary>
+    <description>Ein weiteres Mal beschäftigen wir uns mit Speicher. Diesmal spezifisch mit Haufen davon. Wie man die wieder wegräumt oder gar nicht erst zu groß werden lässt, ist auch ein Thema. Außerdem gibt es ein Novum direkt am Beginn der Folge.</description>
+    <content:encoded>&lt;p&gt;Ein weiteres Mal beschäftigen wir uns mit Speicher. Diesmal spezifisch mit Haufen davon. Wie man die wieder wegräumt oder gar nicht erst zu groß werden lässt, ist auch ein Thema. Außerdem gibt es ein Novum direkt am Beginn der Folge.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug auf STP045: &lt;strong&gt;Heap&lt;/strong&gt; (Haufenspeicher)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;keine Strukturvorgaben durch das Betriebssystem oder die Prozessorarchitektur&lt;/li&gt;
+&lt;li&gt;notwendig für Daten, deren Lebenszeit nicht der Struktur von Unterprogrammen folgt, oder deren Größe die 132 KiB des Stacks übersteigt&lt;/li&gt;
+&lt;li&gt;neue Frage: Wie kann man diesen unstrukturierten Haufen sinnvoll verwalten?&lt;/li&gt;
+&lt;li&gt;Analogie: Ein Team verwendet als Speicher ein großes Whiteboard, auf dem verschiedene Mitglieder des Teams rumschreiben wollen, ohne sich gegenseitig in die Quere zu kommen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;man braucht einen &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Allokation_(Informatik)&amp;amp;oldid=199910001&#34;&gt;Allokator&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;meist in Form einer Programmbibliothek, die auf die jeweilige Programmiersprache und/oder Laufzeitumgebung abgestimmt ist&lt;/li&gt;
+&lt;li&gt;klassischerweise zwei Funktionen: &amp;quot;malloc&amp;quot; (&amp;quot;memory allocate&amp;quot;; ich brauche ein Stück Speicher der Größe X) und &amp;quot;free&amp;quot; (das gegebene Stück Speicher brauche ich nicht mehr)&lt;/li&gt;
+&lt;li&gt;Allokationen mittels malloc sind meist sehr viel kleiner als die Speicherseiten, die das Betriebssystem rausgibt (min. 4 KB) -&amp;gt; Allokator holt sich ganze Speicherseiten und zerteilt die in mundgerechte Stücke&lt;/li&gt;
+&lt;li&gt;damit &amp;quot;free&amp;quot; funktioniert, muss der Allokator irgendwo über diese Zerstückelung Buch führen -&amp;gt; gewisser Mehraufwand an Speicher für die Buchführung&lt;/li&gt;
+&lt;li&gt;verschiedene Anwendungen machen ihre Speicherallokationen in unterschiedlichen Mustern (häufig z.B. ein gewisser Bodensatz an großen Allokationen, die für die ganze Lebensdauer des Programms erhalten bleiben, und dazu sehr viele kleine und kurzlebige Allokationen für bestimmte Einzeloperationen) -&amp;gt; interessantes Arbeits- und Forschungsfeld für Leute, die sich gern in Algorithmen eingraben&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Speicherverwaltung im Heap ist sicherheitskritisch -&amp;gt; mögliche Fehlerquellen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Speicherleck: Speicher wird allokiert, aber dann nicht wieder freigegeben; da der Allokator nicht wissen kann, ob der Speicher noch verwendet wird, muss er brachliegen&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Puffer%C3%BCberlauf&amp;amp;oldid=236800782&#34;&gt;Pufferüberlauf&lt;/a&gt;: Allokation war für X Bytes, aber dann wird über das Ende (Basisadresse &#43; X) hinausgeschrieben; dies zerstört dann Daten in anderen Allokationen oder Buchführungsdaten des Allokators&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://owasp.org/www-community/vulnerabilities/Using_freed_memory&#34;&gt;Use after free&lt;/a&gt;: Allokation wird mit &amp;quot;free&amp;quot; zurückgegeben, aber danach noch vom Programm verwendet, obwohl der Allokator dieses Stück Speicher vielleicht schon wieder anderweitig allokiert hat&lt;/li&gt;
+&lt;li&gt;Das klingt alles anstrengend. Kann man das nicht den Computer machen lassen? -&amp;gt; &lt;strong&gt;automatische Speicherverwaltung&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;einfachste praktikable Idee: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Referenzz%C3%A4hlung&amp;amp;oldid=221346853&#34;&gt;Referenzen zählen&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ansatz: bei allokiertem Speicher nicht die lose Speicheradresse herumreichen, sondern noch einen Zähler mitführen
+&lt;ul&gt;
+&lt;li&gt;Zähler beginnt bei 1, da man am Anfang eine Referenz hat&lt;/li&gt;
+&lt;li&gt;bei jedem Kopieren der Referenz wird der Zähler um 1 erhöht, bei jedem Löschen einer Referenz um 1 verringert&lt;/li&gt;
+&lt;li&gt;die Allokation wird freigegeben, wenn der Zähler auf 0 fällt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vorteil: sehr schnell, sehr zuverlässig, eliminiert bei konsequenter Anwendung das Risiko von &amp;quot;Use after free&amp;quot;&lt;/li&gt;
+&lt;li&gt;Nachteil: garantierte Speicherlecks bei zyklischen Referenzen (z.B. A verweist auf B verweist auf C verweist auf A, aber nichts anderes verweist auf A/B/C)&lt;/li&gt;
+&lt;li&gt;komplexere Formen von automatische Speicherverwaltung mit Zykluserkennung heißen meist &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Garbage_Collection&amp;amp;oldid=236166816&#34;&gt;Garbage Collector&lt;/a&gt; (GC, &amp;quot;Müllsammler&amp;quot;); strenggenommen sind Referenzzähler &amp;quot;konservative GC&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beispiel für einen GC-Algorithmus: &lt;strong&gt;Mark and Sweep&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;aktives Aufräumen zu bestimmten Gelegenheiten, z.B. wenn bei malloc kein Speicher mehr frei ist und weiterer Speicher vom Betriebssystem angefordert werden müsste&lt;/li&gt;
+&lt;li&gt;Algorithmus:
+&lt;ul&gt;
+&lt;li&gt;Allokationen, deren Adressen im Stack liegen, werden als &amp;quot;erreichbar&amp;quot; markiert&lt;/li&gt;
+&lt;li&gt;alle anderen Allokationen werden initial als &amp;quot;nicht erreichbar&amp;quot; markiert&lt;/li&gt;
+&lt;li&gt;ausgehend von den erreichbaren Allokationen wird sukzessive nach Verweisen auf andere Allokationen gesucht und diese ebenfalls als &amp;quot;erreichbar&amp;quot; markiert&lt;/li&gt;
+&lt;li&gt;nachdem alles durchsucht wurde, werden alle Allokationen freigegeben, die immer noch als &amp;quot;nicht erreichbar&amp;quot; markiert sind&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GC braucht meist eine enge Integration mit dem Allokator und mit der Programmiersprache oder der Laufzeitumgebung (z.B. insb. um die Frage &amp;quot;welche Allokationen sind im Stack referenziert&amp;quot; zu beantworten)&lt;/li&gt;
+&lt;li&gt;Nachteil: fast jeder GC muss zumindest für einen Teil der Aufräumphase &amp;quot;die Welt anhalten&amp;quot;, was für den Nutzer wie Motorstottern aussieht&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Optimierung der Heap-Nutzung: Anzahl der Allokationen verringern (es gilt die Faustregel &amp;quot;der einzige Weg, zu optimieren, ist, weniger zu tun&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zusammenhängende Datenstrukturen möglichst in eine einzelne Allokation ablegen anstatt in mehrere Teilstücke (&amp;quot;Arena-Allokation&amp;quot;, &amp;quot;Small Object Allocation&amp;quot;)&lt;/li&gt;
+&lt;li&gt;kleine Daten bevorzugt im Stack halten und nicht auf den Heap legen (Xyrill hat eine Anekdote zu Minecraft)&lt;/li&gt;
+&lt;li&gt;noch eine Idee: GC zu opportunen Momenten explizit anstarten (z.B. bei Spielen während des VSync, d.h. wenn ein Einzelbild gerade fertig ist und es auf den Bildschirm kopiert wird)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;zum Schluss ein Blick auf ein Teilgebiet der Heap-Algorithmen: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Cache&amp;amp;oldid=236047086&#34;&gt;Zwischenspeicher (Cache)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grundproblem: bestimmte Operationen sind teuer (z.B. Netzwerkabfragen, Einlesen von Dateien von der Festplatte, komplexe Berechnungen), aber reproduzierbar; wir würden die Ergebnisse gerne wiederverwenden, aber können nicht alle im Speicher halten&lt;/li&gt;
+&lt;li&gt;Speicherstück mit einer festen Größe wird als Cache designiert&lt;/li&gt;
+&lt;li&gt;idealerweise würde man genau die Ergebnisse dort ablegen, die in der Zukunft am häufigsten wieder nachgefragt werden&lt;/li&gt;
+&lt;li&gt;Problem: &lt;a href=&#34;https://en.wikiquote.org/w/index.php?title=Niels_Bohr&amp;amp;oldid=3344877&#34;&gt;&amp;quot;Vorhersagen sind schwierig, insbesondere, wenn sie die Zukunft betreffen&amp;quot;&lt;/a&gt; -&amp;gt; Cache-Replacement-Algorithmen sind ein Forschungsfeld&lt;/li&gt;
+&lt;li&gt;Beispiel &lt;strong&gt;LRU&lt;/strong&gt; (&amp;quot;Least Recently Used&amp;quot;): wenn ein neues Element abgelegt wird, wird dasjenige existierende Element überschrieben, das am längsten ungenutzt ist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lesestoff: &lt;a href=&#34;https://www.memorymanagement.org/&#34;&gt;www.memorymanagement.org&lt;/a&gt; (englisch)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="CTA, Intro und Prolog"  />
+          <chapter start="00:03:37" title="Rückbezug auf STP045"  />
+          <chapter start="00:06:02" title="Das Grundproblem"  />
+          <chapter start="00:06:25" title="Abschweif: Notizen für die Klausur"  />
+          <chapter start="00:07:53" title="Man braucht einen Allokator"  />
+          <chapter start="00:09:17" title="malloc und free"  />
+          <chapter start="00:21:23" title="Fehlerquellen in der Speicherverwaltung"  />
+          <chapter start="00:21:51" title="Speicherleck"  />
+          <chapter start="00:25:33" title="Pufferüberlauf"  />
+          <chapter start="00:30:47" title="Use after free"  />
+          <chapter start="00:34:42" title="Automatische Speicherverwaltung"  />
+          <chapter start="00:46:00" title="Mark and Sweep"  />
+          <chapter start="00:51:53" title="Optimierung der Heap-Nutzung"  />
+          <chapter start="01:00:44" title="Caching"  />
+      </chapters>
+      <enclosure length="66486662" url="https://dl.xyrillian.de/noises/stp-047-speicherallokation.mp3" type="audio/mpeg"/>
+      <enclosure length="41753580" url="https://dl.xyrillian.de/noises/stp-047-speicherallokation.ogg" type="audio/ogg"/>
+      <enclosure length="24872141" url="https://dl.xyrillian.de/noises/stp-047-speicherallokation.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/047-speicherallokation/</guid>
+    <pubDate>Thu, 30 Nov 2023 01:10:00 GMT</pubDate>
+    <itunes:duration>68:54</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP046: Bram Moolenaar und vim</itunes:title>
     <itunes:episode>46</itunes:episode>
     <itunes:season>1</itunes:season>

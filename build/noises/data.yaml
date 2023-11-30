@@ -957,3 +957,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 47
+    slug: 047-speicherallokation
+    title: Speicherallokation
+    pubtime: 1701306600 # 2023-11-30
+
+    markdown:
+      description: |
+        Ein weiteres Mal beschäftigen wir uns mit Speicher. Diesmal spezifisch mit Haufen davon. Wie man die wieder wegräumt oder gar nicht erst zu groß werden lässt, ist auch ein Thema. Außerdem gibt es ein Novum direkt am Beginn der Folge.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
