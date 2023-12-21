@@ -2670,3 +2670,52 @@ audio_metadata:
     - start_secs: 3644
       end_secs: 4134.657
       title: Caching
+  stp:048-vertrauen:
+    length_secs: 4742
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-048-vertrauen.mp3
+      size_bytes: 76210857
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-048-vertrauen.ogg
+      size_bytes: 47533851
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-048-vertrauen.opus
+      size_bytes: 28722015
+    chapters:
+    - start_secs: 0
+      end_secs: 250
+      title: Intro und grandiose Wortwitze
+    - start_secs: 250
+      end_secs: 459
+      title: Wer ist die andere Person?
+    - start_secs: 459
+      end_secs: 1169
+      title: Vererbung von Vertrauen
+    - start_secs: 1169
+      end_secs: 1233
+      title: Xyrills erste Datensicherung
+    - start_secs: 1233
+      end_secs: 2045
+      title: Einsatzfälle für Zertifikate
+    - start_secs: 2045
+      end_secs: 2647
+      title: Vertrauen durch Beständigkeit
+    - start_secs: 2647
+      end_secs: 3373
+      title: Vertrauen durch Vitamin B
+    - start_secs: 3373
+      end_secs: 3760
+      title: Spam und Hashes
+    - start_secs: 3760
+      end_secs: 4514
+      title: Proof of Work
+    - start_secs: 4514
+      end_secs: 4626
+      title: Abendgedanken
+    - start_secs: 4626
+      end_secs: 4742.431
+      title: Outro

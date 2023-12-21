@@ -27,6 +27,148 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP048: Vertrauen</itunes:title>
+    <itunes:episode>48</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP048: Vertrauen</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nach Xyrills gewaltigem humorischen Auftakt kommen wir zu wirklich wichtigen Dingen: Wem kann vertraut werden und warum? Hat Vertrauen ein Haltbarkeitsdatum? Wem vertraue ich, ohne explizit davon zu wissen? Zum Schluss gibt es noch Aufklärung über die Herkunft des Wortes &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Spam&amp;amp;oldid=238368359#Begriffsherkunft&#34;&gt;Spam&lt;/a&gt; für unerwünschte Werbung.</itunes:summary>
+    <description>Nach Xyrills gewaltigem humorischen Auftakt kommen wir zu wirklich wichtigen Dingen: Wem kann vertraut werden und warum? Hat Vertrauen ein Haltbarkeitsdatum? Wem vertraue ich, ohne explizit davon zu wissen? Zum Schluss gibt es noch Aufklärung über die Herkunft des Wortes &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Spam&amp;amp;oldid=238368359#Begriffsherkunft&#34;&gt;Spam&lt;/a&gt; für unerwünschte Werbung.</description>
+    <content:encoded>&lt;p&gt;Nach Xyrills gewaltigem humorischen Auftakt kommen wir zu wirklich wichtigen Dingen: Wem kann vertraut werden und warum? Hat Vertrauen ein Haltbarkeitsdatum? Wem vertraue ich, ohne explizit davon zu wissen? Zum Schluss gibt es noch Aufklärung über die Herkunft des Wortes &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Spam&amp;amp;oldid=238368359#Begriffsherkunft&#34;&gt;Spam&lt;/a&gt; für unerwünschte Werbung.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug zu STP039: Authentifizierung (&amp;quot;Wer ist diese Person?&amp;quot; bzw &amp;quot;Was darf diese Person?&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem: Woher weiß man, ob ein Identitätsnachweis verlässlich ist? -&amp;gt; &lt;strong&gt;Vertrauen&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Vorstellung verschiedener Arten von Vertrauensvermittlung -&amp;gt; Ziel: Vokabular aufbauen, Methoden gegeneinander abwägen&lt;/li&gt;
+&lt;li&gt;Beispiele im realen Leben: gemeinsame Vorgeschichte und Inside-Jokes, Geheimlosungen, Personalausweise&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vererbung von Vertrauen: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Digitales_Zertifikat&amp;amp;oldid=236185751&#34;&gt;Digitale Zertifikate&lt;/a&gt; nach dem &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=X.509&amp;amp;oldid=237108927&#34;&gt;X.509-Standard&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;basierend auf asymmetrischer Verschlüsselung (siehe STP043)
+&lt;ul&gt;
+&lt;li&gt;Zertifikat = öffentlicher Schlüssel &#43; Identitätsinformationen &#43; Signatur durch ein übergeordnetes Zertifikat&lt;/li&gt;
+&lt;li&gt;durch die Signaturkette geht Vertrauen vom Anfang der Kette (&lt;strong&gt;Zertifikatsautorität&lt;/strong&gt;, CA) auf die abgeleiteten Zertifikate über&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;authentifizierende Systeme müssen nur das allererste Zertifikat in der Kette kennen (das Wurzel-Zertifikat bzw. Root-CA)
+&lt;ul&gt;
+&lt;li&gt;Beispiel: Wurzelzertifikat signiert Zertifikat einer unterliegenden CA, und dieses signiert ein Zertifikat für einen Nutzer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Einsatzfälle
+&lt;ul&gt;
+&lt;li&gt;Transportverschlüsselung im Web (HTTPS, Zertifikat enthält Domain-Namen)&lt;/li&gt;
+&lt;li&gt;Impfzertifikate in der Corona-Warn-App&lt;/li&gt;
+&lt;li&gt;Benutzerseitige Zertifikate im Firmen-Intranet oder bei Elster&lt;/li&gt;
+&lt;li&gt;Äquivalente in der realen Welt: Personalausweis oder Reisepass (ausgestellt durch eine Regierungsstelle), Zugangskarte in der Firma (ausgestellt durch die Liegenschaftsverwaltung der Firma), Mitarbeiteruniform (eine Person in DB-Uniform auf einem Bahnhof wird wahrscheinlich ein DB-Mitarbeiter sein)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vorteile: skaliert sehr gut auf viele Akteure, nur relativ wenig Speicher notwendig (für die Root-CAs)&lt;/li&gt;
+&lt;li&gt;Nachteil: erfordert Vertrauen in eine zentrale Stelle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vertrauen durch Beständigkeit: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Trust_on_first_use&amp;amp;oldid=1157774410&#34;&gt;Trust on first use (TOFU)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;beim ersten Kontakt mit einer Person wird deren öffentlichen Schlüssel blind vertraut&lt;/li&gt;
+&lt;li&gt;bei weiteren Kontakten wird demselben Schlüssel weiterhin vertraut, aber die Präsentation eines neuen Schlüssels wird als Angriffsversuch bzw. Betrugsversuch gewertet&lt;/li&gt;
+&lt;li&gt;Einsatzfälle
+&lt;ul&gt;
+&lt;li&gt;die meisten Messenger mit Ende-zu-Ende-Verschlüsselung (z.B. Signal, WhatsApp, verschlüsselte Chats in Telegram)&lt;/li&gt;
+&lt;li&gt;Fernzugriff auf Server mittels SSH (für den Teil, wo die Identität des Servers überprüft wird)&lt;/li&gt;
+&lt;li&gt;Äquivalente in der realen Welt: Bekanntschaften unter Nachbarn oder Vereinsmitgliedern (alles, was auf der Basis von &amp;quot;den kenn ich&amp;quot; läuft)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vorteil: braucht keinen zentralen Vertrauensanker&lt;/li&gt;
+&lt;li&gt;Nachteil: anfällig gegen Attacken beim initialen Verbindungsaufbau&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vertrauen durch Vitamin B: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Web_of_Trust&amp;amp;oldid=235927300&#34;&gt;Web of Trust (WoT)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zertifikate ähnlich wie bei X.509: öffentlicher Schlüssel &#43; Identitätsinformatione &#43; &lt;strong&gt;Liste von&lt;/strong&gt; Signaturen&lt;/li&gt;
+&lt;li&gt;Signaturen nicht vertikal (in einer Hierarchie), sondern horizontal (zwischen gleichrangigen Zertifikaten verschiedener Nutzer)&lt;/li&gt;
+&lt;li&gt;Vertrauen vererbt sich zwischen Nutzern:
+&lt;ul&gt;
+&lt;li&gt;unendliches Vertrauen in das eigene Zertifikat&lt;/li&gt;
+&lt;li&gt;hohes Vertrauen in Zertifikate, die man selbst signiert hat&lt;/li&gt;
+&lt;li&gt;mittelhohes Vertrauen in Zertifikate, die von diesen Zertifikaten signiert wurden&lt;/li&gt;
+&lt;li&gt;und so weiter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Einsatzfälle
+&lt;ul&gt;
+&lt;li&gt;E-Mail-Verschlüsselung mit PGP/GPG, siehe auch &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Keysigning-Party&amp;amp;oldid=237529163&#34;&gt;Keysigning-Parties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Verifikation eines Chat-Kontakts über einen Seitenkanal&lt;/li&gt;
+&lt;li&gt;Äquivalent in der realen Welt: Bekanntschaften über Bande (&amp;quot;der Freund der Freundin des Schwippschwagers&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vorteil: braucht keinen zentralen Vertrauensanker&lt;/li&gt;
+&lt;li&gt;Nachteil: Schlüssel mit vielen Signaturen sind eigentlich wertvoll, aber auch unhandlich; Angriff möglich durch bösartige Müll-Signaturen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Seitenleiste: Wie könnte man solchen Signatur-Spam verhindern?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem: Spam (sowohl bei E-Mails als auch GPG-Signaturen) ist für den Versender sehr günstig und für den Empfänger extrem lästig -&amp;gt; Kann man den Spieß umdrehen?&lt;/li&gt;
+&lt;li&gt;Idee (1990er): wir nutzen Einwegfunktionen (Streuwertfunktionen siehe STP004, STP043), aber drehen die Sache um
+&lt;ul&gt;
+&lt;li&gt;Sender muss einen Datensatz bilden, für den eine Streuwertfunktion ein Ergebnis mit X führenden Nullen hat (X kann variiert werden je nach Leistungsfähigkeit aktueller Prozessoren) -&amp;gt; erfordert sehr viel Durchprobieren von Eingabewerten&lt;/li&gt;
+&lt;li&gt;Empfänger muss nur schauen, dass die Lösung stimmt -&amp;gt; erfordert nur eine Berechnung mit dem präsentierten Eingabewert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Implementation (2002): &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Hashcash&amp;amp;oldid=1166511502&#34;&gt;Hashcash&lt;/a&gt; als eines der ersten &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Proof_of_Work&amp;amp;oldid=235827513&#34;&gt;Proof-of-Work&lt;/a&gt;-Verfahren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vertrauen durch Proof of Work: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Blockchain&amp;amp;oldid=235793427&#34;&gt;Blockchain&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kombination von Proof of Work mit Merkle-Bäumen&lt;/li&gt;
+&lt;li&gt;Merkle-Baum = Baumstruktur aus Datenpaketen, die jeweils die Hash-Werte ihrer untergeordneten Knoten enthalten -&amp;gt; Hash-Wert des Wurzelknotens ist die einzige benötigte Information, um die Integrität des gesamten Baumes zu überprüfen&lt;/li&gt;
+&lt;li&gt;Blockchain: System zur kontinuierlichen Erweiterung eines Merkle-Baums (genauer: einer Merkle-Kette) um neue Blöcke, aber die Hashes jedes Blocks müssen eine Proof-of-Work-Bedingung erfüllen&lt;/li&gt;
+&lt;li&gt;kein Vertrauen in einzelne Akteure notwendig, nur in die Sicherheit des Algorithmus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abendgedanken: Vertrauen lässt sich nicht eliminieren, nur verschieben&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vertraue ich einem Menschen? Einer Maschine? Einer Organisation? Einem Algorithmus?&lt;/li&gt;
+&lt;li&gt;Niemandem vertrauen ist auch keine Lösung.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Versionsverwaltungssystem &amp;quot;git&amp;quot;, wie von uns besprochen im &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20210727.html&#34;&gt;Pentaradio vom Juli 2021&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und grandiose Wortwitze"  />
+          <chapter start="00:04:10" title="Wer ist die andere Person?"  />
+          <chapter start="00:07:39" title="Vererbung von Vertrauen"  />
+          <chapter start="00:19:29" title="Xyrills erste Datensicherung"  />
+          <chapter start="00:20:33" title="Einsatzfälle für Zertifikate"  />
+          <chapter start="00:34:05" title="Vertrauen durch Beständigkeit"  />
+          <chapter start="00:44:07" title="Vertrauen durch Vitamin B"  />
+          <chapter start="00:56:13" title="Spam und Hashes"  />
+          <chapter start="01:02:40" title="Proof of Work"  />
+          <chapter start="01:15:14" title="Abendgedanken"  />
+          <chapter start="01:17:06" title="Outro"  />
+      </chapters>
+      <enclosure length="76210857" url="https://dl.xyrillian.de/noises/stp-048-vertrauen.mp3" type="audio/mpeg"/>
+      <enclosure length="47533851" url="https://dl.xyrillian.de/noises/stp-048-vertrauen.ogg" type="audio/ogg"/>
+      <enclosure length="28722015" url="https://dl.xyrillian.de/noises/stp-048-vertrauen.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/048-vertrauen/</guid>
+    <pubDate>Thu, 21 Dec 2023 19:30:00 GMT</pubDate>
+    <itunes:duration>79:02</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP047: Speicherallokation</itunes:title>
     <itunes:episode>47</itunes:episode>
     <itunes:season>1</itunes:season>

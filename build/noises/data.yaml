@@ -970,3 +970,23 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 48
+    slug: 048-vertrauen
+    title: Vertrauen
+    pubtime: 1703187000 # 2023-12-21
+
+    markdown:
+      description: |
+        Nach Xyrills gewaltigem humorischen Auftakt kommen wir zu wirklich wichtigen Dingen: Wem kann vertraut werden und warum? Hat Vertrauen ein Haltbarkeitsdatum? Wem vertraue ich, ohne explizit davon zu wissen? Zum Schluss gibt es noch Aufklärung über die Herkunft des Wortes [Spam](https://de.wikipedia.org/w/index.php?title=Spam&oldid=238368359#Begriffsherkunft) für unerwünschte Werbung.
+      shownotes: true # in file
+
+    music:
+      - *music-stp-opener-001
+      - *music-stp-opener-002
+      - *music-stp-opener-003
+      - *music-stp-opener-004
+      - artist: Monty Python's Flying Circus
+        title: "Spam"
+        href: https://www.youtube.com/watch?v=ycKNt0MhTkk
