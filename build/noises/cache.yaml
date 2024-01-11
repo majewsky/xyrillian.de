@@ -2719,3 +2719,58 @@ audio_metadata:
     - start_secs: 4626
       end_secs: 4742.431
       title: Outro
+  stp:049-schadcode:
+    length_secs: 3123
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-049-schadcode.mp3
+      size_bytes: 50302469
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-049-schadcode.ogg
+      size_bytes: 32303049
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-049-schadcode.opus
+      size_bytes: 19326172
+    chapters:
+    - start_secs: 0
+      end_secs: 260
+      title: Intro und Cybereinführung
+    - start_secs: 260
+      end_secs: 754
+      title: Sicherheitslücken
+    - start_secs: 754
+      end_secs: 879
+      title: 'Abschweif: Speziell präparierte Geräte'
+    - start_secs: 879
+      end_secs: 1286
+      title: Weiße Hüte
+    - start_secs: 1286
+      end_secs: 1614
+      title: Einfluss der Sprachwahl
+    - start_secs: 1614
+      end_secs: 1806
+      title: Schwarze Hüte und Schlapphüte
+    - start_secs: 1806
+      end_secs: 2274
+      title: Exploits
+    - start_secs: 2274
+      end_secs: 2311
+      title: Schadcode
+    - start_secs: 2311
+      end_secs: 2430
+      title: Computerviren
+    - start_secs: 2430
+      end_secs: 2640
+      title: Computerwurm
+    - start_secs: 2640
+      end_secs: 2876
+      title: Trojaner
+    - start_secs: 2876
+      end_secs: 2989
+      title: Der Rest wird verschoben
+    - start_secs: 2989
+      end_secs: 3123.163
+      title: Outro

@@ -990,3 +990,23 @@ files:
       - artist: Monty Python's Flying Circus
         title: "Spam"
         href: https://www.youtube.com/watch?v=ycKNt0MhTkk
+
+  - show: stp
+    episode: 49
+    slug: 049-schadcode
+    title: Schadcode
+    pubtime: 1705003500 # 2024-01-11
+
+    markdown:
+      description: |
+        In dieser ersten Folge zum Thema Cyber-Cyber halten wir uns so lange mit der Einführung von Grundbegriffen auf, dass am Ende die Entscheidung fällt, den Rest auf Episode 51 zu verschieben. Betrachtet euch hiermit als angeteasert!
+      shownotes: true # in file
+
+    music:
+      - *music-stp-opener-001
+      - *music-stp-opener-002
+      - *music-stp-opener-003
+      - *music-stp-opener-004
+      - artist: Jung & Naiv Ultras
+        title: "Unsere Cyber Cyber Regierung"
+        href: https://www.youtube.com/watch?v=WY6KkRsS26M

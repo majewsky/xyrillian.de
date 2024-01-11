@@ -5,7 +5,7 @@
   <link>https://schluesseltechnologie-podcast.de/</link>
   <atom:link href="https://xyrillian.de/noises/stp/rss.xml" rel="self" type="application/rss+xml" />
   <language>de</language>
-  <copyright>&#xA9; 2021-2023 Stefan Majewsky, ttimeless</copyright>
+  <copyright>&#xA9; 2021-2024 Stefan Majewsky, ttimeless</copyright>
   <itunes:subtitle>Computertechnik, von Grund auf erklärt</itunes:subtitle>
   <itunes:author>Xyrillian Noises</itunes:author>
   <itunes:summary>Die IT hat unser Leben in den letzten Jahrzehnten von Grund auf verändert. Aber wie funktioniert sie wirklich? Das möchte ttimeless mal erklärt bekommen. Zum Glück hat Xyrill Antworten.
@@ -25,6 +25,94 @@
   <itunes:image href="https://xyrillian.de/res/cover-stp.png"/>
   <itunes:category text="Technology"/>
   <itunes:explicit>no</itunes:explicit>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP049: Schadcode</itunes:title>
+    <itunes:episode>49</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP049: Schadcode</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>In dieser ersten Folge zum Thema Cyber-Cyber halten wir uns so lange mit der Einführung von Grundbegriffen auf, dass am Ende die Entscheidung fällt, den Rest auf Episode 51 zu verschieben. Betrachtet euch hiermit als angeteasert!</itunes:summary>
+    <description>In dieser ersten Folge zum Thema Cyber-Cyber halten wir uns so lange mit der Einführung von Grundbegriffen auf, dass am Ende die Entscheidung fällt, den Rest auf Episode 51 zu verschieben. Betrachtet euch hiermit als angeteasert!</description>
+    <content:encoded>&lt;p&gt;In dieser ersten Folge zum Thema Cyber-Cyber halten wir uns so lange mit der Einführung von Grundbegriffen auf, dass am Ende die Entscheidung fällt, den Rest auf Episode 51 zu verschieben. Betrachtet euch hiermit als angeteasert!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Die drei wichtigsten Dinge, die Experten über Software-Sicherheit wissen:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Software ist unglaublich unzuverlässig und unsicher.&lt;/li&gt;
+&lt;li&gt;Nein, wirklich, ihr könnt es euch nicht vorstellen.&lt;/li&gt;
+&lt;li&gt;Es ist sogar noch schlimmer als das.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Matt_Blaze&amp;amp;oldid=1177352443&#34;&gt;Matt Blaze&lt;/a&gt; &lt;a href=&#34;https://twitter.com/mattblaze/status/1192503673664016385&#34;&gt;auf Twitter&lt;/a&gt; (Achtung: zweiter Link geht zu einer Domain von Elon Musk)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vorbemerkung: für offensive und defensive Computernutzung wird regelmäßig der Wortteil &amp;quot;Cyber-&amp;quot; verwendet (z.B. &amp;quot;Cyberangriff&amp;quot;, &amp;quot;Cybersicherheit&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in IT-Kreisen, insb. im CCC-Umfeld, gilt &amp;quot;Cyber-&amp;quot; als &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Schibboleth&amp;amp;oldid=237089412&#34;&gt;Schibboleth&lt;/a&gt; für Leute, die von IT keine tiefgehende Ahnung haben (siehe z.B. &lt;a href=&#34;https://www.youtube.com/watch?v=WY6KkRsS26M&#34;&gt;&amp;quot;Unsere Cyber-Cyber-Regierung&amp;quot;&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;wir bleiben deswegen sicherheitshalber bei &amp;quot;IT-Angriff&amp;quot; :)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grundlage: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Sicherheitsl%C3%BCcke&amp;amp;oldid=229656948&#34;&gt;Sicherheitslücken&lt;/a&gt; (&amp;quot;Fehler in einer Software oder einer Hardware, durch [die] ein Programm mit Schadwirkung oder ein Angreifer in ein Computersystem eindringen kann&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;siehe STP037: heutige berühmte Softwarefehler sind meist Sicherheitslücken (z.B. Heartbleed, wie in STP037 besprochen)&lt;/li&gt;
+&lt;li&gt;siehe STP039: handwerkliche Fehler in der Authentifizierung oder Autorisierung ergeben meist besonders gut ausnutzbare Sicherheitslücken (siehe gerade neulich &lt;a href=&#34;https://msrc.microsoft.com/blog/2023/09/results-of-major-technical-investigations-for-storm-0558-key-acquisition/&#34;&gt;Azure AD&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;siehe STP045/STP047: Grundlage vieler Sicherheitslücken sind Speicherverwaltungsfehler (z.B. Pufferüberlauf, wie in STP047 besprochen)&lt;/li&gt;
+&lt;li&gt;Sicherheitslücken werden aktiv gesucht, entweder von &amp;quot;Whitehats&amp;quot; (Sicherheitsforschern oder den Red-Teams der Softwarehersteller selbst) oder von &amp;quot;Blackhats&amp;quot; (die die Lücken für tatsächliche Angriffe ausnutzen wollen oder an Angreifer verkaufen wollen)&lt;/li&gt;
+&lt;li&gt;bekannte Sicherheitslücken werden in der &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Common_Vulnerabilities_and_Exposures&amp;amp;oldid=227659039&#34;&gt;CVE-Datenbank&lt;/a&gt; (&amp;quot;Common Vulnerabilities and Exposures&amp;quot;, dt. &amp;quot;Bekannte Schwachstellen und Anfälligkeiten&amp;quot;) geführt (z.B. Heartbleed ist CVE-2014-0160)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;zweiter Schritt: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Exploit&amp;amp;oldid=229895345&#34;&gt;Exploit&lt;/a&gt; (eine systematische Methode, um eine Sicherheitslücke auszunutzen)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;auch für Whitehats sind Exploits wichtig, um die Kritikalität einer Sicherheitslücke zu demonstrieren&lt;/li&gt;
+&lt;li&gt;für Blackhats sind Exploits die handelbare Form von Sicherheitslücken&lt;/li&gt;
+&lt;li&gt;Preise für Exploits orientieren sich an Angebot und Nachfrage, z.B. für RCE-Exploits in iOS oder Android &lt;a href=&#34;https://techcrunch.com/2023/10/05/zero-days-for-hacking-whatsapp-are-now-worth-millions-of-dollars/?guccounter=1&#34;&gt;bis zu 20 Mio. $&lt;/a&gt; (RCE = Remote Code Execution)&lt;/li&gt;
+&lt;li&gt;Angriffe auf der Grundlage von Exploits haben meist eines von zwei Zielen: Ausführung von Schadcode oder Ausschleusung von Informationen (z.B. Passwörter)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schadcode: der große Nachteil von Computern ist auch ihr Vorteil; sie tun genau all das, was man ihnen sagt :)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Computervirus&amp;amp;oldid=237356220&#34;&gt;Computervirus&lt;/a&gt;: ein sich selbst verbreitendes Programm, dass sich in einen Computer einnistet (biologisches Analog: &lt;a href=&#34;https://www.youtube.com/watch?v=NdaYRSW76Mg&#34;&gt;Pilze, die die Gehirne von Insekten infizieren&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Computerwurm&amp;amp;oldid=236407314&#34;&gt;Computerwurm&lt;/a&gt;: wie ein Virus, aber nistet sich nicht ein, sondern verbreitet sich nur weiter (z.B. über E-Mails oder USB-Sticks)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Trojanisches_Pferd_(Computerprogramm)&amp;amp;oldid=233931219&#34;&gt;Trojaner&lt;/a&gt;: ein Virus, der sich nicht mittels Exploit einer Sicherheitslücke verbreitet, sondern sich als nützliches Programm tarnt
+&lt;ul&gt;
+&lt;li&gt;in der netzpolitischen Debatte vor allem relevant in Form von &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Staatstrojaner&amp;amp;oldid=236566592&#34;&gt;Staatstrojanern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vorschau: zweiter Teil in STP051 (Ablauf eines IT-Angriffs)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt: &lt;a href=&#34;https://media.ccc.de/v/2019-218-wie-hackback-mit-der-gesellschaft-spielt&#34;&gt;Vortrag von HonkHase zu Hackback und Digitalen Waffen&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Cybereinführung"  />
+          <chapter start="00:04:20" title="Sicherheitslücken"  />
+          <chapter start="00:12:34" title="Abschweif: Speziell präparierte Geräte"  />
+          <chapter start="00:14:39" title="Weiße Hüte"  />
+          <chapter start="00:21:26" title="Einfluss der Sprachwahl"  />
+          <chapter start="00:26:54" title="Schwarze Hüte und Schlapphüte"  />
+          <chapter start="00:30:06" title="Exploits"  />
+          <chapter start="00:37:54" title="Schadcode"  />
+          <chapter start="00:38:31" title="Computerviren"  />
+          <chapter start="00:40:30" title="Computerwurm"  />
+          <chapter start="00:44:00" title="Trojaner"  />
+          <chapter start="00:47:56" title="Der Rest wird verschoben"  />
+          <chapter start="00:49:49" title="Outro"  />
+      </chapters>
+      <enclosure length="50302469" url="https://dl.xyrillian.de/noises/stp-049-schadcode.mp3" type="audio/mpeg"/>
+      <enclosure length="32303049" url="https://dl.xyrillian.de/noises/stp-049-schadcode.ogg" type="audio/ogg"/>
+      <enclosure length="19326172" url="https://dl.xyrillian.de/noises/stp-049-schadcode.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/049-schadcode/</guid>
+    <pubDate>Thu, 11 Jan 2024 20:05:00 GMT</pubDate>
+    <itunes:duration>52:03</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP048: Vertrauen</itunes:title>
