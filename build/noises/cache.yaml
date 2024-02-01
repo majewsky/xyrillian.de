@@ -2774,3 +2774,193 @@ audio_metadata:
     - start_secs: 2989
       end_secs: 3123.163
       title: Outro
+  stp:050-jargon-file:
+    length_secs: 7155
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-050-jargon-file.mp3
+      size_bytes: 114826703
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-050-jargon-file.ogg
+      size_bytes: 74458165
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-050-jargon-file.opus
+      size_bytes: 43062172
+    chapters:
+    - start_secs: 0
+      end_secs: 113
+      title: Intro
+    - start_secs: 113
+      end_secs: 258
+      title: Erklärung und Herkunft
+    - start_secs: 258
+      end_secs: 821
+      title: Abschweif zu KI
+    - start_secs: 821
+      end_secs: 1145
+      title: Weiter mit Herkunft
+    - start_secs: 1145
+      end_secs: 1494
+      title: '"hacker" und "hack"'
+    - start_secs: 1494
+      end_secs: 1640
+      title: Herangehensweise und Kategorien
+    - start_secs: 1640
+      end_secs: 1651
+      title: Kategorie "Design und Methodik"
+    - start_secs: 1651
+      end_secs: 1854
+      title: '"buzzword-compliant"'
+    - start_secs: 1854
+      end_secs: 2021
+      title: '"cargo cult programming"'
+    - start_secs: 2021
+      end_secs: 2317
+      title: '"connector conspiracy"'
+    - start_secs: 2317
+      end_secs: 2373
+      title: '"crufty"'
+    - start_secs: 2373
+      end_secs: 2417
+      title: '"cruftsmanship"'
+    - start_secs: 2417
+      end_secs: 2492
+      title: '"deep magic"'
+    - start_secs: 2492
+      end_secs: 2607
+      title: '"elegant"'
+    - start_secs: 2607
+      end_secs: 2693
+      title: '"KISS principle"'
+    - start_secs: 2693
+      end_secs: 2698
+      title: Kategorie "Fehler"
+    - start_secs: 2698
+      end_secs: 2781
+      title: '"airplane rule"'
+    - start_secs: 2781
+      end_secs: 2928
+      title: '"bug-for-bug compatible"'
+    - start_secs: 2928
+      end_secs: 3068
+      title: '"bug-of-the-month club"'
+    - start_secs: 3068
+      end_secs: 3108
+      title: '"Finagle\''s Law"'
+    - start_secs: 3108
+      end_secs: 3217
+      title: '"Murphy\''s Law"'
+    - start_secs: 3217
+      end_secs: 3474
+      title: '"glitch"'
+    - start_secs: 3474
+      end_secs: 3583
+      title: '"magic smoke"'
+    - start_secs: 3583
+      end_secs: 3642
+      title: '"smoke test"'
+    - start_secs: 3642
+      end_secs: 3651
+      title: Kategorie "Vergänglichkeit"
+    - start_secs: 3651
+      end_secs: 3795
+      title: '"bit rot"'
+    - start_secs: 3795
+      end_secs: 3850
+      title: '"link rot"'
+    - start_secs: 3850
+      end_secs: 4066
+      title: '"cosmic rays"'
+    - start_secs: 4066
+      end_secs: 4070
+      title: Kategorie "Netzwerk"
+    - start_secs: 4070
+      end_secs: 4140
+      title: '"Chernobyl packet"'
+    - start_secs: 4140
+      end_secs: 4226
+      title: '"honey pot"'
+    - start_secs: 4226
+      end_secs: 4658
+      title: '"LAN party"'
+    - start_secs: 4658
+      end_secs: 4709
+      title: '"massage"'
+    - start_secs: 4709
+      end_secs: 4710
+      title: Kategorie "Hardware"
+    - start_secs: 4710
+      end_secs: 4879
+      title: '"bitty box"'
+    - start_secs: 4879
+      end_secs: 5077
+      title: '"gorilla arm"'
+    - start_secs: 5077
+      end_secs: 5158
+      title: '"Moore\''s law"'
+    - start_secs: 5158
+      end_secs: 5270
+      title: '"Andy\''s and Bill\''s law"'
+    - start_secs: 5270
+      end_secs: 5274
+      title: Kategorie "Grafische Oberflächen"
+    - start_secs: 5274
+      end_secs: 5325
+      title: '"marching ants"'
+    - start_secs: 5325
+      end_secs: 5472
+      title: '"menuitis"'
+    - start_secs: 5472
+      end_secs: 5476
+      title: Kategorie "Kryptografie"
+    - start_secs: 5476
+      end_secs: 5585
+      title: '"Alice and Bob"'
+    - start_secs: 5585
+      end_secs: 5586
+      title: Kategorie "Dokumentation"
+    - start_secs: 5586
+      end_secs: 5614
+      title: '"Green\''s theorem"'
+    - start_secs: 5614
+      end_secs: 5711
+      title: '"language lawyer"'
+    - start_secs: 5711
+      end_secs: 5831
+      title: '"left as an exercise"'
+    - start_secs: 5831
+      end_secs: 5848
+      title: Kategorie "Kommunikation"
+    - start_secs: 5848
+      end_secs: 6056
+      title: '"fnord"'
+    - start_secs: 6056
+      end_secs: 6383
+      title: '"Hanlon\''s Razor"'
+    - start_secs: 6383
+      end_secs: 6482
+      title: '"highly"'
+    - start_secs: 6482
+      end_secs: 6564
+      title: '"Jeopardy-style quoting"'
+    - start_secs: 6564
+      end_secs: 6611
+      title: '"meta"'
+    - start_secs: 6611
+      end_secs: 6758
+      title: '"metasyntactic variable"'
+    - start_secs: 6758
+      end_secs: 6827
+      title: '"meatspace"'
+    - start_secs: 6827
+      end_secs: 6866
+      title: '"geek code" kommt ein ander Mal drann'
+    - start_secs: 6866
+      end_secs: 6922
+      title: '"Koan"'
+    - start_secs: 6922
+      end_secs: 7155.737
+      title: '"Tom Knight and the Lisp Machine"'

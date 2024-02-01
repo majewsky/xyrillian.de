@@ -27,6 +27,105 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP050: Jargon File</itunes:title>
+    <itunes:episode>50</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP050: Jargon File</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>In dieser Nichtjubiläumsfolge kümmern wir uns wieder einmal darum, unseren Hörer:innen Nerdkultur näher zu bringen. Dazu ist selbstverständlich nichts besser geeignet als der Ursprung vieler lieb gewonnener Worte und Redewendungen.</itunes:summary>
+    <description>In dieser Nichtjubiläumsfolge kümmern wir uns wieder einmal darum, unseren Hörer:innen Nerdkultur näher zu bringen. Dazu ist selbstverständlich nichts besser geeignet als der Ursprung vieler lieb gewonnener Worte und Redewendungen.</description>
+    <content:encoded>&lt;p&gt;In dieser Nichtjubiläumsfolge kümmern wir uns wieder einmal darum, unseren Hörer:innen Nerdkultur näher zu bringen. Dazu ist selbstverständlich nichts besser geeignet als der Ursprung vieler lieb gewonnener Worte und Redewendungen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.catb.org/~esr/jargon/html/index.html&#34;&gt;Jargon File&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;a comprehensive compendium of hacker slang illuminating many aspects of hackish tradition, folklore, and humor&amp;quot; (&amp;quot;ein umfassendes Kompendium des Hackerslangs, das viele Aspekte der Hackertradition, der Folklore und des Humors beleuchtet&amp;quot;)&lt;/li&gt;
+&lt;li&gt;zuletzt aktualisiert 2003, repräsentiert sprachliche Eigenheiten der 70er bis 90er, als die Hacker noch relativ isoliert vom Mainstream-Zeitgeist waren&lt;/li&gt;
+&lt;li&gt;wir haben durch das &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/go01.html&#34;&gt;Glossar&lt;/a&gt; geschaut und präsentieren unsere Picks von A bis M&lt;/li&gt;
+&lt;li&gt;Vorsicht: das Jargon File ist absolut ein Produkt seiner Zeit und einer männlich-weiß dominierten Subkultur mit entsprechend teils unsensiblen Begriffsbildungen und Nutzungsbeispielen (&lt;a href=&#34;http://www.catb.org/~esr/jargon/html/B/beta.html&#34;&gt;zum Beispiel hier in Unterdefinition 2&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Namensgebend: &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/H/hack.html&#34;&gt;hack&lt;/a&gt; und &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/H/hacker.html&#34;&gt;hacker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Design und Methodik: &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/B/buzzword-compliant.html&#34;&gt;buzzword-compliant&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/C/cargo-cult-programming.html&#34;&gt;cargo cult programming&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/C/connector-conspiracy.html&#34;&gt;connector conspiracy&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/C/crufty.html&#34;&gt;crufty&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/C/cruftsmanship.html&#34;&gt;cruftsmanship&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/D/deep-magic.html&#34;&gt;deep magic&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/E/elegant.html&#34;&gt;elegant&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/K/KISS-Principle.html&#34;&gt;KISS principle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fehler: &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/A/airplane-rule.html&#34;&gt;airplane rule&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/B/bug-for-bug-compatible.html&#34;&gt;bug-for-bug compatible&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/B/bug-of-the-month-club.html&#34;&gt;bug-of-the-month club&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/F/Finagles-Law.html&#34;&gt;Finagle&#39;s Law&lt;/a&gt; vs. &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/M/Murphys-Law.html&#34;&gt;Murphy&#39;s Law&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/G/glitch.html&#34;&gt;glitch&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/M/magic-smoke.html&#34;&gt;magic smoke&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/S/smoke-test.html&#34;&gt;smoke test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Vergänglichkeit: &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/B/bit-rot.html&#34;&gt;bit rot&lt;/a&gt; und &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/L/link-rot.html&#34;&gt;link rot&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/C/cosmic-rays.html&#34;&gt;cosmic rays&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Netzwerk: &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/C/Chernobyl-packet.html&#34;&gt;Chernobyl packet&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/H/honey-pot.html&#34;&gt;honey pot&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/L/LAN-party.html&#34;&gt;LAN party&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/M/massage.html&#34;&gt;massage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hardware: &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/B/bitty-box.html&#34;&gt;bitty box&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/G/gorilla-arm.html&#34;&gt;gorilla arm&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/M/Moores-Law.html&#34;&gt;Moore&#39;s law&lt;/a&gt; und passend dazu &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Andy_and_Bill%27s_law&amp;amp;oldid=1172771378&#34;&gt;Andy&#39;s and Bill&#39;s law&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Grafische Oberflächen: &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/M/marching-ants.html&#34;&gt;marching ants&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/M/menuitis.html&#34;&gt;menuitis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kryptografie: &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/A/Alice-and-Bob.html&#34;&gt;Alice and Bob&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dokumentation: &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/G/Greens-Theorem.html&#34;&gt;Green&#39;s theorem&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/L/language-lawyer.html&#34;&gt;language lawyer&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/E/exercise--left-as-an.html&#34;&gt;left as an exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kommunikation: &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/F/fnord.html&#34;&gt;fnord&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/H/Hanlons-Razor.html&#34;&gt;Hanlon&#39;s Razor&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/H/highly.html&#34;&gt;highly&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/J/Jeopardy-style-quoting.html&#34;&gt;Jeopardy-style quoting&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/M/meta.html&#34;&gt;meta&lt;/a&gt; und &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/M/metasyntactic-variable.html&#34;&gt;metasyntactic variable&lt;/a&gt;, &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/M/meatspace.html&#34;&gt;meatspace&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;als Rausschmeißer ein &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/K/koan.html&#34;&gt;Koan&lt;/a&gt;: &lt;a href=&#34;http://www.catb.org/~esr/jargon/html/koans.html&#34;&gt;&amp;quot;Tom Knight and the Lisp Machine&amp;quot;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:53" title="Erklärung und Herkunft"  />
+          <chapter start="00:04:18" title="Abschweif zu KI"  />
+          <chapter start="00:13:41" title="Weiter mit Herkunft"  />
+          <chapter start="00:19:05" title="&#34;hacker&#34; und &#34;hack&#34;"  />
+          <chapter start="00:24:54" title="Herangehensweise und Kategorien"  />
+          <chapter start="00:27:20" title="Kategorie &#34;Design und Methodik&#34;"  />
+          <chapter start="00:27:31" title="&#34;buzzword-compliant&#34;"  />
+          <chapter start="00:30:54" title="&#34;cargo cult programming&#34;"  />
+          <chapter start="00:33:41" title="&#34;connector conspiracy&#34;"  />
+          <chapter start="00:38:37" title="&#34;crufty&#34;"  />
+          <chapter start="00:39:33" title="&#34;cruftsmanship&#34;"  />
+          <chapter start="00:40:17" title="&#34;deep magic&#34;"  />
+          <chapter start="00:41:32" title="&#34;elegant&#34;"  />
+          <chapter start="00:43:27" title="&#34;KISS principle&#34;"  />
+          <chapter start="00:44:53" title="Kategorie &#34;Fehler&#34;"  />
+          <chapter start="00:44:58" title="&#34;airplane rule&#34;"  />
+          <chapter start="00:46:21" title="&#34;bug-for-bug compatible&#34;"  />
+          <chapter start="00:48:48" title="&#34;bug-of-the-month club&#34;"  />
+          <chapter start="00:51:08" title="&#34;Finagle\&#39;s Law&#34;"  />
+          <chapter start="00:51:48" title="&#34;Murphy\&#39;s Law&#34;"  />
+          <chapter start="00:53:37" title="&#34;glitch&#34;"  />
+          <chapter start="00:57:54" title="&#34;magic smoke&#34;"  />
+          <chapter start="00:59:43" title="&#34;smoke test&#34;"  />
+          <chapter start="01:00:42" title="Kategorie &#34;Vergänglichkeit&#34;"  />
+          <chapter start="01:00:51" title="&#34;bit rot&#34;"  />
+          <chapter start="01:03:15" title="&#34;link rot&#34;"  />
+          <chapter start="01:04:10" title="&#34;cosmic rays&#34;"  />
+          <chapter start="01:07:46" title="Kategorie &#34;Netzwerk&#34;"  />
+          <chapter start="01:07:50" title="&#34;Chernobyl packet&#34;"  />
+          <chapter start="01:09:00" title="&#34;honey pot&#34;"  />
+          <chapter start="01:10:26" title="&#34;LAN party&#34;"  />
+          <chapter start="01:17:38" title="&#34;massage&#34;"  />
+          <chapter start="01:18:29" title="Kategorie &#34;Hardware&#34;"  />
+          <chapter start="01:18:30" title="&#34;bitty box&#34;"  />
+          <chapter start="01:21:19" title="&#34;gorilla arm&#34;"  />
+          <chapter start="01:24:37" title="&#34;Moore\&#39;s law&#34;"  />
+          <chapter start="01:25:58" title="&#34;Andy\&#39;s and Bill\&#39;s law&#34;"  />
+          <chapter start="01:27:50" title="Kategorie &#34;Grafische Oberflächen&#34;"  />
+          <chapter start="01:27:54" title="&#34;marching ants&#34;"  />
+          <chapter start="01:28:45" title="&#34;menuitis&#34;"  />
+          <chapter start="01:31:12" title="Kategorie &#34;Kryptografie&#34;"  />
+          <chapter start="01:31:16" title="&#34;Alice and Bob&#34;"  />
+          <chapter start="01:33:05" title="Kategorie &#34;Dokumentation&#34;"  />
+          <chapter start="01:33:06" title="&#34;Green\&#39;s theorem&#34;"  />
+          <chapter start="01:33:34" title="&#34;language lawyer&#34;"  />
+          <chapter start="01:35:11" title="&#34;left as an exercise&#34;"  />
+          <chapter start="01:37:11" title="Kategorie &#34;Kommunikation&#34;"  />
+          <chapter start="01:37:28" title="&#34;fnord&#34;"  />
+          <chapter start="01:40:56" title="&#34;Hanlon\&#39;s Razor&#34;"  />
+          <chapter start="01:46:23" title="&#34;highly&#34;"  />
+          <chapter start="01:48:02" title="&#34;Jeopardy-style quoting&#34;"  />
+          <chapter start="01:49:24" title="&#34;meta&#34;"  />
+          <chapter start="01:50:11" title="&#34;metasyntactic variable&#34;"  />
+          <chapter start="01:52:38" title="&#34;meatspace&#34;"  />
+          <chapter start="01:53:47" title="&#34;geek code&#34; kommt ein ander Mal drann"  />
+          <chapter start="01:54:26" title="&#34;Koan&#34;"  />
+          <chapter start="01:55:22" title="&#34;Tom Knight and the Lisp Machine&#34;"  />
+      </chapters>
+      <enclosure length="114826703" url="https://dl.xyrillian.de/noises/stp-050-jargon-file.mp3" type="audio/mpeg"/>
+      <enclosure length="74458165" url="https://dl.xyrillian.de/noises/stp-050-jargon-file.ogg" type="audio/ogg"/>
+      <enclosure length="43062172" url="https://dl.xyrillian.de/noises/stp-050-jargon-file.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/050-jargon-file/</guid>
+    <pubDate>Thu, 01 Feb 2024 22:10:00 GMT</pubDate>
+    <itunes:duration>119:15</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP049: Schadcode</itunes:title>
     <itunes:episode>49</itunes:episode>
     <itunes:season>1</itunes:season>

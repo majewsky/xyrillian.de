@@ -1010,3 +1010,16 @@ files:
       - artist: Jung & Naiv Ultras
         title: "Unsere Cyber Cyber Regierung"
         href: https://www.youtube.com/watch?v=WY6KkRsS26M
+
+  - show: stp
+    episode: 50
+    slug: 050-jargon-file
+    title: Jargon File
+    pubtime: 1706825400 # 2024-02-01
+
+    markdown:
+      description: |
+        In dieser Nichtjubiläumsfolge kümmern wir uns wieder einmal darum, unseren Hörer:innen Nerdkultur näher zu bringen. Dazu ist selbstverständlich nichts besser geeignet als der Ursprung vieler lieb gewonnener Worte und Redewendungen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
