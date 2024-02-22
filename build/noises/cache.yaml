@@ -2964,3 +2964,40 @@ audio_metadata:
     - start_secs: 6922
       end_secs: 7155.737
       title: '"Tom Knight and the Lisp Machine"'
+  stp:051-ablauf-eines-it-angriffs:
+    length_secs: 4592
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-051-ablauf-eines-it-angriffs.mp3
+      size_bytes: 73810984
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-051-ablauf-eines-it-angriffs.ogg
+      size_bytes: 46705461
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-051-ablauf-eines-it-angriffs.opus
+      size_bytes: 28258162
+    chapters:
+    - start_secs: 0
+      end_secs: 44.332
+      title: ttimeless und sein Headset
+    - start_secs: 44.332
+      end_secs: 284
+      title: Intro und Einleitung
+    - start_secs: 284
+      end_secs: 1632
+      title: Topologie eines IT-Angriffs
+    - start_secs: 1632
+      end_secs: 1822
+      title: Privilege Escalation
+    - start_secs: 1822
+      end_secs: 2096
+      title: Lateral Movement
+    - start_secs: 2096
+      end_secs: 3396
+      title: Ziele von IT-Angriffen
+    - start_secs: 3396
+      end_secs: 4592.465
+      title: Die Verteidigerseite

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ablauf eines IT-Angriffs - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #51 vom 22. Februar 2024</h2>
+    <h1>Ablauf eines IT-Angriffs</h1>
+      <p>Im zweiten Teil der ursprünglichen Episode #49 spricht Xyrill nun über den tatsächlichen Ablauf einer Attacke. Außerdem geht es um Motivationen und Gegenmaßnahmen.</p>
+      <p><strong>Länge:</strong> 76:32 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-051-ablauf-eines-it-angriffs.mp3" type="audio/mpeg">
+        <source src="/dl/stp-051-ablauf-eines-it-angriffs.ogg" type="audio/ogg">
+        <source src="/dl/stp-051-ablauf-eines-it-angriffs.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="44.332">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">ttimeless und sein Headset</span>
+      </div>
+      <div class="chapter" data-start="44.332" data-end="284">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:44</span>
+        <span class="chapter-title">Intro und Einleitung</span>
+      </div>
+      <div class="chapter" data-start="284" data-end="1632">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">04:44</span>
+        <span class="chapter-title">Topologie eines IT-Angriffs</span>
+      </div>
+      <div class="chapter" data-start="1632" data-end="1822">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">27:12</span>
+        <span class="chapter-title">Privilege Escalation</span>
+      </div>
+      <div class="chapter" data-start="1822" data-end="2096">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">30:22</span>
+        <span class="chapter-title">Lateral Movement</span>
+      </div>
+      <div class="chapter" data-start="2096" data-end="3396">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">34:56</span>
+        <span class="chapter-title">Ziele von IT-Angriffen</span>
+      </div>
+      <div class="chapter" data-start="3396" data-end="4592.465">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">56:36</span>
+        <span class="chapter-title">Die Verteidigerseite</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-051-ablauf-eines-it-angriffs.mp3">MP3</a> (70,4 MiB)</li>
+          <li><a href="/dl/stp-051-ablauf-eines-it-angriffs.ogg">Ogg Vorbis</a> (44,5 MiB)</li>
+          <li><a href="/dl/stp-051-ablauf-eines-it-angriffs.opus">Opus</a> (26,9 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><blockquote>
+<p>[Unser Arbeitsfeld] heißt &quot;Computer-Sicherheit&quot;, nicht &quot;Computer-Optimismus&quot;. Wir machen uns der schlimmstmöglichen Resultate bewusst, denn auch wenn wir es nicht tun, unsere Gegner werden es auf jeden Fall tun.</p>
+<p>– <a href="https://threadreaderapp.com/thread/1433451378391883782.html">Matthew Green über IT-Sicherheit</a> (übersetzt aus dem Englischen)</p>
+</blockquote>
+<ul>
+<li>
+<p>Topologie eines IT-Angriffs auf ein verteiltes System (z.B. das interne Netz eines Unternehmens oder einer Organisation)</p>
+<ul>
+<li>Erstangriff entweder durch reinen Exploit eines von außen erreichbaren Systemes (z.B. der Firmenwebseite) oder durch Einschleusung eines Exploits mittels <a href="https://de.wikipedia.org/w/index.php?title=Social_Engineering_(Sicherheit)&amp;oldid=233291013">Social Engineering</a> (Manipulation von Menschen mit Zugriff auf das System mit dem Ziel, einen Exploit einzuschleusen oder Informationen wie Passwörter auszuschleusen; z.B. <a href="https://de.wikipedia.org/w/index.php?title=Phishing&amp;oldid=237076459">Phishing</a>)</li>
+<li>basierend auf erstem Zugriff in das System dann <strong>Privilege Escalation</strong> (Verwendung weiterer Exploits, um schrittweise immer weitergehenden Zugriff zu erlangen) und <strong>Lateral Movement</strong> (Ausnutzung des Zugriffs auf ein Teilsystem, um andere verwundbare Systeme im Netzwerk aufzuspüren und anzugreifen)</li>
+</ul>
+</li>
+<li>
+<p>Welche Ziele kann ein IT-Angriff letztendlich verfolgen?</p>
+<ul>
+<li>Datendiebstahl: z.B. Spionage, Wirtschaftsspionage, Erpressung mittels <a href="https://de.wikipedia.org/w/index.php?title=Kompromat&amp;oldid=237791818">Kompromat</a>, <a href="https://de.wikipedia.org/w/index.php?title=Doxing&amp;oldid=237524584">Doxing</a></li>
+<li>Propaganda: z.B. Verbreitung von Desinformation und Fake-News durch gekaperte Accounts von Personen des öffentlichen Lebens</li>
+<li>Datendiebstahl: z.B. Datenbanken von Nutzerdaten (Passwörter, Mail-Adressen, Kontodaten etc.) können für weitere Angriffe und Betrugsversuche vermarktet werden</li>
+<li>Finanzdiebstahl: z.B. Ausnutzung illegitimen Zugriffs auf Bankkonten, Kreditkarten oder auch Konten in virtuellen Währungen</li>
+<li>Sabotage: z.B. Ransomware (Infektion durch Virus oder Trojaner, dann evtl. Lateral Movement, dann Verschlüsselung aller erreichbaren Festplatten und Backups, dann Erpressung von Lösegeld)</li>
+<li>Sabotage: z.B. <a href="https://de.wikipedia.org/w/index.php?title=Stuxnet&amp;oldid=237385358">Stuxnet</a></li>
+</ul>
+</li>
+<li>
+<p>Was kann man auf der Verteidigerseite machen?</p>
+<ul>
+<li>keine Sicherheitslücken haben :)</li>
+<li>Verwendung von sichereren Programmiermethodiken (z.B. moderne Programmiersprachen, die Speicherverwaltungsfehler systematisch verhindern)</li>
+<li>Einsatz von Sandboxing (siehe STP023) und anderen Techniken, um die Privilege Escalation zu erschweren (&quot;Principle of Least Privilege&quot;: jeder Prozess sollte mit den geringsten möglichen Rechten laufen, und jedes Benutzerkonto sollte nur genau die Berechtigungen haben, die für die Erfüllung der jeweiligen legitimen Aufgaben notwendig sind)</li>
+<li>aktive Verteidigungsmaßnahmen wie Virenscanner oder Intrusion-Detection-Software sind umstritten</li>
+<li>allgemeiner: <a href="https://en.wikipedia.org/w/index.php?title=Threat_model&amp;oldid=1177652493">Threat Modeling</a>; das systematische Auflisten von möglichen Angriffen und Schwachstellen, um dann entsprechende Gegenmaßnahmen zu koordinieren</li>
+<li>nach dem Angriff: Attribuierung (die Zuschreibung eines Angriffs zu einem Angreifer) ist zwar oft gewünscht (man hat halt gerne einen Schuldigen, gerade in der politischen Arena), ist aber meist extrem schwer (es ist deutlich einfacher, als Angreifer falsche Fährten zu legen, als sie als Forensiker als solche zu erkennen)</li>
+</ul>
+</li>
+<li>
+<p>weiterführende Quellen</p>
+<ul>
+<li>zu Social Engineering: <a href="https://media.ccc.de/v/36c3-11175-hirne_hacken">Hirne hacken</a></li>
+<li>zu digitalen Waffen und Hackback: <a href="https://media.ccc.de/v/2019-218-wie-hackback-mit-der-gesellschaft-spielt">Wie Hackback mit der Gesellschaft spielt</a></li>
+</ul>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>

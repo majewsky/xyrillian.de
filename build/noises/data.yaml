@@ -1023,3 +1023,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 51
+    slug: 051-ablauf-eines-it-angriffs
+    title: Ablauf eines IT-Angriffs
+    pubtime: 1708560600 # 2024-02-22
+
+    markdown:
+      description: |
+        Im zweiten Teil der ursprünglichen Episode \#49 spricht Xyrill nun über den tatsächlichen Ablauf einer Attacke. Außerdem geht es um Motivationen und Gegenmaßnahmen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

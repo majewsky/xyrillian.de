@@ -27,6 +27,75 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP051: Ablauf eines IT-Angriffs</itunes:title>
+    <itunes:episode>51</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP051: Ablauf eines IT-Angriffs</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Im zweiten Teil der ursprünglichen Episode #49 spricht Xyrill nun über den tatsächlichen Ablauf einer Attacke. Außerdem geht es um Motivationen und Gegenmaßnahmen.</itunes:summary>
+    <description>Im zweiten Teil der ursprünglichen Episode #49 spricht Xyrill nun über den tatsächlichen Ablauf einer Attacke. Außerdem geht es um Motivationen und Gegenmaßnahmen.</description>
+    <content:encoded>&lt;p&gt;Im zweiten Teil der ursprünglichen Episode #49 spricht Xyrill nun über den tatsächlichen Ablauf einer Attacke. Außerdem geht es um Motivationen und Gegenmaßnahmen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;[Unser Arbeitsfeld] heißt &amp;quot;Computer-Sicherheit&amp;quot;, nicht &amp;quot;Computer-Optimismus&amp;quot;. Wir machen uns der schlimmstmöglichen Resultate bewusst, denn auch wenn wir es nicht tun, unsere Gegner werden es auf jeden Fall tun.&lt;/p&gt;
+&lt;p&gt;– &lt;a href=&#34;https://threadreaderapp.com/thread/1433451378391883782.html&#34;&gt;Matthew Green über IT-Sicherheit&lt;/a&gt; (übersetzt aus dem Englischen)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Topologie eines IT-Angriffs auf ein verteiltes System (z.B. das interne Netz eines Unternehmens oder einer Organisation)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Erstangriff entweder durch reinen Exploit eines von außen erreichbaren Systemes (z.B. der Firmenwebseite) oder durch Einschleusung eines Exploits mittels &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Social_Engineering_(Sicherheit)&amp;amp;oldid=233291013&#34;&gt;Social Engineering&lt;/a&gt; (Manipulation von Menschen mit Zugriff auf das System mit dem Ziel, einen Exploit einzuschleusen oder Informationen wie Passwörter auszuschleusen; z.B. &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Phishing&amp;amp;oldid=237076459&#34;&gt;Phishing&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;basierend auf erstem Zugriff in das System dann &lt;strong&gt;Privilege Escalation&lt;/strong&gt; (Verwendung weiterer Exploits, um schrittweise immer weitergehenden Zugriff zu erlangen) und &lt;strong&gt;Lateral Movement&lt;/strong&gt; (Ausnutzung des Zugriffs auf ein Teilsystem, um andere verwundbare Systeme im Netzwerk aufzuspüren und anzugreifen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Welche Ziele kann ein IT-Angriff letztendlich verfolgen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Datendiebstahl: z.B. Spionage, Wirtschaftsspionage, Erpressung mittels &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kompromat&amp;amp;oldid=237791818&#34;&gt;Kompromat&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Doxing&amp;amp;oldid=237524584&#34;&gt;Doxing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Propaganda: z.B. Verbreitung von Desinformation und Fake-News durch gekaperte Accounts von Personen des öffentlichen Lebens&lt;/li&gt;
+&lt;li&gt;Datendiebstahl: z.B. Datenbanken von Nutzerdaten (Passwörter, Mail-Adressen, Kontodaten etc.) können für weitere Angriffe und Betrugsversuche vermarktet werden&lt;/li&gt;
+&lt;li&gt;Finanzdiebstahl: z.B. Ausnutzung illegitimen Zugriffs auf Bankkonten, Kreditkarten oder auch Konten in virtuellen Währungen&lt;/li&gt;
+&lt;li&gt;Sabotage: z.B. Ransomware (Infektion durch Virus oder Trojaner, dann evtl. Lateral Movement, dann Verschlüsselung aller erreichbaren Festplatten und Backups, dann Erpressung von Lösegeld)&lt;/li&gt;
+&lt;li&gt;Sabotage: z.B. &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Stuxnet&amp;amp;oldid=237385358&#34;&gt;Stuxnet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was kann man auf der Verteidigerseite machen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;keine Sicherheitslücken haben :)&lt;/li&gt;
+&lt;li&gt;Verwendung von sichereren Programmiermethodiken (z.B. moderne Programmiersprachen, die Speicherverwaltungsfehler systematisch verhindern)&lt;/li&gt;
+&lt;li&gt;Einsatz von Sandboxing (siehe STP023) und anderen Techniken, um die Privilege Escalation zu erschweren (&amp;quot;Principle of Least Privilege&amp;quot;: jeder Prozess sollte mit den geringsten möglichen Rechten laufen, und jedes Benutzerkonto sollte nur genau die Berechtigungen haben, die für die Erfüllung der jeweiligen legitimen Aufgaben notwendig sind)&lt;/li&gt;
+&lt;li&gt;aktive Verteidigungsmaßnahmen wie Virenscanner oder Intrusion-Detection-Software sind umstritten&lt;/li&gt;
+&lt;li&gt;allgemeiner: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Threat_model&amp;amp;oldid=1177652493&#34;&gt;Threat Modeling&lt;/a&gt;; das systematische Auflisten von möglichen Angriffen und Schwachstellen, um dann entsprechende Gegenmaßnahmen zu koordinieren&lt;/li&gt;
+&lt;li&gt;nach dem Angriff: Attribuierung (die Zuschreibung eines Angriffs zu einem Angreifer) ist zwar oft gewünscht (man hat halt gerne einen Schuldigen, gerade in der politischen Arena), ist aber meist extrem schwer (es ist deutlich einfacher, als Angreifer falsche Fährten zu legen, als sie als Forensiker als solche zu erkennen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;weiterführende Quellen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zu Social Engineering: &lt;a href=&#34;https://media.ccc.de/v/36c3-11175-hirne_hacken&#34;&gt;Hirne hacken&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;zu digitalen Waffen und Hackback: &lt;a href=&#34;https://media.ccc.de/v/2019-218-wie-hackback-mit-der-gesellschaft-spielt&#34;&gt;Wie Hackback mit der Gesellschaft spielt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="ttimeless und sein Headset"  />
+          <chapter start="00:00:44" title="Intro und Einleitung"  />
+          <chapter start="00:04:44" title="Topologie eines IT-Angriffs"  />
+          <chapter start="00:27:12" title="Privilege Escalation"  />
+          <chapter start="00:30:22" title="Lateral Movement"  />
+          <chapter start="00:34:56" title="Ziele von IT-Angriffen"  />
+          <chapter start="00:56:36" title="Die Verteidigerseite"  />
+      </chapters>
+      <enclosure length="73810984" url="https://dl.xyrillian.de/noises/stp-051-ablauf-eines-it-angriffs.mp3" type="audio/mpeg"/>
+      <enclosure length="46705461" url="https://dl.xyrillian.de/noises/stp-051-ablauf-eines-it-angriffs.ogg" type="audio/ogg"/>
+      <enclosure length="28258162" url="https://dl.xyrillian.de/noises/stp-051-ablauf-eines-it-angriffs.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/051-ablauf-eines-it-angriffs/</guid>
+    <pubDate>Thu, 22 Feb 2024 00:10:00 GMT</pubDate>
+    <itunes:duration>76:32</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP050: Jargon File</itunes:title>
     <itunes:episode>50</itunes:episode>
     <itunes:season>1</itunes:season>
