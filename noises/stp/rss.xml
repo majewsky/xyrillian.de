@@ -27,6 +27,93 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP052: TLS im Detail</itunes:title>
+    <itunes:episode>52</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP052: TLS im Detail</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wir steigern den Schwierigkeitsgrad. In dieser Episode wird der Stoff der vorherigen Folgen abgefragt. Dafür können wir dann aber auch die Folge in einer Stunde abfeiern – oder zumindest den ersten Teil.</itunes:summary>
+    <description>Wir steigern den Schwierigkeitsgrad. In dieser Episode wird der Stoff der vorherigen Folgen abgefragt. Dafür können wir dann aber auch die Folge in einer Stunde abfeiern – oder zumindest den ersten Teil.</description>
+    <content:encoded>&lt;p&gt;Wir steigern den Schwierigkeitsgrad. In dieser Episode wird der Stoff der vorherigen Folgen abgefragt. Dafür können wir dann aber auch die Folge in einer Stunde abfeiern – oder zumindest den ersten Teil.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug zu STP048: Transportverschlüsselung vs. Ende-zu-Ende-Verschlüsselung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ende-zu-Ende-Verschlüsselung: zwischen den Endpunkten einer Kommunikation (z.B. im Messenger zwischen Alice und Bob)&lt;/li&gt;
+&lt;li&gt;Transport-Verschlüsselung: entlang eines einzelnen Schrittes des Kommunikationsweges (z.B. im Messenger einmal zwischen Alice und dem Server, und dann einmal zwischen dem Server und Bob)&lt;/li&gt;
+&lt;li&gt;heute reden wir über Transport-Verschlüsselung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Transport_Layer_Security&amp;amp;oldid=237178060&#34;&gt;Transport Layer Security (Sicherheit auf der Transportschicht)&lt;/a&gt;: &amp;quot;ein Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nicht selbst ein vollständiges Protokoll, sondern ein Fundament, dass andere Protokolle als Nutzlast trägt (vgl. STP005: Netzwerkschichten-Modell)&lt;/li&gt;
+&lt;li&gt;Geschichte von TLS: 1994 erste stabile Version als Teil des Netscape-Browsers (unter dem Namen SSL); in den 90ern in schneller Abfolge neue Versionen, seitdem nach Bedarf in unregelmäßigen Abständen; aktuell TLS 1.3 (und 1.2 ist auch hinreichend okay)&lt;/li&gt;
+&lt;li&gt;wir beschreiben jetzt die Struktur des TLS-Protokolls; hierfür sind als notwendiges Vorwissen STP043 (Kryptografische Primitiven) und STP048 (Vertrauen) erforderlich&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TLS Record: zweite und einfachere Phase der Verbindung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;einfach eine symmetrische Verschlüsselung, um die Nutzdaten einzupacken&lt;/li&gt;
+&lt;li&gt;offensichtliches Problem: Wo kommt der symmetrische Schlüssel her?&lt;/li&gt;
+&lt;li&gt;das klingt nach einem Job für asymmetrische Verschlüsselung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TLS Handshake: initiale Aushandlungsphase zu Beginn der Verbindung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;erste Aufgabe: Aushandlung eines symmetrischen Schlüssels -&amp;gt; Diffie-Hellman-Schlüsselaustausch (siehe &lt;a href=&#34;https://media.ccc.de/v/ds21-122-schlsseltechnologie-live-das-diffie-hellman-protokoll&#34;&gt;STP Live&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;zweite Aufgabe: Überprüfung der Identität der Gegenstelle -&amp;gt; digitale Zertifikate (siehe STP048)&lt;/li&gt;
+&lt;li&gt;beide Aufgaben müssen miteinander verbunden werden -&amp;gt; drei (teils überlappende) Phasen&lt;/li&gt;
+&lt;li&gt;Phase 1: Berechnung eines initialen symmetrischen Schlüssels mit Diffie-Hellman, damit Verschlüsselung von Phase 2 und 3&lt;/li&gt;
+&lt;li&gt;Phase 2: Validierung des Server-Zertifikates durch den Client und ggf. des Client-Zertifikates durch den Server&lt;/li&gt;
+&lt;li&gt;Phase 3: Client würfelt den finalen symmetrischen Schlüssel und überträgt diesen verschlüsselt mit dem öffentlichen Schlüssel des Server-Zertifikates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Warum zwei Schlüssel?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;die Art und Weise der Übertragung des finalen Schlüssels stellt sicher, dass der Server den privaten Schlüssel kontrolliert&lt;/li&gt;
+&lt;li&gt;der Handshake-Schlüssel aus Phase 1 stellt sicher, dass auch bei nachträglicher Kompromittierung des privaten Schlüssels des Servers eine mitgeschnittene Verbindung nicht geknackt werden kann (&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Perfect_Forward_Secrecy&amp;amp;oldid=236329042&#34;&gt;Perfect Forward Secrecy/Perfekte Vorwärts-Geheimhaltung&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;eine wesentliche Eigenschaft von TLS: Kryptoagilität&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TLS ist erstmal nur eine Grundstruktur&lt;/li&gt;
+&lt;li&gt;konkrete kryptografische Primitiven sind bis zu einem gewissen Grad gegeneinander austauschbar&lt;/li&gt;
+&lt;li&gt;im Laufe der Zeit Hinzufügung neuentwickelter Primitiven und Abschaffung alter Primitiven&lt;/li&gt;
+&lt;li&gt;Handshake enthält eine Verhandlung, in der Client und Server sich über die zu verwendenen Primitiven handelseinig werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Im Gespräch erwähnt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ARP(Address Resolution Protocol) erklärt im &lt;a href=&#34;https://requestforcomments.de/archives/126?t=3%3A19%3A10&#34;&gt;RFC-Podcast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro-Intro, Intro und Prolog"  />
+          <chapter start="00:02:17" title="Recap STP048"  />
+          <chapter start="00:08:09" title="TLS"  />
+          <chapter start="00:22:29" title="Erforderliches Vorwissen"  />
+          <chapter start="00:24:20" title="TLS Record"  />
+          <chapter start="00:24:56" title="TLS Handshake"  />
+          <chapter start="00:42:09" title="Warum zwei Schlüssel?"  />
+          <chapter start="00:46:47" title="Kryptoagilität"  />
+      </chapters>
+      <enclosure length="54782639" url="https://dl.xyrillian.de/noises/stp-052-tls-im-detail.mp3" type="audio/mpeg"/>
+      <enclosure length="34449162" url="https://dl.xyrillian.de/noises/stp-052-tls-im-detail.ogg" type="audio/ogg"/>
+      <enclosure length="20916694" url="https://dl.xyrillian.de/noises/stp-052-tls-im-detail.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/052-tls-im-detail/</guid>
+    <pubDate>Thu, 14 Mar 2024 20:15:00 GMT</pubDate>
+    <itunes:duration>56:43</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP051: Ablauf eines IT-Angriffs</itunes:title>
     <itunes:episode>51</itunes:episode>
     <itunes:season>1</itunes:season>

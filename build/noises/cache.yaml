@@ -3001,3 +3001,43 @@ audio_metadata:
     - start_secs: 3396
       end_secs: 4592.465
       title: Die Verteidigerseite
+  stp:052-tls-im-detail:
+    length_secs: 3403
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-052-tls-im-detail.mp3
+      size_bytes: 54782639
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-052-tls-im-detail.ogg
+      size_bytes: 34449162
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-052-tls-im-detail.opus
+      size_bytes: 20916694
+    chapters:
+    - start_secs: 0
+      end_secs: 137
+      title: Intro-Intro, Intro und Prolog
+    - start_secs: 137
+      end_secs: 489
+      title: Recap STP048
+    - start_secs: 489
+      end_secs: 1349
+      title: TLS
+    - start_secs: 1349
+      end_secs: 1460
+      title: Erforderliches Vorwissen
+    - start_secs: 1460
+      end_secs: 1496
+      title: TLS Record
+    - start_secs: 1496
+      end_secs: 2529
+      title: TLS Handshake
+    - start_secs: 2529
+      end_secs: 2807
+      title: Warum zwei Schlüssel?
+    - start_secs: 2807
+      end_secs: 3403.2
+      title: Kryptoagilität

@@ -1036,3 +1036,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 52
+    slug: 052-tls-im-detail
+    title: TLS im Detail
+    pubtime: 1710447300 # 2024-03-14
+
+    markdown:
+      description: |
+        Wir steigern den Schwierigkeitsgrad. In dieser Episode wird der Stoff der vorherigen Folgen abgefragt. Dafür können wir dann aber auch die Folge in einer Stunde abfeiern &ndash; oder zumindest den ersten Teil.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

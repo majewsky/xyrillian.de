@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TLS im Detail - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #52 vom 14. März 2024</h2>
+    <h1>TLS im Detail</h1>
+      <p>Wir steigern den Schwierigkeitsgrad. In dieser Episode wird der Stoff der vorherigen Folgen abgefragt. Dafür können wir dann aber auch die Folge in einer Stunde abfeiern – oder zumindest den ersten Teil.</p>
+      <p><strong>Länge:</strong> 56:43 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-052-tls-im-detail.mp3" type="audio/mpeg">
+        <source src="/dl/stp-052-tls-im-detail.ogg" type="audio/ogg">
+        <source src="/dl/stp-052-tls-im-detail.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="137">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro-Intro, Intro und Prolog</span>
+      </div>
+      <div class="chapter" data-start="137" data-end="489">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">02:17</span>
+        <span class="chapter-title">Recap STP048</span>
+      </div>
+      <div class="chapter" data-start="489" data-end="1349">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">08:09</span>
+        <span class="chapter-title">TLS</span>
+      </div>
+      <div class="chapter" data-start="1349" data-end="1460">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">22:29</span>
+        <span class="chapter-title">Erforderliches Vorwissen</span>
+      </div>
+      <div class="chapter" data-start="1460" data-end="1496">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">24:20</span>
+        <span class="chapter-title">TLS Record</span>
+      </div>
+      <div class="chapter" data-start="1496" data-end="2529">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">24:56</span>
+        <span class="chapter-title">TLS Handshake</span>
+      </div>
+      <div class="chapter" data-start="2529" data-end="2807">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">42:09</span>
+        <span class="chapter-title">Warum zwei Schlüssel?</span>
+      </div>
+      <div class="chapter" data-start="2807" data-end="3403.2">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">46:47</span>
+        <span class="chapter-title">Kryptoagilität</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-052-tls-im-detail.mp3">MP3</a> (52,2 MiB)</li>
+          <li><a href="/dl/stp-052-tls-im-detail.ogg">Ogg Vorbis</a> (32,9 MiB)</li>
+          <li><a href="/dl/stp-052-tls-im-detail.opus">Opus</a> (19,9 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p>Rückbezug zu STP048: Transportverschlüsselung vs. Ende-zu-Ende-Verschlüsselung</p>
+<ul>
+<li>Ende-zu-Ende-Verschlüsselung: zwischen den Endpunkten einer Kommunikation (z.B. im Messenger zwischen Alice und Bob)</li>
+<li>Transport-Verschlüsselung: entlang eines einzelnen Schrittes des Kommunikationsweges (z.B. im Messenger einmal zwischen Alice und dem Server, und dann einmal zwischen dem Server und Bob)</li>
+<li>heute reden wir über Transport-Verschlüsselung</li>
+</ul>
+</li>
+<li>
+<p><a href="https://de.wikipedia.org/w/index.php?title=Transport_Layer_Security&amp;oldid=237178060">Transport Layer Security (Sicherheit auf der Transportschicht)</a>: &quot;ein Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet&quot;</p>
+<ul>
+<li>nicht selbst ein vollständiges Protokoll, sondern ein Fundament, dass andere Protokolle als Nutzlast trägt (vgl. STP005: Netzwerkschichten-Modell)</li>
+<li>Geschichte von TLS: 1994 erste stabile Version als Teil des Netscape-Browsers (unter dem Namen SSL); in den 90ern in schneller Abfolge neue Versionen, seitdem nach Bedarf in unregelmäßigen Abständen; aktuell TLS 1.3 (und 1.2 ist auch hinreichend okay)</li>
+<li>wir beschreiben jetzt die Struktur des TLS-Protokolls; hierfür sind als notwendiges Vorwissen STP043 (Kryptografische Primitiven) und STP048 (Vertrauen) erforderlich</li>
+</ul>
+</li>
+<li>
+<p>TLS Record: zweite und einfachere Phase der Verbindung</p>
+<ul>
+<li>einfach eine symmetrische Verschlüsselung, um die Nutzdaten einzupacken</li>
+<li>offensichtliches Problem: Wo kommt der symmetrische Schlüssel her?</li>
+<li>das klingt nach einem Job für asymmetrische Verschlüsselung</li>
+</ul>
+</li>
+<li>
+<p>TLS Handshake: initiale Aushandlungsphase zu Beginn der Verbindung</p>
+<ul>
+<li>erste Aufgabe: Aushandlung eines symmetrischen Schlüssels -&gt; Diffie-Hellman-Schlüsselaustausch (siehe <a href="https://media.ccc.de/v/ds21-122-schlsseltechnologie-live-das-diffie-hellman-protokoll">STP Live</a>)</li>
+<li>zweite Aufgabe: Überprüfung der Identität der Gegenstelle -&gt; digitale Zertifikate (siehe STP048)</li>
+<li>beide Aufgaben müssen miteinander verbunden werden -&gt; drei (teils überlappende) Phasen</li>
+<li>Phase 1: Berechnung eines initialen symmetrischen Schlüssels mit Diffie-Hellman, damit Verschlüsselung von Phase 2 und 3</li>
+<li>Phase 2: Validierung des Server-Zertifikates durch den Client und ggf. des Client-Zertifikates durch den Server</li>
+<li>Phase 3: Client würfelt den finalen symmetrischen Schlüssel und überträgt diesen verschlüsselt mit dem öffentlichen Schlüssel des Server-Zertifikates</li>
+</ul>
+</li>
+<li>
+<p>Warum zwei Schlüssel?</p>
+<ul>
+<li>die Art und Weise der Übertragung des finalen Schlüssels stellt sicher, dass der Server den privaten Schlüssel kontrolliert</li>
+<li>der Handshake-Schlüssel aus Phase 1 stellt sicher, dass auch bei nachträglicher Kompromittierung des privaten Schlüssels des Servers eine mitgeschnittene Verbindung nicht geknackt werden kann (<a href="https://de.wikipedia.org/w/index.php?title=Perfect_Forward_Secrecy&amp;oldid=236329042">Perfect Forward Secrecy/Perfekte Vorwärts-Geheimhaltung</a>)</li>
+</ul>
+</li>
+<li>
+<p>eine wesentliche Eigenschaft von TLS: Kryptoagilität</p>
+<ul>
+<li>TLS ist erstmal nur eine Grundstruktur</li>
+<li>konkrete kryptografische Primitiven sind bis zu einem gewissen Grad gegeneinander austauschbar</li>
+<li>im Laufe der Zeit Hinzufügung neuentwickelter Primitiven und Abschaffung alter Primitiven</li>
+<li>Handshake enthält eine Verhandlung, in der Client und Server sich über die zu verwendenen Primitiven handelseinig werden</li>
+</ul>
+</li>
+<li>
+<p>Im Gespräch erwähnt:</p>
+<ul>
+<li>ARP(Address Resolution Protocol) erklärt im <a href="https://requestforcomments.de/archives/126?t=3%3A19%3A10">RFC-Podcast</a></li>
+</ul>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>
