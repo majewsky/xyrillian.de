@@ -1,0 +1,59 @@
+- Gewerksabgrenzung
+    - [Drechsler](https://de.wikipedia.org/w/index.php?title=Drechsler&oldid=239535524): Holzgewerk, Kunsthandwerk: Stellt Drehteile aus Holz, Kunststoffen, Bein, Elfenbein, Horn, … her
+    - [Holzbildhauer](https://de.wikipedia.org/w/index.php?title=Bildschnitzer&oldid=240062684): stellt Skulpturen aus Holz sowie Verzierungen an hölzernen Bauelementen oder Einrichtungsgegenständen her
+    - [Zimmerer](https://de.wikipedia.org/w/index.php?title=Zimmerer&oldid=239694556): Holzgewerk, Bauberuf (Bauhauptgewerbe); stellt Bauwerksteile her, z.B. Dachkonstruktionen, Rohbauten (Fachwerk, Holzrahmenbau, Blockbauweise, …), Balkone, Innenausbau (Böden, Treppen, Holzdecken, Wandverkleidungen), …
+    - [Stellmacher/Wagner](https://de.wikipedia.org/w/index.php?title=Stellmacherei&oldid=238703281): Holzgewerk; stellt Räder, Wagen, landwirtschaftliche Geräte, … her
+    - [Tischler/Schreiner](https://de.wikipedia.org/w/index.php?title=Tischler&oldid=237362464): "… Handwerk, welches sich auf die schneidende, fügende oder veredelnde Verarbeitung von Holz und Holzwerkstoffen spezialisiert hat." Stellt Bauelemente (Fenster, Türen, …), Möbel, Innenausbauten (Böden, Treppen, Holzdecken, Wandverkleidungen wie [Lambris](https://de.wikipedia.org/w/index.php?title=Lambris&oldid=230573352), …), … her.
+    - Die Abspaltung der Tischler vom Zimmererberuf wurde ab dem 14. Jahrhundert durch Bildung von Zünften vorangetrieben.
+    - Siehe hierzu auch [Liste der Handwerksberufe: Holzhandwerke](https://de.wikipedia.org/w/index.php?title=Liste_von_Handwerksberufen&oldid=239736921#Holzhandwerk)
+
+- Materialien
+    - Verschiedene einheimische und importierte Hölzer als:
+        - Massivholz (hauptsächlich in Form von Brettern oder Bohlen)
+        - [Furnier](https://de.wikipedia.org/w/index.php?title=Furnier&oldid=239291097)
+    - Holzwerkstoffe (haupsächlich Plattenwerkstoffe) z.B.
+        - Platten auf Massivholzbasis
+            - Brettsperrholz (z.B. Dreischichtplatte)
+            - [Brettschichtholz](https://de.wikipedia.org/wiki/Brettschichtholz)
+            - [Stabsperrholz (Tischlerplatte)](https://de.wikipedia.org/wiki/Stabsperrholz)
+            - …
+        - Furnierholzwerkstoffe
+            - [Furniersperrholz](https://de.wikipedia.org/wiki/Furniersperrholz)
+            - [Furnierstreifenholz](https://de.wikipedia.org/wiki/Furnierstreifenholz)
+            - [Furnierschichtholz](https://de.wikipedia.org/wiki/Furnierschichtholz)
+            - [Biegesperrholz](https://de.wikipedia.org/wiki/Biegesperrholz)
+            - …
+        - [Spanplatten](https://de.wikipedia.org/wiki/Spanplatte)
+            - Flachpressplatten
+            - [Strangpressplatten](https://de.wikipedia.org/wiki/Strangpressplatte)
+            - [OSB (Oriented Strand Board)](https://de.wikipedia.org/wiki/Grobspanplatte)
+            - …
+        - Holzfaserplatten
+            - [MDF (Mitteldichte Faserplatte)](https://de.wikipedia.org/wiki/Mitteldichte_Holzfaserplatte)
+            - ["Hartfaserplatte"](https://de.wikipedia.org/wiki/Harte_Faserplatte)
+            - [Holzfaserdämmplatte](https://de.wikipedia.org/wiki/Holzfaserd%C3%A4mmplatte)
+            - …
+    - Kunststoffe
+        - Plexiglas (oder allgemeiner durchsichtige oder trübe Kunststoffplatten)
+        - [Corian](https://de.wikipedia.org/wiki/Corian_(DuPont))
+        - Epoxidharz
+        - …
+    - Metall, z.B. in Form von Beschlägen
+    - Mineralische Werkstoffe
+
+- Fachrichtungen
+    - Möbeltischler: Herstellung und Montage von mobilen und Einbaumöbeln
+    - Bautischler: Herstellung und Montage von Bauelementen
+    - Treppenbau: Herstellung und Belag von Treppen sowie Geländern und Brüstungen
+    - Innenausbau: Erstellung von bewohnbaren Raumoberflächen auf Basis des Rohbaus
+    - Ladenbau: Erstellung und Einrichtung von Verkaufspräsentationsflächen inkl. z.B. Kassenbereich
+    - Montagebetriebe: Montage vorwiegend von Bauelementen auf Baustellen ohne umfangreiche Fertigungsstätten
+    - Bodenleger: Verlegen und Aufarbeiten von Parkett-, Dielen-, Laminat- und anderen Böden
+    - (Messebau)
+    - Billardbau
+    - Zaunbau
+    - …
+
+- Rausschmeißer: In eigener Sache
+    - Postkarten eingetroffen aus Berlin, Rheinland-Pfalz, dem Kanton Zürich und vom Kongress -- Bitte weiter so. :)
+    - Wir nehmen auch gute Bewertungen bei Apple Podcasts etc.

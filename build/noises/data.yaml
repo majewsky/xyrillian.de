@@ -1049,3 +1049,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 53
+    slug: 053-lieber-was-mit-holz
+    title: Lieber was mit Holz
+    pubtime: 1712261100 # 2024-04-04
+
+    markdown:
+      description: |
+        Diesmal hat Xyrill kein Bock mehr auf den Computermist und ttimeless erzählt stattdessen etwas über die ehrliche Arbeit des Handwerkers. Oder zumindest einiger Handwerker.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

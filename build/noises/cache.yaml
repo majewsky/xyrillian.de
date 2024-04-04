@@ -3041,3 +3041,70 @@ audio_metadata:
     - start_secs: 2807
       end_secs: 3403.2
       title: Kryptoagilität
+  stp:053-lieber-was-mit-holz:
+    length_secs: 5367
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-053-lieber-was-mit-holz.mp3
+      size_bytes: 86213582
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-053-lieber-was-mit-holz.ogg
+      size_bytes: 52303229
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-053-lieber-was-mit-holz.opus
+      size_bytes: 31117370
+    chapters:
+    - start_secs: 0
+      end_secs: 131.082
+      title: Intro
+    - start_secs: 131.082
+      end_secs: 159.861
+      title: Gewerksabgrenzung
+    - start_secs: 159.861
+      end_secs: 295.231
+      title: Drechsler
+    - start_secs: 295.231
+      end_secs: 522.103
+      title: Holzbildhauer
+    - start_secs: 522.103
+      end_secs: 778.708
+      title: Zimmerer
+    - start_secs: 778.708
+      end_secs: 991.037
+      title: Stellmacher
+    - start_secs: 991.037
+      end_secs: 1796.08
+      title: Tischler/Schreiner
+    - start_secs: 1796.08
+      end_secs: 2102.919
+      title: Materialien
+    - start_secs: 2102.919
+      end_secs: 2540.042
+      title: Platten auf Massivholzbasis
+    - start_secs: 2540.042
+      end_secs: 2911.277
+      title: Furnierholzwerkstoffe
+    - start_secs: 2911.277
+      end_secs: 3502.884
+      title: Spanplatten
+    - start_secs: 3502.884
+      end_secs: 3839.192
+      title: Holzfaserplatten
+    - start_secs: 3839.192
+      end_secs: 4075.994
+      title: Kuststoffe
+    - start_secs: 4075.994
+      end_secs: 4186.325
+      title: Der Rest
+    - start_secs: 4186.325
+      end_secs: 4661.933
+      title: Warum Holz?
+    - start_secs: 4661.933
+      end_secs: 5222.171
+      title: Fachrichtungen
+    - start_secs: 5222.171
+      end_secs: 5367.589
+      title: Postkarten
