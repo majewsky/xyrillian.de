@@ -27,6 +27,84 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP054: TLS als Ganzes</itunes:title>
+    <itunes:episode>54</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP054: TLS als Ganzes</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nach unserem kleinen Ausflug in fremdes Fach kehren wir heute zurück zu TLS. Dabei soll es diesmal mehr um einen Blick aufs Ganze gehen – und um die Identität der Entität.</itunes:summary>
+    <description>Nach unserem kleinen Ausflug in fremdes Fach kehren wir heute zurück zu TLS. Dabei soll es diesmal mehr um einen Blick aufs Ganze gehen – und um die Identität der Entität.</description>
+    <content:encoded>&lt;p&gt;Nach unserem kleinen Ausflug in fremdes Fach kehren wir heute zurück zu TLS. Dabei soll es diesmal mehr um einen Blick aufs Ganze gehen – und um die Identität der Entität.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Feedback per Mail:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bei ca. 8 Minuten sagst du, das ein 64-Bit-Prozessor eine Adressbreite von 64 Bit hat, 32 Bit etc. analog. Das stimmt so nicht. Die Zahl gibt die Datenbreite an, nicht die Adressbreite (und damit auch die Registerbreite). Ein aktueller 64 Bit amd64 Prozessor kann max. 48 Bit adressieren (siehe /proc/cpuinfo, bzw. die Länge deiner Adressen in der maps Ausgabe). Der 286er konnte 20 bit Adressbreite, obwohl es ein 16-Bit-Prozessor war – Ich weiss nicht, ob du die Rumfummelei mit den Segmentregistern noch machen musstest. ;) Bei den 32-Bit-Prozessoren hat es übereingestimmt.&lt;/p&gt;
+&lt;p&gt;Ca 14 Minuten: Das Programm muss nicht komplett im Speicher liegen, sondern nur Teil, der abgearbeitet wird. Heute eventuell unüblich, aber früher war es durchaus so, das Programmteile während der Ausführung nachgeladen wurden und dann andere, gerade nicht benutzte Programmteile ersetzt haben.&lt;/p&gt;
+&lt;p&gt;Bei den 8-Bit-Spielekonsolen teilweise mit per Software umschaltbaren Speicherseiten des Game-ROMs, als z.B. das von einem 64k-ROM immer nur 16k-Blöcke für den Prozessor sichtbar waren (und die gleichen Adressen benutzt haben) und per IO-Befehl die Speicherseiten vom Programm gewechselt werden konnten, da ansonsten der Adressraum nicht ausgereicht hätte.&lt;/p&gt;
+&lt;p&gt;Stack: Soweit ich weiss, ist der Stack nicht wirklich hart beschränkt, sondern nur über das eingestellte ulimit. Bis zu diesem (änderbarem) Limit wird der dynamisch zur Laufzeit verwaltet und ggf. vergrößert.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Xyrill nimmt die Ausführungen wohlwollend zur Kenntnis, sieht sich jedoch nicht gezwungen, seine Position zu revidieren. Nun zum eigentlichen Thema:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Wo kriegt man Zertifikate her?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rückblick auf STP048: Zertifikate sind signiert von übergeordneten Zertifikaten (&lt;strong&gt;Zertifikatsautoritäten&lt;/strong&gt;, CA), wodurch sich eine Kette bis hoch zu einem &lt;strong&gt;Wurzelzertifikat&lt;/strong&gt; (Root-CA) aufbaut&lt;/li&gt;
+&lt;li&gt;Clientzertifikate werden durch eine Stelle ausgegeben, der der Server vertraut (z.B. in Unternehmensnetzwerken eine CA unter der Obhut der Unternehmens-IT)&lt;/li&gt;
+&lt;li&gt;für Serverzertifikate enthält der Browser bzw. das Betriebssystem eine Liste von vertrauenswürdigen Root-CAs -&amp;gt; Wie kann man eine Root-CA werden?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=CA/Browser_Forum&amp;amp;oldid=235926243&#34;&gt;CA/Browser Forum&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verein von Browser-Herstellern und Root-CA-Betreibern zur Selbstregulierung der Anforderungen an Browser und Root-CAs&lt;/li&gt;
+&lt;li&gt;Root-CAs, die gegen die entsprechenden Sicherheits- und Transparenzregeln verstoßen, wird von den Browsern das Vertrauen entzogen, was deren Geschäftsgrundlage entzieht (siehe z.B. &lt;a href=&#34;https://wiki.mozilla.org/CA/Symantec_Issues&#34;&gt;diese tolle lange Liste von Vorfällen mit Symantec-CAs, die Mozilla dokumentiert hat&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;eine sehr bekannte Root-CA: &lt;a href=&#34;https://www.abetterinternet.org/&#34;&gt;ISRG (Internet Security Research Group)&lt;/a&gt; unter dem Markennamen &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&#39;s Encrypt&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Situation vor 2013: TLS-Zertifikate kosten Geld und werden im Prinzip nur von Firmenwebseiten gekauft (Teufelskreis: teuer -&amp;gt; kleine Kundschaft -&amp;gt; keine Skaleneffekte -&amp;gt; teuer)&lt;/li&gt;
+&lt;li&gt;2013: Snowden-Enthüllungen (&lt;a href=&#34;https://c3d2.de/news/pentaradio24-20230725.html&#34;&gt;Pentaradio berichtete neulich über das 10-jährige Jubiläum&lt;/a&gt;) -&amp;gt; Erkenntnis: wir brauchen mehr Verschlüsselung im Internet&lt;/li&gt;
+&lt;li&gt;2015: ISRG bietet mit Let&#39;s Encrypt automatisierbare und kostenlose TLS-Zertifikate für Jedermann&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was tun nach einem IT-Angriff, wenn ein Server-Zertifikat kompromittiert wurde?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zertifikate können der CA als gestohlen gemeldet werden&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Online_Certificate_Status_Protocol&amp;amp;oldid=235873169&#34;&gt;Online Certificate Status Protocol (OCSP)&lt;/a&gt;: Protokoll für die Abfrage von Rückzugsanzeigen (dem digitalen Äquivalent von Diebstahlsmeldungen)&lt;/li&gt;
+&lt;li&gt;Probleme: wenn das die Clients machen, überlastet es die kleinen CAs und die großen CAs könnten damit wunderbar #Datenspuren sammeln&lt;/li&gt;
+&lt;li&gt;OCSP-Stapling (&amp;quot;OCSP-Tackern&amp;quot;): der Server lässt sich alle paar Minuten per OCSP bescheinigen, dass das eigene Zertifikat noch nicht zurückgezogen wurde, und tackert das an alle TLS-Handshakes ran&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Angriffe auf TLS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;grundsätzlich alle Angriffe auf einzelne Primitiven sowie die Interaktion bestimmter Primitiven miteinander im Rahmen von TLS -&amp;gt; das geht uns zu sehr ins Detail, ist aber einer der Hauptgründe für die fortwährende Weiterentwicklung des Protokolls&lt;/li&gt;
+&lt;li&gt;Implementierungsfehler (z.B. Heartbleed, siehe STP037)&lt;/li&gt;
+&lt;li&gt;Downgrade-Angriffe: Kryptoagilität ausnutzen, um die anderen Teilnehmer zu einer weniger starken Verschlüsselung zu überreden; z.B. auch durch Machine-in-the-Middle (MITM), weswegen die Verschlüsselung schon der allerersten Handshake-Schritte so wichtig ist&lt;/li&gt;
+&lt;li&gt;Export-Downgrade: Spezialform des Downgrade-Angriffs, der die anderen Teilnehmer auf eine extrem schwache Exportverschlüsselung herunterzieht (bewusst schwache Verschlüsselungen aus der Zeit vor dem &lt;a href=&#34;https://de.wikipedia.org/wiki/Wassenaar-Abkommen&#34;&gt;Wassenaar-Abkommen&lt;/a&gt;, als starke Verschlüsselung noch als exportlimitierte Militärtechnik eingestuft war)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Feedback zu STP045"  />
+          <chapter start="00:05:16" title="Intro und Einstieg"  />
+          <chapter start="00:06:54" title="Rückblick"  />
+          <chapter start="00:19:04" title="CA/Browser Forum"  />
+          <chapter start="00:32:47" title="Kompromittierte Zertifikate"  />
+          <chapter start="00:37:30" title="ISRG (Internet Security Research Group)"  />
+          <chapter start="00:44:17" title="Angriffe auf TLS"  />
+      </chapters>
+      <enclosure length="52864912" url="https://dl.xyrillian.de/noises/stp-054-tls-als-ganzes.mp3" type="audio/mpeg"/>
+      <enclosure length="33109650" url="https://dl.xyrillian.de/noises/stp-054-tls-als-ganzes.ogg" type="audio/ogg"/>
+      <enclosure length="20106742" url="https://dl.xyrillian.de/noises/stp-054-tls-als-ganzes.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/054-tls-als-ganzes/</guid>
+    <pubDate>Thu, 25 Apr 2024 19:00:00 GMT</pubDate>
+    <itunes:duration>54:43</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP053: Lieber was mit Holz</itunes:title>
     <itunes:episode>53</itunes:episode>
     <itunes:season>1</itunes:season>

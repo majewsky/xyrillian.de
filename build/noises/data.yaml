@@ -1062,3 +1062,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 54
+    slug: 054-tls-als-ganzes
+    title: TLS als Ganzes
+    pubtime: 1714071600 # 2024-04-25
+
+    markdown:
+      description: |
+        Nach unserem kleinen Ausflug in fremdes Fach kehren wir heute zurück zu TLS. Dabei soll es diesmal mehr um einen Blick aufs Ganze gehen &ndash; und um die Identität der Entität.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

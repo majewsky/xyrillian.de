@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TLS als Ganzes - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #54 vom 25. April 2024</h2>
+    <h1>TLS als Ganzes</h1>
+      <p>Nach unserem kleinen Ausflug in fremdes Fach kehren wir heute zurück zu TLS. Dabei soll es diesmal mehr um einen Blick aufs Ganze gehen – und um die Identität der Entität.</p>
+      <p><strong>Länge:</strong> 54:43 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-054-tls-als-ganzes.mp3" type="audio/mpeg">
+        <source src="/dl/stp-054-tls-als-ganzes.ogg" type="audio/ogg">
+        <source src="/dl/stp-054-tls-als-ganzes.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="316">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Feedback zu STP045</span>
+      </div>
+      <div class="chapter" data-start="316" data-end="414">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">05:16</span>
+        <span class="chapter-title">Intro und Einstieg</span>
+      </div>
+      <div class="chapter" data-start="414" data-end="1144">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">06:54</span>
+        <span class="chapter-title">Rückblick</span>
+      </div>
+      <div class="chapter" data-start="1144" data-end="1967">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">19:04</span>
+        <span class="chapter-title">CA/Browser Forum</span>
+      </div>
+      <div class="chapter" data-start="1967" data-end="2250">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">32:47</span>
+        <span class="chapter-title">Kompromittierte Zertifikate</span>
+      </div>
+      <div class="chapter" data-start="2250" data-end="2657">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">37:30</span>
+        <span class="chapter-title">ISRG (Internet Security Research Group)</span>
+      </div>
+      <div class="chapter" data-start="2657" data-end="3283.328">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">44:17</span>
+        <span class="chapter-title">Angriffe auf TLS</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-054-tls-als-ganzes.mp3">MP3</a> (50,4 MiB)</li>
+          <li><a href="/dl/stp-054-tls-als-ganzes.ogg">Ogg Vorbis</a> (31,6 MiB)</li>
+          <li><a href="/dl/stp-054-tls-als-ganzes.opus">Opus</a> (19,2 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p>Feedback per Mail:</p>
+<blockquote>
+<p>Bei ca. 8 Minuten sagst du, das ein 64-Bit-Prozessor eine Adressbreite von 64 Bit hat, 32 Bit etc. analog. Das stimmt so nicht. Die Zahl gibt die Datenbreite an, nicht die Adressbreite (und damit auch die Registerbreite). Ein aktueller 64 Bit amd64 Prozessor kann max. 48 Bit adressieren (siehe /proc/cpuinfo, bzw. die Länge deiner Adressen in der maps Ausgabe). Der 286er konnte 20 bit Adressbreite, obwohl es ein 16-Bit-Prozessor war – Ich weiss nicht, ob du die Rumfummelei mit den Segmentregistern noch machen musstest. ;) Bei den 32-Bit-Prozessoren hat es übereingestimmt.</p>
+<p>Ca 14 Minuten: Das Programm muss nicht komplett im Speicher liegen, sondern nur Teil, der abgearbeitet wird. Heute eventuell unüblich, aber früher war es durchaus so, das Programmteile während der Ausführung nachgeladen wurden und dann andere, gerade nicht benutzte Programmteile ersetzt haben.</p>
+<p>Bei den 8-Bit-Spielekonsolen teilweise mit per Software umschaltbaren Speicherseiten des Game-ROMs, als z.B. das von einem 64k-ROM immer nur 16k-Blöcke für den Prozessor sichtbar waren (und die gleichen Adressen benutzt haben) und per IO-Befehl die Speicherseiten vom Programm gewechselt werden konnten, da ansonsten der Adressraum nicht ausgereicht hätte.</p>
+<p>Stack: Soweit ich weiss, ist der Stack nicht wirklich hart beschränkt, sondern nur über das eingestellte ulimit. Bis zu diesem (änderbarem) Limit wird der dynamisch zur Laufzeit verwaltet und ggf. vergrößert.</p>
+</blockquote>
+<p>Xyrill nimmt die Ausführungen wohlwollend zur Kenntnis, sieht sich jedoch nicht gezwungen, seine Position zu revidieren. Nun zum eigentlichen Thema:</p>
+<ul>
+<li>
+<p>Wo kriegt man Zertifikate her?</p>
+<ul>
+<li>Rückblick auf STP048: Zertifikate sind signiert von übergeordneten Zertifikaten (<strong>Zertifikatsautoritäten</strong>, CA), wodurch sich eine Kette bis hoch zu einem <strong>Wurzelzertifikat</strong> (Root-CA) aufbaut</li>
+<li>Clientzertifikate werden durch eine Stelle ausgegeben, der der Server vertraut (z.B. in Unternehmensnetzwerken eine CA unter der Obhut der Unternehmens-IT)</li>
+<li>für Serverzertifikate enthält der Browser bzw. das Betriebssystem eine Liste von vertrauenswürdigen Root-CAs -&gt; Wie kann man eine Root-CA werden?</li>
+</ul>
+</li>
+<li>
+<p><a href="https://de.wikipedia.org/w/index.php?title=CA/Browser_Forum&amp;oldid=235926243">CA/Browser Forum</a></p>
+<ul>
+<li>Verein von Browser-Herstellern und Root-CA-Betreibern zur Selbstregulierung der Anforderungen an Browser und Root-CAs</li>
+<li>Root-CAs, die gegen die entsprechenden Sicherheits- und Transparenzregeln verstoßen, wird von den Browsern das Vertrauen entzogen, was deren Geschäftsgrundlage entzieht (siehe z.B. <a href="https://wiki.mozilla.org/CA/Symantec_Issues">diese tolle lange Liste von Vorfällen mit Symantec-CAs, die Mozilla dokumentiert hat</a>)</li>
+</ul>
+</li>
+<li>
+<p>eine sehr bekannte Root-CA: <a href="https://www.abetterinternet.org/">ISRG (Internet Security Research Group)</a> unter dem Markennamen <a href="https://letsencrypt.org/">Let's Encrypt</a></p>
+<ul>
+<li>Situation vor 2013: TLS-Zertifikate kosten Geld und werden im Prinzip nur von Firmenwebseiten gekauft (Teufelskreis: teuer -&gt; kleine Kundschaft -&gt; keine Skaleneffekte -&gt; teuer)</li>
+<li>2013: Snowden-Enthüllungen (<a href="https://c3d2.de/news/pentaradio24-20230725.html">Pentaradio berichtete neulich über das 10-jährige Jubiläum</a>) -&gt; Erkenntnis: wir brauchen mehr Verschlüsselung im Internet</li>
+<li>2015: ISRG bietet mit Let's Encrypt automatisierbare und kostenlose TLS-Zertifikate für Jedermann</li>
+</ul>
+</li>
+<li>
+<p>Was tun nach einem IT-Angriff, wenn ein Server-Zertifikat kompromittiert wurde?</p>
+<ul>
+<li>Zertifikate können der CA als gestohlen gemeldet werden</li>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Online_Certificate_Status_Protocol&amp;oldid=235873169">Online Certificate Status Protocol (OCSP)</a>: Protokoll für die Abfrage von Rückzugsanzeigen (dem digitalen Äquivalent von Diebstahlsmeldungen)</li>
+<li>Probleme: wenn das die Clients machen, überlastet es die kleinen CAs und die großen CAs könnten damit wunderbar #Datenspuren sammeln</li>
+<li>OCSP-Stapling (&quot;OCSP-Tackern&quot;): der Server lässt sich alle paar Minuten per OCSP bescheinigen, dass das eigene Zertifikat noch nicht zurückgezogen wurde, und tackert das an alle TLS-Handshakes ran</li>
+</ul>
+</li>
+<li>
+<p>Angriffe auf TLS</p>
+<ul>
+<li>grundsätzlich alle Angriffe auf einzelne Primitiven sowie die Interaktion bestimmter Primitiven miteinander im Rahmen von TLS -&gt; das geht uns zu sehr ins Detail, ist aber einer der Hauptgründe für die fortwährende Weiterentwicklung des Protokolls</li>
+<li>Implementierungsfehler (z.B. Heartbleed, siehe STP037)</li>
+<li>Downgrade-Angriffe: Kryptoagilität ausnutzen, um die anderen Teilnehmer zu einer weniger starken Verschlüsselung zu überreden; z.B. auch durch Machine-in-the-Middle (MITM), weswegen die Verschlüsselung schon der allerersten Handshake-Schritte so wichtig ist</li>
+<li>Export-Downgrade: Spezialform des Downgrade-Angriffs, der die anderen Teilnehmer auf eine extrem schwache Exportverschlüsselung herunterzieht (bewusst schwache Verschlüsselungen aus der Zeit vor dem <a href="https://de.wikipedia.org/wiki/Wassenaar-Abkommen">Wassenaar-Abkommen</a>, als starke Verschlüsselung noch als exportlimitierte Militärtechnik eingestuft war)</li>
+</ul>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>

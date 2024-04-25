@@ -3108,3 +3108,40 @@ audio_metadata:
     - start_secs: 5222.171
       end_secs: 5367.589
       title: Postkarten
+  stp:054-tls-als-ganzes:
+    length_secs: 3283
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-054-tls-als-ganzes.mp3
+      size_bytes: 52864912
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-054-tls-als-ganzes.ogg
+      size_bytes: 33109650
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-054-tls-als-ganzes.opus
+      size_bytes: 20106742
+    chapters:
+    - start_secs: 0
+      end_secs: 316
+      title: Feedback zu STP045
+    - start_secs: 316
+      end_secs: 414
+      title: Intro und Einstieg
+    - start_secs: 414
+      end_secs: 1144
+      title: Rückblick
+    - start_secs: 1144
+      end_secs: 1967
+      title: CA/Browser Forum
+    - start_secs: 1967
+      end_secs: 2250
+      title: Kompromittierte Zertifikate
+    - start_secs: 2250
+      end_secs: 2657
+      title: ISRG (Internet Security Research Group)
+    - start_secs: 2657
+      end_secs: 3283.328
+      title: Angriffe auf TLS
