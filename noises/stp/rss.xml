@@ -27,6 +27,86 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP055: Interoperabilität</itunes:title>
+    <itunes:episode>55</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP055: Interoperabilität</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>&amp;quot;Together we stand, divided we fall.&amp;quot; Deshalb geht es heute darum, wie Prozesse zur Zusmmenarbeit gebracht werden, oder auch, wie das gelegentlich schief geht. Zum Schluss haben wir wieder eine leicht schwermütige Unterhaltung darüber, warum die Dinge sind, wie sie sind. In diesem Sinne: &amp;quot;Let&#39;s work together...&amp;quot;</itunes:summary>
+    <description>&amp;quot;Together we stand, divided we fall.&amp;quot; Deshalb geht es heute darum, wie Prozesse zur Zusmmenarbeit gebracht werden, oder auch, wie das gelegentlich schief geht. Zum Schluss haben wir wieder eine leicht schwermütige Unterhaltung darüber, warum die Dinge sind, wie sie sind. In diesem Sinne: &amp;quot;Let&#39;s work together...&amp;quot;</description>
+    <content:encoded>&lt;p&gt;&amp;quot;Together we stand, divided we fall.&amp;quot; Deshalb geht es heute darum, wie Prozesse zur Zusmmenarbeit gebracht werden, oder auch, wie das gelegentlich schief geht. Zum Schluss haben wir wieder eine leicht schwermütige Unterhaltung darüber, warum die Dinge sind, wie sie sind. In diesem Sinne: &amp;quot;Let&#39;s work together...&amp;quot;&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;historischer Einstieg: initial nur einzelne monolithische Programme&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer startet, sobald das Programm eingegeben ist, zusammen mit dem Programm&lt;/li&gt;
+&lt;li&gt;mehrere Programme möglich, aber diese alle komplett voneinander unabhängig; bzw. jeweils nur abhängig von der Maschine selbst&lt;/li&gt;
+&lt;li&gt;dann wurden Programme so komplex, dass sie nicht mehr von einer Person verfasst werden konnten&lt;/li&gt;
+&lt;li&gt;1975: akademische Unterscheidung zwischen &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Programming_in_the_large_and_programming_in_the_small&amp;amp;oldid=1184277192&#34;&gt;&amp;quot;Programming in the large&amp;quot; und &amp;quot;Programming in the small&amp;quot;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Unterteilung der Software eines Computers in kleinere Einheiten erfordert definierte &lt;strong&gt;Schnittstellen&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Analogie: Unternehmen mit mehreren Mitarbeiterinnen erfordern meist definierte Abläufe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schnittstellen auf der großen Ebene (zwischen Prozessen): &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kommunikationsprotokoll&amp;amp;oldid=225866784&#34;&gt;Kommunikationsprotokolle&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Dateiformat&amp;amp;oldid=240585393&#34;&gt;Datenformate&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kommunikationsprotokolle: regeln Sende-/Empfangsreihenfolge, Inhalte der einzelnen Datenpakete und das durch sie ausgelöste Verhalten, Fehlerbehandlung etc.&lt;/li&gt;
+&lt;li&gt;Datenformate: definieren die Struktur eines Datenpaketes; kann in einer Datei gespeichert sein; kann Teil eines Kommunikationsprotokolls sein; kann Baustein in einem größeren Datenformat sein (z.B. Videodatei besteht aus einem Audiodatenformat, einem Bildstromdatenformat und einem umschließenden Containerformat)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Schnittstellen auf der kleinen Ebene (innerhalb eines Prozesses): &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=API&amp;amp;oldid=1196841027&#34;&gt;API (Application Programming Interface)&lt;/a&gt; und &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Application_binary_interface&amp;amp;oldid=1192371815&#34;&gt;ABI (Application Binary Interface)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. eine Komponente, die einen Sortieralgorithmus bereitstellt, hat eine Schnittstelle, die eine Liste von Zahlen entgegennimmt und eine sortierte Liste von Zahlen zurückgibt&lt;/li&gt;
+&lt;li&gt;dies ungefähr die geringste Ebene von Komplexität, Skala nach oben offen&lt;/li&gt;
+&lt;li&gt;API: auf der Ebene von Programmcode&lt;/li&gt;
+&lt;li&gt;ABI: auf der Ebene von Maschinencode&lt;/li&gt;
+&lt;li&gt;Beispiel API: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=OpenGL&amp;amp;oldid=1198092106&#34;&gt;OpenGL&lt;/a&gt; vs. &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=DirectX&amp;amp;oldid=1197353025&#34;&gt;DirectX&lt;/a&gt; vs. &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Vulkan&amp;amp;oldid=1199515232&#34;&gt;Vulkan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xkcd.com/927/&#34;&gt;XKCD 927&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Interoperabilität mit der Brechstange: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Reverse_Engineering&amp;amp;oldid=241382265&#34;&gt;Reverse Engineering&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;siehe auch STP040 (§69e UrhG: Dekompilierung und Reverse Engineering sind unter bestimmten Umständen auch ohne Zustimmung des Urheberrechteinhabers erlaubt)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Interoperabilität mit etwas sanfterem Hebel: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Emulator&amp;amp;oldid=240982806&#34;&gt;Emulation&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;siehe auch STP023&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;siehe auch: Berufsbezeichnung &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Systemintegrator&amp;amp;oldid=240254359&#34;&gt;Systemintegrator&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unterdisziplin des Ausbildungsberufes &amp;quot;Fachinformatiker&amp;quot;, in Abgrenzung zum Anwendungsentwickler&lt;/li&gt;
+&lt;li&gt;Tätigkeitsschwerpunkt: Anpassung bestehender Systeme zum Zwecke der Interoperabilität&lt;/li&gt;
+&lt;li&gt;vor allem im Umfeld von Firmensoftware verbreitet (Warenwirtschaftssystem des Herstellers A muss mit dem Buchhaltungssystem des Herstellers B verbunden werden)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:27" title="Historischer Einstieg"  />
+          <chapter start="00:04:59" title="Exkurs: Länge einer Codezeile"  />
+          <chapter start="00:17:33" title="Schnittstellen im Großen"  />
+          <chapter start="00:23:47" title="Schnittstellen im Kleinen"  />
+          <chapter start="00:33:50" title="APIs am Beispiel von Grafikschnittstellen"  />
+          <chapter start="00:46:32" title="Die Brechstange: Reverse Engineering"  />
+          <chapter start="00:53:33" title="Der sanftere Hebel: Emulation"  />
+          <chapter start="00:55:37" title="Systemintegration"  />
+      </chapters>
+      <enclosure length="64285184" url="https://dl.xyrillian.de/noises/stp-055-interoperabilitaet.mp3" type="audio/mpeg"/>
+      <enclosure length="40696542" url="https://dl.xyrillian.de/noises/stp-055-interoperabilitaet.ogg" type="audio/ogg"/>
+      <enclosure length="24420306" url="https://dl.xyrillian.de/noises/stp-055-interoperabilitaet.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/055-interoperabilitaet/</guid>
+    <pubDate>Thu, 16 May 2024 15:00:00 GMT</pubDate>
+    <itunes:duration>66:37</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP054: TLS als Ganzes</itunes:title>
     <itunes:episode>54</itunes:episode>
     <itunes:season>1</itunes:season>

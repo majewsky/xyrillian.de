@@ -3145,3 +3145,46 @@ audio_metadata:
     - start_secs: 2657
       end_secs: 3283.328
       title: Angriffe auf TLS
+  stp:055-interoperabilitaet:
+    length_secs: 3997
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-055-interoperabilitaet.mp3
+      size_bytes: 64285184
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-055-interoperabilitaet.ogg
+      size_bytes: 40696542
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-055-interoperabilitaet.opus
+      size_bytes: 24420306
+    chapters:
+    - start_secs: 0
+      end_secs: 87
+      title: Intro
+    - start_secs: 87
+      end_secs: 299
+      title: Historischer Einstieg
+    - start_secs: 299
+      end_secs: 1053
+      title: 'Exkurs: Länge einer Codezeile'
+    - start_secs: 1053
+      end_secs: 1427
+      title: Schnittstellen im Großen
+    - start_secs: 1427
+      end_secs: 2030
+      title: Schnittstellen im Kleinen
+    - start_secs: 2030
+      end_secs: 2792
+      title: APIs am Beispiel von Grafikschnittstellen
+    - start_secs: 2792
+      end_secs: 3213
+      title: 'Die Brechstange: Reverse Engineering'
+    - start_secs: 3213
+      end_secs: 3337
+      title: 'Der sanftere Hebel: Emulation'
+    - start_secs: 3337
+      end_secs: 3997.103
+      title: Systemintegration
