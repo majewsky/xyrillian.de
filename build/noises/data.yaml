@@ -1088,3 +1088,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 56
+    slug: 056-zentralisierung
+    title: Zentralisierung
+    pubtime: 1717701600 # 2024-06-06
+
+    markdown:
+      description: |
+        In dieser Episode werden die Kerntatsachen zum Sachverhalt der Zentralisierung in geradezu essayistischer Form herausgearbeitet und dargestellt, um der Hörerin eine Urteilsbildung zu ermöglichen. Hierbei wird ein eigener Standpunkt zur Fragestellung gefunden und argumentativ abgeleitet.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

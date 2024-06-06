@@ -27,6 +27,180 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP056: Zentralisierung</itunes:title>
+    <itunes:episode>56</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP056: Zentralisierung</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>In dieser Episode werden die Kerntatsachen zum Sachverhalt der Zentralisierung in geradezu essayistischer Form herausgearbeitet und dargestellt, um der Hörerin eine Urteilsbildung zu ermöglichen. Hierbei wird ein eigener Standpunkt zur Fragestellung gefunden und argumentativ abgeleitet.</itunes:summary>
+    <description>In dieser Episode werden die Kerntatsachen zum Sachverhalt der Zentralisierung in geradezu essayistischer Form herausgearbeitet und dargestellt, um der Hörerin eine Urteilsbildung zu ermöglichen. Hierbei wird ein eigener Standpunkt zur Fragestellung gefunden und argumentativ abgeleitet.</description>
+    <content:encoded>&lt;p&gt;In dieser Episode werden die Kerntatsachen zum Sachverhalt der Zentralisierung in geradezu essayistischer Form herausgearbeitet und dargestellt, um der Hörerin eine Urteilsbildung zu ermöglichen. Hierbei wird ein eigener Standpunkt zur Fragestellung gefunden und argumentativ abgeleitet.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Request_for_Comments&amp;amp;oldid=237305423&#34;&gt;RFC (Request for Comments)&lt;/a&gt;: eine Publikationsreihe für zumeist technische Spezifikationen, aber auch Essays betreffend die Fortentwicklung der Internet-Infrastruktur&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bereits besprochen in STP035 anhand der Tradition der Aprilscherz-RFCs&lt;/li&gt;
+&lt;li&gt;im Übrigen auch eines der anschaulichsten Beispiele für die ursprüngliche Intention von Hypertext: RFCs sind blanke Textdateien, die für die Darstellung als Webdokument automatisiert aufbereitet werden&lt;/li&gt;
+&lt;li&gt;heute etwas ernster, aber hoffentlich ähnlich zugänglich anhand &lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc9518&#34;&gt;RFC 9518: &amp;quot;Centralization, Decentralization, and Internet Standards&amp;quot;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;wir folgen in unserer Besprechung des Themas der Struktur der Textgrundlage; deutschsprachige Zitate sind jeweils aus dem Englischen übersetzt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kernbegriff: &amp;quot;Zentralisierung [im Sinne dieses Dokumentes] ist eine Sachlage, bei der eine einzelne Entität oder eine kleine Gruppe eine Funktion des Internets überwachen, abfangen, kontrollieren oder aus ihrem Betrieb oder ihrer Benutzung Pacht ziehen kann.&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Die ersten drei Varianten (Überwachung, Abfangen, Kontrolle) sind die intuitiv klaren Formen von Zentralisierung (z.B. das Telefon-Festnetz ist zentralisiert, da es von einem einzigen Anbieter, der Telekom, betrieben und kontrolliert wird).&lt;/li&gt;
+&lt;li&gt;Der Teil mit &amp;quot;Pacht&amp;quot; ist im Original &amp;quot;rent extraction&amp;quot;, was im Englischen ein durchaus geläufiger Begriff ist, während im Deutschen &lt;a href=&#34;https://de.wiktionary.org/w/index.php?title=Rentier&amp;amp;oldid=9846923#Substantiv,_m&#34;&gt;der &amp;quot;Rentier&amp;quot;&lt;/a&gt; wahrscheinlich eher für einen Rentner gehalten wird.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wiktionary.org/w/index.php?title=rent&amp;amp;oldid=77955238&#34;&gt;en.wiktionary.org zu &amp;quot;rent&amp;quot; im Sinne &amp;quot;rent extraction&amp;quot;&lt;/a&gt;: &amp;quot;A profit from possession of a valuable right, as a restricted license to engage in a trade or business.&amp;quot; -- &amp;quot;Profit aus dem Besitz eines wertvollen Rechtes, als limitierte Lizenz zum Betrieb eines Handwerks oder Geschäftes&amp;quot;&lt;/li&gt;
+&lt;li&gt;klassische Beispiele außerhalb der IT: Taximedaillon, Notarstellen, natürliche Monopole wie Netzbetreiber von Strom-/Wasser-/Gasleitungen&lt;/li&gt;
+&lt;li&gt;Beispiel im Internet: App-Store-Betreiber (wer Software für iPhones vertreiben will, muss 30% Pacht an Apple abführen), &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Internet_Assigned_Numbers_Authority&amp;amp;oldid=235416916&#34;&gt;IANA (Internet Assigned Numbers Authority)&lt;/a&gt; als Betreiber der DNS-Rootserver (zu DNS siehe STP018)&lt;/li&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://news.ycombinator.com/item?id=33314970&#34;&gt;5 Gründe, warum der Markt in der Praxis nicht so funktioniert wie in der Theorie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mögliche negative Konsequenzen von Zentralisierung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Machtkonzentration (der RFC zitiert hier die Federalist Papers von 1788: &amp;quot;So wie [John Madison in denselben] Good Governance [(verantwortungsbewusste Regierungsführung)] der US-Staaten beschreibt, so erfordert Good Governance des Internets, dass Kontrolle über seine einzelnen Funktionen nicht ohne angemessene Gewaltenteilung an einer zentralen Stelle konsolidiert wird.&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Begrenzung von Innovation: neue Entwicklungen brauchen Freiraum
+&lt;ul&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://freakshow.fm/fs274-was-hat-apple-jemals-nicht-fuer-uns-getan&#34;&gt;Freak Show #274 zum App-Store-Monopol von Apple&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Begrenzung von Wettbewerb: Wettbewerb mehrerer kompatibler Anbieter oder mehrerer Protokolle schafft die vorgenannte Gewaltenteilung&lt;/li&gt;
+&lt;li&gt;Verringerte Verfügbarkeit: Wenn alles durch einen zentralen Anbieter geht, führt ein Ausfall dort zu Folgeausfällen woanders.
+&lt;ul&gt;
+&lt;li&gt;Greifbares Beispiel: Was passiert, wenn ein Stadtviertel über eine zentrale Glasfaserleitung angebunden ist und diese Glasfaser versehentlich aufgebaggert wird?&lt;/li&gt;
+&lt;li&gt;Der RFC zitiert einige Beispiele.&lt;/li&gt;
+&lt;li&gt;Xyrill hat eine Anekdote zu AWS und Minecraft.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Monokultur&lt;/li&gt;
+&lt;li&gt;Selbstverstärkung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mögliche &lt;em&gt;positive&lt;/em&gt; Konsequenzen von Zentralisierung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verständlichkeit, Zweckdienlichkeit
+&lt;ul&gt;
+&lt;li&gt;zentrale Steuerung von DNS verleiht Domain-Namen eine hilfreiche Universalität&lt;/li&gt;
+&lt;li&gt;z.B. bei IP-Adressen oder Telefonnummern ist derartig kontrollierte Universalität technisch notwendig&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Effizienz durch Skaleneffekte: siehe Besprechung von CDNs in STP024 (Cloud-Computing)&lt;/li&gt;
+&lt;li&gt;Konzentration von Kontrolle kann Governance einfacher machen (was positiv sein kann, sofern man Governance an sich als grundsätzlich wünschenswert ansieht)
+&lt;ul&gt;
+&lt;li&gt;Beispiel: Bankenregulierung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Xyrill fügt noch hinzu: Zentralisierung kann die Weiterentwicklung von Protokollen vereinfachen, sofern Ossifikation entgegengewirkt werden muss
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ossifikation&amp;amp;oldid=239981566&#34;&gt;Ossifikation&lt;/a&gt;: im Wortsinne &amp;quot;Verknöcherung&amp;quot;, im übertragenen Sinne die faktische Unänderbarkeit von Protokollen, wenn eine Vielzahl von verschiedenen unabhängigen Akteuren die Änderung gleichzeitig vollziehen muss&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ansätze zur aktiven Dezentralisierung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Föderation: verschiedene Anbieter betreiben voneinander unabhängige Instanzen, die miteinander in Kontakt treten, um einen insgesamten Dienst zu bilden (klassisches Beispiel: E-Mail)
+&lt;ul&gt;
+&lt;li&gt;alleine unzureichend, da nicht-technische Faktoren Zentralisierungsdruck erzeugen&lt;/li&gt;
+&lt;li&gt;Beispiel E-Mail: wer einen E-Mail-Server betreiben will, muss faktisch nach der Pfeife von Microsoft/Google/United Internet/etc. tanzen, da Outlook und G-Mail den Markt dominieren&lt;/li&gt;
+&lt;li&gt;Beispiel XMPP: nachdem einige wenige Betreiber in der Föderation groß geworden sind, haben sie sich vom föderierten Netz getrennt und ihre Nutzer effektiv eingesperrt (z.B. WhatsApp war früher XMPP-kompatibel)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;verteilter Konsens: Zusammenschluss aus vielen Teilnehmenden, bei denen die Ausübung von Macht innerhalb des Netzes zufällig und temporär zugewiesen wird (siehe Besprechung von Blockchain in STP048)
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Während diese Maßnahmen darin wirkungsvoll sein können, den Betrieb eines Dienstes zu dezentralisieren, können andere Aspekte seiner Vorhaltung weiterhin zentralisiert sein: zum Beispiel die Kontrolle über das Design, die gemeinsam genutzte Implementation, sowie die Dokumentation von Netzwerkprotokollen.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;aktives Regierungshandeln (&amp;quot;Operational Governance&amp;quot;): Ausübung der operativen Kontrolle durch eine neutrale Treuhänderstelle, die die Interessen der verschiedenen Diensteanbietern und Nutzenden gegeneinander abwägt
+&lt;ul&gt;
+&lt;li&gt;Einrichtung mitunter auch im Nachhinein möglich, sofern das technische, ökonomische oder politische Umfeld die Diensteanbieter zur Kooperation zwingt&lt;/li&gt;
+&lt;li&gt;klassische Beispiele: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Internet_Corporation_for_Assigned_Names_and_Numbers&amp;amp;oldid=238717925&#34;&gt;ICANN&lt;/a&gt; für IP-Adressen, IANA für DNS, CA/Browser-Forum für Wurzel-Zertifikatsautoritäten (siehe STP048)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was können Autorinnen von Internet-Standards tun, um Zentralisierung vorzubeugen und Dezentralisierung zu fördern?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Legitimität erzeugen
+&lt;ul&gt;
+&lt;li&gt;durch Öffentlichkeitsarbeit gegenüber der Bevölkerung oder gesellschaftlichen und staatlichen Institutionen Vertrauen schaffen, um dann die öffentliche Diskussion in die gewünschte Richtung zu beeinflussen&lt;/li&gt;
+&lt;li&gt;Problem: mehr Geld kauft mehr PR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Diskussion fokussieren
+&lt;ul&gt;
+&lt;li&gt;nicht Zentralisierung als solches verteufeln (hat wie gesehen ja auch Vorteile), sondern explizit auf die Nachteile konzentrieren&lt;/li&gt;
+&lt;li&gt;konkreter Vorschlag: RFCs sollten neben den Standardabschnitten &amp;quot;Sicherheitsrelevante Überlegungen&amp;quot; und &amp;quot;IANA-relevante Überlegungen&amp;quot; immer auch &amp;quot;Zentralisierungsrelevante Überlegungen&amp;quot; explizieren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Abzielen auf proprietäre Dienste
+&lt;ul&gt;
+&lt;li&gt;zentralisierte Angebote und Protokolle sollten aktiv mit offenen Standards konfrontiert werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Wechselkosten verringern
+&lt;ul&gt;
+&lt;li&gt;z.B. neue offene Standards so gestalten, dass sie mit bestehenden proprietären Diensten interoperabel sein können&lt;/li&gt;
+&lt;li&gt;selbst Open Source ist nicht immer die Lösung, wenn die Weiterentwicklung der Open-Source-Software die Expertise eines bestimmten Anbieters erfordert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Delegation von Kontrolle bändigen
+&lt;ul&gt;
+&lt;li&gt;Wenn ein Protokoll der Nutzerin ermöglicht, Aufgaben an einen Dritten zu delegieren, kann das eine Sollbruchstelle zur Machtkonzentration sein.&lt;/li&gt;
+&lt;li&gt;Beispiel (im RFC erwähnt): HTTP-Proxies (ähnliches war auch bei HTTP auf der Internetanbieter-Ebene zu beobachten)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;starke Isolation durchsetzen
+&lt;ul&gt;
+&lt;li&gt;Beispiel: viele Protokolle hängen von der Verfügbarkeit und Zuverlässigkeit eines darunterliegenden Netzwerkes ab -&amp;gt; Verschlüsselung schützt gegen Machtkonzentration beim Betreiber dieser Basisschicht (schützt in diesem Beispiel nur vor Zentralisierung im Sinne von Überwachung, weniger im Sinne von Kontrolle)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;sorgfältige Abwägung von Erweiterbarkeit
+&lt;ul&gt;
+&lt;li&gt;hilfreich, um Wettbewerb und Innovation zwischen verschiedenen Anbietern zu fördern&lt;/li&gt;
+&lt;li&gt;aber auch Risiko des &amp;quot;Vendor Lock-In&amp;quot; (Erweiterung durch anbieterspezifische Funktionen, die Nutzerinnen an den Anbieter binden)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;wiederverwenden, was funktioniert
+&lt;ul&gt;
+&lt;li&gt;z.B. hat DNS trotz aller Probleme alles in allem ein relativ dezentrales Design und eine relativ gute Governance -- tendenziell lieber darauf aufbauen, als eine eigene dezentrale Datenbank zu frickeln (oder &lt;code&gt;s/DNS/Ethereum/&lt;/code&gt;, wenn man lieber Blockchain nehmen möchte)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Xyrills Abendgedanken: (De-)Zentralisierung ist, so wie fast alle Fragen aus dem Feld der Netzpolitik, nicht eine rein technische Frage und erfordert neben technischen auch soziale und gesetzliche Lösungen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:02:20" title="Der Diskursgegenstand und die Erörterung"  />
+          <chapter start="00:05:52" title="Nochmal zu RFCs"  />
+          <chapter start="00:07:23" title="Kernbegriff: Zentralisierung"  />
+          <chapter start="00:10:32" title="Exkurs zu Marktliberalisierung"  />
+          <chapter start="00:13:14" title="Zurück zum Thema"  />
+          <chapter start="00:23:47" title="Negative Konsequenzen"  />
+          <chapter start="00:37:31" title="Positive Konsequenzen"  />
+          <chapter start="00:54:17" title="Ansätze zur aktiven Dezentralisierung"  />
+          <chapter start="01:04:24" title="Was RFC-Autoren tun können"  />
+      </chapters>
+      <enclosure length="83812795" url="https://dl.xyrillian.de/noises/stp-056-zentralisierung.mp3" type="audio/mpeg"/>
+      <enclosure length="53440735" url="https://dl.xyrillian.de/noises/stp-056-zentralisierung.ogg" type="audio/ogg"/>
+      <enclosure length="31948344" url="https://dl.xyrillian.de/noises/stp-056-zentralisierung.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/056-zentralisierung/</guid>
+    <pubDate>Thu, 06 Jun 2024 19:20:00 GMT</pubDate>
+    <itunes:duration>86:57</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP055: Interoperabilität</itunes:title>
     <itunes:episode>55</itunes:episode>
     <itunes:season>1</itunes:season>

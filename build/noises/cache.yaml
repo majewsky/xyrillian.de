@@ -3188,3 +3188,49 @@ audio_metadata:
     - start_secs: 3337
       end_secs: 3997.103
       title: Systemintegration
+  stp:056-zentralisierung:
+    length_secs: 5217
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-056-zentralisierung.mp3
+      size_bytes: 83812795
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-056-zentralisierung.ogg
+      size_bytes: 53440735
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-056-zentralisierung.opus
+      size_bytes: 31948344
+    chapters:
+    - start_secs: 0
+      end_secs: 140
+      title: Intro
+    - start_secs: 140
+      end_secs: 352
+      title: Der Diskursgegenstand und die Erörterung
+    - start_secs: 352
+      end_secs: 443
+      title: Nochmal zu RFCs
+    - start_secs: 443
+      end_secs: 632
+      title: 'Kernbegriff: Zentralisierung'
+    - start_secs: 632
+      end_secs: 794
+      title: Exkurs zu Marktliberalisierung
+    - start_secs: 794
+      end_secs: 1427
+      title: Zurück zum Thema
+    - start_secs: 1427
+      end_secs: 2251
+      title: Negative Konsequenzen
+    - start_secs: 2251
+      end_secs: 3257
+      title: Positive Konsequenzen
+    - start_secs: 3257
+      end_secs: 3864
+      title: Ansätze zur aktiven Dezentralisierung
+    - start_secs: 3864
+      end_secs: 5217.573
+      title: Was RFC-Autoren tun können
