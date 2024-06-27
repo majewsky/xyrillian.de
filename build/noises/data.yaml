@@ -1101,3 +1101,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 57
+    slug: 057-activity-pub
+    title: ActivityPub
+    pubtime: 1719509100 # 2024-06-27
+
+    markdown:
+      description: |
+        Wieder einmal ein von langer Hand vorbereitetes Thema. Hier kulminiert der Inhalt der beiden vorangegangenen Folgen zu einem Blick in den Maschinenraum von z.B. Mastodon. Außerdem sprechen wir ein weiteres Mal über unseren persönlichen Blick und Umgang mit diesem Thema.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

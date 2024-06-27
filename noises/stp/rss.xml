@@ -27,6 +27,134 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP057: ActivityPub</itunes:title>
+    <itunes:episode>57</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP057: ActivityPub</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wieder einmal ein von langer Hand vorbereitetes Thema. Hier kulminiert der Inhalt der beiden vorangegangenen Folgen zu einem Blick in den Maschinenraum von z.B. Mastodon. Außerdem sprechen wir ein weiteres Mal über unseren persönlichen Blick und Umgang mit diesem Thema.</itunes:summary>
+    <description>Wieder einmal ein von langer Hand vorbereitetes Thema. Hier kulminiert der Inhalt der beiden vorangegangenen Folgen zu einem Blick in den Maschinenraum von z.B. Mastodon. Außerdem sprechen wir ein weiteres Mal über unseren persönlichen Blick und Umgang mit diesem Thema.</description>
+    <content:encoded>&lt;p&gt;Wieder einmal ein von langer Hand vorbereitetes Thema. Hier kulminiert der Inhalt der beiden vorangegangenen Folgen zu einem Blick in den Maschinenraum von z.B. Mastodon. Außerdem sprechen wir ein weiteres Mal über unseren persönlichen Blick und Umgang mit diesem Thema.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Klaus schreibt per Mail:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hallo timeless und Xyrill,&lt;/p&gt;
+&lt;p&gt;bin Anfang des Jahres irgendwo auf euren Podcast gestoßen und dort eingestiegen, wo ihr damals gerade wart, Folge 49 Schadcode und dann die weiteren.&lt;/p&gt;
+&lt;p&gt;Diese haben mir so gut gefallen, dass ich alle Folgen mit Antennapod abgeholt habe und dabei bin euren Podcast von hinten aufzurollen.&lt;/p&gt;
+&lt;p&gt;Großes Kompliment an Euch! Phantastische Serie! Freue mich auf jede neue und für mich neue-alte Folge.&lt;/p&gt;
+&lt;p&gt;Bin zwar vom Fach, aber lerne immer was Neues oder andere Blickwinkel kennen. HERRLICH!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Eine kleine Bemerkung von mir zu den Folgen 13 und 14, Textkodierung und Textdarstellung.&lt;/p&gt;
+&lt;p&gt;Ich bevorzuge so wie Xyrill auch die Verwendung von kombinierenden diakritischen Zeichen.&lt;/p&gt;
+&lt;p&gt;Die meisten der für mich nützlichen davon (u.a. für DE, FR, NL, CN-Pinyin) &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Combining_character&amp;amp;oldid=1226621587&#34;&gt;beginnen an der Hex-Adresse U&#43;0300 ff.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Leicht zu merken und praktisch, wenn man ständig mit anderen Tastaturbelegungen zu tun hat.&lt;/p&gt;
+&lt;p&gt;Worauf ich aber hinaus möchte, ist folgendes:&lt;/p&gt;
+&lt;p&gt;Diese diakritischen Zeichen werden sowohl am Schirm als auch im Druck gleich dargestellt, obwohl ihnen andere Byte-Folgen zugrunde liegen. Hat Xyrill alles beschrieben. Hab ja zugehört. Für Textprogramme, etc. ist das kein Problem, in Datenbanken aber schon.&lt;/p&gt;
+&lt;p&gt;Es macht dann leider doch einen gravierenden Unterschied, ob diakritische Zeichen wie en &amp;quot;ä&amp;quot; aus U&#43;00E4 oder aus der Kombination von U&#43;0061 &#43; U&#43;0308 entstehen.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tastaturen, die diese Zeichen direkt kodieren, verwenden nur die Version mit 1 Codepunkt.&lt;/li&gt;
+&lt;li&gt;Bei Längenbestimmungen von Zeichenketten ergeben sich Unterschiede. Die Zeichenketten sehen gleich aus, sind aber nicht gleich lang, obwohl sie auch gleich lang aussehen!&lt;/li&gt;
+&lt;li&gt;Eingabeformulare fangen das nicht immer gut ab. Gleich aussehender Begriff, aber doch nicht derselbe.&lt;/li&gt;
+&lt;li&gt;Idem bei Suchanfragen.&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ich empfehle daher immer in Datenbanken Strings so zu standardisieren, dass nur die Version mit 1 Codepunkt verwendet wird, so wie eben Muttersprachler diesen Text auf ihrer sprachspezifischen Tastatur eingeben würden.&lt;/p&gt;
+&lt;p&gt;Viele Grüße aus Belgien!&lt;/p&gt;
+&lt;p&gt;Klaus&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Nun zum eigentlichen Thema:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ausgangssituation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Soziale_Medien&amp;amp;oldid=242703413&#34;&gt;Soziale Medien&lt;/a&gt;: &amp;quot;digitale Medien bzw. Plattformen, die es Nutzern ermöglichen, sich im Internet zu vernetzen, [...] untereinander auszutauschen und mediale Inhalte einzeln, in einer definierten Gemeinschaft oder offen in der Gesellschaft zu erstellen, zu diskutieren und weiterzugeben&amp;quot;&lt;/li&gt;
+&lt;li&gt;aber: alles zentralisiert (siehe STP056) und nicht interoperabel (siehe STP055)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=ActivityPub&amp;amp;oldid=240310299&#34;&gt;ActivityPub&lt;/a&gt;: der zurzeit wahrscheinlich aussichtsreichste Versuch, soziale Medien dezentral zu modellieren&lt;/li&gt;
+&lt;li&gt;erste Anfänge in den frühen 2010ern mit &lt;a href=&#34;https://activitystrea.ms/specs/atom/1.0/&#34;&gt;Activity Streams 1.0&lt;/a&gt;, dann in 2016-2018 Entwicklung von &lt;a href=&#34;https://www.w3.org/TR/activitystreams-core/&#34;&gt;Activity Streams 2.0&lt;/a&gt; und darauf aufbauend &lt;a href=&#34;https://www.w3.org/TR/activitypub/&#34;&gt;ActivityPub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Xyrill sieht zwei wesentliche Design-Einflüsse im ActivityPub-Protokoll&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Einfluss: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Representational_State_Transfer&amp;amp;oldid=241086067&#34;&gt;REST (Representational State Transfer)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP kennt man allgemein als Protokoll zum Abruf von Webseiten (siehe STP002)&lt;/li&gt;
+&lt;li&gt;neben &lt;code&gt;GET&lt;/code&gt; gibt es in HTTP-Anfragen aber noch viele andere Verben&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;POST&lt;/code&gt;: Ursprung in HTML für Abschicken ausgefüllter Formulare&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PUT&lt;/code&gt;, &lt;code&gt;PATCH&lt;/code&gt;, &lt;code&gt;DELETE&lt;/code&gt; etc.: für Hochladen und Verwalten von Dateien&lt;/li&gt;
+&lt;li&gt;REST: Modellierung von APIs unter Einsatz dieser HTTP-Verben und unter Modellierung der Datensätze entlang von URLs (z.B. in einem Webshop &lt;code&gt;PATCH /products/23&lt;/code&gt;, um Produkt Nr. 23 zu bearbeiten; oder in einem Blog &lt;code&gt;GET /articles/hello-world/comments&lt;/code&gt;, um die Kommentare zu dem Post namens &amp;quot;Hello World&amp;quot; aufzurufen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Einfluss: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=E-Mail&amp;amp;oldid=243190279&#34;&gt;E-Mail&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;entworfen in einer Zeit, als die meisten Verknüpfungen im Internet nicht durchgehend verfügbar waren&lt;/li&gt;
+&lt;li&gt;Mails werden nicht sofort an den Empfänger zugestellt, sondern landen erstmal auf dem Mail-Server des Absenders in einer Outbox (analog dem Postbriefkasten)&lt;/li&gt;
+&lt;li&gt;Zustellung an den jeweils nächsten Server in der Kette bei Verfügbarkeit der Leitung (heutzutage unverzüglich und immer direkt an den Zielserver), dann Ablage in der Inbox des Empfängers (analog dem Hausbriefkasten)&lt;/li&gt;
+&lt;li&gt;Problem bei ActivityPub: E-Mail ist Unicast (Nachrichten gehen immer an eine bestimmte Adresse bzw. eine bestimmte Liste von Adressen), aber soziale Medien können auch Broadcast sein (z.B. Tweets oder Blogposts sind global sichtbar)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ActivityPub: Inbox und Outbox wie bei E-Mail, aber bidirektional&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Direktnachricht von Alice an Bob: Alice postet in ihre eigene Outbox, Server leitet weiter in Bobs Inbox, Bob ruft aus seiner Inbox ab&lt;/li&gt;
+&lt;li&gt;öffentliche Nachricht von Alice: Alice postet in ihre eigene Outbox, Bob ruft aus Alices Outbox ab; bei Followern sendet Alices Server in deren Inbox&lt;/li&gt;
+&lt;li&gt;Nachrichten verbleiben bis zu ihrer eventuellen Löschung in der Outbox und bilden einen Feed aller Nachrichten dieser Person&lt;/li&gt;
+&lt;li&gt;REST-Einfluss: Inbox erlaubt &lt;code&gt;GET&lt;/code&gt; durch den Inhaber und &lt;code&gt;POST&lt;/code&gt; durch andere Server, Outbox erlaubt &lt;code&gt;POST&lt;/code&gt; durch den Inhaber und &lt;code&gt;GET&lt;/code&gt; durch alle&lt;/li&gt;
+&lt;li&gt;vgl. Bilder in &lt;a href=&#34;https://www.w3.org/TR/activitypub/&#34;&gt;Kapitel 1 der ActivityPub-Spezifikation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;wesentliche Implementationen von ActivityPub: Kurznachrichtendienst &lt;a href=&#34;https://joinmastodon.org/&#34;&gt;Mastodon&lt;/a&gt;, Linkaggregator &lt;a href=&#34;https://join-lemmy.org/&#34;&gt;Lemmy&lt;/a&gt;, Bildplattform &lt;a href=&#34;https://pixelfed.org/&#34;&gt;Pixelfed&lt;/a&gt;, Videoplattform &lt;a href=&#34;https://joinpeertube.org/&#34;&gt;PeerTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Anekdote: Xyrill hatte überlegt, die Podcast-Seite mit ActivityPub auszustatten, und ist davon wieder abgekommen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beobachtung bzw. Rückbezug zu STP056: föderierte Netzwerke haben einen starken Drang zur (Re-)Zentralisierung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Anschauungsbeispiel: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=ActivityPub&amp;amp;oldid=1212815451#Software_using_ActivityPub&#34;&gt;Verteilung der Nutzerzahlen zwischen verschiedenen ActivityPub-Implementationen&lt;/a&gt; -&amp;gt; Mastodon macht 99% der Nutzerbasis aus&lt;/li&gt;
+&lt;li&gt;innerhalb von Mastodon initial starke Konzentration bei &lt;code&gt;mastodon.social&lt;/code&gt;; seit einiger Zeit ist beim Anlegen eines Nutzerkontos kein Server mehr voreingestellt&lt;/li&gt;
+&lt;li&gt;vgl. auch Matrix: schätzungsweise etwa 50% der Nutzer bei &lt;code&gt;matrix.org&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;absolut subjektiver Eindruck: Mastodon-Entwickler dominieren die Weiterentwicklung von ActivityPub als ganzes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vergleich mit dem AT-Protokoll von BlueSky&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20200111021337/twitter.com/jack/status/1204766078468911106&#34;&gt;Motivation&lt;/a&gt;: Trennung des Zustellpfades von &amp;quot;dem Algorithmus&amp;quot; (Inhaltsvorschläge und Moderation), um letztere austauschbar zu gestalten&lt;/li&gt;
+&lt;li&gt;modulare/dezentrale Moderation (mit den daraus folgenden Konsequenzen, z.B. öffentlich einsehbare Blocklisten, also kein Shadowbanning möglich)
+&lt;ul&gt;
+&lt;li&gt;vgl. ActivityPub: Faustregel: 1 Moderator:in pro 1000 User&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Konten bei AT sind nicht an bestimmte Server gebunden, sondern können unter Erhalt der gesamten Kommunikationshistorie umgezogen werden (ActivityPub-Adressen sind mehr wie Kontonummern oder E-Mail-Adressen; AT-Identifier sind mehr wie portierbare Telefonnummern)
+&lt;ul&gt;
+&lt;li&gt;vgl. Debatte über die Begrifflichkeit &amp;quot;Server&amp;quot; vs. &amp;quot;Instanz&amp;quot; vs. &amp;quot;Community&amp;quot; bei Mastodon&lt;/li&gt;
+&lt;li&gt;Update: &lt;a href=&#34;https://wedistribute.org/2024/03/activitypub-nomadic-identity/&#34;&gt;ActivityPub arbeitet an &amp;quot;nomadischer Identität&amp;quot;&lt;/a&gt; analog zu den Decentralized Identifiers in AT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt: &lt;a href=&#34;https://www.bmi.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/2024/ggo-fussabdruck-synopsenpflicht.pdf?__blob=publicationFile&amp;amp;v=1&#34;&gt;Entwurf einer Änderung der Gemeinsamen Geschäftsordnung der Bundesministerien (GGO) zur Umsetzung der Vorhaben &amp;quot;Exekutiver Fußabdruck&amp;quot; und &amp;quot;Synopse&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Feedback von Klaus"  />
+          <chapter start="00:04:42" title="Intro und Prolog"  />
+          <chapter start="00:06:32" title="Ausgangssituation"  />
+          <chapter start="00:23:06" title="Representational State Transfer"  />
+          <chapter start="00:34:03" title="E-Mail"  />
+          <chapter start="00:40:21" title="ActivityPub"  />
+          <chapter start="00:57:18" title="Drang zur (Re-)Zentralisierung"  />
+          <chapter start="01:05:27" title="AT-Protokoll von BlueSky"  />
+          <chapter start="01:21:29" title="Abendgedanken: Unser Blick auf soziale Medien"  />
+      </chapters>
+      <enclosure length="89462107" url="https://dl.xyrillian.de/noises/stp-057-activity-pub.mp3" type="audio/mpeg"/>
+      <enclosure length="56517462" url="https://dl.xyrillian.de/noises/stp-057-activity-pub.ogg" type="audio/ogg"/>
+      <enclosure length="33711272" url="https://dl.xyrillian.de/noises/stp-057-activity-pub.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/057-activity-pub/</guid>
+    <pubDate>Thu, 27 Jun 2024 17:25:00 GMT</pubDate>
+    <itunes:duration>92:50</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP056: Zentralisierung</itunes:title>
     <itunes:episode>56</itunes:episode>
     <itunes:season>1</itunes:season>

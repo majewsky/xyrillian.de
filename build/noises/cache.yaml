@@ -3234,3 +3234,46 @@ audio_metadata:
     - start_secs: 3864
       end_secs: 5217.573
       title: Was RFC-Autoren tun können
+  stp:057-activity-pub:
+    length_secs: 5570
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-057-activity-pub.mp3
+      size_bytes: 89462107
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-057-activity-pub.ogg
+      size_bytes: 56517462
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-057-activity-pub.opus
+      size_bytes: 33711272
+    chapters:
+    - start_secs: 0
+      end_secs: 282
+      title: Feedback von Klaus
+    - start_secs: 282
+      end_secs: 392
+      title: Intro und Prolog
+    - start_secs: 392
+      end_secs: 1386
+      title: Ausgangssituation
+    - start_secs: 1386
+      end_secs: 2043
+      title: Representational State Transfer
+    - start_secs: 2043
+      end_secs: 2421
+      title: E-Mail
+    - start_secs: 2421
+      end_secs: 3438
+      title: ActivityPub
+    - start_secs: 3438
+      end_secs: 3927
+      title: Drang zur (Re-)Zentralisierung
+    - start_secs: 3927
+      end_secs: 4889
+      title: AT-Protokoll von BlueSky
+    - start_secs: 4889
+      end_secs: 5570.654
+      title: 'Abendgedanken: Unser Blick auf soziale Medien'
