@@ -3277,3 +3277,58 @@ audio_metadata:
     - start_secs: 4889
       end_secs: 5570.654
       title: 'Abendgedanken: Unser Blick auf soziale Medien'
+  stp:058-identifier:
+    length_secs: 5245
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-058-identifier.mp3
+      size_bytes: 84259126
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-058-identifier.ogg
+      size_bytes: 53221158
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-058-identifier.opus
+      size_bytes: 31714654
+    chapters:
+    - start_secs: 0
+      end_secs: 29
+      title: Feedback
+    - start_secs: 29
+      end_secs: 514
+      title: Feedback von Till
+    - start_secs: 514
+      end_secs: 591
+      title: Feedback von Klaus
+    - start_secs: 591
+      end_secs: 676
+      title: Feedback von Jan
+    - start_secs: 676
+      end_secs: 762
+      title: Cold Call
+    - start_secs: 762
+      end_secs: 836
+      title: Bitte noch mehr Feedback
+    - start_secs: 836
+      end_secs: 912
+      title: Intro-Intro
+    - start_secs: 912
+      end_secs: 1079
+      title: Intro
+    - start_secs: 1079
+      end_secs: 2690
+      title: Identifier für Menschen
+    - start_secs: 2690
+      end_secs: 2895
+      title: Fortlaufende Nummern
+    - start_secs: 2895
+      end_secs: 3636
+      title: Universally Unique Identifier
+    - start_secs: 3636
+      end_secs: 4093
+      title: Content-Addressed Storage
+    - start_secs: 4093
+      end_secs: 5245.456
+      title: Versionsnummern

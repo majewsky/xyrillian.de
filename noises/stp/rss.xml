@@ -27,6 +27,159 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP058: Identifier</itunes:title>
+    <itunes:episode>58</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP058: Identifier</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Da die Zeiten von Karteikarten in Büros und auf Ämtern &lt;s&gt;zum Glück&lt;/s&gt; &lt;em&gt;leider&lt;/em&gt; vorbei sind, braucht es nun andere Wege, um Personen zu identifizieren. Doch nicht nur störende Kundschaft will wiedererkannt werden...</itunes:summary>
+    <description>Da die Zeiten von Karteikarten in Büros und auf Ämtern &lt;s&gt;zum Glück&lt;/s&gt; &lt;em&gt;leider&lt;/em&gt; vorbei sind, braucht es nun andere Wege, um Personen zu identifizieren. Doch nicht nur störende Kundschaft will wiedererkannt werden...</description>
+    <content:encoded>&lt;p&gt;Da die Zeiten von Karteikarten in Büros und auf Ämtern &lt;s&gt;zum Glück&lt;/s&gt; &lt;em&gt;leider&lt;/em&gt; vorbei sind, braucht es nun andere Wege, um Personen zu identifizieren. Doch nicht nur störende Kundschaft will wiedererkannt werden...&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Wir haben einiges an Feedback bekommen, siehe Ende der Shownotes. Zuerst zum eigentlichen Thema:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Identifier&lt;/strong&gt; (ID): eindeutiges Kennzeichen zur Unterscheidung gleichartiger Objekte oder Individuen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;während des Softwaredesign (z.B. beim Entwurf des Datenbankschemas): Entscheidung darüber, welche Identifier für welche Kategorien von Objekten verwendet werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Identifier für Menschen: &lt;a href=&#34;https://web.archive.org/web/20240325164409/shinesolutions.com/2018/01/08/falsehoods-programmers-believe-about-names-with-examples/&#34;&gt;Falsehoods Programmers Believe About Names&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bei deutschen Behörden üblich: das Tupel aus Name und Geburtsdatum und evtl. Geburtsort -&amp;gt; &lt;a href=&#34;https://web.archive.org/web/20240404170829/https://www.tagesspiegel.de/berlin/stadtleben/die-doppelte-katja-4792738.html&#34;&gt;immer noch nicht ganz eindeutig&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;bei Benutzerkonten im wesentlichen drei Optionen:
+&lt;ul&gt;
+&lt;li&gt;fortlaufende Nummern (Vorteile: im Speicher kompakt darstellbar, robustes Pseudonym; Nachteile: leakt das Alter des Kontos, rare kurze Nummern vermitteln Status), siehe z.B. ICQ-Kontonummern (frühe 2000er)&lt;/li&gt;
+&lt;li&gt;frei wählbare Benutzernamen (Vorteile: eingängig, Pseudonymität möglich; Nachteile: belohnt frühe Registrierung, fördert Name-Squatting)&lt;/li&gt;
+&lt;li&gt;E-Mail-Adressen (Vorteile: enthält implizit eine Kontaktmöglichkeit, wird seltener vergessen als eine Nummer oder ein frei wählbarer Name; Nachteile: muss vertraulich behandelt werden, beim Wechsel der Mail-Adresse evtl. Neuanmeldung erforderlich)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;auch bei Objekten oder Datenstrukturen eine gute Option: &lt;strong&gt;fortlaufende Nummern&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;im deutschen Handelsrecht bei Rechnungen sogar in gewissem Rahmen rechtlich vorgeschrieben&lt;/li&gt;
+&lt;li&gt;Vorteil: Hochzählen ist trivial umzusetzen&lt;/li&gt;
+&lt;li&gt;Vorteil: kompakte Darstellung im Speicher (z.B. nur 4 Byte bei einer Gesamtzahl unter 4 Mrd. Objekte) -&amp;gt; insb. wichtig bei Kreuzreferenzen&lt;/li&gt;
+&lt;li&gt;Nachteil: ab und zu hat man doch mehr Objekte als erwartet und muss mühselig auf größere Zahlen umstellen (z.B. bei über 4 Mrd. Objekten von 32-Bit-Zahlen auf 64-Bit-Zahlen) -&amp;gt; &lt;a href=&#34;https://news.ycombinator.com/item?id=14539770&#34;&gt;Beispiel bei der Schachwebseite chess.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Nachteil: in verteilten Systemen (siehe STP027) braucht man eine zentrale ID-Vergabestelle oder einen aufwändigen Konsensalgorithmus -&amp;gt; Geht das besser?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Universally_Unique_Identifier&amp;amp;oldid=243706271&#34;&gt;Universally Unique Identifier (UUID)&lt;/a&gt; gemäß &lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc4122&#34;&gt;RFC 4122&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee: mit dem Schritt von 64 Bit auf 128 Bit so viele mögliche Werte, dass man z.B. bei zufälliger Wahl eine absurd geringe Kollisionswahrscheinlichkeit hat&lt;/li&gt;
+&lt;li&gt;Darstellung in Text meistens als Hexadezimalzahl in Gruppen von 8, 4, 4, 4 und 12 Stellen; Beispiel: &lt;code&gt;8b4b72a2-55dd-4ab7-b239-bb9caad9107a&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;mehrere verschiedene Formate: heutzutage am häufigsten UUIDv4 (mit rein zufälligen Zahlen, außer dass die 13. Hexadezimalstelle die Formatzahl &amp;quot;4&amp;quot; enthält)&lt;/li&gt;
+&lt;li&gt;Vorteil: in verteilten Systemen keine Koordination bei der Vergabe erforderlich&lt;/li&gt;
+&lt;li&gt;Nachteil: etwas weniger kompakt, insb. wenn die UUID wie oft üblich als Text abgespeichert wird&lt;/li&gt;
+&lt;li&gt;Nachteil insb. bei UUIDv4: keine sinnvolle Sortierung -&amp;gt; Alternativvorschläge wie &lt;a href=&#34;https://www.ietf.org/archive/id/draft-ietf-uuidrev-rfc4122bis-07.html#name-uuid-version-7&#34;&gt;UUIDv7&lt;/a&gt; oder &lt;a href=&#34;https://github.com/ulid/spec&#34;&gt;ULID&lt;/a&gt; stellen eine sortierbar kodierte Form des Erstellungszeitstempels voran&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Content-Addressed_Storage&#34;&gt;Content-Addressed Storage (CAS)&lt;/a&gt;: Bezeichnung eines Datenstroms durch seine kryptografische Prüfsumme (siehe STP004)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;z.B. Identifikation &lt;a href=&#34;https://dl.xyrillian.de/noises/stp-038-intro.png&#34;&gt;dieses Bildes&lt;/a&gt; nicht durch einen Dateinamen/Pfad/URL wie &lt;code&gt;https://dl.xyrillian.de/noises/stp-038-intro.png&lt;/code&gt;, sondern durch die Prüfsumme &lt;code&gt;sha256:e68ae45acddfab6198c01ba552ca9f1b76e78bc12c4a4ca0476da27d688d8238&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Bildung von Datenstrukturen (z.B. Ordner oder Lesezeichenlisten) durch Benutzung dieser Prüfsummen-IDs analog zu Inode-Nummern (siehe STP031)&lt;/li&gt;
+&lt;li&gt;möglicherweise noch menschenlesbare Identifier, die auf CAS-Identifier abbilden (z.B. in &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20210727.html&#34;&gt;Git&lt;/a&gt;: Tags als menschenlesbare Namen für Commits)&lt;/li&gt;
+&lt;li&gt;Vorteil: bei sorgfältigem Design selbsttätige Deduplikation und Integritätsprüfung möglich&lt;/li&gt;
+&lt;li&gt;Nachteil: Prüfsummen sind nochmal deutlich sperriger als UUIDs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;zur Bezeichnung von Software-Versionen: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Versionsnummer&amp;amp;oldid=239964497&#34;&gt;Versionsnummern&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;konventionelles Format: Zahlen mit Punkten getrennt (z.B. &lt;code&gt;1.7.10&lt;/code&gt;), sortiert leider nicht lexikografisch (z.B. &lt;code&gt;&amp;quot;1.7.10&amp;quot; &amp;gt; &amp;quot;1.10.7&amp;quot;&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;kein fester Formatstandard, aber es gibt Ansätze: z.B. &lt;a href=&#34;https://semver.org/lang/de/&#34;&gt;Semantic Versioning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Alternativschema: jahreszahlbasiert (z.B. Ubuntu 24.06 ist die im Juni 2024 veröffentlichte Version) -&amp;gt; Bemerkung von ttimeless: kann man auch mit Dateien machen (z.B. &lt;code&gt;2024-03-01-ticket-bahn.pdf&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Alternativschema: das Marketing bestimmt (z.B. XBox -&amp;gt; XBox 360 -&amp;gt; XBox One -&amp;gt; XBox Series X/S)&lt;/li&gt;
+&lt;li&gt;Alternativschema: Konvergenz (die Versionsnummer von TeX nähert sich der Zahl π an) -&amp;gt; bräuchten wir vielleicht mehr davon :)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Feedback zu STP049&lt;/h4&gt;
+&lt;p&gt;Till schreibt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hallo Xyrill,&lt;/p&gt;
+&lt;p&gt;dies bezieht sich auf Schlüsseltechnologie #49 bzw auf die darin erwähnten Farb-Begriffe.&lt;/p&gt;
+&lt;p&gt;Rot vs blau kommt ursprünglich vom Militär, ich selbst kenn es von den Pfadfindern, damals bei Sommerlagern und/oder Geländespielen. Um ein bisschen Spannung in das Lagerleben zu kriegen (wovon es unter 200 pubertierenden Jünglingen offenbar nicht genug gab), wurden wir in zwei Unterlager aufgeteilt, die in Wettbewerb gingen. Am letzten Abend wurden die Sieger nach Punkten verkündet, hurra. Bei Geländespielen wurde oft eine Burg definiert, gehalten von Blau und attackiert von Rot. Hier die Ursprünge: $LINK&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Xyrill ersetzt hiermit den bereitgestellten Link auf einen Personalagentur-Blog durch &lt;a href=&#34;https://en.wikipedia.org/wiki/Red_team&#34;&gt;den ausführlicheren Wikipedia-Artikel&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Die schwarzen und weißen Hüte kommen aus der Urform des Westernfilms, in der die guten Jungs immer weiße Hüte trugen und die Schurken schwarze. Zuletzt sehr pointiert in der ersten Staffel von &amp;quot;Westworld&amp;quot;, die ich außerordentlich stark empfehlen möchte. (Steht bei euch popkulturell ignoranten Cyberspezls immer im Schatten von &amp;quot;Black Mirror&amp;quot;.) &lt;a href=&#34;https://en.wikipedia.org/wiki/Black_and_white_hat_symbolism_in_film&#34;&gt;https://en.wikipedia.org/wiki/Black_and_white_hat_symbolism_in_film&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;re: Wurm - &lt;a href=&#34;https://en.wikipedia.org/wiki/Computer_worm#History&#34;&gt;Wiki sagt&lt;/a&gt;, die Bezeichnung gehe zurück auf einen SF-Roman&lt;/p&gt;
+&lt;p&gt;Schlapphüte (Farbe des Huts zweitrangig) sind geheimdienstlich aktive Personen. Vorkommen: ausschließlich in journalistisch schlampigen Kontexten. Das ist eine dieser Dummphrasen für alle Schreiber, die in Deutsch gelernt haben, dass man sich schöne Synonyme ausdenken soll, damit der Text eleganter wird. Wird er nicht, im Gegenteil fettet er zu, aber das ist wie nem Ochs ins Horn gepetzt. &lt;a href=&#34;https://de.wikipedia.org/wiki/Schlapphut#Sonstiges&#34;&gt;https://de.wikipedia.org/wiki/Schlapphut#Sonstiges&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Wo wir grade dabei sind, off-topic mein Lieblings-Hassobjekt: &amp;quot;soziale Medien&amp;quot;. Nichts an diesen Plattformen ist sozial, Medien sind sie auch nicht, sondern deren Inhalt. Wie meistens bei Übersetzungen im Cyberbereich war die erstübersetzende Person des Englischen nicht mächtig und hat uns für immer mit einem False Friend gestraft. Das originale &amp;quot;social media&amp;quot; hat zwar ein ebenfalls dubioses Medium, aber der Begriff &amp;quot;social&amp;quot; bedeutet in diesem Fall &amp;quot;gesellig&amp;quot;: Let&#39;s go socialising! (dt. &amp;quot;Gehn wir einen saufen&amp;quot;).  Entsprechend sind die sozialen Medien in Wirklichkeit Geselligkeitsplattformen. Nörgel nörgel.&lt;/p&gt;
+&lt;p&gt;Warum die doofen Trojaner sich ein Hottepferdchen voll waffenstarrender Griechen in die Stadt holten, schildert Stephen Fry in seiner sehr lesenswerten Ilias-Nacherzählung &amp;quot;Troy&amp;quot;: Erstens war das Pferd ein exquisites Stück Handwerkskunst, zweitens war es überzogen mit Gold und Silber und Edelsteinen, drittens stand es unter dem Schutz einer mächtigen Göttin, Stichwort Laokoon, vor allem aber ergänzten diese verschlagenen Griechen das Pferd mit einem False-Flag-Helfershelfer, der alle Zweifel (und Cassandras Verzweiflungsschreie) beiseite wischte. Die Operation wäre einer Leningrader Trollfabrik würdig.&lt;/p&gt;
+&lt;p&gt;Stuxnet: &lt;a href=&#34;https://darknetdiaries.com/episode/29/&#34;&gt;https://darknetdiaries.com/episode/29/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Wenn wir schon Podcasts zu Stuxnet verlinken, erhöht Xyrill um &lt;a href=&#34;http://alternativlos.org/5/&#34;&gt;ein Alternativlos&lt;/a&gt; und möchte sehen.&lt;/p&gt;
+&lt;h4&gt;Feedback zu STP057&lt;/h4&gt;
+&lt;p&gt;Klaus schlägt per Mail einen anderen Namen für Matrix/Mastodon-Server vor:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hallo Xyrill!&lt;/p&gt;
+&lt;p&gt;Wie wär&#39;s mit &#39;Meldestelle&#39; oder &#39;Anmeldedienst&#39; oder etwas in der Art.&lt;/p&gt;
+&lt;p&gt;Wenn man irgendwo neu hinzieht, muss man sich doch auch registrieren.&lt;/p&gt;
+&lt;p&gt;Das ist hier nicht anders, schließlich ist man neu auf den entsprechenden Diensten.&lt;/p&gt;
+&lt;p&gt;Gibt ja jede Menge Meldestellen in Deutschland, so auch im Fediverse, nur dass im Fediverse nicht vorgeschrieben wird, welche man zu nehmen hat.&lt;/p&gt;
+&lt;p&gt;In der Regel interagiert man ja auch nicht notwendigerweise mit den Leuten, die sich bei der gleichen Meldestelle angemeldet habe.&lt;/p&gt;
+&lt;p&gt;Grüße aus Belgien!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;Mehr Feedback zu STP057&lt;/h4&gt;
+&lt;p&gt;Jan schreibt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hallo Xyrill und ttimeless,&lt;/p&gt;
+&lt;p&gt;da ihr in der letzten Folge zu ActivityPub wiederholt nach Feedback gefragt habt, gebe ich doch auch gerne meinen Senf dazu!&lt;/p&gt;
+&lt;p&gt;Ich denke das Wort, das Xyrill bei 00:14:53 sucht ist Galionsfigur. Wikipedia nennt im Deutschen Artikel von Figurehead auch &amp;quot;Frühstücksdirektor&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Das war eigentlich schon alles was ich schreiben wollte. Ich danke euch vielmals für diesen tollen Podcast und freue mich alle
+drei Wochen(!) über eine neue Folge.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Xyrill merkt hierzu an, dass er nicht mehr wirklich GPG verwendet und das Entschlüsseln dieser Mail ein Abenteuer war.&lt;/p&gt;
+&lt;h4&gt;Cold Call&lt;/h4&gt;
+&lt;p&gt;Xyrill hat eine Mail bekommen:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hallo Herr Majewsky,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Das sieht schon nicht gut aus.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ich möchte Ihnen gerne einen spannenden Gast für Ihren Podcast vorschlagen&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Haben wir ja grundsätzlich nichts dagegen. Ladet Euch bitte ein, wenn Ihr ein Thema mitbringen möchtet, zu dem Ihr was sagen könnt.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mit freundlichen Grüßen,
+$NAME&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Communications Executive
+$PR_AGENTUR&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Aber wenn Ihr Eure PR-Agentur vorschickt, dann gehe ich davon aus, dass es sich hier um Native Advertising handelt. Nicht nur mag ich das nicht, sondern vielleicht denkt dann das Finanzamt noch, dass hier Gewinnabsicht bestünde.</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Feedback"  />
+          <chapter start="00:00:29" title="Feedback von Till"  />
+          <chapter start="00:08:34" title="Feedback von Klaus"  />
+          <chapter start="00:09:51" title="Feedback von Jan"  />
+          <chapter start="00:11:16" title="Cold Call"  />
+          <chapter start="00:12:42" title="Bitte noch mehr Feedback"  />
+          <chapter start="00:13:56" title="Intro-Intro"  />
+          <chapter start="00:15:12" title="Intro"  />
+          <chapter start="00:17:59" title="Identifier für Menschen"  />
+          <chapter start="00:44:50" title="Fortlaufende Nummern"  />
+          <chapter start="00:48:15" title="Universally Unique Identifier"  />
+          <chapter start="01:00:36" title="Content-Addressed Storage"  />
+          <chapter start="01:08:13" title="Versionsnummern"  />
+      </chapters>
+      <enclosure length="84259126" url="https://dl.xyrillian.de/noises/stp-058-identifier.mp3" type="audio/mpeg"/>
+      <enclosure length="53221158" url="https://dl.xyrillian.de/noises/stp-058-identifier.ogg" type="audio/ogg"/>
+      <enclosure length="31714654" url="https://dl.xyrillian.de/noises/stp-058-identifier.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/058-identifier/</guid>
+    <pubDate>Thu, 18 Jul 2024 21:40:00 GMT</pubDate>
+    <itunes:duration>87:25</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP057: ActivityPub</itunes:title>
     <itunes:episode>57</itunes:episode>
     <itunes:season>1</itunes:season>

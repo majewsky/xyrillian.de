@@ -1114,3 +1114,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 58
+    slug: 058-identifier
+    title: Identifier
+    pubtime: 1721338800 # 2024-07-18
+
+    markdown:
+      description: |
+        Da die Zeiten von Karteikarten in Büros und auf Ämtern ~~zum Glück~~ _leider_ vorbei sind, braucht es nun andere Wege, um Personen zu identifizieren. Doch nicht nur störende Kundschaft will wiedererkannt werden...
+      shownotes: true # in file
+
+    music: *music-like-stp-000
