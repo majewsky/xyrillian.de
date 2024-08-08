@@ -3332,3 +3332,40 @@ audio_metadata:
     - start_secs: 4093
       end_secs: 5245.456
       title: Versionsnummern
+  stp:059-nebenlaeufigkeit:
+    length_secs: 3030
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-059-nebenlaeufigkeit.mp3
+      size_bytes: 48821671
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-059-nebenlaeufigkeit.ogg
+      size_bytes: 30379736
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-059-nebenlaeufigkeit.opus
+      size_bytes: 18444076
+    chapters:
+    - start_secs: 0
+      end_secs: 151
+      title: Intro
+    - start_secs: 151
+      end_secs: 268
+      title: Rückbezug zu STP015
+    - start_secs: 268
+      end_secs: 471
+      title: Grundproblem
+    - start_secs: 471
+      end_secs: 901
+      title: Race
+    - start_secs: 901
+      end_secs: 2295
+      title: Wir brauchen ein Mutex
+    - start_secs: 2295
+      end_secs: 2657
+      title: Speicher teilen mit Kanälen
+    - start_secs: 2657
+      end_secs: 3030.637
+      title: Amdahl'sches Gesetz

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nebenläufigkeit - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #59 vom 8. August 2024</h2>
+    <h1>Nebenläufigkeit</h1>
+      <p>Nachdem es in STP015 (Multitasking) bereits um die nacheinanderfolgende Verteilung von Resourcen an verschiedene Prozesse ging, kommt heute echtes &quot;gleichzeitig Arbeiten&quot; dran.</p>
+      <p><strong>Länge:</strong> 50:30 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-059-nebenlaeufigkeit.mp3" type="audio/mpeg">
+        <source src="/dl/stp-059-nebenlaeufigkeit.ogg" type="audio/ogg">
+        <source src="/dl/stp-059-nebenlaeufigkeit.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="151">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="151" data-end="268">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">02:31</span>
+        <span class="chapter-title">Rückbezug zu STP015</span>
+      </div>
+      <div class="chapter" data-start="268" data-end="471">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">04:28</span>
+        <span class="chapter-title">Grundproblem</span>
+      </div>
+      <div class="chapter" data-start="471" data-end="901">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">07:51</span>
+        <span class="chapter-title">Race</span>
+      </div>
+      <div class="chapter" data-start="901" data-end="2295">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">15:01</span>
+        <span class="chapter-title">Wir brauchen ein Mutex</span>
+      </div>
+      <div class="chapter" data-start="2295" data-end="2657">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">38:15</span>
+        <span class="chapter-title">Speicher teilen mit Kanälen</span>
+      </div>
+      <div class="chapter" data-start="2657" data-end="3030.637">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">44:17</span>
+        <span class="chapter-title">Amdahl&#39;sches Gesetz</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-059-nebenlaeufigkeit.mp3">MP3</a> (46,6 MiB)</li>
+          <li><a href="/dl/stp-059-nebenlaeufigkeit.ogg">Ogg Vorbis</a> (29,0 MiB)</li>
+          <li><a href="/dl/stp-059-nebenlaeufigkeit.opus">Opus</a> (17,6 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p>Rückbezug und Abgrenzung zu STP015 (Multitasking in Betriebssystemen)</p>
+<ul>
+<li>Definition von <a href="https://de.wikipedia.org/w/index.php?title=Nebenl%C3%A4ufigkeit&amp;oldid=242751497">Nebenläufigkeit</a>: &quot;in der Informatik die Eigenschaft eines Systems, mehrere Aufgaben, Berechnungen, Anweisungen oder Befehle gleichzeitig ausführen zu können&quot;</li>
+<li>Definition von <a href="https://de.wikipedia.org/w/index.php?title=Multitasking&amp;oldid=241562607">Multitasking</a>: &quot;die Fähigkeit eines Betriebssystems, mehrere Aufgaben [...] (quasi-)nebenläufig auszuführen&quot;</li>
+<li>eins definiert das andere \o/ -&gt; wir schauen auf den Begriffsgebrauch in der Praxis</li>
+<li>Multitasking: die funktionale Umsetzung einer Multiprozess-Architektur in Hardware und Software (auf Betriebssystem-Ebene)</li>
+<li>Nebenläufigkeit: die Ertüchtigung von Userspace-Programmen zur Ausnutzung dieser Möglichkeiten unter Wahrung des korrekten Verhaltens</li>
+</ul>
+</li>
+<li>
+<p>Grundproblem: Wie vermeidet man Konflikte und Verwirrung beim Umgang mit geteilten Ressourcen?</p>
+<ul>
+<li>&quot;Ressource&quot; bedeutet vor allem: Speicherstellen, Dateisystem-Einträge (Dateien und Verzeichnisse), Geräte, (Aufmerksamkeit der Benutzerin)</li>
+<li>explizit nicht Zeit; darum kümmert sich bereits die Multitasking-Unterstützung des Betriebssystems</li>
+</ul>
+</li>
+<li>
+<p><strong>Race</strong>: eine Situation, bei der das Ergebnis (und insbesondere die Korrektheit) mehrerer nebenläufiger Prozesse davon abhängt, in welcher Reihenfolge die einzelnen Rechenschritte verschiedener Prozesse zufälligerweise ausgeführt werden</p>
+<ul>
+<li>allgemein bekannt als <strong>Race Condition</strong> (<a href="https://de.wikipedia.org/w/index.php?title=Wettlaufsituation&amp;oldid=203715002">Wettlaufsituation</a>) oder beim Speicherzugriff insbesondere <strong>Data Race</strong></li>
+<li>Beispielsituation: im Arbeitsspeicher liegt ein Zähler mit aktuellem Wert 40; zwei Prozesse A und B wollen diesen Zähler gleichzeitig um 1 erhöhen -&gt; erwarteter Endwert 42</li>
+<li>Problem: &quot;Zahl im Arbeitsspeicher verändern&quot; ist nicht, wie Speicherzugriff in CPUs funktioniert (siehe STP007); tatsächlich sind jeweils drei Schritte erforderlich (Einlesen in CPU-Register, Erhöhen um 1, Zurückschreiben in den RAM)</li>
+<li>möglicher Ausgang: beide Prozesse laufen auf verschiedenen CPUs, lesen gleichzeitig den Wert 40 in ihre CPU-Register, erhöhen gleichzeitig auf 41, schreiben dies zurück -&gt; Ergebnis 41 statt 42</li>
+<li>&quot;auf verschiedenen CPUs&quot; ist hier nicht erforderlich: z.B. A liest ein und erhöht, wird unterbrochen, B liest ein und erhöht, B schreibt zurück, wird unterbrochen, A schreibt zurück</li>
+<li>&quot;zwei Prozesse&quot; ist auch nicht erforderlich: Prozesse können auch in <strong>Threads</strong> (parallele Ausführungsstränge) unterteilt sein, die nebenläufig Code ausführen, aber ansonsten fast alle Ressourcen (Speicherseiten, offene Dateien, etc.) teilen</li>
+</ul>
+</li>
+<li>
+<p>wir brauchen ein <a href="https://de.wikipedia.org/w/index.php?title=Mutex&amp;oldid=217939607">Mutex</a>: einen Mechanismus zum wechselseitigen Ausschluss (&quot;<strong>Mut</strong>ual <strong>Ex</strong>clusion&quot;)</p>
+<ul>
+<li>Problem: Wie implementiert man sowas?</li>
+</ul>
+</li>
+<li>
+<p>Idee: bevor wir den Zähler anfassen, fragen wir bei einem zentralen Prozess nach einer Sperre für diesen Zähler an; dieser Prozess vermerkt Sperr- und Entsperrvorgänge in seinem internen Speicher</p>
+<ul>
+<li>dieser Kontrollprozess könnte auch einfach ein Teil des Betriebssystems sein und der Sperr-/Entsperrvorgang ein Syscall (siehe STP019)</li>
+<li>Vorteil: innerhalb dieses Kontrollprozesses keine Nebenläufigkeit und damit keine Gefahr eines Data Race</li>
+<li>Nachteil: Interprozess-Kommunikation ist vergleichsweise grauenhaft langsam (Millisekunden vs. Mikrosekunden)</li>
+</ul>
+</li>
+<li>
+<p>Idee: in der <strong>kritischen Region</strong> (von Auslesen des Zählers bis Zurückschreiben) verbieten wir dem Betriebssystem, unseren Prozess zu unterbrechen</p>
+<ul>
+<li>Problem 1: hilft nur bei nebenläufigen Prozessen auf demselben CPU-Kern</li>
+<li>Problem 2: immer noch ein teurer Syscall</li>
+<li>Problem 3: böswillige Prozesse könnten einfach ihre gesamte Laufzeit als kritische Region markieren und die Rechenzeit blockieren</li>
+</ul>
+</li>
+<li>
+<p>praktische Umsetzung von Mutexen mittels <a href="https://de.wikipedia.org/w/index.php?title=Atomare_Operation&amp;oldid=232565909">Atomics</a>: spezielle CPU-Instruktionen, die nicht unterbrochen werden können</p>
+<ul>
+<li>Beispiel für Mutex: &quot;Fetch and Add&quot; liest einen Wert aus dem Speicher aus, erhöht ihn um das Argument, und schreibt den erhöhten Wert zurück</li>
+<li>schneller als ein Kontextwechsel zu einem Kontrollprozess oder ein Syscall</li>
+<li>langsamer als ein normaler Speicherzugriff, da eventuell Caches ignoriert oder aktiv geleert werden müssen</li>
+<li>in der Praxis evtl. Kombination mit Syscalls, um bei blockiertem Mutex den Prozess zu unterbrechen (z.B. unter Linux das <a href="https://de.wikipedia.org/w/index.php?title=Futex&amp;oldid=242228263">&quot;Fast Userspace Mutex&quot; bzw. Futex</a>)</li>
+</ul>
+</li>
+<li>
+<p>andere Perspektive, hier zitiert aus der Programmiersprache Go: <a href="https://go.dev/doc/effective_go">&quot;Do not communicate by sharing memory; instead, share memory by communicating.&quot;</a></p>
+<ul>
+<li>statt Zugriffssicherungen für geteilten Speicher dort eher Nutzung von &quot;Kanälen&quot; (<strong>Channels</strong>) zur Nachrichtenübermittlung zwischen Threads</li>
+<li>Beispiel &quot;Worker Pool&quot;: mehrere gleichartige und voneinander unabhängige Teilaufgaben sind abzuarbeiten (z.B. 100 Bilder in ein anderes Dateiformat umwandeln)</li>
+<li>Idee: ein Worker (Arbeits-Prozess oder Arbeits-Thread) pro CPU-Kern; außerdem ein zentraler Prozess, der die Aufgaben verteilt; Zentrale stellt alle Dateinamen in einen Kanal, Arbeiter greifen nacheinander aus dem Kanal die Dateinamen heraus</li>
+<li>unter der Haube nutzt der Kanal Atomics, um sich vor Data Races zu schützen</li>
+<li>Rückbezug zu STP027: sobald man mehrere Threads untereinander koordinieren muss, hat man das ganze Problemfeld &quot;Verteilte Systeme&quot;, was nach Xyrills Erfahrung nochmal wesentlich nerviger ist als Data Races</li>
+</ul>
+</li>
+<li>
+<p>Abendgedanken: <a href="https://de.wikipedia.org/w/index.php?title=Amdahlsches_Gesetz&amp;oldid=233711717">Amdahl'sches Gesetz</a></p>
+<ul>
+<li>mehr CPU-Kerne machen nur Dinge schneller, die wahrhaft nebenläufig sind</li>
+</ul>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>

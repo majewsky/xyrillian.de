@@ -27,6 +27,110 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP059: Nebenläufigkeit</itunes:title>
+    <itunes:episode>59</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP059: Nebenläufigkeit</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nachdem es in STP015 (Multitasking) bereits um die nacheinanderfolgende Verteilung von Resourcen an verschiedene Prozesse ging, kommt heute echtes &amp;quot;gleichzeitig Arbeiten&amp;quot; dran.</itunes:summary>
+    <description>Nachdem es in STP015 (Multitasking) bereits um die nacheinanderfolgende Verteilung von Resourcen an verschiedene Prozesse ging, kommt heute echtes &amp;quot;gleichzeitig Arbeiten&amp;quot; dran.</description>
+    <content:encoded>&lt;p&gt;Nachdem es in STP015 (Multitasking) bereits um die nacheinanderfolgende Verteilung von Resourcen an verschiedene Prozesse ging, kommt heute echtes &amp;quot;gleichzeitig Arbeiten&amp;quot; dran.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug und Abgrenzung zu STP015 (Multitasking in Betriebssystemen)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Definition von &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Nebenl%C3%A4ufigkeit&amp;amp;oldid=242751497&#34;&gt;Nebenläufigkeit&lt;/a&gt;: &amp;quot;in der Informatik die Eigenschaft eines Systems, mehrere Aufgaben, Berechnungen, Anweisungen oder Befehle gleichzeitig ausführen zu können&amp;quot;&lt;/li&gt;
+&lt;li&gt;Definition von &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Multitasking&amp;amp;oldid=241562607&#34;&gt;Multitasking&lt;/a&gt;: &amp;quot;die Fähigkeit eines Betriebssystems, mehrere Aufgaben [...] (quasi-)nebenläufig auszuführen&amp;quot;&lt;/li&gt;
+&lt;li&gt;eins definiert das andere \o/ -&amp;gt; wir schauen auf den Begriffsgebrauch in der Praxis&lt;/li&gt;
+&lt;li&gt;Multitasking: die funktionale Umsetzung einer Multiprozess-Architektur in Hardware und Software (auf Betriebssystem-Ebene)&lt;/li&gt;
+&lt;li&gt;Nebenläufigkeit: die Ertüchtigung von Userspace-Programmen zur Ausnutzung dieser Möglichkeiten unter Wahrung des korrekten Verhaltens&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grundproblem: Wie vermeidet man Konflikte und Verwirrung beim Umgang mit geteilten Ressourcen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Ressource&amp;quot; bedeutet vor allem: Speicherstellen, Dateisystem-Einträge (Dateien und Verzeichnisse), Geräte, (Aufmerksamkeit der Benutzerin)&lt;/li&gt;
+&lt;li&gt;explizit nicht Zeit; darum kümmert sich bereits die Multitasking-Unterstützung des Betriebssystems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Race&lt;/strong&gt;: eine Situation, bei der das Ergebnis (und insbesondere die Korrektheit) mehrerer nebenläufiger Prozesse davon abhängt, in welcher Reihenfolge die einzelnen Rechenschritte verschiedener Prozesse zufälligerweise ausgeführt werden&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;allgemein bekannt als &lt;strong&gt;Race Condition&lt;/strong&gt; (&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Wettlaufsituation&amp;amp;oldid=203715002&#34;&gt;Wettlaufsituation&lt;/a&gt;) oder beim Speicherzugriff insbesondere &lt;strong&gt;Data Race&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Beispielsituation: im Arbeitsspeicher liegt ein Zähler mit aktuellem Wert 40; zwei Prozesse A und B wollen diesen Zähler gleichzeitig um 1 erhöhen -&amp;gt; erwarteter Endwert 42&lt;/li&gt;
+&lt;li&gt;Problem: &amp;quot;Zahl im Arbeitsspeicher verändern&amp;quot; ist nicht, wie Speicherzugriff in CPUs funktioniert (siehe STP007); tatsächlich sind jeweils drei Schritte erforderlich (Einlesen in CPU-Register, Erhöhen um 1, Zurückschreiben in den RAM)&lt;/li&gt;
+&lt;li&gt;möglicher Ausgang: beide Prozesse laufen auf verschiedenen CPUs, lesen gleichzeitig den Wert 40 in ihre CPU-Register, erhöhen gleichzeitig auf 41, schreiben dies zurück -&amp;gt; Ergebnis 41 statt 42&lt;/li&gt;
+&lt;li&gt;&amp;quot;auf verschiedenen CPUs&amp;quot; ist hier nicht erforderlich: z.B. A liest ein und erhöht, wird unterbrochen, B liest ein und erhöht, B schreibt zurück, wird unterbrochen, A schreibt zurück&lt;/li&gt;
+&lt;li&gt;&amp;quot;zwei Prozesse&amp;quot; ist auch nicht erforderlich: Prozesse können auch in &lt;strong&gt;Threads&lt;/strong&gt; (parallele Ausführungsstränge) unterteilt sein, die nebenläufig Code ausführen, aber ansonsten fast alle Ressourcen (Speicherseiten, offene Dateien, etc.) teilen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;wir brauchen ein &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Mutex&amp;amp;oldid=217939607&#34;&gt;Mutex&lt;/a&gt;: einen Mechanismus zum wechselseitigen Ausschluss (&amp;quot;&lt;strong&gt;Mut&lt;/strong&gt;ual &lt;strong&gt;Ex&lt;/strong&gt;clusion&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem: Wie implementiert man sowas?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Idee: bevor wir den Zähler anfassen, fragen wir bei einem zentralen Prozess nach einer Sperre für diesen Zähler an; dieser Prozess vermerkt Sperr- und Entsperrvorgänge in seinem internen Speicher&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;dieser Kontrollprozess könnte auch einfach ein Teil des Betriebssystems sein und der Sperr-/Entsperrvorgang ein Syscall (siehe STP019)&lt;/li&gt;
+&lt;li&gt;Vorteil: innerhalb dieses Kontrollprozesses keine Nebenläufigkeit und damit keine Gefahr eines Data Race&lt;/li&gt;
+&lt;li&gt;Nachteil: Interprozess-Kommunikation ist vergleichsweise grauenhaft langsam (Millisekunden vs. Mikrosekunden)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Idee: in der &lt;strong&gt;kritischen Region&lt;/strong&gt; (von Auslesen des Zählers bis Zurückschreiben) verbieten wir dem Betriebssystem, unseren Prozess zu unterbrechen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem 1: hilft nur bei nebenläufigen Prozessen auf demselben CPU-Kern&lt;/li&gt;
+&lt;li&gt;Problem 2: immer noch ein teurer Syscall&lt;/li&gt;
+&lt;li&gt;Problem 3: böswillige Prozesse könnten einfach ihre gesamte Laufzeit als kritische Region markieren und die Rechenzeit blockieren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;praktische Umsetzung von Mutexen mittels &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Atomare_Operation&amp;amp;oldid=232565909&#34;&gt;Atomics&lt;/a&gt;: spezielle CPU-Instruktionen, die nicht unterbrochen werden können&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispiel für Mutex: &amp;quot;Fetch and Add&amp;quot; liest einen Wert aus dem Speicher aus, erhöht ihn um das Argument, und schreibt den erhöhten Wert zurück&lt;/li&gt;
+&lt;li&gt;schneller als ein Kontextwechsel zu einem Kontrollprozess oder ein Syscall&lt;/li&gt;
+&lt;li&gt;langsamer als ein normaler Speicherzugriff, da eventuell Caches ignoriert oder aktiv geleert werden müssen&lt;/li&gt;
+&lt;li&gt;in der Praxis evtl. Kombination mit Syscalls, um bei blockiertem Mutex den Prozess zu unterbrechen (z.B. unter Linux das &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Futex&amp;amp;oldid=242228263&#34;&gt;&amp;quot;Fast Userspace Mutex&amp;quot; bzw. Futex&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;andere Perspektive, hier zitiert aus der Programmiersprache Go: &lt;a href=&#34;https://go.dev/doc/effective_go&#34;&gt;&amp;quot;Do not communicate by sharing memory; instead, share memory by communicating.&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;statt Zugriffssicherungen für geteilten Speicher dort eher Nutzung von &amp;quot;Kanälen&amp;quot; (&lt;strong&gt;Channels&lt;/strong&gt;) zur Nachrichtenübermittlung zwischen Threads&lt;/li&gt;
+&lt;li&gt;Beispiel &amp;quot;Worker Pool&amp;quot;: mehrere gleichartige und voneinander unabhängige Teilaufgaben sind abzuarbeiten (z.B. 100 Bilder in ein anderes Dateiformat umwandeln)&lt;/li&gt;
+&lt;li&gt;Idee: ein Worker (Arbeits-Prozess oder Arbeits-Thread) pro CPU-Kern; außerdem ein zentraler Prozess, der die Aufgaben verteilt; Zentrale stellt alle Dateinamen in einen Kanal, Arbeiter greifen nacheinander aus dem Kanal die Dateinamen heraus&lt;/li&gt;
+&lt;li&gt;unter der Haube nutzt der Kanal Atomics, um sich vor Data Races zu schützen&lt;/li&gt;
+&lt;li&gt;Rückbezug zu STP027: sobald man mehrere Threads untereinander koordinieren muss, hat man das ganze Problemfeld &amp;quot;Verteilte Systeme&amp;quot;, was nach Xyrills Erfahrung nochmal wesentlich nerviger ist als Data Races&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abendgedanken: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Amdahlsches_Gesetz&amp;amp;oldid=233711717&#34;&gt;Amdahl&#39;sches Gesetz&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mehr CPU-Kerne machen nur Dinge schneller, die wahrhaft nebenläufig sind&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:02:31" title="Rückbezug zu STP015"  />
+          <chapter start="00:04:28" title="Grundproblem"  />
+          <chapter start="00:07:51" title="Race"  />
+          <chapter start="00:15:01" title="Wir brauchen ein Mutex"  />
+          <chapter start="00:38:15" title="Speicher teilen mit Kanälen"  />
+          <chapter start="00:44:17" title="Amdahl&#39;sches Gesetz"  />
+      </chapters>
+      <enclosure length="48821671" url="https://dl.xyrillian.de/noises/stp-059-nebenlaeufigkeit.mp3" type="audio/mpeg"/>
+      <enclosure length="30379736" url="https://dl.xyrillian.de/noises/stp-059-nebenlaeufigkeit.ogg" type="audio/ogg"/>
+      <enclosure length="18444076" url="https://dl.xyrillian.de/noises/stp-059-nebenlaeufigkeit.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/059-nebenlaeufigkeit/</guid>
+    <pubDate>Thu, 08 Aug 2024 20:30:00 GMT</pubDate>
+    <itunes:duration>50:30</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP058: Identifier</itunes:title>
     <itunes:episode>58</itunes:episode>
     <itunes:season>1</itunes:season>

@@ -1127,3 +1127,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 59
+    slug: 059-nebenlaeufigkeit
+    title: Nebenläufigkeit
+    pubtime: 1723149000 # 2024-08-08
+
+    markdown:
+      description: |
+        Nachdem es in STP015 (Multitasking) bereits um die nacheinanderfolgende Verteilung von Resourcen an verschiedene Prozesse ging, kommt heute echtes "gleichzeitig Arbeiten" dran.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
