@@ -3369,3 +3369,85 @@ audio_metadata:
     - start_secs: 2657
       end_secs: 3030.637
       title: Amdahl'sches Gesetz
+  stp:060-praxisbeispiel-datenauswertung:
+    length_secs: 3942
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-060-praxisbeispiel-datenauswertung.mp3
+      size_bytes: 63418164
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-060-praxisbeispiel-datenauswertung.ogg
+      size_bytes: 39773224
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-060-praxisbeispiel-datenauswertung.opus
+      size_bytes: 24034233
+    chapters:
+    - start_secs: 0
+      end_secs: 239
+      title: Intro und geklagtes Leid
+    - start_secs: 239
+      end_secs: 457
+      title: Einfürung und Szenario
+    - start_secs: 457
+      end_secs: 479
+      title: Sichtung der Messdaten
+    - start_secs: 479
+      end_secs: 669
+      title: Zeilenenden
+    - start_secs: 669
+      end_secs: 789
+      title: Whitespaces
+    - start_secs: 789
+      end_secs: 883
+      title: Header
+    - start_secs: 883
+      end_secs: 1201
+      title: CSV-Dateien
+    - start_secs: 1201
+      end_secs: 1300
+      title: Sanity-Check
+    - start_secs: 1300
+      end_secs: 1362
+      title: 'Abschweif: Ideolekt'
+    - start_secs: 1362
+      end_secs: 1472
+      title: Sichtung mit "head"
+    - start_secs: 1472
+      end_secs: 1523
+      title: Aufbereitung der Daten
+    - start_secs: 1523
+      end_secs: 1587
+      title: mit "tail"
+    - start_secs: 1587
+      end_secs: 1823
+      title: mit "sed"
+    - start_secs: 1823
+      end_secs: 2512
+      title: Anmerkung zur Automatisierung
+    - start_secs: 2512
+      end_secs: 2657
+      title: Gnuplot
+    - start_secs: 2657
+      end_secs: 2783
+      title: Textmanipulation
+    - start_secs: 2783
+      end_secs: 2911
+      title: mit "tr"
+    - start_secs: 2911
+      end_secs: 3094
+      title: nochmal mit "sed"
+    - start_secs: 3094
+      end_secs: 3614
+      title: Gnuplot-script
+    - start_secs: 3614
+      end_secs: 3738
+      title: Orientierung im Befehlsdschungel
+    - start_secs: 3738
+      end_secs: 3863
+      title: Datumsformatierung ändern
+    - start_secs: 3863
+      end_secs: 3942.853
+      title: Verzweiflung aus der "date"-Dokumentation

@@ -27,6 +27,121 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP060: Praxisbeispiel: Datenauswertung auf der Kommandozeile</itunes:title>
+    <itunes:episode>60</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP060: Praxisbeispiel: Datenauswertung auf der Kommandozeile</title>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nachdem die beiden sich gegenseitig ihr Leid geklagt haben, geht es dann doch noch um Technik. Oder eher um deren Anwendung. Diesmal wieder mit einer Hands-on-Folge, denn es ist wichtig, vor Kunden und bei Präsentationen einen professionellen Eindruck zu machen.</itunes:summary>
+    <description>Nachdem die beiden sich gegenseitig ihr Leid geklagt haben, geht es dann doch noch um Technik. Oder eher um deren Anwendung. Diesmal wieder mit einer Hands-on-Folge, denn es ist wichtig, vor Kunden und bei Präsentationen einen professionellen Eindruck zu machen.</description>
+    <content:encoded>&lt;p&gt;Nachdem die beiden sich gegenseitig ihr Leid geklagt haben, geht es dann doch noch um Technik. Oder eher um deren Anwendung. Diesmal wieder mit einer Hands-on-Folge, denn es ist wichtig, vor Kunden und bei Präsentationen einen professionellen Eindruck zu machen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückblick: STP006 &amp;quot;Kommandozeilen und Unixphilosophie&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ttimeless hat gerade eine Gelegenheit, Daten zu analysieren, an der man das praktische Vorgehen mit Kommandozeilen-Werkzeugen gut demonstrieren kann&lt;/li&gt;
+&lt;li&gt;Ausgangssituation: &lt;a href=&#34;https://www.conrad.de/de/p/voltcraft-dl-210th-dl-210th-temperatur-datenlogger-luftfeuchte-datenlogger-messgroesse-temperatur-luftfeuchtigkeit-30-1435091.html&#34;&gt;Klimasensor-Datenlogger&lt;/a&gt; in verschiedenen Räumen messen einmal pro Minute Temperatur und Luftfeuchtigkeit&lt;/li&gt;
+&lt;li&gt;mitgelieferte Software bietet eine rudimentäre Visualisierung sowie einen Datenexport als &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=CSV_(Dateiformat)&amp;amp;oldid=244981555&#34;&gt;CSV&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;die &lt;a href=&#34;http://dl.xyrillian.de/noises/stp-060-shownotes/&#34;&gt;hier besprochenen CSV-Dateien&lt;/a&gt; können zum Nachvollziehen heruntergeladen werden&lt;/li&gt;
+&lt;li&gt;Ziel: eigene Datenvisualisierung mit &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Gnuplot&amp;amp;oldid=226771326&#34;&gt;gnuplot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;erste Sichtprüfung: &lt;code&gt;&amp;lt;Balkon.csv head&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;acht Kopfzeilen mit Metadaten und Auswertungen (Berichtszeitraum, Maximum/Minimum/Durchschnitt)&lt;/li&gt;
+&lt;li&gt;diesen Header brauchen wir nicht, wir wollen die Rohdaten&lt;/li&gt;
+&lt;li&gt;Option 1: sofern immer acht Zeilen, z.B. &lt;code&gt;tail -n &#43;9&lt;/code&gt; oder &lt;code&gt;sed 1,8d&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Option 2: Suchmuster auf den Zeileninhalt der letzten Kopfzeile, z.B. &lt;code&gt;sed 1,/^Aufnahmezeit/d&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Option 3: nur Zeilen auswählen, die nach Daten aussehen, z.B. &lt;code&gt;grep &#39;^&amp;quot;[0-9]&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kopfzeilen entfernt: &lt;code&gt;&amp;lt;Balkon.csv sed 1,8d&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nächstes Problem: die Anführungszeichen um die einzelnen Werte werden gnuplot verwirren -&amp;gt; würden wir mit &lt;code&gt;tr -d \&amp;quot;&lt;/code&gt; wegbekommen&lt;/li&gt;
+&lt;li&gt;Problem: dann wären die Dezimalkommas nicht von den wertetrennenden Kommas zu unterscheiden&lt;/li&gt;
+&lt;li&gt;unsere Lösung: während wir Anführungszeichen entfernen, werden dazwischenliegende Kommas gleichzeitig durch ein anderes Trennzeichen (hier einen Tabulator) ersetzt -&amp;gt; &lt;code&gt;sed &#39;s/^&amp;quot;//; s/&amp;quot;,&amp;quot;/\t/g; s/&amp;quot;\s*$//&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;hierin ist Trickserei erforderlich, weil die erzeugten Dateien Windows-Zeilenenden haben (CR&#43;LF), nicht Unix-Zeilenenden (nur LF) -&amp;gt; könnte man auch vorher mit &lt;code&gt;dos2unix&lt;/code&gt; beheben, dann ist statt &lt;code&gt;s/&amp;quot;\s*$//&lt;/code&gt; nur &lt;code&gt;s/&amp;quot;$//&lt;/code&gt; erforderlich&lt;/li&gt;
+&lt;li&gt;Alternative (erfordert &lt;a href=&#34;https://csvkit.readthedocs.org&#34;&gt;csvkit&lt;/a&gt;): &lt;code&gt;csvformat -d , -q \&amp;quot; -U 3 -D $&#39;\t&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Anführungszeichen entfernt: &lt;code&gt;&amp;lt;Balkon.csv sed 1,8d | sed &#39;s/^&amp;quot;//; s/&amp;quot;,&amp;quot;/\t/g; s/&amp;quot;\s*$//&#39; &amp;gt;Balkon.dat&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zu Xyrills Überraschung ist das schon ausreichend, den Rest können wir in gnuplot machen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Anzeige in gnuplot: das untenstehende Programm als &lt;code&gt;Balkon.gp&lt;/code&gt; abspeichern, &lt;code&gt;gnuplot&lt;/code&gt; aufrufen und &lt;code&gt;load &#39;Balkon.gp&#39;&lt;/code&gt; eingeben)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;set xdata time
+set timefmt &#39;%d-%m-%Y %H:%M:%S&#39;
+set format x &#39;%d.%m.%Y %H:%M:%S&#39;
+set decimalsign &#39;,&#39;
+set datafile separator &amp;quot;\t&amp;quot;
+set ylabel &amp;quot;Temperatur °C&amp;quot;
+set y2label &amp;quot;Luftfeuchte %&amp;quot;
+set y2tics
+plot &#39;Balkon.dat&#39; using 1:2 title &#39;Temperatur&#39; with lines axes x1y1, &#39;Balkon.dat&#39; using 1:3 title &#39;Luftfeuchtigkeit&#39; with lines axes x1y2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Für die Ausgabe in eine Datei können noch diese beiden Zeilen vorangestellt werden:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;set terminal svg background &amp;quot;white&amp;quot; dashed size 1920,1080
+set output &amp;quot;Balkon.svg&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was, wenn gnuplot nicht so clever wäre?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dezimaltrennzeichen von Komma in Punkt ändern: &lt;code&gt;&amp;lt;Balkon.dat tr , .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Datumsformat in ISO ändern: &lt;code&gt;&amp;lt;Balkon.dat awk -F&#39;\t&#39; &#39;{ split($1, DATE, /[^0-9]*/); $1 = DATE[3] &amp;quot;-&amp;quot; DATE[2] &amp;quot;-&amp;quot; DATE[1] &amp;quot;T&amp;quot; DATE[4] &amp;quot;:&amp;quot; DATE[5] &amp;quot;:&amp;quot; DATE[6] &amp;quot;Z&amp;quot;; print }&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Xyrill hatte auch geschaut, wie man die Zeitangaben in &lt;code&gt;date -d&lt;/code&gt; bekommen könnte, um sie damit umzuwandeln, und wurde von &lt;a href=&#34;https://www.gnu.org/software/coreutils/manual/html_node/Date-input-formats.html&#34;&gt;einem wunderschönen Zitat&lt;/a&gt; begrüßt (nachfolgende deutsche Übersetzung mittels &lt;a href=&#34;https://www.deepl.com/translator&#34;&gt;DeepL&lt;/a&gt;):
+&lt;blockquote&gt;
+&lt;p&gt;Unsere zeitlichen Maßeinheiten, von Sekunden bis hin zu Monaten, sind so kompliziert, asymmetrisch und disjunkt, dass ein kohärentes mentales Rechnen in der Zeit nahezu unmöglich ist. In der Tat, hätte sich ein tyrannischer Gott ausgedacht, unseren Geist an die Zeit zu versklaven, um es uns nahezu unmöglich zu machen, der Unterwerfung unter durchweichte Routinen und unangenehme Überraschungen zu entkommen, hätte er kaum etwas Besseres tun können, als uns unser gegenwärtiges System zu überliefern. Es ist wie ein Satz trapezförmiger Bauklötze, ohne vertikale oder horizontale Flächen, wie eine Sprache, in der der einfachste Gedanke verschnörkelte Konstruktionen, nutzlose Partikel und langatmige Umschreibungen erfordert. Im Gegensatz zu den erfolgreicheren Mustern der Sprache und der Wissenschaft, die es uns ermöglichen, Eindrücken kühn oder zumindest nüchtern zu begegnen, fördert unser System der zeitlichen Berechnung stillschweigend und beharrlich unseren Terror vor der Zeit.&lt;/p&gt;
+&lt;p&gt;... Es ist, als ob Architekten die Länge in Fuß, die Breite in Metern und die Höhe in Ellen messen müssten; als ob grundlegende Bedienungsanleitungen die Kenntnis von fünf verschiedenen Sprachen erfordern würden. Kein Wunder also, dass wir in unsere eigene unmittelbare Vergangenheit oder Zukunft, auf den letzten Dienstag oder den Sonntag in einer Woche, oft mit einem Gefühl hilfloser Verwirrung blicken.  ...&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt: &lt;a href=&#34;https://requestforcomments.de/archives/400&#34;&gt;ASCII-Folge von Request for Comments&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und geklagtes Leid"  />
+          <chapter start="00:03:59" title="Einfürung und Szenario"  />
+          <chapter start="00:07:37" title="Sichtung der Messdaten"  />
+          <chapter start="00:07:59" title="Zeilenenden"  />
+          <chapter start="00:11:09" title="Whitespaces"  />
+          <chapter start="00:13:09" title="Header"  />
+          <chapter start="00:14:43" title="CSV-Dateien"  />
+          <chapter start="00:20:01" title="Sanity-Check"  />
+          <chapter start="00:21:40" title="Abschweif: Ideolekt"  />
+          <chapter start="00:22:42" title="Sichtung mit &#34;head&#34;"  />
+          <chapter start="00:24:32" title="Aufbereitung der Daten"  />
+          <chapter start="00:25:23" title="mit &#34;tail&#34;"  />
+          <chapter start="00:26:27" title="mit &#34;sed&#34;"  />
+          <chapter start="00:30:23" title="Anmerkung zur Automatisierung"  />
+          <chapter start="00:41:52" title="Gnuplot"  />
+          <chapter start="00:44:17" title="Textmanipulation"  />
+          <chapter start="00:46:23" title="mit &#34;tr&#34;"  />
+          <chapter start="00:48:31" title="nochmal mit &#34;sed&#34;"  />
+          <chapter start="00:51:34" title="Gnuplot-script"  />
+          <chapter start="01:00:14" title="Orientierung im Befehlsdschungel"  />
+          <chapter start="01:02:18" title="Datumsformatierung ändern"  />
+          <chapter start="01:04:23" title="Verzweiflung aus der &#34;date&#34;-Dokumentation"  />
+      </chapters>
+      <enclosure length="63418164" url="https://dl.xyrillian.de/noises/stp-060-praxisbeispiel-datenauswertung.mp3" type="audio/mpeg"/>
+      <enclosure length="39773224" url="https://dl.xyrillian.de/noises/stp-060-praxisbeispiel-datenauswertung.ogg" type="audio/ogg"/>
+      <enclosure length="24034233" url="https://dl.xyrillian.de/noises/stp-060-praxisbeispiel-datenauswertung.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/060-praxisbeispiel-datenauswertung/</guid>
+    <pubDate>Thu, 29 Aug 2024 17:34:06 GMT</pubDate>
+    <itunes:duration>65:42</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP059: Nebenläufigkeit</itunes:title>
     <itunes:episode>59</itunes:episode>
     <itunes:season>1</itunes:season>

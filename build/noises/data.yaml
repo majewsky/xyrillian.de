@@ -1140,3 +1140,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 60
+    slug: 060-praxisbeispiel-datenauswertung
+    title: "Praxisbeispiel: Datenauswertung auf der Kommandozeile"
+    pubtime: 1724952846 # 2024-08-29
+
+    markdown:
+      description: |
+        Nachdem die beiden sich gegenseitig ihr Leid geklagt haben, geht es dann doch noch um Technik. Oder eher um deren Anwendung. Diesmal wieder mit einer Hands-on-Folge, denn es ist wichtig, vor Kunden und bei Präsentationen einen professionellen Eindruck zu machen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
