@@ -33,7 +33,7 @@ shows:
       In jeder Folge besuche ich einen neuen Hackerspace im deutschsprachigen Raum. Ich zeige Euch, was diesen Hackerspace besonders macht, und erkläre nebenbei auch, was ein Hackerspace ist und wie er funktioniert.
 
     feed: noises/st/rss.xml
-    href: https://xyrillian.de/noises/
+    href: https://xyrillian.de/noises/st/
 
     covers:
       feed: cover-st.png

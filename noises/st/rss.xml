@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>Space Tourist</title>
-  <link>https://xyrillian.de/noises/</link>
+  <link>https://xyrillian.de/noises/st/</link>
   <atom:link href="https://xyrillian.de/noises/st/rss.xml" rel="self" type="application/rss+xml" />
   <language>de</language>
   <copyright>&#xA9; 2019 Stefan Majewsky</copyright>
@@ -19,7 +19,7 @@
   </itunes:owner>
   <image>
     <url>https://xyrillian.de/res/cover-st.png</url>
-    <link>https://xyrillian.de/noises/</link>
+    <link>https://xyrillian.de/noises/st/</link>
     <title>Space Tourist</title>
   </image>
   <itunes:image href="https://xyrillian.de/res/cover-st.png"/>
@@ -54,6 +54,7 @@
     <itunes:episode>2</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>c-base Berlin</title>
+    <link>https://xyrillian.de/noises/st/002-cbase-berlin</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Im Untergrund von Berlin gibt es viel zu entdecken: U-Bahn-Schächte, Weltkriegsbunker... und eine Raumstation.</itunes:summary>
@@ -79,6 +80,7 @@
     <itunes:episode>1</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>Eigenbaukombinat Halle</title>
+    <link>https://xyrillian.de/noises/st/001-eigenbaukombinat-halle</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Meine Reise durch die deutsche Hackerspace-Landschaft beginnt beim Junghackertag im EBK in Halle an der Saale.</itunes:summary>

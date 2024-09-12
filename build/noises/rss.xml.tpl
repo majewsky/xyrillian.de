@@ -35,6 +35,9 @@
     {{- end }}
     <itunes:season>1</itunes:season>
     <title>{{if and $show.FeedConfig.EpisodeNumberInTitle .Episode}}{{$show.FeedConfig.HumanReadableShowID}}{{printf "%03d" .EpisodeAsInt}}: {{end}}{{.Title}}</title>
+    {{- if .Episode }}
+    <link>{{$show.URL}}{{.Slug}}</link>
+    {{- end }}
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>{{.RSS.Description}}</itunes:summary>

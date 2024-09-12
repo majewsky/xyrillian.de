@@ -57,6 +57,7 @@ Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. O
     <itunes:episode>4</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>Ein Kessel Buntes</title>
+    <link>https://garnichtsoeinfach-podcast.de/004-color-spaces</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Wer möchte, dass das Bild auf dem Monitor genauso schön aussieht wie nachher auf dem Ausdruck, sollte sich ein paar Gedanken über den richtigen Farbraum machen.</itunes:summary>
@@ -87,6 +88,7 @@ Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. O
     <itunes:episode>3</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>Der Herzschlag eines ganzen Kontinents</title>
+    <link>https://garnichtsoeinfach-podcast.de/003-power-network-frequency</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Auch wenn Großkraftwerke ausfallen, gehen in Deutschland nicht die Lichter aus, dank einer ausgeklügelten Kette von automatischen und manuellen Regelungsmechanismen.</itunes:summary>
@@ -112,6 +114,7 @@ Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. O
     <itunes:episode>2</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>Haben Sie eine Sekunde?</title>
+    <link>https://garnichtsoeinfach-podcast.de/002-time</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Wir leben in modernen Zeiten. Deswegen brauchen wir auch moderne Zeitrechnung. Auch wenn es bedeutet, dass Deutschland aus mehreren Zeitzonen besteht.</itunes:summary>
@@ -138,6 +141,7 @@ Doch damit macht man es sich zu einfach: Nicht jede Komplexität ist schlecht. O
     <itunes:episode>1</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>Wenn Computer sich die Hand reichen</title>
+    <link>https://garnichtsoeinfach-podcast.de/001-modem-dialup-sound</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Was steckt hinter dem merkwürdigen Modem-Einwahlgeräusch? Und warum ist das im Jahre 2018 noch interessant?</itunes:summary>

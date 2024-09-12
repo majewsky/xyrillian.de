@@ -31,6 +31,7 @@
     <itunes:episode>60</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP060: Praxisbeispiel: Datenauswertung auf der Kommandozeile</title>
+    <link>https://schluesseltechnologie-podcast.de/060-praxisbeispiel-datenauswertung</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Nachdem die beiden sich gegenseitig ihr Leid geklagt haben, geht es dann doch noch um Technik. Oder eher um deren Anwendung. Diesmal wieder mit einer Hands-on-Folge, denn es ist wichtig, vor Kunden und bei Präsentationen einen professionellen Eindruck zu machen.</itunes:summary>
@@ -146,6 +147,7 @@ set output &amp;quot;Balkon.svg&amp;quot;
     <itunes:episode>59</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP059: Nebenläufigkeit</title>
+    <link>https://schluesseltechnologie-podcast.de/059-nebenlaeufigkeit</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Nachdem es in STP015 (Multitasking) bereits um die nacheinanderfolgende Verteilung von Resourcen an verschiedene Prozesse ging, kommt heute echtes &amp;quot;gleichzeitig Arbeiten&amp;quot; dran.</itunes:summary>
@@ -250,6 +252,7 @@ set output &amp;quot;Balkon.svg&amp;quot;
     <itunes:episode>58</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP058: Identifier</title>
+    <link>https://schluesseltechnologie-podcast.de/058-identifier</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Da die Zeiten von Karteikarten in Büros und auf Ämtern &lt;s&gt;zum Glück&lt;/s&gt; &lt;em&gt;leider&lt;/em&gt; vorbei sind, braucht es nun andere Wege, um Personen zu identifizieren. Doch nicht nur störende Kundschaft will wiedererkannt werden...</itunes:summary>
@@ -403,6 +406,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>57</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP057: ActivityPub</title>
+    <link>https://schluesseltechnologie-podcast.de/057-activity-pub</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Wieder einmal ein von langer Hand vorbereitetes Thema. Hier kulminiert der Inhalt der beiden vorangegangenen Folgen zu einem Blick in den Maschinenraum von z.B. Mastodon. Außerdem sprechen wir ein weiteres Mal über unseren persönlichen Blick und Umgang mit diesem Thema.</itunes:summary>
@@ -531,6 +535,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>56</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP056: Zentralisierung</title>
+    <link>https://schluesseltechnologie-podcast.de/056-zentralisierung</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In dieser Episode werden die Kerntatsachen zum Sachverhalt der Zentralisierung in geradezu essayistischer Form herausgearbeitet und dargestellt, um der Hörerin eine Urteilsbildung zu ermöglichen. Hierbei wird ein eigener Standpunkt zur Fragestellung gefunden und argumentativ abgeleitet.</itunes:summary>
@@ -705,6 +710,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>55</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP055: Interoperabilität</title>
+    <link>https://schluesseltechnologie-podcast.de/055-interoperabilitaet</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>&amp;quot;Together we stand, divided we fall.&amp;quot; Deshalb geht es heute darum, wie Prozesse zur Zusmmenarbeit gebracht werden, oder auch, wie das gelegentlich schief geht. Zum Schluss haben wir wieder eine leicht schwermütige Unterhaltung darüber, warum die Dinge sind, wie sie sind. In diesem Sinne: &amp;quot;Let&#39;s work together...&amp;quot;</itunes:summary>
@@ -785,6 +791,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>54</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP054: TLS als Ganzes</title>
+    <link>https://schluesseltechnologie-podcast.de/054-tls-als-ganzes</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Nach unserem kleinen Ausflug in fremdes Fach kehren wir heute zurück zu TLS. Dabei soll es diesmal mehr um einen Blick aufs Ganze gehen – und um die Identität der Entität.</itunes:summary>
@@ -863,6 +870,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>53</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP053: Lieber was mit Holz</title>
+    <link>https://schluesseltechnologie-podcast.de/053-lieber-was-mit-holz</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Diesmal hat Xyrill kein Bock mehr auf den Computermist und ttimeless erzählt stattdessen etwas über die ehrliche Arbeit des Handwerkers. Oder zumindest einiger Handwerker.</itunes:summary>
@@ -995,6 +1003,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>52</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP052: TLS im Detail</title>
+    <link>https://schluesseltechnologie-podcast.de/052-tls-im-detail</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Wir steigern den Schwierigkeitsgrad. In dieser Episode wird der Stoff der vorherigen Folgen abgefragt. Dafür können wir dann aber auch die Folge in einer Stunde abfeiern – oder zumindest den ersten Teil.</itunes:summary>
@@ -1082,6 +1091,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>51</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP051: Ablauf eines IT-Angriffs</title>
+    <link>https://schluesseltechnologie-podcast.de/051-ablauf-eines-it-angriffs</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Im zweiten Teil der ursprünglichen Episode #49 spricht Xyrill nun über den tatsächlichen Ablauf einer Attacke. Außerdem geht es um Motivationen und Gegenmaßnahmen.</itunes:summary>
@@ -1151,6 +1161,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>50</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP050: Jargon File</title>
+    <link>https://schluesseltechnologie-podcast.de/050-jargon-file</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In dieser Nichtjubiläumsfolge kümmern wir uns wieder einmal darum, unseren Hörer:innen Nerdkultur näher zu bringen. Dazu ist selbstverständlich nichts besser geeignet als der Ursprung vieler lieb gewonnener Worte und Redewendungen.</itunes:summary>
@@ -1250,6 +1261,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>49</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP049: Schadcode</title>
+    <link>https://schluesseltechnologie-podcast.de/049-schadcode</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In dieser ersten Folge zum Thema Cyber-Cyber halten wir uns so lange mit der Einführung von Grundbegriffen auf, dass am Ende die Entscheidung fällt, den Rest auf Episode 51 zu verschieben. Betrachtet euch hiermit als angeteasert!</itunes:summary>
@@ -1338,6 +1350,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>48</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP048: Vertrauen</title>
+    <link>https://schluesseltechnologie-podcast.de/048-vertrauen</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Nach Xyrills gewaltigem humorischen Auftakt kommen wir zu wirklich wichtigen Dingen: Wem kann vertraut werden und warum? Hat Vertrauen ein Haltbarkeitsdatum? Wem vertraue ich, ohne explizit davon zu wissen? Zum Schluss gibt es noch Aufklärung über die Herkunft des Wortes &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Spam&amp;amp;oldid=238368359#Begriffsherkunft&#34;&gt;Spam&lt;/a&gt; für unerwünschte Werbung.</itunes:summary>
@@ -1480,6 +1493,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>47</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP047: Speicherallokation</title>
+    <link>https://schluesseltechnologie-podcast.de/047-speicherallokation</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Ein weiteres Mal beschäftigen wir uns mit Speicher. Diesmal spezifisch mit Haufen davon. Wie man die wieder wegräumt oder gar nicht erst zu groß werden lässt, ist auch ein Thema. Außerdem gibt es ein Novum direkt am Beginn der Folge.</itunes:summary>
@@ -1596,6 +1610,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>46</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP046: Bram Moolenaar und vim</title>
+    <link>https://schluesseltechnologie-podcast.de/046-bram-moolenaar-und-vim</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Obwohl dies ein Technikpodcast ist, kommen wir um politische Themen oft nicht ganz herum. In dieser Folge jedoch stellen wir uns nun direkt ins Feuer. Und all das nur, weil Xyrill unbedingt seinen Lieblingseditor unters Volk bringen will.</itunes:summary>
@@ -1705,6 +1720,7 @@ $PR_AGENTUR&lt;/p&gt;
     <itunes:episode>45</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP045: Speicherstruktur aus Programmsicht</title>
+    <link>https://schluesseltechnologie-podcast.de/045-speicherstruktur-aus-programmsicht</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In dieser Ausgabe greifen wir ein altes Thema erneut auf, bei dem ttimeless trotzdem stellenweise nur schwer folgen kann. Denn durch Wiederholung lernt man. Denn durch Wiederholung lernt man.</itunes:summary>
@@ -1911,6 +1927,7 @@ fn my_panic(_info: &amp;amp;core::panic::PanicInfo) -&amp;gt; ! {
     <itunes:episode>44</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP044: Zufall</title>
+    <link>https://schluesseltechnologie-podcast.de/044-zufall</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Wir befassen uns unter anderem mit der Erstellung, Bewertung und dem Verbrauch von Zufall.
@@ -2012,6 +2029,7 @@ man dann aber per Software entsprechend aktivieren.&lt;/p&gt;
     <itunes:episode>43</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP043: Kryptografische Primitiven</title>
+    <link>https://schluesseltechnologie-podcast.de/043-kryptografische-primitiven</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Im zweiten Teil unserer Reihe über Kryptografie besehen wir uns einzelne Klassen von Bausteinen, welche dann zu Verschlüsselungsprotokollen zusammengesetzt werden können.</itunes:summary>
@@ -2168,6 +2186,7 @@ factor   462,19s user 0,01s system 99% cpu 7:43,24 total
     <itunes:episode>42</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP042: Cursed Computer Iceberg Meme</title>
+    <link>https://schluesseltechnologie-podcast.de/042-the-cursed-computer-iceberg-meme</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In der Episode mit dieser Nummer werden wir aus Günden vom normalen Programm abweichen. Während diese Gründe für den durchschnittlichen {Nerd|Geek} gut verständlich sein dürften, werden diese für alle Anderen ausführlich erklärt. Xyrill greift zu diesem Anlass völlig wahllos einige lustige und/oder deprimirende Aspekte aus dem Eisberg der Computerei heraus.</itunes:summary>
@@ -2299,6 +2318,7 @@ factor   462,19s user 0,01s system 99% cpu 7:43,24 total
     <itunes:episode>41</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP041: Grundlagen der Kryptografie</title>
+    <link>https://schluesseltechnologie-podcast.de/041-grundlagen-der-kryptografie</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Diesmal gibt es den Einstieg in ein Thema, vor dem wir uns schon eine Weile gedrückt haben.
@@ -2399,6 +2419,7 @@ Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&
     <itunes:episode>40</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP040: Urheberrecht bei Programmen</title>
+    <link>https://schluesseltechnologie-podcast.de/040-urheberrecht-bei-programmen</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In dieser Episode soll es darum gehen, wer, wann, wie ein Urheberrecht erhält und es nutzen kann. Im Zweifel sogar postmortal. Oder eben nicht. Auch geht es darum, wie lange ein Urheberrecht aus wissenschaftlicher Sicht sinnvoll ist. Und sogar Hitler hat es in die Sendung geschafft.</itunes:summary>
@@ -2504,6 +2525,7 @@ Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&
     <itunes:episode>39</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP039: Authentifizierung und Autorisierung</title>
+    <link>https://schluesseltechnologie-podcast.de/039-authentifizierung-und-autorisierung</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Die Frage, wer wir sind, beschäftigt nicht nur uns selbst, sondern auch alle Anbieter von Diensten aller Art, wenn sie mit Computern zu tun haben. Heute sprechen wir über die Mechanismen, die zur Feststellung einer Person oder ihrer Berechtigungen besonders im Netz verwendet werden.</itunes:summary>
@@ -2585,6 +2607,7 @@ Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&
     <itunes:episode>38</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP038: Software-Tests</title>
+    <link>https://schluesseltechnologie-podcast.de/038-software-tests</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Nach der Episode über die Fehler, spechen wir heute darüber, wie man sie vermeidet. Wie nicht anders zu erwarten, ist auch dies ein Thema, bei dem reichhaltige Meinungsdiskurse geführt werden.</itunes:summary>
@@ -2717,6 +2740,7 @@ Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&
     <itunes:episode>37</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP037: Berühmte Softwarefehler</title>
+    <link>https://schluesseltechnologie-podcast.de/037-beruehmte-software-fehler</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Wir alle machen Fehler. So gut, so trivial. Wenn allerdings Elektronenrechner im Spiel sind, kann das durchaus kritisch werden. In manchen Fällen sogar tödlich.</itunes:summary>
@@ -2838,6 +2862,7 @@ Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&
     <itunes:episode>36</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP036: LaTeX</title>
+    <link>https://schluesseltechnologie-podcast.de/036-latex</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Diesmal ist für ttimeless ein echtes Herzensthema an der Reihe. Dafür tritt man auch mal zum zweiten Aufnahmeversuch an. All das, um euch ein Textsatzpogramm nahezubringen, das im Kern 37 Jahre alt ist.</itunes:summary>
@@ -2915,6 +2940,7 @@ Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&
     <itunes:episode>35</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP035: Aprilscherz-RFCs</title>
+    <link>https://schluesseltechnologie-podcast.de/035-aprilscherz-rfcs</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>April, April! Ha, erwischt. Hier eine Sonderfolge mit vergnüglichen RFCs, die einen niederschwelligen Einblick in technische Spezifikationen bieten.
@@ -3037,6 +3063,7 @@ Viel Spass beim Hören und passt auf, ihr werdet alle gehirngewaschen.&lt;/p&gt;
     <itunes:episode>34</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP034: Compilerbau</title>
+    <link>https://schluesseltechnologie-podcast.de/034-compilerbau</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In dieser Episode soll es detaillierter um Compiler gehen. Jene Programmme, die dafür zuständig sind, andere Programme zu erzeugen. Um es mit C3PO zu sagen: &amp;quot;... Wie pervers.&amp;quot; :)</itunes:summary>
@@ -3149,6 +3176,7 @@ store %x, $7
     <itunes:episode>33</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP033: Programmiersprachen</title>
+    <link>https://schluesseltechnologie-podcast.de/033-programmiersprachen</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In dieser Episode wird die Antwort auf die Frage geliefert, warum wir Dinge wie Programmiersprachen brauchen, und vor allem, warum so viele. Es werden mal wieder starke Meinungen geäußert und es gibt einen zweiten Prolog in der Mitte der Episode. :)
@@ -3319,6 +3347,7 @@ primes = 2 : filter isPrime [3..]
     <itunes:episode>32</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP032: Hochverfügbarer Softwarebetrieb</title>
+    <link>https://schluesseltechnologie-podcast.de/032-hochverfuegbarer-softwarebetrieb</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Die heutige Episode beschäftigt sich neben dem offensichtlichen Hauptthema auch mit Prozenten, deren Bedeutung bedacht sein sollte, und dem Verhalten guter Manager.
@@ -3410,6 +3439,7 @@ Deshalb sei hiermit eine Politik-Triggerwarnung ausgesprochen... aber nur eine k
     <itunes:episode>31</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP031: Festplatten und Dateisysteme</title>
+    <link>https://schluesseltechnologie-podcast.de/031-dateisysteme</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Mit dieser Episode kehrt STP zum Ursprung zurück, denn das initiale Ereignis hatte ebenfalls mit Dateisystemen zu tun.
@@ -3534,6 +3564,7 @@ Hier sprechen wir aber über deutlich mehr und auch andere Sachen. Darunter: Din
     <itunes:episode>30</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP030: Arbeitsalltag in der IT</title>
+    <link>https://schluesseltechnologie-podcast.de/030-arbeitsalltag-in-der-it</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In dieser etwas länger geratenen Episode sricht Xyrill über seinen Alltag und den seiner Kollegen, Unterstellten und Vorgesetzten.
@@ -3648,6 +3679,7 @@ Derweil darf ttimeless darf derweil munter drauflosraten, womit diese Leute denn
     <itunes:episode>29</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP029: Algorithmische Komplexität</title>
+    <link>https://schluesseltechnologie-podcast.de/029-algorithmische-komplexitaet</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In dieser Episode möchte Xyrill gern eine Vorlesung halten über ein Thema, das in der Informatik zu den Grundlagen für das erste Semester gehört.
@@ -3740,6 +3772,7 @@ Und haltet ein paar Skatkarten bereit!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&l
     <itunes:episode>28</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP028: Autokonfiguration</title>
+    <link>https://schluesseltechnologie-podcast.de/028-autokonfiguration</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Wenn Sie diese Nachricht lesen, hat sich diese Folge automatisch in ihren Podcast-Player konfiguriert. Heute geht es darum, warum es heute nicht mehr so kompliziert ist, einen Computer oder ein Netzwerk einzurichten.</itunes:summary>
@@ -3838,6 +3871,7 @@ Und haltet ein paar Skatkarten bereit!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&l
     <itunes:episode>27</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP027: Verteilte Systeme</title>
+    <link>https://schluesseltechnologie-podcast.de/027-verteilte-systeme</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In dieser Episode bringt Xyrill uns versprengte Systeme näher. Dabei erfahren wir auch, dass Dinge, die wir als Grundvoraussetzung ansehen würden, bei genauerer Betrachtung gar nicht so selbstverständlich sind.</itunes:summary>
@@ -3938,6 +3972,7 @@ Und haltet ein paar Skatkarten bereit!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&l
     <itunes:episode>26</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP026: Energieeffizienz</title>
+    <link>https://schluesseltechnologie-podcast.de/026-energieeffizienz</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Seit der Zeit von Konrad Zuse, der seine Rechenmaschinen mit Relais baute, hat sich viel getan. Nicht nur, was die Geschwindigkeit, sondern auch, was die Effizienz betrifft. Wir beleuchten heute einige jüngere Ereignisse dieser Entwicklung.</itunes:summary>
@@ -4032,6 +4067,7 @@ Und haltet ein paar Skatkarten bereit!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&l
     <itunes:episode>25</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP025: Datenkompression</title>
+    <link>https://schluesseltechnologie-podcast.de/025-datenkompression</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Trotz des Themas haben wir es nicht geschafft, uns kurz zu fassen. Xyrill musste den Preis dafür zahlen. In dieser Sendung: Ein Einstieg mit flachen Witzen, gezinkte Münzen, naive Betrachtungsweisen und schwierige Abwägungen.</itunes:summary>
@@ -4135,6 +4171,7 @@ Und haltet ein paar Skatkarten bereit!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&l
     <itunes:episode>24</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP024: Cloud Computing</title>
+    <link>https://schluesseltechnologie-podcast.de/024-cloud-computing</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Diese Episode beschäftigt sich mit anderer Leute Computer: warum man die überhaupt benutzen kann, und unter welchen Voraussetzungen das sinnvoll ist.</itunes:summary>
@@ -4219,6 +4256,7 @@ Und haltet ein paar Skatkarten bereit!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&l
     <itunes:episode>23</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP023: Virtualisierung, Container, Sandboxing, Simulation/Emulation</title>
+    <link>https://schluesseltechnologie-podcast.de/023-virtualisierung</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Die Sendung mit der Quersumme 5 beschäftigt sich damit, wie Computer so
@@ -4314,6 +4352,7 @@ damit, sein Mediensyndikat aufzubauen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;La
     <itunes:episode>22</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP022: Das Web ist nicht das Internet</title>
+    <link>https://schluesseltechnologie-podcast.de/022-das-web-ist-nicht-das-internet</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Heute geht es um das allseits bekannte und beliebte Interweb.
@@ -4458,6 +4497,7 @@ Egal, Xyrill kann das besser erklären!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&
     <itunes:episode>21</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP021: Reguläre Ausdrücke</title>
+    <link>https://schluesseltechnologie-podcast.de/021-regulaere-ausdruecke</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>ttimeless hat sich ein Thema gewünscht und mit Beginn von Xyrills Recherchen angefangen, es zu bereuen.
@@ -4647,6 +4687,7 @@ Es stellt sich heraus, dass das Thema zwar abstrakt, aber dennoch spannend ist. 
     <itunes:episode>20</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP020: Bootstrap</title>
+    <link>https://schluesseltechnologie-podcast.de/020-bootstrap</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Strom an und Ohren auf! In dieser Episode nähern wir uns Computern im Dornröschenschlaf.
@@ -4774,6 +4815,7 @@ Genauer sehen wir uns an, was beim Erwachen geschieht.&lt;/p&gt;&lt;h2&gt;Showno
     <itunes:episode>19</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP019: Speicherschutz</title>
+    <link>https://schluesseltechnologie-podcast.de/019-speicherschutz</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Nach einem glorreichen Intro mit perfekter Vorbereitung befassen Xyrill und ttimeless sich mit Speicherschutz.
@@ -4870,6 +4912,7 @@ Wie und warum und welchen Speicher überhaupt? Hört selbst.&lt;/p&gt;&lt;h2&gt;
     <itunes:episode>18</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP018: DNS im Detail</title>
+    <link>https://schluesseltechnologie-podcast.de/018-dns-im-detail</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Nachdem wir das Thema in STP002 schon einmal gestreift haben, wollen wir in dieser Episode genauer darauf eingehen.
@@ -5048,6 +5091,7 @@ dyna.wikimedia.org.     227     IN      A       91.198.174.192
     <itunes:episode>17</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP017: Lokalisierung</title>
+    <link>https://schluesseltechnologie-podcast.de/017-lokalisierung</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Mit den Eigenheiten verschiedener Kultur- und Sprachräume hat wohl jeder schon so seine Erfahrungen gesammelt.
@@ -5152,6 +5196,7 @@ Und natürlich gibt uns das ein weiteres Mal die Möglichkeit, abschätzig über
     <itunes:episode>16</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP016: Zeitdarstellung</title>
+    <link>https://schluesseltechnologie-podcast.de/016-zeitdarstellung</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Heute brechen wir das fünfte Bit an.
@@ -5266,6 +5311,7 @@ Außerdem überzeugt ttimeless duch überragende Excel-Kentnisse.&lt;/p&gt;&lt;h
     <itunes:episode>15</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP015: Multitasking in Betriebssystemen</title>
+    <link>https://schluesseltechnologie-podcast.de/015-multitasking-in-betriebssystemen</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Um viele Dinge gefühlt gleichzeitig tun zu können, ist die Computertechnik einen weiten Weg gegangen. In der heutigen Folge halten wir viele lose Fäden in der Hand und ständig merkt Xyrill, dass dies und jenes ja auch noch notwendig ist, um zum Ziel zu kommen: Zu Multitasking.</itunes:summary>
@@ -5358,6 +5404,7 @@ Außerdem überzeugt ttimeless duch überragende Excel-Kentnisse.&lt;/p&gt;&lt;h
     <itunes:episode>14</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP014: Textdarstellung</title>
+    <link>https://schluesseltechnologie-podcast.de/014-textdarstellung</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In dieser Folge unterhalten wir uns über allerlei Detailwissen zu verschiedenen Schriftarten, werfen mit schlecht vorbereiteten Beispielen um uns und haben starke Meinungen zu verschiedenen Dingen. Um Textdarstellung geht es dabei nebenbei auch.</itunes:summary>
@@ -5487,6 +5534,7 @@ Außerdem überzeugt ttimeless duch überragende Excel-Kentnisse.&lt;/p&gt;&lt;h
     <itunes:episode>13</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP013: Textkodierung</title>
+    <link>https://schluesseltechnologie-podcast.de/013-textkodierung</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Dies ist ein Text. Für den Computer besteht er nur aus Zahlen. Xyrill erklärt diesmal, wie es kommt, dass wir ihn trotzdem lesen können.
@@ -5609,6 +5657,7 @@ Und jedes andere geschriebene Wort, das je existiert hat… natürlich nur ideal
     <itunes:episode>12</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP012: Datenbanken</title>
+    <link>https://schluesseltechnologie-podcast.de/012-datenbanken</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Wenn Sie diese Folge sehen, dann, weil sie in der Datenbank Ihrer Podcast-App gelandet ist.
@@ -5740,6 +5789,7 @@ Deswegen erklärt Xyrill uns heute, warum Biologen sich über Excel aufregen und
     <itunes:episode>11</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP011: Programmsteuerung im Prozessor</title>
+    <link>https://schluesseltechnologie-podcast.de/011-programmsteuerung</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Die CPU ist als der zentrale Baustein praktisch aller Computer bekannt.
@@ -5866,6 +5916,7 @@ Nachdem wir schon einen kleinen Blick in ihren Speicher geworfen haben, soll es 
     <itunes:episode>10</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP010: 3D-Grafik</title>
+    <link>https://schluesseltechnologie-podcast.de/010-3d-grafik</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Heute geht es viel um Spiele. Denn anscheinend sind diese fast das Einzige, das Xyrill und ttimeless einfällt, wenn es um 3D-Grafik geht.
@@ -5998,6 +6049,7 @@ Der Abschluss der vierteiligen Reihe über Grafik, und was dazu notwendig ist.&l
     <itunes:episode>9</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP009: Fließkommazahlen</title>
+    <link>https://schluesseltechnologie-podcast.de/009-fliesskommazahlen</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>„Wir nehmen diese Ausrede Grafik, um in diesen Grundlagenfolgen Dinge zu erklären, die überhaupt nichts mit Grafik zu tun zu haben scheinen, aber dann machen wir den Bogen doch wieder zurück.“
@@ -6129,6 +6181,7 @@ Damit schafft Xyrill die passende Einleitung dieser dritten Folge unserer vierte
     <itunes:episode>8</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP008: 2D-Grafik</title>
+    <link>https://schluesseltechnologie-podcast.de/008-2d-grafik</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Hier nun der zweite Teil unserer Reihe über die Herkunft und Darstellung von Grafik.
@@ -6233,6 +6286,7 @@ Genießen sie heute Funfacts und Kaufberatung auf mittelmäßigem Niveau.&lt;/p&
     <itunes:episode>7</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP007: Speicherhierarchie</title>
+    <link>https://schluesseltechnologie-podcast.de/007-speicherhierarchie</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Für große Teile der Anwender liegt sie im Verborgenen. Versteckt unter Plastik- und Metallgehäusen ist die Welt der Speicher ein ebenso fremder wie faszinierender Ort. Doch auch hier herscht eine strenge Rangordnung, bestimmt allein von Geschwindigkeit und Ausdauer. Hört selbst, welch beschwerlicher Weg sich auftut, wenn Bits sich auf die Reise machen, um verarbeitet zu werden.</itunes:summary>
@@ -6358,6 +6412,7 @@ Genießen sie heute Funfacts und Kaufberatung auf mittelmäßigem Niveau.&lt;/p&
     <itunes:episode>6</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP006: Kommandozeilen und Unix-Philosophie</title>
+    <link>https://schluesseltechnologie-podcast.de/006-kommandozeilen-und-unix-philosophie</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Computer haben heute unglaublich leistungsfähige Grafik. Warum verwenden so viele Computer-Experten dann immer noch textbasierte Terminals?</itunes:summary>
@@ -6585,6 +6640,7 @@ bgb
     <itunes:episode>5</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP005: Netzwerk-Schichtenmodell</title>
+    <link>https://schluesseltechnologie-podcast.de/005-netzwerk-schichtenmodell</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Wie in Folge 0 bereits erwähnt, tun wir viele Dinge mit Computern. Genauer tun wir sie in oder mit dem Internet.
@@ -6781,6 +6837,7 @@ Damit das funktionert ist es nötig vielerlei Protokolle übereinander zu stapel
     <itunes:episode>4</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP004: Passwörter</title>
+    <link>https://schluesseltechnologie-podcast.de/004-passwoerter</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Es geht um die Gretchenfrage der IT-Sicherheit. Wie müssen Passwörter aussehen?
@@ -6932,6 +6989,7 @@ Kann man sie ersetzen? Und vor allem, wie würde Xyrill das alles machen, würde
     <itunes:episode>3</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP003: Logikgatter</title>
+    <link>https://schluesseltechnologie-podcast.de/003-logikgatter</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Heute erklärt Xyrill Logikgatter. Und das, obwohl er selbst nicht so genau weiß, was da drin ist.
@@ -7086,6 +7144,7 @@ Allerdings ist das für ttimeless auch genug für den Anfang.&lt;/p&gt;&lt;h2&gt
     <itunes:episode>2</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP002: Aufruf einer Webseite</title>
+    <link>https://schluesseltechnologie-podcast.de/002-aufruf-einer-webseite</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Die meisten tun es. Viele täglich. Teils hundertfach oder öfter.
@@ -7239,6 +7298,7 @@ Und über &lt;strong&gt;Kekse&lt;/strong&gt;!!!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;
     <itunes:episode>1</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP001: Zahlensysteme</title>
+    <link>https://schluesseltechnologie-podcast.de/001-zahlensysteme</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>Wir versuchen uns daran, verschiedene Zählsysteme zu erklären.
@@ -7340,6 +7400,7 @@ Außerdem in dieser Folge: Liverechnen von Xyrill und spannende Dinge mit Finger
     <itunes:episode>0</itunes:episode>
     <itunes:season>1</itunes:season>
     <title>STP000: Was ist Informatik?</title>
+    <link>https://schluesseltechnologie-podcast.de/000-was-ist-informatik</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
     <itunes:summary>In der ersten... nein, nullten Folge sprechen wir über die grundlegenden Muster von Informatik und Mathematik.
