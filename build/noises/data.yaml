@@ -1153,3 +1153,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 61
+    slug: 061-heimnetzwerk
+    title: Heimnetzwerk
+    pubtime: 1726773000 # 2024-09-19
+
+    markdown:
+      description: |
+        In dieser Episode soll es etwas detaillierter um die unteren Schichten im Netzwerkstapel gehen. Außerdem: ttimeless fordert biologische Lösungen für Verknöcherungsprobleme und Xyrill räumt mit falschen Werbeversprechen auf.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

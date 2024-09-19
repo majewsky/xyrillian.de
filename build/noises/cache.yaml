@@ -3451,3 +3451,70 @@ audio_metadata:
     - start_secs: 3863
       end_secs: 3942.853
       title: Verzweiflung aus der "date"-Dokumentation
+  stp:061-heimnetzwerk:
+    length_secs: 4671
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-061-heimnetzwerk.mp3
+      size_bytes: 75083272
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-061-heimnetzwerk.ogg
+      size_bytes: 48188387
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-061-heimnetzwerk.opus
+      size_bytes: 28585375
+    chapters:
+    - start_secs: 0
+      end_secs: 82
+      title: Intro
+    - start_secs: 82
+      end_secs: 192
+      title: Rückbezüge
+    - start_secs: 192
+      end_secs: 240
+      title: Layer 1/2
+    - start_secs: 240
+      end_secs: 368
+      title: Abschweif zu Mikrowellen
+    - start_secs: 368
+      end_secs: 438
+      title: Ethernet
+    - start_secs: 438
+      end_secs: 959
+      title: Twisted-Pair-Kabel
+    - start_secs: 959
+      end_secs: 1113
+      title: Glasfaser
+    - start_secs: 1113
+      end_secs: 1384
+      title: Hausinstallation und Konfektionierung
+    - start_secs: 1384
+      end_secs: 1580
+      title: Switches und Router
+    - start_secs: 1580
+      end_secs: 1704
+      title: Drahtlose Geräte anstecken
+    - start_secs: 1704
+      end_secs: 2399
+      title: Kabellos
+    - start_secs: 2399
+      end_secs: 2694
+      title: 'Wiederholung: Layer 1/2'
+    - start_secs: 2694
+      end_secs: 2842
+      title: Layer 3
+    - start_secs: 2842
+      end_secs: 3028
+      title: DHCP
+    - start_secs: 3028
+      end_secs: 3499
+      title: IPv4 und NAT
+    - start_secs: 3499
+      end_secs: 4104
+      title: IPv6
+    - start_secs: 4104
+      end_secs: 4671.946
+      title: VPN

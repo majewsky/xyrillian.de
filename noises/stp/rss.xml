@@ -27,6 +27,109 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP061: Heimnetzwerk</itunes:title>
+    <itunes:episode>61</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP061: Heimnetzwerk</title>
+    <link>https://schluesseltechnologie-podcast.de/061-heimnetzwerk</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>In dieser Episode soll es etwas detaillierter um die unteren Schichten im Netzwerkstapel gehen. Außerdem: ttimeless fordert biologische Lösungen für Verknöcherungsprobleme und Xyrill räumt mit falschen Werbeversprechen auf.</itunes:summary>
+    <description>In dieser Episode soll es etwas detaillierter um die unteren Schichten im Netzwerkstapel gehen. Außerdem: ttimeless fordert biologische Lösungen für Verknöcherungsprobleme und Xyrill räumt mit falschen Werbeversprechen auf.</description>
+    <content:encoded>&lt;p&gt;In dieser Episode soll es etwas detaillierter um die unteren Schichten im Netzwerkstapel gehen. Außerdem: ttimeless fordert biologische Lösungen für Verknöcherungsprobleme und Xyrill räumt mit falschen Werbeversprechen auf.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug: STP005 (Netzwerk-Schichtenmodell)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;seither haben wir über die unteren Schichten des Netzwerks nicht allzu viel gesprochen, sondern eher über Anwendungen darauf (siehe STP018 zu DNS, STP022 zu dem Web, STP052/STP054 zu TLS, STP057 zu ActivityPub/Mastodon)&lt;/li&gt;
+&lt;li&gt;heute mal wieder mehr die Infrastruktursicht (Layer 1 bis 4), vor allem aus praktischer Endanwendersicht&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Layer 1/2 kabelgebunden: über achtadrige &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Twisted-Pair-Kabel&amp;amp;oldid=243787992&#34;&gt;Twisted-Pair-Kabel&lt;/a&gt; mit üblicherweise vorkonfektionierten &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=RJ-Steckverbindung&amp;amp;oldid=245704057&#34;&gt;RJ45-Steckern (8P8C)&lt;/a&gt; nach &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ethernet&amp;amp;oldid=244710581&#34;&gt;IEEE 802.3 &amp;quot;Ethernet&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Twisted Pair: Kabel mit verdrillten Doppeladern und einer (je nach Kategorie) zunehmenden Menge an Abschirmungen, damit das Kabel nicht z.B. unbeabsichtigt zur Antenne wird :) -- Wikipedia hat eine &lt;a href=&#34;https://commons.wikimedia.org/w/index.php?title=File:Twisted_pair_based_ethernet.svg&amp;amp;oldid=507351021&#34;&gt;schöne Visualisierung&lt;/a&gt;, wie besser geschirmte Kabel für mehr Bandbreite sorgen&lt;/li&gt;
+&lt;li&gt;vorkonfektionierte Stecker: man kann auch selber konfektionieren (sprich: Kabel auf die richtige Länge zuschneiden und Modularstecker anbringen)&lt;/li&gt;
+&lt;li&gt;im Rechenzentrum findet man auch Ethernet, aber oberhalb der 10 Gbit/s dann nur noch auf Basis von Glasfasern und &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Small_Form-factor_Pluggable&amp;amp;oldid=244881738&#34;&gt;SFP-Modulen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kabel alleine reichen nicht, man braucht mindestens noch einen &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Switch_(Netzwerktechnik)&amp;amp;oldid=238943317&#34;&gt;Switch&lt;/a&gt;, um tatsächlich ein Kabelnetzwerk zu erhalten&lt;/li&gt;
+&lt;li&gt;der Switch ist oft auch ein &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Router&amp;amp;oldid=242713208&#34;&gt;Router&lt;/a&gt;, der das lokale Kabelnetzwerk mit dem Internet verbindet&lt;/li&gt;
+&lt;li&gt;Wir empfehlen: Beim Hausbau oder -umbau am besten gleich Cat7 verlegen (oder zumindest Leerrohre), damit man sich nicht mit WLAN-Signalstärken rumärgern muss.
+&lt;ul&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Keystone-Modul&amp;amp;oldid=234182002&#34;&gt;Keystone-Modul&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Layer 1/2 kabellos: über Radiowellen im 2,4-GHz-Band oder im 5-GHz-Band nach &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=IEEE_802.11&amp;amp;oldid=245761310&#34;&gt;IEEE 802.11 &amp;quot;WLAN bzw. Wi-Fi&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;was bei Ethernet der Switch, ist bei WLAN der &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Wireless_Access_Point&amp;amp;oldid=237904996&#34;&gt;Access Point (AP)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;übliches Setup zuhause: der zentrale Router macht sowohl LAN (Ethernet) als auch WLAN&lt;/li&gt;
+&lt;li&gt;Xyrills Setup: ein Server agiert als Router, aber macht nur LAN; am LAN hängt ein WLAN-AP (&lt;strong&gt;kein&lt;/strong&gt; WLAN-Router, somit nur ein lokales Netz für alle Endgeräte)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Layer 3 mit &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=IPv4&amp;amp;oldid=243903744&#34;&gt;IPv4&lt;/a&gt; (1981)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;auf dem Router läuft mindestens ein &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Dynamic_Host_Configuration_Protocol&amp;amp;oldid=244947062&#34;&gt;DHCP-Server&lt;/a&gt;, um die lokalen Adressen zu vergeben; oft auch ein &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Domain_Name_System&amp;amp;oldid=245211339&#34;&gt;DNS-Resolver&lt;/a&gt; (siehe STP018)&lt;/li&gt;
+&lt;li&gt;an und für sich sind Netzwerke ineinander verschachtelt, z.B. kann ein Netzwerk &lt;code&gt;10.11.0.0/16&lt;/code&gt; ein Teilnetzwerk &lt;code&gt;10.11.12.0/24&lt;/code&gt; enthalten (Analogie: Telefonanlage in einem Firmengebäude mit Verbindung ins weite Telefonnetz); damit fast beliebig feine Unterteilungen des Netzwerks möglich&lt;/li&gt;
+&lt;li&gt;Problem: insgesamt etwa 4,3 Mrd. unterschiedliche IP-Adressen, aber davon nur &lt;a href=&#34;https://stackoverflow.com/a/2437185&#34;&gt;etwa 3,7 Mrd. &amp;quot;weltweit gültige&amp;quot; Adressen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;in der Praxis sehr viel &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Netzwerkadress%C3%BCbersetzung&amp;amp;oldid=237026399&#34;&gt;NAT&lt;/a&gt;: ein Heimnetzwerk kriegt nur eine IP-Adresse für den Router; innerhalb des lokalen Netzwerkes private Adressen (z.B. &lt;code&gt;192.168.x.y&lt;/code&gt;), die nicht direkt aus dem Internet erreichbar sind&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Layer 3 mit &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=IPv6&amp;amp;oldid=245056053&#34;&gt;IPv6&lt;/a&gt; (1998)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IPv6-Adressen haben sehr viel mehr Ziffern und sind damit extrem viel zahlreicher, aber auch unhandlicher&lt;/li&gt;
+&lt;li&gt;noch sehr viele andere Unterschiede zu IPv4, die mit dazu führten, dass sich IPv6 nur sehr langsam verbreitet hat bzw. immer noch verbreitet&lt;/li&gt;
+&lt;li&gt;Endanwender kriegen bei IPv6 nicht nur einzelne Adressen, sondern wie ursprünglich vorgesehen ganze Netze, die ihr Router frei verwalten kann&lt;/li&gt;
+&lt;li&gt;statt DHCP meist nur SLAAC (Stateless Address Auto-Configuration; zustandslose Adressen-Autokonfiguration): Router teilt den Netzwerkbereich mit und Endgeräte würfeln selbsttätig gültige Adressen&lt;/li&gt;
+&lt;li&gt;Umfangreichere Infos im &lt;a href=&#34;https://requestforcomments.de/archives/412&#34;&gt;RFC-Podcast zu IPv6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Problem: Wenn jedes Gerät vom Computer bis zur smarten Glühbirne eine global eindeutige IPv6-Adresse hat, ist das nicht ein Traum für jeden Überwachungskapitalisten?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Layer 3 mit &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Virtual_Private_Network&amp;amp;oldid=245792132&#34;&gt;VPN (Virtual Private Network)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee: Netzwerkverkehr ist zumindest auf Layer 2 und darüber auch nur Bits und Bytes; die kann man als Nutzdaten behandeln und in eine andere Netzwerkverbindung zu einem VPN-Server einpacken (meist auch mit Verschlüsselung drumherum, z.B. TLS)&lt;/li&gt;
+&lt;li&gt;Xyrills Setup: ein Server im Rechenzentrum fungiert als VPN-Server, mit dem Xyrills Endgeräte alle verbunden sind; aus Sicht der Endgeräte sind alle im selben lokalen Netzwerk; damit auch z.B. vom Notebook von unterwegs &amp;quot;direkter&amp;quot; Zugriff auf den Heimserver möglich (trotz NAT im Plaste-Router)&lt;/li&gt;
+&lt;li&gt;das häufigere Setup beim Endanwender: aller Datenverkehr nach außen geht durch einen VPN-Tunnel und erst ab dem Server des VPN-Anbieters weiter ins weite Internet&lt;/li&gt;
+&lt;li&gt;tatsächlicher Nutzen: es sieht so aus, als ob man in einer anderen geografischen Region sitzt, was z.B. für Streaming-Dienste relevant sein kann (aber Vorsicht: das verstößt oft gegen die Geschäftsbedingungen des Streamers; das hier ist keine Rechtsberatung)&lt;/li&gt;
+&lt;li&gt;fragwürdiger Nutzen: man muss nicht mehr dem Internetanbieter vertrauen, dass der nicht den eigenen Datenverkehr mitliest (Problem 1: in Zeiten von allgegenwärtigem TLS sieht der ISP sowieso nur die Domain-Namen und IP-Adressen, nicht die Inhalte; Problem 2: man verschiebt die Vertrauensfrage nur vom Internetanbieter zum VPN-Anbieter)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Layer 4 bis 7 dann beim nächsten Mal&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:22" title="Rückbezüge"  />
+          <chapter start="00:03:12" title="Layer 1/2"  />
+          <chapter start="00:04:00" title="Abschweif zu Mikrowellen"  />
+          <chapter start="00:06:08" title="Ethernet"  />
+          <chapter start="00:07:18" title="Twisted-Pair-Kabel"  />
+          <chapter start="00:15:59" title="Glasfaser"  />
+          <chapter start="00:18:33" title="Hausinstallation und Konfektionierung"  />
+          <chapter start="00:23:04" title="Switches und Router"  />
+          <chapter start="00:26:20" title="Drahtlose Geräte anstecken"  />
+          <chapter start="00:28:24" title="Kabellos"  />
+          <chapter start="00:39:59" title="Wiederholung: Layer 1/2"  />
+          <chapter start="00:44:54" title="Layer 3"  />
+          <chapter start="00:47:22" title="DHCP"  />
+          <chapter start="00:50:28" title="IPv4 und NAT"  />
+          <chapter start="00:58:19" title="IPv6"  />
+          <chapter start="01:08:24" title="VPN"  />
+      </chapters>
+      <enclosure length="75083272" url="https://dl.xyrillian.de/noises/stp-061-heimnetzwerk.mp3" type="audio/mpeg"/>
+      <enclosure length="48188387" url="https://dl.xyrillian.de/noises/stp-061-heimnetzwerk.ogg" type="audio/ogg"/>
+      <enclosure length="28585375" url="https://dl.xyrillian.de/noises/stp-061-heimnetzwerk.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/061-heimnetzwerk/</guid>
+    <pubDate>Thu, 19 Sep 2024 19:10:00 GMT</pubDate>
+    <itunes:duration>77:51</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP060: Praxisbeispiel: Datenauswertung auf der Kommandozeile</itunes:title>
     <itunes:episode>60</itunes:episode>
     <itunes:season>1</itunes:season>
