@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selfhosting - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #62 vom 10. Oktober 2024</h2>
+    <h1>Selfhosting</h1>
+      <p>Nachdem unser aller Heimnetzwerk voll funktionsfähig ist, wollen wir nun von daheim aus die ganze Welt mit unseren Online-Diensten beglücken... oder zumindest bestimmte Dinge selbst an den Start rollen.</p>
+      <p><strong>Länge:</strong> 63:03 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-062-selfhosting.mp3" type="audio/mpeg">
+        <source src="/dl/stp-062-selfhosting.ogg" type="audio/ogg">
+        <source src="/dl/stp-062-selfhosting.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="247">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="247" data-end="338">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">04:07</span>
+        <span class="chapter-title">Xyrills Netztests</span>
+      </div>
+      <div class="chapter" data-start="338" data-end="402">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">05:38</span>
+        <span class="chapter-title">Rückbezug STP061</span>
+      </div>
+      <div class="chapter" data-start="402" data-end="1417">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">06:42</span>
+        <span class="chapter-title">Ports</span>
+      </div>
+      <div class="chapter" data-start="1417" data-end="2350">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">23:37</span>
+        <span class="chapter-title">Server-Prozess betreiben</span>
+      </div>
+      <div class="chapter" data-start="2350" data-end="3783.635">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">39:10</span>
+        <span class="chapter-title">Was betreiben?</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-062-selfhosting.mp3">MP3</a> (58,0 MiB)</li>
+          <li><a href="/dl/stp-062-selfhosting.ogg">Ogg Vorbis</a> (35,8 MiB)</li>
+          <li><a href="/dl/stp-062-selfhosting.opus">Opus</a> (21,8 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p>Rückbezug STP061: wir haben unser Heimnetzwerk von Schicht 1 bis 3 aufgebaut</p>
+<ul>
+<li>Schicht 3 hatte uns einen Zustellweg durchs Internet gegeben</li>
+<li>Schicht 4 ergänzt Sitzungsverwaltung (z.B. Flusskontrolle und Fehlerkorrektur; hierfür siehe STP005) und Ports</li>
+<li>Warum braucht man Ports? Gedankenexperiment:
+<ul>
+<li>Annahme: Datenpakete werden nur anhand von Quelladresse und Zieladresse zugestellt</li>
+<li>Situation: zwei Prozesse auf demselben PC wollen mit <code>wikipedia.de</code> reden</li>
+<li>Abschicken der Anfragen klappt eventuell noch, da gleiches Ziel</li>
+<li>Problem: Antwortpaket kommt -&gt; Welcher Prozess kriegt das Paket?</li>
+<li>Technisch formuliert: Wie kann man über diese Netzwerkleitung mehrere unabhängige Verbindungen <a href="https://de.wikipedia.org/w/index.php?title=Multiplexverfahren&amp;oldid=243098154">multiplexen</a>?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Ports: Identifikationsnummer für offene Netzwerkverbindungen; 16 Bit groß (0-65535)</p>
+<ul>
+<li>vgl. Briefkästen/Wohnungsnummern in Mehrparteienhäusern</li>
+<li>Datenpakete auf Schicht 4 werden anhand der Gesamtheit aus Quelladresse, Quellport, Zieladresse, Zielport einer Verbindung zugeordnet</li>
+<li>damit eindeutige Endzustellung an einen Prozess möglich</li>
+<li>auf Server-Seite im Allgemeinen &quot;wohlbekannte&quot; Ports (z.B. 25 für SMTP, 80 für HTTP, 443 für HTTPS), damit Clients ein definiertes Ziel für neue Verbindungen haben</li>
+<li>auf Client-Seite für gewöhnlich automatisch vergebene Ports (meist zwischen 32768-65535)</li>
+<li>Praxisbeispiel: im Browser eine Webseite aufmachen, dann in der Konsole aktive Verbindungen auflisten mit <code>ss -utpn -o state connected</code></li>
+</ul>
+</li>
+<li>
+<p>Wie kann ich zuhause einen Server-Prozess betreiben?</p>
+<ul>
+<li>Außenwelt muss meine IP-Adresse finden können und den entsprechenden Port erreichen können</li>
+<li>Problem 1: IP-Adresse wird durch den Internetanbieter bestimmt und ändert sich -&gt; <a href="https://de.wikipedia.org/w/index.php?title=Dynamisches_DNS&amp;oldid=237965669">Dynamisches DNS</a> (nicht zu verwechseln mit der Firma &quot;DynDNS&quot;, die nur ein möglicher Anbieter ist)</li>
+<li>Problem 2: Router hat für gewöhnlich einen Paketfilter (<a href="https://de.wikipedia.org/w/index.php?title=Firewall&amp;oldid=244493713">Firewall</a>), der nur ausgehende sowie bekannte Verbindungen durchlässt -&gt; Ausnahmeregel (&quot;Port Opening&quot;) muss konfiguriert werden; je nach Betriebssystem auch dasselbe auf dem Server selbst erforderlich</li>
+<li>Problem 3: IPv4 mit NAT, lokaler Rechner mit Server-Prozess hat nur eine lokale IP-Adresse -&gt; Portweiterleitung muss konfiguriert werden (damit dann meist auch eine Ausnahmeregel in der Firewall verbunden)</li>
+</ul>
+</li>
+<li>
+<p>Was kann ich zuhause betreiben?</p>
+<ul>
+<li>E-Mail definitiv nicht, MTAs aus Endkunden-IP-Bereichen werden von den großen Betreibern als Spam-Schleudern interpretiert und blockiert</li>
+<li>Videotelefonie auch eher nicht, weil da NAT-Durchdringung noch problematischer ist</li>
+<li>Faustregel: fast alles mit HTTP sollte gehen, sofern man nicht durch den oft dünnen Upstream von Endkunden-Internetanschlüssen begrenzt ist</li>
+<li>Xyrill betreibt (teils zuhause, teils auf gemieteten Servern im Rechenzentrum): <a href="https://de.wikipedia.org/w/index.php?title=Gitea&amp;oldid=241399660">Gitea</a>, <a href="https://de.wikipedia.org/w/index.php?title=Jitsi&amp;oldid=245822087">Jitsi Meet</a>, <a href="https://de.wikipedia.org/w/index.php?title=Matrix_(Kommunikationsprotokoll)&amp;oldid=243306410">Matrix</a>, <a href="https://de.wikipedia.org/w/index.php?title=Nextcloud&amp;oldid=246251388">NextCloud</a>, <a href="https://de.wikipedia.org/w/index.php?title=Nginx&amp;oldid=246103192">nginx</a> (siehe STP022), <a href="https://de.wikipedia.org/w/index.php?title=Prometheus_(Software)&amp;oldid=236686905">Prometheus</a> (siehe STP032)</li>
+<li>andere Vorschläge: <a href="https://en.wikipedia.org/w/index.php?title=Bitwarden&amp;oldid=1230273157">Bitwarden</a>, <a href="https://de.wikipedia.org/w/index.php?title=Kodi_(Software)&amp;oldid=243970444">Kodi</a>, <a href="https://de.wikipedia.org/w/index.php?title=Mastodon_(Soziales_Netzwerk)&amp;oldid=245943178">Mastodon</a> oder andere ActivityPub-Server (siehe STP057), <a href="https://docs.paperless-ngx.com/">Paperless-NGX</a>, <a href="https://de.wikipedia.org/w/index.php?title=Pi-hole&amp;oldid=243236097">Pi-Hole</a></li>
+</ul>
+</li>
+<li>
+<p>im Gespräch erwähnt</p>
+<ul>
+<li>Pentaradio zu Quellcode-Verwaltung mit Git: <a href="https://c3d2.de/news/pentaradio24-20210727.html">https://c3d2.de/news/pentaradio24-20210727.html</a></li>
+<li>Audio-Streaming-Software: <a href="https://www.navidrome.org/">https://www.navidrome.org/</a></li>
+</ul>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>

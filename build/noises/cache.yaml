@@ -3518,3 +3518,37 @@ audio_metadata:
     - start_secs: 4104
       end_secs: 4671.946
       title: VPN
+  stp:062-selfhosting:
+    length_secs: 3783
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-062-selfhosting.mp3
+      size_bytes: 60869590
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-062-selfhosting.ogg
+      size_bytes: 37567349
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-062-selfhosting.opus
+      size_bytes: 22893039
+    chapters:
+    - start_secs: 0
+      end_secs: 247
+      title: Intro
+    - start_secs: 247
+      end_secs: 338
+      title: Xyrills Netztests
+    - start_secs: 338
+      end_secs: 402
+      title: Rückbezug STP061
+    - start_secs: 402
+      end_secs: 1417
+      title: Ports
+    - start_secs: 1417
+      end_secs: 2350
+      title: Server-Prozess betreiben
+    - start_secs: 2350
+      end_secs: 3783.635
+      title: Was betreiben?

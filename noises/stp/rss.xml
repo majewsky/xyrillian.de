@@ -27,6 +27,88 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP062: Selfhosting</itunes:title>
+    <itunes:episode>62</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP062: Selfhosting</title>
+    <link>https://schluesseltechnologie-podcast.de/062-selfhosting</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nachdem unser aller Heimnetzwerk voll funktionsfähig ist, wollen wir nun von daheim aus die ganze Welt mit unseren Online-Diensten beglücken... oder zumindest bestimmte Dinge selbst an den Start rollen.</itunes:summary>
+    <description>Nachdem unser aller Heimnetzwerk voll funktionsfähig ist, wollen wir nun von daheim aus die ganze Welt mit unseren Online-Diensten beglücken... oder zumindest bestimmte Dinge selbst an den Start rollen.</description>
+    <content:encoded>&lt;p&gt;Nachdem unser aller Heimnetzwerk voll funktionsfähig ist, wollen wir nun von daheim aus die ganze Welt mit unseren Online-Diensten beglücken... oder zumindest bestimmte Dinge selbst an den Start rollen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug STP061: wir haben unser Heimnetzwerk von Schicht 1 bis 3 aufgebaut&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Schicht 3 hatte uns einen Zustellweg durchs Internet gegeben&lt;/li&gt;
+&lt;li&gt;Schicht 4 ergänzt Sitzungsverwaltung (z.B. Flusskontrolle und Fehlerkorrektur; hierfür siehe STP005) und Ports&lt;/li&gt;
+&lt;li&gt;Warum braucht man Ports? Gedankenexperiment:
+&lt;ul&gt;
+&lt;li&gt;Annahme: Datenpakete werden nur anhand von Quelladresse und Zieladresse zugestellt&lt;/li&gt;
+&lt;li&gt;Situation: zwei Prozesse auf demselben PC wollen mit &lt;code&gt;wikipedia.de&lt;/code&gt; reden&lt;/li&gt;
+&lt;li&gt;Abschicken der Anfragen klappt eventuell noch, da gleiches Ziel&lt;/li&gt;
+&lt;li&gt;Problem: Antwortpaket kommt -&amp;gt; Welcher Prozess kriegt das Paket?&lt;/li&gt;
+&lt;li&gt;Technisch formuliert: Wie kann man über diese Netzwerkleitung mehrere unabhängige Verbindungen &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Multiplexverfahren&amp;amp;oldid=243098154&#34;&gt;multiplexen&lt;/a&gt;?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ports: Identifikationsnummer für offene Netzwerkverbindungen; 16 Bit groß (0-65535)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vgl. Briefkästen/Wohnungsnummern in Mehrparteienhäusern&lt;/li&gt;
+&lt;li&gt;Datenpakete auf Schicht 4 werden anhand der Gesamtheit aus Quelladresse, Quellport, Zieladresse, Zielport einer Verbindung zugeordnet&lt;/li&gt;
+&lt;li&gt;damit eindeutige Endzustellung an einen Prozess möglich&lt;/li&gt;
+&lt;li&gt;auf Server-Seite im Allgemeinen &amp;quot;wohlbekannte&amp;quot; Ports (z.B. 25 für SMTP, 80 für HTTP, 443 für HTTPS), damit Clients ein definiertes Ziel für neue Verbindungen haben&lt;/li&gt;
+&lt;li&gt;auf Client-Seite für gewöhnlich automatisch vergebene Ports (meist zwischen 32768-65535)&lt;/li&gt;
+&lt;li&gt;Praxisbeispiel: im Browser eine Webseite aufmachen, dann in der Konsole aktive Verbindungen auflisten mit &lt;code&gt;ss -utpn -o state connected&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie kann ich zuhause einen Server-Prozess betreiben?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Außenwelt muss meine IP-Adresse finden können und den entsprechenden Port erreichen können&lt;/li&gt;
+&lt;li&gt;Problem 1: IP-Adresse wird durch den Internetanbieter bestimmt und ändert sich -&amp;gt; &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Dynamisches_DNS&amp;amp;oldid=237965669&#34;&gt;Dynamisches DNS&lt;/a&gt; (nicht zu verwechseln mit der Firma &amp;quot;DynDNS&amp;quot;, die nur ein möglicher Anbieter ist)&lt;/li&gt;
+&lt;li&gt;Problem 2: Router hat für gewöhnlich einen Paketfilter (&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Firewall&amp;amp;oldid=244493713&#34;&gt;Firewall&lt;/a&gt;), der nur ausgehende sowie bekannte Verbindungen durchlässt -&amp;gt; Ausnahmeregel (&amp;quot;Port Opening&amp;quot;) muss konfiguriert werden; je nach Betriebssystem auch dasselbe auf dem Server selbst erforderlich&lt;/li&gt;
+&lt;li&gt;Problem 3: IPv4 mit NAT, lokaler Rechner mit Server-Prozess hat nur eine lokale IP-Adresse -&amp;gt; Portweiterleitung muss konfiguriert werden (damit dann meist auch eine Ausnahmeregel in der Firewall verbunden)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was kann ich zuhause betreiben?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;E-Mail definitiv nicht, MTAs aus Endkunden-IP-Bereichen werden von den großen Betreibern als Spam-Schleudern interpretiert und blockiert&lt;/li&gt;
+&lt;li&gt;Videotelefonie auch eher nicht, weil da NAT-Durchdringung noch problematischer ist&lt;/li&gt;
+&lt;li&gt;Faustregel: fast alles mit HTTP sollte gehen, sofern man nicht durch den oft dünnen Upstream von Endkunden-Internetanschlüssen begrenzt ist&lt;/li&gt;
+&lt;li&gt;Xyrill betreibt (teils zuhause, teils auf gemieteten Servern im Rechenzentrum): &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Gitea&amp;amp;oldid=241399660&#34;&gt;Gitea&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Jitsi&amp;amp;oldid=245822087&#34;&gt;Jitsi Meet&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Matrix_(Kommunikationsprotokoll)&amp;amp;oldid=243306410&#34;&gt;Matrix&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Nextcloud&amp;amp;oldid=246251388&#34;&gt;NextCloud&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Nginx&amp;amp;oldid=246103192&#34;&gt;nginx&lt;/a&gt; (siehe STP022), &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Prometheus_(Software)&amp;amp;oldid=236686905&#34;&gt;Prometheus&lt;/a&gt; (siehe STP032)&lt;/li&gt;
+&lt;li&gt;andere Vorschläge: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Bitwarden&amp;amp;oldid=1230273157&#34;&gt;Bitwarden&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kodi_(Software)&amp;amp;oldid=243970444&#34;&gt;Kodi&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Mastodon_(Soziales_Netzwerk)&amp;amp;oldid=245943178&#34;&gt;Mastodon&lt;/a&gt; oder andere ActivityPub-Server (siehe STP057), &lt;a href=&#34;https://docs.paperless-ngx.com/&#34;&gt;Paperless-NGX&lt;/a&gt;, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Pi-hole&amp;amp;oldid=243236097&#34;&gt;Pi-Hole&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pentaradio zu Quellcode-Verwaltung mit Git: &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20210727.html&#34;&gt;https://c3d2.de/news/pentaradio24-20210727.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Audio-Streaming-Software: &lt;a href=&#34;https://www.navidrome.org/&#34;&gt;https://www.navidrome.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:04:07" title="Xyrills Netztests"  />
+          <chapter start="00:05:38" title="Rückbezug STP061"  />
+          <chapter start="00:06:42" title="Ports"  />
+          <chapter start="00:23:37" title="Server-Prozess betreiben"  />
+          <chapter start="00:39:10" title="Was betreiben?"  />
+      </chapters>
+      <enclosure length="60869590" url="https://dl.xyrillian.de/noises/stp-062-selfhosting.mp3" type="audio/mpeg"/>
+      <enclosure length="37567349" url="https://dl.xyrillian.de/noises/stp-062-selfhosting.ogg" type="audio/ogg"/>
+      <enclosure length="22893039" url="https://dl.xyrillian.de/noises/stp-062-selfhosting.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/062-selfhosting/</guid>
+    <pubDate>Thu, 10 Oct 2024 17:35:00 GMT</pubDate>
+    <itunes:duration>63:03</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP061: Heimnetzwerk</itunes:title>
     <itunes:episode>61</itunes:episode>
     <itunes:season>1</itunes:season>

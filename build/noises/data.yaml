@@ -1166,3 +1166,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 62
+    slug: 062-selfhosting
+    title: Selfhosting
+    pubtime: 1728581700 # 2024-10-10
+
+    markdown:
+      description: |
+        Nachdem unser aller Heimnetzwerk voll funktionsfähig ist, wollen wir nun von daheim aus die ganze Welt mit unseren Online-Diensten beglücken... oder zumindest bestimmte Dinge selbst an den Start rollen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
