@@ -1179,3 +1179,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 63
+    slug: 063-fleissige-biber
+    title: Fleißige Biber
+    pubtime: 1730375700 # 2024-10-31
+
+    markdown:
+      description: |
+        Wie auch schon in der Vergangenheit nehmen wir es mit der Aktualität unserer "Berichterstattung" nicht ganz so genau. Und so liegt das entsprechende Ereignis etwa 2¹/₂ Monate in der Vergangenheit. Der fünfte fleißige Biber wurde gefunden.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

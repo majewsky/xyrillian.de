@@ -3552,3 +3552,46 @@ audio_metadata:
     - start_secs: 2350
       end_secs: 3783.635
       title: Was betreiben?
+  stp:063-fleissige-biber:
+    length_secs: 3650
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-063-fleissige-biber.mp3
+      size_bytes: 58735966
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-063-fleissige-biber.ogg
+      size_bytes: 36992045
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-063-fleissige-biber.opus
+      size_bytes: 22174004
+    chapters:
+    - start_secs: 0
+      end_secs: 519
+      title: Feedback
+    - start_secs: 519
+      end_secs: 669
+      title: Intro und Prolog
+    - start_secs: 669
+      end_secs: 708
+      title: 'Zum Thema: Der Biber'
+    - start_secs: 708
+      end_secs: 857
+      title: Rückbezug STP-000
+    - start_secs: 857
+      end_secs: 1389
+      title: Von Berechnung und Berechenbarkeit
+    - start_secs: 1389
+      end_secs: 1986
+      title: Aufbau einer Turing-Maschine
+    - start_secs: 1986
+      end_secs: 2927
+      title: Xyrills Turing-Maschine
+    - start_secs: 2927
+      end_secs: 3468
+      title: Die fleißigen Biber
+    - start_secs: 3468
+      end_secs: 3650.273
+      title: Kurz zu Turing-Vollständigkeit

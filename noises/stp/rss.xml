@@ -27,6 +27,149 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP063: Fleißige Biber</itunes:title>
+    <itunes:episode>63</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP063: Fleißige Biber</title>
+    <link>https://schluesseltechnologie-podcast.de/063-fleissige-biber</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wie auch schon in der Vergangenheit nehmen wir es mit der Aktualität unserer &amp;quot;Berichterstattung&amp;quot; nicht ganz so genau. Und so liegt das entsprechende Ereignis etwa 2¹/₂ Monate in der Vergangenheit. Der fünfte fleißige Biber wurde gefunden.</itunes:summary>
+    <description>Wie auch schon in der Vergangenheit nehmen wir es mit der Aktualität unserer &amp;quot;Berichterstattung&amp;quot; nicht ganz so genau. Und so liegt das entsprechende Ereignis etwa 2¹/₂ Monate in der Vergangenheit. Der fünfte fleißige Biber wurde gefunden.</description>
+    <content:encoded>&lt;p&gt;Wie auch schon in der Vergangenheit nehmen wir es mit der Aktualität unserer &amp;quot;Berichterstattung&amp;quot; nicht ganz so genau. Und so liegt das entsprechende Ereignis etwa 2¹/₂ Monate in der Vergangenheit. Der fünfte fleißige Biber wurde gefunden.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Wir haben Feedback bekommen, siehe unten. Zuerst die Shownotes zum eigentlichen Thema:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;aktueller Anlass: &lt;a href=&#34;https://www.quantamagazine.org/amateur-mathematicians-find-fifth-busy-beaver-turing-machine-20240702/&#34;&gt;Der fünfte fleißige Biber wurde gefunden&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rückbezug zu STP000: theoretische Informatik ist ein Teilgebiet der Mathematik, dass Xyrill lieber &amp;quot;Berechnungstheorie&amp;quot; nennen würde&lt;/li&gt;
+&lt;li&gt;hierin insbesondere &amp;quot;Berechenbarkeitstheorie&amp;quot;: Welche Probleme lassen sich mit Rechenmaschinen lösen?&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Church-Turing-These&amp;amp;oldid=244116059&#34;&gt;Church-Turing-These&lt;/a&gt;: Berechenbarkeit ist eine intrinsische Eigenschaft eines Problems und nicht abhängig davon, welchen Computer ich zur Lösung einsetze
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Die Klasse der Turing-berechenbaren Funktionen stimmt mit der Klasse der intuitiv berechenbaren Funktionen überein.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Analyse der Berechenbarkeit eines Problems anhand von einfachen Modellmaschinen, z.B. der Turing-Maschine (daher &amp;quot;Turing-berechenbar&amp;quot;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Turing-Vollst%C3%A4ndigkeit&amp;amp;oldid=242871861&#34;&gt;Turing-Vollständigkeit&lt;/a&gt;: die Eigenschaft einer Rechenmaschine, alle Probleme lösen zu können, die auch eine Turing-Maschine lösen kann (mal abgesehen von weltlichen Einschränkungen wie Speicherplatz und Rechenzeit)&lt;/li&gt;
+&lt;li&gt;Rückbezug zu STP021 (Reguläre Ausdrücke): dort hatten wir stärker limitierte Maschinenmodelle erwähnt (endliche Zustandsautomaten, Kellerautomaten)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aufbau einer &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Turingmaschine&amp;amp;oldid=244930504&#34;&gt;Turing-Maschine&lt;/a&gt; (&lt;a href=&#34;https://commons.wikimedia.org/wiki/File:Model_of_a_Turing_machine.jpg&#34;&gt;Beispielbild aus Wikipedia&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;unendlich langes Speicherband mit Feldern, auf denen entweder 0 oder 1 stehen kann&lt;/li&gt;
+&lt;li&gt;Lese-/Schreibkopf, der das aktuelle Feld lesen und schreiben kann sowie sich in Einzelschritten entlang des Bandes bewegen kann&lt;/li&gt;
+&lt;li&gt;Programm: endliche Menge von Zuständen, und eine Zustandsübergangsfunktion, die auf Basis der gelesenen Zeichen entscheidet und Zeichen überschreibt sowie den Lesekopf bewegt&lt;/li&gt;
+&lt;li&gt;Xyrill hat ein Beispiel mitgebracht: ein Programm, dass zwei positive Ganzzahlen subtrahiert; die Zahlen sind als Folgen von 1 gegeben, getrennt von einer 0; zum Beispiel &amp;quot;3-2&amp;quot; wird eingegeben als &amp;quot;111011&amp;quot; und der Lesekopf startet am Anfang der ersten Zahl&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Warnung:&lt;/strong&gt; Wir haben während der Aufzeichnung bemerkt, dass diese Maschine inkorrekt ist. Damit keine Verwirrung entsteht, haben wir die Notizen nicht angepasst.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zustandsvorrat (durchbuchstabiert in der Reihenfolge der Benutzung, Startzustand ist A):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A: suche nach rechts in der ersten Zahl&lt;/li&gt;
+&lt;li&gt;B: suche nach rechts in der zweiten Zahl&lt;/li&gt;
+&lt;li&gt;C: auf dem Ende der zweiten Zahl&lt;/li&gt;
+&lt;li&gt;D: suche nach links in der zweiten Zahl&lt;/li&gt;
+&lt;li&gt;E: suche nach links nach der ersten Zahl&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Übergangstabelle:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zustand A, lese 0 -&amp;gt; schreibe 0, gehe nach rechts, neuer Zustand B&lt;/li&gt;
+&lt;li&gt;Zustand A, lese 1 -&amp;gt; schreibe 1, gehe nach rechts, neuer Zustand A&lt;/li&gt;
+&lt;li&gt;Zustand B, lese 0 -&amp;gt; schreibe 0, gehe nach links, neuer Zustand C&lt;/li&gt;
+&lt;li&gt;Zustand B, lese 1 -&amp;gt; schreibe 1, gehe nach rechts, neuer Zustand B&lt;/li&gt;
+&lt;li&gt;Zustand C, lese 0 -&amp;gt; schreibe 0, gehe nach links, neuer Zustand HALT&lt;/li&gt;
+&lt;li&gt;Zustand C, lese 1 -&amp;gt; schreibe 0, gehe nach links, neuer Zustand D&lt;/li&gt;
+&lt;li&gt;Zustand D, lese 0 -&amp;gt; schreibe 0, gehe nach links, neuer Zustand E&lt;/li&gt;
+&lt;li&gt;Zustand D, lese 1 -&amp;gt; schreibe 1, gehe nach links, neuer Zustand D&lt;/li&gt;
+&lt;li&gt;Zustand E, lese 0 -&amp;gt; schreibe 0, gehe nach links, neuer Zustand E&lt;/li&gt;
+&lt;li&gt;Zustand E, lese 1 -&amp;gt; schreibe 0, gehe nach rechts, neuer Zustand A&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beispielausführung für die Aufgabe &amp;quot;3-2&amp;quot;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;... 0 [1] 1  1  0  1  1  0 ... Zustand A
+... 0  1 [1] 1  0  1  1  0 ... Zustand A
+... 0  1  1 [1] 0  1  1  0 ... Zustand A
+... 0  1  1  1 [0] 1  1  0 ... Zustand A
+... 0  1  1  1  0 [1] 1  0 ... Zustand B
+... 0  1  1  1  0  1 [1] 0 ... Zustand B
+... 0  1  1  1  0  1  1 [0]... Zustand B
+... 0  1  1  1  0  1 [1] 0 ... Zustand C
+... 0  1  1  1  0 [1] 0  0 ... Zustand D
+... 0  1  1  1 [0] 1  0  0 ... Zustand D
+... 0  1  1 [1] 0  1  0  0 ... Zustand E
+... 0  1  1  0 [0] 1  0  0 ... Zustand A
+... 0  1  1  0  0 [1] 0  0 ... Zustand B
+... 0  1  1  0  0  1 [0] 0 ... Zustand B
+... 0  1  1  0  0 [1] 0  0 ... Zustand C
+... 0  1  1  0 [0] 0  0  0 ... Zustand D
+... 0  1  1 [0] 0  0  0  0 ... Zustand E
+... 0  1 [1] 0  0  0  0  0 ... Zustand E
+... 0  1  0 [0] 0  0  0  0 ... Zustand A
+... 0  1  0  0 [0] 0  0  0 ... Zustand B
+... 0  1  0 [0] 0  0  0  0 ... Zustand C
+... 0  1 [0] 0  0  0  0  0 ... Zustand HALT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Anmerkungen hierzu&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;man kann Turing-Maschinen auch auf viele andere Weisen modellieren, etwa mit größeren Zeichensatz (z.B. alle Dezimalziffern sowie mathematische Symbole, um eine Eingabe wie &lt;code&gt;127*(3&#43;6/2)&lt;/code&gt; zu ermöglichen) oder mehreren Bändern; an der Berechenbarkeit ändert das nichts&lt;/li&gt;
+&lt;li&gt;Xyrill belässt es bei obigem Beispiel, dass noch einigermaßen kompakt ist&lt;/li&gt;
+&lt;li&gt;Übungsaufgabe: Füge weitere Zustände ein, mit denen der Lesekopf am Ende in die Startposition zurückbewegt wird.&lt;/li&gt;
+&lt;li&gt;Aber was ist jetzt mit den Bibern?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Flei%C3%9Figer_Biber&amp;amp;oldid=246581342&#34;&gt;N-ter fleißiger Biber&lt;/a&gt;: diejenige Turingmaschine mit N Zuständen, die auf ein initial leeres Band (alles voller Nullen) die meistmöglichen Einsen schreiben kann, bevor sie anhält&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Die Haltebedingung ist wichtig! Sonst können wir mit nur einem Zustand unendlich viele Einsen schreiben (&amp;quot;Zustand A, lese irgendwas -&amp;gt; schreibe 1, gehe nach rechts, neuer Zustand A&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Problem: Man kann einer Turingmaschine nicht ohne weiteres ansehen, ob sie terminiert oder nicht. -&amp;gt; Das &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Halteproblem&amp;amp;oldid=239308188&#34;&gt;Halteproblem&lt;/a&gt; ist eines der klassischen unberechenbaren Probleme.&lt;/li&gt;
+&lt;li&gt;Jetzt gefunden wurde &lt;code&gt;BB(5,2) = 47176870&lt;/code&gt;; sprich: Der längstmögliche endliche Lauf einer Turingmaschine mit 5 Zuständen und 2 Zeichen auf initial leerem Band ist 47176870 Schritte. (Das ist die gleiche Maschinengröße wie unser Beispiel oben.)&lt;/li&gt;
+&lt;li&gt;Bei der Gelegenheit erwähnen wir auch mal die &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=On-Line_Encyclopedia_of_Integer_Sequences&amp;amp;oldid=232132016&#34;&gt;OEIS&lt;/a&gt;. Die fleißigen Biber sind zum Beispiel &lt;a href=&#34;https://oeis.org/A060843&#34;&gt;A060843&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Feedback zu STP038&lt;/h4&gt;
+&lt;p&gt;laalsaas schreibt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In Minute 32 spricht xyrill von 1,6 Terabit und sagt, dass wären 1,6 Millionen Bit. Ich nehme an, dass es sich hierbei um einen Versprecher im Eifer des Gefechts handelt, sind doch 1 Terabit eine Billion Bit.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Anmerkung: Im Englischen sogar &amp;quot;a trillion bit&amp;quot;. :)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Etwas früher ging es um USB und darum, dass man den Stecker nie beim ersten Versuch richtig herum reinbekommt. Dazu möchte ich hier einen „Lifehack“ teilen. Ich hoffe, es gelingt mir, ihn in Textform verständlich zu beschreiben. Ein USB-Stecker ist meist folgendermaßen aufgebaut: Wenn man von vorne daraufguckt, ist der äußere Rand ein rechteckig gebogenes Metallblech. Innen ist eine Hälfte des Rechtecks eine Plastik-„Zunge“, auf der die Kontakte sitzen, in der anderen Hälfte ist Luft. Eine USB-Buchse wiederum besteht aus einem Rechteck, in dem die Hälfte ebenfalls aus einer „Zunge” besteht, die andere aus Luft. Damit nun ein Stecker in die Buchse passt, müssen sich die „Zungen“ gegenüberliegen, damit sie die Luft in der jeweils anderen Komponente ausfüllen. Nun ist es so, dass bei über 90% der horizontal fest verbauten USB-buchsen in Laptops, PCs, usw die „Zunge“ oben ist. Das heißt, man muss einfach die „Zunge“ des USB-steckers nach unten orientieren. Wer immer noch zu faul ist, jedes mal frontal auf seinen USB-Stecker draufzugucken, der sei darauf hingewiesen, dass man auch einfach herausfinden kann, auf welcher Seite die Zunge ist, indem man durch die seitlichen Löcher im Blech des USB-Steckers schaut und darauf achtet, ob da direkt Plastik ist (Zungenseite, die muss nach unten) oder erst etwas Luft und dann Kontakte, wenn man das sieht, hält man den Stecker richtig herum. Seitdem ich diesen Trick kenne, habe ich wesentlich weniger Probleme damit, USB-Stecker richtigherum reinzustecken. Das funktioniert natürlich nicht bei freifliegenden Hubs und auch bei seitlich oder „nach unten“ montierten Buchsen habe ich noch keine Konvention erkennen können, das kann aber auch daran liegen, dass ich zu selten mit denen zu tun habe. Ich hoffe trotzdem, dass ich manchem mit diesem Trick das Leben einfacher machen konnte :)&lt;/p&gt;
+&lt;p&gt;Zu guter Letzt möchte ich noch anmerken, dass die in Minute 39 von timeless gewählte Formulierung „Der LaTeX-Bruder“ eine (vermutlich ungewollte) Doppelbödigkeit hat. Erfahrene STP-Hörer wissen natürlich, dass es sich hier um Xyrills Bruder handelt, der seine Abschlussarbeit in LaTeX geschrieben hat, aber ich finde, es klingt auch so, wie ein Mitglied des LaTeX-Klosters oder der LaTeX-Sekte, was mich sehr zum Schmunzeln gebracht hat.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;Noch mehr Feedback&lt;/h4&gt;
+&lt;p&gt;Weiterhin schreibt Matthias:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Statt Postkarte: Liebe Hörergrüße aus dem Urlaub in Allgäu sendet Matthias.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Anbei ein Bild eines Gedenksteins für Konrad Zuse.</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Feedback"  />
+          <chapter start="00:08:39" title="Intro und Prolog"  />
+          <chapter start="00:11:09" title="Zum Thema: Der Biber"  />
+          <chapter start="00:11:48" title="Rückbezug STP-000"  />
+          <chapter start="00:14:17" title="Von Berechnung und Berechenbarkeit"  />
+          <chapter start="00:23:09" title="Aufbau einer Turing-Maschine"  />
+          <chapter start="00:33:06" title="Xyrills Turing-Maschine"  />
+          <chapter start="00:48:47" title="Die fleißigen Biber"  />
+          <chapter start="00:57:48" title="Kurz zu Turing-Vollständigkeit"  />
+      </chapters>
+      <enclosure length="58735966" url="https://dl.xyrillian.de/noises/stp-063-fleissige-biber.mp3" type="audio/mpeg"/>
+      <enclosure length="36992045" url="https://dl.xyrillian.de/noises/stp-063-fleissige-biber.ogg" type="audio/ogg"/>
+      <enclosure length="22174004" url="https://dl.xyrillian.de/noises/stp-063-fleissige-biber.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/063-fleissige-biber/</guid>
+    <pubDate>Thu, 31 Oct 2024 11:55:00 GMT</pubDate>
+    <itunes:duration>60:50</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP062: Selfhosting</itunes:title>
     <itunes:episode>62</itunes:episode>
     <itunes:season>1</itunes:season>
