@@ -3631,7 +3631,7 @@ audio_metadata:
       title: Intel Management Engine
     - start_secs: 1697
       end_secs: 1985
-      title: 'Unterhalb der Wasserlinie: rm -rf ""/*'
+      title: 'Unterhalb der Wasserlinie: rm -rf "$STEAM_ROOT"/*'
     - start_secs: 1985
       end_secs: 2204
       title: '"lp0 on fire"'

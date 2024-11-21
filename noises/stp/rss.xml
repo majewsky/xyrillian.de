@@ -100,7 +100,7 @@
           <chapter start="00:04:38" title="Oberhalb des Eisberges: Little Bobby Tables"  />
           <chapter start="00:13:54" title="Auf dem Eisberg: Quine"  />
           <chapter start="00:21:14" title="Intel Management Engine"  />
-          <chapter start="00:28:17" title="Unterhalb der Wasserlinie: rm -rf &#34;&#34;/*"  />
+          <chapter start="00:28:17" title="Unterhalb der Wasserlinie: rm -rf &#34;$STEAM_ROOT&#34;/*"  />
           <chapter start="00:33:05" title="&#34;lp0 on fire&#34;"  />
           <chapter start="00:36:44" title="Illegale Zahlen"  />
           <chapter start="00:44:20" title="Kaltstartattacke"  />
