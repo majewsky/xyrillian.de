@@ -1192,3 +1192,23 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 64
+    slug: 064-cursed-computer-iceberg-meme-part-2
+    title: Cursed Computer Iceberg Meme, Runde 2
+    pubtime: 1732223700 # 2024-11-21
+
+    markdown:
+      description: |
+        Heute geht es ein weiteres Mal um Eisberge und Memes. Entweder ttimeless ist gut aufgelegt oder diese Dinge sind nur mit Humor zu ertragen…  oder beides.
+      shownotes: true # in file
+
+    music:
+      - artist: James Cameron et al.
+        title: Titanic (1997) - Iceberg, right ahead
+        href: https://www.youtube.com/watch?v=bYOn3-PhA9c
+      - *music-stp-opener-001
+      - *music-stp-opener-002
+      - *music-stp-opener-003
+      - *music-stp-opener-004

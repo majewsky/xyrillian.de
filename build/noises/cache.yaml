@@ -3595,3 +3595,61 @@ audio_metadata:
     - start_secs: 3468
       end_secs: 3650.273
       title: Kurz zu Turing-Vollständigkeit
+  stp:064-cursed-computer-iceberg-meme-part-2:
+    length_secs: 4053
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-064-cursed-computer-iceberg-meme-part-2.mp3
+      size_bytes: 65182978
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-064-cursed-computer-iceberg-meme-part-2.ogg
+      size_bytes: 41970362
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-064-cursed-computer-iceberg-meme-part-2.opus
+      size_bytes: 25015656
+    chapters:
+    - start_secs: 0
+      end_secs: 25.308
+      title: Intro-Intro
+    - start_secs: 25.308
+      end_secs: 159
+      title: Das Intro, das achte Bit und die Zaunpfähle
+    - start_secs: 159
+      end_secs: 278
+      title: Der Eisberg im Raum
+    - start_secs: 278
+      end_secs: 834
+      title: 'Oberhalb des Eisberges: Little Bobby Tables'
+    - start_secs: 834
+      end_secs: 1274
+      title: 'Auf dem Eisberg: Quine'
+    - start_secs: 1274
+      end_secs: 1697
+      title: Intel Management Engine
+    - start_secs: 1697
+      end_secs: 1985
+      title: 'Unterhalb der Wasserlinie: rm -rf ""/*'
+    - start_secs: 1985
+      end_secs: 2204
+      title: '"lp0 on fire"'
+    - start_secs: 2204
+      end_secs: 2660
+      title: Illegale Zahlen
+    - start_secs: 2660
+      end_secs: 2970
+      title: Kaltstartattacke
+    - start_secs: 2970
+      end_secs: 3467
+      title: 'Mitte des Eisbergs: 42.zip'
+    - start_secs: 3467
+      end_secs: 3737
+      title: OpenOffice kann dienstags nicht drucken
+    - start_secs: 3737
+      end_secs: 3999
+      title: Unterseite des Eisbergs
+    - start_secs: 3999
+      end_secs: 4053.173
+      title: Outtakes

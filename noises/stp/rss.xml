@@ -27,6 +27,98 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP064: Cursed Computer Iceberg Meme, Runde 2</itunes:title>
+    <itunes:episode>64</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP064: Cursed Computer Iceberg Meme, Runde 2</title>
+    <link>https://schluesseltechnologie-podcast.de/064-cursed-computer-iceberg-meme-part-2</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Heute geht es ein weiteres Mal um Eisberge und Memes. Entweder ttimeless ist gut aufgelegt oder diese Dinge sind nur mit Humor zu ertragen…  oder beides.</itunes:summary>
+    <description>Heute geht es ein weiteres Mal um Eisberge und Memes. Entweder ttimeless ist gut aufgelegt oder diese Dinge sind nur mit Humor zu ertragen…  oder beides.</description>
+    <content:encoded>&lt;p&gt;Heute geht es ein weiteres Mal um Eisberge und Memes. Entweder ttimeless ist gut aufgelegt oder diese Dinge sind nur mit Humor zu ertragen…  oder beides.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Wir setzen unsere Betrachtung des &lt;a href=&#34;https://suricrasia.online/iceberg/&#34;&gt;Cursed Computer Iceberg Meme&lt;/a&gt; aus STP042 fort. Das letzte Mal waren wir bis &amp;quot;Below the Water&amp;quot; gekommen. Xyrill hat aber noch ein paar Sachen in den oberen Ebenen gesehen, die besprechenswert sind.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;Above the Iceberg&amp;quot; - Oberhalb des Eisberges&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://xkcd.com/327/&#34;&gt;Little Bobby Tables&lt;/a&gt;: das Mem-Beispiel einer SQL-Injektion; dieses wiederum eine klassische Art von Sicherheitslücken (siehe STP049)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;On the Iceberg&amp;quot; - Auf dem Eisberg&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Quine_(Computerprogramm)&amp;amp;oldid=240777383&#34;&gt;Quine&lt;/a&gt;: ein Programm, dass seinen eigenen Programmcode ausdruckt (Beispiele siehe Link)
+&lt;ul&gt;
+&lt;li&gt;siehe auch: &lt;a href=&#34;https://github.com/mame/quine-relay&#34;&gt;quine-relay&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Intel_Management_Engine&amp;amp;oldid=1235943064&#34;&gt;Intel Management Engine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;Below the Water&amp;quot; - Unterhalb der Wasserlinie&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ValveSoftware/steam-for-linux/issues/3671&#34;&gt;&lt;code&gt;rm -rf &amp;quot;$STEAM_ROOT&amp;quot;/*&lt;/code&gt;&lt;/a&gt;: wie eine einzige uninitialisierte Variable unzählige Computer außer Gefecht setzt (heutzutage würde man sagen, diese Computer &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20240827.html&#34;&gt;wurden ge-crowdstriket&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Lp0_on_fire&amp;amp;oldid=1236781886&#34;&gt;&amp;quot;lp0 on fire&amp;quot;&lt;/a&gt;: heute eher ein Mem als alles andere, aber wie im Artikel beschrieben gab es früher Drucker mit Heizelementen, die bei Papierstau in Flammen aufgingen (und trotzdem weiter Papier nachschoben); Xyrill fühlt sich an die Szene aus &amp;quot;Fantasia&amp;quot; mit den belebten Besen erinnert&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Illegale_Zahl&amp;amp;oldid=245251846&#34;&gt;Illegale Zahlen&lt;/a&gt;: eine konkrete Art, wie Redefreiheit in der Praxis durch Urheberrecht etc. eingeschränkt werden kann
+&lt;ul&gt;
+&lt;li&gt;siehe auch &lt;a href=&#34;https://ansuz.sooke.bc.ca/entry/23&#34;&gt;&amp;quot;Welche Farbe haben deine Bits?&amp;quot;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://freakonomics.com/podcast/happy-birthday-to-you/&#34;&gt;Economics of everyday things - Happy birthday to you&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kaltstartattacke&amp;amp;oldid=240863372&#34;&gt;Kaltstartattacke&lt;/a&gt;: ein sehr handfester Seitenkanalangriff
+&lt;ul&gt;
+&lt;li&gt;Es gibt auch die Möglichkeit, RAM einzufrieren, damit darin enthaltene Schlüssel forensisch ausgelesen werden können.&lt;/li&gt;
+&lt;li&gt;Manchmal sieht man auch Hausdurchsuchungen, bei denen die Polizei eine USV und Werkzeug zum Kabelspleißen mitbringt.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;Middle of the Iceberg&amp;quot; - Mitte des Eisbergs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Archivbombe&amp;amp;oldid=246391169&#34;&gt;42.zip&lt;/a&gt;: gepackt nur 42 KiB; &amp;quot;beim Entpacken wächst das Datenvolumen allerdings um das Hundertmilliardenfache auf [4 PiB]&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;Rückbezug zu Quines: &lt;a href=&#34;https://research.swtch.com/zip&#34;&gt;Zip Files All The Way Down&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/&#43;source/cupsys/&#43;bug/255161/comments/28&#34;&gt;&amp;quot;OpenOffice kann dienstags nicht drucken&amp;quot;&lt;/a&gt;: ein legendärer Fehlerbericht, fast so gut wie die 500-Meilen-Mail aus STP042&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;Bottom of the Iceberg&amp;quot; - Unterseite des Eisbergs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/rjhansen/67ab921ffb4084c865b3618d6955275f&#34;&gt;&amp;quot;You fool. You absolute, unmitigated, unadulterated, complete and utter, fool.&amp;quot;&lt;/a&gt;: Manöverkritik zum Keypair-Spam-Angriff auf das GPG-Keyserver-Netzwerk (GPG hatten wir bereits am Rande in STP048 erwähnt)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Es gibt noch jede Menge im tiefen Wasser. Wir sehen uns wieder in STP084.</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro-Intro"  />
+          <chapter start="00:00:25" title="Das Intro, das achte Bit und die Zaunpfähle"  />
+          <chapter start="00:02:39" title="Der Eisberg im Raum"  />
+          <chapter start="00:04:38" title="Oberhalb des Eisberges: Little Bobby Tables"  />
+          <chapter start="00:13:54" title="Auf dem Eisberg: Quine"  />
+          <chapter start="00:21:14" title="Intel Management Engine"  />
+          <chapter start="00:28:17" title="Unterhalb der Wasserlinie: rm -rf &#34;&#34;/*"  />
+          <chapter start="00:33:05" title="&#34;lp0 on fire&#34;"  />
+          <chapter start="00:36:44" title="Illegale Zahlen"  />
+          <chapter start="00:44:20" title="Kaltstartattacke"  />
+          <chapter start="00:49:30" title="Mitte des Eisbergs: 42.zip"  />
+          <chapter start="00:57:47" title="OpenOffice kann dienstags nicht drucken"  />
+          <chapter start="01:02:17" title="Unterseite des Eisbergs"  />
+          <chapter start="01:06:39" title="Outtakes"  />
+      </chapters>
+      <enclosure length="65182978" url="https://dl.xyrillian.de/noises/stp-064-cursed-computer-iceberg-meme-part-2.mp3" type="audio/mpeg"/>
+      <enclosure length="41970362" url="https://dl.xyrillian.de/noises/stp-064-cursed-computer-iceberg-meme-part-2.ogg" type="audio/ogg"/>
+      <enclosure length="25015656" url="https://dl.xyrillian.de/noises/stp-064-cursed-computer-iceberg-meme-part-2.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/064-cursed-computer-iceberg-meme-part-2/</guid>
+    <pubDate>Thu, 21 Nov 2024 21:15:00 GMT</pubDate>
+    <itunes:duration>67:33</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP063: Fleißige Biber</itunes:title>
     <itunes:episode>63</itunes:episode>
     <itunes:season>1</itunes:season>
