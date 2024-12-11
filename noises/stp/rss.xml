@@ -27,6 +27,72 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP065: Desktop-PC basteln</itunes:title>
+    <itunes:episode>65</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP065: Desktop-PC basteln</title>
+    <link>https://schluesseltechnologie-podcast.de/065-desktop-pc-basteln</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Da wir hier ja alle stilechte Nerds sind, gehört auch der Bau des eigenen PC zu den Standardaufgaben. Wie wir das anfangen, darum soll es diesmal gehen.</itunes:summary>
+    <description>Da wir hier ja alle stilechte Nerds sind, gehört auch der Bau des eigenen PC zu den Standardaufgaben. Wie wir das anfangen, darum soll es diesmal gehen.</description>
+    <content:encoded>&lt;p&gt;Da wir hier ja alle stilechte Nerds sind, gehört auch der Bau des eigenen PC zu den Standardaufgaben. Wie wir das anfangen, darum soll es diesmal gehen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Warum sollte man das tun wollen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gründe für den PC im Allgemeinen
+&lt;ul&gt;
+&lt;li&gt;mehr Leistung als ein Notebook&lt;/li&gt;
+&lt;li&gt;vielseitiger als eine Spielekonsole&lt;/li&gt;
+&lt;li&gt;ortsfester als ein Smartphone (kann man z.B. im Arbeitszimmer zurücklassen, um von der Arbeit Abstand zu gewinnen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gründe für den Selbstbau-PC im Speziellen
+&lt;ul&gt;
+&lt;li&gt;spezifische Anforderungen (z.B. besonders leistungsstark, besonders leise, besonders kompakt)&lt;/li&gt;
+&lt;li&gt;Nachhaltigkeit (Austauschen einzelner Komponenten möglich -&amp;gt; Schiff des Theseus)&lt;/li&gt;
+&lt;li&gt;konsistente Qualität (bei Fertig-PCs oft ein, zwei tolle Komponenten und der Rest Billigschrott)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie stellt man die Einkaufsliste zusammen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Schritt 1: Welche Komponenten brauche ich grundsätzlich?
+&lt;ul&gt;
+&lt;li&gt;auf jeden Fall: CPU, Mainboard, RAM, SSD, Gehäuse, Netzteil&lt;/li&gt;
+&lt;li&gt;nach Bedarf: dedizierte GPU (sonst CPU mit integrierter GPU), HDD, zusätzliche Lüfter und/oder Wasserkühlung (&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Computer_cooling&amp;amp;oldid=1243635435&#34;&gt;Bilder&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;wenn noch nicht vorhanden: Tastatur, Maus, Monitor(e), Lautsprecher bzw. Kopfhörer, Webcam&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Schritt 2: Passt alles zusammen?
+&lt;ul&gt;
+&lt;li&gt;das und noch mehr beim nächsten Mal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro, Schrittzähler und Charakterbögen"  />
+          <chapter start="00:02:09" title="Zum Thema"  />
+          <chapter start="00:06:34" title="Warum sollte man das tun wollen?"  />
+          <chapter start="00:11:01" title="Einwurf: Anmerkungen zu Ethernet"  />
+          <chapter start="00:12:34" title="Weiter mit dem Warum"  />
+          <chapter start="00:20:43" title="Einkaufsliste zusammenstellen"  />
+          <chapter start="00:49:32" title="Eine überraschende Wendung"  />
+      </chapters>
+      <enclosure length="49540600" url="https://dl.xyrillian.de/noises/stp-065-desktop-pc-basteln.mp3" type="audio/mpeg"/>
+      <enclosure length="31152046" url="https://dl.xyrillian.de/noises/stp-065-desktop-pc-basteln.ogg" type="audio/ogg"/>
+      <enclosure length="18753443" url="https://dl.xyrillian.de/noises/stp-065-desktop-pc-basteln.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/065-desktop-pc-basteln/</guid>
+    <pubDate>Wed, 11 Dec 2024 23:00:00 GMT</pubDate>
+    <itunes:duration>51:15</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP064: Cursed Computer Iceberg Meme, Runde 2</itunes:title>
     <itunes:episode>64</itunes:episode>
     <itunes:season>1</itunes:season>

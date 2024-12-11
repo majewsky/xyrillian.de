@@ -1,0 +1,17 @@
+- Warum sollte man das tun wollen?
+    - Gründe für den PC im Allgemeinen
+        - mehr Leistung als ein Notebook
+        - vielseitiger als eine Spielekonsole
+        - ortsfester als ein Smartphone (kann man z.B. im Arbeitszimmer zurücklassen, um von der Arbeit Abstand zu gewinnen)
+    - Gründe für den Selbstbau-PC im Speziellen
+        - spezifische Anforderungen (z.B. besonders leistungsstark, besonders leise, besonders kompakt)
+        - Nachhaltigkeit (Austauschen einzelner Komponenten möglich -> Schiff des Theseus)
+        - konsistente Qualität (bei Fertig-PCs oft ein, zwei tolle Komponenten und der Rest Billigschrott)
+
+- Wie stellt man die Einkaufsliste zusammen?
+    - Schritt 1: Welche Komponenten brauche ich grundsätzlich?
+        - auf jeden Fall: CPU, Mainboard, RAM, SSD, Gehäuse, Netzteil
+        - nach Bedarf: dedizierte GPU (sonst CPU mit integrierter GPU), HDD, zusätzliche Lüfter und/oder Wasserkühlung ([Bilder](https://en.wikipedia.org/w/index.php?title=Computer_cooling&oldid=1243635435))
+        - wenn noch nicht vorhanden: Tastatur, Maus, Monitor(e), Lautsprecher bzw. Kopfhörer, Webcam
+    - Schritt 2: Passt alles zusammen?
+        - das und noch mehr beim nächsten Mal

@@ -3653,3 +3653,40 @@ audio_metadata:
     - start_secs: 3999
       end_secs: 4053.173
       title: Outtakes
+  stp:065-desktop-pc-basteln:
+    length_secs: 3075
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-065-desktop-pc-basteln.mp3
+      size_bytes: 49540600
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-065-desktop-pc-basteln.ogg
+      size_bytes: 31152046
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-065-desktop-pc-basteln.opus
+      size_bytes: 18753443
+    chapters:
+    - start_secs: 0
+      end_secs: 129
+      title: Intro, Schrittzähler und Charakterbögen
+    - start_secs: 129
+      end_secs: 394
+      title: Zum Thema
+    - start_secs: 394
+      end_secs: 661
+      title: Warum sollte man das tun wollen?
+    - start_secs: 661
+      end_secs: 754
+      title: 'Einwurf: Anmerkungen zu Ethernet'
+    - start_secs: 754
+      end_secs: 1243
+      title: Weiter mit dem Warum
+    - start_secs: 1243
+      end_secs: 2972
+      title: Einkaufsliste zusammenstellen
+    - start_secs: 2972
+      end_secs: 3075.565
+      title: Eine überraschende Wendung

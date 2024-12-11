@@ -1212,3 +1212,17 @@ files:
       - *music-stp-opener-002
       - *music-stp-opener-003
       - *music-stp-opener-004
+
+  - show: stp
+    episode: 65
+    slug: 065-desktop-pc-basteln
+    title: Desktop-PC basteln
+    pubtime: 1733958000 # 2024-12-12
+
+    markdown:
+      description: |
+        Da wir hier ja alle stilechte Nerds sind, gehört auch der Bau des eigenen PC zu den Standardaufgaben. Wie wir das anfangen, darum soll es diesmal gehen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
+
