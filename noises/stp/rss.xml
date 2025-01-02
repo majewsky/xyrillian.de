@@ -5,7 +5,7 @@
   <link>https://schluesseltechnologie-podcast.de/</link>
   <atom:link href="https://xyrillian.de/noises/stp/rss.xml" rel="self" type="application/rss+xml" />
   <language>de</language>
-  <copyright>&#xA9; 2021-2024 Stefan Majewsky, ttimeless</copyright>
+  <copyright>&#xA9; 2021-2025 Stefan Majewsky, ttimeless</copyright>
   <itunes:subtitle>Computertechnik, von Grund auf erklärt</itunes:subtitle>
   <itunes:author>Xyrillian Noises</itunes:author>
   <itunes:summary>Die IT hat unser Leben in den letzten Jahrzehnten von Grund auf verändert. Aber wie funktioniert sie wirklich? Das möchte ttimeless mal erklärt bekommen. Zum Glück hat Xyrill Antworten.
@@ -25,6 +25,81 @@
   <itunes:image href="https://xyrillian.de/res/cover-stp.png"/>
   <itunes:category text="Technology"/>
   <itunes:explicit>no</itunes:explicit>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP066: Desktop-PC basteln, Teil 2</itunes:title>
+    <itunes:episode>66</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP066: Desktop-PC basteln, Teil 2</title>
+    <link>https://schluesseltechnologie-podcast.de/066-desktop-pc-basteln-teil-2</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nachdem es sich als eine gute Entscheidung erwiesen hat, die ursprünglich geplante Episode zu teilen, geht es heute nun konkreter um die Auswahl der Komponenten und deren Montage in den Selbstbau-PC.</itunes:summary>
+    <description>Nachdem es sich als eine gute Entscheidung erwiesen hat, die ursprünglich geplante Episode zu teilen, geht es heute nun konkreter um die Auswahl der Komponenten und deren Montage in den Selbstbau-PC.</description>
+    <content:encoded>&lt;p&gt;Nachdem es sich als eine gute Entscheidung erwiesen hat, die ursprünglich geplante Episode zu teilen, geht es heute nun konkreter um die Auswahl der Komponenten und deren Montage in den Selbstbau-PC.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;fortgesetzt aus STP065: Wie wählt man Komponenten so, dass alles zusammenpasst?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU wählen (Intel oder AMD; übertaktbar oder nicht; Boxed-Lüfter oder Aftermarket-Kühlung, etc.)&lt;/li&gt;
+&lt;li&gt;Mainboard wählen (passend zum CPU-Sockel und dem benötigten Chipsatz; im gewünschten Formfaktor, z.B. &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=ATX-Format&amp;amp;oldid=247426326&#34;&gt;ATX&lt;/a&gt; vs. &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Mini-ITX&amp;amp;oldid=245442119&#34;&gt;Mini-ITX&lt;/a&gt;; mit gewünschten Funktionen, z.B. WLAN oder Toslink-Audio oder viele USB-Steckplätze)&lt;/li&gt;
+&lt;li&gt;RAM wählen (passend zum RAM-Sockel auf dem Mainboard und den unterstützten RAM-Frequenzen)&lt;/li&gt;
+&lt;li&gt;GPU wählen (relativ unabhängig von den vorherigen Schritten)&lt;/li&gt;
+&lt;li&gt;SSD/HDD wählen (unabhängig von den vorherigen Schritten außer: Mainboard muss genügend Steckplätze für NVMe bzw. SATA haben)&lt;/li&gt;
+&lt;li&gt;Gehäuse wählen (GPU und Mainboard muss passen, bei großen CPUs mit extravaganten Lüftern muss auch die Lüfterhöhe passen)&lt;/li&gt;
+&lt;li&gt;Netzteil wählen (TDP von allen bisher genannten Sachen aufsummieren -&amp;gt; Netzteil so wählen, dass bei Volllast 80% verwendet werden)&lt;/li&gt;
+&lt;li&gt;je nach Prioritätensetzung kann auch eine andere Planungsreihenfolge sinnvoll sein (z.B. wenn man ein ganz bestimmtes Gehäuse füllen will)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Webempfehlungen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.logicalincrements.com&#34;&gt;https://www.logicalincrements.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://reddit.com/r/BuildAPC&#34;&gt;https://reddit.com/r/BuildAPC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.geizhals.de&#34;&gt;https://www.geizhals.de&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mitternachtstarif bei Mindfactory :)&lt;/li&gt;
+&lt;li&gt;gerade neu: &lt;a href=&#34;https://arstechnica.com/gadgets/2024/09/ars-technica-system-guide-falling-prices-are-more-exciting-than-new-parts/&#34;&gt;Systembuilding-Guide von Ars Technica für 2024&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie baut man es zusammen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Werkzeug: PH1/PH2-Schraubendreher, evtl. Wärmeleitpaste (beim Boxed-Kühler schon voraufgetragen), evtl. Kabelbinder&lt;/li&gt;
+&lt;li&gt;allgemeine Arbeitsplatzregeln: Zeit nehmen, genügend Platz, gute Beleuchtung&lt;/li&gt;
+&lt;li&gt;für die Zusammenbaureihenfolge dem Handbuch zum Gehäuse folgen (allgemein: Gehäuse -&amp;gt; Netzteil -&amp;gt; Mainboard -&amp;gt; CPU -&amp;gt; RAM -&amp;gt; Lüfter -&amp;gt; SSD/HDD -&amp;gt; GPU)&lt;/li&gt;
+&lt;li&gt;Platinen nur an den Kanten anfassen, nicht auf die Leiterbahnen patschen&lt;/li&gt;
+&lt;li&gt;Steckverbindungen sollten immer ohne Gewalt funktionieren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;weitere Empfehlungen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spiralschlauch zum Organisieren der Kabel sowohl innerhalb als auch außerhalb des Gehäuses&lt;/li&gt;
+&lt;li&gt;zum Reinigen: Staubsauger und Pinsel, Druckluftdose (bitte ohne Treibmittel)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:02:14" title="Prioritäten bei der Komponentenwahl"  />
+          <chapter start="00:02:55" title="Wahl der CPU"  />
+          <chapter start="00:12:53" title="Das Mainboard"  />
+          <chapter start="00:23:26" title="Kleiner Ausflug zu Geizhals.de"  />
+          <chapter start="00:26:54" title="Arbeitsspeicher"  />
+          <chapter start="00:30:02" title="GPU"  />
+          <chapter start="00:31:51" title="Dauerhafter Speicher"  />
+          <chapter start="00:33:35" title="Netzteil"  />
+          <chapter start="00:39:45" title="Gehäuse"  />
+          <chapter start="00:46:13" title="Webempfehlungen"  />
+          <chapter start="00:52:56" title="Montagehinweise"  />
+      </chapters>
+      <enclosure length="66676850" url="https://dl.xyrillian.de/noises/stp-066-desktop-pc-basteln-teil-2.mp3" type="audio/mpeg"/>
+      <enclosure length="43132159" url="https://dl.xyrillian.de/noises/stp-066-desktop-pc-basteln-teil-2.ogg" type="audio/ogg"/>
+      <enclosure length="25377791" url="https://dl.xyrillian.de/noises/stp-066-desktop-pc-basteln-teil-2.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/066-desktop-pc-basteln-teil-2/</guid>
+    <pubDate>Thu, 02 Jan 2025 13:35:00 GMT</pubDate>
+    <itunes:duration>69:06</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP065: Desktop-PC basteln</itunes:title>

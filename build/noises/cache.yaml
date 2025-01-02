@@ -3690,3 +3690,55 @@ audio_metadata:
     - start_secs: 2972
       end_secs: 3075.565
       title: Eine überraschende Wendung
+  stp:066-desktop-pc-basteln-teil-2:
+    length_secs: 4146
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-066-desktop-pc-basteln-teil-2.mp3
+      size_bytes: 66676850
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-066-desktop-pc-basteln-teil-2.ogg
+      size_bytes: 43132159
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-066-desktop-pc-basteln-teil-2.opus
+      size_bytes: 25377791
+    chapters:
+    - start_secs: 0
+      end_secs: 134
+      title: Intro
+    - start_secs: 134
+      end_secs: 175
+      title: Prioritäten bei der Komponentenwahl
+    - start_secs: 175
+      end_secs: 773
+      title: Wahl der CPU
+    - start_secs: 773
+      end_secs: 1406
+      title: Das Mainboard
+    - start_secs: 1406
+      end_secs: 1614
+      title: Kleiner Ausflug zu Geizhals.de
+    - start_secs: 1614
+      end_secs: 1802
+      title: Arbeitsspeicher
+    - start_secs: 1802
+      end_secs: 1911
+      title: GPU
+    - start_secs: 1911
+      end_secs: 2015
+      title: Dauerhafter Speicher
+    - start_secs: 2015
+      end_secs: 2385
+      title: Netzteil
+    - start_secs: 2385
+      end_secs: 2773
+      title: Gehäuse
+    - start_secs: 2773
+      end_secs: 3176
+      title: Webempfehlungen
+    - start_secs: 3176
+      end_secs: 4146.555
+      title: Montagehinweise
