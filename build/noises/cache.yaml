@@ -3742,3 +3742,49 @@ audio_metadata:
     - start_secs: 3176
       end_secs: 4146.555
       title: Montagehinweise
+  stp:067-linux-auf-dem-desktop:
+    length_secs: 3536
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-067-linux-auf-dem-desktop.mp3
+      size_bytes: 56911645
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-067-linux-auf-dem-desktop.ogg
+      size_bytes: 36211721
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-067-linux-auf-dem-desktop.opus
+      size_bytes: 21626832
+    chapters:
+    - start_secs: 0
+      end_secs: 180
+      title: Postkarte von Jörg
+    - start_secs: 180
+      end_secs: 343
+      title: Feedback zu STP066
+    - start_secs: 343
+      end_secs: 762
+      title: Intro, was bisher geschah und was kommen soll
+    - start_secs: 762
+      end_secs: 1389
+      title: Warum sollte man das wollen?
+    - start_secs: 1389
+      end_secs: 1777
+      title: Paketmanager
+    - start_secs: 1777
+      end_secs: 1896
+      title: Die Schwierigkeit mit Linux
+    - start_secs: 1896
+      end_secs: 2319
+      title: Einsieg in Linux
+    - start_secs: 2319
+      end_secs: 2595
+      title: Vielfalt als Chance
+    - start_secs: 2595
+      end_secs: 3509
+      title: Die Installation
+    - start_secs: 3509
+      end_secs: 3536.246
+      title: Outtakes

@@ -1238,3 +1238,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 67
+    slug: 067-linux-auf-dem-desktop
+    title: Linux auf dem Desktop
+    pubtime: 1737660900 # 2025-01-23
+
+    markdown:
+      description: |
+        Endlich ist die Hardware geliefert und montiert; Zeit, der Elektronik Leben einzuhauchen. Was könnte da besser passen als die Linux-Distribution der Wahl.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

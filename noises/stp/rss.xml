@@ -27,6 +27,74 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP067: Linux auf dem Desktop</itunes:title>
+    <itunes:episode>67</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP067: Linux auf dem Desktop</title>
+    <link>https://schluesseltechnologie-podcast.de/067-linux-auf-dem-desktop</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Endlich ist die Hardware geliefert und montiert; Zeit, der Elektronik Leben einzuhauchen. Was könnte da besser passen als die Linux-Distribution der Wahl.</itunes:summary>
+    <description>Endlich ist die Hardware geliefert und montiert; Zeit, der Elektronik Leben einzuhauchen. Was könnte da besser passen als die Linux-Distribution der Wahl.</description>
+    <content:encoded>&lt;p&gt;Endlich ist die Hardware geliefert und montiert; Zeit, der Elektronik Leben einzuhauchen. Was könnte da besser passen als die Linux-Distribution der Wahl.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Wir haben Feedback bekommen, siehe unten. Zuerst die Shownotes zum eigentlichen Thema:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezüge: STP065/066, &lt;a href=&#34;https://www.gamespodcast.de/2024/09/05/sebastian-goes-linux-1/&#34;&gt;Gamespodcast&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unterschiede zu Windows und macOS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pro: keine Werbung, kein Tracking, keine nervtötenden Virenscanner oder Abzockereien (achtung Ubuntu)
+&lt;ul&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://answers.microsoft.com/en-us/insider/forum/all/set-up-windows-11-without-internet-oobebypassnro/4fc44554-b416-4ecb-8961-6f79fd55ae0f&#34;&gt;&lt;code&gt;OOBE\BYPASSNRO&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://github.com/LeDragoX/Win-Debloat-Tools&#34;&gt;Debloating-Tool für Windows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pro: nicht der &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Enshittification&amp;amp;oldid=1252695330&#34;&gt;Enshittification&lt;/a&gt; durch Microsoft und Apple ausgesetzt (siehe: warum Steam Linux unterstützt)&lt;/li&gt;
+&lt;li&gt;Pro: Langlebigkeit (siehe Xyrills Schiff des Theseus)&lt;/li&gt;
+&lt;li&gt;Pro: unendliche Variabilität -&amp;gt; &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Linux-Distribution&amp;amp;oldid=248110982&#34;&gt;Distributionen&lt;/a&gt; (vgl. &lt;a href=&#34;https://distrowatch.com&#34;&gt;distrowatch.com&lt;/a&gt;, &lt;a href=&#34;https://www.reddit.com/r/unixporn/&#34;&gt;/r/UnixPorn&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Contra: unendliche Variablität :) -&amp;gt; neben verschiedenen Distributionen zum Beispiel auch verschiedene Desktop-Umgebungen usw.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie wählt man eine Distribution?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Empfehlung für den ersten Kontakt: z.B. &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;evtl. je nach speziellen Anforderungen: z.B. für Gaming &lt;a href=&#34;https://get.regataos.com.br/&#34;&gt;RegataOS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;als Live-System ausprobieren (unter Windows braucht man dafür einen leeren USB-Stick und &lt;a href=&#34;https://rufus.ie/de/&#34;&gt;Rufus&lt;/a&gt; oder &lt;a href=&#34;https://www.ventoy.net/en/index.html&#34;&gt;Ventoy&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;als VM unter Windows ausprobieren (&lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;VirtualBox&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;für weiteren Überblick: auf YouTube nach Distro-Vorstellungen suchen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Feedback I&lt;/h4&gt;
+&lt;p&gt;Auf dem Kongress gab es eine Postkarte.&lt;/p&gt;
+&lt;h4&gt;Feedback II zu STP066&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;für deutschsprachige Kaufberatung zu PC-Hardware wurde &lt;a href=&#34;https://forum.worldofplayers.de/forum/forums/504-Kaufberatung&#34;&gt;https://forum.worldofplayers.de/forum/forums/504-Kaufberatung&lt;/a&gt; empfohlen&lt;/li&gt;
+&lt;li&gt;Xyrill hat &lt;a href=&#34;https://de.wikipedia.org/wiki/80_PLUS&#34;&gt;80 PLUS&lt;/a&gt; falsch erklärt: es geht dort um einen Wirkungsgrad über 80% bei Lasten von 20/50/100%&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Postkarte von Jörg"  />
+          <chapter start="00:03:00" title="Feedback zu STP066"  />
+          <chapter start="00:05:43" title="Intro, was bisher geschah und was kommen soll"  />
+          <chapter start="00:12:42" title="Warum sollte man das wollen?"  />
+          <chapter start="00:23:09" title="Paketmanager"  />
+          <chapter start="00:29:37" title="Die Schwierigkeit mit Linux"  />
+          <chapter start="00:31:36" title="Einsieg in Linux"  />
+          <chapter start="00:38:39" title="Vielfalt als Chance"  />
+          <chapter start="00:43:15" title="Die Installation"  />
+          <chapter start="00:58:29" title="Outtakes"  />
+      </chapters>
+      <enclosure length="56911645" url="https://dl.xyrillian.de/noises/stp-067-linux-auf-dem-desktop.mp3" type="audio/mpeg"/>
+      <enclosure length="36211721" url="https://dl.xyrillian.de/noises/stp-067-linux-auf-dem-desktop.ogg" type="audio/ogg"/>
+      <enclosure length="21626832" url="https://dl.xyrillian.de/noises/stp-067-linux-auf-dem-desktop.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/067-linux-auf-dem-desktop/</guid>
+    <pubDate>Thu, 23 Jan 2025 19:35:00 GMT</pubDate>
+    <itunes:duration>58:56</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP066: Desktop-PC basteln, Teil 2</itunes:title>
     <itunes:episode>66</itunes:episode>
     <itunes:season>1</itunes:season>
