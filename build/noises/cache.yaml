@@ -3788,3 +3788,40 @@ audio_metadata:
     - start_secs: 3509
       end_secs: 3536.246
       title: Outtakes
+  stp:068-vom-mythos-des-mann-monats:
+    length_secs: 4806
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-068-vom-mythos-des-mann-monats.mp3
+      size_bytes: 77231575
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-068-vom-mythos-des-mann-monats.ogg
+      size_bytes: 51121104
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-068-vom-mythos-des-mann-monats.opus
+      size_bytes: 29301859
+    chapters:
+    - start_secs: 0
+      end_secs: 317
+      title: Intro-Intro
+    - start_secs: 317
+      end_secs: 418
+      title: Intro und Getränke
+    - start_secs: 418
+      end_secs: 813
+      title: Der Autor
+    - start_secs: 813
+      end_secs: 2054
+      title: 'Kapitel 1: Die Teergrube'
+    - start_secs: 2054
+      end_secs: 3798
+      title: 'Kapitel 2: Vom Mythos des Mann-Monats'
+    - start_secs: 3798
+      end_secs: 4704
+      title: 'Kapitel 3: Das OP-Team'
+    - start_secs: 4704
+      end_secs: 4806.257
+      title: Eine überraschende Wendung

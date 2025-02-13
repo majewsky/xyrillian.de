@@ -27,6 +27,216 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP068: Literatur: Vom Mythos des Mann-Monats</itunes:title>
+    <itunes:episode>68</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP068: Literatur: Vom Mythos des Mann-Monats</title>
+    <link>https://schluesseltechnologie-podcast.de/068-vom-mythos-des-mann-monats</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>In dieser Episode wird ein lang gehegter Traum wahr. Xyrill hat ein Buch gelesen und spricht darüber. Obwohl es nicht sehr dick ist, ist es doch sehr gehaltvoll und so entscheiden wir uns kurz vor Ende der Sendung für eine spontane Planänderung.</itunes:summary>
+    <description>In dieser Episode wird ein lang gehegter Traum wahr. Xyrill hat ein Buch gelesen und spricht darüber. Obwohl es nicht sehr dick ist, ist es doch sehr gehaltvoll und so entscheiden wir uns kurz vor Ende der Sendung für eine spontane Planänderung.</description>
+    <content:encoded>&lt;p&gt;In dieser Episode wird ein lang gehegter Traum wahr. Xyrill hat ein Buch gelesen und spricht darüber. Obwohl es nicht sehr dick ist, ist es doch sehr gehaltvoll und so entscheiden wir uns kurz vor Ende der Sendung für eine spontane Planänderung.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Wir lesen die englische Erstausgabe von 1975, die &lt;a href=&#34;https://archive.org/details/MythicalManMonth&#34;&gt;im Internet Archive&lt;/a&gt; digitalisiert wurde.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zum Autor: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Frederick_P._Brooks&amp;amp;oldid=229001327&#34;&gt;Frederick P. Brooks, Jr.&lt;/a&gt; (US-amerikanischer Informatiker, 1931-2022)
+&lt;ul&gt;
+&lt;li&gt;in den 60ern Entwicklungsleiter bei IBM für das Betriebssystem OS/360 (eines der ersten Systeme mit Unterstützung für persistente Massenspeicher mit Wahlzugriff, sprich: Festplatten)&lt;/li&gt;
+&lt;li&gt;gilt als Erfinder des Bytes mit 8 Bit; Wikipedia zitiert Brooks aus einem Interview von 2010:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;„Die wichtigste Entscheidung, die ich je getroffen habe, war, die IBM-360-Serie von einem 6-Bit-Byte auf ein 8-Bit-Byte umzustellen und damit die Verwendung von Kleinbuchstaben zu ermöglichen. Diese Veränderung verbreitete sich überall.“&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;zum Buch: &amp;quot;Vom Mythos des Mann-Monats&amp;quot; (&amp;quot;The Mythical Man-Month&amp;quot;) dokumentiert Brooks&#39; Erfahrungen als Projekt-Manager in einem der frühen großen Software-Projekte&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nicht als Lehrbuch angelegt, weil es dafür &amp;quot;noch zu früh&amp;quot; gewesen sei, sondern als Serie persönlicher Eindrücke und Lektionen&lt;/li&gt;
+&lt;li&gt;fast jedes Kapitel ist ein alleinstehendes Essay&lt;/li&gt;
+&lt;li&gt;wir wollen schauen, ob diese Lektionen auch heute noch Bestand haben&lt;/li&gt;
+&lt;li&gt;in der ersten Hälfte des Buches (Kapitel 2-7) ist das übergreifende Motiv, wie sich die Arbeit in großen Teams von kleinen Teams unterscheidet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hörempfehlung: &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20221227.html&#34;&gt;Pentaradio vom Dezember 2022&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;anlässlich Brooks&#39; Tod hatten wir über seinen anderen wichtigen Text &amp;quot;No Silver Bullet&amp;quot; und das Thema Komplexität gesprochen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 1: Die Teergrube&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Teergruben-Analogie: steckt ein Tier mit einem Bein in der Teergrube, kann es das Bein meist aus eigener Kraft herausziehen; alle Beine in der Teergrube sind hingegen meist ein Todesurteil&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;analog hierzu: Zähheit/Trägheit in der Software-Entwicklung nicht aus einem bestimmten Grund, sondern aufgrund mehrerer parallel wirkender Gründe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Programme können von Einzelpersonen oder Zweierteams erschaffen werden&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;These: aber nicht &amp;quot;Programmsystemprodukte&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vom Programm zum Programmprodukt: Generalisierung (Nützlichkeit für eine ganze Klasse von Situationen), Testabdeckung (siehe STP038), Dokumentation, fortlaufende Wartung -&amp;gt; heute sagt man &amp;quot;Produktisierung&amp;quot; dazu&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brooks schätzt hier dreimal mehr Aufwand als für das reine Programm&lt;/li&gt;
+&lt;li&gt;Xyrill würde heute sogar einen größeren Faktor schätzen, vllt. 4 oder 5: im Bereich der Programmierproduktivität gab es mehr Innovationen beim initialen Schreiben als bei Maintenance (siehe Xyrills Kritik an Ruby als einzeilerorientiert; siehe auch LLMs, aber das verschiebt sich eventuell gerade)&lt;/li&gt;
+&lt;li&gt;Parallele zu &amp;quot;warum setzt sich Open Source nicht durch&amp;quot;, siehe Besprechnung von &lt;a href=&#34;https://berthub.eu/articles/posts/open-source-by-itself-is-no-alternative-for-big-tech/&#34;&gt;&amp;quot;Open Source on its own is no alternative to Big Tech&amp;quot;&lt;/a&gt; im &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20241224.html&#34;&gt;Pentaradio vom Dezember 2024&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vom Programm zum Programmsystem: Einbettung in ein Netzwerk anderer Programme mit konsistentem Stil und definierten Schnittstellen untereinander&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brooks legt hier auch Wert auf ein vordefiniertes Ressourcenbudget (CPU-Zeit, Speicher, Datenverkehr) für jedes Teilprogramm -&amp;gt; heute überholt; Effizienz der Belegschaft geht über Effizienz des Produktes&lt;/li&gt;
+&lt;li&gt;Brooks schätzt hier &lt;em&gt;mindestens&lt;/em&gt; dreimal mehr Aufwand als für die reinen Programme&lt;/li&gt;
+&lt;li&gt;Xyrill stimmt im Großen und Ganzen zu: heute zwar öfter von Anfang an wohlgeformte Schnittstellen (vgl. Unix-Philosophie in STP006, JSON in STP071), aber andererseits gestiegene Gesamtkomplexität&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Programmsystemprodukt: ein produktisiertes Programmsystem&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;somit laut Brooks&#39; Schätzung &lt;code&gt;3 x 3 = 9&lt;/code&gt; Mal mehr Aufwand als für die einzelnen Programme&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 2: Vom Mythos des Mann-Monats&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Problem 1: Programmierer sind schlecht im Schätzen von Zeitaufwand&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;inhärenter Optimismus: für jede Teilaufgabe schätzt man den Aufwand im Fall, dass alles gut geht&lt;/li&gt;
+&lt;li&gt;These: das Programm entsteht erst im Kopf und dann in der Realität; letzteres dauert länger, aber ein Programm, dass im Kopf fertig ist, fühlt sich schon fertig an&lt;/li&gt;
+&lt;li&gt;Programme sind kristallisierte Gedanken auf eine sehr viel direktere Art und Weise als z.B. Handwerksstücke, die kategorisch in ein physisches Artefakt umgesetzt werden müssen&lt;/li&gt;
+&lt;li&gt;Testphasen sind von diesem Optimismus am stärksten betroffen
+&lt;ul&gt;
+&lt;li&gt;Xyrill stimmt im Prinzip zu; allerdings wird heute versucht, Tests bei der Entwicklung einzugliedern (siehe Besprechung von TDD in STP038)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Problem 2: konventielle Planungsmethoden funktionieren nur, wenn &amp;quot;Personen und Monate austauschbar sind&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basiseinheit: Mann-Monat (heute sagt man Personenmonat); die Menge Arbeit, die eine Person in einem Monat verrichten kann&lt;/li&gt;
+&lt;li&gt;Messung von Aufwand in Personenmonaten impliziert, dass eine Aufgabe unter mehreren Personen aufgeteilt werden kann und keine Kommunikation zwischen diesen Personen erforderlich ist
+&lt;ul&gt;
+&lt;li&gt;kommt hin für z.B. Spargelstechen oder Zimmerreinigung im Hotel, aber: &amp;quot;Das Austragen eines Kindes dauert neun Monate, egal, wieviele Frauen der Aufgabe zugewiesen werden.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;zwei Komplikationen: Einarbeitungszeit (linear in der Größe des Personals) und fortwährender Kommunikationsaufwand (quadratisch in der Größe des Personals)
+&lt;ul&gt;
+&lt;li&gt;Xyrill kann das 100-%-ig bestätigen; in großen Teams verbringen die hochrangigen Techniker signifikant mehr Zeit mit Meetings/Mails/Chat als mit ihrer nominalen Tätigkeit&lt;/li&gt;
+&lt;li&gt;quadratisches Wachstum kann teilweise begrenzt werden durch Einführung von Unterteams mit strikten Rollenverteilungen; dann tritt das &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Gesetz_von_Conway&amp;amp;oldid=238711792&#34;&gt;Gesetz von Conway&lt;/a&gt; in Kraft&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Problem 3: der Zeitplan wird durch die Bedürfnisse des Kunden bestimmt, nicht durch die Bedürfnisse der Programmierer&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Restaurant-Analogie: wenn man das langsam gegarte Steak in nur 5 Minuten haben will, wird der Koch sich dem entgegenstellen... oder er dreht halt die Hitze hoch und man kriegt ein schlechteres Produkt&lt;/li&gt;
+&lt;li&gt;Programmierprojekte richten sich aber oft dem vom Kunden und/oder Management vorgegebenen Liefertermin: &amp;quot;Es ist sehr schwierig, eine Schätzung energisch, plausibel und arbeitsplatzgefährdend zu verteidigen, die auf keiner quantitativen Methode beruht, durch wenig Daten gestützt und hauptsächlich durch das Bauchgefühl der Manager getragen wird.&amp;quot;&lt;/li&gt;
+&lt;li&gt;wenn dann beim Testen am Ende eine Verspätung eintritt, ist die Versuchung groß, halb fertige Produkte zu liefern (vgl. &amp;quot;Bananaware&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Problem 4: Was macht man, wenn dann das Kind in den Brunnen gefallen ist und man zu spät dran ist?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Option 1: Lieferdatum nach hinten verschieben&lt;/li&gt;
+&lt;li&gt;Option 2: Umfang reduzieren
+&lt;ul&gt;
+&lt;li&gt;passiert eventuell auch unter der Hand, zum Beispiel indem beim Design und beim Testen Arbeitstempo gegen Sorgfalt abgewogen wird&lt;/li&gt;
+&lt;li&gt;Xyrill schielt auf sein ständig wachsendes Backlog an &amp;quot;müsste man mal machen&amp;quot;-Aufgaben&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Option 3: weitere Leute hinzufügen
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Brooks%27s_law&amp;amp;oldid=1233664913&#34;&gt;Brooks&#39;sches Gesetz&lt;/a&gt;: &amp;quot;Das Hinzufügen weiteren Personals zu einem verspäteten Softwareprojekt verspätet es weiter.&amp;quot;&lt;/li&gt;
+&lt;li&gt;siehe Problem 2: neue Mitarbeiter müssen von den bestehenden Teammitgliedern eingearbeitet werden und erhöhen dann permanent den Kommunikationsaufwand&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vorschlag von Brooks: Planung basierend auf sequentiellen Teilschritten mit jeweils voneinander unabhängigen Teilaufgaben
+&lt;ul&gt;
+&lt;li&gt;Personalgröße ergibt sich aus der Anzahl jeweils unabhängiger Teilaufgaben&lt;/li&gt;
+&lt;li&gt;Zeitaufwand ergibt sich aus der längsten Kette von sequentiellen Teilschritten&lt;/li&gt;
+&lt;li&gt;Parallele zum &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Gantt-Diagramm&amp;amp;oldid=248831153&#34;&gt;Gantt-Diagramm&lt;/a&gt;, dass zu Brooks&#39; Zeit bekannt gewesen sein sollte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 3: Das OP-Team (&amp;quot;The Surgical Team&amp;quot;)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Beobachtung: sehr weite Spannbreite im Produktivitätsspektrum der Software-Entwickler; die besten sind 10x so produktiv wie die schlechtesten&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Xyrill war überrascht, dass diese Beobachtung schon so alt ist; in den 2010ern gab es einen Hype darum und man hat die produktivsten Entwickler als &amp;quot;Rock Stars&amp;quot; gehandelt&lt;/li&gt;
+&lt;li&gt;naive Schlussfolgerung: statt einem großen Team lieber ein kleines Team der absolut Besten
+&lt;ul&gt;
+&lt;li&gt;kleine Teams kommunizieren ja auch besser, also weniger Overhead&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Problem: skaliert irgendwann nicht mehr
+&lt;ul&gt;
+&lt;li&gt;10 Leute können nicht z.B. ein modernes Betriebssystem bauen (vielleicht als Programm, aber definitiv nicht als fortlaufend gewartetes Programmsystemprodukt)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alternativvorschlag: Teamstruktur analog zu Operations-Teams in der Chirurgie&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ein Spezialist in der Mitte, der die Schnitte macht&lt;/li&gt;
+&lt;li&gt;viele Unterstützer drumherum, die die Werkzeuge anreichen und Instrumente überwachen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;genaue Rollenverteilung in diesem Vorschlag&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chirurg/Chefprogrammierer: erarbeitet die Design-Spezifikation und schreibt Programm, Dokumentation und Tests&lt;/li&gt;
+&lt;li&gt;Copilot: berät den Chirurgen in allen Design- und Implementations-Entscheidungen; fungiert als Stellvertreter des Chirurgen&lt;/li&gt;
+&lt;li&gt;Administrator: kümmert sich für den Chirugen um alle administrativen Aufgaben (Geldmittel, Personal, Räumlichkeiten, Inventar); bei kleineren Teams teilen sich evtl. mehrere Teams einen Administrator&lt;/li&gt;
+&lt;li&gt;Editor: bringt die vom Chirurgen ins Unreine geschriebene oder diktierte Dokumentation in Reinform&lt;/li&gt;
+&lt;li&gt;außerdem werden Sekretariatsrollen beschrieben; z.B. ein Schreiber, der Code auf Lochkarten bringt und Programmausgaben sammelt und archiviert&lt;/li&gt;
+&lt;li&gt;weitere Randrollen, die von mehreren Teams geteilt werden können: Werkzeugmacher, Tester, Language Lawyer (jemand, der die jeweilige Programmiersprache in- und auswendig kennt und hochspezialisierte Optimierungen oder besonders leichtgängige Strukturen finden kann)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;großer Fokus auf den unterstützenden Sekretärs- und Schreiberrollen, um den Chirurgen und Copilot von Schreibarbeiten zu entlasten&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Xyrill stellt sich das heute schwierig vor; Digitalisierung hat zwar viele Schreibarbeiten vereinfacht, aber auf eine Art und Weise, die das Delegieren schwierig macht&lt;/li&gt;
+&lt;li&gt;hier könnte der Kern liegen, warum verschiedene Leute so unterschiedlich starken Nutzen aus LLMs ziehen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Skalierungsfrage ist hierdurch vereinfacht: ein Projekt mit 2000 Mitarbeitern kann damit in 200 Zehnerteams geteilt werden, sodass nur die 200 Chirurgen miteinander reden müssen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;aber nicht gelöst: 200 Chirurgen können immer noch ganz schön viel Kakophonie erzeugen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro-Intro"  />
+          <chapter start="00:05:17" title="Intro und Getränke"  />
+          <chapter start="00:06:58" title="Der Autor"  />
+          <chapter start="00:13:33" title="Kapitel 1: Die Teergrube"  />
+          <chapter start="00:34:14" title="Kapitel 2: Vom Mythos des Mann-Monats"  />
+          <chapter start="01:03:18" title="Kapitel 3: Das OP-Team"  />
+          <chapter start="01:18:24" title="Eine überraschende Wendung"  />
+      </chapters>
+      <enclosure length="77231575" url="https://dl.xyrillian.de/noises/stp-068-vom-mythos-des-mann-monats.mp3" type="audio/mpeg"/>
+      <enclosure length="51121104" url="https://dl.xyrillian.de/noises/stp-068-vom-mythos-des-mann-monats.ogg" type="audio/ogg"/>
+      <enclosure length="29301859" url="https://dl.xyrillian.de/noises/stp-068-vom-mythos-des-mann-monats.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/068-vom-mythos-des-mann-monats/</guid>
+    <pubDate>Thu, 13 Feb 2025 22:10:00 GMT</pubDate>
+    <itunes:duration>80:06</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP067: Linux auf dem Desktop</itunes:title>
     <itunes:episode>67</itunes:episode>
     <itunes:season>1</itunes:season>

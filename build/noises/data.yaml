@@ -1251,3 +1251,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 68
+    slug: 068-vom-mythos-des-mann-monats
+    title: "Literatur: Vom Mythos des Mann-Monats"
+    pubtime: 1739484600 # 2025-02-13
+
+    markdown:
+      description: |
+        In dieser Episode wird ein lang gehegter Traum wahr. Xyrill hat ein Buch gelesen und spricht darüber. Obwohl es nicht sehr dick ist, ist es doch sehr gehaltvoll und so entscheiden wir uns kurz vor Ende der Sendung für eine spontane Planänderung.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
