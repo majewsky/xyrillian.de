@@ -27,6 +27,95 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP069: Anatomie einer GUI</itunes:title>
+    <itunes:episode>69</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP069: Anatomie einer GUI</title>
+    <link>https://schluesseltechnologie-podcast.de/069-anatomie-einer-gui</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Wer hat sich nicht schon einmal über schlechte Benutzeroberflächen geärgert? Aber wer wiederum hat sich Gedanken gemacht, warum diese Oberflächen so sind, wie sie sind, oder wie das Ganze überhaupt zustande kommt?</itunes:summary>
+    <description>Wer hat sich nicht schon einmal über schlechte Benutzeroberflächen geärgert? Aber wer wiederum hat sich Gedanken gemacht, warum diese Oberflächen so sind, wie sie sind, oder wie das Ganze überhaupt zustande kommt?</description>
+    <content:encoded>&lt;p&gt;Wer hat sich nicht schon einmal über schlechte Benutzeroberflächen geärgert? Aber wer wiederum hat sich Gedanken gemacht, warum diese Oberflächen so sind, wie sie sind, oder wie das Ganze überhaupt zustande kommt?&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug zu STP008 (2D-Grafik) und STP010 (3D-Grafik): dort besprochen die grundsätzliche Methodik zum Zeichnen mit Pixeln, aber wer zeichnet hier eigentlich?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://commons.wikimedia.org/w/index.php?title=File:Schema_der_Schichten_der_grafischen_Benutzeroberfl%C3%A4che.svg&amp;amp;oldid=796566713&#34;&gt;Infografik&lt;/a&gt; zum Rendering-Ablauf unter Linux, mit Display-Manager (bzw. heutzutage Wayland-Compositor) und Desktop-Shell&lt;/li&gt;
+&lt;li&gt;unter Windows war früher alles in explorer.exe, heute gibt es den &lt;a href=&#34;https://learn.microsoft.com/en-us/windows/win32/learnwin32/the-desktop-window-manager&#34;&gt;Desktop Window Manager&lt;/a&gt; dafür&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Thema heute: Wie baut man als Anwendungsprogramm seine GUI zusammen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;klassischer Ansatz: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=GUI-Toolkit&amp;amp;oldid=246182813&#34;&gt;GUI-Toolkit&lt;/a&gt;; Programmbibliothek mit vorgefertigten Steuerelementen (Texteingabefeld, Knopf, Checkbox, Listenansicht), siehe Beispielbilder im verlinkten Artikel&lt;/li&gt;
+&lt;li&gt;neumodischer Ansatz: Darstellung einer Programmoberfläche mit einer Webbrowser-Engine (z.B. &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Electron_(Framework)&amp;amp;oldid=247717134&#34;&gt;Electron&lt;/a&gt;); somit Verwendung von Webtechnologien (HTML, CSS und JavaScript) an Stelle (im Wortsinne) eines GUI-Toolkits
+&lt;ul&gt;
+&lt;li&gt;bis dahin, dass selbst die Interface-Elemente von Computerspielen mittlerweile quasi mit einem Webbrowser gerendert werden (&lt;a href=&#34;https://coherent-labs.com/products/coherent-gameface/&#34;&gt;Beispielprodukt&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;eine Variation von STP022: Webentwickler gibt es wie Sand am Meer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie baut man so ein GUI-Toolkit? &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Retained_Mode&amp;amp;oldid=245388723&#34;&gt;Retained Mode vs. Immediate Mode&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Retained Mode: die Grafikbibliothek behandelt die Steuerelemente als langlebige Objekte, die vom Programm über die Zeit manipuliert werden&lt;/li&gt;
+&lt;li&gt;Immediate Mode: beim Zeichnen jedes Einzelbildes muss das Programm die gewünschten Steuerelemente neu deklarieren; Grafikbibliothek speichert nur wenig Zustand (z.B. aktuelle Cursorposition oder noch nicht verarbeitete Eingabeereignisse)&lt;/li&gt;
+&lt;li&gt;Unterschiede:
+&lt;ul&gt;
+&lt;li&gt;Retained Mode ist intuitiver (aus Entwicklersicht)&lt;/li&gt;
+&lt;li&gt;Retained Mode führt oft zu einer Duplikation von Zustandsverwaltung (z.B. speichert das Checkbox-Steuerelement ein Bit, ob es angehakt ist; und der Applikationscode selber speichert ein gleichlautendes Bit, ob die entsprechende Funktion aktiviert ist)&lt;/li&gt;
+&lt;li&gt;Immediate Mode ist flexibler (z.B. gibt eine direkte Möglichkeit, die Standard-Steuerelemente noch mit einzelnen Zeichenbefehlen zu erweitern)&lt;/li&gt;
+&lt;li&gt;Immediate Mode kann resourcenschonender sein (z.B. geringerer Speicherverbrauch, weil nicht sichtbare Steuerelemente weniger wahrscheinlich im Speicher gehalten werden)&lt;/li&gt;
+&lt;li&gt;Immediate Mode kann auch mehr Ressourcen verbrauchen (z.B. weil jedes Einzelbild neu gerendert werden muss, auch wenn sich meist in weiten Teilen gar nichts ändert)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Mischform: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=React&amp;amp;oldid=248452835&#34;&gt;React&lt;/a&gt;-artige GUI-Toolkits arbeiten im Retained Mode, aber alle Aktualisierungen führen zu einer kompletten Neudeklaration der betroffenen Steuerelemente; diese Deklaration wird dann mit den vorhandenen Steuerelementen abgeglichen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Layoutstrategien: Wie werden Steuerelemente gegeneinander angeordnet?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ziel: ein Arrangement von Steuerelementen soll z.B. auf Änderungen der Fenstergröße sinnfällig reagieren&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://doc.qt.io/qt-6/images/qgridlayout.png&#34;&gt;Beispielbild&lt;/a&gt; aus der &lt;a href=&#34;https://doc.qt.io/qt-6/qgridlayout.html&#34;&gt;Dokumentation zu QGridLayout&lt;/a&gt; -&amp;gt; bei Änderungen der Höhe des Fensters sollen die beiden oberen Zeilen gleichbleiben und nur die unterste Zeile wachsen&lt;/li&gt;
+&lt;li&gt;explizite Deklaration durch den Programmentwickler mühselig: stattdessen berechnen Steuerelemente selbst bestimmte Eigenschaften wie &amp;quot;minimale Größe&amp;quot;, &amp;quot;maximale Größe&amp;quot;, &amp;quot;sinnvolle Größe&amp;quot; oder &amp;quot;wieviel profitiere ich von Wachstum&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Layoutstrategien bei Webseiten und Webapplikationen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;anhand des Textflusses, z.B. Eingabefelder und Links/Schaltflächen innerhalb von Mengentext (in anderen GUI-Toolkits unüblich; das Web ist durch seine Dokumentenorientierung hier besonders)&lt;/li&gt;
+&lt;li&gt;für alles andere bis ca. 2013: tabellenbasierte Layouts mit manuell (z.B. per JavaScript) berechneten Größen; in der Praxis frustrierend und fehleranfällig&lt;/li&gt;
+&lt;li&gt;seit 2013: &lt;a href=&#34;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&#34;&gt;Flexbox&lt;/a&gt; für Layout von Elementen mit dynamischer Größe nebeneinander bzw. in Form eines Textflusses&lt;/li&gt;
+&lt;li&gt;seit 2017: &lt;a href=&#34;https://css-tricks.com/snippets/css/complete-guide-grid/&#34;&gt;Grid&lt;/a&gt; für Layout von Elementen, die sich in ein dynamisches Raster einfügen&lt;/li&gt;
+&lt;li&gt;außerdem seit 2009/2010: &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries&#34;&gt;CSS Media Queries&lt;/a&gt; zum Umschalten zwischen Layouts auf Basis von Eigenschaften des Endgerätes (Bildschirmgröße und -ausrichtung, Maus- oder Touch-Bedienung, Dark Mode oder Light Mode, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;zum Weiterhören: &lt;a href=&#34;https://hedgedoc.c3d2.de/pentaradio-2024-03#&#34;&gt;Pentaradio vom März 2024: &amp;quot;UI: Hui oder pfui?&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und anatomische Scherze"  />
+          <chapter start="00:02:12" title="Damals bei Windows"  />
+          <chapter start="00:11:04" title="Tiling Window Manager"  />
+          <chapter start="00:15:51" title="Nochmal zu Windows"  />
+          <chapter start="00:18:38" title="Klassischer Ansatz: GUI-Toolkit"  />
+          <chapter start="00:30:45" title="Retained Mode vs. Immediate Mode"  />
+          <chapter start="00:44:04" title="React-artiges Vorgehen"  />
+          <chapter start="00:54:33" title="Layoutstrategien zu Steuerelementen"  />
+          <chapter start="01:03:33" title="Layoutstrategien bei Webseiten"  />
+      </chapters>
+      <enclosure length="68288773" url="https://dl.xyrillian.de/noises/stp-069-anatomie-einer-gui.mp3" type="audio/mpeg"/>
+      <enclosure length="42971400" url="https://dl.xyrillian.de/noises/stp-069-anatomie-einer-gui.ogg" type="audio/ogg"/>
+      <enclosure length="25915086" url="https://dl.xyrillian.de/noises/stp-069-anatomie-einer-gui.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/069-anatomie-einer-gui/</guid>
+    <pubDate>Thu, 06 Mar 2025 18:45:00 GMT</pubDate>
+    <itunes:duration>70:47</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP068: Literatur: Vom Mythos des Mann-Monats</itunes:title>
     <itunes:episode>68</itunes:episode>
     <itunes:season>1</itunes:season>

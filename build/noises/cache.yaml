@@ -3825,3 +3825,46 @@ audio_metadata:
     - start_secs: 4704
       end_secs: 4806.257
       title: Eine überraschende Wendung
+  stp:069-anatomie-einer-gui:
+    length_secs: 4247
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-069-anatomie-einer-gui.mp3
+      size_bytes: 68288773
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-069-anatomie-einer-gui.ogg
+      size_bytes: 42971400
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-069-anatomie-einer-gui.opus
+      size_bytes: 25915086
+    chapters:
+    - start_secs: 0
+      end_secs: 132
+      title: Intro und anatomische Scherze
+    - start_secs: 132
+      end_secs: 664
+      title: Damals bei Windows
+    - start_secs: 664
+      end_secs: 951
+      title: Tiling Window Manager
+    - start_secs: 951
+      end_secs: 1118
+      title: Nochmal zu Windows
+    - start_secs: 1118
+      end_secs: 1845
+      title: 'Klassischer Ansatz: GUI-Toolkit'
+    - start_secs: 1845
+      end_secs: 2644
+      title: Retained Mode vs. Immediate Mode
+    - start_secs: 2644
+      end_secs: 3273
+      title: React-artiges Vorgehen
+    - start_secs: 3273
+      end_secs: 3813
+      title: Layoutstrategien zu Steuerelementen
+    - start_secs: 3813
+      end_secs: 4247.327
+      title: Layoutstrategien bei Webseiten

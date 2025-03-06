@@ -1264,3 +1264,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 69
+    slug: 069-anatomie-einer-gui
+    title: "Anatomie einer GUI"
+    pubtime: 1741286700 # 2025-03-06
+
+    markdown:
+      description: |
+        Wer hat sich nicht schon einmal über schlechte Benutzeroberflächen geärgert? Aber wer wiederum hat sich Gedanken gemacht, warum diese Oberflächen so sind, wie sie sind, oder wie das Ganze überhaupt zustande kommt?
+      shownotes: true # in file
+
+    music: *music-like-stp-000
