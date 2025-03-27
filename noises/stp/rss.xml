@@ -27,6 +27,101 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP070: Blitzgespräche</itunes:title>
+    <itunes:episode>70</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP070: Blitzgespräche</title>
+    <link>https://schluesseltechnologie-podcast.de/070-blitzgespraeche</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Manche Dinge geben keine ganze Folge her. Diess ist der Versuch, ein paar davon zusammen zu fassen.</itunes:summary>
+    <description>Manche Dinge geben keine ganze Folge her. Diess ist der Versuch, ein paar davon zusammen zu fassen.</description>
+    <content:encoded>&lt;p&gt;Manche Dinge geben keine ganze Folge her. Diess ist der Versuch, ein paar davon zusammen zu fassen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;im Intro erwähnt:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Eternal_September&#34;&gt;Eternal September&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://media.ccc.de/v/subscribe11-58195-im-dunkeln-ist-alles-viel-aufregender&#34;&gt;Im Dunkeln ist alles viel aufregender&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Talk Nr. 1:&lt;/strong&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Geek_Code&#34;&gt;Geek Code&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Primärquelle (Version 3.12, Stand vom 5. März 1996): &lt;a href=&#34;https://web.archive.org/web/20090220181018/http://geekcode.com/geek.html&#34;&gt;https://web.archive.org/web/20090220181018/http://geekcode.com/geek.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;vordergründig: eine kompakte Notation zur Selbstbeschreibung von Geeks durch eine Menge von Attributen und Interessen
+&lt;ul&gt;
+&lt;li&gt;Beispiel: das Attribut &lt;code&gt;d&lt;/code&gt; beschreibt den eigenen Dresscode (&lt;code&gt;d&#43;&#43;&lt;/code&gt; für den Anzugträger, &lt;code&gt;d-&lt;/code&gt; für Jeans und T-Shirt, &lt;code&gt;!d&lt;/code&gt; für nackt etc.)&lt;/li&gt;
+&lt;li&gt;diverse Modifier, z.B. &lt;code&gt;$&lt;/code&gt; für &amp;quot;damit verdiene ich Geld&amp;quot; oder &lt;code&gt;&amp;gt;&lt;/code&gt; für ein persönliches Entwicklungsziel&lt;/li&gt;
+&lt;li&gt;Beispiel: &lt;code&gt;C&#43;&#43;&lt;/code&gt; alleine ist &amp;quot;ich kenne mich gut mit Computern aus&amp;quot;, &lt;code&gt;C&#43;&#43;&amp;gt;$&lt;/code&gt; ist &amp;quot;...und möchte damit Geld verdienen&amp;quot;&lt;/li&gt;
+&lt;li&gt;Xyrill fühlt sich an die Grammatik &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Agglutinierende_Sprache&amp;amp;oldid=232734095&#34;&gt;agglutinierender Sprachen&lt;/a&gt; erinnert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Parallele zum Jargon File (siehe STP050): Geek Code ist ein Produkt seiner Zeit und Subkultur mit veralteten Debatten (z.B. interessiert sich heute noch jemand für Babylon 5 oder Akte X?) tendenziösen Einschätzungen (z.B. vgl. &lt;code&gt;h---&lt;/code&gt; mit &lt;code&gt;r&#43;&#43;&#43;&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Kann es sowas heute nochmal geben?
+&lt;ul&gt;
+&lt;li&gt;Wahrscheinlich schwierig, man bräuchte zu viele Subkategorien.&lt;/li&gt;
+&lt;li&gt;Passt wahrscheinlich nicht für die heutigen visuell dominierten Medien (YouTube, TikTok, Instagram etc.).&lt;/li&gt;
+&lt;li&gt;Vielleicht für Dating?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Talk Nr. 2:&lt;/strong&gt; Ist was dran an &amp;quot;try turning it off and on again&amp;quot;? Ja! Hierzu eine Kurzeinführung in Kombinatorik:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ein Speicher mit einem Bit kann zwei Zustände annehmen (klar)&lt;/li&gt;
+&lt;li&gt;ein Speicher mit zwei Bit kann &lt;code&gt;2 * 2 = 4&lt;/code&gt; Zustände annehmen
+&lt;ul&gt;
+&lt;li&gt;Beispiel/Analogie: UI mit zwei Checkboxen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;aber nur, wenn die Bits voneinander unabhängig sind
+&lt;ul&gt;
+&lt;li&gt;Beispiel: UI für Ticketkauf, Checkbox 1 = &amp;quot;ist Kind&amp;quot;, Checkbox 2 = &amp;quot;ist Rentner&amp;quot;&lt;/li&gt;
+&lt;li&gt;von vier Zuständen ist einer ungültig: Kinder können nicht Rentner sein&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;kombinatorische Explosion: bei mehr Bits exponentiell mehr mögliche Zustände, die meisten davon ungültig
+&lt;ul&gt;
+&lt;li&gt;Programmfehler oder &amp;quot;kosmische Strahlung&amp;quot; können dazu führen, dass ungültige Zustände erreicht werden&lt;/li&gt;
+&lt;li&gt;&amp;quot;Aus- und Wiederanschalten&amp;quot; ist die ultimative Form des Zurücksetzens in einen gültigen Zustand&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Talk Nr. 3:&lt;/strong&gt; Umgekehrte polnische Notation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wie schreibt man mathematische Ausdrücke?
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Infix-Notation:&lt;/strong&gt; die klassische Schreibweise für mathematische Ausdrücke, bei der Operatoren zwischen ihren Operanden stehen&lt;/li&gt;
+&lt;li&gt;Problem: Operationsreihenfolge muss entweder per Konvention (&amp;quot;Punkt vor Strich&amp;quot;) oder durch Klammern klargestellt werden (Bsp. &lt;code&gt;2 * 3 &#43; 5 = (2 * 3) &#43; 5 ≠ 2 * (3 &#43; 5)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Polnische_Notation&amp;amp;oldid=249108401&#34;&gt;Polnische Notation&lt;/a&gt;: Operatoren stehen vor ihren Operanden (Bsp. &lt;code&gt;&#43; * 2 3 5&lt;/code&gt; bzw. &lt;code&gt;* 2 &#43; 3 5&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;hier technisch gesehen keine Klammern notwendig (außer um Menschen das Lesen zu erleichtern, Bsp. &lt;code&gt;&#43; (* 2 3) 5&lt;/code&gt; bzw. &lt;code&gt;* 2 (&#43; 3 5)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Umgekehrte_polnische_Notation&amp;amp;oldid=249951216&#34;&gt;Umgekehrte polnische Notation (RPN)&lt;/a&gt;: Operatoren stehen hinter ihren Operanden (Bsp. &lt;code&gt;2 3 * 5 &#43;&lt;/code&gt; bzw. &lt;code&gt;2 3 5 &#43; *&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Warum würde man das machen wollen?
+&lt;ul&gt;
+&lt;li&gt;RPN entspricht dem Betriebsmodus eines Kellerautomaten (siehe STP021)&lt;/li&gt;
+&lt;li&gt;Kellerautomaten kann man extrem günstig in Hardware implementieren (d.h. mit sehr wenig Code, mit sehr wenig Prozessorregistern, mit wenig Speicher)&lt;/li&gt;
+&lt;li&gt;Praxisbeispiel: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Forth_(Programmiersprache)&amp;amp;oldid=249759593&#34;&gt;Forth&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Praxisbeispiel: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=HP-12C&amp;amp;oldid=245054308&#34;&gt;HP-12C&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:07:19" title="Eternal September und Busse"  />
+          <chapter start="00:15:06" title="Geek Code"  />
+          <chapter start="00:29:51" title="Try turning it off and on again"  />
+          <chapter start="00:41:32" title="Umgekehrte polnische Notation"  />
+      </chapters>
+      <enclosure length="56988475" url="https://dl.xyrillian.de/noises/stp-070-blitzgespraeche.mp3" type="audio/mpeg"/>
+      <enclosure length="36135823" url="https://dl.xyrillian.de/noises/stp-070-blitzgespraeche.ogg" type="audio/ogg"/>
+      <enclosure length="21591069" url="https://dl.xyrillian.de/noises/stp-070-blitzgespraeche.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/070-blitzgespraeche/</guid>
+    <pubDate>Thu, 27 Mar 2025 21:22:00 GMT</pubDate>
+    <itunes:duration>59:01</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP069: Anatomie einer GUI</itunes:title>
     <itunes:episode>69</itunes:episode>
     <itunes:season>1</itunes:season>

@@ -1277,3 +1277,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 70
+    slug: 070-blitzgespraeche
+    title: Blitzgespräche
+    pubtime: 1743110520 # 2025-03-27
+
+    markdown:
+      description: |
+        Manche Dinge geben keine ganze Folge her. Diess ist der Versuch, ein paar davon zusammen zu fassen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

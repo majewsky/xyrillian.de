@@ -3868,3 +3868,34 @@ audio_metadata:
     - start_secs: 3813
       end_secs: 4247.327
       title: Layoutstrategien bei Webseiten
+  stp:070-blitzgespraeche:
+    length_secs: 3541
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-070-blitzgespraeche.mp3
+      size_bytes: 56988475
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-070-blitzgespraeche.ogg
+      size_bytes: 36135823
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-070-blitzgespraeche.opus
+      size_bytes: 21591069
+    chapters:
+    - start_secs: 0
+      end_secs: 439
+      title: Intro
+    - start_secs: 439
+      end_secs: 906
+      title: Eternal September und Busse
+    - start_secs: 906
+      end_secs: 1791
+      title: Geek Code
+    - start_secs: 1791
+      end_secs: 2492
+      title: Try turning it off and on again
+    - start_secs: 2492
+      end_secs: 3541.058
+      title: Umgekehrte polnische Notation
