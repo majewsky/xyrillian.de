@@ -1286,7 +1286,7 @@ files:
 
     markdown:
       description: |
-        Manche Dinge geben keine ganze Folge her. Diess ist der Versuch, ein paar davon zusammen zu fassen.
+        Manche Dinge geben keine ganze Folge her. Dies ist der Versuch, ein paar davon zusammenzufassen: Wie definiert sich ein Geek? Bringt es etwas, den Computer aus und wieder einzuschalten? Und rechnet es sich vielleicht in umgekehrtem Polnisch besser?
       shownotes: true # in file
 
     music: *music-like-stp-000
