@@ -27,6 +27,131 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP071: Das Periodensystem der Datentypen</itunes:title>
+    <itunes:episode>71</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP071: Das Periodensystem der Datentypen</title>
+    <link>https://schluesseltechnologie-podcast.de/071-das-periodensystem-der-datentypen</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Offenbar gibt es unterschiedliche Ergebnisse, wenn verschiedene Datentypen für die gleichen Dinge verwendet werden. Wir fangen heute mal damit an, zu verstehen, welche Datentypen es denn überhaupt gibt. Außerdem geht es scheinbar um Kaffee und Rost.</itunes:summary>
+    <description>Offenbar gibt es unterschiedliche Ergebnisse, wenn verschiedene Datentypen für die gleichen Dinge verwendet werden. Wir fangen heute mal damit an, zu verstehen, welche Datentypen es denn überhaupt gibt. Außerdem geht es scheinbar um Kaffee und Rost.</description>
+    <content:encoded>&lt;p&gt;Offenbar gibt es unterschiedliche Ergebnisse, wenn verschiedene Datentypen für die gleichen Dinge verwendet werden. Wir fangen heute mal damit an, zu verstehen, welche Datentypen es denn überhaupt gibt. Außerdem geht es scheinbar um Kaffee und Rost.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=JavaScript_Object_Notation&amp;amp;oldid=249644714&#34;&gt;JSON&lt;/a&gt;: ein populäres Format für die Serialisierung von Daten&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Serialisierung&amp;amp;oldid=241468956&#34;&gt;Serialisierung&lt;/a&gt;: &amp;quot;Abbildung von strukturierten Daten auf eine sequenzielle Darstellungsform&amp;quot;, insb. auf Bytefolgen wie in einer Datei oder einer Datenübertragung im Netzwerk&lt;/li&gt;
+&lt;li&gt;JSON ist bekannt dafür, nicht erfunden, sondern &amp;quot;entdeckt&amp;quot; worden zu sein
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.corecursive.com/json-vs-xml-douglas-crockford/&#34;&gt;https://www.corecursive.com/json-vs-xml-douglas-crockford/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;außerdem relativ minimal: nur sechs verschiedene Grundstrukturen&lt;/li&gt;
+&lt;li&gt;aber trotzdem relativ universell: damit unser Ausgangspunkt für die Kartografierung der Welt der Datentypen&lt;/li&gt;
+&lt;li&gt;außerdem Gegenüberstellung mit dem Typvorrat von Rust (einer zeitgenössischen Programmiersprache mit einem detaillierten Typsystem)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;atomare Datentypen: einzelne Werte (C&#43;&#43; nennt sie &amp;quot;Plain Old Data&amp;quot; (POD), Perl nennt sie &amp;quot;Skalare&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boolean: ein Bit (wahr oder falsch)
+&lt;ul&gt;
+&lt;li&gt;Typvorrat in Rust: &lt;code&gt;bool&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;in JSON: &lt;code&gt;true&lt;/code&gt; oder &lt;code&gt;false&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Zahlen: in verschiedenen Bitgrößen, mit oder ohne Vorzeichen, Ganzzahl oder Fließkommazahl
+&lt;ul&gt;
+&lt;li&gt;Typvorrat in Rust: &lt;code&gt;u8/i8, u16/i16, u32/i32, u64/i64, u128/i128, usize/isize, f32, f64&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;in JSON: wie gewohnt ausgeschrieben (z.B. &lt;code&gt;42&lt;/code&gt;, &lt;code&gt;-23.5&lt;/code&gt;) oder in wissenschaftlicher Notation (z.B. &lt;code&gt;7.297e-3&lt;/code&gt; oder &lt;code&gt;-6.022E23&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Zeichenfolgen: nicht wirklich unteilbar, aber wird für gewöhnlich als einzelner Wert verstanden
+&lt;ul&gt;
+&lt;li&gt;Typvorrat in Rust: &lt;code&gt;String&lt;/code&gt; (UTF-8), &lt;code&gt;OsString&lt;/code&gt; (Kodierung gemäß Zeichentabelle des Systems) und andere&lt;/li&gt;
+&lt;li&gt;in JSON: als Zeichenkette mit Anführungszeichen und mit Escape-Sequenzen für nicht druckbare Zeichen (z.B. &lt;code&gt;&amp;quot;Mit freundlichen Grüßen\nErika Mustermann&amp;quot;&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;fehlender Wert: in JSON &lt;code&gt;null&lt;/code&gt; (heißt woanders vielleicht auch &lt;code&gt;nil&lt;/code&gt;)
+&lt;ul&gt;
+&lt;li&gt;Typvorrat in Rust: siehe später&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Listen: ein abgeleiteter Datentyp&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;deswegen vorhin &amp;quot;atomar&amp;quot;: der Typ einer Liste bestimmt sich aus dem Typ der Elemente (in statisch typisierten Programmiersprachen ist z.B. &amp;quot;Liste von 8-Bit-Zahlen&amp;quot; etwas anderes als &amp;quot;Liste von Strings&amp;quot; oder &amp;quot;Liste von Listen von Strings&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Typvorrat in Rust:
+&lt;ul&gt;
+&lt;li&gt;mit variabler Länge: &lt;code&gt;Vec&amp;lt;X&amp;gt;&lt;/code&gt;, wobei &lt;code&gt;X&lt;/code&gt; für den Typ der Elemente steht (Beispiele zu oben: &lt;code&gt;Vec&amp;lt;u8&amp;gt;&lt;/code&gt;, &lt;code&gt;Vec&amp;lt;String&amp;gt;&lt;/code&gt;, &lt;code&gt;Vec&amp;lt;Vec&amp;lt;String&amp;gt;&amp;gt;&lt;/code&gt;); der Name &amp;quot;Vec&amp;quot; deutet auf die Struktur im Arbeitsspeicher hin&lt;/li&gt;
+&lt;li&gt;mit fester Länge: &lt;code&gt;[X; N]&lt;/code&gt;, wobei &lt;code&gt;N&lt;/code&gt; für die Anzahl von Elementen steht&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;in JSON: kommagetrennte Liste der Elemente in eckigen Klammern (z.B. &lt;code&gt;[42, 23]&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Unterschiede zu Rust:
+&lt;ul&gt;
+&lt;li&gt;JSON ist nicht statisch typisiert und hat nur einen Listentyp, der alle möglichen Elemente enthalten kann und beliebig lang sein kann (z.B. &lt;code&gt;[42, &amp;quot;Hallo&amp;quot;, []]&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;assoziative Datenfelder: ein anderer abgeleiteter Datentyp&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;enthält nicht einzelne Elemente, sondern Paare von Schlüssel und Wert; ermöglicht schnellen Zugriff auf einen Wert anhand seines Schlüssels&lt;/li&gt;
+&lt;li&gt;heißt je nach Programmiersprache bzw. Datenformat &amp;quot;Objekt&amp;quot;, &amp;quot;Map&amp;quot;, &amp;quot;Dictionary&amp;quot; etc.&lt;/li&gt;
+&lt;li&gt;Typvorrat in Rust: unter anderem &lt;code&gt;HashMap&amp;lt;K, V&amp;gt;&lt;/code&gt;, wobei &lt;code&gt;K&lt;/code&gt; der Schlüsseltyp (&amp;quot;key&amp;quot;) und &lt;code&gt;V&lt;/code&gt; der Werttyp (&amp;quot;value&amp;quot;) ist; der Name &amp;quot;HashMap&amp;quot; deutet auf die Struktur im Arbeitsspeicher hin&lt;/li&gt;
+&lt;li&gt;in JSON: kommagetrennte Liste von Wertpaaren in geschweiften Klammern, die Wertpaare jeweils mit Doppelpunkt getrennt; der Schlüssel muss ein String sein (z.B. &lt;code&gt;{&amp;quot;Karo&amp;quot;: 9, &amp;quot;Herz&amp;quot;: 10, &amp;quot;Pik&amp;quot;: 11, &amp;quot;Kreuz&amp;quot;: 12}&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;wiederum Unterschied zu Rust: Werte verschiedener Typen dürfen gemischt werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Damit ist alles beschrieben, was JSON kann, doch es gibt so viel mehr! Beispiele für abgeleitete Datentypen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mengen (&amp;quot;Sets&amp;quot;): wie Listen, aber ohne definierte Ordnung
+&lt;ul&gt;
+&lt;li&gt;in Rust: &lt;code&gt;HashSet&amp;lt;X&amp;gt;&lt;/code&gt;; der Name &amp;quot;HashSet&amp;quot; deutet auf die Struktur im Arbeitsspeicher hin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Graphen: Netzwerke von Knoten mit Kanten dazwischen (z.B. Straßenkarte: Kreuzungen = Knoten, Straßen = Kanten)
+&lt;ul&gt;
+&lt;li&gt;in Rust: kein entsprechender Typ in der Standardbibliothek&lt;/li&gt;
+&lt;li&gt;ähnlich wie bei Listen und assoziativen Datenfeldern viele verschiedene Implementationsstrategien, aber bei Graphen gibt es keinen &amp;quot;Standardansatz&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Außerdem ist JSON relativ restriktiv in der Auswahl an PODs. Andere Serialisierungsformate unterstützen zum Beispiel Datums- oder Zeitangaben, Referenzen auf externe Dateien etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hörtipp: &lt;a href=&#34;https://www.corecursive.com/json-vs-xml-douglas-crockford/&#34;&gt;Douglas Crockford bei CoRecursive zur Entstehung von JSON&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lehrbuch: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Structure_and_Interpretation_of_Computer_Programs&amp;amp;oldid=1244483390&#34;&gt;Structure and Interpretation of Computer Programs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Postkarte aus Potsdam"  />
+          <chapter start="00:05:03" title="Intro"  />
+          <chapter start="00:09:24" title="Serialisierung und JSON"  />
+          <chapter start="00:14:04" title="Softwaredesign"  />
+          <chapter start="00:18:26" title="Atomare Datentypen"  />
+          <chapter start="00:37:12" title="Abgeleitete Datentypen: Listen"  />
+          <chapter start="00:48:09" title="Abgeleitete Datentypen: Assoziative Datenfelder"  />
+          <chapter start="00:53:20" title="Was JSON nicht kann"  />
+      </chapters>
+      <enclosure length="59871018" url="https://dl.xyrillian.de/noises/stp-071-das-periodensystem-der-datentypen.mp3" type="audio/mpeg"/>
+      <enclosure length="37095430" url="https://dl.xyrillian.de/noises/stp-071-das-periodensystem-der-datentypen.ogg" type="audio/ogg"/>
+      <enclosure length="22397227" url="https://dl.xyrillian.de/noises/stp-071-das-periodensystem-der-datentypen.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/071-das-periodensystem-der-datentypen/</guid>
+    <pubDate>Thu, 17 Apr 2025 18:25:00 GMT</pubDate>
+    <itunes:duration>62:01</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP070: Blitzgespräche</itunes:title>
     <itunes:episode>70</itunes:episode>
     <itunes:season>1</itunes:season>

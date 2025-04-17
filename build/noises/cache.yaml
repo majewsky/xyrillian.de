@@ -3899,3 +3899,43 @@ audio_metadata:
     - start_secs: 2492
       end_secs: 3541.058
       title: Umgekehrte polnische Notation
+  stp:071-das-periodensystem-der-datentypen:
+    length_secs: 3721
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-071-das-periodensystem-der-datentypen.mp3
+      size_bytes: 59871018
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-071-das-periodensystem-der-datentypen.ogg
+      size_bytes: 37095430
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-071-das-periodensystem-der-datentypen.opus
+      size_bytes: 22397227
+    chapters:
+    - start_secs: 0
+      end_secs: 303
+      title: Postkarte aus Potsdam
+    - start_secs: 303
+      end_secs: 564
+      title: Intro
+    - start_secs: 564
+      end_secs: 844
+      title: Serialisierung und JSON
+    - start_secs: 844
+      end_secs: 1106
+      title: Softwaredesign
+    - start_secs: 1106
+      end_secs: 2232
+      title: Atomare Datentypen
+    - start_secs: 2232
+      end_secs: 2889
+      title: 'Abgeleitete Datentypen: Listen'
+    - start_secs: 2889
+      end_secs: 3200
+      title: 'Abgeleitete Datentypen: Assoziative Datenfelder'
+    - start_secs: 3200
+      end_secs: 3721.208
+      title: Was JSON nicht kann

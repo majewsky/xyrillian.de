@@ -1290,3 +1290,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 71
+    slug: 071-das-periodensystem-der-datentypen
+    title: Das Periodensystem der Datentypen
+    pubtime: 1744914300 # 2025-04-17
+
+    markdown:
+      description: |
+        Offenbar gibt es unterschiedliche Ergebnisse, wenn verschiedene Datentypen für die gleichen Dinge verwendet werden. Wir fangen heute mal damit an, zu verstehen, welche Datentypen es denn überhaupt gibt. Außerdem geht es scheinbar um Kaffee und Rost.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
