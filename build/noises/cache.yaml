@@ -3939,3 +3939,43 @@ audio_metadata:
     - start_secs: 3200
       end_secs: 3721.208
       title: Was JSON nicht kann
+  stp:072-der-datentypeneisberg:
+    length_secs: 2937
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-072-der-datentypeneisberg.mp3
+      size_bytes: 47329892
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-072-der-datentypeneisberg.ogg
+      size_bytes: 28752624
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-072-der-datentypeneisberg.opus
+      size_bytes: 17323516
+    chapters:
+    - start_secs: 0
+      end_secs: 157
+      title: Intro
+    - start_secs: 157
+      end_secs: 295
+      title: Was bisher geschah
+    - start_secs: 295
+      end_secs: 708
+      title: Kombinatorik
+    - start_secs: 708
+      end_secs: 757
+      title: Algebraische Datentypen
+    - start_secs: 757
+      end_secs: 986
+      title: Produkttypen
+    - start_secs: 986
+      end_secs: 1605
+      title: Summentypen
+    - start_secs: 1605
+      end_secs: 2586
+      title: Sehr kleine Spezialfälle
+    - start_secs: 2586
+      end_secs: 2937.385
+      title: Abendgedanken

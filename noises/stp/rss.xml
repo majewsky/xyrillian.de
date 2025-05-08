@@ -27,6 +27,98 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP072: Der Datentypeneisberg</itunes:title>
+    <itunes:episode>72</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP072: Der Datentypeneisberg</title>
+    <link>https://schluesseltechnologie-podcast.de/072-der-datentypeneisberg</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Auch heute geht es mit Rost und Kaffee weiter, allerdings mit grundsätzlicheren Datentypen. ttimeless wird von besonders winzigen Datentypen überrascht und Xyrill formuliert Gedanken darüber, warum Struktur das Handeln bestimmen sollte.</itunes:summary>
+    <description>Auch heute geht es mit Rost und Kaffee weiter, allerdings mit grundsätzlicheren Datentypen. ttimeless wird von besonders winzigen Datentypen überrascht und Xyrill formuliert Gedanken darüber, warum Struktur das Handeln bestimmen sollte.</description>
+    <content:encoded>&lt;p&gt;Auch heute geht es mit Rost und Kaffee weiter, allerdings mit grundsätzlicheren Datentypen. ttimeless wird von besonders winzigen Datentypen überrascht und Xyrill formuliert Gedanken darüber, warum Struktur das Handeln bestimmen sollte.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug STP071: anhand von JSON haben wir die sichtbaren Datentypen besprochen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;heute tauchen wir unter die Wasseroberfläche ab und schauen auf Typen, die man eher im Speicher als in einer Datei sieht&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Einwurf Kombinatorik: Wieviele mögliche Werte haben die vorgenannten Typen (sofern nicht unendlich)? (wir schreiben &lt;code&gt;K(T)&lt;/code&gt; für die Kardinalität des Typs &lt;code&gt;T&lt;/code&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boolean: &lt;code&gt;K(bool) = 2&lt;/code&gt; (&lt;code&gt;true&lt;/code&gt; oder &lt;code&gt;false&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Zahlen: &lt;code&gt;K(T_N) = 2^N&lt;/code&gt; Werte für Zahltypen mit &lt;code&gt;N&lt;/code&gt; Bits (z.B. 256 für &lt;code&gt;i8&lt;/code&gt; oder 65536 für &lt;code&gt;u16&lt;/code&gt;), weil jedes Bit zwei Werte hat, die unabhängig voneinander gewählt werden können&lt;/li&gt;
+&lt;li&gt;Listen fester Länge: &lt;code&gt;K([T; N]) = K(T)^N&lt;/code&gt; für &lt;code&gt;K(T)&lt;/code&gt; mögliche Werte des Elementtyps &lt;code&gt;T&lt;/code&gt; und Länge &lt;code&gt;N&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Listen variabler Länge: &lt;code&gt;K(Vec&amp;lt;T&amp;gt;) = ∞&lt;/code&gt; bis auf praktische Platzbeschränkungen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Listen wirken sich auf die Kardinalität also wie eine Potenzierung aus&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gibt es auch andere Rechenoperationen? -&amp;gt; &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Algebraischer_Datentyp&amp;amp;oldid=248147888&#34;&gt;algebraische Datentypen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Produkttypen: Gesamttyp &lt;code&gt;P&lt;/code&gt; enthält je einen Wert von Typ &lt;code&gt;T_1, T_2, ..., T_N&lt;/code&gt;, somit &lt;code&gt;K(P) = K(T_1) * K(T_2) * ... * K(T_N)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in Rust: entweder als Tupel (geordnete Folge von Werten, die mit Zahlenindizes bezeichnet sind), z.B. &lt;code&gt;type Vector3D = (f64, f64, f64)&lt;/code&gt;, oder als Strukturtypen (ungeordnete Menge von Werten, die mit Namen bezeichnet sind, z.B. &lt;code&gt;struct Person { first_name: String, last_name: String }&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;in JSON: Tupel als Listen, Strukturtypen als Objekte (beim Einlesen muss die Elementzahl bzw. die Namen der Elemente geprüft werden)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Summentypen: Gesamttyp &lt;code&gt;S&lt;/code&gt; enthält entweder einen Wert vom Typ &lt;code&gt;T_1&lt;/code&gt; oder &lt;code&gt;T_2&lt;/code&gt; oder ... oder &lt;code&gt;T_N&lt;/code&gt;, somit &lt;code&gt;K(P) = K(T_1) &#43; K(T_2) &#43; ... &#43; K(T_N)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in Rust: Enumerationstyp, z.B. &lt;code&gt;enum ParseResult { Ok(DataStructure), Err(ParseError) }&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;in JSON: keine klare Konvention, Serialisierung in Rust erzeugt ein Objekt mit einem Eintrag, die nach der jeweiligen Variante benannt ist (z.B. &lt;code&gt;{&amp;quot;Ok&amp;quot;: ...}&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sehr kleine Spezialfälle: Gibt es Datentypen, die kleiner als &lt;code&gt;bool&lt;/code&gt; sind?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Produkttyp mit null Feldern (in Rust &lt;code&gt;struct Empty {}&lt;/code&gt;): nur ein möglicher Wert (1 ist das neutrale Element der Multiplikation)
+&lt;ul&gt;
+&lt;li&gt;in JSON kann man das als &lt;code&gt;null&lt;/code&gt; serialisieren&lt;/li&gt;
+&lt;li&gt;in Rust kommt dies im Summentyp &lt;code&gt;enum Option&amp;lt;T&amp;gt; { Some(T), None }&lt;/code&gt; vor; &lt;code&gt;None&lt;/code&gt; ist hier im Prinzip eine Kurzschreibweise für &lt;code&gt;None(Empty)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Summentyp mit null Varianten (in Rust &lt;code&gt;enum Impossible {}&lt;/code&gt;): keine möglichen Werte (0 ist das neutrale Element der Addition)
+&lt;ul&gt;
+&lt;li&gt;in JSON nicht darstellbar (keine Werte haben keine Serialisierung)&lt;/li&gt;
+&lt;li&gt;in Rust kommt so ein Typ in Funktionen vor, die kein Ergebnis liefern (z.B. &lt;code&gt;quit()&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;nützlicher, als es zunächst erscheint, sobald &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Monomorphization&amp;amp;oldid=1246708145&#34;&gt;Monomorphisierung&lt;/a&gt; ins Spiel kommt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abendgedanken: Warum das ganze Gerede über Datentypen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;angewandte Programmierung besteht aus zwei (verwandten) Teildisziplinen: Algorithmen (das Wie, der Rechenteil) und Datenstrukturen (das Was, der Speicherteil)&lt;/li&gt;
+&lt;li&gt;Xyrill hält Datenstrukturen für das Fundament; die Wahl der Algorithmen muss an zweiter Stelle kommen&lt;/li&gt;
+&lt;li&gt;vergleichbarer Ansatz in klassischen Software-Design-Lehrbüchern wie &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Structure_and_Interpretation_of_Computer_Programs&amp;amp;oldid=1244483390&#34;&gt;SICP&lt;/a&gt; und &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=How_to_Design_Programs&amp;amp;oldid=1251901750&#34;&gt;HtDP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:02:37" title="Was bisher geschah"  />
+          <chapter start="00:04:55" title="Kombinatorik"  />
+          <chapter start="00:11:48" title="Algebraische Datentypen"  />
+          <chapter start="00:12:37" title="Produkttypen"  />
+          <chapter start="00:16:26" title="Summentypen"  />
+          <chapter start="00:26:45" title="Sehr kleine Spezialfälle"  />
+          <chapter start="00:43:06" title="Abendgedanken"  />
+      </chapters>
+      <enclosure length="47329892" url="https://dl.xyrillian.de/noises/stp-072-der-datentypeneisberg.mp3" type="audio/mpeg"/>
+      <enclosure length="28752624" url="https://dl.xyrillian.de/noises/stp-072-der-datentypeneisberg.ogg" type="audio/ogg"/>
+      <enclosure length="17323516" url="https://dl.xyrillian.de/noises/stp-072-der-datentypeneisberg.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/072-der-datentypeneisberg/</guid>
+    <pubDate>Thu, 08 May 2025 20:15:00 GMT</pubDate>
+    <itunes:duration>48:57</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP071: Das Periodensystem der Datentypen</itunes:title>
     <itunes:episode>71</itunes:episode>
     <itunes:season>1</itunes:season>

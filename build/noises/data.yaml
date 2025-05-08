@@ -1303,3 +1303,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 72
+    slug: 072-der-datentypeneisberg
+    title: Der Datentypeneisberg
+    pubtime: 1746735300 # 2025-05-08
+
+    markdown:
+      description: |
+        Auch heute geht es mit Rost und Kaffee weiter, allerdings mit grundsätzlicheren Datentypen. ttimeless wird von besonders winzigen Datentypen überrascht und Xyrill formuliert Gedanken darüber, warum Struktur das Handeln bestimmen sollte.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

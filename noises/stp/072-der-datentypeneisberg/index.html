@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Der Datentypeneisberg - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #72 vom 8. Mai 2025</h2>
+    <h1>Der Datentypeneisberg</h1>
+      <p>Auch heute geht es mit Rost und Kaffee weiter, allerdings mit grundsätzlicheren Datentypen. ttimeless wird von besonders winzigen Datentypen überrascht und Xyrill formuliert Gedanken darüber, warum Struktur das Handeln bestimmen sollte.</p>
+      <p><strong>Länge:</strong> 48:57 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-072-der-datentypeneisberg.mp3" type="audio/mpeg">
+        <source src="/dl/stp-072-der-datentypeneisberg.ogg" type="audio/ogg">
+        <source src="/dl/stp-072-der-datentypeneisberg.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="157">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="157" data-end="295">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">02:37</span>
+        <span class="chapter-title">Was bisher geschah</span>
+      </div>
+      <div class="chapter" data-start="295" data-end="708">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">04:55</span>
+        <span class="chapter-title">Kombinatorik</span>
+      </div>
+      <div class="chapter" data-start="708" data-end="757">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">11:48</span>
+        <span class="chapter-title">Algebraische Datentypen</span>
+      </div>
+      <div class="chapter" data-start="757" data-end="986">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">12:37</span>
+        <span class="chapter-title">Produkttypen</span>
+      </div>
+      <div class="chapter" data-start="986" data-end="1605">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">16:26</span>
+        <span class="chapter-title">Summentypen</span>
+      </div>
+      <div class="chapter" data-start="1605" data-end="2586">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">26:45</span>
+        <span class="chapter-title">Sehr kleine Spezialfälle</span>
+      </div>
+      <div class="chapter" data-start="2586" data-end="2937.385">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">43:06</span>
+        <span class="chapter-title">Abendgedanken</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-072-der-datentypeneisberg.mp3">MP3</a> (45,1 MiB)</li>
+          <li><a href="/dl/stp-072-der-datentypeneisberg.ogg">Ogg Vorbis</a> (27,4 MiB)</li>
+          <li><a href="/dl/stp-072-der-datentypeneisberg.opus">Opus</a> (16,5 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p>Rückbezug STP071: anhand von JSON haben wir die sichtbaren Datentypen besprochen</p>
+<ul>
+<li>heute tauchen wir unter die Wasseroberfläche ab und schauen auf Typen, die man eher im Speicher als in einer Datei sieht</li>
+</ul>
+</li>
+<li>
+<p>Einwurf Kombinatorik: Wieviele mögliche Werte haben die vorgenannten Typen (sofern nicht unendlich)? (wir schreiben <code>K(T)</code> für die Kardinalität des Typs <code>T</code>)</p>
+<ul>
+<li>Boolean: <code>K(bool) = 2</code> (<code>true</code> oder <code>false</code>)</li>
+<li>Zahlen: <code>K(T_N) = 2^N</code> Werte für Zahltypen mit <code>N</code> Bits (z.B. 256 für <code>i8</code> oder 65536 für <code>u16</code>), weil jedes Bit zwei Werte hat, die unabhängig voneinander gewählt werden können</li>
+<li>Listen fester Länge: <code>K([T; N]) = K(T)^N</code> für <code>K(T)</code> mögliche Werte des Elementtyps <code>T</code> und Länge <code>N</code></li>
+<li>Listen variabler Länge: <code>K(Vec&lt;T&gt;) = ∞</code> bis auf praktische Platzbeschränkungen</li>
+</ul>
+</li>
+<li>
+<p>Listen wirken sich auf die Kardinalität also wie eine Potenzierung aus</p>
+<ul>
+<li>Gibt es auch andere Rechenoperationen? -&gt; <a href="https://de.wikipedia.org/w/index.php?title=Algebraischer_Datentyp&amp;oldid=248147888">algebraische Datentypen</a></li>
+</ul>
+</li>
+<li>
+<p>Produkttypen: Gesamttyp <code>P</code> enthält je einen Wert von Typ <code>T_1, T_2, ..., T_N</code>, somit <code>K(P) = K(T_1) * K(T_2) * ... * K(T_N)</code></p>
+<ul>
+<li>in Rust: entweder als Tupel (geordnete Folge von Werten, die mit Zahlenindizes bezeichnet sind), z.B. <code>type Vector3D = (f64, f64, f64)</code>, oder als Strukturtypen (ungeordnete Menge von Werten, die mit Namen bezeichnet sind, z.B. <code>struct Person { first_name: String, last_name: String }</code>)</li>
+<li>in JSON: Tupel als Listen, Strukturtypen als Objekte (beim Einlesen muss die Elementzahl bzw. die Namen der Elemente geprüft werden)</li>
+</ul>
+</li>
+<li>
+<p>Summentypen: Gesamttyp <code>S</code> enthält entweder einen Wert vom Typ <code>T_1</code> oder <code>T_2</code> oder ... oder <code>T_N</code>, somit <code>K(P) = K(T_1) + K(T_2) + ... + K(T_N)</code></p>
+<ul>
+<li>in Rust: Enumerationstyp, z.B. <code>enum ParseResult { Ok(DataStructure), Err(ParseError) }</code></li>
+<li>in JSON: keine klare Konvention, Serialisierung in Rust erzeugt ein Objekt mit einem Eintrag, die nach der jeweiligen Variante benannt ist (z.B. <code>{&quot;Ok&quot;: ...}</code>)</li>
+</ul>
+</li>
+<li>
+<p>sehr kleine Spezialfälle: Gibt es Datentypen, die kleiner als <code>bool</code> sind?</p>
+<ul>
+<li>Produkttyp mit null Feldern (in Rust <code>struct Empty {}</code>): nur ein möglicher Wert (1 ist das neutrale Element der Multiplikation)
+<ul>
+<li>in JSON kann man das als <code>null</code> serialisieren</li>
+<li>in Rust kommt dies im Summentyp <code>enum Option&lt;T&gt; { Some(T), None }</code> vor; <code>None</code> ist hier im Prinzip eine Kurzschreibweise für <code>None(Empty)</code></li>
+</ul>
+</li>
+<li>Summentyp mit null Varianten (in Rust <code>enum Impossible {}</code>): keine möglichen Werte (0 ist das neutrale Element der Addition)
+<ul>
+<li>in JSON nicht darstellbar (keine Werte haben keine Serialisierung)</li>
+<li>in Rust kommt so ein Typ in Funktionen vor, die kein Ergebnis liefern (z.B. <code>quit()</code>)</li>
+<li>nützlicher, als es zunächst erscheint, sobald <a href="https://en.wikipedia.org/w/index.php?title=Monomorphization&amp;oldid=1246708145">Monomorphisierung</a> ins Spiel kommt</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Abendgedanken: Warum das ganze Gerede über Datentypen?</p>
+<ul>
+<li>angewandte Programmierung besteht aus zwei (verwandten) Teildisziplinen: Algorithmen (das Wie, der Rechenteil) und Datenstrukturen (das Was, der Speicherteil)</li>
+<li>Xyrill hält Datenstrukturen für das Fundament; die Wahl der Algorithmen muss an zweiter Stelle kommen</li>
+<li>vergleichbarer Ansatz in klassischen Software-Design-Lehrbüchern wie <a href="https://en.wikipedia.org/w/index.php?title=Structure_and_Interpretation_of_Computer_Programs&amp;oldid=1244483390">SICP</a> und <a href="https://en.wikipedia.org/w/index.php?title=How_to_Design_Programs&amp;oldid=1251901750">HtDP</a></li>
+</ul>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>
