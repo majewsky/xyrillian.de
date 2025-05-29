@@ -3979,3 +3979,61 @@ audio_metadata:
     - start_secs: 2586
       end_secs: 2937.385
       title: Abendgedanken
+  stp:073-was-aus-holz:
+    length_secs: 4316
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-073-was-aus-holz.mp3
+      size_bytes: 69391480
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-073-was-aus-holz.ogg
+      size_bytes: 41476651
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-073-was-aus-holz.opus
+      size_bytes: 24817804
+    chapters:
+    - start_secs: 0
+      end_secs: 213
+      title: Addendum zu STP072
+    - start_secs: 213
+      end_secs: 430
+      title: Post aus Schweden
+    - start_secs: 430
+      end_secs: 657
+      title: Intro und Prolog
+    - start_secs: 657
+      end_secs: 1084
+      title: Technologie, und was wir heute tun
+    - start_secs: 1084
+      end_secs: 1200
+      title: Grobes Ablängen
+    - start_secs: 1200
+      end_secs: 1552
+      title: Längszuschnitt
+    - start_secs: 1552
+      end_secs: 2161
+      title: Abrichten
+    - start_secs: 2161
+      end_secs: 2502
+      title: Aushobeln
+    - start_secs: 2502
+      end_secs: 3298
+      title: Fugen
+    - start_secs: 3298
+      end_secs: 3653
+      title: Verleimen
+    - start_secs: 3653
+      end_secs: 3726
+      title: Nochmal Aushobeln
+    - start_secs: 3726
+      end_secs: 3947
+      title: Verschnitt
+    - start_secs: 3947
+      end_secs: 4067
+      title: Formzuschnitt und handwerkliches Geschick
+    - start_secs: 4067
+      end_secs: 4316.217
+      title: Das alles geht auch anders

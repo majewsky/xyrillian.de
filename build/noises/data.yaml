@@ -1316,3 +1316,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 73
+    slug: 073-was-aus-holz
+    title: Was aus Holz
+    pubtime: 1748548800 # 2025-05-29
+
+    markdown:
+      description: |
+        Diesmal vieleicht doch eher aus Interesse denn aus Resignation. Wieder geht's um Holz. Allerdings noch nicht so weit, wie Xyrill sich das zuerst vorgestellt hatte.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
