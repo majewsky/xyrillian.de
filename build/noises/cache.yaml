@@ -4037,3 +4037,37 @@ audio_metadata:
     - start_secs: 4067
       end_secs: 4316.217
       title: Das alles geht auch anders
+  stp:074-vom-mythos-des-mann-monats-teil-2:
+    length_secs: 4165
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-074-vom-mythos-des-mann-monats-teil-2.mp3
+      size_bytes: 66976082
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-074-vom-mythos-des-mann-monats-teil-2.ogg
+      size_bytes: 42305752
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-074-vom-mythos-des-mann-monats-teil-2.opus
+      size_bytes: 25479761
+    chapters:
+    - start_secs: 0
+      end_secs: 117
+      title: Intro
+    - start_secs: 117
+      end_secs: 276
+      title: Prolog
+    - start_secs: 276
+      end_secs: 1371
+      title: 'Kapitel 4: Aristokratie, Demokratie und System-Design'
+    - start_secs: 1371
+      end_secs: 2213
+      title: 'Kapitel 5: Das Problem des zweiten Systems'
+    - start_secs: 2213
+      end_secs: 3167
+      title: 'Kapitel 6: Weitergabe von Informationen'
+    - start_secs: 3167
+      end_secs: 4165.29
+      title: 'Kapitel 7: Warum ist der Turm zu Babel gefallen?'

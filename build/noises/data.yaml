@@ -1329,3 +1329,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 74
+    slug: 074-vom-mythos-des-mann-monats-teil-2
+    title: "Literatur: Vom Mythos des Mann-Monats, Teil 2"
+    pubtime: 1750360800 # 2025-06-19
+
+    markdown:
+      description: |
+        Beim letzten Mal war zuviel Buch für zu wenig Zeit übrig. Daher nun die Fortsetzung mit zwar gelegentlich etwas angestaubten, im Großen und Ganzen aber sinnvollen, Vorschlägen zur Organisation von Softwareentwicklung.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

@@ -27,6 +27,192 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP074: Literatur: Vom Mythos des Mann-Monats, Teil 2</itunes:title>
+    <itunes:episode>74</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP074: Literatur: Vom Mythos des Mann-Monats, Teil 2</title>
+    <link>https://schluesseltechnologie-podcast.de/074-vom-mythos-des-mann-monats-teil-2</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Beim letzten Mal war zuviel Buch für zu wenig Zeit übrig. Daher nun die Fortsetzung mit zwar gelegentlich etwas angestaubten, im Großen und Ganzen aber sinnvollen, Vorschlägen zur Organisation von Softwareentwicklung.</itunes:summary>
+    <description>Beim letzten Mal war zuviel Buch für zu wenig Zeit übrig. Daher nun die Fortsetzung mit zwar gelegentlich etwas angestaubten, im Großen und Ganzen aber sinnvollen, Vorschlägen zur Organisation von Softwareentwicklung.</description>
+    <content:encoded>&lt;p&gt;Beim letzten Mal war zuviel Buch für zu wenig Zeit übrig. Daher nun die Fortsetzung mit zwar gelegentlich etwas angestaubten, im Großen und Ganzen aber sinnvollen, Vorschlägen zur Organisation von Softwareentwicklung.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Fortsetzung aus STP068. Wir lesen weiterhin die englische Erstausgabe von 1975, die &lt;a href=&#34;https://archive.org/details/MythicalManMonth&#34;&gt;im Internet Archive&lt;/a&gt; digitalisiert wurde.&lt;/p&gt;
+&lt;h3&gt;Kapitel 4: Aristokratie, Demokratie und System-Design&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Brooks beschreibt als Leitmotiv die Kathedrale von Reims, die von acht Generationen von Baumeistern errichtet wurde, aber trotzdem eine beachtliche gestalterische Kohärenz aufweist, da die nachfolgenden Generationen das ursprüngliche Design ungewöhnlich stark respektieren: &amp;quot;Das Ergebnis verkündet nicht nur die Herrlichkeit Gottes, sondern auch seine Macht, gefallene Menschen von ihrem Stolz zu befreien.&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kontrast nicht nur zu den meisten anderen Kirchenbauten, sondern auch zu Programmsystemen&lt;/li&gt;
+&lt;li&gt;dort aber nicht wegen Mehrgenerationalität, sondern wegen Vielstimmigkeit&lt;/li&gt;
+&lt;li&gt;These: konzeptionelle Integrität ist die wichtigste Eigenschaft im System-Design (vgl. STP006: Unix-Philosophie)&lt;/li&gt;
+&lt;li&gt;Vorteil: bessere Verwendbarkeit und Erlernbarkeit&lt;/li&gt;
+&lt;li&gt;Umsetzung: das Design sollte von einigen wenigen Architekten kontrolliert werden, die im Interesse des Benutzers handeln; doch hieraus drei Problemstellungen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Problem 1: Folgt hieraus nicht eine aristokratische Klassengesellschaft von wenigen Vordenkern und bauendem Fußvolk?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nein, auch auf der Implementationsebene gibt es viele interessante Entscheidungen zu treffen
+&lt;ul&gt;
+&lt;li&gt;Brooks zitiert einen Aphorismus aus der Kunst: &amp;quot;Form befreit.&amp;quot;, sprich: Kreativität erwächst aus dem Umgang mit Beschränkungen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;in der Architektur geht es darum, was man dem Nutzer präsentiert (das &amp;quot;Was&amp;quot;)&lt;/li&gt;
+&lt;li&gt;in der Bauphase geht es darum, wie man dieses Verhalten erreicht (das &amp;quot;Wie&amp;quot;)&lt;/li&gt;
+&lt;li&gt;es ist absolut gewollt, dass die Erbauer auch Designideen vorschlagen und auf Beschränkungen hinweisen; nur entscheiden sie nicht final über das Design&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Problem 2: Wie verhindert man, dass die Architekten von den Zwängen der Realität abgekoppelt im Elfenbeinturm davonschweben?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Xyrill bringt eines seiner Lieblings-Schimpfwörter ins Spiel: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Architecture_astronaut&amp;amp;oldid=1221960855&#34;&gt;&amp;quot;Architektur-Astronaut&amp;quot;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lösung dieselbe wie für das dritte Problem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Problem 3: Wie stellt man sicher, dass die Erbauer mit allen wichtigen Details des Designs vertraut gemacht werden?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lösung: die Erbauer frühzeitig in den Design-Prozess involvieren, Ideen aufnehmen, Designvorschläge auf praktische Umsetzbarkeit abklopfen etc.&lt;/li&gt;
+&lt;li&gt;Vergleich mit der Errichtung eines Gebäudes: man kann die Erbauer nicht erst einstellen, wenn der Plan fertig ist, weil in der Software-Entwicklung immer noch vieles explorativ und nicht nach Standard-Muster abläuft&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 5: Das Problem des zweiten Systems (&amp;quot;Second-System Effect&amp;quot;)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;in diesem Dialog zwischen Architekt und Erbauer stellen sich viele Ideen des Architekten als unpraktikabel heraus und werden verworfen... bis zum nächsten Mal&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Szenario: das erste System war erfolgreich, der Architekt hat Prestige und Erfahrung gewonnen&lt;/li&gt;
+&lt;li&gt;&amp;quot;Dieses zweite ist das gefährlichste System, dass man jemals entwirft.&amp;quot; -&amp;gt; &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Second-system_effect&amp;amp;oldid=1247130968&#34;&gt;Second-System Effect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;beim dritten und vierten System hat man dann mehr Erfahrung, was tatsächlich funktioniert und was nur auf dem Papier gut aussieht&lt;/li&gt;
+&lt;li&gt;Xyrill legt Wert darauf, dass seine jüngeren Kollegen früh ihre eigenen Komponenten alleine entwerfen, damit sie dann auch in die Probleme ihrer eigenen Design-Entscheidungen reinlaufen und daraus lernen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;der vorgeschlagene Lösungsansatz ist leider etwas antiquiert: &amp;quot;Eine Disziplin, die dem Architekten die Augen öffnen wird, ist es, jeder kleinen Funktion einen Wert zuzuweisen: Fähigkeit X ist nicht mehr wert als M Bytes Speicher und N Mikrosekunden pro Aufruf. Diese Werte dienen als Richtschnur für die ersten Entscheidungen und während der Implementierung als Leitfaden und Warnung an alle.&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nicht realisitisch in Zeiten, wo die meisten Programmierer offenkundigerweise noch nie einen Profiler verwendet haben oder auch nur ein Gefühl für ihre eigene Ressourcenvergeudung haben&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 6: Weitergabe von Informationen (&amp;quot;Passing the Word&amp;quot;)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Wie stellt eine Gruppe von 10 Architekten sicher, dass ihre Entwürfe von 1000 Mitarbeitenden berücksichtigt und von allen Benutzern verstanden werden?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gute Dokumentation ist erforderlich: Handbücher für die Benutzer, Architekturpläne für die Erbauer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Qualitäten guter Dokumentation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vorzugsweise aus der Feder von nur ein oder zwei Personen -&amp;gt; Fokus auf konzeptionelle Integrität&lt;/li&gt;
+&lt;li&gt;Beschreibung sowohl des definierten Verhaltens als auch der Grenzen der Definiertheit&lt;/li&gt;
+&lt;li&gt;Definitionen in formaler Notation und/oder präziser Sprache, um Lücken und Widersprüche im Design möglichst früh aufzudecken&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Anti-Pattern&amp;amp;oldid=248340518&#34;&gt;Anti-Pattern&lt;/a&gt;: Definition eines Systems durch sein eigenes Verhalten
+&lt;ul&gt;
+&lt;li&gt;führt zu Bug-für-Bug-Kompatibilität (siehe STP050) bzw. Ossifikation (siehe STP056): inhaltliche Widersprüche zwischen der ursprünglichen Implementation, späteren Revisionen sowie später abgeleiteten Spezifikationen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;gutes Pattern: Spezifikation maschinenlesbar darstellen, damit die Erbauer die Konformität ihrer Implementation mit der Spezifikation automatisch prüfen können
+&lt;ul&gt;
+&lt;li&gt;aktuelles Beispiel: formale Spezifikation von Schnittstellen mittels &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=OpenAPI&amp;amp;oldid=250760605&#34;&gt;OpenAPI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie erarbeitet man Designs? Vorschlag von Brooks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meetings zwischen den Architekten und involvierten Erbauern, in denen das Problem vorgestellt und mehrere Designideen gesammelt werden&lt;/li&gt;
+&lt;li&gt;dann Erarbeitung von detaillierten Designentwürfen mit Pro-/Kontra-Analyse&lt;/li&gt;
+&lt;li&gt;daraus entweder sofortiger Konsens oder Entscheidung eines Chefarchitekten&lt;/li&gt;
+&lt;li&gt;klingt offensichtlich, ist aber im &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Agile_Softwareentwicklung&amp;amp;oldid=251327114&#34;&gt;agilen Zeitalter&lt;/a&gt; selten anzutreffen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;noch eine kleine Anmerkung am Rande: auch Kurzabsprachen am Telefon sollten dokumentiert werden :)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 7: Warum ist der Turm zu Babel gefallen?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Woran können Projekte scheitern?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;unklare Zielstellung&lt;/li&gt;
+&lt;li&gt;nicht genug Personal&lt;/li&gt;
+&lt;li&gt;nicht genug Material/Budget&lt;/li&gt;
+&lt;li&gt;nicht genug Zeit&lt;/li&gt;
+&lt;li&gt;unzureichende Technologien&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;ineffektive Kommunikation&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie sollen Teams kommunizieren? Neben direkten Gesprächen z.B. via Telefon und Gruppengesprächen z.B. in Meetings wird ein &lt;strong&gt;Arbeitsbuch&lt;/strong&gt; vorgeschlagen.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nicht ein konkretes Dokument, sondern eine Struktur für alle Dokumente im Projekt&lt;/li&gt;
+&lt;li&gt;die Dokumentation am Ende geht aus den Memos am Anfang hervor, also gleich richtig machen&lt;/li&gt;
+&lt;li&gt;Memos sollen durchnummeriert werden, damit man später darauf Bezug nehmen kann (wir fühlen uns an RFCs erinnert) -&amp;gt; Arbeitsbuch ergibt sich als Baumstruktur aller Memos (wir fühlen uns an Hypertext erinnert, und in der Tat wird Douglas C. Engelbart am Rande erwähnt)&lt;/li&gt;
+&lt;li&gt;Brooks diskutiert dann praktische Unterschiede zwischen Papier und Microfiche, die heutzutage keine Relevanz mehr haben (aber ein Nachteil: die Verteilung aktualisierter physischer Seiten sorgte dafür, dass die Erbauer mitbekamen, wo sich wann was ändert)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;D. L. Parnas von der Carnegie-Mellon-Universität hat eine noch radikalere Lösung vorgeschlagen. Seine These lautet, dass ein Programmierer am effektivsten ist, wenn er von den Details der Konstruktion von Systemteilen, die nicht seine eigenen sind, abgeschirmt wird, anstatt ihnen ausgesetzt zu sein. Dies setzt voraus, dass alle Schnittstellen vollständig und genau definiert sind. Dies ist zwar ein solider Entwurf, aber in der Abhängigkeit von seiner perfekten Ausführung ist eine Katastrophe vorprogrammiert. Ein gutes Informationssystem deckt Schnittstellenfehler auf und regt zu deren Korrektur an.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Xyrill stimmt voll und ganz zu: sorgfältiges Gegenlesen der Meeting-Minutes der benachbarten Teams ist zwar extrem zeitaufwändig, verhindert aber regelmäßig katastrophale Design-Entscheidungen&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Organisationsstruktur: Brooks hält eine baumförmige Organisationsstruktur für unausweichlich (mehrere Vorgesetzte für einen Angestellten = Chaos) und schaut darauf, was jedes Team haben sollte&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Produzent (&amp;quot;Producer&amp;quot;): stellt das Team zusammen, verteilt Arbeit, definiert Ziele und Zeitpläne, kommuniziert &lt;strong&gt;außerhalb&lt;/strong&gt; des Teams&lt;/li&gt;
+&lt;li&gt;Architekt bzw. technischer Leiter (&amp;quot;Technical Director&amp;quot;): entwirft das Design und entwickelt es fortlaufend weiter, kommuniziert &lt;strong&gt;innerhalb&lt;/strong&gt; des Teams&lt;/li&gt;
+&lt;li&gt;drei Optionen, wie diese Rollen verteilt sein können&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Option 1: Produzent und Architekt sind dieselbe Person&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nur für kleine Teams gangbar, bis etwa 3-6 Personen&lt;/li&gt;
+&lt;li&gt;&amp;quot;Denker sind rar; Macher sind rarer; und Denker-Macher sind am rarsten.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Option 2: Produzent als Chef, Architekt als seine rechte Hand&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;funktioniert nur, wenn der Produzent die technische Autorität des Architekten akzeptiert&lt;/li&gt;
+&lt;li&gt;Xyrill hat lange in einem derartigen Zweierteam als Architekt gearbeitet und weiß, dass es funktionieren kann; kommt aber extrem auf die interpersonelle Dynamik des Duos an&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Option 3: Architekt als Chef, Produzent als seine rechte Hand&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;findet Brooks am besten; Xyrill ist geneigt, zuzustimmen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Noch mehr&lt;/h3&gt;
+&lt;p&gt;Es gibt noch acht weitere Kapitel, die wir irgendwann™ mal besprechen werden.</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:57" title="Prolog"  />
+          <chapter start="00:04:36" title="Kapitel 4: Aristokratie, Demokratie und System-Design"  />
+          <chapter start="00:22:51" title="Kapitel 5: Das Problem des zweiten Systems"  />
+          <chapter start="00:36:53" title="Kapitel 6: Weitergabe von Informationen"  />
+          <chapter start="00:52:47" title="Kapitel 7: Warum ist der Turm zu Babel gefallen?"  />
+      </chapters>
+      <enclosure length="66976082" url="https://dl.xyrillian.de/noises/stp-074-vom-mythos-des-mann-monats-teil-2.mp3" type="audio/mpeg"/>
+      <enclosure length="42305752" url="https://dl.xyrillian.de/noises/stp-074-vom-mythos-des-mann-monats-teil-2.ogg" type="audio/ogg"/>
+      <enclosure length="25479761" url="https://dl.xyrillian.de/noises/stp-074-vom-mythos-des-mann-monats-teil-2.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/074-vom-mythos-des-mann-monats-teil-2/</guid>
+    <pubDate>Thu, 19 Jun 2025 19:20:00 GMT</pubDate>
+    <itunes:duration>69:25</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP073: Was aus Holz</itunes:title>
     <itunes:episode>73</itunes:episode>
     <itunes:season>1</itunes:season>
