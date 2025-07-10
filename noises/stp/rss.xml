@@ -27,6 +27,87 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP075: Prozessorarchitekturen im Vergleich</itunes:title>
+    <itunes:episode>75</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP075: Prozessorarchitekturen im Vergleich</title>
+    <link>https://schluesseltechnologie-podcast.de/075-prozessorarchitekturen-im-vergleich</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nach einer sehr deutlichen Einordnung der Aufnahmezeit kommen wir im Wesentlichen zu den Unterschieden zwischen x86 und ARM. Natürlich wird auch geklärt, was das ist. Gegen Ende gibt es noch ein paar Meinungen und Weissagungen zum Thema KI.</itunes:summary>
+    <description>Nach einer sehr deutlichen Einordnung der Aufnahmezeit kommen wir im Wesentlichen zu den Unterschieden zwischen x86 und ARM. Natürlich wird auch geklärt, was das ist. Gegen Ende gibt es noch ein paar Meinungen und Weissagungen zum Thema KI.</description>
+    <content:encoded>&lt;p&gt;Nach einer sehr deutlichen Einordnung der Aufnahmezeit kommen wir im Wesentlichen zu den Unterschieden zwischen x86 und ARM. Natürlich wird auch geklärt, was das ist. Gegen Ende gibt es noch ein paar Meinungen und Weissagungen zum Thema KI.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug STP011: grundsätzliche Beschreibung von &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Maschinensprache&amp;amp;oldid=244058590&#34;&gt;Maschinensprache&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;siehe Beispiel unter dem obenstehenden Link&lt;/li&gt;
+&lt;li&gt;Maschinensprache ist spezifisch für die Prozessorarchitektur, genauer die &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Befehlssatzarchitektur&amp;amp;oldid=252559676&#34;&gt;Befehlssatzarchitektur&lt;/a&gt; (&lt;em&gt;instruction set architecture&lt;/em&gt;, ISA)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;heutzutage relevante ISA&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;x86: PCs, Notebooks, Server, &lt;a href=&#34;https://en.wikipedia.org/wiki/File:Processor_families_in_TOP500_supercomputers.svg&#34;&gt;Supercomputer&lt;/a&gt;, Apple Macs bis 2020&lt;/li&gt;
+&lt;li&gt;ARM: Smartphones, Tablets, Apple Macs seit 2020, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Einplatinencomputer&amp;amp;oldid=237691993&#34;&gt;Einplatinencomputer (SBC)&lt;/a&gt; wie &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Raspberry_Pi&amp;amp;oldid=252946989&#34;&gt;Raspberry Pi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Embedded: AVR, MIPS, etc.&lt;/li&gt;
+&lt;li&gt;Hochleistungsrechnen: neben x86 noch Power und SPARC&lt;/li&gt;
+&lt;li&gt;Neuentwicklungen: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=RISC-V&amp;amp;oldid=253863999&#34;&gt;RISC-V&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Loongson&amp;amp;oldid=1277543901#LoongArch&#34;&gt;LoongArch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Warum ist die Wahl der ISA wichtig?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ISA beschreibt nominal, wie ein CPU die Bits in einer ausführbaren Binärdatei (sprich: die kodierte Form der Maschinensprache) zu interpretieren hat&lt;/li&gt;
+&lt;li&gt;daraus als Konsequenz Festlegung von Hardware-Parametern wie der Adressbreite oder der Anzahl und Größe der verfügbaren Register&lt;/li&gt;
+&lt;li&gt;Designentscheidungen in der ISA wirken sich auf die maximal erreichbare Performance und auf die Energieeffizienz aus&lt;/li&gt;
+&lt;li&gt;klassischerweise Gegenüberstellung zweier verschiedener Design-Philosophien: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Complex_Instruction_Set_Computer&amp;amp;oldid=252402363&#34;&gt;Complex Instruction Set Computing (CISC)&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Reduced_Instruction_Set_Computer&amp;amp;oldid=250909684&#34;&gt;Reduced Instruction Set Computing (RISC)&lt;/a&gt; (die Grenzen verschwimmen aber in der Praxis)&lt;/li&gt;
+&lt;li&gt;historischerweise war CISC die Domäne großer CPU-Hersteller, die sich ein kompliziertes Design leisten konnten, um dem Programmierer Arbeit abzunehmen (z.B. Intel); und RISC die Domäne kleiner CPU-Hersteller, die aus möglichst wenig Arbeitseinsatz möglichst viel erreichen wollten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was steht in einem Maschinencode-Befehl drin?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;grundsätzlich eine Operation, die ausgeführt wird (z.B. &amp;quot;Addition zweier 64-Bit-Zahlen&amp;quot;)&lt;/li&gt;
+&lt;li&gt;als Quellen für Argumente und Ziel für das Ergebnis: entweder Register, Speicher oder Immediate-Argumente
+&lt;ul&gt;
+&lt;li&gt;Beispiel CISC: &lt;a href=&#34;https://www.felixcloutier.com/x86/add&#34;&gt;20 verschiedene Ausführungen des ADD-Befehls in x86-64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Beispiel RISC: &lt;a href=&#34;https://projectf.io/posts/riscv-arithmetic/#addition&#34;&gt;2 verschiedene Ausführungen des ADD- bzw. ADDI-Befehls in RISC-V (RV32I)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;wenn RISC wie bei RISC-V eine &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Load/Store-Architektur&amp;amp;oldid=244001127&#34;&gt;Load/Store-Architektur&lt;/a&gt; verwendet, muss man also im Zweifelsfall Argumente erst aus dem Speicher in Register laden
+&lt;ul&gt;
+&lt;li&gt;dadurch tendenziell mehr Maschinencode, aber weniger Komplexität in der CPU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abwägungen zwischen Energieeffizienz (ARM) und Performance (x86)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;aktueller ARM-Befehlssatz (A64) hat durchgängig 4 Byte große Befehle, was das Dekodieren vereinfacht; x86-Befehle haben eine variable Breite zwischen 1 und 15 Byte&lt;/li&gt;
+&lt;li&gt;x86 hat eine lange Pipeline, um u.a. die komplexen Befehle in kleinere Teilschritte (Micro-Operations) zu zerlegen oder bestimmte häufige Befehlssequenzen in effizientere Gruppen (Macro-Operations) zu fusionieren und damit die Performance zu steigern; ARM-Prozessoren machen das nicht und sparen dadurch Energieaufwand&lt;/li&gt;
+&lt;li&gt;x86 hat für bestimmte Rollen designierte Spezialregister, die je nach Befehl feste Bedeutungen haben; ARM (und RISC allgemein) verwendet für fast alles 31 General-Purpose-Register&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und zeitliche Einordnung"  />
+          <chapter start="00:01:45" title="Rückbezüge"  />
+          <chapter start="00:04:23" title="Heutzutage relevante ISA"  />
+          <chapter start="00:18:59" title="Warum ist die Wahl der ISA wichtig?"  />
+          <chapter start="00:28:25" title="Was steht in einem Maschinencode-Befehl drin?"  />
+          <chapter start="00:48:28" title="Abwägungen zwischen Energieeffizienz und Performance"  />
+      </chapters>
+      <enclosure length="54444642" url="https://dl.xyrillian.de/noises/stp-075-prozessorarchitekturen-im-vergleich.mp3" type="audio/mpeg"/>
+      <enclosure length="35698862" url="https://dl.xyrillian.de/noises/stp-075-prozessorarchitekturen-im-vergleich.ogg" type="audio/ogg"/>
+      <enclosure length="20666466" url="https://dl.xyrillian.de/noises/stp-075-prozessorarchitekturen-im-vergleich.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/075-prozessorarchitekturen-im-vergleich/</guid>
+    <pubDate>Thu, 10 Jul 2025 14:45:00 GMT</pubDate>
+    <itunes:duration>56:22</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP074: Literatur: Vom Mythos des Mann-Monats, Teil 2</itunes:title>
     <itunes:episode>74</itunes:episode>
     <itunes:season>1</itunes:season>

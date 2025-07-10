@@ -1342,3 +1342,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 75
+    slug: 075-prozessorarchitekturen-im-vergleich
+    title: Prozessorarchitekturen im Vergleich
+    pubtime: 1752158700 # 2025-07-10
+
+    markdown:
+      description: |
+        Nach einer sehr deutlichen Einordnung der Aufnahmezeit kommen wir im Wesentlichen zu den Unterschieden zwischen x86 und ARM. Natürlich wird auch geklärt, was das ist. Gegen Ende gibt es noch ein paar Meinungen und Weissagungen zum Thema KI.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

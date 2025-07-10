@@ -4071,3 +4071,37 @@ audio_metadata:
     - start_secs: 3167
       end_secs: 4165.29
       title: 'Kapitel 7: Warum ist der Turm zu Babel gefallen?'
+  stp:075-prozessorarchitekturen-im-vergleich:
+    length_secs: 3382
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-075-prozessorarchitekturen-im-vergleich.mp3
+      size_bytes: 54444642
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-075-prozessorarchitekturen-im-vergleich.ogg
+      size_bytes: 35698862
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-075-prozessorarchitekturen-im-vergleich.opus
+      size_bytes: 20666466
+    chapters:
+    - start_secs: 0
+      end_secs: 105
+      title: Intro und zeitliche Einordnung
+    - start_secs: 105
+      end_secs: 263
+      title: Rückbezüge
+    - start_secs: 263
+      end_secs: 1139
+      title: Heutzutage relevante ISA
+    - start_secs: 1139
+      end_secs: 1705
+      title: Warum ist die Wahl der ISA wichtig?
+    - start_secs: 1705
+      end_secs: 2908
+      title: Was steht in einem Maschinencode-Befehl drin?
+    - start_secs: 2908
+      end_secs: 3382.07
+      title: Abwägungen zwischen Energieeffizienz und Performance
