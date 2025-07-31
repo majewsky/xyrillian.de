@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Debugging - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #76 vom 31. Juli 2025</h2>
+    <h1>Debugging</h1>
+      <p>Die Zeiten in denen wie von Grace Hopper &quot;actual bugs&quot; in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.</p>
+      <p><strong>Länge:</strong> 58:36 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-076-debugging.mp3" type="audio/mpeg">
+        <source src="/dl/stp-076-debugging.ogg" type="audio/ogg">
+        <source src="/dl/stp-076-debugging.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="122">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="122" data-end="688">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">02:02</span>
+        <span class="chapter-title">Definition</span>
+      </div>
+      <div class="chapter" data-start="688" data-end="768">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">11:28</span>
+        <span class="chapter-title">Werkzeuge zum Mitlauschen</span>
+      </div>
+      <div class="chapter" data-start="768" data-end="1235">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">12:48</span>
+        <span class="chapter-title">traceroute</span>
+      </div>
+      <div class="chapter" data-start="1235" data-end="1413">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">20:35</span>
+        <span class="chapter-title">tcpdump</span>
+      </div>
+      <div class="chapter" data-start="1413" data-end="1699">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">23:33</span>
+        <span class="chapter-title">mitmproxy</span>
+      </div>
+      <div class="chapter" data-start="1699" data-end="2278">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">28:19</span>
+        <span class="chapter-title">strace</span>
+      </div>
+      <div class="chapter" data-start="2278" data-end="2312">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">37:58</span>
+        <span class="chapter-title">Werkzeuge zum Nachverfolgen</span>
+      </div>
+      <div class="chapter" data-start="2312" data-end="2532">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">38:32</span>
+        <span class="chapter-title">printf</span>
+      </div>
+      <div class="chapter" data-start="2532" data-end="2748">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">42:12</span>
+        <span class="chapter-title">debugger</span>
+      </div>
+      <div class="chapter" data-start="2748" data-end="3022">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">45:48</span>
+        <span class="chapter-title">valgrind</span>
+      </div>
+      <div class="chapter" data-start="3022" data-end="3516.312">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">50:22</span>
+        <span class="chapter-title">Werkzeuge zum Zurückverfolgen</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-076-debugging.mp3">MP3</a> (54,0 MiB)</li>
+          <li><a href="/dl/stp-076-debugging.ogg">Ogg Vorbis</a> (34,7 MiB)</li>
+          <li><a href="/dl/stp-076-debugging.opus">Opus</a> (20,6 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><a href="https://de.wikipedia.org/w/index.php?title=Debuggen&amp;oldid=254167673">Wikipedia definiert den Begriff</a>:</p>
+<blockquote>
+<p>Als Debuggen (dt. Entwanzen) oder Fehlerbehebung bezeichnet man in der Informatik den Vorgang, in einem Computerprogramm Fehler oder unerwartetes Verhalten zu diagnostizieren und zu beheben. Die Suche von Programmfehlern (sogenannten Bugs) ist eine der wichtigsten und anspruchsvollsten Aufgaben der Softwareentwicklung und nimmt einen großen Teil der Entwicklungszeit in Anspruch. Ein guter Programmierer muss daher auch das Debuggen beherrschen und umgekehrt: Nicht jeder gute Programmierer ist auch ein guter Debugger.</p>
+</blockquote>
+<ul>
+<li>
+<p>Xyrill hat eine Anekdote: Firefox im Hotel-WLAN hängt beim Starten vier Minuten</p>
+<ul>
+<li>nicht dramatisch, könnte man auch hinnehmen (oder halt auf einen anderen Browser wechseln)</li>
+<li>Xyrill war aber in der Stimmung, zu debuggen</li>
+</ul>
+</li>
+<li>
+<p>Kategorie 1: Werkzeuge zum Mitlauschen</p>
+<ul>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Traceroute&amp;oldid=236437154">traceroute</a> (bzw. <code>tracert</code> unter Windows): Nachverfolgung der Netzwerkroute zu einem bestimmten Ziel anhand von Ping-Paketen mit begrenzter TTL; stark variable Pings oder plötzliche Anstiege des Pings deuten auf ein Problem an dem entsprechenden Hop hin</li>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Tcpdump&amp;oldid=235025527">tcpdump</a> und <a href="https://de.wikipedia.org/w/index.php?title=Wireshark&amp;oldid=238943114">Wireshark</a>: Mitschneiden aller Netzwerkpakete, die über ein Netzwerk-Interface versendet oder empfangen werden (evtl. mit Suchmuster, z.B. &quot;nur auf Port 80&quot; oder &quot;nur für Ziel-/Quelladresse <a href="http://192.168.0.1">192.168.0.1</a>&quot;)</li>
+<li><a href="https://mitmproxy.org/">mitmproxy</a> et al: Fangnetz für HTTP-Anfragen und -Antworten, die von einem Prozess geschickt und empfangen werden (quasi wie tcpdump, aber einige Netzwerkschichten höher); super zum Reverse-Engineering von webbasierten APIs</li>
+<li>mal nicht Netzwerk: <a href="https://en.wikipedia.org/w/index.php?title=Strace&amp;oldid=1268124388">strace</a> listet alle Syscalls (Systemrufe) auf, die ein Prozess während seiner Lebenszeit macht (siehe Beispiel unten)</li>
+<li>zurück zum Hotel-WLAN-Beispiel: strace zeigt Timeout bei DNS-Anfrage zum eigenen Hostnamen jeweils 2x nach 120s</li>
+<li>Grund für diese Anfragen bleibt unklar, aber die Lösung ist eindeutig: expliziter Eintrag für den eigenen Hostnamen in <code>/etc/hosts</code>, um die DNS-Abfrage zu umgehen</li>
+</ul>
+</li>
+<li>
+<p>Kategorie 2: Werkzeuge zum Nachverfolgen</p>
+<ul>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Printf&amp;oldid=243456170">printf</a>-Debugging: im Programmcode vorrübergehend Befehle einbauen, die zu sinnfälligen Zeitpunkten Logmeldungen ausdrucken, insb. beinhaltend den aktuellen Zustand von bestimmten Variablen (sprich: transiente Form von Logging, siehe STP032)</li>
+<li>Debugger wie <a href="https://de.wikipedia.org/w/index.php?title=GNU_Debugger&amp;oldid=237899188">gdb</a>: Ausführung eines Programms bis zum Moment des Crashs oder bis zu benutzerdefinierten Haltepunkten; dann schrittweise Ausführung bzw. Inspektion von Variablen (flexibler als printf-Debugging, aber erfordert direkten Zugriff auf den Prozess)</li>
+<li>Profiler wie <a href="https://de.wikipedia.org/w/index.php?title=Valgrind&amp;oldid=246184662">valgrind</a>: Ausführung eines Programms und währenddessen Erfassung von Statistiken zu Laufzeit- und Speichernutzung, um Speicherzugriffsfehler oder Ineffizienzen aufzudecken</li>
+</ul>
+</li>
+<li>
+<p>Kategorie 3: Werkzeuge zum Zurückverfolgen</p>
+<ul>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Bisektion&amp;oldid=194714676">Bisektion</a> z.B. mit <a href="https://git-scm.com/docs/git-bisect">git bisect</a>: Aufspüren derjenigen Änderung in einem Versionsverwaltungssystem, die eine bestimmte Verhaltensänderung (z.B. einen Bug oder einen Performance-Einbruch) ausgelöst hat</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>Beispiel einer strace-Ausgabe für den Befehl <code>mv /tmp/foo /tmp/bar</code> (stark verkürzt):</p>
+<pre><code>$ strace mv /tmp/foo /tmp/bar
+execve(&quot;/usr/bin/mv&quot;, [&quot;mv&quot;, &quot;/tmp/foo&quot;, &quot;/tmp/bar&quot;], 0x7fff820357b0 /* 67 vars */) = 0
+... (ca. 60 Zeilen an Setup-Phase der libc und anderer Shared Libraries ausgelassen) ...
+ioctl(0, TCGETS, {c_iflag=ICRNL|IXON|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+renameat2(AT_FDCWD, &quot;/tmp/foo&quot;, AT_FDCWD, &quot;/tmp/bar&quot;, RENAME_NOREPLACE) = -1 EEXIST (File exists)
+openat(AT_FDCWD, &quot;/tmp/bar&quot;, O_RDONLY|O_PATH|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+newfstatat(AT_FDCWD, &quot;/tmp/foo&quot;, {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, &quot;/tmp/bar&quot;, {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+geteuid()                               = 1001
+faccessat2(AT_FDCWD, &quot;/tmp/bar&quot;, W_OK, AT_EACCESS) = 0
+renameat2(AT_FDCWD, &quot;/tmp/foo&quot;, AT_FDCWD, &quot;/tmp/bar&quot;, 0) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+close(0)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+</code></pre></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>

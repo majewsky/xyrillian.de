@@ -1355,3 +1355,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 76
+    slug: 076-debugging
+    title: Debugging
+    pubtime: 1753984800 # 2025-07-31
+
+    markdown:
+      description: |
+        Die Zeiten in denen wie von Grace Hopper "actual bugs" in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

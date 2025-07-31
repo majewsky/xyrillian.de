@@ -4105,3 +4105,55 @@ audio_metadata:
     - start_secs: 2908
       end_secs: 3382.07
       title: Abwägungen zwischen Energieeffizienz und Performance
+  stp:076-debugging:
+    length_secs: 3516
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-076-debugging.mp3
+      size_bytes: 56592572
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-076-debugging.ogg
+      size_bytes: 36349839
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-076-debugging.opus
+      size_bytes: 21579440
+    chapters:
+    - start_secs: 0
+      end_secs: 122
+      title: Intro
+    - start_secs: 122
+      end_secs: 688
+      title: Definition
+    - start_secs: 688
+      end_secs: 768
+      title: Werkzeuge zum Mitlauschen
+    - start_secs: 768
+      end_secs: 1235
+      title: traceroute
+    - start_secs: 1235
+      end_secs: 1413
+      title: tcpdump
+    - start_secs: 1413
+      end_secs: 1699
+      title: mitmproxy
+    - start_secs: 1699
+      end_secs: 2278
+      title: strace
+    - start_secs: 2278
+      end_secs: 2312
+      title: Werkzeuge zum Nachverfolgen
+    - start_secs: 2312
+      end_secs: 2532
+      title: printf
+    - start_secs: 2532
+      end_secs: 2748
+      title: debugger
+    - start_secs: 2748
+      end_secs: 3022
+      title: valgrind
+    - start_secs: 3022
+      end_secs: 3516.312
+      title: Werkzeuge zum Zurückverfolgen

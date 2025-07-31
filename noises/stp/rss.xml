@@ -27,6 +27,97 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP076: Debugging</itunes:title>
+    <itunes:episode>76</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP076: Debugging</title>
+    <link>https://schluesseltechnologie-podcast.de/076-debugging</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Die Zeiten in denen wie von Grace Hopper &amp;quot;actual bugs&amp;quot; in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.</itunes:summary>
+    <description>Die Zeiten in denen wie von Grace Hopper &amp;quot;actual bugs&amp;quot; in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.</description>
+    <content:encoded>&lt;p&gt;Die Zeiten in denen wie von Grace Hopper &amp;quot;actual bugs&amp;quot; in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Debuggen&amp;amp;oldid=254167673&#34;&gt;Wikipedia definiert den Begriff&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Als Debuggen (dt. Entwanzen) oder Fehlerbehebung bezeichnet man in der Informatik den Vorgang, in einem Computerprogramm Fehler oder unerwartetes Verhalten zu diagnostizieren und zu beheben. Die Suche von Programmfehlern (sogenannten Bugs) ist eine der wichtigsten und anspruchsvollsten Aufgaben der Softwareentwicklung und nimmt einen großen Teil der Entwicklungszeit in Anspruch. Ein guter Programmierer muss daher auch das Debuggen beherrschen und umgekehrt: Nicht jeder gute Programmierer ist auch ein guter Debugger.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Xyrill hat eine Anekdote: Firefox im Hotel-WLAN hängt beim Starten vier Minuten&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nicht dramatisch, könnte man auch hinnehmen (oder halt auf einen anderen Browser wechseln)&lt;/li&gt;
+&lt;li&gt;Xyrill war aber in der Stimmung, zu debuggen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kategorie 1: Werkzeuge zum Mitlauschen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Traceroute&amp;amp;oldid=236437154&#34;&gt;traceroute&lt;/a&gt; (bzw. &lt;code&gt;tracert&lt;/code&gt; unter Windows): Nachverfolgung der Netzwerkroute zu einem bestimmten Ziel anhand von Ping-Paketen mit begrenzter TTL; stark variable Pings oder plötzliche Anstiege des Pings deuten auf ein Problem an dem entsprechenden Hop hin&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Tcpdump&amp;amp;oldid=235025527&#34;&gt;tcpdump&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Wireshark&amp;amp;oldid=238943114&#34;&gt;Wireshark&lt;/a&gt;: Mitschneiden aller Netzwerkpakete, die über ein Netzwerk-Interface versendet oder empfangen werden (evtl. mit Suchmuster, z.B. &amp;quot;nur auf Port 80&amp;quot; oder &amp;quot;nur für Ziel-/Quelladresse &lt;a href=&#34;http://192.168.0.1&#34;&gt;192.168.0.1&lt;/a&gt;&amp;quot;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mitmproxy.org/&#34;&gt;mitmproxy&lt;/a&gt; et al: Fangnetz für HTTP-Anfragen und -Antworten, die von einem Prozess geschickt und empfangen werden (quasi wie tcpdump, aber einige Netzwerkschichten höher); super zum Reverse-Engineering von webbasierten APIs&lt;/li&gt;
+&lt;li&gt;mal nicht Netzwerk: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Strace&amp;amp;oldid=1268124388&#34;&gt;strace&lt;/a&gt; listet alle Syscalls (Systemrufe) auf, die ein Prozess während seiner Lebenszeit macht (siehe Beispiel unten)&lt;/li&gt;
+&lt;li&gt;zurück zum Hotel-WLAN-Beispiel: strace zeigt Timeout bei DNS-Anfrage zum eigenen Hostnamen jeweils 2x nach 120s&lt;/li&gt;
+&lt;li&gt;Grund für diese Anfragen bleibt unklar, aber die Lösung ist eindeutig: expliziter Eintrag für den eigenen Hostnamen in &lt;code&gt;/etc/hosts&lt;/code&gt;, um die DNS-Abfrage zu umgehen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kategorie 2: Werkzeuge zum Nachverfolgen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Printf&amp;amp;oldid=243456170&#34;&gt;printf&lt;/a&gt;-Debugging: im Programmcode vorrübergehend Befehle einbauen, die zu sinnfälligen Zeitpunkten Logmeldungen ausdrucken, insb. beinhaltend den aktuellen Zustand von bestimmten Variablen (sprich: transiente Form von Logging, siehe STP032)&lt;/li&gt;
+&lt;li&gt;Debugger wie &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=GNU_Debugger&amp;amp;oldid=237899188&#34;&gt;gdb&lt;/a&gt;: Ausführung eines Programms bis zum Moment des Crashs oder bis zu benutzerdefinierten Haltepunkten; dann schrittweise Ausführung bzw. Inspektion von Variablen (flexibler als printf-Debugging, aber erfordert direkten Zugriff auf den Prozess)&lt;/li&gt;
+&lt;li&gt;Profiler wie &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Valgrind&amp;amp;oldid=246184662&#34;&gt;valgrind&lt;/a&gt;: Ausführung eines Programms und währenddessen Erfassung von Statistiken zu Laufzeit- und Speichernutzung, um Speicherzugriffsfehler oder Ineffizienzen aufzudecken&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kategorie 3: Werkzeuge zum Zurückverfolgen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Bisektion&amp;amp;oldid=194714676&#34;&gt;Bisektion&lt;/a&gt; z.B. mit &lt;a href=&#34;https://git-scm.com/docs/git-bisect&#34;&gt;git bisect&lt;/a&gt;: Aufspüren derjenigen Änderung in einem Versionsverwaltungssystem, die eine bestimmte Verhaltensänderung (z.B. einen Bug oder einen Performance-Einbruch) ausgelöst hat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Beispiel einer strace-Ausgabe für den Befehl &lt;code&gt;mv /tmp/foo /tmp/bar&lt;/code&gt; (stark verkürzt):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ strace mv /tmp/foo /tmp/bar
+execve(&amp;quot;/usr/bin/mv&amp;quot;, [&amp;quot;mv&amp;quot;, &amp;quot;/tmp/foo&amp;quot;, &amp;quot;/tmp/bar&amp;quot;], 0x7fff820357b0 /* 67 vars */) = 0
+... (ca. 60 Zeilen an Setup-Phase der libc und anderer Shared Libraries ausgelassen) ...
+ioctl(0, TCGETS, {c_iflag=ICRNL|IXON|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+renameat2(AT_FDCWD, &amp;quot;/tmp/foo&amp;quot;, AT_FDCWD, &amp;quot;/tmp/bar&amp;quot;, RENAME_NOREPLACE) = -1 EEXIST (File exists)
+openat(AT_FDCWD, &amp;quot;/tmp/bar&amp;quot;, O_RDONLY|O_PATH|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+newfstatat(AT_FDCWD, &amp;quot;/tmp/foo&amp;quot;, {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, &amp;quot;/tmp/bar&amp;quot;, {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+geteuid()                               = 1001
+faccessat2(AT_FDCWD, &amp;quot;/tmp/bar&amp;quot;, W_OK, AT_EACCESS) = 0
+renameat2(AT_FDCWD, &amp;quot;/tmp/foo&amp;quot;, AT_FDCWD, &amp;quot;/tmp/bar&amp;quot;, 0) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+close(0)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
+&#43;&#43;&#43; exited with 0 &#43;&#43;&#43;
+&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:02:02" title="Definition"  />
+          <chapter start="00:11:28" title="Werkzeuge zum Mitlauschen"  />
+          <chapter start="00:12:48" title="traceroute"  />
+          <chapter start="00:20:35" title="tcpdump"  />
+          <chapter start="00:23:33" title="mitmproxy"  />
+          <chapter start="00:28:19" title="strace"  />
+          <chapter start="00:37:58" title="Werkzeuge zum Nachverfolgen"  />
+          <chapter start="00:38:32" title="printf"  />
+          <chapter start="00:42:12" title="debugger"  />
+          <chapter start="00:45:48" title="valgrind"  />
+          <chapter start="00:50:22" title="Werkzeuge zum Zurückverfolgen"  />
+      </chapters>
+      <enclosure length="56592572" url="https://dl.xyrillian.de/noises/stp-076-debugging.mp3" type="audio/mpeg"/>
+      <enclosure length="36349839" url="https://dl.xyrillian.de/noises/stp-076-debugging.ogg" type="audio/ogg"/>
+      <enclosure length="21579440" url="https://dl.xyrillian.de/noises/stp-076-debugging.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/076-debugging/</guid>
+    <pubDate>Thu, 31 Jul 2025 18:00:00 GMT</pubDate>
+    <itunes:duration>58:36</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP075: Prozessorarchitekturen im Vergleich</itunes:title>
     <itunes:episode>75</itunes:episode>
     <itunes:season>1</itunes:season>
