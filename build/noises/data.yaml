@@ -1364,7 +1364,20 @@ files:
 
     markdown:
       description: |
-        Die Zeiten in denen wie von Grace Hopper "actual bugs" in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.
+        Die Zeiten, in denen wie von Grace Hopper "actual bugs" in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
+
+  - show: stp
+    episode: 77
+    slug: 077-liste-von-listen
+    title: Liste von Listen
+    pubtime: 1755805200 # 2025-08-21
+
+    markdown:
+      description: |
+        Als der inoffizielle Wikipedia-Vorlesepodcast sehen wir es als unsere Pflicht, eine Eigenheit dieser anzusprechen: nämlich Listen von Listen, obwohl es uns eigentlich um Listen im Speicher geht.
       shownotes: true # in file
 
     music: *music-like-stp-000

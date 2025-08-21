@@ -27,6 +27,99 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP077: Liste von Listen</itunes:title>
+    <itunes:episode>77</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP077: Liste von Listen</title>
+    <link>https://schluesseltechnologie-podcast.de/077-liste-von-listen</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Als der inoffizielle Wikipedia-Vorlesepodcast sehen wir es als unsere Pflicht, eine Eigenheit dieser anzusprechen: nämlich Listen von Listen, obwohl es uns eigentlich um Listen im Speicher geht.</itunes:summary>
+    <description>Als der inoffizielle Wikipedia-Vorlesepodcast sehen wir es als unsere Pflicht, eine Eigenheit dieser anzusprechen: nämlich Listen von Listen, obwohl es uns eigentlich um Listen im Speicher geht.</description>
+    <content:encoded>&lt;p&gt;Als der inoffizielle Wikipedia-Vorlesepodcast sehen wir es als unsere Pflicht, eine Eigenheit dieser anzusprechen: nämlich Listen von Listen, obwohl es uns eigentlich um Listen im Speicher geht.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezüge:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fundamentale Datenstrukturen siehe STP071: Felder/Listen, &lt;s&gt;assoziative Datenfelder (Maps), Graphen&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;Frage: Wie stellt man solche Datenstrukturen im Speicher dar? Gibt es darauf überhaupt die eine richtige Antwort?&lt;/li&gt;
+&lt;li&gt;algorithmische Komplexität siehe STP029: Liste mit &lt;code&gt;n&lt;/code&gt; Elementen ausdrucken in &lt;code&gt;O(n)&lt;/code&gt;, aber sortieren in &lt;code&gt;O(n log(n))&lt;/code&gt; bis &lt;code&gt;O(n^2)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speicherallokation siehe STP047 und Speicherschutz siehe STP019: Bezug wird gleich klar werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Listen kann man als &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Liste_(Datenstruktur)&amp;amp;oldid=253638160&#34;&gt;verkettete Liste darstellen&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;klassisches Studienobjekt in Erstsemester-Datenstrukturen-Vorlesungen&lt;/li&gt;
+&lt;li&gt;intuitiv verständlich: Parallele zu segmentierten Halsketten&lt;/li&gt;
+&lt;li&gt;wahlweise einfach oder doppelt verkettet&lt;/li&gt;
+&lt;li&gt;effiziente Operationen: Einfügen am Ende, Entfernen am Ende&lt;/li&gt;
+&lt;li&gt;ineffiziente Operationen: Einfügen in der Mitte, Wahlzugriff/Suche&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Template:List_data_structure_comparison&amp;amp;oldid=1251607720&#34;&gt;Vergleichstabelle mit Darstellung der Zeiteffizienz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;alles in allem durchwachsene Performance -&amp;gt; geht es besser?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;alternative Strategie: interne Darstellung der Liste als &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Balancierter_Baum&amp;amp;oldid=243407080&#34;&gt;balancierter Baum&lt;/a&gt; (oder evtl. &amp;quot;ausgeglichener Baum&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;außerdem Link auf &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Self-balancing_binary_search_tree&amp;amp;oldid=1273477858&#34;&gt;die englische Wikipedia&lt;/a&gt;, die nicht nur unbalancierte, sondern auch balancierte Bäume zeigt&lt;/li&gt;
+&lt;li&gt;kann nur sortierte Listen darstellen&lt;/li&gt;
+&lt;li&gt;Idee: Wurzelknoten hat das Median-Element, dann der linke Ast alle kleineren und der rechte Ast alle größeren Elemente&lt;/li&gt;
+&lt;li&gt;im Grunde alle gängigen Operationen mittelschnell: Wahlzugriff/Suche, Einfügen an beliebigen Stellen, Entfernen von beliebigen Stellen (Änderungen erfordern im Allgemeinen ein Austarieren des Baumes)&lt;/li&gt;
+&lt;li&gt;große Variation von Implementationsstrategien für dieses Balancieren -&amp;gt; hier nicht&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;verkettete Listen und balancierte Bäume sehen auf dem Papier ziemlich effizient aus, haben aber in ihrer reinen Form pathologisch schlechtes Speicherverhalten&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hoher Platzverbrauch: z.B. bei einfach bzw. doppelt verketteten Listen muss zu jedem Element müssen noch eine bzw. zwei Speicheradressen abgelegt werden&lt;/li&gt;
+&lt;li&gt;hohe Allokationslast: wenn nicht eine Arena oder ein vergleichbarer Small Object Allocator verwendet wird&lt;/li&gt;
+&lt;li&gt;schlechte Lokalität: beim Durchlaufen nachfolgender Elemente werden im schlimmsten Fall ständig unterschiedliche Speicherseiten getroffen, was fortlaufend Seitenfehler verursachen kann&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;in der Praxis mit Abstand dominante Implementationsstrategie: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Dynamic_array&amp;amp;oldid=1268522792&#34;&gt;dynamische Felder&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beobachtung: Einfügen oder Löschen an beliebigen Stellen wird kaum gemacht; man hängt eher mehrmals ans Ende an und sortiert dann, falls nötig&lt;/li&gt;
+&lt;li&gt;Idee: Optimieren auf Einfügen am Ende bei möglichst optimalen Speicherverhalten&lt;/li&gt;
+&lt;li&gt;Umsetzung: einfaches Feld (ein fortlaufendes Stück Speicher, in dem mehrere Elemente hintereinander abgelegt werden) mit aktuellem Füllstand N und Kapazität K&lt;/li&gt;
+&lt;li&gt;Einfügen ans Ende: normalerweise einfach N erhöhen; wenn N nicht in K passt, größeren Speicher reservieren, alles hinüberkopieren und die alten Speicherallokation verwerfen&lt;/li&gt;
+&lt;li&gt;Löschen vom Ende: einfach N reduzieren, keine Deallokation erforderlich&lt;/li&gt;
+&lt;li&gt;Einfügen am Anfang oder in die Mitte: alle Elemente dahinter nach hinten verschieben&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nahezu optimales Speicherverhalten von dynamischen Feldern begründet ihre Dominanz&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Platzverbrauch: neben der Speichergröße der Elemente selber nur zwei Zahlen (N und K)&lt;/li&gt;
+&lt;li&gt;Allokationslast: Vergrößern geht für gewöhnlich in exponentiellen Schritten und wird damit für wachsende Listen immer seltener nötig&lt;/li&gt;
+&lt;li&gt;Lokalität: lineare Suche durch die Liste geht linear durch den Speicher hindurch -&amp;gt; folgende Speicherseiten können vom Prozessor oft schon auf Verdacht vorgeladen werden&lt;/li&gt;
+&lt;li&gt;trotzdem: die anderen Datenstrukturen haben auch ihre Berechtigung (z.B. modifizierte balancierte Bäume als Basis für Datenbank-Indizes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Xyrill will auch noch auf analoge Weise über Maps und Graphen reden -&amp;gt; weiter in STP079&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Post aus dem Land der Dänen"  />
+          <chapter start="00:03:52" title="Intro und tote Staatsoberhäupter"  />
+          <chapter start="00:06:34" title="Rückbezüge zu STP071"  />
+          <chapter start="00:15:11" title="Verkettete Listen"  />
+          <chapter start="00:26:23" title="Balancierte Bäume"  />
+          <chapter start="00:37:41" title="Die Probleme von Ketten und Bäumen"  />
+          <chapter start="00:42:11" title="Dynamische Felder"  />
+          <chapter start="00:54:20" title="Die Dominanz dynamischer Felder"  />
+      </chapters>
+      <enclosure length="55147825" url="https://dl.xyrillian.de/noises/stp-077-liste-von-listen.mp3" type="audio/mpeg"/>
+      <enclosure length="33721785" url="https://dl.xyrillian.de/noises/stp-077-liste-von-listen.ogg" type="audio/ogg"/>
+      <enclosure length="20718791" url="https://dl.xyrillian.de/noises/stp-077-liste-von-listen.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/077-liste-von-listen/</guid>
+    <pubDate>Thu, 21 Aug 2025 19:40:00 GMT</pubDate>
+    <itunes:duration>57:06</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP076: Debugging</itunes:title>
     <itunes:episode>76</itunes:episode>
     <itunes:season>1</itunes:season>
@@ -34,9 +127,9 @@
     <link>https://schluesseltechnologie-podcast.de/076-debugging</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
-    <itunes:summary>Die Zeiten in denen wie von Grace Hopper &amp;quot;actual bugs&amp;quot; in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.</itunes:summary>
-    <description>Die Zeiten in denen wie von Grace Hopper &amp;quot;actual bugs&amp;quot; in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.</description>
-    <content:encoded>&lt;p&gt;Die Zeiten in denen wie von Grace Hopper &amp;quot;actual bugs&amp;quot; in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Debuggen&amp;amp;oldid=254167673&#34;&gt;Wikipedia definiert den Begriff&lt;/a&gt;:&lt;/p&gt;
+    <itunes:summary>Die Zeiten, in denen wie von Grace Hopper &amp;quot;actual bugs&amp;quot; in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.</itunes:summary>
+    <description>Die Zeiten, in denen wie von Grace Hopper &amp;quot;actual bugs&amp;quot; in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.</description>
+    <content:encoded>&lt;p&gt;Die Zeiten, in denen wie von Grace Hopper &amp;quot;actual bugs&amp;quot; in Computern gefunden werden, sind wohl weitestgehend vorbei. Trotzdem ist Debugging bis heute eine Sache, um die man in der IT nicht herumkommt.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Debuggen&amp;amp;oldid=254167673&#34;&gt;Wikipedia definiert den Begriff&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Als Debuggen (dt. Entwanzen) oder Fehlerbehebung bezeichnet man in der Informatik den Vorgang, in einem Computerprogramm Fehler oder unerwartetes Verhalten zu diagnostizieren und zu beheben. Die Suche von Programmfehlern (sogenannten Bugs) ist eine der wichtigsten und anspruchsvollsten Aufgaben der Softwareentwicklung und nimmt einen großen Teil der Entwicklungszeit in Anspruch. Ein guter Programmierer muss daher auch das Debuggen beherrschen und umgekehrt: Nicht jeder gute Programmierer ist auch ein guter Debugger.&lt;/p&gt;
 &lt;/blockquote&gt;

@@ -4157,3 +4157,43 @@ audio_metadata:
     - start_secs: 3022
       end_secs: 3516.312
       title: Werkzeuge zum Zurückverfolgen
+  stp:077-liste-von-listen:
+    length_secs: 3426
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-077-liste-von-listen.mp3
+      size_bytes: 55147825
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-077-liste-von-listen.ogg
+      size_bytes: 33721785
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-077-liste-von-listen.opus
+      size_bytes: 20718791
+    chapters:
+    - start_secs: 0
+      end_secs: 232
+      title: Post aus dem Land der Dänen
+    - start_secs: 232
+      end_secs: 394
+      title: Intro und tote Staatsoberhäupter
+    - start_secs: 394
+      end_secs: 911
+      title: Rückbezüge zu STP071
+    - start_secs: 911
+      end_secs: 1583
+      title: Verkettete Listen
+    - start_secs: 1583
+      end_secs: 2261
+      title: Balancierte Bäume
+    - start_secs: 2261
+      end_secs: 2531
+      title: Die Probleme von Ketten und Bäumen
+    - start_secs: 2531
+      end_secs: 3260
+      title: Dynamische Felder
+    - start_secs: 3260
+      end_secs: 3426.017
+      title: Die Dominanz dynamischer Felder
