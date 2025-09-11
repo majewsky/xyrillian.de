@@ -1381,3 +1381,29 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 77
+    slug: 077-liste-von-listen
+    title: Liste von Listen
+    pubtime: 1755805200 # 2025-08-21
+
+    markdown:
+      description: |
+        Als der inoffizielle Wikipedia-Vorlesepodcast sehen wir es als unsere Pflicht, eine Eigenheit dieser anzusprechen: nämlich Listen von Listen, obwohl es uns eigentlich um Listen im Speicher geht.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
+
+  - show: stp
+    episode: 78
+    slug: 078-common-weakness-enumeration-part-1
+    title: Common Weakness Enumeration (Teil 1)
+    pubtime: 1757627940 # 2025-09-11
+
+    markdown:
+      description: |
+        Nachdem wir kurz über Alex' Feedback gesprochen haben, soll es heute mal wieder um Sicherheit gehen; diesmal speziell darum, was Personen die Software schreiben beachten sollten, um die bekantesten Fallstricke sicher zu umgehen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

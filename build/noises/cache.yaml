@@ -4197,3 +4197,55 @@ audio_metadata:
     - start_secs: 3260
       end_secs: 3426.017
       title: Die Dominanz dynamischer Felder
+  stp:078-common-weakness-enumeration-part-1:
+    length_secs: 3899
+    downloads:
+    - format: MP3
+      mime_type: audio/mpeg
+      filename: stp-078-common-weakness-enumeration-part-1.mp3
+      size_bytes: 62718320
+    - format: Ogg Vorbis
+      mime_type: audio/ogg
+      filename: stp-078-common-weakness-enumeration-part-1.ogg
+      size_bytes: 39013727
+    - format: Opus
+      mime_type: audio/opus
+      filename: stp-078-common-weakness-enumeration-part-1.opus
+      size_bytes: 23659222
+    chapters:
+    - start_secs: 0
+      end_secs: 269
+      title: Feedback von Alex
+    - start_secs: 269
+      end_secs: 374
+      title: Intro und Prolog
+    - start_secs: 374
+      end_secs: 707
+      title: CVE-Datenbank
+    - start_secs: 707
+      end_secs: 1413
+      title: 'CWE-79: Cross-Site Scripting'
+    - start_secs: 1413
+      end_secs: 1616
+      title: 'CWE-78: OS Command Injection'
+    - start_secs: 1616
+      end_secs: 1730
+      title: 'CWE-77: Command Injection'
+    - start_secs: 1730
+      end_secs: 1886
+      title: 'CWE-20: Improper Input Validation'
+    - start_secs: 1886
+      end_secs: 2378
+      title: 'CWE-787, CWE-125 und CWE-119: Buffer Overflow'
+    - start_secs: 2378
+      end_secs: 2506
+      title: 'CWE-416: Use after Free'
+    - start_secs: 2506
+      end_secs: 2979
+      title: 'CWE-89: SQL-Injektion'
+    - start_secs: 2979
+      end_secs: 3512
+      title: 'CWE-352: Cross-Site Request Forgery'
+    - start_secs: 3512
+      end_secs: 3899.148
+      title: 'CWE-22: Path Traversal'
