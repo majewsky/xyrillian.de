@@ -33,7 +33,6 @@ import (
 	"time"
 
 	"github.com/golang-commonmark/markdown"
-	yaml "gopkg.in/yaml.v2"
 
 	. "github.com/majewsky/xyrillian.de/build/util" // nolint:staticcheck
 )
@@ -47,12 +46,12 @@ func main() {
 	MustSucceed(json.Unmarshal(buf, &cache))
 
 	var data struct {
-		FeaturedShows    []string         `yaml:"featuredShows"`
-		Shows            map[string]*show `yaml:"shows"`
-		Files            []*file          `yaml:"files"`
-		CurrentShowID    string           `yaml:"-"`
-		CurrentFileIndex int              `yaml:"-"`
-		XMLIntro         template.HTML    `yaml:"-"`
+		FeaturedShows    []string         `json:"featuredShows"`
+		Shows            map[string]*show `json:"shows"`
+		Files            []*file          `json:"files"`
+		CurrentShowID    string           `json:"-"`
+		CurrentFileIndex int              `json:"-"`
+		XMLIntro         template.HTML    `json:"-"`
 	}
 	//this needs to be interpolated by the template, otherwise html/template
 	//breaks the <? opener
@@ -60,7 +59,7 @@ func main() {
 
 	//load input data
 	buf = MustReturn(os.ReadFile("build/noises/data.yaml"))
-	MustSucceed(yaml.Unmarshal(buf, &data))
+	MustSucceed(UnmarshalYAMLviaJSON(buf, &data))
 	for showID, show := range data.Shows {
 		show.ComputeCopyright(showID, data.Files)
 		show.CompileMarkdown()
@@ -126,75 +125,75 @@ func main() {
 // data structures
 
 type show struct {
-	Title           string        `yaml:"title"`
-	Subtitle        string        `yaml:"subtitle"`
-	Description     string        `yaml:"description"`
-	DescriptionHTML template.HTML `yaml:"-"`
-	ExtraAuthor     string        `yaml:"extraAuthor"`
-	Category        string        `yaml:"category"` //iTunes podcast category, e.g. "Technology"
-	FeedPath        string        `yaml:"feed"`
-	URL             string        `yaml:"href"`
-	ExternalURL     string        `yaml:"external"`
+	Title           string        `json:"title"`
+	Subtitle        string        `json:"subtitle"`
+	Description     string        `json:"description"`
+	DescriptionHTML template.HTML `json:"-"`
+	ExtraAuthor     string        `json:"extraAuthor"`
+	Category        string        `json:"category"` //iTunes podcast category, e.g. "Technology"
+	FeedPath        string        `json:"feed"`
+	URL             string        `json:"href"`
+	ExternalURL     string        `json:"external"`
 
 	FeedConfig struct {
-		EpisodeNumberInTitle bool   `yaml:"episodeNumberInTitle"`
-		HumanReadableShowID  string `yaml:"humanReadableShowID"`
-	} `yaml:"feedConfig"`
+		EpisodeNumberInTitle bool   `json:"episodeNumberInTitle"`
+		HumanReadableShowID  string `json:"humanReadableShowID"`
+	} `json:"feedConfig"`
 
 	Covers struct {
-		ForFeed string `yaml:"feed"`
-		ForHTML string `yaml:"html"`
-	} `yaml:"covers"`
+		ForFeed string `json:"feed"`
+		ForHTML string `json:"html"`
+	} `json:"covers"`
 
 	Subscriptions []struct {
-		Name string `yaml:"name"`
-		URL  string `yaml:"href"`
+		Name string `json:"name"`
+		URL  string `json:"href"`
 	}
 
 	Copyright struct {
 		MinYear int
 		MaxYear int
-	} `yaml:"-"`
+	} `json:"-"`
 }
 
 type file struct {
-	ShowID       string `yaml:"show"`
-	Title        string `yaml:"title"`
-	Subtitle     string `yaml:"subtitle"`
-	Episode      *uint  `yaml:"episode"`
-	EpisodeAsInt uint   `yaml:"-"`
-	Slug         string `yaml:"slug"`
+	ShowID       string `json:"show"`
+	Title        string `json:"title"`
+	Subtitle     string `json:"subtitle"`
+	Episode      *uint  `json:"episode"`
+	EpisodeAsInt uint   `json:"-"`
+	Slug         string `json:"slug"`
 
-	PublicationTimeUnix uint64 `yaml:"pubtime"`
-	LegacyGUID          bool   `yaml:"legacyGUID"`
+	PublicationTimeUnix uint64 `json:"pubtime"`
+	LegacyGUID          bool   `json:"legacyGUID"`
 
 	Markdown struct {
-		Description string   `yaml:"description"`
-		Notes       string   `yaml:"notes"`
-		Sources     []string `yaml:"sources"`
-		ShowNotes   bool     `yaml:"shownotes"`
-	} `yaml:"markdown"`
+		Description string   `json:"description"`
+		Notes       string   `json:"notes"`
+		Sources     []string `json:"sources"`
+		ShowNotes   bool     `json:"shownotes"`
+	} `json:"markdown"`
 
 	HTML struct {
 		Description template.HTML
 		Notes       template.HTML
 		Sources     []template.HTML
 		ShowNotes   template.HTML
-	} `yaml:"-"`
+	} `json:"-"`
 
 	RSS struct {
 		Description string
 		ShowNotes   string
-	} `yaml:"-"`
+	} `json:"-"`
 
 	Music []struct {
-		Artist  string `yaml:"artist"`
-		Title   string `yaml:"title"`
-		URL     string `yaml:"href"`
-		Variant string `yaml:"variant"` //optional
-	} `yaml:"music"`
+		Artist  string `json:"artist"`
+		Title   string `json:"title"`
+		URL     string `json:"href"`
+		Variant string `json:"variant"` //optional
+	} `json:"music"`
 
-	AudioMetadata audioMetadata `yaml:"-"`
+	AudioMetadata audioMetadata `json:"-"`
 }
 
 type download struct {
