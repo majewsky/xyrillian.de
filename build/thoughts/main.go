@@ -21,11 +21,13 @@ package main
 import (
 	"fmt"
 	"html/template"
-	"io/ioutil"
 	"os"
+	"slices"
 	"sort"
 	"strings"
 	"time"
+
+	. "github.com/majewsky/xyrillian.de/build/util" // nolint:staticcheck
 )
 
 func main() {
@@ -59,7 +61,7 @@ func main() {
 	}
 
 	//index.html and sitemap.html show posts in reverse order
-	reverse(posts)
+	slices.Reverse(posts)
 	RenderIndex(posts)
 	RenderAll(posts)
 	RenderRSS(posts)
@@ -150,7 +152,7 @@ func RenderRSS(posts []*Post) {
 	for _, post := range posts {
 		addLine(`  <item>`)
 		addLine(`    <title>%s</title>`, post.Title())
-		addLine(`    <description>%s</description>`, escapeHTML(post.ShortenedHTML()))
+		addLine(`    <description>%s</description>`, template.HTMLEscapeString(post.ShortenedHTML()))
 		addLine(`    <link>%s/thoughts/posts/%s.html</link>`, TargetURL, post.Slug)
 		addLine(`    <guid>%s/id/thoughts/%s</guid>`, TargetURL, post.Slug)
 		addLine(`    <pubDate>%s</pubDate>`, post.CreationTime().Format(time.RFC1123Z))
@@ -158,38 +160,25 @@ func RenderRSS(posts []*Post) {
 	}
 	addLine("</channel></rss>\n")
 
-	FailOnErr(ioutil.WriteFile("thoughts/rss.xml", []byte(strings.Join(lines, "\n")), 0644))
-}
-
-func escapeHTML(s string) string {
-	s = strings.ReplaceAll(s, "&", "&amp;")
-	s = strings.ReplaceAll(s, "'", "&#39;")
-	s = strings.ReplaceAll(s, `"`, "&quot;")
-	s = strings.ReplaceAll(s, "<", "&lt;")
-	return strings.ReplaceAll(s, ">", "&gt;")
+	MustSucceed(os.WriteFile("thoughts/rss.xml", []byte(strings.Join(lines, "\n")), 0644))
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // utilities
 
-// FailOnErr complains and aborts if `err != nil`.
-func FailOnErr(err error) {
-	if err != nil {
-		os.Stderr.Write([]byte(err.Error() + "\n"))
-		os.Exit(1)
-	}
-}
-
-func reverse(list []*Post) {
-	max := len(list) - 1
-	cnt := len(list) / 2
-	for idx := 0; idx < cnt; idx++ {
-		list[idx], list[max-idx] = list[max-idx], list[idx]
-	}
-}
+const (
+	//SourceURL is a constant.
+	SourceURL = "https://github.com/majewsky/xyrillian.de"
+	//TargetURL is a constant.
+	TargetURL = "https://xyrillian.de"
+	//PageName is a constant.
+	PageName = "Xyrillian Thoughts"
+	//PageDescription is a constant.
+	PageDescription = "Personal blog of Stefan Majewsky"
+)
 
 func writeFile(path, title, contents string, metadata map[string]string) {
-	str := Config.TemplateHTML
+	str := string(MustReturn(os.ReadFile("build/thoughts/template.html")))
 
 	slashCount := strings.Count(path, "/")
 	dotdots := make([]string, 0, slashCount)
@@ -225,5 +214,5 @@ func writeFile(path, title, contents string, metadata map[string]string) {
 	}
 	str = strings.ReplaceAll(str, "%META%", metadataStr)
 
-	FailOnErr(ioutil.WriteFile(path, []byte(str), 0644))
+	MustSucceed(os.WriteFile(path, []byte(str), 0644))
 }

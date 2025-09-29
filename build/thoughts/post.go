@@ -21,7 +21,6 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"os/exec"
 	"regexp"
@@ -30,6 +29,8 @@ import (
 	"time"
 
 	"github.com/golang-commonmark/markdown"
+
+	. "github.com/majewsky/xyrillian.de/build/util" // nolint:staticcheck
 )
 
 // Post is a blog post.
@@ -49,13 +50,10 @@ func (p Posts) Less(i, j int) bool { return p[i].CreationTimestamp < p[j].Creati
 func (p Posts) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
 
 func allPosts() Posts {
-	dir, err := os.Open("build/thoughts/posts")
-	FailOnErr(err)
-	fis, err := dir.Readdir(-1)
-	FailOnErr(err)
+	dir := MustReturn(os.Open("build/thoughts/posts"))
 
 	var posts Posts
-	for _, fi := range fis {
+	for _, fi := range MustReturn(dir.Readdir(-1)) {
 		if fi.Mode().IsRegular() && strings.HasSuffix(fi.Name(), ".md") {
 			posts = append(posts, NewPost(fi.Name()))
 		}
@@ -76,7 +74,7 @@ func NewPost(fileName string) *Post {
 	var buf bytes.Buffer
 	cmd.Stdout = &buf
 	cmd.Stderr = os.Stderr
-	FailOnErr(cmd.Run())
+	MustSucceed(cmd.Run())
 
 	var (
 		creationTimestamp   uint64
@@ -92,11 +90,8 @@ func NewPost(fileName string) *Post {
 		creationTimestamp = timestamp
 	}
 
-	//read contents
-	markdownBytes, err := ioutil.ReadFile(filePath)
-	FailOnErr(err)
-
 	//generate HTML
+	markdownBytes := MustReturn(os.ReadFile(filePath))
 	return &Post{
 		CreationTimestamp:   creationTimestamp,
 		LastEditedTimestamp: lastEditedTimestamp,

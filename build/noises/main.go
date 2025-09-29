@@ -19,6 +19,7 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"html/template"
@@ -33,24 +34,17 @@ import (
 
 	"github.com/golang-commonmark/markdown"
 	yaml "gopkg.in/yaml.v2"
+
+	. "github.com/majewsky/xyrillian.de/build/util" // nolint:staticcheck
 )
 
 func main() {
-	_, err := os.Stat("./dl/")
-	if err != nil {
-		log.Fatal(err.Error())
-	}
+	_ = MustReturn(os.Stat("./dl/"))
 
 	//load metadata cache
-	cacheBytes, err := os.ReadFile("build/noises/cache.json")
-	if err != nil {
-		log.Fatal(err.Error())
-	}
 	var cache audioMetadataCache
-	err = json.Unmarshal(cacheBytes, &cache)
-	if err != nil {
-		log.Fatal(err.Error())
-	}
+	buf := MustReturn(os.ReadFile("build/noises/cache.json"))
+	MustSucceed(json.Unmarshal(buf, &cache))
 
 	var data struct {
 		FeaturedShows    []string         `yaml:"featuredShows"`
@@ -65,14 +59,8 @@ func main() {
 	data.XMLIntro = `<?xml version="1.0" encoding="UTF-8"?>`
 
 	//load input data
-	inputBytes, err := os.ReadFile("build/noises/data.yaml")
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	err = yaml.Unmarshal(inputBytes, &data)
-	if err != nil {
-		log.Fatal(err.Error())
-	}
+	buf = MustReturn(os.ReadFile("build/noises/data.yaml"))
+	MustSucceed(yaml.Unmarshal(buf, &data))
 	for showID, show := range data.Shows {
 		show.ComputeCopyright(showID, data.Files)
 		show.CompileMarkdown()
@@ -92,126 +80,44 @@ func main() {
 			cache.AudioMetadata[f.CacheKey()] = f.AudioMetadata
 		}
 	}
-	cacheBytes, err = json.MarshalIndent(cache, "", "  ")
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	err = os.WriteFile("build/noises/cache.json", append(cacheBytes, '\n'), 0666)
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-
-	templateFuncs := template.FuncMap{
-		"floatToUint":            floatToUint,
-		"reverseFiles":           reverseFiles,
-		"readableFileSize":       readableFileSize,
-		"readableLengthSeconds":  readableLengthSeconds,
-		"startSecondsToHHMMSS":   startSecondsToHHMMSS,
-		"unixTimeToRFC1123":      unixTimeToRFC1123,
-		"unixTimeToReadableDate": unixTimeToReadableDate,
-	}
+	buf = MustReturn(json.MarshalIndent(cache, "", "  "))
+	MustSucceed(os.WriteFile("build/noises/cache.json", append(buf, '\n'), 0666))
 
 	//render noises/index.html
-	tmplBytes, err := os.ReadFile("build/noises/index.html.tpl")
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	tmpl, err := template.New("noises/index.html").Funcs(templateFuncs).Parse(string(tmplBytes))
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	out, err := os.Create("noises/index.html")
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	defer out.Close()
-	err = tmpl.Execute(out, data)
-	if err != nil {
-		log.Fatal(err.Error())
-	}
+	render := buildTemplateRenderer("build/noises/index.html.tpl")
+	render("noises/index.html", data)
 
 	//render pages for individual shows
-	tmplBytes, err = os.ReadFile("build/noises/show.html.tpl")
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	tmpl, err = template.New("noises/show.html").Funcs(templateFuncs).Parse(string(tmplBytes))
-	if err != nil {
-		log.Fatal(err.Error())
-	}
+	render = buildTemplateRenderer("build/noises/show.html.tpl")
 	for showID, show := range data.Shows {
 		if show.ExternalURL != "" {
 			continue
 		}
 		dirPath := filepath.Join("noises", showID)
-		err = os.MkdirAll(dirPath, 0777)
-		if err != nil {
-			log.Fatal(err.Error())
-		}
-		out, err := os.Create(dirPath + "/index.html")
-		if err != nil {
-			log.Fatal(err.Error())
-		}
-		defer out.Close()
+		MustSucceed(os.MkdirAll(dirPath, 0777))
 		data.CurrentShowID = showID
-		err = tmpl.Execute(out, data)
-		if err != nil {
-			log.Fatal(err.Error())
-		}
+		render(dirPath+"/index.html", data)
 	}
 
 	//render pages for individual episodes
-	tmplBytes, err = os.ReadFile("build/noises/episode.html.tpl")
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	tmpl, err = template.New("noises/episode.html").Funcs(templateFuncs).Parse(string(tmplBytes))
-	if err != nil {
-		log.Fatal(err.Error())
-	}
+	render = buildTemplateRenderer("build/noises/episode.html.tpl")
 	for idx, file := range data.Files {
 		show := data.Shows[file.ShowID]
 		if show.ExternalURL != "" || file.Episode == nil {
 			continue
 		}
 		dirPath := filepath.Join("noises", file.ShowID, file.Slug)
-		err = os.MkdirAll(dirPath, 0777)
-		if err != nil {
-			log.Fatal(err.Error())
-		}
-		out, err := os.Create(dirPath + "/index.html")
-		if err != nil {
-			log.Fatal(err.Error())
-		}
-		defer out.Close()
+		MustSucceed(os.MkdirAll(dirPath, 0777))
 		data.CurrentFileIndex = idx
-		err = tmpl.Execute(out, data)
-		if err != nil {
-			log.Fatal(err.Error())
-		}
+		render(dirPath+"/index.html", data)
 	}
 
 	//render RSS feeds
-	tmplBytes, err = os.ReadFile("build/noises/rss.xml.tpl")
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	tmpl, err = template.New("noises/rss.xml").Funcs(templateFuncs).Parse(string(tmplBytes))
-	if err != nil {
-		log.Fatal(err.Error())
-	}
+	render = buildTemplateRenderer("build/noises/rss.xml.tpl")
 	for showID, show := range data.Shows {
 		if show.FeedPath != "" {
 			data.CurrentShowID = showID
-			out, err := os.Create(show.FeedPath)
-			if err != nil {
-				log.Fatal(err.Error())
-			}
-			defer out.Close()
-			err = tmpl.Execute(out, data)
-			if err != nil {
-				log.Fatal(err.Error())
-			}
+			render(show.FeedPath, data)
 		}
 	}
 }
@@ -382,11 +288,8 @@ func (f *file) CompileMarkdown() {
 	}
 
 	if f.Markdown.ShowNotes {
-		buf, err := os.ReadFile(fmt.Sprintf("build/noises/shownotes/%s/%s.md", f.ShowID, f.Slug))
-		if err != nil {
-			log.Fatal(err.Error())
-		}
-		f.HTML.ShowNotes = compileMarkdown(string(buf))
+		showNotesPath := fmt.Sprintf("build/noises/shownotes/%s/%s.md", f.ShowID, f.Slug)
+		f.HTML.ShowNotes = compileMarkdown(string(MustReturn(os.ReadFile(showNotesPath))))
 		f.RSS.ShowNotes += `<h2>Shownotes</h2>` + string(f.HTML.ShowNotes)
 	}
 }
@@ -442,10 +345,7 @@ func (f *file) GetAudioMetadata(cache audioMetadataCache) (result audioMetadata)
 	//ffprobe only reads chapter URLs reliably from these)
 	cmd := exec.Command("ffprobe", "-v", "quiet", "-of", "json", "-show_chapters", "-show_format", "-show_streams", firstOggPath)
 	cmd.Stderr = os.Stderr
-	output, err := cmd.Output()
-	if err != nil {
-		log.Fatal(err.Error())
-	}
+	output := MustReturn(cmd.Output())
 
 	type ffprobeStream struct {
 		CodecType       string            `json:"codec_type"`
@@ -462,10 +362,7 @@ func (f *file) GetAudioMetadata(cache audioMetadataCache) (result audioMetadata)
 			} `json:"tags"`
 		} `json:"chapters"`
 	}
-	err = json.Unmarshal(output, &data)
-	if err != nil {
-		log.Fatal(err.Error())
-	}
+	MustSucceed(json.Unmarshal(output, &data))
 
 	var audioStream ffprobeStream
 	for _, stream := range data.Streams {
@@ -492,15 +389,35 @@ func (f *file) GetAudioMetadata(cache audioMetadataCache) (result audioMetadata)
 }
 
 func mustParseFloat(in string) float64 {
-	val, err := strconv.ParseFloat(in, 64)
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	return val
+	return MustReturn(strconv.ParseFloat(in, 64))
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // template helper functions
+
+func buildTemplateRenderer(path string) func(path string, data any) {
+	buf := MustReturn(os.ReadFile(path))
+	name := strings.TrimPrefix(path, ".tpl")
+	tmpl := MustReturn(template.New(name).Funcs(templateFuncs).Parse(string(buf)))
+
+	// for separation of concerns, this only returns a closure that renders the
+	// template with the given data and writes it to the given path
+	return func(path string, data any) {
+		var buf bytes.Buffer
+		MustSucceed(tmpl.Execute(&buf, data))
+		MustSucceed(os.WriteFile(path, buf.Bytes(), 0666))
+	}
+}
+
+var templateFuncs = template.FuncMap{
+	"floatToUint":            floatToUint,
+	"reverseFiles":           reverseFiles,
+	"readableFileSize":       readableFileSize,
+	"readableLengthSeconds":  readableLengthSeconds,
+	"startSecondsToHHMMSS":   startSecondsToHHMMSS,
+	"unixTimeToRFC1123":      unixTimeToRFC1123,
+	"unixTimeToReadableDate": unixTimeToReadableDate,
+}
 
 func floatToUint(x float64) uint {
 	return uint(x)

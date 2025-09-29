@@ -1,6 +1,6 @@
 module github.com/majewsky/xyrillian.de
 
-go 1.16
+go 1.18
 
 require (
 	github.com/golang-commonmark/html v0.0.0-20180910111043-7d7c804e1d46 // indirect
