@@ -1,7 +1,6 @@
 - [JSON](https://de.wikipedia.org/w/index.php?title=JavaScript_Object_Notation&oldid=249644714): ein populäres Format für die Serialisierung von Daten
     - [Serialisierung](https://de.wikipedia.org/w/index.php?title=Serialisierung&oldid=241468956): "Abbildung von strukturierten Daten auf eine sequenzielle Darstellungsform", insb. auf Bytefolgen wie in einer Datei oder einer Datenübertragung im Netzwerk
     - JSON ist bekannt dafür, nicht erfunden, sondern "entdeckt" worden zu sein
-        - https://www.corecursive.com/json-vs-xml-douglas-crockford/
     - außerdem relativ minimal: nur sechs verschiedene Grundstrukturen
     - aber trotzdem relativ universell: damit unser Ausgangspunkt für die Kartografierung der Welt der Datentypen
     - außerdem Gegenüberstellung mit dem Typvorrat von Rust (einer zeitgenössischen Programmiersprache mit einem detaillierten Typsystem)

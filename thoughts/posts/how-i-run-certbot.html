@@ -24,16 +24,16 @@ deviates quite a bit from the standard, I figured I should take a few minutes to
     </div>
   </nav>
   <main><h1>How I run Certbot (as non-root and automated)</h1>
-<p>I have previously noted that I get all my TLS certificates from <a href="https://letsencrypt.org">Let’s Encrypt</a>, but since my usage of the client
+<p>I have previously noted that I get all my TLS certificates from <a href="https://letsencrypt.org">Let's Encrypt</a>, but since my usage of the client
 deviates quite a bit from the standard, I figured I should take a few minutes to describe my setup.</p>
 <h2>Prelude: Configuration management</h2>
 <p>My system configuration is formatted as holograms that can be compiled with <a href="https://github.com/holocm/holo-build">holo-build</a> and applied with
-<a href="https://github.com/holocm/holo">Holo</a>. This article is about my <code>hologram-letsencrypt</code>, so I’ll be linking to <a href="https://github.com/majewsky/system-configuration/blob/master/hologram-letsencrypt.pkg.toml">its source code</a> a few times. If
-you don’t know about Holo, don’t worry; the source code should be clear enough as to instruct you how to port this setup
+<a href="https://github.com/holocm/holo">Holo</a>. This article is about my <code>hologram-letsencrypt</code>, so I'll be linking to <a href="https://github.com/majewsky/system-configuration/blob/master/hologram-letsencrypt.pkg.toml">its source code</a> a few times. If
+you don't know about Holo, don't worry; the source code should be clear enough as to instruct you how to port this setup
 to other configuration management schemes.</p>
 <h2>Choosing the challenge method</h2>
 <p>In the ACME protocol, you need to prove your control over the domain name for which you are requesting a certificate.
-The two most common methods are the <em>DNS challenge</em> (where you need to place a certain TXT record in the domain’s DNS)
+The two most common methods are the <em>DNS challenge</em> (where you need to place a certain TXT record in the domain's DNS)
 and the <em>webroot challenge</em> (where you need to configure your webserver to serve a certain file at a certain defined URL
 on that domain). Since I want a method that works regardless of DNS providers (I have a lot of these, some without
 automatable DNS zone API), I went with the webroot challenge.</p>
@@ -44,22 +44,22 @@ webroot challenge. I chose nginx, which is my go-to choice for HTTP servers, and
 the expected file), and</li>
 <li>upgrade all other requests to HTTPS via status code 302 and the <code>Location</code> header.</li>
 </ul>
-<p>The latter implies that all my web domains exclusively use HTTPS, which is the case on all my servers since I don’t care
+<p>The latter implies that all my web domains exclusively use HTTPS, which is the case on all my servers since I don't care
 about ad servers or other garbage.</p>
 <p>The webserver is activated as a systemd unit called <code>nginx-for-letsencrypt.service</code>. When there are actual websites on
 that server, another nginx will be listening on port 443 to serve these. This separation is useful to break a circular
 dependency: The nginx that listens on port 443 needs the TLS certificates to start, but Certbot can only run if nginx is
 running on port 80. If both nginx were the same, manual intervention would be required to resolve this dependency cycle
-when setting up a new server or a new website. It’s also nice because the nginx on port 443 can be left out entirely
+when setting up a new server or a new website. It's also nice because the nginx on port 443 can be left out entirely
 when not needed, i. e. when the server needs TLS certificates for services that are not HTTPS
 (e. g. XMPP or mail).</p>
-<p><strong>Side-note:</strong> This is also the reason why I haven’t looked at webservers with integrated Let’s Encrypt support, such as
+<p><strong>Side-note:</strong> This is also the reason why I haven't looked at webservers with integrated Let's Encrypt support, such as
 <a href="https://caddyserver.com/">Caddy</a>. If you only serve HTTPS, then Caddy is probably a good idea, but my method allows me to issue certificates
 for all TLS-enabled protocols using the same procedure.</p>
 <h2>Certbot</h2>
 <p>I started to use Certbot back in 2015 when it was still called <code>letsencrypt</code>. There were no other mature ACME clients at
 this point, so I played it safe by going with the reference implementation. The big drawback of Certbot is that it
-supposedly only runs with root privileges. I found this to be very untrue. I’m running it under user/group
+supposedly only runs with root privileges. I found this to be very untrue. I'm running it under user/group
 <code>letsencrypt</code>. All that it takes is to <code>chown letsencrypt:letsencrypt</code> <a href="https://github.com/majewsky/system-configuration/blob/1ca1026a02a1a69324879af23ff379532c6eb1bf/hologram-letsencrypt.pkg.toml#L80-L120">a few things</a>:</p>
 <ul>
 <li><code>/etc/letsencrypt</code> (where Certbot puts the certificates, private keys, etc.)</li>
@@ -72,14 +72,14 @@ supposedly only runs with root privileges. I found this to be very untrue. I’m
   certbot certonly --quiet --non-interactive --agree-tos \
   --keep-until-expiring --webroot -w /srv/letsencrypt/ -d &quot;$domain&quot;
 </code></pre>
-<p>That’s a mouthful, so let’s take this apart:</p>
+<p>That's a mouthful, so let's take this apart:</p>
 <ul>
 <li><code>sudo -u letsencrypt -g letsencrypt certbot</code>: Run Certbot under that user and group instead of as root.</li>
 <li><code>certonly</code>: Do not touch the webserver configuration, just provision the certificate.</li>
-<li><code>--quiet --non-interactive</code>: Be less chatty and don’t ask questions.</li>
+<li><code>--quiet --non-interactive</code>: Be less chatty and don't ask questions.</li>
 <li><code>--agree-tos</code>: Without this switch, the first invocation will fail since one needs to agree to the ToS, but
 <code>--non-interactive</code> forbids the client to ask for agreement.</li>
-<li><code>--keep-until-expiring</code>: This switch is generally useful when you’re invoking Certbot from a cronjob. It means that
+<li><code>--keep-until-expiring</code>: This switch is generally useful when you're invoking Certbot from a cronjob. It means that
 Certbot will do nothing when there is already a valid certificate for the given domain, unless it will expire
 soon-ish.</li>
 <li><code>--webroot -w /srv/letsencrypt/</code>: Use the webroot challenge method, where the document root is <code>/srv/letsencrypt</code>.

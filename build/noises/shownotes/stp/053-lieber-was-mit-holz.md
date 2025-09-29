@@ -55,5 +55,5 @@
     - …
 
 - Rausschmeißer: In eigener Sache
-    - Postkarten eingetroffen aus Berlin, Rheinland-Pfalz, dem Kanton Zürich und vom Kongress -- Bitte weiter so. :)
+    - Postkarten eingetroffen aus Berlin, Rheinland-Pfalz, dem Kanton Zürich und vom Kongress &ndash; Bitte weiter so. :)
     - Wir nehmen auch gute Bewertungen bei Apple Podcasts etc.

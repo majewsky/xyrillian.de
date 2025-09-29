@@ -134,7 +134,7 @@
 <li>nächste Unterroutine kriegt den Rest des Stacks und verfährt in derselben Weise</li>
 <li>wenn die Unterroutine zurückkehrt, kann der von ihr benutzte Stack an die nächste Unterroutine weitergereicht werden -&gt; keine aufwändige Speicherverwaltung nötig</li>
 <li>bei Prozessen mit mehreren Threads (parallel lauffähigen Teilprozessen) teilen sich alle Threads grundsätzlich denselben virtuellen Speicher, aber kriegen jeweils eigene Stacks</li>
-<li>Stack ist vom Betriebssystem in einer festen Größe angelegt (im Beispiel unten 132 KiB) -- bei zu vielen verschachtelten Subroutinen-Aufrufen kommt es zum berüchtigten <strong>Stack Overflow</strong></li>
+<li>Stack ist vom Betriebssystem in einer festen Größe angelegt (im Beispiel unten 132 KiB) – bei zu vielen verschachtelten Subroutinen-Aufrufen kommt es zum berüchtigten <strong>Stack Overflow</strong></li>
 </ul>
 </li>
 <li>
@@ -187,7 +187,7 @@ $ cat /proc/$(pidof sleep)/maps
 ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0   [vsyscall]
 </code></pre>
 <p>Randbemerkungen: Sofern ich die Ausgabe von <code>strace sleep 30</code> richtig lese, wurde <code>[heap]</code> hier mit <code>brk</code> verwaltet. Die beiden anonymen Segmente gehen höchstwahrscheinlich auf das Konto des Laufzeit-Linkers (hier <code>ld-linux-x86-64.so.2</code>), der die Programmbibliotheken (hier nur <code>libc.so.6</code>) in den Prozess lädt.</p>
-<p>Um das zu bestätigen, habe ich dann <s>mal schnell</s> ein minimales Programm gebaut, dass ausschließlich <code>sleep</code> gefolgt von <code>exit</code> macht, und definitiv gar nichts anderes. Ich war in der Tat erfolgreich:</p>
+<p>Um das zu bestätigen, habe ich dann <del>mal schnell</del> ein minimales Programm gebaut, dass ausschließlich <code>sleep</code> gefolgt von <code>exit</code> macht, und definitiv gar nichts anderes. Ich war in der Tat erfolgreich:</p>
 <pre><code>$ strace ./target/release/minimal-memory-maps
 execve(&quot;./target/release/minimal-memory-maps&quot;, [&quot;./target/release/minimal-memory-&quot;...], 0x7ffd0c104b00 /* 67 vars */) = 0
 nanosleep({tv_sec=10, tv_nsec=0}, 0x7ffdaa084800) = 0

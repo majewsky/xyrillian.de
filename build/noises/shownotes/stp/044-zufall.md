@@ -19,7 +19,7 @@ Xyrill antwortet: [Ja, stimmt.](https://de.wikipedia.org/w/index.php?title=Direc
     * erstaunlich schwer zu definieren
     * vielleicht Periodenlänge (Dauer, bis sich die Zahlenfolge wiederholt)
     * vielleicht Gleichverteilung der Auftrittshäufigkeit von Teilfolgen (jede einstellige/zweistellige/dreistellige/etc. Zahl sollte gleich oft in der Folge vorkommen)
-    * Problem: die Folge "2236067977499789805051478..." ist nach all diesen Maßstäben guter Zufall -- bis man bemerkt, dass das die Dezimalstellen der Quadratwurzel von 5 sind
+    * Problem: die Folge "2236067977499789805051478..." ist nach all diesen Maßstäben guter Zufall &ndash; bis man bemerkt, dass das die Dezimalstellen der Quadratwurzel von 5 sind
     * guter (aber unpraktikabler) Test: hohe [Kolmogorow-Komplexität](https://de.wikipedia.org/w/index.php?title=Kolmogorow-Komplexit%C3%A4t&oldid=207581838) (siehe STP025)
     * Errata: Beim Nachhören ist mir aufgefallen, dass die Kolmogorow-Komplexität eines Pseudozufallszahlengenerators nie besonders groß sein kann, da der Zufallszahlengenerator ja gerade ein Programm ist, was die entsprechende Zahlenfolge erzeugen kann. Das ist kein praktisches Problem, da das Programm im Kolmogorow-Sinne auch die Startwerte des Zufallszahlengenerators umfassen müsste, die aber gerade geheim sind.
 

@@ -28,8 +28,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/golang-commonmark/markdown"
-
 	. "github.com/majewsky/xyrillian.de/build/util" // nolint:staticcheck
 )
 
@@ -97,7 +95,7 @@ func NewPost(fileName string) *Post {
 		LastEditedTimestamp: lastEditedTimestamp,
 		Slug:                strings.TrimSuffix(fileName, ".md"),
 		Markdown:            markdownBytes,
-		HTML:                markdown.New(markdown.HTML(true)).RenderToString(markdownBytes),
+		HTML:                MustReturn(RenderMarkdown(markdownBytes)),
 	}
 }
 

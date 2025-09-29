@@ -204,7 +204,7 @@ qe,0,&amp;gt;
 &lt;li&gt;
 &lt;p&gt;Rückbezüge:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;fundamentale Datenstrukturen siehe STP071: Felder/Listen, &lt;s&gt;assoziative Datenfelder (Maps), Graphen&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;fundamentale Datenstrukturen siehe STP071: Felder/Listen, &lt;del&gt;assoziative Datenfelder (Maps), Graphen&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;Frage: Wie stellt man solche Datenstrukturen im Speicher dar? Gibt es darauf überhaupt die eine richtige Antwort?&lt;/li&gt;
 &lt;li&gt;algorithmische Komplexität siehe STP029: Liste mit &lt;code&gt;n&lt;/code&gt; Elementen ausdrucken in &lt;code&gt;O(n)&lt;/code&gt;, aber sortieren in &lt;code&gt;O(n log(n))&lt;/code&gt; bis &lt;code&gt;O(n^2)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Speicherallokation siehe STP047 und Speicherschutz siehe STP019: Bezug wird gleich klar werden&lt;/li&gt;
@@ -297,7 +297,7 @@ qe,0,&amp;gt;
 &lt;li&gt;
 &lt;p&gt;Rückbezüge:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;fundamentale Datenstrukturen siehe STP071: Felder/Listen, &lt;s&gt;assoziative Datenfelder (Maps), Graphen&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;fundamentale Datenstrukturen siehe STP071: Felder/Listen, &lt;del&gt;assoziative Datenfelder (Maps), Graphen&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;Frage: Wie stellt man solche Datenstrukturen im Speicher dar? Gibt es darauf überhaupt die eine richtige Antwort?&lt;/li&gt;
 &lt;li&gt;algorithmische Komplexität siehe STP029: Liste mit &lt;code&gt;n&lt;/code&gt; Elementen ausdrucken in &lt;code&gt;O(n)&lt;/code&gt;, aber sortieren in &lt;code&gt;O(n log(n))&lt;/code&gt; bis &lt;code&gt;O(n^2)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Speicherallokation siehe STP047 und Speicherschutz siehe STP019: Bezug wird gleich klar werden&lt;/li&gt;
@@ -402,7 +402,7 @@ qe,0,&amp;gt;
 &lt;p&gt;Kategorie 1: Werkzeuge zum Mitlauschen&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Traceroute&amp;amp;oldid=236437154&#34;&gt;traceroute&lt;/a&gt; (bzw. &lt;code&gt;tracert&lt;/code&gt; unter Windows): Nachverfolgung der Netzwerkroute zu einem bestimmten Ziel anhand von Ping-Paketen mit begrenzter TTL; stark variable Pings oder plötzliche Anstiege des Pings deuten auf ein Problem an dem entsprechenden Hop hin&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Tcpdump&amp;amp;oldid=235025527&#34;&gt;tcpdump&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Wireshark&amp;amp;oldid=238943114&#34;&gt;Wireshark&lt;/a&gt;: Mitschneiden aller Netzwerkpakete, die über ein Netzwerk-Interface versendet oder empfangen werden (evtl. mit Suchmuster, z.B. &amp;quot;nur auf Port 80&amp;quot; oder &amp;quot;nur für Ziel-/Quelladresse &lt;a href=&#34;http://192.168.0.1&#34;&gt;192.168.0.1&lt;/a&gt;&amp;quot;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Tcpdump&amp;amp;oldid=235025527&#34;&gt;tcpdump&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Wireshark&amp;amp;oldid=238943114&#34;&gt;Wireshark&lt;/a&gt;: Mitschneiden aller Netzwerkpakete, die über ein Netzwerk-Interface versendet oder empfangen werden (evtl. mit Suchmuster, z.B. &amp;quot;nur auf Port 80&amp;quot; oder &amp;quot;nur für Ziel-/Quelladresse 192.168.0.1&amp;quot;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://mitmproxy.org/&#34;&gt;mitmproxy&lt;/a&gt; et al: Fangnetz für HTTP-Anfragen und -Antworten, die von einem Prozess geschickt und empfangen werden (quasi wie tcpdump, aber einige Netzwerkschichten höher); super zum Reverse-Engineering von webbasierten APIs&lt;/li&gt;
 &lt;li&gt;mal nicht Netzwerk: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Strace&amp;amp;oldid=1268124388&#34;&gt;strace&lt;/a&gt; listet alle Syscalls (Systemrufe) auf, die ein Prozess während seiner Lebenszeit macht (siehe Beispiel unten)&lt;/li&gt;
 &lt;li&gt;zurück zum Hotel-WLAN-Beispiel: strace zeigt Timeout bei DNS-Anfrage zum eigenen Hostnamen jeweils 2x nach 120s&lt;/li&gt;
@@ -939,11 +939,7 @@ exit_group(0)                           = ?
 &lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=JavaScript_Object_Notation&amp;amp;oldid=249644714&#34;&gt;JSON&lt;/a&gt;: ein populäres Format für die Serialisierung von Daten&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Serialisierung&amp;amp;oldid=241468956&#34;&gt;Serialisierung&lt;/a&gt;: &amp;quot;Abbildung von strukturierten Daten auf eine sequenzielle Darstellungsform&amp;quot;, insb. auf Bytefolgen wie in einer Datei oder einer Datenübertragung im Netzwerk&lt;/li&gt;
-&lt;li&gt;JSON ist bekannt dafür, nicht erfunden, sondern &amp;quot;entdeckt&amp;quot; worden zu sein
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.corecursive.com/json-vs-xml-douglas-crockford/&#34;&gt;https://www.corecursive.com/json-vs-xml-douglas-crockford/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;JSON ist bekannt dafür, nicht erfunden, sondern &amp;quot;entdeckt&amp;quot; worden zu sein&lt;/li&gt;
 &lt;li&gt;außerdem relativ minimal: nur sechs verschiedene Grundstrukturen&lt;/li&gt;
 &lt;li&gt;aber trotzdem relativ universell: damit unser Ausgangspunkt für die Kartografierung der Welt der Datentypen&lt;/li&gt;
 &lt;li&gt;außerdem Gegenüberstellung mit dem Typvorrat von Rust (einer zeitgenössischen Programmiersprache mit einem detaillierten Typsystem)&lt;/li&gt;
@@ -1990,7 +1986,7 @@ exit_group(0)                           = ?
 &lt;li&gt;
 &lt;p&gt;Layer 1/2 kabelgebunden: über achtadrige &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Twisted-Pair-Kabel&amp;amp;oldid=243787992&#34;&gt;Twisted-Pair-Kabel&lt;/a&gt; mit üblicherweise vorkonfektionierten &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=RJ-Steckverbindung&amp;amp;oldid=245704057&#34;&gt;RJ45-Steckern (8P8C)&lt;/a&gt; nach &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ethernet&amp;amp;oldid=244710581&#34;&gt;IEEE 802.3 &amp;quot;Ethernet&amp;quot;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Twisted Pair: Kabel mit verdrillten Doppeladern und einer (je nach Kategorie) zunehmenden Menge an Abschirmungen, damit das Kabel nicht z.B. unbeabsichtigt zur Antenne wird :) -- Wikipedia hat eine &lt;a href=&#34;https://commons.wikimedia.org/w/index.php?title=File:Twisted_pair_based_ethernet.svg&amp;amp;oldid=507351021&#34;&gt;schöne Visualisierung&lt;/a&gt;, wie besser geschirmte Kabel für mehr Bandbreite sorgen&lt;/li&gt;
+&lt;li&gt;Twisted Pair: Kabel mit verdrillten Doppeladern und einer (je nach Kategorie) zunehmenden Menge an Abschirmungen, damit das Kabel nicht z.B. unbeabsichtigt zur Antenne wird :) – Wikipedia hat eine &lt;a href=&#34;https://commons.wikimedia.org/w/index.php?title=File:Twisted_pair_based_ethernet.svg&amp;amp;oldid=507351021&#34;&gt;schöne Visualisierung&lt;/a&gt;, wie besser geschirmte Kabel für mehr Bandbreite sorgen&lt;/li&gt;
 &lt;li&gt;vorkonfektionierte Stecker: man kann auch selber konfektionieren (sprich: Kabel auf die richtige Länge zuschneiden und Modularstecker anbringen)&lt;/li&gt;
 &lt;li&gt;im Rechenzentrum findet man auch Ethernet, aber oberhalb der 10 Gbit/s dann nur noch auf Basis von Glasfasern und &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Small_Form-factor_Pluggable&amp;amp;oldid=244881738&#34;&gt;SFP-Modulen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Kabel alleine reichen nicht, man braucht mindestens noch einen &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Switch_(Netzwerktechnik)&amp;amp;oldid=238943317&#34;&gt;Switch&lt;/a&gt;, um tatsächlich ein Kabelnetzwerk zu erhalten&lt;/li&gt;
@@ -2301,9 +2297,9 @@ set output &amp;quot;Balkon.svg&amp;quot;
     <link>https://schluesseltechnologie-podcast.de/058-identifier</link>
     <itunes:author>Xyrillian Noises</itunes:author>
     <itunes:subtitle></itunes:subtitle>
-    <itunes:summary>Da die Zeiten von Karteikarten in Büros und auf Ämtern &lt;s&gt;zum Glück&lt;/s&gt; &lt;em&gt;leider&lt;/em&gt; vorbei sind, braucht es nun andere Wege, um Personen zu identifizieren. Doch nicht nur störende Kundschaft will wiedererkannt werden...</itunes:summary>
-    <description>Da die Zeiten von Karteikarten in Büros und auf Ämtern &lt;s&gt;zum Glück&lt;/s&gt; &lt;em&gt;leider&lt;/em&gt; vorbei sind, braucht es nun andere Wege, um Personen zu identifizieren. Doch nicht nur störende Kundschaft will wiedererkannt werden...</description>
-    <content:encoded>&lt;p&gt;Da die Zeiten von Karteikarten in Büros und auf Ämtern &lt;s&gt;zum Glück&lt;/s&gt; &lt;em&gt;leider&lt;/em&gt; vorbei sind, braucht es nun andere Wege, um Personen zu identifizieren. Doch nicht nur störende Kundschaft will wiedererkannt werden...&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Wir haben einiges an Feedback bekommen, siehe Ende der Shownotes. Zuerst zum eigentlichen Thema:&lt;/p&gt;
+    <itunes:summary>Da die Zeiten von Karteikarten in Büros und auf Ämtern &lt;del&gt;zum Glück&lt;/del&gt; &lt;em&gt;leider&lt;/em&gt; vorbei sind, braucht es nun andere Wege, um Personen zu identifizieren. Doch nicht nur störende Kundschaft will wiedererkannt werden...</itunes:summary>
+    <description>Da die Zeiten von Karteikarten in Büros und auf Ämtern &lt;del&gt;zum Glück&lt;/del&gt; &lt;em&gt;leider&lt;/em&gt; vorbei sind, braucht es nun andere Wege, um Personen zu identifizieren. Doch nicht nur störende Kundschaft will wiedererkannt werden...</description>
+    <content:encoded>&lt;p&gt;Da die Zeiten von Karteikarten in Büros und auf Ämtern &lt;del&gt;zum Glück&lt;/del&gt; &lt;em&gt;leider&lt;/em&gt; vorbei sind, braucht es nun andere Wege, um Personen zu identifizieren. Doch nicht nur störende Kundschaft will wiedererkannt werden...&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Wir haben einiges an Feedback bekommen, siehe Ende der Shownotes. Zuerst zum eigentlichen Thema:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Identifier&lt;/strong&gt; (ID): eindeutiges Kennzeichen zur Unterscheidung gleichartiger Objekte oder Individuen&lt;/p&gt;
@@ -2602,7 +2598,7 @@ $PR_AGENTUR&lt;/p&gt;
 &lt;li&gt;Die ersten drei Varianten (Überwachung, Abfangen, Kontrolle) sind die intuitiv klaren Formen von Zentralisierung (z.B. das Telefon-Festnetz ist zentralisiert, da es von einem einzigen Anbieter, der Telekom, betrieben und kontrolliert wird).&lt;/li&gt;
 &lt;li&gt;Der Teil mit &amp;quot;Pacht&amp;quot; ist im Original &amp;quot;rent extraction&amp;quot;, was im Englischen ein durchaus geläufiger Begriff ist, während im Deutschen &lt;a href=&#34;https://de.wiktionary.org/w/index.php?title=Rentier&amp;amp;oldid=9846923#Substantiv,_m&#34;&gt;der &amp;quot;Rentier&amp;quot;&lt;/a&gt; wahrscheinlich eher für einen Rentner gehalten wird.
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wiktionary.org/w/index.php?title=rent&amp;amp;oldid=77955238&#34;&gt;en.wiktionary.org zu &amp;quot;rent&amp;quot; im Sinne &amp;quot;rent extraction&amp;quot;&lt;/a&gt;: &amp;quot;A profit from possession of a valuable right, as a restricted license to engage in a trade or business.&amp;quot; -- &amp;quot;Profit aus dem Besitz eines wertvollen Rechtes, als limitierte Lizenz zum Betrieb eines Handwerks oder Geschäftes&amp;quot;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wiktionary.org/w/index.php?title=rent&amp;amp;oldid=77955238&#34;&gt;en.wiktionary.org zu &amp;quot;rent&amp;quot; im Sinne &amp;quot;rent extraction&amp;quot;&lt;/a&gt;: &amp;quot;A profit from possession of a valuable right, as a restricted license to engage in a trade or business.&amp;quot; – &amp;quot;Profit aus dem Besitz eines wertvollen Rechtes, als limitierte Lizenz zum Betrieb eines Handwerks oder Geschäftes&amp;quot;&lt;/li&gt;
 &lt;li&gt;klassische Beispiele außerhalb der IT: Taximedaillon, Notarstellen, natürliche Monopole wie Netzbetreiber von Strom-/Wasser-/Gasleitungen&lt;/li&gt;
 &lt;li&gt;Beispiel im Internet: App-Store-Betreiber (wer Software für iPhones vertreiben will, muss 30% Pacht an Apple abführen), &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Internet_Assigned_Numbers_Authority&amp;amp;oldid=235416916&#34;&gt;IANA (Internet Assigned Numbers Authority)&lt;/a&gt; als Betreiber der DNS-Rootserver (zu DNS siehe STP018)&lt;/li&gt;
 &lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://news.ycombinator.com/item?id=33314970&#34;&gt;5 Gründe, warum der Markt in der Praxis nicht so funktioniert wie in der Theorie&lt;/a&gt;&lt;/li&gt;
@@ -2721,7 +2717,7 @@ $PR_AGENTUR&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;wiederverwenden, was funktioniert
 &lt;ul&gt;
-&lt;li&gt;z.B. hat DNS trotz aller Probleme alles in allem ein relativ dezentrales Design und eine relativ gute Governance -- tendenziell lieber darauf aufbauen, als eine eigene dezentrale Datenbank zu frickeln (oder &lt;code&gt;s/DNS/Ethereum/&lt;/code&gt;, wenn man lieber Blockchain nehmen möchte)&lt;/li&gt;
+&lt;li&gt;z.B. hat DNS trotz aller Probleme alles in allem ein relativ dezentrales Design und eine relativ gute Governance – tendenziell lieber darauf aufbauen, als eine eigene dezentrale Datenbank zu frickeln (oder &lt;code&gt;s/DNS/Ethereum/&lt;/code&gt;, wenn man lieber Blockchain nehmen möchte)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -3011,7 +3007,7 @@ $PR_AGENTUR&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;Rausschmeißer: In eigener Sache&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Postkarten eingetroffen aus Berlin, Rheinland-Pfalz, dem Kanton Zürich und vom Kongress -- Bitte weiter so. :)&lt;/li&gt;
+&lt;li&gt;Postkarten eingetroffen aus Berlin, Rheinland-Pfalz, dem Kanton Zürich und vom Kongress – Bitte weiter so. :)&lt;/li&gt;
 &lt;li&gt;Wir nehmen auch gute Bewertungen bei Apple Podcasts etc.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -3675,9 +3671,9 @@ $PR_AGENTUR&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;in diesem Zusammenhang: Was ist eigentlich vim? Und warum verbringt Xyrill sein halbes Leben darin? (Spoiler: man kann alle intellektuelle Arbeit als Texteditieren darstellen; siehe auch STP006)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;frühe 1970er-Jahre: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ed_(Texteditor)&amp;amp;oldid=207200962&#34;&gt;&lt;code&gt;ed&lt;/code&gt;&lt;/a&gt; -- der erste Unix-Texteditor; damals hatten Unix-Computer noch keinen Bildschirm, sondern nur Tastatur und Drucker&lt;/li&gt;
-&lt;li&gt;1976: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ex_(Texteditor)&amp;amp;oldid=217207358&#34;&gt;&lt;code&gt;ex&lt;/code&gt;&lt;/a&gt; -- eine von vielen Weiterentwicklungen von &lt;code&gt;ed&lt;/code&gt; mit zusätzlichen Funktionen&lt;/li&gt;
-&lt;li&gt;darin enthalten: ein neuartiger &amp;quot;visual mode&amp;quot;, der 1979 der Standard wurde -- &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Vi&amp;amp;oldid=234166542&#34;&gt;&lt;code&gt;vi&lt;/code&gt;&lt;/a&gt; ist geboren&lt;/li&gt;
+&lt;li&gt;frühe 1970er-Jahre: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ed_(Texteditor)&amp;amp;oldid=207200962&#34;&gt;&lt;code&gt;ed&lt;/code&gt;&lt;/a&gt; – der erste Unix-Texteditor; damals hatten Unix-Computer noch keinen Bildschirm, sondern nur Tastatur und Drucker&lt;/li&gt;
+&lt;li&gt;1976: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ex_(Texteditor)&amp;amp;oldid=217207358&#34;&gt;&lt;code&gt;ex&lt;/code&gt;&lt;/a&gt; – eine von vielen Weiterentwicklungen von &lt;code&gt;ed&lt;/code&gt; mit zusätzlichen Funktionen&lt;/li&gt;
+&lt;li&gt;darin enthalten: ein neuartiger &amp;quot;visual mode&amp;quot;, der 1979 der Standard wurde – &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Vi&amp;amp;oldid=234166542&#34;&gt;&lt;code&gt;vi&lt;/code&gt;&lt;/a&gt; ist geboren&lt;/li&gt;
 &lt;li&gt;1989 dann &lt;code&gt;vim&lt;/code&gt; als Weiterentwicklung von Brams Portierung von &lt;code&gt;vi&lt;/code&gt; auf Atari-Computer&lt;/li&gt;
 &lt;li&gt;sprich: im Großen und Ganzen eine 50 Jahre lang ungebrochene Evolutionslinie von Texteditoren, analog und parallel zu Unix&lt;/li&gt;
 &lt;/ul&gt;
@@ -3816,7 +3812,7 @@ $PR_AGENTUR&lt;/p&gt;
 &lt;li&gt;nächste Unterroutine kriegt den Rest des Stacks und verfährt in derselben Weise&lt;/li&gt;
 &lt;li&gt;wenn die Unterroutine zurückkehrt, kann der von ihr benutzte Stack an die nächste Unterroutine weitergereicht werden -&amp;gt; keine aufwändige Speicherverwaltung nötig&lt;/li&gt;
 &lt;li&gt;bei Prozessen mit mehreren Threads (parallel lauffähigen Teilprozessen) teilen sich alle Threads grundsätzlich denselben virtuellen Speicher, aber kriegen jeweils eigene Stacks&lt;/li&gt;
-&lt;li&gt;Stack ist vom Betriebssystem in einer festen Größe angelegt (im Beispiel unten 132 KiB) -- bei zu vielen verschachtelten Subroutinen-Aufrufen kommt es zum berüchtigten &lt;strong&gt;Stack Overflow&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Stack ist vom Betriebssystem in einer festen Größe angelegt (im Beispiel unten 132 KiB) – bei zu vielen verschachtelten Subroutinen-Aufrufen kommt es zum berüchtigten &lt;strong&gt;Stack Overflow&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -3869,7 +3865,7 @@ $ cat /proc/$(pidof sleep)/maps
 ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0   [vsyscall]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Randbemerkungen: Sofern ich die Ausgabe von &lt;code&gt;strace sleep 30&lt;/code&gt; richtig lese, wurde &lt;code&gt;[heap]&lt;/code&gt; hier mit &lt;code&gt;brk&lt;/code&gt; verwaltet. Die beiden anonymen Segmente gehen höchstwahrscheinlich auf das Konto des Laufzeit-Linkers (hier &lt;code&gt;ld-linux-x86-64.so.2&lt;/code&gt;), der die Programmbibliotheken (hier nur &lt;code&gt;libc.so.6&lt;/code&gt;) in den Prozess lädt.&lt;/p&gt;
-&lt;p&gt;Um das zu bestätigen, habe ich dann &lt;s&gt;mal schnell&lt;/s&gt; ein minimales Programm gebaut, dass ausschließlich &lt;code&gt;sleep&lt;/code&gt; gefolgt von &lt;code&gt;exit&lt;/code&gt; macht, und definitiv gar nichts anderes. Ich war in der Tat erfolgreich:&lt;/p&gt;
+&lt;p&gt;Um das zu bestätigen, habe ich dann &lt;del&gt;mal schnell&lt;/del&gt; ein minimales Programm gebaut, dass ausschließlich &lt;code&gt;sleep&lt;/code&gt; gefolgt von &lt;code&gt;exit&lt;/code&gt; macht, und definitiv gar nichts anderes. Ich war in der Tat erfolgreich:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ strace ./target/release/minimal-memory-maps
 execve(&amp;quot;./target/release/minimal-memory-maps&amp;quot;, [&amp;quot;./target/release/minimal-memory-&amp;quot;...], 0x7ffd0c104b00 /* 67 vars */) = 0
 nanosleep({tv_sec=10, tv_nsec=0}, 0x7ffdaa084800) = 0
@@ -4008,7 +4004,7 @@ man dann aber per Software entsprechend aktivieren.&lt;/p&gt;
 &lt;li&gt;erstaunlich schwer zu definieren&lt;/li&gt;
 &lt;li&gt;vielleicht Periodenlänge (Dauer, bis sich die Zahlenfolge wiederholt)&lt;/li&gt;
 &lt;li&gt;vielleicht Gleichverteilung der Auftrittshäufigkeit von Teilfolgen (jede einstellige/zweistellige/dreistellige/etc. Zahl sollte gleich oft in der Folge vorkommen)&lt;/li&gt;
-&lt;li&gt;Problem: die Folge &amp;quot;2236067977499789805051478...&amp;quot; ist nach all diesen Maßstäben guter Zufall -- bis man bemerkt, dass das die Dezimalstellen der Quadratwurzel von 5 sind&lt;/li&gt;
+&lt;li&gt;Problem: die Folge &amp;quot;2236067977499789805051478...&amp;quot; ist nach all diesen Maßstäben guter Zufall – bis man bemerkt, dass das die Dezimalstellen der Quadratwurzel von 5 sind&lt;/li&gt;
 &lt;li&gt;guter (aber unpraktikabler) Test: hohe &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kolmogorow-Komplexit%C3%A4t&amp;amp;oldid=207581838&#34;&gt;Kolmogorow-Komplexität&lt;/a&gt; (siehe STP025)&lt;/li&gt;
 &lt;li&gt;Errata: Beim Nachhören ist mir aufgefallen, dass die Kolmogorow-Komplexität eines Pseudozufallszahlengenerators nie besonders groß sein kann, da der Zufallszahlengenerator ja gerade ein Programm ist, was die entsprechende Zahlenfolge erzeugen kann. Das ist kein praktisches Problem, da das Programm im Kolmogorow-Sinne auch die Startwerte des Zufallszahlengenerators umfassen müsste, die aber gerade geheim sind.&lt;/li&gt;
 &lt;/ul&gt;
@@ -4678,7 +4674,7 @@ Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&
 &lt;li&gt;kostenintensiv: &lt;a href=&#34;https://www.destructoid.com/apex-legends-qa-baton-rouge-layoffs-electronic-arts-ea/&#34;&gt;Online-Shooter braucht(e) 200 Tester&lt;/a&gt; (das Spiel erlaubt Matches mit bis zu 60 Teilnehmern)&lt;/li&gt;
 &lt;li&gt;erfüllt von den obigen Anforderungen nur die Realitätsnähe&lt;/li&gt;
 &lt;li&gt;wenn&#39;s geht, lieber automatisieren&lt;/li&gt;
-&lt;li&gt;gängige Strategie: manuelle Tests zur Fehlersuche, im Zweifelsfall durch die Kunden ;) -- dann Nachstellung des gefundenen Problems&lt;/li&gt;
+&lt;li&gt;gängige Strategie: manuelle Tests zur Fehlersuche, im Zweifelsfall durch die Kunden ;) – dann Nachstellung des gefundenen Problems&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -4848,7 +4844,7 @@ Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&
 &lt;li&gt;
 &lt;p&gt;Clusterfuck: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Therac-25&amp;amp;oldid=222407363&#34;&gt;Therac-25 (1985-1987)&lt;/a&gt;, unter anderem:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;s&gt;verteiltes&lt;/s&gt; verstreutes System: fehlerhafte Synchronisation zwischen einem Messprozess und einem parallel arbeitenden Steuerprozess&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;verteiltes&lt;/del&gt; verstreutes System: fehlerhafte Synchronisation zwischen einem Messprozess und einem parallel arbeitenden Steuerprozess&lt;/li&gt;
 &lt;li&gt;Benutzerführung: in bestimmten Situationen wurde nach der Eingabe neuer Daten der alte Datensatz weiterverwendet, obwohl die Benutzeroberfläche den neuen Datensatz anzeigte&lt;/li&gt;
 &lt;li&gt;Überlauf: 8-Bit-Flag für die Anzeige der Notwendigkeit einer Sicherheitsprüfung konnte von 255 auf 0 überlaufen und dadurch die Prüfung überspringen&lt;/li&gt;
 &lt;/ul&gt;
@@ -4918,7 +4914,7 @@ Dieses heutzutage essenzielle und gleichzeitug &lt;strong&gt;subtile&lt;/strong&
 &lt;li&gt;
 &lt;p&gt;Ein Mann, der nicht den Regeln folgt: Donald Knuth&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=The_Art_of_Computer_Programming&amp;amp;oldid=209769576&#34;&gt;The Art of Computer Programming&lt;/a&gt; -- szenische Lesung des ersten Unterabschnittes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=The_Art_of_Computer_Programming&amp;amp;oldid=209769576&#34;&gt;The Art of Computer Programming&lt;/a&gt; – szenische Lesung des ersten Unterabschnittes&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www-cs-faculty.stanford.edu/~knuth/email.html&#34;&gt;Knuth vs. Email&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;quot;Email is a wonderful thing for people whose role in life is to be on top of things. But not for me; my role is to be on the bottom of things.&amp;quot;&lt;/li&gt;
@@ -6986,7 +6982,7 @@ Woher weiß unser Computer eigentlich, welche IP-Adresse er aufrufen muss, um un
 &lt;li&gt;
 &lt;p&gt;Aufteilung des Internet in &lt;strong&gt;Domains&lt;/strong&gt; (Domänen) und verschachtelte &lt;strong&gt;Subdomains&lt;/strong&gt; (Unterdomänen)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://commons.wikimedia.org/wiki/File:Dns-raum.svg&#34;&gt;Beispiel:&lt;/a&gt; Wurzeldomain &amp;quot;.&amp;quot; enthält Domain &amp;quot;org&amp;quot; enthält Domain &amp;quot;&lt;a href=&#34;http://wikipedia.org&#34;&gt;wikipedia.org&lt;/a&gt;&amp;quot; enthält Domain &amp;quot;&lt;a href=&#34;http://de.wikipedia.org&#34;&gt;de.wikipedia.org&lt;/a&gt;&amp;quot; -&amp;gt; deswegen &lt;em&gt;hierarchische&lt;/em&gt; Datenbank&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://commons.wikimedia.org/wiki/File:Dns-raum.svg&#34;&gt;Beispiel:&lt;/a&gt; Wurzeldomain &amp;quot;.&amp;quot; enthält Domain &amp;quot;org&amp;quot; enthält Domain &amp;quot;wikipedia.org&amp;quot; enthält Domain &amp;quot;de.wikipedia.org&amp;quot; -&amp;gt; deswegen &lt;em&gt;hierarchische&lt;/em&gt; Datenbank&lt;/li&gt;
 &lt;li&gt;wenn die Subdomain einer anderen Person oder Organisation gehört als die Domain darüber, hat man eine neue &lt;strong&gt;Zone&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;jeder Inhaber einer Zone hält auf einem (oder mehreren) Webserver(n) die Inhalte seiner Zone (also Domain-Daten und Zonenreferenzen) in einem &lt;strong&gt;Nameserver&lt;/strong&gt; -&amp;gt; deswegen &lt;em&gt;verteilte&lt;/em&gt; Datenbank&lt;/li&gt;
 &lt;/ul&gt;
@@ -8476,7 +8472,7 @@ Genießen sie heute Funfacts und Kaufberatung auf mittelmäßigem Niveau.&lt;/p&
 &lt;li&gt;
 &lt;p&gt;Warum werden Terminals oft gegenüber grafischen Oberflächen (GUI) bevorzugt?&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;s&gt;Weil es viel cooler ist.&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Weil es viel cooler ist.&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;bessere Handhabbarkeit eines großen Funktionsumfangs, nach entsprechender Einarbeitung (vgl. GUI mit 1000 Knöpfen vs. Kommandozeile mit 1000 Befehlen)&lt;/li&gt;
 &lt;li&gt;Programmierbarkeit: Textmakros sind einfacher und robuster als GUI-Makros&lt;/li&gt;
 &lt;li&gt;Kombinierbarkeit: Textbausteine sind auf offensichtliche Art und Weise kombinierbar, grafische Bearbeitungsschritte nur begrenzt&lt;/li&gt;
@@ -8896,7 +8892,7 @@ Kann man sie ersetzen? Und vor allem, wie würde Xyrill das alles machen, würde
 Wie sollen sie gespeichert werden? Wieviel Salz muss an ein Passwort?
 Kann man sie ersetzen? Und vor allem, wie würde Xyrill das alles machen, würde ihm doch endlich die Weltherrschaft übertragen?&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Through twenty years of effort, we&#39;ve successfully trained everyone to use passwords that are hard for humans to remember, but easy for computers to guess.&lt;/p&gt;
-&lt;p&gt;Wir haben zwanzig [mittlerweile dreißig -- d. Red.] Jahre lang allen eingeredet, Passwörter zu verwenden, die schwer zu merken sind, aber leicht von Computern geraten werden können.&lt;/p&gt;
+&lt;p&gt;Wir haben zwanzig [mittlerweile dreißig – d. Red.] Jahre lang allen eingeredet, Passwörter zu verwenden, die schwer zu merken sind, aber leicht von Computern geraten werden können.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Quelle: Zitat aus &lt;a href=&#34;https://xkcd.com/936/&#34;&gt;XKCD Comic #936&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
@@ -8905,7 +8901,7 @@ Kann man sie ersetzen? Und vor allem, wie würde Xyrill das alles machen, würde
 &lt;ul&gt;
 &lt;li&gt;mögliche Auth.faktoren:
 &lt;ul&gt;
-&lt;li&gt;etwas, das ich weiß (z.B. Passwort, PIN, &lt;s&gt;Sicherheitsfrage&lt;/s&gt;)&lt;/li&gt;
+&lt;li&gt;etwas, das ich weiß (z.B. Passwort, PIN, &lt;del&gt;Sicherheitsfrage&lt;/del&gt;)&lt;/li&gt;
 &lt;li&gt;etwas, das ich habe (z.B. Chipkarte, Hardware-Token, TOTP/HOTP)&lt;/li&gt;
 &lt;li&gt;etwas, das ich bin (z.B. Fingerabdruck, Iris-Abbild)&lt;/li&gt;
 &lt;/ul&gt;
@@ -9075,10 +9071,10 @@ Allerdings ist das für ttimeless auch genug für den Anfang.&lt;/p&gt;&lt;h2&gt
 &lt;li&gt;Gatter unterscheiden sich in der Ausgabe bei Eingabe 0 (2 Optionen) und in der Ausgabe bei Eingabe 1 (2 Optionen)&lt;/li&gt;
 &lt;li&gt;insgesamt 2x2 = 4 mögliche Gatter
 &lt;ul&gt;
-&lt;li&gt;0 -&amp;gt; 0, 1 -&amp;gt; 0 -- Ausgang ist konstant Null (langweilig)&lt;/li&gt;
-&lt;li&gt;0 -&amp;gt; 0, 1 -&amp;gt; 1 -- Ausgang ist gleich Eingang (langweilig)&lt;/li&gt;
-&lt;li&gt;0 -&amp;gt; 1, 1 -&amp;gt; 0 -- Ausgang ist Negation des Eingangs (NOT-Gatter)&lt;/li&gt;
-&lt;li&gt;0 -&amp;gt; 1, 1 -&amp;gt; 1 -- Ausgang ist konstant Eins (langweilig)&lt;/li&gt;
+&lt;li&gt;0 -&amp;gt; 0, 1 -&amp;gt; 0 – Ausgang ist konstant Null (langweilig)&lt;/li&gt;
+&lt;li&gt;0 -&amp;gt; 0, 1 -&amp;gt; 1 – Ausgang ist gleich Eingang (langweilig)&lt;/li&gt;
+&lt;li&gt;0 -&amp;gt; 1, 1 -&amp;gt; 0 – Ausgang ist Negation des Eingangs (NOT-Gatter)&lt;/li&gt;
+&lt;li&gt;0 -&amp;gt; 1, 1 -&amp;gt; 1 – Ausgang ist konstant Eins (langweilig)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

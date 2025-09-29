@@ -1,6 +1,6 @@
 > Through twenty years of effort, we've successfully trained everyone to use passwords that are hard for humans to remember, but easy for computers to guess.
 >
-> Wir haben zwanzig \[mittlerweile dreißig -- d. Red.\] Jahre lang allen eingeredet, Passwörter zu verwenden, die schwer zu merken sind, aber leicht von Computern geraten werden können.
+> Wir haben zwanzig \[mittlerweile dreißig &ndash; d. Red.\] Jahre lang allen eingeredet, Passwörter zu verwenden, die schwer zu merken sind, aber leicht von Computern geraten werden können.
 
 Quelle: Zitat aus [XKCD Comic #936](https://xkcd.com/936/).
 

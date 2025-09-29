@@ -4,17 +4,17 @@
   <link>https://xyrillian.de/thoughts/</link>
   <description>Personal blog of Stefan Majewsky</description>
   <language>en</language>
-  <lastBuildDate>Mon, 29 Sep 2025 20:26:08 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 29 Sep 2025 20:48:17 +0000</lastBuildDate>
   <item>
     <title>Does the HN crowd show up in monitoring?</title>
     <description>&lt;h1&gt;Does the HN crowd show up in monitoring?&lt;/h1&gt;
 &lt;p&gt;So &lt;a href=&#34;/thoughts/posts/latency-matters.html&#34;&gt;my previous post&lt;/a&gt; made &lt;a href=&#34;https://news.ycombinator.com/item?id=15059795&#34;&gt;the frontpage on Hacker News&lt;/a&gt;.
 Awesome! I have seen many websites collapse under the load of a HN crowd, so this is the perfect time to look at the monitoring.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/thoughts/img/munin1.png&#34; alt=&#34;Munin charts&#34;&gt;&lt;/p&gt;
-&lt;p&gt;1 megabit per second? That’s lower than I anticipated, even with all the size optimizations that I implemented (or let’s
-just say, all the bloat that I purposefully did not add). Same goes for CPU usage: I’ve heard so many people on the
+&lt;p&gt;1 megabit per second? That&#39;s lower than I anticipated, even with all the size optimizations that I implemented (or let&#39;s
+just say, all the bloat that I purposefully did not add). Same goes for CPU usage: I&#39;ve heard so many people on the
 internet complain about how expensive TLS handshakes are, yet my virtual server handles all of this with less than six
-percent of a single core. It’s barely even visible on the CPU usage chart, and completely drowned out by noise on the
+percent of a single core. It&#39;s barely even visible on the CPU usage chart, and completely drowned out by noise on the
 load chart.&lt;/p&gt;
 </description>
     <link>https://xyrillian.de/thoughts/posts/latency-matters-aftermath.html</link>
@@ -38,7 +38,7 @@ wondering: Can I really perceive a difference between 5 ms latency and 45 ms lat
   <item>
     <title>How I run Certbot (as non-root and automated)</title>
     <description>&lt;h1&gt;How I run Certbot (as non-root and automated)&lt;/h1&gt;
-&lt;p&gt;I have previously noted that I get all my TLS certificates from &lt;a href=&#34;https://letsencrypt.org&#34;&gt;Let’s Encrypt&lt;/a&gt;, but since my usage of the client
+&lt;p&gt;I have previously noted that I get all my TLS certificates from &lt;a href=&#34;https://letsencrypt.org&#34;&gt;Let&#39;s Encrypt&lt;/a&gt;, but since my usage of the client
 deviates quite a bit from the standard, I figured I should take a few minutes to describe my setup.&lt;/p&gt;
 &lt;p class=&#34;more&#34;&gt;&lt;a href=&#34;/thoughts/posts/how-i-run-certbot.html&#34;&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description>
     <link>https://xyrillian.de/thoughts/posts/how-i-run-certbot.html</link>
@@ -51,11 +51,11 @@ deviates quite a bit from the standard, I figured I should take a few minutes to
 &lt;p&gt;As the first actual content on my new blog, let me tell you the story of how I went absolutely crazy.&lt;/p&gt;
 &lt;p&gt;On my private systems, I ship configuration as system packages. Every distribution has their own tooling and process for
 building these packages, but I eventually grew tired of the ceremony involved in it, and wrote &lt;a href=&#34;https://github.com/holocm/holo-build&#34;&gt;my own system package
-compiler&lt;/a&gt;. Since I’m using Arch Linux everywhere, the first version generated only Pacman packages, but I
+compiler&lt;/a&gt;. Since I&#39;m using Arch Linux everywhere, the first version generated only Pacman packages, but I
 was determined to make it truly cross-distribution. The first step was support for Debian packages, which I implemented
 in a mere two evenings (one for understanding the format, one for writing the generator).&lt;/p&gt;
 &lt;p&gt;Next to dpkg, the other widely deployed package format is RPM, so I set out to add support for RPM as well. If I could
-write the Debian generator in two days, then surely RPM support wouldn’t take that long, either. Little did I know that
+write the Debian generator in two days, then surely RPM support wouldn&#39;t take that long, either. Little did I know that
 I was embarking on a multi-month endeavor (including multiple week-long breaks to restore my sanity). To add insult to
 injury, I stubbornly refused to add dependencies and use existing tooling (i.e., the &lt;code&gt;rpm-build(1)&lt;/code&gt; command). I wanted
 to serialize the format directly from my own code, like I did for Pacman and Debian packages.&lt;/p&gt;

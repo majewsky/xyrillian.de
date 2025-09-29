@@ -12,7 +12,7 @@
     - kostenintensiv: [Online-Shooter braucht(e) 200 Tester](https://www.destructoid.com/apex-legends-qa-baton-rouge-layoffs-electronic-arts-ea/) (das Spiel erlaubt Matches mit bis zu 60 Teilnehmern)
     - erfüllt von den obigen Anforderungen nur die Realitätsnähe
     - wenn's geht, lieber automatisieren
-    - gängige Strategie: manuelle Tests zur Fehlersuche, im Zweifelsfall durch die Kunden ;) -- dann Nachstellung des gefundenen Problems
+    - gängige Strategie: manuelle Tests zur Fehlersuche, im Zweifelsfall durch die Kunden ;) &ndash; dann Nachstellung des gefundenen Problems
 
 - automatisierte Tests am Beispiel der [Testpyramide](https://commons.wikimedia.org/w/index.php?title=File:Testing_Pyramid.png&oldid=731870968#/media/File:Testing_Pyramid.png)
     - **Unit Tests**: Überprüfung einer einzelnen Komponente in Isolation

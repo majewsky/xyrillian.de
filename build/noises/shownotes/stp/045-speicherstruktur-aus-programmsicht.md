@@ -25,7 +25,7 @@
     - nächste Unterroutine kriegt den Rest des Stacks und verfährt in derselben Weise
     - wenn die Unterroutine zurückkehrt, kann der von ihr benutzte Stack an die nächste Unterroutine weitergereicht werden -> keine aufwändige Speicherverwaltung nötig
     - bei Prozessen mit mehreren Threads (parallel lauffähigen Teilprozessen) teilen sich alle Threads grundsätzlich denselben virtuellen Speicher, aber kriegen jeweils eigene Stacks
-    - Stack ist vom Betriebssystem in einer festen Größe angelegt (im Beispiel unten 132 KiB) -- bei zu vielen verschachtelten Subroutinen-Aufrufen kommt es zum berüchtigten **Stack Overflow**
+    - Stack ist vom Betriebssystem in einer festen Größe angelegt (im Beispiel unten 132 KiB) &ndash; bei zu vielen verschachtelten Subroutinen-Aufrufen kommt es zum berüchtigten **Stack Overflow**
 
 - unterer Teil (d.h. bei tiefen Adressen): **Heap** (Haufenspeicher)
     - keine Strukturvorgaben durch das Betriebssystem oder die Prozessorarchitektur

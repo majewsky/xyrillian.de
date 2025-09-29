@@ -26,10 +26,10 @@
 <p>So <a href="/thoughts/posts/latency-matters.html">my previous post</a> made <a href="https://news.ycombinator.com/item?id=15059795">the frontpage on Hacker News</a>.
 Awesome! I have seen many websites collapse under the load of a HN crowd, so this is the perfect time to look at the monitoring.</p>
 <p><img src="/thoughts/img/munin1.png" alt="Munin charts"></p>
-<p>1 megabit per second? That’s lower than I anticipated, even with all the size optimizations that I implemented (or let’s
-just say, all the bloat that I purposefully did not add). Same goes for CPU usage: I’ve heard so many people on the
+<p>1 megabit per second? That's lower than I anticipated, even with all the size optimizations that I implemented (or let's
+just say, all the bloat that I purposefully did not add). Same goes for CPU usage: I've heard so many people on the
 internet complain about how expensive TLS handshakes are, yet my virtual server handles all of this with less than six
-percent of a single core. It’s barely even visible on the CPU usage chart, and completely drowned out by noise on the
+percent of a single core. It's barely even visible on the CPU usage chart, and completely drowned out by noise on the
 load chart.</p>
 </article><article><h1><a href="/thoughts/posts/latency-matters.html" title="Permalink">[l]</a> Latency matters</h1>
 <p>A month ago, danluu wrote about <a href="https://danluu.com/term-latency/">terminal and shell performance</a>. In that post, he
@@ -39,17 +39,17 @@ some terminals. Now I can see that more than 100 milliseconds is going to be not
 wondering: Can I really perceive a difference between 5 ms latency and 45 ms latency?</p>
 <p>Turns out that I can.</p>
 <p class="more"><a href="/thoughts/posts/latency-matters.html">Read more...</a></p></article><article><h1><a href="/thoughts/posts/how-i-run-certbot.html" title="Permalink">[l]</a> How I run Certbot (as non-root and automated)</h1>
-<p>I have previously noted that I get all my TLS certificates from <a href="https://letsencrypt.org">Let’s Encrypt</a>, but since my usage of the client
+<p>I have previously noted that I get all my TLS certificates from <a href="https://letsencrypt.org">Let's Encrypt</a>, but since my usage of the client
 deviates quite a bit from the standard, I figured I should take a few minutes to describe my setup.</p>
 <p class="more"><a href="/thoughts/posts/how-i-run-certbot.html">Read more...</a></p></article><article><h1><a href="/thoughts/posts/argh-pm.html" title="Permalink">[l]</a> Argh-P-M! – Dissecting the RPM file format</h1>
 <p>As the first actual content on my new blog, let me tell you the story of how I went absolutely crazy.</p>
 <p>On my private systems, I ship configuration as system packages. Every distribution has their own tooling and process for
 building these packages, but I eventually grew tired of the ceremony involved in it, and wrote <a href="https://github.com/holocm/holo-build">my own system package
-compiler</a>. Since I’m using Arch Linux everywhere, the first version generated only Pacman packages, but I
+compiler</a>. Since I'm using Arch Linux everywhere, the first version generated only Pacman packages, but I
 was determined to make it truly cross-distribution. The first step was support for Debian packages, which I implemented
 in a mere two evenings (one for understanding the format, one for writing the generator).</p>
 <p>Next to dpkg, the other widely deployed package format is RPM, so I set out to add support for RPM as well. If I could
-write the Debian generator in two days, then surely RPM support wouldn’t take that long, either. Little did I know that
+write the Debian generator in two days, then surely RPM support wouldn't take that long, either. Little did I know that
 I was embarking on a multi-month endeavor (including multiple week-long breaks to restore my sanity). To add insult to
 injury, I stubbornly refused to add dependencies and use existing tooling (i.e., the <code>rpm-build(1)</code> command). I wanted
 to serialize the format directly from my own code, like I did for Pacman and Debian packages.</p>

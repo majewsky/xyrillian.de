@@ -7,7 +7,7 @@
 * Kernbegriff: "Zentralisierung \[im Sinne dieses Dokumentes] ist eine Sachlage, bei der eine einzelne Entität oder eine kleine Gruppe eine Funktion des Internets überwachen, abfangen, kontrollieren oder aus ihrem Betrieb oder ihrer Benutzung Pacht ziehen kann."
     * Die ersten drei Varianten (Überwachung, Abfangen, Kontrolle) sind die intuitiv klaren Formen von Zentralisierung (z.B. das Telefon-Festnetz ist zentralisiert, da es von einem einzigen Anbieter, der Telekom, betrieben und kontrolliert wird).
     * Der Teil mit "Pacht" ist im Original "rent extraction", was im Englischen ein durchaus geläufiger Begriff ist, während im Deutschen [der "Rentier"](https://de.wiktionary.org/w/index.php?title=Rentier&oldid=9846923#Substantiv,_m) wahrscheinlich eher für einen Rentner gehalten wird.
-        * [en.wiktionary.org zu "rent" im Sinne "rent extraction"](https://en.wiktionary.org/w/index.php?title=rent&oldid=77955238): "A profit from possession of a valuable right, as a restricted license to engage in a trade or business." -- "Profit aus dem Besitz eines wertvollen Rechtes, als limitierte Lizenz zum Betrieb eines Handwerks oder Geschäftes"
+        * [en.wiktionary.org zu "rent" im Sinne "rent extraction"](https://en.wiktionary.org/w/index.php?title=rent&oldid=77955238): "A profit from possession of a valuable right, as a restricted license to engage in a trade or business." &ndash; "Profit aus dem Besitz eines wertvollen Rechtes, als limitierte Lizenz zum Betrieb eines Handwerks oder Geschäftes"
         * klassische Beispiele außerhalb der IT: Taximedaillon, Notarstellen, natürliche Monopole wie Netzbetreiber von Strom-/Wasser-/Gasleitungen
         * Beispiel im Internet: App-Store-Betreiber (wer Software für iPhones vertreiben will, muss 30% Pacht an Apple abführen), [IANA (Internet Assigned Numbers Authority)](https://de.wikipedia.org/w/index.php?title=Internet_Assigned_Numbers_Authority&oldid=235416916) als Betreiber der DNS-Rootserver (zu DNS siehe STP018)
         * im Gespräch erwähnt: [5 Gründe, warum der Markt in der Praxis nicht so funktioniert wie in der Theorie](https://news.ycombinator.com/item?id=33314970)
@@ -66,6 +66,6 @@
         * hilfreich, um Wettbewerb und Innovation zwischen verschiedenen Anbietern zu fördern
         * aber auch Risiko des "Vendor Lock-In" (Erweiterung durch anbieterspezifische Funktionen, die Nutzerinnen an den Anbieter binden)
     * wiederverwenden, was funktioniert
-        * z.B. hat DNS trotz aller Probleme alles in allem ein relativ dezentrales Design und eine relativ gute Governance -- tendenziell lieber darauf aufbauen, als eine eigene dezentrale Datenbank zu frickeln (oder `s/DNS/Ethereum/`, wenn man lieber Blockchain nehmen möchte)
+        * z.B. hat DNS trotz aller Probleme alles in allem ein relativ dezentrales Design und eine relativ gute Governance &ndash; tendenziell lieber darauf aufbauen, als eine eigene dezentrale Datenbank zu frickeln (oder `s/DNS/Ethereum/`, wenn man lieber Blockchain nehmen möchte)
 
 * Xyrills Abendgedanken: (De-)Zentralisierung ist, so wie fast alle Fragen aus dem Feld der Netzpolitik, nicht eine rein technische Frage und erfordert neben technischen auch soziale und gesetzliche Lösungen

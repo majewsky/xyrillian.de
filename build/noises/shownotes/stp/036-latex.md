@@ -1,7 +1,7 @@
 Zu dieser Sendung liegt ein [Begleitdokument](https://dl.xyrillian.de/noises/stp-036-shownotes/shownotes.pdf) mit zugehörigen [Quelldateien](https://dl.xyrillian.de/noises/stp-036-shownotes/) vor.
 
 - Ein Mann, der nicht den Regeln folgt: Donald Knuth
-    - [The Art of Computer Programming](https://de.wikipedia.org/w/index.php?title=The_Art_of_Computer_Programming&oldid=209769576 ) -- szenische Lesung des ersten Unterabschnittes
+    - [The Art of Computer Programming](https://de.wikipedia.org/w/index.php?title=The_Art_of_Computer_Programming&oldid=209769576 ) &ndash; szenische Lesung des ersten Unterabschnittes
     - [Knuth vs. Email](https://www-cs-faculty.stanford.edu/~knuth/email.html )
         - "Email is a wonderful thing for people whose role in life is to be on top of things. But not for me; my role is to be on the bottom of things."
 

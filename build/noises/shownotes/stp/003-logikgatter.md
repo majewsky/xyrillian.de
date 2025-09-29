@@ -10,10 +10,10 @@
 * Logikgatter mit einem Eingang und einem Ausgang
     * Gatter unterscheiden sich in der Ausgabe bei Eingabe 0 (2 Optionen) und in der Ausgabe bei Eingabe 1 (2 Optionen)
     * insgesamt 2x2 = 4 mögliche Gatter
-        * 0 -> 0, 1 -> 0 -- Ausgang ist konstant Null (langweilig)
-        * 0 -> 0, 1 -> 1 -- Ausgang ist gleich Eingang (langweilig)
-        * 0 -> 1, 1 -> 0 -- Ausgang ist Negation des Eingangs (NOT-Gatter)
-        * 0 -> 1, 1 -> 1 -- Ausgang ist konstant Eins (langweilig)
+        * 0 -> 0, 1 -> 0 &ndash; Ausgang ist konstant Null (langweilig)
+        * 0 -> 0, 1 -> 1 &ndash; Ausgang ist gleich Eingang (langweilig)
+        * 0 -> 1, 1 -> 0 &ndash; Ausgang ist Negation des Eingangs (NOT-Gatter)
+        * 0 -> 1, 1 -> 1 &ndash; Ausgang ist konstant Eins (langweilig)
 
 * Logikgatter mit zwei Eingängen und einem Ausgang
     * vier mögliche Eingaben (00, 01, 10, 11) und je zwei mögliche Ausgaben (0, 1) -> 2^4=16 mögliche Gatter

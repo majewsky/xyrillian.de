@@ -32,8 +32,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/golang-commonmark/markdown"
-
 	. "github.com/majewsky/xyrillian.de/build/util" // nolint:staticcheck
 )
 
@@ -221,14 +219,10 @@ type audioMetadataCache struct {
 }
 
 func compileMarkdown(input string) template.HTML {
-	md := markdown.New(
-		markdown.HTML(true),
-		markdown.Typographer(false),
-	)
 	if input == "" {
 		return ""
 	}
-	out := strings.TrimSpace(md.RenderToString([]byte(input)))
+	out := strings.TrimSpace(MustReturn(RenderMarkdown([]byte(input))))
 	out = strings.TrimPrefix(out, "<p>")
 	out = strings.TrimSuffix(out, "</p>")
 	return template.HTML(out)

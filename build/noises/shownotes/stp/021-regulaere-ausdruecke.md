@@ -26,18 +26,18 @@
 | Grundbaustein  | Beispielausdruck | Findet z.B. |
 | -------------- | ---------------- | ----------- |
 | Zeichen(folge) | `Ausdruck` | `Ausdruck` |
-| Alternative | `Ausdruck|Ausdrücke` | `Ausdruck` und `Ausdrücke` |
-| Gruppierung | `Ausdr(uck|ücke)` | `Ausdruck` und `Ausdrücke` |
+| Alternative | `Ausdruck\|Ausdrücke` | `Ausdruck` und `Ausdrücke` |
+| Gruppierung | `Ausdr(uck\|ücke)` | `Ausdruck` und `Ausdrücke` |
 | Sternquantor | `to*ll` | `tll`, `toll`, `tooll`, `toooll`, etc. |
 
 - in der Praxis weitere Bausteine, um häufige Anwendungen zu vereinfachen
 
 | Zusatzbaustein | Definition | Beispielausdruck | Findet z.B. |
 | --- | --- | --- | --- |
-| Zeichenklasse | `[ABC...] = A|B|C|...` | positive Ganzzahl: `0|[1-9][0-9]*` | `0`, `42`, `900`, aber nicht `0815` |
+| Zeichenklasse | `[ABC...] = A\|B\|C\|...` | positive Ganzzahl: `0\|[1-9][0-9]*` | `0`, `42`, `900`, aber nicht `0815` |
 | feste Zeichenklasse | `\s` für Whitespace, `\d = [0-9]` für Ziffern, etc. | |
 | beliebiges Zeichen | `.` | Klammerausdruck: `(.*)` | `(2 + 4)`, `(siehe oben)`, aber auch `(siehe oben (oder nicht)` |
-| Fragezeichenquantor | `A? = (|A)` | Ganzzahl mit Vorzeichen: `[+-]?(0|[1-9][0-9]*)` | `+0`, `-42`, `23` |
+| Fragezeichenquantor | `A? = (\|A)` | Ganzzahl mit Vorzeichen: `[+-]?(0\|[1-9][0-9]*)` | `+0`, `-42`, `23` |
 | Fixquantor | z.B. `A{3} = AAA`, `A{2,4} = AAA?A?` | Postleitzahl: `[0-9]{5}` | `01127`, `50616` |
 | Plusquantor | `A+ = AA*` | Domainname: `([a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+` | `www.example.com` |
 | Anker | `^` für Zeilenanfang, `$` für Zeilenende, `\b` für Wortgrenze | `Schulz\b` | `Schulz`, aber nicht `Schulze` |

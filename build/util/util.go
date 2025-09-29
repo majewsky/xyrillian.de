@@ -6,9 +6,14 @@ package util
 import (
 	"bytes"
 	"encoding/json"
+	"fmt"
 	"log"
 	"os"
 	"os/exec"
+
+	"github.com/yuin/goldmark"
+	"github.com/yuin/goldmark/extension"
+	"github.com/yuin/goldmark/renderer/html"
 )
 
 func MustSucceed(err error) {
@@ -30,7 +35,23 @@ func UnmarshalYAMLviaJSON(buf []byte, target any) (err error) {
 	cmd.Stderr = os.Stderr
 	buf, err = cmd.Output()
 	if err != nil {
-		log.Fatal("could not run `yq -o json`: " + err.Error())
+		return fmt.Errorf("could not run `yq -o json`: " + err.Error())
 	}
 	return json.Unmarshal(buf, target)
+}
+
+var md = goldmark.New(
+	goldmark.WithExtensions(
+		extension.Table,
+		extension.Strikethrough,
+	),
+	goldmark.WithRendererOptions(
+		html.WithUnsafe(),
+	),
+)
+
+func RenderMarkdown(in []byte) (string, error) {
+	var buf bytes.Buffer
+	err := md.Convert(in, &buf)
+	return buf.String(), err
 }

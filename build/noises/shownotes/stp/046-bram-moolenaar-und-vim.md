@@ -7,9 +7,9 @@ Aus aktuellem Anlass: Anfang August 2023 ist Bram Moolenaar gestorben.
     - außerdem Engagement für die NGO [ICCF Holland](https://iccf.nl/index.html), die Waisenkinder in Uganda unterstützt
 
 - in diesem Zusammenhang: Was ist eigentlich vim? Und warum verbringt Xyrill sein halbes Leben darin? (Spoiler: man kann alle intellektuelle Arbeit als Texteditieren darstellen; siehe auch STP006)
-    - frühe 1970er-Jahre: [`ed`](https://de.wikipedia.org/w/index.php?title=Ed_(Texteditor)&oldid=207200962) -- der erste Unix-Texteditor; damals hatten Unix-Computer noch keinen Bildschirm, sondern nur Tastatur und Drucker
-    - 1976: [`ex`](https://de.wikipedia.org/w/index.php?title=Ex_(Texteditor)&oldid=217207358) -- eine von vielen Weiterentwicklungen von `ed` mit zusätzlichen Funktionen
-    - darin enthalten: ein neuartiger "visual mode", der 1979 der Standard wurde -- [`vi`](https://de.wikipedia.org/w/index.php?title=Vi&oldid=234166542) ist geboren
+    - frühe 1970er-Jahre: [`ed`](https://de.wikipedia.org/w/index.php?title=Ed_(Texteditor)&oldid=207200962) &ndash; der erste Unix-Texteditor; damals hatten Unix-Computer noch keinen Bildschirm, sondern nur Tastatur und Drucker
+    - 1976: [`ex`](https://de.wikipedia.org/w/index.php?title=Ex_(Texteditor)&oldid=217207358) &ndash; eine von vielen Weiterentwicklungen von `ed` mit zusätzlichen Funktionen
+    - darin enthalten: ein neuartiger "visual mode", der 1979 der Standard wurde &ndash; [`vi`](https://de.wikipedia.org/w/index.php?title=Vi&oldid=234166542) ist geboren
     - 1989 dann `vim` als Weiterentwicklung von Brams Portierung von `vi` auf Atari-Computer
     - sprich: im Großen und Ganzen eine 50 Jahre lang ungebrochene Evolutionslinie von Texteditoren, analog und parallel zu Unix
 
