@@ -32,7 +32,7 @@ import (
 	"github.com/golang-commonmark/markdown"
 )
 
-//Post is a blog post.
+// Post is a blog post.
 type Post struct {
 	CreationTimestamp   uint64
 	LastEditedTimestamp uint64
@@ -41,7 +41,7 @@ type Post struct {
 	HTML                string
 }
 
-//Posts is a list of Post (only required for sorting).
+// Posts is a list of Post (only required for sorting).
 type Posts []*Post
 
 func (p Posts) Len() int           { return len(p) }
@@ -64,7 +64,7 @@ func allPosts() Posts {
 	return posts
 }
 
-//NewPost creates a new Post instance.
+// NewPost creates a new Post instance.
 func NewPost(fileName string) *Post {
 	filePath := "build/thoughts/posts/" + fileName
 
@@ -82,7 +82,7 @@ func NewPost(fileName string) *Post {
 		creationTimestamp   uint64
 		lastEditedTimestamp uint64
 	)
-	for _, str := range strings.Fields(string(buf.Bytes())) {
+	for _, str := range strings.Fields(buf.String()) {
 		timestamp, _ := strconv.ParseUint(str, 10, 64)
 		//"last edited" is the chronologically largest timestamp
 		if lastEditedTimestamp < timestamp {
@@ -106,14 +106,14 @@ func NewPost(fileName string) *Post {
 	}
 }
 
-//OutputURL returns the output URL for this Post.
+// OutputURL returns the output URL for this Post.
 func (p *Post) OutputURL() string {
 	return "/thoughts/posts/" + p.Slug + ".html"
 }
 
 var initialHeadingRx = regexp.MustCompile(`^<h1>(.+?)</h1>`)
 
-//Title returns the contents of the first <h1>, or the slug as a fallback.
+// Title returns the contents of the first <h1>, or the slug as a fallback.
 func (p *Post) Title() string {
 	match := initialHeadingRx.FindStringSubmatch(p.HTML)
 	if match != nil {
@@ -124,7 +124,7 @@ func (p *Post) Title() string {
 
 var paragraphRx = regexp.MustCompile(`(?m)^\s*\w(?:.+\n)*`)
 
-//Description returns the first non-heading paragraph from the Markdown, if any.
+// Description returns the first non-heading paragraph from the Markdown, if any.
 func (p *Post) Description() string {
 	match := paragraphRx.Find(p.Markdown)
 	if match == nil {
@@ -135,7 +135,7 @@ func (p *Post) Description() string {
 
 var innerHeadingsRx = regexp.MustCompile(`(?s)^(.+?)<h[1-6]>`)
 
-//ShortenedHTML is like HTML, but cut off before the second heading.
+// ShortenedHTML is like HTML, but cut off before the second heading.
 func (p *Post) ShortenedHTML() string {
 	match := innerHeadingsRx.FindStringSubmatch(p.HTML)
 	if match == nil {
@@ -147,17 +147,17 @@ func (p *Post) ShortenedHTML() string {
 	)
 }
 
-//CreationTime returns the creation timestamp as time.Time object in UTC.
+// CreationTime returns the creation timestamp as time.Time object in UTC.
 func (p *Post) CreationTime() time.Time {
 	return time.Unix(int64(p.CreationTimestamp), 0).UTC()
 }
 
-//LastEditedTime returns the timestamp of the last edit as time.Time object in UTC.
+// LastEditedTime returns the timestamp of the last edit as time.Time object in UTC.
 func (p *Post) LastEditedTime() time.Time {
 	return time.Unix(int64(p.LastEditedTimestamp), 0).UTC()
 }
 
-//Render writes the post to its output file.
+// Render writes the post to its output file.
 func (p *Post) Render() {
 	str := p.HTML
 	ctime := p.CreationTime().Format(time.RFC1123)

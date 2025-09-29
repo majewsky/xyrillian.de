@@ -516,7 +516,7 @@ func reverseFiles(in []*file) (out []*file) {
 
 func readableFileSize(sizeBytes uint64) string {
 	out := fmt.Sprintf("%.1f MiB", float64(sizeBytes)/(1<<20))
-	return strings.Replace(out, ".", ",", -1)
+	return strings.ReplaceAll(out, ".", ",")
 }
 
 func readableLengthSeconds(lengthSeconds uint) string {
@@ -553,5 +553,5 @@ var germanMonths = map[time.Month]string{
 func unixTimeToReadableDate(in uint64) string {
 	t := time.Unix(int64(in), 0).In(time.FixedZone("GMT", 0))
 	str := t.Format("2. XXX 2006")
-	return strings.Replace(str, "XXX", germanMonths[t.Month()], -1)
+	return strings.ReplaceAll(str, "XXX", germanMonths[t.Month()])
 }

@@ -68,7 +68,7 @@ func main() {
 ////////////////////////////////////////////////////////////////////////////////
 // output formatting
 
-//RenderIndex generates the index.html page.
+// RenderIndex generates the index.html page.
 func RenderIndex(posts []*Post) {
 	//not more than 10 posts
 	if len(posts) > 10 {
@@ -102,7 +102,7 @@ func RenderIndex(posts []*Post) {
 	writeFile("thoughts/index.html", "", articlesStr, metadata)
 }
 
-//RenderAll generates the sitemap.html page.
+// RenderAll generates the sitemap.html page.
 func RenderAll(posts []*Post) {
 	items := ""
 	currentMonth := ""
@@ -125,7 +125,7 @@ func RenderAll(posts []*Post) {
 	)
 }
 
-//RenderRSS generates the rss.xml document.
+// RenderRSS generates the rss.xml document.
 func RenderRSS(posts []*Post) {
 	//not more than 10 posts
 	if len(posts) > 10 {
@@ -162,17 +162,17 @@ func RenderRSS(posts []*Post) {
 }
 
 func escapeHTML(s string) string {
-	s = strings.Replace(s, "&", "&amp;", -1)
-	s = strings.Replace(s, "'", "&#39;", -1)
-	s = strings.Replace(s, `"`, "&quot;", -1)
-	s = strings.Replace(s, "<", "&lt;", -1)
-	return strings.Replace(s, ">", "&gt;", -1)
+	s = strings.ReplaceAll(s, "&", "&amp;")
+	s = strings.ReplaceAll(s, "'", "&#39;")
+	s = strings.ReplaceAll(s, `"`, "&quot;")
+	s = strings.ReplaceAll(s, "<", "&lt;")
+	return strings.ReplaceAll(s, ">", "&gt;")
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // utilities
 
-//FailOnErr complains and aborts if `err != nil`.
+// FailOnErr complains and aborts if `err != nil`.
 func FailOnErr(err error) {
 	if err != nil {
 		os.Stderr.Write([]byte(err.Error() + "\n"))
@@ -199,14 +199,14 @@ func writeFile(path, title, contents string, metadata map[string]string) {
 	if len(dotdots) == 0 {
 		dotdots = []string{"."}
 	}
-	str = strings.Replace(str, "%PATH_TO_ROOT%", strings.Join(dotdots, "/"), -1)
+	str = strings.ReplaceAll(str, "%PATH_TO_ROOT%", strings.Join(dotdots, "/"))
 
 	if title == "" {
-		str = strings.Replace(str, "%TITLE%", PageName, -1)
+		str = strings.ReplaceAll(str, "%TITLE%", PageName)
 	} else {
-		str = strings.Replace(str, "%TITLE%", title+" &ndash; "+PageName, -1)
+		str = strings.ReplaceAll(str, "%TITLE%", title+" &ndash; "+PageName)
 	}
-	str = strings.Replace(str, "%CONTENT%", contents, -1)
+	str = strings.ReplaceAll(str, "%CONTENT%", contents)
 
 	//sort metadata keys deterministically to avoid diff noise
 	metadataKeys := make([]string, 0, len(metadata))
@@ -223,7 +223,7 @@ func writeFile(path, title, contents string, metadata map[string]string) {
 			template.HTMLEscapeString(key), template.HTMLEscapeString(metadata[key]),
 		)
 	}
-	str = strings.Replace(str, "%META%", metadataStr, -1)
+	str = strings.ReplaceAll(str, "%META%", metadataStr)
 
 	FailOnErr(ioutil.WriteFile(path, []byte(str), 0644))
 }
