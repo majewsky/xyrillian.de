@@ -42,12 +42,12 @@ func main() {
 	}
 
 	//load metadata cache
-	cacheBytes, err := os.ReadFile("build/noises/cache.yaml")
+	cacheBytes, err := os.ReadFile("build/noises/cache.json")
 	if err != nil {
 		log.Fatal(err.Error())
 	}
 	var cache audioMetadataCache
-	err = yaml.Unmarshal(cacheBytes, &cache)
+	err = json.Unmarshal(cacheBytes, &cache)
 	if err != nil {
 		log.Fatal(err.Error())
 	}
@@ -92,11 +92,11 @@ func main() {
 			cache.AudioMetadata[f.CacheKey()] = f.AudioMetadata
 		}
 	}
-	cacheBytes, err = yaml.Marshal(cache)
+	cacheBytes, err = json.MarshalIndent(cache, "", "  ")
 	if err != nil {
 		log.Fatal(err.Error())
 	}
-	err = os.WriteFile("build/noises/cache.yaml", cacheBytes, 0666)
+	err = os.WriteFile("build/noises/cache.json", append(cacheBytes, '\n'), 0666)
 	if err != nil {
 		log.Fatal(err.Error())
 	}
@@ -292,27 +292,27 @@ type file struct {
 }
 
 type download struct {
-	Format    string `yaml:"format"`
-	MIMEType  string `yaml:"mime_type"`
-	FileName  string `yaml:"filename"`
-	SizeBytes uint64 `yaml:"size_bytes"`
+	Format    string `json:"format"`
+	MIMEType  string `json:"mime_type"`
+	FileName  string `json:"filename"`
+	SizeBytes uint64 `json:"size_bytes"`
 }
 
 type chapter struct {
-	StartSeconds float64 `yaml:"start_secs"`
-	EndSeconds   float64 `yaml:"end_secs"`
-	Title        string  `yaml:"title"`
-	URL          string  `yaml:"url,omitempty"`
+	StartSeconds float64 `json:"start_secs"`
+	EndSeconds   float64 `json:"end_secs"`
+	Title        string  `json:"title"`
+	URL          string  `json:"url,omitempty"`
 }
 
 type audioMetadata struct {
-	LengthSeconds uint       `yaml:"length_secs"`
-	Downloads     []download `yaml:"downloads"`
-	Chapters      []chapter  `yaml:"chapters"`
+	LengthSeconds uint       `json:"length_secs"`
+	Downloads     []download `json:"downloads"`
+	Chapters      []chapter  `json:"chapters"`
 }
 
 type audioMetadataCache struct {
-	AudioMetadata map[string]audioMetadata `yaml:"audio_metadata"`
+	AudioMetadata map[string]audioMetadata `json:"audio_metadata"`
 }
 
 func compileMarkdown(input string) template.HTML {
