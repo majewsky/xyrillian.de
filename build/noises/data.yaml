@@ -1407,3 +1407,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 79
+    slug: 079-feld-von-feldern
+    title: Feld von Feldern
+    pubtime: 1759440300 # 2025-10-02
+
+    markdown:
+      description: |
+        Nach einem kurzen Feedback gehen wir diesmal zu Karten… nein, Abbildungen über. Das ist am Anfang kein Problem. Nur wenn die Eimer für Streuwertfunktionen kleiner werden, hat ttimeless etwas Schwierigkeiten.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

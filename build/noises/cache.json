@@ -6926,6 +6926,61 @@
           "title": "CWE-22: Path Traversal"
         }
       ]
+    },
+    "stp:079-feld-von-feldern": {
+      "length_secs": 3764,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-079-feld-von-feldern.mp3",
+          "size_bytes": 60570945
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-079-feld-von-feldern.ogg",
+          "size_bytes": 37866217
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-079-feld-von-feldern.opus",
+          "size_bytes": 23002627
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 452,
+          "title": "Feedback von Mole"
+        },
+        {
+          "start_secs": 452,
+          "end_secs": 548,
+          "title": "Intro und Prolog"
+        },
+        {
+          "start_secs": 548,
+          "end_secs": 596,
+          "title": "Rückblick STP077"
+        },
+        {
+          "start_secs": 596,
+          "end_secs": 1326,
+          "title": "Rückblick STP071 und STP072"
+        },
+        {
+          "start_secs": 1326,
+          "end_secs": 1834,
+          "title": "Ansatz 1: Sammlung von Wertepaaren als Liste umsetzen"
+        },
+        {
+          "start_secs": 1834,
+          "end_secs": 3764.968,
+          "title": "Ansatz 2: Vorsortierung anhand von Streuwertfunktionen"
+        }
+      ]
     }
   }
 }

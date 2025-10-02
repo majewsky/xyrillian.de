@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feld von Feldern - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #79 vom 2. Oktober 2025</h2>
+    <h1>Feld von Feldern</h1>
+      <p>Nach einem kurzen Feedback gehen wir diesmal zu Karten… nein, Abbildungen über. Das ist am Anfang kein Problem. Nur wenn die Eimer für Streuwertfunktionen kleiner werden, hat ttimeless etwas Schwierigkeiten.</p>
+      <p><strong>Länge:</strong> 62:44 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-079-feld-von-feldern.mp3" type="audio/mpeg">
+        <source src="/dl/stp-079-feld-von-feldern.ogg" type="audio/ogg">
+        <source src="/dl/stp-079-feld-von-feldern.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="452">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Feedback von Mole</span>
+      </div>
+      <div class="chapter" data-start="452" data-end="548">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">07:32</span>
+        <span class="chapter-title">Intro und Prolog</span>
+      </div>
+      <div class="chapter" data-start="548" data-end="596">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">09:08</span>
+        <span class="chapter-title">Rückblick STP077</span>
+      </div>
+      <div class="chapter" data-start="596" data-end="1326">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">09:56</span>
+        <span class="chapter-title">Rückblick STP071 und STP072</span>
+      </div>
+      <div class="chapter" data-start="1326" data-end="1834">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">22:06</span>
+        <span class="chapter-title">Ansatz 1: Sammlung von Wertepaaren als Liste umsetzen</span>
+      </div>
+      <div class="chapter" data-start="1834" data-end="3764.968">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">30:34</span>
+        <span class="chapter-title">Ansatz 2: Vorsortierung anhand von Streuwertfunktionen</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-079-feld-von-feldern.mp3">MP3</a> (57,8 MiB)</li>
+          <li><a href="/dl/stp-079-feld-von-feldern.ogg">Ogg Vorbis</a> (36,1 MiB)</li>
+          <li><a href="/dl/stp-079-feld-von-feldern.opus">Opus</a> (21,9 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p>Rückbezug STP077: Liste von Listen</p>
+<ul>
+<li>verschiedene Datenstrukturen implementieren dasselbe Datenformat mit unterschiedlichen Laufzeitcharakteristiken</li>
+<li>heute analog dazu Besprechung von assoziativen Datenfeldern</li>
+</ul>
+</li>
+<li>
+<p>Rückbezug STP072: assoziative Datenfelder (wir sagen hier &quot;Maps&quot;; heißt je nach Programmiersprache auch &quot;Objekt&quot;, &quot;Dictionary&quot;, etc.)</p>
+<ul>
+<li>eine Sammlung von Wertepaaren mit jeweils einem eindeutigen Schlüssel (&quot;Key&quot;) und einem zugeordneten Wert (&quot;Value&quot;)</li>
+<li>z.B. Wörterbuch: Schlüssel ist das Lemma, Wert ist die Definition</li>
+<li>z.B. Verzeichnis im Dateisystem: Schlüssel ist der Dateiname, Wert ist die Datei (bzw. das Unterverzeichnis)</li>
+<li>praktisches Beispiel: Wörter zählen</li>
+<li>es geht hier nur um Wertepaare, die aktiv im Speicher vorliegen, nicht um berechnete Abbildungen (Gegenbeispiel: Suchmaschine bildet von Suchanfrage auf Ergebnisseite ab)</li>
+</ul>
+</li>
+<li>
+<p>Ansatz 1: &quot;Sammlung von Wertepaaren&quot; als Liste umsetzen</p>
+<ul>
+<li>sofern unsortiert, ist die algorithmische Komplexität für die meisten Operationen sehr schlecht
+<ul>
+<li>z.B. Suchen nach einem bestimmten Schlüssel in linearer Zeit (<code>O(n)</code>), wenn man die Liste von vorne nach hinten durchgehen muss</li>
+<li>z.B. Einfügen eines neuen Schlüssels auch nur in linearer Zeit, weil man einen evtl. existierenden Eintrag mit demselben Schlüssel finden und ersetzen</li>
+</ul>
+</li>
+<li>praktikable Umsetzung unter Verwendung einer sortierten Liste, um bestimmte Schlüssel schnell aufzufinden
+<ul>
+<li>meistens mittels eines balancierten Baums, z.B. in Rust <a href="https://doc.rust-lang.org/std/collections/struct.BTreeMap.html">BTreeMap</a> oder in C++ <a href="https://cppreference.com/w/cpp/container/map.html">std::map</a></li>
+<li>Problem: Schlüssel müssen sortierbar sein (Beispiel: Strings, Ganzzahlen; Gegenbeispiel: komplexe Zahlen, Fließkommazahlen, ungeordnete Mengen)</li>
+<li>Problem: auch bei sortierbaren Schlüsseln können Vergleiche teuer sein</li>
+<li>Wie können wir die Vergleiche günstiger machen?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Ansatz 2: Vorsortierung anhand von Streuwertfunktionen (Hashes)</p>
+<ul>
+<li>Idee: bei Suche nach einem bestimmten Schlüssel wird ein Hash des Schlüssels ermittelt (in Größenordnung einer kleinen Ganzzahl, z.B. 4 oder 8 Byte; nicht ein kryptografisch starker Hash wie SHA-2 mit 28-64 Bytes); damit schnelle Vergleiche möglich -&gt; <a href="https://de.wikipedia.org/w/index.php?title=Hashtabelle&amp;oldid=255127849">Hashtabelle</a></li>
+<li>Strategie 1: Gruppierung der Wertepaare in &quot;Buckets&quot; anhand der ersten K Bits des Hash-Wertes des Schlüssels
+<ul>
+<li>K richtet sich nach der Gesamtanzahl an Wertepaaren (z.B. für 50 Elemente könnte man K = 5 oder 6 und damit 2^K = 32 oder 64 Buckets wählen)</li>
+<li>innerhalb der Buckets einfache Listen von Wertepaaren, die in diesen Bucket fallen; idealerweise nur ein Eintrag pro Bucket</li>
+<li>durch dynamisches Anpassen der Bucket-Anzahl Abwägung zwischen Speicheraufwand für evtl. leere Buckets einerseits und Zeitaufwand für Durchsuchen übervoller Buckets andererseits</li>
+</ul>
+</li>
+<li>Strategie 2: wie 1, aber jeder Bucket kann maximal ein Element aufnehmen
+<ul>
+<li>bei Kollisionen strategisches Ausweichen auf andere Buckets in einem systematischen Muster, bis ein freier Platz gefunden wird</li>
+<li>große Variation von Implementationsstrategien für dieses &quot;strategische Ausweichen&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Vorwärtsbezug zu STP080: Komplexitätsattacke auf Hashmaps (eine Instanz von <a href="https://cwe.mitre.org/data/definitions/400.html">CWE-400</a>)</p>
+<ul>
+<li>Problem, wenn Hashmap mit nutzerdefinierten Daten gefüllt wird: Angreifer könnte Daten so wählen, dass sie alle im selben Bucket landen wollen</li>
+<li>damit extrem hohe Rechenlast durch ständige Kollisionen</li>
+<li>Lösung: Durchmischen des Hash mittels prozessinterner Geheimzahl (siehe STP044 zu Zufallszahlen)</li>
+</ul>
+</li>
+</ul>
+<h4>Feedback zu STP065</h4>
+<p>Mole schreibt:</p>
+<blockquote>
+<p>In STP065 vermutest du, dass der Ethernet-Port wegen Authentifizierung abgeschafft wurde. &quot;Beim WLAN muss man sich authentifizieren, beim Ethernet kann man sich einfach anstecken und lossurfen.&quot; Das ist so natürlich nicht richtig. Im Enterprise-Umfeld gibt es für sowas 802.1x. Das wird übrigens auch beim WLAN zur Authentifizierung mit einem RADIUS-Server benutzt. Außerdem gibt es da SNMP-Traps. Da schaltet dann der Port ab und der Admin bekommt eine Nachricht, wenn die falsche MAC antwortet. Das gab es schon lange vor WLAN.</p>
+<p>Nächstes Problem: Du erklärst, das die NUCs vom VOC für das Streaming zuständig sind. Das ist so auch nicht richtig. Die machen nur das Encoding in die Subformate, wenn der Talk schon geschnitten ist. Für das Streaming sind die Cubes, ordentliche PCs mit extrem teuren Spezial-SDI-Encoding-Karten. Die Kisten brauchen auch echt Leistung, weil die das live machen.</p>
+</blockquote></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>

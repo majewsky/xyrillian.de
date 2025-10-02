@@ -27,6 +27,104 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP079: Feld von Feldern</itunes:title>
+    <itunes:episode>79</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP079: Feld von Feldern</title>
+    <link>https://schluesseltechnologie-podcast.de/079-feld-von-feldern</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nach einem kurzen Feedback gehen wir diesmal zu Karten… nein, Abbildungen über. Das ist am Anfang kein Problem. Nur wenn die Eimer für Streuwertfunktionen kleiner werden, hat ttimeless etwas Schwierigkeiten.</itunes:summary>
+    <description>Nach einem kurzen Feedback gehen wir diesmal zu Karten… nein, Abbildungen über. Das ist am Anfang kein Problem. Nur wenn die Eimer für Streuwertfunktionen kleiner werden, hat ttimeless etwas Schwierigkeiten.</description>
+    <content:encoded>&lt;p&gt;Nach einem kurzen Feedback gehen wir diesmal zu Karten… nein, Abbildungen über. Das ist am Anfang kein Problem. Nur wenn die Eimer für Streuwertfunktionen kleiner werden, hat ttimeless etwas Schwierigkeiten.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug STP077: Liste von Listen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;verschiedene Datenstrukturen implementieren dasselbe Datenformat mit unterschiedlichen Laufzeitcharakteristiken&lt;/li&gt;
+&lt;li&gt;heute analog dazu Besprechung von assoziativen Datenfeldern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug STP072: assoziative Datenfelder (wir sagen hier &amp;quot;Maps&amp;quot;; heißt je nach Programmiersprache auch &amp;quot;Objekt&amp;quot;, &amp;quot;Dictionary&amp;quot;, etc.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;eine Sammlung von Wertepaaren mit jeweils einem eindeutigen Schlüssel (&amp;quot;Key&amp;quot;) und einem zugeordneten Wert (&amp;quot;Value&amp;quot;)&lt;/li&gt;
+&lt;li&gt;z.B. Wörterbuch: Schlüssel ist das Lemma, Wert ist die Definition&lt;/li&gt;
+&lt;li&gt;z.B. Verzeichnis im Dateisystem: Schlüssel ist der Dateiname, Wert ist die Datei (bzw. das Unterverzeichnis)&lt;/li&gt;
+&lt;li&gt;praktisches Beispiel: Wörter zählen&lt;/li&gt;
+&lt;li&gt;es geht hier nur um Wertepaare, die aktiv im Speicher vorliegen, nicht um berechnete Abbildungen (Gegenbeispiel: Suchmaschine bildet von Suchanfrage auf Ergebnisseite ab)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ansatz 1: &amp;quot;Sammlung von Wertepaaren&amp;quot; als Liste umsetzen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sofern unsortiert, ist die algorithmische Komplexität für die meisten Operationen sehr schlecht
+&lt;ul&gt;
+&lt;li&gt;z.B. Suchen nach einem bestimmten Schlüssel in linearer Zeit (&lt;code&gt;O(n)&lt;/code&gt;), wenn man die Liste von vorne nach hinten durchgehen muss&lt;/li&gt;
+&lt;li&gt;z.B. Einfügen eines neuen Schlüssels auch nur in linearer Zeit, weil man einen evtl. existierenden Eintrag mit demselben Schlüssel finden und ersetzen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;praktikable Umsetzung unter Verwendung einer sortierten Liste, um bestimmte Schlüssel schnell aufzufinden
+&lt;ul&gt;
+&lt;li&gt;meistens mittels eines balancierten Baums, z.B. in Rust &lt;a href=&#34;https://doc.rust-lang.org/std/collections/struct.BTreeMap.html&#34;&gt;BTreeMap&lt;/a&gt; oder in C&#43;&#43; &lt;a href=&#34;https://cppreference.com/w/cpp/container/map.html&#34;&gt;std::map&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Problem: Schlüssel müssen sortierbar sein (Beispiel: Strings, Ganzzahlen; Gegenbeispiel: komplexe Zahlen, Fließkommazahlen, ungeordnete Mengen)&lt;/li&gt;
+&lt;li&gt;Problem: auch bei sortierbaren Schlüsseln können Vergleiche teuer sein&lt;/li&gt;
+&lt;li&gt;Wie können wir die Vergleiche günstiger machen?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ansatz 2: Vorsortierung anhand von Streuwertfunktionen (Hashes)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee: bei Suche nach einem bestimmten Schlüssel wird ein Hash des Schlüssels ermittelt (in Größenordnung einer kleinen Ganzzahl, z.B. 4 oder 8 Byte; nicht ein kryptografisch starker Hash wie SHA-2 mit 28-64 Bytes); damit schnelle Vergleiche möglich -&amp;gt; &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Hashtabelle&amp;amp;oldid=255127849&#34;&gt;Hashtabelle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Strategie 1: Gruppierung der Wertepaare in &amp;quot;Buckets&amp;quot; anhand der ersten K Bits des Hash-Wertes des Schlüssels
+&lt;ul&gt;
+&lt;li&gt;K richtet sich nach der Gesamtanzahl an Wertepaaren (z.B. für 50 Elemente könnte man K = 5 oder 6 und damit 2^K = 32 oder 64 Buckets wählen)&lt;/li&gt;
+&lt;li&gt;innerhalb der Buckets einfache Listen von Wertepaaren, die in diesen Bucket fallen; idealerweise nur ein Eintrag pro Bucket&lt;/li&gt;
+&lt;li&gt;durch dynamisches Anpassen der Bucket-Anzahl Abwägung zwischen Speicheraufwand für evtl. leere Buckets einerseits und Zeitaufwand für Durchsuchen übervoller Buckets andererseits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Strategie 2: wie 1, aber jeder Bucket kann maximal ein Element aufnehmen
+&lt;ul&gt;
+&lt;li&gt;bei Kollisionen strategisches Ausweichen auf andere Buckets in einem systematischen Muster, bis ein freier Platz gefunden wird&lt;/li&gt;
+&lt;li&gt;große Variation von Implementationsstrategien für dieses &amp;quot;strategische Ausweichen&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vorwärtsbezug zu STP080: Komplexitätsattacke auf Hashmaps (eine Instanz von &lt;a href=&#34;https://cwe.mitre.org/data/definitions/400.html&#34;&gt;CWE-400&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem, wenn Hashmap mit nutzerdefinierten Daten gefüllt wird: Angreifer könnte Daten so wählen, dass sie alle im selben Bucket landen wollen&lt;/li&gt;
+&lt;li&gt;damit extrem hohe Rechenlast durch ständige Kollisionen&lt;/li&gt;
+&lt;li&gt;Lösung: Durchmischen des Hash mittels prozessinterner Geheimzahl (siehe STP044 zu Zufallszahlen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Feedback zu STP065&lt;/h4&gt;
+&lt;p&gt;Mole schreibt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In STP065 vermutest du, dass der Ethernet-Port wegen Authentifizierung abgeschafft wurde. &amp;quot;Beim WLAN muss man sich authentifizieren, beim Ethernet kann man sich einfach anstecken und lossurfen.&amp;quot; Das ist so natürlich nicht richtig. Im Enterprise-Umfeld gibt es für sowas 802.1x. Das wird übrigens auch beim WLAN zur Authentifizierung mit einem RADIUS-Server benutzt. Außerdem gibt es da SNMP-Traps. Da schaltet dann der Port ab und der Admin bekommt eine Nachricht, wenn die falsche MAC antwortet. Das gab es schon lange vor WLAN.&lt;/p&gt;
+&lt;p&gt;Nächstes Problem: Du erklärst, das die NUCs vom VOC für das Streaming zuständig sind. Das ist so auch nicht richtig. Die machen nur das Encoding in die Subformate, wenn der Talk schon geschnitten ist. Für das Streaming sind die Cubes, ordentliche PCs mit extrem teuren Spezial-SDI-Encoding-Karten. Die Kisten brauchen auch echt Leistung, weil die das live machen.&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Feedback von Mole"  />
+          <chapter start="00:07:32" title="Intro und Prolog"  />
+          <chapter start="00:09:08" title="Rückblick STP077"  />
+          <chapter start="00:09:56" title="Rückblick STP071 und STP072"  />
+          <chapter start="00:22:06" title="Ansatz 1: Sammlung von Wertepaaren als Liste umsetzen"  />
+          <chapter start="00:30:34" title="Ansatz 2: Vorsortierung anhand von Streuwertfunktionen"  />
+      </chapters>
+      <enclosure length="60570945" url="https://dl.xyrillian.de/noises/stp-079-feld-von-feldern.mp3" type="audio/mpeg"/>
+      <enclosure length="37866217" url="https://dl.xyrillian.de/noises/stp-079-feld-von-feldern.ogg" type="audio/ogg"/>
+      <enclosure length="23002627" url="https://dl.xyrillian.de/noises/stp-079-feld-von-feldern.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/079-feld-von-feldern/</guid>
+    <pubDate>Thu, 02 Oct 2025 21:25:00 GMT</pubDate>
+    <itunes:duration>62:44</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP078: Common Weakness Enumeration (Teil 1)</itunes:title>
     <itunes:episode>78</itunes:episode>
     <itunes:season>1</itunes:season>
