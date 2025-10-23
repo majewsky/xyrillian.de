@@ -1420,3 +1420,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 80
+    slug: 080-common-weakness-enumeration-part-2
+    title: Common Weakness Enumeration (Teil 2)
+    pubtime: 1761209400 # 2025-10-23
+
+    markdown:
+      description: |
+        Im zweiten Teil zu üblichen Schwachstellen hören wir neben einigen Querverweisen auch Xyrills Meinung zu seiner favorisierten Verwundbarkeit.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

@@ -27,6 +27,89 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP080: Common Weakness Enumeration (Teil 2)</itunes:title>
+    <itunes:episode>80</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP080: Common Weakness Enumeration (Teil 2)</title>
+    <link>https://schluesseltechnologie-podcast.de/080-common-weakness-enumeration-part-2</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Im zweiten Teil zu üblichen Schwachstellen hören wir neben einigen Querverweisen auch Xyrills Meinung zu seiner favorisierten Verwundbarkeit.</itunes:summary>
+    <description>Im zweiten Teil zu üblichen Schwachstellen hören wir neben einigen Querverweisen auch Xyrills Meinung zu seiner favorisierten Verwundbarkeit.</description>
+    <content:encoded>&lt;p&gt;Im zweiten Teil zu üblichen Schwachstellen hören wir neben einigen Querverweisen auch Xyrills Meinung zu seiner favorisierten Verwundbarkeit.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Platz 9: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/862.html&#34;&gt;CWE-862&lt;/a&gt;; fehlende Autorisierung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;siehe Besprechung von Authentifizierung und Autorisierung in STP039&lt;/li&gt;
+&lt;li&gt;Lösung: Just do it! :)&lt;/li&gt;
+&lt;li&gt;passend dazu Platz 14 und 18: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/287.html&#34;&gt;CWE-287&lt;/a&gt; und &lt;a href=&#34;https://cwe.mitre.org/data/definitions/863.html&#34;&gt;CWE-863&lt;/a&gt;; fehlerhafte Authentifizierung bzw. Autorisierung&lt;/li&gt;
+&lt;li&gt;außerdem Platz 15: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/269.html&#34;&gt;CWE-269&lt;/a&gt;; unzureichende Privilegienkontrolle&lt;/li&gt;
+&lt;li&gt;als Sonderfall Platz 25: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/306.html&#34;&gt;CWE-306&lt;/a&gt;; fehlende Authentifizierung an kritischer Stelle&lt;/li&gt;
+&lt;li&gt;daraus folgend Platz 17: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/200.html&#34;&gt;CWE-200&lt;/a&gt;; Preisgabe sensitiver Informationen an nicht Zugriffsberechtigte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Platz 10: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/434.html&#34;&gt;CWE-434&lt;/a&gt;; Unbeschränktes Hochladen von Dateien des falschen Typs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;und dadurch z.B. Einschleusung von Schadcode (Xyrill fühlt sich an den &amp;quot;OpenOffice kann dienstags nicht drucken&amp;quot;-Bug erinnert)&lt;/li&gt;
+&lt;li&gt;Lösung: nur bekannte Formate akzeptieren&lt;/li&gt;
+&lt;li&gt;passend dazu Platz 16: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/502.html&#34;&gt;CWE-502&lt;/a&gt;; Deserialisieren unvertrauenswürdiger Daten&lt;/li&gt;
+&lt;li&gt;Lösung: unbekannte Daten mit &lt;a href=&#34;https://github.com/google/wuffs&#34;&gt;sicheren Parsern&lt;/a&gt; validieren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Platz 21: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/476.html&#34;&gt;CWE-476&lt;/a&gt;; Zugriff auf Nullzeiger&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;besprochen in STP045&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Platz 22: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/798.html&#34;&gt;CWE-798&lt;/a&gt;; Zugriff mit hartkodierten Anmeldedaten&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In wieviele Plasterouter kommt man wohl immer noch mit Username &lt;code&gt;admin&lt;/code&gt; und Passwort &lt;code&gt;letmein&lt;/code&gt; rein? :)&lt;/li&gt;
+&lt;li&gt;tatsächlich auch bei Enterprise-Hardware oftmals Standardpasswörter voreingestellt, die dann beim Einrichten (versehentlich?) nicht geändert werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Platz 23: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/190.html&#34;&gt;CWE-190&lt;/a&gt;; Ganzzahlüberlauf (&amp;quot;Integer Overflow or Wraparound&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;besprochen in STP003 (Überlauf in Logikgattern) und STP037 (berühmte Überlauffehler)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Platz 24: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/400.html&#34;&gt;CWE-400&lt;/a&gt;; unkontrollierter Ressourcenverbrauch&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rückbezug zu STP079 (Komplexitätsattacke in Hashmaps)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;außerdem noch Xyrills Favorit: &lt;a href=&#34;https://cwe.mitre.org/data/definitions/655.html&#34;&gt;CWE-655&lt;/a&gt;; unzureichende psychologische Akzeptabilität :)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:02:10" title="CWE-287/863: Fehlerhafte Authentifizierung bzw. Autorisierung"  />
+          <chapter start="00:08:47" title="CWE-862: Fehlende Autorisierung"  />
+          <chapter start="00:11:44" title="CWE-269: Unzureichende Privilegienkontrolle"  />
+          <chapter start="00:13:33" title="CWE-306: Fehlende Authentifizierung an kritischer Stelle"  />
+          <chapter start="00:16:54" title="CWE-434: Unbeschränktes Hochladen von Dateien des falschen Typs"  />
+          <chapter start="00:23:30" title="CWE-502: Deserialisieren unvertrauenswürdiger Daten"  />
+          <chapter start="00:24:08" title="CWE-476: Zugriff auf Nullzeiger"  />
+          <chapter start="00:26:35" title="CWE-798: Zugriff mit hartkodierten Anmeldedaten"  />
+          <chapter start="00:30:47" title="CWE-190: Ganzzahlüberlauf"  />
+          <chapter start="00:32:47" title="CWE-400: Unkontrollierter Ressourcenverbrauch"  />
+          <chapter start="00:33:36" title="CWE-655: Unzureichende psychologische Akzeptabilität"  />
+      </chapters>
+      <enclosure length="37622211" url="https://dl.xyrillian.de/noises/stp-080-common-weakness-enumeration-part-2.mp3" type="audio/mpeg"/>
+      <enclosure length="23528215" url="https://dl.xyrillian.de/noises/stp-080-common-weakness-enumeration-part-2.ogg" type="audio/ogg"/>
+      <enclosure length="14335464" url="https://dl.xyrillian.de/noises/stp-080-common-weakness-enumeration-part-2.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/080-common-weakness-enumeration-part-2/</guid>
+    <pubDate>Thu, 23 Oct 2025 08:50:00 GMT</pubDate>
+    <itunes:duration>38:50</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP079: Feld von Feldern</itunes:title>
     <itunes:episode>79</itunes:episode>
     <itunes:season>1</itunes:season>

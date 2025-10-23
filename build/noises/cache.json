@@ -6981,6 +6981,91 @@
           "title": "Ansatz 2: Vorsortierung anhand von Streuwertfunktionen"
         }
       ]
+    },
+    "stp:080-common-weakness-enumeration-part-2": {
+      "length_secs": 2330,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-080-common-weakness-enumeration-part-2.mp3",
+          "size_bytes": 37622211
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-080-common-weakness-enumeration-part-2.ogg",
+          "size_bytes": 23528215
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-080-common-weakness-enumeration-part-2.opus",
+          "size_bytes": 14335464
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 130.126,
+          "title": "Intro"
+        },
+        {
+          "start_secs": 130.126,
+          "end_secs": 527,
+          "title": "CWE-287/863: Fehlerhafte Authentifizierung bzw. Autorisierung"
+        },
+        {
+          "start_secs": 527,
+          "end_secs": 704,
+          "title": "CWE-862: Fehlende Autorisierung"
+        },
+        {
+          "start_secs": 704,
+          "end_secs": 813,
+          "title": "CWE-269: Unzureichende Privilegienkontrolle"
+        },
+        {
+          "start_secs": 813,
+          "end_secs": 1014,
+          "title": "CWE-306: Fehlende Authentifizierung an kritischer Stelle"
+        },
+        {
+          "start_secs": 1014,
+          "end_secs": 1410,
+          "title": "CWE-434: Unbeschränktes Hochladen von Dateien des falschen Typs"
+        },
+        {
+          "start_secs": 1410,
+          "end_secs": 1448,
+          "title": "CWE-502: Deserialisieren unvertrauenswürdiger Daten"
+        },
+        {
+          "start_secs": 1448,
+          "end_secs": 1595,
+          "title": "CWE-476: Zugriff auf Nullzeiger"
+        },
+        {
+          "start_secs": 1595,
+          "end_secs": 1847,
+          "title": "CWE-798: Zugriff mit hartkodierten Anmeldedaten"
+        },
+        {
+          "start_secs": 1847,
+          "end_secs": 1967,
+          "title": "CWE-190: Ganzzahlüberlauf"
+        },
+        {
+          "start_secs": 1967,
+          "end_secs": 2016,
+          "title": "CWE-400: Unkontrollierter Ressourcenverbrauch"
+        },
+        {
+          "start_secs": 2016,
+          "end_secs": 2330.639,
+          "title": "CWE-655: Unzureichende psychologische Akzeptabilität"
+        }
+      ]
     }
   }
 }
