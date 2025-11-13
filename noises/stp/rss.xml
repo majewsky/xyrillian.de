@@ -27,6 +27,84 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP081: Barrierefreiheit im Web (Teil 1)</itunes:title>
+    <itunes:episode>81</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP081: Barrierefreiheit im Web (Teil 1)</title>
+    <link>https://schluesseltechnologie-podcast.de/081-barrierefreiheit-im-web-1</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Es gibt Menschen, die körperliche oder mentale Einschränkungen haben. Für diese Menschen könnte unsere Welt angenehmer gestaltet werden. Welche Vorteile auch nicht behinderte Menschen aus entsprechenden Maßnahmen ziehen und was diese Maßnahmen sind, darum soll es heute gehen. Und an einem anderen Tag auch.</itunes:summary>
+    <description>Es gibt Menschen, die körperliche oder mentale Einschränkungen haben. Für diese Menschen könnte unsere Welt angenehmer gestaltet werden. Welche Vorteile auch nicht behinderte Menschen aus entsprechenden Maßnahmen ziehen und was diese Maßnahmen sind, darum soll es heute gehen. Und an einem anderen Tag auch.</description>
+    <content:encoded>&lt;p&gt;Es gibt Menschen, die körperliche oder mentale Einschränkungen haben. Für diese Menschen könnte unsere Welt angenehmer gestaltet werden. Welche Vorteile auch nicht behinderte Menschen aus entsprechenden Maßnahmen ziehen und was diese Maßnahmen sind, darum soll es heute gehen. Und an einem anderen Tag auch.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;seit 28. Juni 2025 gilt das &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Barrierefreiheitsst%C3%A4rkungsgesetz&amp;amp;oldid=258239575&#34;&gt;Barrierefreiheitsstärkungsgesetz&lt;/a&gt; als nationale Umsetzung der &lt;a href=&#34;https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L0882&#34;&gt;EU-Richtlinie 2019/882 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gilt insbesondere auch für alle digitalen Dienstleistungen (Webseiten, Apps, Ticketautomaten, etc.)&lt;/li&gt;
+&lt;li&gt;Leitmotiv heute: Ist das nur was für Menschen mit Behinderungen?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Webseiten und Webapplikationen müssen die AA-Kriterien der WCAG 2.1 erfüllen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;WCAG = &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Web_Content_Accessibility_Guidelines&amp;amp;oldid=254032297&#34;&gt;Web Content Accessibility Guidelines&lt;/a&gt; (Webinhalte-Barrierefreiheits-Richtlinien) der &lt;a href=&#34;https://www.w3.org/WAI/&#34;&gt;Web Accessibility Initiative&lt;/a&gt; des W3C&lt;/li&gt;
+&lt;li&gt;WCAG 2.2 (aktuelle Version von 2024) enthält eine Reihe von Kriterien, gruppiert in 4 Grundprinzipien und darin 13 Richtlinien&lt;/li&gt;
+&lt;li&gt;Kriterien gehen jeweils von A (Pflicht) über AA (Kür) bis AAA (Sahnehäubchen)&lt;/li&gt;
+&lt;li&gt;zum Mitlesen: &lt;a href=&#34;https://www.w3.org/TR/WCAG22/&#34;&gt;WCAG 2.2 (aktuelle Version, nur Englisch)&lt;/a&gt; oder &lt;a href=&#34;https://www.w3.org/Translations/WCAG20-de/&#34;&gt;WCAG 2.0 (etwas ältere Version, in offizieller deutscher Übersetzung)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grundprinzip 1: &lt;strong&gt;Wahrnehmbarkeit&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Richtlinie 1: &lt;em&gt;Textalternativen&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;A: Textalternativen für alle Nicht-Text-Inhalte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Richtlinie 2: &lt;em&gt;Alternativen für zeitbasierte Medien&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;A: Audiobeschreibung oder Alternativdarstellung für voraufgezeichnete Bewegtbilder, Untertitel für voraufgezeichnete Videos mit Ton&lt;/li&gt;
+&lt;li&gt;AA: Untertitel für Live-Videos etc.&lt;/li&gt;
+&lt;li&gt;AAA: Gebärdenübersetzung für Sprache in Audio/Video etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Richtlinie 3: &lt;em&gt;Anpassbarkeit&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;A: Struktur und Beziehungen in dargestellter Information sollen programmatisch auslesbar sein (z.B. in HTML Strukturierung anhand semantisch aufgeladener Tags wie &lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;aside&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;); Darstellung soll in korrekter Lesereihenfolge erfolgen; Struktur der Information soll nicht nur aus sensorischen Charakteristika wie Form, Farbe, visueller Anordnung oder Klängen hervorgehen&lt;/li&gt;
+&lt;li&gt;AA: Inhalte sollen sowohl in Hochformat als auch Querformat funktionieren; Eingabefelder sollen programmatisch als solche erkennbar sein&lt;/li&gt;
+&lt;li&gt;AAA: alle Steuer- und Inhaltselemente sollen programmatisch auslesbar sein&lt;/li&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Rot-Gr%C3%BCn-Sehschw%C3%A4che&amp;amp;oldid=257718299&#34;&gt;Rot-Grun-Sehschwäche&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Richtlinie 4: &lt;em&gt;Unterscheidbarkeit&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;A: Farbe nicht als einziges Unterscheidungsmerkmal (z.B. zwischen guten und schlechten Optionen); Abspielen von Audioinhalten soll durch den Nutzer kontrollierbar sein&lt;/li&gt;
+&lt;li&gt;AA: Text- und Hintergrundfarben sollen ein Kontrastverhältnis von mindestens 4.5:1 aufweisen (außerdem 3:1 für aktive Steuerelemente); Text soll ohne Spezialwerkzeuge um bis zu 200% vergrößerbar sein; Inhalte sollen unabhängig vom Bildschirmformat ohne exzessives Scrolling erreichbar sein; etc.&lt;/li&gt;
+&lt;li&gt;AAA: Kontrastverhältnis für Text mindestens 7:1; Audio mit Sprache soll geringe Hintergrundgeräusche aufweisen; Text soll mit kurzen Zeilenlängen und mindestens anderthalbfachem Zeilenabstand dargestellt werden; reiner Text soll nicht als Bilddatei ausgespielt werden; etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Einstieg"  />
+          <chapter start="00:01:30" title="Das Barrierefreiheitsstärkungsgesetz"  />
+          <chapter start="00:11:51" title="Web Content Accessibility Guidelines"  />
+          <chapter start="00:18:19" title="Grundprinzip 1: Wahrnehmbarkeit"  />
+          <chapter start="00:19:00" title="Richtlinie 1: Textalternativen"  />
+          <chapter start="00:22:08" title="Richtlinie 2: Alternativen für zeitbasierte Medien"  />
+          <chapter start="00:29:47" title="Richtlinie 3: Anpassbarkeit"  />
+      </chapters>
+      <enclosure length="62619687" url="https://dl.xyrillian.de/noises/stp-081-barrierefreiheit-im-web-1.mp3" type="audio/mpeg"/>
+      <enclosure length="39351670" url="https://dl.xyrillian.de/noises/stp-081-barrierefreiheit-im-web-1.ogg" type="audio/ogg"/>
+      <enclosure length="23681612" url="https://dl.xyrillian.de/noises/stp-081-barrierefreiheit-im-web-1.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/081-barrierefreiheit-im-web-1/</guid>
+    <pubDate>Thu, 13 Nov 2025 00:10:00 GMT</pubDate>
+    <itunes:duration>64:52</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP080: Common Weakness Enumeration (Teil 2)</itunes:title>
     <itunes:episode>80</itunes:episode>
     <itunes:season>1</itunes:season>

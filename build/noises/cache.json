@@ -7066,6 +7066,66 @@
           "title": "CWE-655: Unzureichende psychologische Akzeptabilität"
         }
       ]
+    },
+    "stp:081-barrierefreiheit-im-web-1": {
+      "length_secs": 3892,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-081-barrierefreiheit-im-web-1.mp3",
+          "size_bytes": 62619687
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-081-barrierefreiheit-im-web-1.ogg",
+          "size_bytes": 39351670
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-081-barrierefreiheit-im-web-1.opus",
+          "size_bytes": 23681612
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 90,
+          "title": "Intro und Einstieg"
+        },
+        {
+          "start_secs": 90,
+          "end_secs": 711,
+          "title": "Das Barrierefreiheitsstärkungsgesetz"
+        },
+        {
+          "start_secs": 711,
+          "end_secs": 1099,
+          "title": "Web Content Accessibility Guidelines"
+        },
+        {
+          "start_secs": 1099,
+          "end_secs": 1140,
+          "title": "Grundprinzip 1: Wahrnehmbarkeit"
+        },
+        {
+          "start_secs": 1140,
+          "end_secs": 1328,
+          "title": "Richtlinie 1: Textalternativen"
+        },
+        {
+          "start_secs": 1328,
+          "end_secs": 1787,
+          "title": "Richtlinie 2: Alternativen für zeitbasierte Medien"
+        },
+        {
+          "start_secs": 1787,
+          "end_secs": 3892.994,
+          "title": "Richtlinie 3: Anpassbarkeit"
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,26 @@
+- seit 28. Juni 2025 gilt das [Barrierefreiheitsstärkungsgesetz](https://de.wikipedia.org/w/index.php?title=Barrierefreiheitsst%C3%A4rkungsgesetz&oldid=258239575) als nationale Umsetzung der [EU-Richtlinie 2019/882 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L0882)
+    - gilt insbesondere auch für alle digitalen Dienstleistungen (Webseiten, Apps, Ticketautomaten, etc.)
+    - Leitmotiv heute: Ist das nur was für Menschen mit Behinderungen?
+
+- Webseiten und Webapplikationen müssen die AA-Kriterien der WCAG 2.1 erfüllen
+    - WCAG = [Web Content Accessibility Guidelines](https://de.wikipedia.org/w/index.php?title=Web_Content_Accessibility_Guidelines&oldid=254032297) (Webinhalte-Barrierefreiheits-Richtlinien) der [Web Accessibility Initiative](https://www.w3.org/WAI/) des W3C
+    - WCAG 2.2 (aktuelle Version von 2024) enthält eine Reihe von Kriterien, gruppiert in 4 Grundprinzipien und darin 13 Richtlinien
+    - Kriterien gehen jeweils von A (Pflicht) über AA (Kür) bis AAA (Sahnehäubchen)
+    - zum Mitlesen: [WCAG 2.2 (aktuelle Version, nur Englisch)](https://www.w3.org/TR/WCAG22/) oder [WCAG 2.0 (etwas ältere Version, in offizieller deutscher Übersetzung)](https://www.w3.org/Translations/WCAG20-de/)
+
+- Grundprinzip 1: **Wahrnehmbarkeit**
+    - Richtlinie 1: *Textalternativen*
+        - A: Textalternativen für alle Nicht-Text-Inhalte
+    - Richtlinie 2: *Alternativen für zeitbasierte Medien*
+        - A: Audiobeschreibung oder Alternativdarstellung für voraufgezeichnete Bewegtbilder, Untertitel für voraufgezeichnete Videos mit Ton
+        - AA: Untertitel für Live-Videos etc.
+        - AAA: Gebärdenübersetzung für Sprache in Audio/Video etc.
+    - Richtlinie 3: *Anpassbarkeit*
+        - A: Struktur und Beziehungen in dargestellter Information sollen programmatisch auslesbar sein (z.B. in HTML Strukturierung anhand semantisch aufgeladener Tags wie `<main>`, `<nav>`, `<aside>`, `<section>`); Darstellung soll in korrekter Lesereihenfolge erfolgen; Struktur der Information soll nicht nur aus sensorischen Charakteristika wie Form, Farbe, visueller Anordnung oder Klängen hervorgehen
+        - AA: Inhalte sollen sowohl in Hochformat als auch Querformat funktionieren; Eingabefelder sollen programmatisch als solche erkennbar sein
+        - AAA: alle Steuer- und Inhaltselemente sollen programmatisch auslesbar sein
+        - im Gespräch erwähnt: [Rot-Grun-Sehschwäche](https://de.wikipedia.org/w/index.php?title=Rot-Gr%C3%BCn-Sehschw%C3%A4che&oldid=257718299)
+    - Richtlinie 4: *Unterscheidbarkeit*
+        - A: Farbe nicht als einziges Unterscheidungsmerkmal (z.B. zwischen guten und schlechten Optionen); Abspielen von Audioinhalten soll durch den Nutzer kontrollierbar sein
+        - AA: Text- und Hintergrundfarben sollen ein Kontrastverhältnis von mindestens 4.5:1 aufweisen (außerdem 3:1 für aktive Steuerelemente); Text soll ohne Spezialwerkzeuge um bis zu 200% vergrößerbar sein; Inhalte sollen unabhängig vom Bildschirmformat ohne exzessives Scrolling erreichbar sein; etc.
+        - AAA: Kontrastverhältnis für Text mindestens 7:1; Audio mit Sprache soll geringe Hintergrundgeräusche aufweisen; Text soll mit kurzen Zeilenlängen und mindestens anderthalbfachem Zeilenabstand dargestellt werden; reiner Text soll nicht als Bilddatei ausgespielt werden; etc.

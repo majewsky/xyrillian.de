@@ -1433,3 +1433,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 81
+    slug: 081-barrierefreiheit-im-web-1
+    title: Barrierefreiheit im Web (Teil 1)
+    pubtime: 1762992600 # 2025-11-13
+
+    markdown:
+      description: |
+        Es gibt Menschen, die körperliche oder mentale Einschränkungen haben. Für diese Menschen könnte unsere Welt angenehmer gestaltet werden. Welche Vorteile auch nicht behinderte Menschen aus entsprechenden Maßnahmen ziehen und was diese Maßnahmen sind, darum soll es heute gehen. Und an einem anderen Tag auch.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
