@@ -7126,6 +7126,126 @@
           "title": "Richtlinie 3: Anpassbarkeit"
         }
       ]
+    },
+    "stp:082-vom-mythos-des-mann-monats-part-3": {
+      "length_secs": 6080,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-082-vom-mythos-des-mann-monats-part-3.mp3",
+          "size_bytes": 97616082
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-082-vom-mythos-des-mann-monats-part-3.ogg",
+          "size_bytes": 58739460
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-082-vom-mythos-des-mann-monats-part-3.opus",
+          "size_bytes": 36037260
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 225,
+          "title": "Intro"
+        },
+        {
+          "start_secs": 225,
+          "end_secs": 326,
+          "title": "Kurzzusammenfassung der bisherigen Folgen"
+        },
+        {
+          "start_secs": 326,
+          "end_secs": 356,
+          "title": "1. Die Teergrube"
+        },
+        {
+          "start_secs": 356,
+          "end_secs": 411,
+          "title": "2. Vom Mythos des Mann-Monats"
+        },
+        {
+          "start_secs": 411,
+          "end_secs": 443,
+          "title": "3. Das OP-Team"
+        },
+        {
+          "start_secs": 443,
+          "end_secs": 471,
+          "title": "4. Aristokratie, Demokratie und System-Design"
+        },
+        {
+          "start_secs": 471,
+          "end_secs": 495,
+          "title": "5. Das Problem des zweiten Systems"
+        },
+        {
+          "start_secs": 495,
+          "end_secs": 527,
+          "title": "6. Weitergabe von Informationen"
+        },
+        {
+          "start_secs": 527,
+          "end_secs": 591,
+          "title": "7. Warum ist der Turm zu Babel gefallen?"
+        },
+        {
+          "start_secs": 591,
+          "end_secs": 893,
+          "title": "Kapitel 8: Calling the Shot"
+        },
+        {
+          "start_secs": 893,
+          "end_secs": 1442,
+          "title": "Kapitel 9: Zehn Pfund in einem Fünf-Pfund-Sack"
+        },
+        {
+          "start_secs": 1442,
+          "end_secs": 1770,
+          "title": "Kapitel 10: Die dokumentarische Hypothese"
+        },
+        {
+          "start_secs": 1770,
+          "end_secs": 2655,
+          "title": "Kapitel 11: Plane damit, eines wegzuwerfen"
+        },
+        {
+          "start_secs": 2655,
+          "end_secs": 3855,
+          "title": "Kapitel 12: Scharfe Werkzeuge"
+        },
+        {
+          "start_secs": 3855,
+          "end_secs": 4697,
+          "title": "Kapitel 13: Das Ganze und die Teile"
+        },
+        {
+          "start_secs": 4697,
+          "end_secs": 5073,
+          "title": "Kapitel 14: Wie man eine Katastrophe ausbrütet"
+        },
+        {
+          "start_secs": 5073,
+          "end_secs": 5666,
+          "title": "Kapitel 15: Das andere Gesicht"
+        },
+        {
+          "start_secs": 5666,
+          "end_secs": 5785,
+          "title": "Resümee"
+        },
+        {
+          "start_secs": 5785,
+          "end_secs": 6080.225,
+          "title": "Epilog"
+        }
+      ]
     }
   }
 }

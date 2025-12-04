@@ -27,6 +27,308 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP082: Literatur: Vom Mythos des Mann-Monats, Teil 3</itunes:title>
+    <itunes:episode>82</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP082: Literatur: Vom Mythos des Mann-Monats, Teil 3</title>
+    <link>https://schluesseltechnologie-podcast.de/082-vom-mythos-des-mann-monats-part-3</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Als letzten Streich in der Besprechung dieses Werkes hört ihr einen Mitschnitt von den Datenspuren von 2025-09-19; und da wir leider nicht den ganzen Rest des Buches in unsere Bühnenzeit bekommen haben, auch noch den Rest in der gewohnten Form. Applaus für den Presenter!</itunes:summary>
+    <description>Als letzten Streich in der Besprechung dieses Werkes hört ihr einen Mitschnitt von den Datenspuren von 2025-09-19; und da wir leider nicht den ganzen Rest des Buches in unsere Bühnenzeit bekommen haben, auch noch den Rest in der gewohnten Form. Applaus für den Presenter!</description>
+    <content:encoded>&lt;p&gt;Als letzten Streich in der Besprechung dieses Werkes hört ihr einen Mitschnitt von den Datenspuren von 2025-09-19; und da wir leider nicht den ganzen Rest des Buches in unsere Bühnenzeit bekommen haben, auch noch den Rest in der gewohnten Form. Applaus für den Presenter!&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Fortsetzung aus STP068 und STP074. Wir lesen weiterhin die englische Erstausgabe von 1975, die &lt;a href=&#34;https://archive.org/details/MythicalManMonth&#34;&gt;im Internet Archive&lt;/a&gt; digitalisiert wurde.
+Erneut als Vorbemerkung: Aus Quellentreue sagen wir &amp;quot;Mann-Monat&amp;quot; statt &amp;quot;Person-Monat&amp;quot;.&lt;/p&gt;
+&lt;h3&gt;Kurzzusammenfassung der bisherigen Folgen&lt;/h3&gt;
+&lt;p&gt;Für die Zuschauer im Saal, die die vergangenen Folgen nicht gehört haben. Das übergreifende Motiv in dieser ersten Hälfte des Buches ist, wie sich die Arbeit in großen Teams von kleinen Teams unterscheidet.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Die Teergrube
+&lt;blockquote&gt;
+&lt;p&gt;So wie man in der Teergrube erst gefangen ist, wenn alle Beine drinstecken, so resultiert die Trägheit von Software-Entwicklung aus einem Zusammenspiel mehrerer Faktoren. Ein Programm zu schreiben, ist einfach. Aber die Produktisierung erfordert viel mehr Aufwand: für Generalisierung, Testabdeckung, Dokumentation und fortlaufende Wartung. Außerdem muss sich das Programm in ein größeres System einfügen. Vom Programm zum Programmsystemprodukt erhöht sich der Aufwand um ungefähr eine ganze Größenordnung.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Vom Mythos des Mann-Monats
+&lt;blockquote&gt;
+&lt;p&gt;Konventionelle Planungsmethoden funktionieren nur, wenn Personen und Monate austauschbar sind. Das beachtet jedoch weder die unterschiedlichen Kompetenzniveaus verschiedener Teammitglieder noch den zusätzlichen Zeitaufwand durch Kommunikation innerhalb des Teams sowie zwischen Teams. Da Programmierer aber schlecht im Schätzen von Zeitaufwand sind, wird in der Praxis der Zeitplan oft an den Bedürfnissen der Kunden ausgerichtet, nicht an den technischen Randbedingungen. Wenn dann das Kind in den Brunnen gefallen ist, tritt das Brooks&#39;sche Gesetz in Kraft: &amp;quot;Das Hinzufügen weiteren Personals zu einem verspäteten Softwareprojekt verspätet es weiter.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Das OP-Team
+&lt;blockquote&gt;
+&lt;p&gt;Um die Kommunikationskosten zu verringern, stellt Brooks ein Modell für kleinere Teams vor, die in Analogie zu einem OP-Team organisiert sind, in dem immer nur einer auf einmal die eigentliche Programmierarbeit leistet und alle anderen nur zuarbeiten. Die genaue Beschreibung ist sicherlich überholt: Heutzutage braucht man zum Beispiel keinen Schreiber mehr, der Lochkarten sortiert. Aber vielleicht haben wir auch etwas verloren, als wir Sekretärsrollen ersetzt haben dadurch, dass jetzt die rare Expertin Termine im Outlook schubsen und Präsentationsfolien zusammenklicken muss.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Aristokratie, Demokratie und System-Design
+&lt;blockquote&gt;
+&lt;p&gt;Die Kathedrale von Reims wurde von acht Generationen von Baumeistern errichtet, weist aber trotzdem eine beachtliche gestalterische Kohärenz auf, weil die nachfolgenden Generationen das ursprüngliche Design respektiert haben. Daraus muss aber nicht folgen, dass ein einzelner Architekt alle Entscheidungen trifft und die Erbauer nur stupide die Pläne umsetzen. Auch auf der Umsetzungsebene gibt es viele interessante Designentscheidungen zu treffen; und ein guter Architekt hört auch auf seine Erbauer, wenn es um Fragen von Praktikabilität geht.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Das Problem des zweiten Systems
+&lt;blockquote&gt;
+&lt;p&gt;In diesem Dialog zwischen Architekt und Erbauer stellen sich also oftmals Ideen des Architekten als unpraktikabel heraus und werden verworfen. Doch wenn das erste System erfolgreich war, gewinnt der Architekt an Prestige und Erfahrung, die dazu verleiten kann, beim nächsten Mal alle Sachzwänge zu ignorieren. Ein weiteres klassisches Diktum von Brooks ist deswegen: &amp;quot;Dieses zweite ist das gefährlichste System, dass man jemals entwirft.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Weitergabe von Informationen
+&lt;blockquote&gt;
+&lt;p&gt;Damit ein Entwurf von 10 Architekt:innen von 1000 Mitarbeiter:innen und nochmal deutlich mehr Nutzer:innen verstanden wird, braucht es gute Dokumentation: Handbücher für Benutzer, und Architekturpläne für Erbauer. Brooks schlägt hier einiges vor, was heute in der Industrie gelebte Praxis ist (oder zumindest sein sollte), zum Beispiel maschinenlesbare Spezifikation von Schnittstellen und automatisierte Tests zur Überprüfung der Kompatibilität. Sein Ruf nach sorgfältiger Pro/Kontra-Abwägung zwischen mehreren möglichen Design-Optionen verhallt im Zeitalter agiler Softwareentwicklung jedoch oftmals ungehört.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Warum ist der Turm zu Babel gefallen?
+&lt;blockquote&gt;
+&lt;p&gt;Offensichtlich ist ineffektive Kommunikation einer der wesentlichen Gründe dafür, dass Software-Großprojekte scheitern oder erst mit deutlicher Verspätung liefern. Somit stellt sich die Frage nach der optimalen Teamstruktur in einer Software-Entwicklungsabteilung. Brooks hält eine baumförmige Struktur für unausweichlich, damit Entscheidungskompetenzen klar geregelt sind. In jedem Entwicklungsteam sollte es sollte es neben einem Architekten (dem Chefentwickler des Teams) auch einen Produzenten geben, der sich um die Kommunikation mit anderen Teams kümmert. Da eine Personalunion zwischen beiden Rollen nicht skaliert, muss entweder der Architekt der Chef des Produzenten sein: Dies passt aber nicht zu den separaten Management-Karrieren in den großen Firmen. Oder der Produzent ist der Chef des Architekten: Dies kann aber nur funktionieren, wenn der Produzent die technische Autorität des Architekten akzeptiert.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Kapitel 8: &amp;quot;Calling the Shot&amp;quot;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;Calling the Shot&amp;quot; hier im Baseball-Sinne: vorher ansagen, wo der Ball nach dem Schlag landet&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wie lange wird eine System-Programmierungsaufgabe dauern? Wieviel Aufwand ist nötig? Wie schätzt man das?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Problem: Code schreiben alleine ist noch einigermaßen abschätzbar, macht aber nur einen kleinen Teil (vllt. ein Sechstel) des Gesamtaufwandes aus&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Aufwand steigt exponentiell mit der Komplexität des Programmiersystems, weil Interaktionen zwischen verschiedenen Teilen des Systems beachtet werden müssen und Kompromisse im Design erfordern (vgl. Kapitel 1)&lt;/li&gt;
+&lt;li&gt;und dann zusätzlicher Overhead, sobald Kommunikation zwischen mehreren Teammitgliedern erforderlich ist (vgl. Kapitel 2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brooks fasst dann Erkenntnisse aus mehreren quantitativen Studien zusammen; Highlights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geschwindigkeitsschätzungen waren zu Beginn immer ziemlich akkurat, aber im Verlauf des Projektes wird mit zunehmender Komplexität alles immer träger&lt;/li&gt;
+&lt;li&gt;Aufwand scheint am stärksten von der Gesamtmenge an Code abzuhängen (sprich: 1000 Zeilen Code sind ähnlicher Aufwand, unabhängig von der Sprache) -&amp;gt; Überleitung in das nächste Kapitel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 9: Zehn Pfund in einem Fünf-Pfund-Sack&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;wenn Code kein Wert an sich, sondern eine Verbindlichkeit ist, wie kann man Code reduzieren?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hochsprachen -&amp;gt; vgl. &amp;quot;No Silver Bullet&amp;quot; und intrinsiche vs. versehentliche Komplexität (&amp;quot;essential vs. accidental complexity&amp;quot;; besprochen im &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20221227.html&#34;&gt;Pentaradio vom Dezember 2022&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Xyrill sieht einen Bezug zum Hype um Coding-KI und die damit verbundenen Werbeversprechen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brooks zieht eine Parallele zu Hardware-Entwurf: &amp;quot;Weil die Größe ein wichtiger Teil der Benutzerkosten eines Programmiersystem-Produktes ist, muss der Erbauer Größenziele setzen, die Größe im Auge behalten, und Techniken zur Größenreduktion ersinnen; genau so, wie ein Hardware-Erbauer Komponentenzahlziele setzt, die Komponentenzahl im Auge behält, und Techniken zur Reduktion der Komponentenzahl ersinnt. Wie jede Art von Kosten ist Größe an sich nicht schlecht, aber überflüssige Größe ist es.&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vgl. Kapitel 1 (siehe STP068), wo bereits ein vordefiniertes Ressourcenbudget für jedes Teilprogramm gefordert wurde&lt;/li&gt;
+&lt;li&gt;heute (leider?) nicht mehr en vogue; Speicher ist zu günstig geworden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;Repräsentation ist die Essenz des Programmierens&amp;quot;: Brooks hält den Entwurf passender Datenstrukturen für sehr viel relevanter als die Auswahl passender Algorithmen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Xyrill stimmt offensichtlicherweise zu, siehe STP071/072&lt;/li&gt;
+&lt;li&gt;&amp;quot;Zeig mir deine Flussdiagramme ohne die [Datenbank-]Tabellen, und ich werde verwirrt bleiben. Zeig mir deine Tabellen, und ich werde die Flussdiagramme wahrscheinlich nicht brauchen; sie werden offensichtlich sein.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Xyrill vermutet, dass hierher seine tiefe Abneigung gegen Prozess-Designer rührt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 10: Die dokumentarische Hypothese&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Die Hypothese: Verborgen in einem riesigen Papierhaufen verborgen, werden eine kleine Zahl von Dokumenten zu kritischen Angelpunkten, um die sich das Management eines jeden Projektes dreht. Dies sind die zentralen Werkzeuge eines Managers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;Auf einen neuen Manager, der gerade aus dem Handwerk gewechselt ist, erscheint der meiste Papierkram als vollständiges Ärgernis, als unnütze Ablenkung, und eine weiße Flut, die droht, ihn zu umspülen. Und in der Tat sind die meisten dieser Dokumente genau das.&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;doch einige Dokumente sind essentiell und das wesentliche Arbeitsergebnis des Managers&lt;/li&gt;
+&lt;li&gt;Mindestsatz laut Brooks: Zielsetzungen/Spezifikationen, Zeitplan, Budget, Ressourcenzuteilung, Personalzuteilung (letzteres vgl. Conway&#39;s Gesetz: &amp;quot;Organisationen, die Systeme entwerfen, sind gezwungen, Systeme hervorzubringen, die die Kommunikationsstruktur dieser Organisation kopieren.&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;wesentliche Funktionen von Dokumentation für den Manager:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Festhalten von Entscheidungen: Aufschreiben legt Widersprüche, Denkfehler und -lücken offen&lt;/li&gt;
+&lt;li&gt;Kommunizieren von Entscheidungen: Manager sind die meiste Zeit Kommunikatoren und nur relativ selten tatsächlich Entscheider&lt;/li&gt;
+&lt;li&gt;Erinnern von Entscheidungen: klare Dokumentation einer Entscheidung mit Begründung ermöglicht spätere Rezension und Entscheidung, wann eine Richtungsänderung angebracht ist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 11: Plane damit, eines wegzuwerfen (&amp;quot;Plan to Throw One Away&amp;quot;)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Analogie zu &lt;strong&gt;Pilotanlagen&lt;/strong&gt; in der Chemietechnik: beim Übergang von Laborprozessen zu Fabrikproduktion im großen Maßstab sind Skalierungsprobleme und methodische Fragen zu lösen, sodass man nicht sofort die Fabrikanlage in der finalen Größe bauen kann&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Plane damit, eines wegzuwerfen. Du wirst es sowieso tun.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Programmierer waren zu Brooks&#39; Zeiten damit beschäftigt, die Lektion zu lernen, und sind es heute immer noch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;damit im Zusammenhang: Wie geht man mit Veränderungen der Umstände um? Wieviel Veränderung der Umstände ist man bereit, zu akzeptieren?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;These: Unwillen zur Dokumentation ist Unwillen, sich auf eine Entscheidung festzulegen, von der man schon weiß, dass sie immer nur vorläufig sein kann&lt;/li&gt;
+&lt;li&gt;bis hin zu Teamstruktur: &amp;quot;In einem großen Projekt muss der Manager zwei oder drei Topprogrammierer als technische Kavallerie vorhalten, die zu Rettung galoppieren können, wo immer der Kampf am schwierigsten ist.&amp;quot; (Xyrill ist sich nicht sicher, ob er da mitgeht)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Software-Maintenance laut Brooks besteht hauptsächlich aus &amp;quot;Änderungen, die Designfehler beheben&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Xyrill stimmt nur im Teil zu: der meiste Aufwand bei Maintenance heutzutage ist &amp;quot;Bit Rot&amp;quot; (Umgang mit der stetig fortschreitenden Fäulnis im Ökosystem), also nur indirekt Behebung von Designfehlern&lt;/li&gt;
+&lt;li&gt;jede Behebung eines Fehlers kann aber auch neue Fehler erzeugen (sowohl auf handwerklicher Ebene als auch auf Design-Ebene)&lt;/li&gt;
+&lt;li&gt;automatisierte Tests helfen, sofern sie eine hinreichend gute Abdeckung erzielen und nicht so aufwändig sind, dass sie den Arbeitsprozess behindern&lt;/li&gt;
+&lt;li&gt;trotzdem: Programme werden im Verlauf ihres Lebenszyklus immer komplexer, wodurch die Rate von Folgefehlern steigt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;der letzte Satz des Kapitels war bereits im Juni im Pentaradio zitiert: &amp;quot;Das Erbauen eines Programms ist ein entropieverringernder Prozess […] Die Wartung eines Programms ist ein entropieerhöhender Prozess, und selbst die gescheiteste Umsetzung kann das unausweichliche Absacken des Systems in unreparierbare Obsoleszenz höchstens verzögern.&amp;quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 12: Scharfe Werkzeuge&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Programmierer sind eine der wenigen Berufsstände, die ihre eigenen Werkzeuge bauen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;da Effizienz aus der Qualität des Instrumentariums folgt, sollen Softwareentwicklungs-Manager Ressourcen abstellen für &amp;quot;Werkzeugmacher&amp;quot;&lt;/li&gt;
+&lt;li&gt;aber: heute anderer Fokus als damals; weniger Bedarf nach z.B. Debugging-Werkzeugen (das bringt die Programmiersprache mit) und mehr Bedarf nach z.B. CI/CD oder Linting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brooks bespricht dann Strategien, die nicht auf den allgemeinen Fall übertragbar sind&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rationierung der Rechenzeit auf raren Mainframes: heute haben wir überproportionierte PCs für jeden Entwickler, sowie elastische Cloud-Infrastruktur für alles, was da nicht heraufpasst&lt;/li&gt;
+&lt;li&gt;Umgang mit Prerelease-Hardware: betrifft die allermeisten großen Software-Projekte nicht (aber siehe &lt;a href=&#34;https://media.ccc.de/v/32c3-7171-when_hardware_must_just_work&#34;&gt;dieser Vortrag von einem AMD-Chipdesigner&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brooks stellt als offensichtlich wertvolles Werkzeug Hochsprachen auf eine Stufe mit interaktiver Programmierung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Ich bin überzeugt, dass nur Schwerfälligkeit und Faulheit die universelle Annahme dieser Werkzeuge aufhalten; die technischen Schwierigkeiten sind nicht länger valide Ausreden.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Vorteile von Hochsprachen: erhöhte Produktivität (aufgrund weniger Code; siehe Kapitel 8/9), weniger Programmierfehler (nicht nur aufgrund weniger Code, sondern weil ganze Fehlerklassen eliminiert werden)&lt;/li&gt;
+&lt;li&gt;bei interaktiver Programmierung Bezug zu MIT Multics (dem Vorgänger von AT&amp;amp;T Unix): Xyrill hatte hier zuerst an Systeme wie Smalltalk gedacht, aber offenbar ist &amp;quot;interaktiv&amp;quot; hier das Gegenwort zu &amp;quot;Batch Processing&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 13: Das Ganze und die Teile&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Wie verhindert man Probleme beim Zusammenfügen mehrerer Teilprogramme zu einem Gesamtsystem?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brooks enumeriert hier viele bereits erwähnte Sachen: strukturierte Programmierung in Hochsprachen, Debugging (entweder interaktiv auf der Zielmaschine, oder post-mortem mit einem Speicherabbild), Tests (sowohl für Einzelkomponenten als auch das Gesamtsystem)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Missverständnisse bzw. Unklarheiten in der Spezifikation: siehe Kapitel 4-6 für Prozesse zum Erhalt der konzeptionellen Integrität des Gesamtsystems&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Xyrill beobachtet, dass das Schreiben der Spezifikation oftmals mehr Konzentration erfordert als das Schreiben des Code (hohe Entscheidungsdichte, dichtes Konsequenzgeflecht)&lt;/li&gt;
+&lt;li&gt;Brooks empfiehlt einen Ansatz nach Niklaus Wirth: &amp;quot;Programmentwicklung durch schrittweises Verfeinern&amp;quot; mit verschiedenen Stufen von je nach Stufe möglichst groben Designs, die dann jeweils durch die nächste Stufe verfeinert werden&lt;/li&gt;
+&lt;li&gt;Probleme beim Verfeinern stellen dann evtl. die Designfehler auf der gröberen Ebene bloß -&amp;gt; damit der Versuchung entgehen, ein schlechtes Grunddesign mit immer mehr Epizyklen zuzukleistern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Empfehlung: klare Markierungen, wenn zum Zwecke der Fehlerbehebung der dokumentierte Zustand des Systems manipuliert wird&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brooks beschreibt Verkabelung gemäß Plan mit gelben Kabeln und manuelle Änderungen mit lilanen Kabeln, damit diese ins Auge stechen und dann beim nächsten Update des Kabelplans berücksichtigt werden&lt;/li&gt;
+&lt;li&gt;in Software nicht so sehr formalisiert, wie es sein sollte (am ehesten in Form von Systemen, die manuelle Änderungen am Produktivsystem unterbinden)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;weitere Empfehlungen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;immer eine Komponente nach der anderen hinzufügen, nicht mehrere auf einmal&lt;/li&gt;
+&lt;li&gt;Aktualisierungen nicht ständig einspielen, sondern nur ab und zu, damit man zwischendurch den stabilen Zustand des Systems beobachten kann&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 14: Wie man eine Katastrophe ausbrütet (&amp;quot;Hatching a Catastrophe&amp;quot;)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Zeitpläne scheitern meist nicht durch ein großes Hindernis (auf welches mit einer großen Anstrengung reagiert würde), sondern durch eine Anhäufung kleiner Hindernisse&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vgl. politische Reaktion auf Versagen: Einsturz einer einzelnen Brücke mobilisiert sofort Unterstützung, aber schleichender Verfall aller Brücken ist alternativlos&lt;/li&gt;
+&lt;li&gt;Tod durch tausend Schnitte: heute ist der Chefentwickler krank, morgen ist eine Festplatte auf dem Datenbankserver kaputt, übermorgen verspätet sich der Hardwaretest aufgrund Problemen in der Lieferkette&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Erkennen von Verspätungen erfordert einen festen Zeitplan mit spezifischen Meilensteinen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gegenbeispiel: &amp;quot;Implementation 90% fertig&amp;quot; stimmt so gut wie immer :)&lt;/li&gt;
+&lt;li&gt;&amp;quot;Chronisches Überziehen des Zeitplans ist ein Teammoral-Killer.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;Aber die anderen sind auch zu spät dran.&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;trotzdem ist es ratsam, sich selber ranzuhalten, damit man nicht auf dem &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Methode_des_kritischen_Pfades&amp;amp;oldid=249068045&#34;&gt;kritischen Pfad&lt;/a&gt; landet und dann das ganze Großprojekt ins Stocken bringt&lt;/li&gt;
+&lt;li&gt;Manager sollten den kritischen Pfad kennen, damit sie rechtzeitig wissen, wo ihre Aufmerksamkeit am wertvollsten ist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kapitel 15: Das andere Gesicht&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;Ein Computerprogramm ist eine Nachricht des Menschen an die Maschine. [...] Aber ein geschriebenes Programm hat ein anderes Gesicht, dasjenige, dass seine Geschichte dem menschlichen Benutzer erzählt.&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;selbst für Programme für den eigenen Gebrauch, damit man sich in einem Jahr noch daran erinnert, was das Programm tut&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brooks möchte, dass Dokumentation aus drei Teilen besteht&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wie man ein Programm verwendet (klar)&lt;/li&gt;
+&lt;li&gt;wie man dem Programm glaubt (Testfälle zum Ausprobieren)&lt;/li&gt;
+&lt;li&gt;wie man das Programm verändert (Dokumentation über die interne Struktur, das Dateilayout, verwendete Algorithmen und Datenstrukturen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brooks findet Strukturdiagramme super, und Flowcharts scheiße: man solle lieber äquivalenten (Pseudo-)Code hinschreiben&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Xyrill stimmt zu: die meisten Flowcharts aus der Praxis sind abgrundtief hässlich und unlesbar chaotisch&lt;/li&gt;
+&lt;li&gt;Ergebnis: der Code sollte einfach selbstdokumentierend sein bzw. seine Dokumentation inline enthalten (vgl. Donald Knuth und &amp;quot;Literate Programming&amp;quot;)&lt;/li&gt;
+&lt;li&gt;offensichtlich ist das alles aus der Zeit, bevor Software ein einzeln verkauftes Produkt war&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt: &lt;a href=&#34;https://aosabook.org/en/index.html&#34;&gt;The Architecture of Open Source Applications&lt;/a&gt;; ein Buch darüber, guten Open-Source-Code zu lesen und zu durchdringen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Epilog&lt;/h3&gt;
+&lt;p&gt;&amp;quot;Die Teergrube der Software-Entwicklung wird noch eine ganze Weile klebrig bleiben. Man kann davon ausgehen, dass die Menschheit auch weiterhin Systeme in Angriff nehmen wird, die gerade so innerhalb oder gerade so außerhalb des Möglichen liegen; und Softwaresysteme sind vielleicht die vertracktesten und komplexesten aller menschlichen Schöpfungen. Das Verwalten dieses komplexen Handwerks wird von uns fordern: den bestmöglichen Einsatz neuer Sprachen und Systeme, die optimale Anwendung bewährter Methoden des Ingenieurmanagements, großzügige Mengen gesunden Menschenverstandes, und die gottgegebene Demut, die eigene Fehlbarkeit und Beschränkungen zu erkennen.&amp;quot;&lt;/p&gt;
+&lt;h3&gt;Podcast-Empfehlungen&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.acbstories.com/work/gilda-con-arne&#34;&gt;Gilda con Arne – Der Politik-Podcast&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dlf Doku Serien
+&lt;ul&gt;
+&lt;li&gt;einige Trailer für Dokus&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.deutschlandradio.de/tech-bro-topia-100.html&#34;&gt;Tech Bro Topia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.deutschlandradio.de/rechtsextreme-vor-gericht-dokuserie-100.html&#34;&gt;Rechtsextreme vor Gericht&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.deutschlandfunkkultur.de/hoerspielmagazin-gespraech-neuland-sechsteilige-feature-100.html&#34;&gt;Neuland&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.deutschlandradio.de/die-geschichte-geht-weiter-100.html&#34;&gt;Die Geschichte geht weiter – Victor Klemperers Tagebücher 1918-1958&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:03:45" title="Kurzzusammenfassung der bisherigen Folgen"  />
+          <chapter start="00:05:26" title="1. Die Teergrube"  />
+          <chapter start="00:05:56" title="2. Vom Mythos des Mann-Monats"  />
+          <chapter start="00:06:51" title="3. Das OP-Team"  />
+          <chapter start="00:07:23" title="4. Aristokratie, Demokratie und System-Design"  />
+          <chapter start="00:07:51" title="5. Das Problem des zweiten Systems"  />
+          <chapter start="00:08:15" title="6. Weitergabe von Informationen"  />
+          <chapter start="00:08:47" title="7. Warum ist der Turm zu Babel gefallen?"  />
+          <chapter start="00:09:51" title="Kapitel 8: Calling the Shot"  />
+          <chapter start="00:14:53" title="Kapitel 9: Zehn Pfund in einem Fünf-Pfund-Sack"  />
+          <chapter start="00:24:02" title="Kapitel 10: Die dokumentarische Hypothese"  />
+          <chapter start="00:29:30" title="Kapitel 11: Plane damit, eines wegzuwerfen"  />
+          <chapter start="00:44:15" title="Kapitel 12: Scharfe Werkzeuge"  />
+          <chapter start="01:04:15" title="Kapitel 13: Das Ganze und die Teile"  />
+          <chapter start="01:18:17" title="Kapitel 14: Wie man eine Katastrophe ausbrütet"  />
+          <chapter start="01:24:33" title="Kapitel 15: Das andere Gesicht"  />
+          <chapter start="01:34:26" title="Resümee"  />
+          <chapter start="01:36:25" title="Epilog"  />
+      </chapters>
+      <enclosure length="97616082" url="https://dl.xyrillian.de/noises/stp-082-vom-mythos-des-mann-monats-part-3.mp3" type="audio/mpeg"/>
+      <enclosure length="58739460" url="https://dl.xyrillian.de/noises/stp-082-vom-mythos-des-mann-monats-part-3.ogg" type="audio/ogg"/>
+      <enclosure length="36037260" url="https://dl.xyrillian.de/noises/stp-082-vom-mythos-des-mann-monats-part-3.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/082-vom-mythos-des-mann-monats-part-3/</guid>
+    <pubDate>Thu, 04 Dec 2025 21:00:00 GMT</pubDate>
+    <itunes:duration>101:20</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP081: Barrierefreiheit im Web (Teil 1)</itunes:title>
     <itunes:episode>81</itunes:episode>
     <itunes:season>1</itunes:season>
