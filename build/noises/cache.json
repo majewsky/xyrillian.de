@@ -7246,6 +7246,76 @@
           "title": "Epilog"
         }
       ]
+    },
+    "stp:083-barrierefreiheit-im-web-2": {
+      "length_secs": 3595,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-083-barrierefreiheit-im-web-2.mp3",
+          "size_bytes": 57855568
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-083-barrierefreiheit-im-web-2.ogg",
+          "size_bytes": 34644790
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-083-barrierefreiheit-im-web-2.opus",
+          "size_bytes": 21212542
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 171,
+          "title": "Intro, Einstieg, Kurzauffrischung"
+        },
+        {
+          "start_secs": 171,
+          "end_secs": 454,
+          "title": "Gute Kitas und Beautiful PRs"
+        },
+        {
+          "start_secs": 454,
+          "end_secs": 909,
+          "title": "Richtlinie 6: Ausreichend Zeit"
+        },
+        {
+          "start_secs": 909,
+          "end_secs": 1361,
+          "title": "Richtlinie 5: Zugänglichkeit per Tastatur"
+        },
+        {
+          "start_secs": 1361,
+          "end_secs": 1757,
+          "title": "Richtlinie 7: Keine Anfälle"
+        },
+        {
+          "start_secs": 1757,
+          "end_secs": 2450,
+          "title": "Richtlinie 8: Navigierbarkeit"
+        },
+        {
+          "start_secs": 2450,
+          "end_secs": 3091.989,
+          "title": "Richtlinie 9: Alternative Eingabemethoden"
+        },
+        {
+          "start_secs": 3091.989,
+          "end_secs": 3155,
+          "title": "Es wird einen dritten Teil geben"
+        },
+        {
+          "start_secs": 3155,
+          "end_secs": 3595.244,
+          "title": "Derailing: Der Wert von Allgemeinbildung"
+        }
+      ]
     }
   }
 }

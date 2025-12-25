@@ -1459,3 +1459,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 83
+    slug: 083-barrierefreiheit-im-web-2
+    title: Barrierefreiheit im Web (Teil 2)
+    pubtime: 1766677800 # 2025-12-25
+
+    markdown:
+      description: |
+        Der versprochene zweite Teil ist da. Auch heute soll es darum gehen, wie eine angenehme Erfahrung im Internet und allgemein an Computern aussehen könnte. Zum Thema, ob wir alles geschafft haben, siehe Shownotes unten. Frohe Weihnachten allerseits.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

@@ -27,6 +27,87 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP083: Barrierefreiheit im Web (Teil 2)</itunes:title>
+    <itunes:episode>83</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP083: Barrierefreiheit im Web (Teil 2)</title>
+    <link>https://schluesseltechnologie-podcast.de/083-barrierefreiheit-im-web-2</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Der versprochene zweite Teil ist da. Auch heute soll es darum gehen, wie eine angenehme Erfahrung im Internet und allgemein an Computern aussehen könnte. Zum Thema, ob wir alles geschafft haben, siehe Shownotes unten. Frohe Weihnachten allerseits.</itunes:summary>
+    <description>Der versprochene zweite Teil ist da. Auch heute soll es darum gehen, wie eine angenehme Erfahrung im Internet und allgemein an Computern aussehen könnte. Zum Thema, ob wir alles geschafft haben, siehe Shownotes unten. Frohe Weihnachten allerseits.</description>
+    <content:encoded>&lt;p&gt;Der versprochene zweite Teil ist da. Auch heute soll es darum gehen, wie eine angenehme Erfahrung im Internet und allgemein an Computern aussehen könnte. Zum Thema, ob wir alles geschafft haben, siehe Shownotes unten. Frohe Weihnachten allerseits.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;siehe STP081: gemäß des neuen &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Barrierefreiheitsst%C3%A4rkungsgesetz&amp;amp;oldid=258239575&#34;&gt;Barrierefreiheitsstärkungsgesetzes&lt;/a&gt; müssen Webseiten und Webapplikationen die AA-Kriterien der WCAG 2.1 erfüllen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;WCAG = &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Web_Content_Accessibility_Guidelines&amp;amp;oldid=254032297&#34;&gt;Web Content Accessibility Guidelines&lt;/a&gt; (Webinhalte-Barrierefreiheits-Richtlinien) der &lt;a href=&#34;https://www.w3.org/WAI/&#34;&gt;Web Accessibility Initiative&lt;/a&gt; des W3C&lt;/li&gt;
+&lt;li&gt;Kriterien sind gruppiert in 4 Grundprinzipien und darin 13 Richtlinien&lt;/li&gt;
+&lt;li&gt;Kriterien gehen jeweils von A (Pflicht) über AA (Kür) bis AAA (Sahnehäubchen)&lt;/li&gt;
+&lt;li&gt;in STP081: das Grundprinzip 1 (Wahrnehmbarkeit) mit insgesamt vier Richtlinien, heute der Rest&lt;/li&gt;
+&lt;li&gt;zum Mitlesen: &lt;a href=&#34;https://www.w3.org/TR/WCAG22/&#34;&gt;WCAG 2.2 (aktuelle Version, nur Englisch)&lt;/a&gt; oder &lt;a href=&#34;https://www.w3.org/Translations/WCAG20-de/&#34;&gt;WCAG 2.0 (etwas ältere Version, in offizieller deutscher Übersetzung)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grundprinzip 2: &lt;strong&gt;Bedienbarkeit&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Richtlinie 5: &lt;em&gt;Zugänglichkeit per Tastatur&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;A: alle Aktionen per Tastatur ansteuerbar, die nicht eine genaue geometrische Ansteuerung erfordern (z.B. Zeichenfläche in einem Zeichenprogramm); kein Steuerelement kann den Tastaturfokus so fangen, dass man den Fokus nur mit einer anderweitigen Aktion (z.B. Mausklick) brechen kann; etc.&lt;/li&gt;
+&lt;li&gt;AAA: ausnahmslos alle Aktionen per Tastatur ansteuerbar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Richtlinie 6: &lt;em&gt;Ausreichend Zeit&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;A: wenn Interaktionen ein Zeitlimit haben, muss das Limit (wann immer möglich) in irgendeiner Form umgehbar oder zurücksetzbar sein (Aufgaben sollen abschließbar sein, ohne dass ein Zeitlimit plötzlich den Fortschritt zunichte macht); jegliches automatische Bewegen/Scrollen/Blinken/Aktualisieren muss abschaltbar sein&lt;/li&gt;
+&lt;li&gt;AAA: absolut keine Zeitlimits für Interaktionen; bei Relogin aufgrund abgelaufener Sitzung darf kein Fortschritt verloren gehen; Benutzer müssen jederzeit über laufende Zeitlimits informiert sein, die kürzer als 20 Stunden sind&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Richtlinie 7: &lt;em&gt;Keine Anfälle&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;A: Inhalte, die mehr als 3x pro Sekunde blinken, müssen eine Intensität unter den Grenzwerten für Epilepsierisiko liegen&lt;/li&gt;
+&lt;li&gt;AAA: gar kein Blinken schneller als 3x pro Sekunde; Animationen infolge von Benutzerinteraktionen müssen abschaltbar sein&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Richtlinie 8: &lt;em&gt;Navigierbarkeit&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;A: sinnvolle Titel auf jeder Seite; über mehrere Seiten wiederholte Informationen sind überspringbar; Steuerelemente haben eine sinnvolle Fokusreihenfolge; der Zweck von Links soll soweit wie möglich aus dem Linktext allein erkennbar sein (z.B. nicht &amp;quot;[Hier klicken], um den Kauf abzuschließen&amp;quot;)&lt;/li&gt;
+&lt;li&gt;AA: statische Seiten sollen auf mehrere Wege auffindbar sein; Seiten sind mittels Teilüberschriften und Labels sinnvoll strukturiert; Tastaturfokus auf Steuerelementen soll klar erkennbar sein; Steuerelemente mit Fokus sollen nie komplett verdeckt sein (z.B. durch ein danebenliegendes Ausklappmenü); etc.&lt;/li&gt;
+&lt;li&gt;AAA: aktueller Ort des Nutzers innerhalb einer Webseitenstruktur soll klar erkennbar sein (z.B. &amp;quot;Sie sind hier: [Start] &amp;gt; [Blog] &amp;gt; [Archiv] &amp;gt; Name des aktuellen Artikels&amp;quot;); etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Richtlinie 9: &lt;em&gt;Alternative Eingabemethoden&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;A: Webseiten/-applikationen, die Mehrpunkt-Interaktion erlauben (&amp;quot;Touch-Gesten&amp;quot;), sollen auch eine Alternative für zeigerbasierte Einzelpunkt-Interaktion erlauben; Aktionen infolge fehlerhaften Runterdrückens der Maustaste sollen abwendbar oder umkehrbar sein; Interaktion durch Bewegungssteuerung soll auch durch Steuerelemente ersetzbar sein sowie gegen Fehlaktivierung resistent sein; etc.&lt;/li&gt;
+&lt;li&gt;AA: Klickflächen müssen mindestens 24x24 CSS-Pixel groß sein (vgl. &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Fitts%E2%80%99_Gesetz&amp;amp;oldid=258729192&#34;&gt;Fitts&#39; Gesetz&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;AAA: Klickflächen müssen mindestens 44x44 CSS-Pixel groß sein; alternative Eingabemethoden sollen beliebig gleichzeitig nutzbar sein (ohne explizites Umschalten)&lt;/li&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Achilles_und_die_Schildkr%C3%B6te&amp;amp;oldid=258338766&#34;&gt;Zenons Paradoxon von Achilles und der Schildkröte&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/watch?v=v5ev-RAg7Xs&#34;&gt;The Topological Problem with Voting (Video)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Teil 3 dieser Serie folgen noch Grundprinzip 3 (Verständlichkeit) und 4 (Robustheit).</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro, Einstieg, Kurzauffrischung"  />
+          <chapter start="00:02:51" title="Gute Kitas und Beautiful PRs"  />
+          <chapter start="00:07:34" title="Richtlinie 6: Ausreichend Zeit"  />
+          <chapter start="00:15:09" title="Richtlinie 5: Zugänglichkeit per Tastatur"  />
+          <chapter start="00:22:41" title="Richtlinie 7: Keine Anfälle"  />
+          <chapter start="00:29:17" title="Richtlinie 8: Navigierbarkeit"  />
+          <chapter start="00:40:50" title="Richtlinie 9: Alternative Eingabemethoden"  />
+          <chapter start="00:51:31" title="Es wird einen dritten Teil geben"  />
+          <chapter start="00:52:35" title="Derailing: Der Wert von Allgemeinbildung"  />
+      </chapters>
+      <enclosure length="57855568" url="https://dl.xyrillian.de/noises/stp-083-barrierefreiheit-im-web-2.mp3" type="audio/mpeg"/>
+      <enclosure length="34644790" url="https://dl.xyrillian.de/noises/stp-083-barrierefreiheit-im-web-2.ogg" type="audio/ogg"/>
+      <enclosure length="21212542" url="https://dl.xyrillian.de/noises/stp-083-barrierefreiheit-im-web-2.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/083-barrierefreiheit-im-web-2/</guid>
+    <pubDate>Thu, 25 Dec 2025 15:50:00 GMT</pubDate>
+    <itunes:duration>59:55</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP082: Literatur: Vom Mythos des Mann-Monats, Teil 3</itunes:title>
     <itunes:episode>82</itunes:episode>
     <itunes:season>1</itunes:season>
