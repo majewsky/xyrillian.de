@@ -1472,3 +1472,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 84
+    slug: 084-cursed-computer-iceberg-meme-runde-3
+    title: Cursed Computer Iceberg Meme, Runde 3
+    pubtime: 1768435200 # 2026-01-15
+
+    markdown:
+      description: |
+        Mal wieder stehen uns angesichts der Merkwürdigkeit der Computertechnik die Haare zu Eisberge.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

@@ -5,7 +5,7 @@
   <link>https://schluesseltechnologie-podcast.de/</link>
   <atom:link href="https://xyrillian.de/noises/stp/rss.xml" rel="self" type="application/rss+xml" />
   <language>de</language>
-  <copyright>&#xA9; 2021-2025 Stefan Majewsky, ttimeless</copyright>
+  <copyright>&#xA9; 2021-2026 Stefan Majewsky, ttimeless</copyright>
   <itunes:subtitle>Computertechnik, von Grund auf erklärt</itunes:subtitle>
   <itunes:author>Xyrillian Noises</itunes:author>
   <itunes:summary>Die IT hat unser Leben in den letzten Jahrzehnten von Grund auf verändert. Aber wie funktioniert sie wirklich? Das möchte ttimeless mal erklärt bekommen. Zum Glück hat Xyrill Antworten.
@@ -25,6 +25,89 @@
   <itunes:image href="https://xyrillian.de/res/cover-stp.png"/>
   <itunes:category text="Technology"/>
   <itunes:explicit>no</itunes:explicit>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP084: Cursed Computer Iceberg Meme, Runde 3</itunes:title>
+    <itunes:episode>84</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP084: Cursed Computer Iceberg Meme, Runde 3</title>
+    <link>https://schluesseltechnologie-podcast.de/084-cursed-computer-iceberg-meme-runde-3</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Mal wieder stehen uns angesichts der Merkwürdigkeit der Computertechnik die Haare zu Eisberge.</itunes:summary>
+    <description>Mal wieder stehen uns angesichts der Merkwürdigkeit der Computertechnik die Haare zu Eisberge.</description>
+    <content:encoded>&lt;p&gt;Mal wieder stehen uns angesichts der Merkwürdigkeit der Computertechnik die Haare zu Eisberge.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Wir setzen unsere Betrachtung des &lt;a href=&#34;https://suricrasia.online/iceberg/&#34;&gt;Cursed Computer Iceberg Meme&lt;/a&gt; aus STP042 und STP064 fort. Dieses Mal hat Xyrill sich vorgenommen, einen Pick aus jeder Ebene des Eisbergs zu besprechen.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Above the Iceberg&amp;quot; - Oberhalb des Eisbergs: &lt;a href=&#34;https://meltdownattack.com/&#34;&gt;Spectre/Meltdown&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispiel eines Seitenkanalangriffs (vgl. Besprechung von nicht-zeitkonstanten Operationen in STP041)&lt;/li&gt;
+&lt;li&gt;war damals (2018) auch &lt;a href=&#34;https://c3d2.de/news/pentaradio24-20180123.html&#34;&gt;im Pentaradio besprochen worden&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;und im &lt;a href=&#34;https://chaosradio.de/cr242-einmaleinschmelzenbitte&#34;&gt;Chaosradio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Grundlage: moderne Prozessoren erzielen ihre Geschwindigkeit zu guten Teilen durch spekulative Ausführung zukünftiger Instruktionen (siehe STP011)&lt;/li&gt;
+&lt;li&gt;Idee: Angreifer kann nicht auf geschützten Speicher zugreifen, aber die spekulative Ausführung weiß das nicht&lt;/li&gt;
+&lt;li&gt;spekulativ ausgeführter (und dann verworfener) Befehl ist so gebaut, dass je nach dem Wert eines geschützten Bytes eine unterschiedliche Speicherseite angefasst wird&lt;/li&gt;
+&lt;li&gt;dann Auslesen des Wert des Bytes durch Timing-Seitenkanal: zuletzt angefasste Speicherseite ist im Cache und schneller lesbar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;On the Iceberg&amp;quot; - Auf dem Eisberg: &lt;a href=&#34;https://superuser.com/a/1202556&#34;&gt;Schriftarten können Schadcode enthalten&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Kombo mit &amp;quot;Middle of the Iceberg&amp;quot; weiter unten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;Below the Water&amp;quot; - Unter der Wasserlinie: &lt;a href=&#34;https://www.youtube.com/watch?v=pdmODVYPDLA&#34;&gt;Magic the Gathering is Turing Complete&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;vgl. unsere Besprechung von &amp;quot;aus Versehen turingvollständig&amp;quot; in STP042 sowie von Turingmaschinen in STP063&lt;/li&gt;
+&lt;li&gt;Kyle Hill hat dazu auch noch ein &lt;a href=&#34;https://www.youtube.com/watch?v=uDCj-QOp5gE&#34;&gt;neueres Video&lt;/a&gt; auf seinem eigenen Kanal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;Middle of the Iceberg&amp;quot; - Mitte des Eisbergs: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=TrueType&amp;amp;oldid=1305280909#Hinting_language&#34;&gt;Font-Hinting ist turingvollständig&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;noch ein Fall von &amp;quot;aus Versehen turingvollständig&amp;quot; (siehe STP042)&lt;/li&gt;
+&lt;li&gt;Hinting: Anpassung der Form einer Glyphe an die tatsächliche Schriftgröße in Pixeln etc., um ungewollte Rasterisierungs-Artefakte zu reduzieren (&lt;a href=&#34;https://commons.wikimedia.org/w/index.php?title=File:Font-hinting-example.png&amp;amp;oldid=808481633&#34;&gt;grafisches Beispiel&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;in TrueType: Hinting in einer VM, die durch Code in der Schriftartendatei gesteuert wird; damit Einschleusung von Schadcode möglich, wenn diese VM Schwachstellen hat&lt;/li&gt;
+&lt;li&gt;Problem: heute Schriftarten nicht nur im Betriebssystem vorinstalliert, sondern auch dynamisch geladen als Webfont&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;Bottom of the Iceberg&amp;quot; - Unterseite des Eisbergs: &lt;a href=&#34;https://www.gayle.com/blog/2015/5/31/the-problem-with-the-fizzbuzz-problem&#34;&gt;Es gibt keine elegante Lösung für FizzBuzz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;quot;Below the Iceberg&amp;quot; - Unterhalb des Eisbergs: &lt;a href=&#34;https://ojs.aaai.org/index.php/aimagazine/article/view/2395&#34;&gt;SAT-Solver werden immer schneller&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;SAT (von engl. &amp;quot;satisfiability&amp;quot;): &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Erf%C3%BCllbarkeitsproblem_der_Aussagenlogik&amp;amp;oldid=256016000&#34;&gt;Erfüllbarkeitsproblem der Aussagenlogik&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;relevant deswegen, weil man viele Probleme als SAT-Problem umformulieren kann (z.B. Sudoku, Raumplanung, Paketmanager)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;Deep Water&amp;quot; - Im tiefen Wasser: &lt;a href=&#34;https://developer.arm.com/documentation/dui0801/g/A64-Floating-point-Instructions/FJCVTZS&#34;&gt;FJCVTZS&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;FJCTVZS = &amp;quot;Floating-point Javascript Convert to Signed fixed-point, rounding toward Zero&amp;quot; (Konvertierung eines float64 in einen int32 mit Rundung zur Null hin und Modulo 2^32 bei Überlauf)&lt;/li&gt;
+&lt;li&gt;ARM ist zwar RISC (siehe STP075), aber eine spezielle Instruktion für Zahlenumwandlungen in JavaScript-Engines ist offenbar doch wertvoll&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;The Abyss&amp;quot; - Der Abgrund: &lt;a href=&#34;https://www.dampfkraft.com/posuto.html&#34;&gt;Die große Adressdatei der japanischen Post&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;eine Lektion darin, wie wichtig saubere Daten sind, und dass man auf bei der Erstellung von Dateien auf ihre Verwendung achten muss (Parallele zu Dokumentation)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Es gibt weiterhin mehr zu entdecken. Wir sehen uns wieder in STP105.</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro, Begrüßung"  />
+          <chapter start="00:03:57" title="Über Wiederholungen und Traditionen"  />
+          <chapter start="00:07:30" title="Spectre/Meltdown"  />
+          <chapter start="00:21:38" title="Schriftarten können Schadcode enthalten"  />
+          <chapter start="00:24:28" title="Font-Hinting ist turingvollständig"  />
+          <chapter start="00:35:02" title="Magic the Gathering is Turing Complete"  />
+          <chapter start="00:40:44" title="Es gibt keine elegante Lösung für FizzBuzz"  />
+          <chapter start="00:47:03" title="SAT-Solver werden immer schneller"  />
+          <chapter start="00:56:40" title="FJCVTZS"  />
+          <chapter start="00:59:37" title="Die große Adressdatei der japanischen Post"  />
+      </chapters>
+      <enclosure length="64815250" url="https://dl.xyrillian.de/noises/stp-084-cursed-computer-iceberg-meme-runde-3.mp3" type="audio/mpeg"/>
+      <enclosure length="39245211" url="https://dl.xyrillian.de/noises/stp-084-cursed-computer-iceberg-meme-runde-3.ogg" type="audio/ogg"/>
+      <enclosure length="24007969" url="https://dl.xyrillian.de/noises/stp-084-cursed-computer-iceberg-meme-runde-3.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/084-cursed-computer-iceberg-meme-runde-3/</guid>
+    <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
+    <itunes:duration>67:10</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP083: Barrierefreiheit im Web (Teil 2)</itunes:title>

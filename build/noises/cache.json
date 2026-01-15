@@ -7316,6 +7316,81 @@
           "title": "Derailing: Der Wert von Allgemeinbildung"
         }
       ]
+    },
+    "stp:084-cursed-computer-iceberg-meme-runde-3": {
+      "length_secs": 4030,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-084-cursed-computer-iceberg-meme-runde-3.mp3",
+          "size_bytes": 64815250
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-084-cursed-computer-iceberg-meme-runde-3.ogg",
+          "size_bytes": 39245211
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-084-cursed-computer-iceberg-meme-runde-3.opus",
+          "size_bytes": 24007969
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 237,
+          "title": "Intro, Begrüßung"
+        },
+        {
+          "start_secs": 237,
+          "end_secs": 450,
+          "title": "Über Wiederholungen und Traditionen"
+        },
+        {
+          "start_secs": 450,
+          "end_secs": 1298,
+          "title": "Spectre/Meltdown"
+        },
+        {
+          "start_secs": 1298,
+          "end_secs": 1468,
+          "title": "Schriftarten können Schadcode enthalten"
+        },
+        {
+          "start_secs": 1468,
+          "end_secs": 2102,
+          "title": "Font-Hinting ist turingvollständig"
+        },
+        {
+          "start_secs": 2102,
+          "end_secs": 2444,
+          "title": "Magic the Gathering is Turing Complete"
+        },
+        {
+          "start_secs": 2444,
+          "end_secs": 2823,
+          "title": "Es gibt keine elegante Lösung für FizzBuzz"
+        },
+        {
+          "start_secs": 2823,
+          "end_secs": 3400,
+          "title": "SAT-Solver werden immer schneller"
+        },
+        {
+          "start_secs": 3400,
+          "end_secs": 3577,
+          "title": "FJCVTZS"
+        },
+        {
+          "start_secs": 3577,
+          "end_secs": 4030.205,
+          "title": "Die große Adressdatei der japanischen Post"
+        }
+      ]
     }
   }
 }
