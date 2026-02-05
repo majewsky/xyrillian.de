@@ -7391,6 +7391,86 @@
           "title": "Die große Adressdatei der japanischen Post"
         }
       ]
+    },
+    "stp:085-barrierefreiheit-im-web-teil-3": {
+      "length_secs": 4403,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-085-barrierefreiheit-im-web-teil-3.mp3",
+          "size_bytes": 70792995
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-085-barrierefreiheit-im-web-teil-3.ogg",
+          "size_bytes": 42076261
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-085-barrierefreiheit-im-web-teil-3.opus",
+          "size_bytes": 25862713
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 145,
+          "title": "Feedback von Dominik"
+        },
+        {
+          "start_secs": 145,
+          "end_secs": 619,
+          "title": "Feedback von Daniel"
+        },
+        {
+          "start_secs": 619,
+          "end_secs": 913,
+          "title": "Feedback von Toni"
+        },
+        {
+          "start_secs": 913,
+          "end_secs": 1135,
+          "title": "Intro und Begrüßung und Krankenwagen"
+        },
+        {
+          "start_secs": 1135,
+          "end_secs": 1235,
+          "title": "Was bisher geschah"
+        },
+        {
+          "start_secs": 1235,
+          "end_secs": 1242,
+          "title": "Grundprinzip 3: Verständlichkeit"
+        },
+        {
+          "start_secs": 1242,
+          "end_secs": 2019,
+          "title": "Richtlinie 10: Lesbarkeit"
+        },
+        {
+          "start_secs": 2019,
+          "end_secs": 2606,
+          "title": "Richtlinie 11: Vorhersehbarkeit"
+        },
+        {
+          "start_secs": 2606,
+          "end_secs": 3711,
+          "title": "Richtlinie 12: Hilfestellung bei der Eingabe"
+        },
+        {
+          "start_secs": 3711,
+          "end_secs": 3875,
+          "title": "Grundprinzip 4: Robustheit"
+        },
+        {
+          "start_secs": 3875,
+          "end_secs": 4403.808,
+          "title": "Letzte Worte"
+        }
+      ]
     }
   }
 }

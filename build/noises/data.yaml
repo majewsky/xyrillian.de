@@ -1485,3 +1485,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 85
+    slug: 085-barrierefreiheit-im-web-teil-3
+    title: Barrierefreiheit im Web (Teil 3)
+    pubtime: 1770325200 # 2026-02-05
+
+    markdown:
+      description: |
+        Nachdem wir das eingegangene Feedback besprochen haben, starten wir zur letzten Etappe dieses überraschend ergiebigen Themas. Weder fehlt es an Anekdoten noch an vorbei fahrenden Krankenwagen und zuletzt müssen auch noch ein paar Worte über Spiele verloren werden.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
