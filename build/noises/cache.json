@@ -7471,6 +7471,56 @@
           "title": "Letzte Worte"
         }
       ]
+    },
+    "stp:086-literatur-ein-plaedoyer-fuer-schlanke-software": {
+      "length_secs": 5357,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-086-literatur-ein-plaedoyer-fuer-schlanke-software.mp3",
+          "size_bytes": 86045070
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-086-literatur-ein-plaedoyer-fuer-schlanke-software.ogg",
+          "size_bytes": 52363367
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-086-literatur-ein-plaedoyer-fuer-schlanke-software.opus",
+          "size_bytes": 31924639
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 281,
+          "title": "Intro"
+        },
+        {
+          "start_secs": 281,
+          "end_secs": 1914,
+          "title": "Warum ist Software immer weniger langlebig?"
+        },
+        {
+          "start_secs": 1914,
+          "end_secs": 2973,
+          "title": "Warum waren Computer in den 90ern schneller?"
+        },
+        {
+          "start_secs": 2973,
+          "end_secs": 4778,
+          "title": "Komplexitätsquellen laut Wirth"
+        },
+        {
+          "start_secs": 4778,
+          "end_secs": 5357.112,
+          "title": "Wie heraus aus der Teergrube?"
+        }
+      ]
     }
   }
 }

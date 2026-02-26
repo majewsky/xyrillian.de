@@ -27,6 +27,137 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP086: Literatur: Ein Plädoyer für schlanke Software</itunes:title>
+    <itunes:episode>86</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP086: Literatur: Ein Plädoyer für schlanke Software</title>
+    <link>https://schluesseltechnologie-podcast.de/086-literatur-ein-plaedoyer-fuer-schlanke-software</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Die Erfahrung, dass das Plastikgehirn gelegentlich länger für die Dinge braucht, die wir ihm aufgeben, kennen wir alle. War das früher nicht schon mal besser? Oder sollte es nicht zumindest der Vergangenheit angehören? Oder täuschen wir uns und verklären die Vergangenheit…</itunes:summary>
+    <description>Die Erfahrung, dass das Plastikgehirn gelegentlich länger für die Dinge braucht, die wir ihm aufgeben, kennen wir alle. War das früher nicht schon mal besser? Oder sollte es nicht zumindest der Vergangenheit angehören? Oder täuschen wir uns und verklären die Vergangenheit…</description>
+    <content:encoded>&lt;p&gt;Die Erfahrung, dass das Plastikgehirn gelegentlich länger für die Dinge braucht, die wir ihm aufgeben, kennen wir alle. War das früher nicht schon mal besser? Oder sollte es nicht zumindest der Vergangenheit angehören? Oder täuschen wir uns und verklären die Vergangenheit…&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Anhand von &lt;a href=&#34;https://berthub.eu/articles/LeanSoftware_text.pdf&#34;&gt;&amp;quot;A Plea for Lean Software&amp;quot; (1995)&lt;/a&gt; von Niklaus Wirth besprechen wir zwei wesentliche Fragestellungen. Zuerst einige Vorbeobachtungen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Frage 1: Warum ist Software (bzw. Produkte im Allgemeinen) immer weniger langlebig?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;COBOL-Software aus den 60ern ist immer noch im Einsatz, aber React-Apps von vor 5 Jahren sind hoffnungslos obsolet
+&lt;ul&gt;
+&lt;li&gt;siehe Vermutung, dass in der Frontend-Entwicklung Schnelllebigkeit von YouTube-Influencern getrieben wird&lt;/li&gt;
+&lt;li&gt;bei COBOL/Fortran-Systemen auch regulatorische Hürden (z.B. Steuerungsoftware für Atombomben in Fortran 77, weil ein &lt;a href=&#34;https://infosec.exchange/@david_chisnall/115463730854960344&#34;&gt;Umstieg auf neuere Versionen Tests der Software erfordern würde&lt;/a&gt;, aber Atomwaffentests verboten sind)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;vgl. Erfahrung von ttimeless: Fensterbeschläge von vor 30 Jahren noch top, aber neuere von vor 5 Jahren tw. schon abgeranzt (Geplante Obsoleszenz? Survivorship-Bias?)
+&lt;ul&gt;
+&lt;li&gt;Wie schätzt man Qualität bei selten gekauften Produkten ab?&lt;/li&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://www.backblaze.com/blog/author/drivestatsteam/&#34;&gt;Backblaze Drive Stats&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;sich gegenseitig beschleunigende Marktmechanismen (Qualitätsschwund durch Sparmaßnahmen in der Produktion, Mode)
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/BuyItForLife/comments/1106bml/why_everything_you_buy_is_worse_now_feels/&#34;&gt;passend dazu&lt;/a&gt;: &amp;quot;Ich sah neulich eine alte Episode von &#39;Der Preis ist heiß&#39; aus den 80ern, die UK-Edition mit [Bruce Forsyth]. Die Preise waren Dinge wie Mikrowellen, Fernseher, Möbelstücke und so weiter. Die Preise waren weit, weit höher, als was ich je geraten hätte. Wir sind mit der Vorstellung aufgewachsen, dass eine Mikrowelle weniger als 100 Pfund kosten sollte, obwohl sie unter Berücksichtigung der Inflation mittlerweile 400 kosten sollten. Alles ist scheiße günstig geworden.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;These von ttimeless: mehr Leute machen mehr Zeug machen mehr Altlasten (Xyrill erhöht um eine Coding-KI-Industrie und möchte sehen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Frage 2: Warum waren Computer in den 90ern schneller?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;welch Ironie, dass wir uns nach der Zeit zurücksehnen, in der der Autor unseres Textes sich über verschwenderische Programmierweisen aufregt&lt;/li&gt;
+&lt;li&gt;vgl. Frage im MDR: Wann kriegen wir wieder Akkulaufzeiten von einer Woche wie bei den alten Nokia-Handys?&lt;/li&gt;
+&lt;li&gt;offensichtlicher Einfluss: mehr Leistung, die sich nicht als konkrete Funktion äußert (z.B. höhere Auflösung erfordert mehr Videospeicher, moderne Konnektivität ist objektiv komplexer, als nur auf einen Anruf oder eine SMS zu warten)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=37538521&#34;&gt;Gegenrede&lt;/a&gt;: &amp;quot;Ich war dabei bei den meisten dieser alten Maschinen und meiner Erinnerung nach waren sie &lt;em&gt;immer&lt;/em&gt; langsam, weswegen es ein derart unerbittliches Rennen um das Upgrade auf eine schnellere Maschine gab, und warum für eine lange Zeit Leute jedes Jahr ihren alten Computer ersetzten. [...] Dieser Topos von &#39;wie konnten Dinge langsamer werden, damals war alles so schnell&#39; ist eine fehlerhafte Erinnerung&amp;quot;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=37538305&#34;&gt;andere Perspektive aus demselben Thread&lt;/a&gt;: &amp;quot;Weil wir erweiterbare anstatt zusammensetzbarer Software schreiben. Wir liefern nicht Funktionen aus, sondern Apps. Wieviele Instruktionen braucht man, um in Maschinensprache 1&#43;1 auszurechnen? Wieviele Instruktionen braucht man, um die Suchleiste zu öffnen, den Taschenrechner zu finden und die Berechnung auszuführen?&amp;quot;&lt;/li&gt;
+&lt;li&gt;vgl. &lt;a href=&#34;https://freakshow.fm/fs273-papst-von-china&#34;&gt;Freak Show 273&lt;/a&gt; im Kapitel mit dem Nachruf auf Niklaus Wirth: in den 60ern vorherrschende Vorstellung unmittelbar bevorstehender Ablösung von Programmierern durch Computer, aber mehr Rechenleistung erfordert noch mehr Programmierer (vgl. &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Softwarekrise&amp;amp;oldid=257790161&#34;&gt;Softwarekrise&lt;/a&gt;, für den Verweis auf kombinatorische Explosion von Software-Komplexität siehe STP070)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Komplexitätsquellen laut Wirth&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;verbesserte Benutzerführung und Funktionalität&amp;quot; laut Wirth keine gute Begründung
+&lt;ul&gt;
+&lt;li&gt;aber Wirth begründet das mittels seines eigenen extremen Fokus auf Basisfunktionalität (&amp;quot;Diese grundlegenden Aufgaben haben sich [... angesichts u. a. der] Ersetzung von aussagekräftigen Befehlswörtern durch hübsche Bilder [nicht geändert].&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Desktop-Metapher und Skeuomorphismus waren essentiell darin, Computersoftware einem breiten Publikum näherzubringen&lt;/li&gt;
+&lt;li&gt;vgl. Brooks (essentielle vs. versehentliche Komplexität), aber unterschiedliche Grenzziehungen&lt;/li&gt;
+&lt;li&gt;Wirth bevorzugt ziemlich explizit &amp;quot;simple&amp;quot; statt &amp;quot;easy&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;jede Funktion, die der Kunde haben will, wird eingebaut, ob sie sich nun sinnfällig in das ursprüngliche Design einfügt oder nicht
+&lt;ul&gt;
+&lt;li&gt;Komplexität durch Komplikationen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;monolithischer Systementwurf (&amp;quot;Jeder Kunde zahlt für alle Funktionen, aber nutzt nur wenige von ihnen.&amp;quot;)
+&lt;ul&gt;
+&lt;li&gt;vgl. oben &amp;quot;wir liefern nicht Funktionen aus, sondern Apps&amp;quot;&lt;/li&gt;
+&lt;li&gt;Xyrill baut Systeme auch eher monolitisch, weil sich für ihn der Wartungsaufwand verringert, wenn alles in einer Codebase liegt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Komplexität wird an sich als Funktionalität missverstanden: &amp;quot;Immer mehr scheinen die Leute Komplexität als Raffinesse zu interpretieren, was rätselhaft ist — Unverständliches sollte Argwohn erregen, nicht Bewunderung.&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;*hust* *hust* ✨KI✨ *hust* *hust*&lt;/li&gt;
+&lt;li&gt;kapitalistischer Anreiz: damit Nutzer in der eigenen Teergrube binden und Support und Beratung verkaufen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;gutes Design erfordert systematische Iteration auf dem ersten, offensichtlichen, überkomplizierten Entwurf
+&lt;ul&gt;
+&lt;li&gt;vgl. Antoine de Saint-Exupéry (&amp;quot;Es scheint, dass Perfektion nicht dann erreicht ist, wenn nichts mehr hinzuzufügen ist, sondern wenn nichts mehr wegzunehmen ist.&amp;quot;)&lt;/li&gt;
+&lt;li&gt;aber: Zeitdruck (&amp;quot;akribische Ingenieursroutine zahlt sich kurzfristig nicht aus&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Wirth drischt hier stark auf die Kunden ein, die ständig neuen Klimbim wollen, was etwas aus der Zeit gefallen wirkt (bzw. nur etwas deplatziert; heute sind &amp;quot;die Kunden&amp;quot; die Werbeabteilung, die noch mehr Datenspuren sammeln will)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;deswegen auch extrem langsame Einführung von Techniken für methodisches Arbeiten (z.B. stark typisierte Programmiersprachen): &amp;quot;Methodisch korrektes Design [...] ist offenbar unerwünscht, weil auf diese Weise entwickelte Produkte zu viel Zeit bis zur Markteinführung brauchen.&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;Wirth beschwert sich, dass in den 90ern die Programmiertheorie der 70er (z.B. abstrakte Datentypen) erst langsam in Produktivumgebungen Einzug fand&lt;/li&gt;
+&lt;li&gt;passend dazu kommt zurzeit die Programmiertheorie der 90er (z.B. algebraische Datentypen wie in STP072, affine Typsysteme) erst langsam in die heutigen Produktivumgebungen, aber C hält sich immer noch hartnäckig&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie heraus aus der Teergrube? Wirth bespricht sein eigenes &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Oberon_(Programmiersprache)&amp;amp;oldid=258424717&#34;&gt;Oberon System&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ursprüngliches Ziel: ein Betriebssystem inklusive Userspace, das kompakt genug ist, um als Lehrmaterial verwendet und in Lehrbüchern besprochen werden zu können&lt;/li&gt;
+&lt;li&gt;extreme Konzentration auf &amp;quot;Grundfunktionen&amp;quot; (z.B. keine grafische Oberfläche, nur Textinteraktion)&lt;/li&gt;
+&lt;li&gt;Implementation in einer typsicheren Programmiersprache mit Objektorientierung, um starke Modularität auf Codeebene zu ermöglichen
+&lt;ul&gt;
+&lt;li&gt;Xyrill ist hier etwas skeptisch, dass Objektorientierte Programmierung hier einen großen Unterschied macht, aber für Wirth ist das extrem wichtig&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;keine abgeschlossenen Programme, sondern nur Funktionsaufrufe
+&lt;ul&gt;
+&lt;li&gt;also vmtl. kein Speicherschutz in Hardware, sondern nur durch Typsicherheit&lt;/li&gt;
+&lt;li&gt;&amp;quot;Wenn ein Modul M eine Prozedur P anbietet, dann kann P aufgerufen werden, indem man einfach auf den Text &#39;M.P&#39; zeigt, sobald er irgendwo auf dem Bildschirm erscheint, und eine Maustaste drückt&amp;quot;&lt;/li&gt;
+&lt;li&gt;statt einer Leiste mit Icons eine einfache Textbox mit Befehlsnamen&lt;/li&gt;
+&lt;li&gt;vgl. Plan 9, Smalltalk, Forth&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;der Preis des schlanken Systems ist der Aufwand für den sauberen Entwurf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Am Ende neun Lektionen für das Design schlanker Software. Wir zitieren Nummer 7:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Die Reduktion von Komplexität und Größe muss in jedem Schritt das Ziel sein: im Lastenheft, im Design, und beim detaillierten Programmieren. Die Kompetenz eines Programmierers soll nach der Fähigkeit gemessen werden, einfache Lösungen zu finden, und ganz bestimmt nicht nach Produktivität, gemessen in &amp;quot;Anzahl Codezeilen, die pro Tag ausgeworfen werden&amp;quot;. Produktive Programmierer tragen zum sicheren Desaster bei.&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:04:41" title="Warum ist Software immer weniger langlebig?"  />
+          <chapter start="00:31:54" title="Warum waren Computer in den 90ern schneller?"  />
+          <chapter start="00:49:33" title="Komplexitätsquellen laut Wirth"  />
+          <chapter start="01:19:38" title="Wie heraus aus der Teergrube?"  />
+      </chapters>
+      <enclosure length="86045070" url="https://dl.xyrillian.de/noises/stp-086-literatur-ein-plaedoyer-fuer-schlanke-software.mp3" type="audio/mpeg"/>
+      <enclosure length="52363367" url="https://dl.xyrillian.de/noises/stp-086-literatur-ein-plaedoyer-fuer-schlanke-software.ogg" type="audio/ogg"/>
+      <enclosure length="31924639" url="https://dl.xyrillian.de/noises/stp-086-literatur-ein-plaedoyer-fuer-schlanke-software.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/086-literatur-ein-plaedoyer-fuer-schlanke-software/</guid>
+    <pubDate>Thu, 26 Feb 2026 19:15:00 GMT</pubDate>
+    <itunes:duration>89:17</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP085: Barrierefreiheit im Web (Teil 3)</itunes:title>
     <itunes:episode>85</itunes:episode>
     <itunes:season>1</itunes:season>

@@ -1498,3 +1498,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 86
+    slug: 086-literatur-ein-plaedoyer-fuer-schlanke-software
+    title: "Literatur: Ein Plädoyer für schlanke Software"
+    pubtime: 1772133300 # 2026-02-26
+
+    markdown:
+      description: |
+        Die Erfahrung, dass das Plastikgehirn gelegentlich länger für die Dinge braucht, die wir ihm aufgeben, kennen wir alle. War das früher nicht schon mal besser? Oder sollte es nicht zumindest der Vergangenheit angehören? Oder täuschen wir uns und verklären die Vergangenheit…
+      shownotes: true # in file
+
+    music: *music-like-stp-000
