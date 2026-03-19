@@ -1520,7 +1520,7 @@ files:
 
     markdown:
       description: |
-        Nachdem wir den Begriff schon ein paar Male gestreift haben, heute ein genauerer Blick auf Graphen. Darin: informierte und uninformierte Meinungen sowie eine Erkundung der Dresdner Umgebung.
+        Nachdem wir den Begriff schon ein paar Male gestreift haben, heute ein genauerer Blick auf Graphen. Darin: informierte und uninformierte Suche sowie eine Erkundung der Dresdner Umgebung.
       shownotes: true # in file
 
     music: *music-like-stp-000
