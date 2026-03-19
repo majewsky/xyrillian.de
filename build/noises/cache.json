@@ -7521,6 +7521,66 @@
           "title": "Wie heraus aus der Teergrube?"
         }
       ]
+    },
+    "stp:087-graphen-von-null-bis-dijkstra": {
+      "length_secs": 4509,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-087-graphen-von-null-bis-dijkstra.mp3",
+          "size_bytes": 72488859
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-087-graphen-von-null-bis-dijkstra.ogg",
+          "size_bytes": 44822673
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-087-graphen-von-null-bis-dijkstra.opus",
+          "size_bytes": 26952146
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 334,
+          "title": "Intro, ein schlafender ttimeless, das Haus vom Nikolaus und passierende Theorien"
+        },
+        {
+          "start_secs": 334,
+          "end_secs": 800,
+          "title": "Graphen allgemein"
+        },
+        {
+          "start_secs": 800,
+          "end_secs": 1686,
+          "title": "Unterarten von Graphen"
+        },
+        {
+          "start_secs": 1686,
+          "end_secs": 3034,
+          "title": "Beispiele von Graphen und wie man sie duchschreitet"
+        },
+        {
+          "start_secs": 3034,
+          "end_secs": 3232,
+          "title": "Wegfindung"
+        },
+        {
+          "start_secs": 3232,
+          "end_secs": 4101,
+          "title": "Dijkstra-Algorithmus"
+        },
+        {
+          "start_secs": 4101,
+          "end_secs": 4509.827,
+          "title": "A*-Algorithmus"
+        }
+      ]
     }
   }
 }

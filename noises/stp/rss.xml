@@ -27,6 +27,78 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP087: Graphen von Null bis Dijkstra</itunes:title>
+    <itunes:episode>87</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP087: Graphen von Null bis Dijkstra</title>
+    <link>https://schluesseltechnologie-podcast.de/087-graphen-von-null-bis-dijkstra</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Nachdem wir den Begriff schon ein paar Male gestreift haben, heute ein genauerer Blick auf Graphen. Darin: informierte und uninformierte Meinungen sowie eine Erkundung der Dresdner Umgebung.</itunes:summary>
+    <description>Nachdem wir den Begriff schon ein paar Male gestreift haben, heute ein genauerer Blick auf Graphen. Darin: informierte und uninformierte Meinungen sowie eine Erkundung der Dresdner Umgebung.</description>
+    <content:encoded>&lt;p&gt;Nachdem wir den Begriff schon ein paar Male gestreift haben, heute ein genauerer Blick auf Graphen. Darin: informierte und uninformierte Meinungen sowie eine Erkundung der Dresdner Umgebung.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;oft erwähnt, aber nie systematisch eingeführt: der Begriff &lt;strong&gt;Graph&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Graph_(Graphentheorie)&amp;amp;oldid=260114694&#34;&gt;Graph&lt;/a&gt;: eine Menge von Knoten mit Kanten dazwischen&lt;/li&gt;
+&lt;li&gt;z.B. Nahverkehrsnetz: Knoten = Haltestellen, Kanten = Direktverbindung zwischen zwei Haltestellen&lt;/li&gt;
+&lt;li&gt;z.B. soziale Medien: Knoten = Personen, Kanten = &amp;quot;ist befreundet/folgt&amp;quot;&lt;/li&gt;
+&lt;li&gt;anders als bei Listen (STP077) oder Maps (STP079) große Variabilität darin, was ein Graph fundamental ist
+&lt;ul&gt;
+&lt;li&gt;z.B. gerichtete vs. ungerichtete Graphen: Haben die Kanten eine Richtung oder nicht? (siehe Beispiele oben)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;häufig verwendete Unterarten von Graphen:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Baum_(Graphentheorie)&amp;amp;oldid=260160360&#34;&gt;Baum&lt;/a&gt;: ayzklischer ungerichteter zusammenhängender Graph (z.B. siehe STP077/STP079: zum effizienten Abspeichern von sortierten Listen bzw. Maps)&lt;/li&gt;
+&lt;li&gt;azyklischer gerichteter Graph (z.B. Versionsverwaltung, Familienstammbaum, Firmen-Organigramm)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Planarer_Graph&amp;amp;oldid=254694423&#34;&gt;planarer Graph&lt;/a&gt;: siehe &lt;a href=&#34;https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/untangle.html&#34;&gt;&amp;quot;Untangle&amp;quot;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wie durchschreitet man einen Graphen? -&amp;gt; Suchalgorithmen, im allgemeinsten Fall die zwei wichtigsten &amp;quot;uninformierten&amp;quot; Suchalgorithmen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Breitensuche&amp;amp;oldid=250572859&#34;&gt;Breitensuche&lt;/a&gt;: von einem Startpunkt pro Runde alle Nachbarn von bereits besuchten Knoten besuchen&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Tiefensuche&amp;amp;oldid=260875992&#34;&gt;Tiefensuche&lt;/a&gt;: vom Startpunkt aus immer erst einen Nachbarn besuchen und dann dort wieder einen Nachbarn; sobald keine weiteren unbesuchten Nachbarn möglich sind, Backtracking zum vorherigen Knoten, bis ein neuer unbesuchter Nachbar gefunden wird&lt;/li&gt;
+&lt;li&gt;sowohl Breiten- als auch Tiefensuche erzeugen beim Durchschreiten des Graphen einen Suchbaum, der ein &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Spannbaum&amp;amp;oldid=258057046&#34;&gt;Spannbaum&lt;/a&gt; ist (vgl. Spanning Tree bei Ethernet in STP028)&lt;/li&gt;
+&lt;li&gt;Abwägung: Tiefensuche ist einfacher zu implementieren und hat weniger Speicheraufwand (braucht nur eine &amp;quot;besucht-Markierung&amp;quot; und keine Kandidatenliste), &lt;a href=&#34;https://xkcd.com/761/&#34;&gt;kann aber in der Praxis problematisch sein :)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Beobachtung: Breitensuche findet garantiert den kürzesten Pfad vom Startpunkt zu einem gewünschten Endpunkt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Abwandlung für Wegfindung: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Dijkstra-Algorithmus&amp;amp;oldid=259180765&#34;&gt;Dijkstra-Algorithmus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Voraussetzung: Kanten haben auch noch ein Gewicht (analog zu einer Streckenlänge)&lt;/li&gt;
+&lt;li&gt;Breitensuche merkt sich bei jedem Knoten den kürzesten Gesamtweg zu diesem Knoten&lt;/li&gt;
+&lt;li&gt;beim Auswählen des nächsten Besuchskandidaten Wahl des Knotens mit dem kürzesten Gesamtweg&lt;/li&gt;
+&lt;li&gt;Erweiterung zum &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=A*-Algorithmus&amp;amp;oldid=258638060&#34;&gt;A*-Algorithmus&lt;/a&gt; mittels Ergänzung um eine Heuristik, die beschreibt, wie nahe gefundene Knoten am Ziel sind (damit je nach Situation enorme Effizienzsteigerung möglich, siehe z.B. &lt;a href=&#34;https://factorio.com/blog/post/fff-317&#34;&gt;dieser Blogpost der Factorio-Entwickler&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im Gespräch erwähnt: &lt;a href=&#34;https://wissenschaftspodcasts.de/wisspodcast/wisspodweihnacht-3-das-haus-vom-niko-hae-mit-geschichten-aus-der-mathematik/&#34;&gt;#WissPodWeihnacht 3: Das Haus vom Niko…hä?!? mit Geschichten aus der Mathematik&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro, ein schlafender ttimeless, das Haus vom Nikolaus und passierende Theorien"  />
+          <chapter start="00:05:34" title="Graphen allgemein"  />
+          <chapter start="00:13:20" title="Unterarten von Graphen"  />
+          <chapter start="00:28:06" title="Beispiele von Graphen und wie man sie duchschreitet"  />
+          <chapter start="00:50:34" title="Wegfindung"  />
+          <chapter start="00:53:52" title="Dijkstra-Algorithmus"  />
+          <chapter start="01:08:21" title="A*-Algorithmus"  />
+      </chapters>
+      <enclosure length="72488859" url="https://dl.xyrillian.de/noises/stp-087-graphen-von-null-bis-dijkstra.mp3" type="audio/mpeg"/>
+      <enclosure length="44822673" url="https://dl.xyrillian.de/noises/stp-087-graphen-von-null-bis-dijkstra.ogg" type="audio/ogg"/>
+      <enclosure length="26952146" url="https://dl.xyrillian.de/noises/stp-087-graphen-von-null-bis-dijkstra.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/087-graphen-von-null-bis-dijkstra/</guid>
+    <pubDate>Thu, 19 Mar 2026 18:40:00 GMT</pubDate>
+    <itunes:duration>75:09</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP086: Literatur: Ein Plädoyer für schlanke Software</itunes:title>
     <itunes:episode>86</itunes:episode>
     <itunes:season>1</itunes:season>

@@ -1511,3 +1511,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 87
+    slug: 087-graphen-von-null-bis-dijkstra
+    title: "Graphen von Null bis Dijkstra"
+    pubtime: 1773945600 # 2026-03-19
+
+    markdown:
+      description: |
+        Nachdem wir den Begriff schon ein paar Male gestreift haben, heute ein genauerer Blick auf Graphen. Darin: informierte und uninformierte Meinungen sowie eine Erkundung der Dresdner Umgebung.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

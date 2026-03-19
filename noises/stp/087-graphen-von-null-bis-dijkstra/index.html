@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Graphen von Null bis Dijkstra - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #87 vom 19. März 2026</h2>
+    <h1>Graphen von Null bis Dijkstra</h1>
+      <p>Nachdem wir den Begriff schon ein paar Male gestreift haben, heute ein genauerer Blick auf Graphen. Darin: informierte und uninformierte Meinungen sowie eine Erkundung der Dresdner Umgebung.</p>
+      <p><strong>Länge:</strong> 75:09 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-087-graphen-von-null-bis-dijkstra.mp3" type="audio/mpeg">
+        <source src="/dl/stp-087-graphen-von-null-bis-dijkstra.ogg" type="audio/ogg">
+        <source src="/dl/stp-087-graphen-von-null-bis-dijkstra.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="334">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro, ein schlafender ttimeless, das Haus vom Nikolaus und passierende Theorien</span>
+      </div>
+      <div class="chapter" data-start="334" data-end="800">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">05:34</span>
+        <span class="chapter-title">Graphen allgemein</span>
+      </div>
+      <div class="chapter" data-start="800" data-end="1686">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">13:20</span>
+        <span class="chapter-title">Unterarten von Graphen</span>
+      </div>
+      <div class="chapter" data-start="1686" data-end="3034">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">28:06</span>
+        <span class="chapter-title">Beispiele von Graphen und wie man sie duchschreitet</span>
+      </div>
+      <div class="chapter" data-start="3034" data-end="3232">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">50:34</span>
+        <span class="chapter-title">Wegfindung</span>
+      </div>
+      <div class="chapter" data-start="3232" data-end="4101">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">53:52</span>
+        <span class="chapter-title">Dijkstra-Algorithmus</span>
+      </div>
+      <div class="chapter" data-start="4101" data-end="4509.827">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">68:21</span>
+        <span class="chapter-title">A*-Algorithmus</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-087-graphen-von-null-bis-dijkstra.mp3">MP3</a> (69,1 MiB)</li>
+          <li><a href="/dl/stp-087-graphen-von-null-bis-dijkstra.ogg">Ogg Vorbis</a> (42,7 MiB)</li>
+          <li><a href="/dl/stp-087-graphen-von-null-bis-dijkstra.opus">Opus</a> (25,7 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p>oft erwähnt, aber nie systematisch eingeführt: der Begriff <strong>Graph</strong></p>
+<ul>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Graph_(Graphentheorie)&amp;oldid=260114694">Graph</a>: eine Menge von Knoten mit Kanten dazwischen</li>
+<li>z.B. Nahverkehrsnetz: Knoten = Haltestellen, Kanten = Direktverbindung zwischen zwei Haltestellen</li>
+<li>z.B. soziale Medien: Knoten = Personen, Kanten = &quot;ist befreundet/folgt&quot;</li>
+<li>anders als bei Listen (STP077) oder Maps (STP079) große Variabilität darin, was ein Graph fundamental ist
+<ul>
+<li>z.B. gerichtete vs. ungerichtete Graphen: Haben die Kanten eine Richtung oder nicht? (siehe Beispiele oben)</li>
+</ul>
+</li>
+<li>häufig verwendete Unterarten von Graphen:
+<ul>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Baum_(Graphentheorie)&amp;oldid=260160360">Baum</a>: ayzklischer ungerichteter zusammenhängender Graph (z.B. siehe STP077/STP079: zum effizienten Abspeichern von sortierten Listen bzw. Maps)</li>
+<li>azyklischer gerichteter Graph (z.B. Versionsverwaltung, Familienstammbaum, Firmen-Organigramm)</li>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Planarer_Graph&amp;oldid=254694423">planarer Graph</a>: siehe <a href="https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/untangle.html">&quot;Untangle&quot;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Wie durchschreitet man einen Graphen? -&gt; Suchalgorithmen, im allgemeinsten Fall die zwei wichtigsten &quot;uninformierten&quot; Suchalgorithmen</p>
+<ul>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Breitensuche&amp;oldid=250572859">Breitensuche</a>: von einem Startpunkt pro Runde alle Nachbarn von bereits besuchten Knoten besuchen</li>
+<li><a href="https://de.wikipedia.org/w/index.php?title=Tiefensuche&amp;oldid=260875992">Tiefensuche</a>: vom Startpunkt aus immer erst einen Nachbarn besuchen und dann dort wieder einen Nachbarn; sobald keine weiteren unbesuchten Nachbarn möglich sind, Backtracking zum vorherigen Knoten, bis ein neuer unbesuchter Nachbar gefunden wird</li>
+<li>sowohl Breiten- als auch Tiefensuche erzeugen beim Durchschreiten des Graphen einen Suchbaum, der ein <a href="https://de.wikipedia.org/w/index.php?title=Spannbaum&amp;oldid=258057046">Spannbaum</a> ist (vgl. Spanning Tree bei Ethernet in STP028)</li>
+<li>Abwägung: Tiefensuche ist einfacher zu implementieren und hat weniger Speicheraufwand (braucht nur eine &quot;besucht-Markierung&quot; und keine Kandidatenliste), <a href="https://xkcd.com/761/">kann aber in der Praxis problematisch sein :)</a></li>
+</ul>
+</li>
+<li>
+<p>Beobachtung: Breitensuche findet garantiert den kürzesten Pfad vom Startpunkt zu einem gewünschten Endpunkt</p>
+<ul>
+<li>Abwandlung für Wegfindung: <a href="https://de.wikipedia.org/w/index.php?title=Dijkstra-Algorithmus&amp;oldid=259180765">Dijkstra-Algorithmus</a></li>
+<li>Voraussetzung: Kanten haben auch noch ein Gewicht (analog zu einer Streckenlänge)</li>
+<li>Breitensuche merkt sich bei jedem Knoten den kürzesten Gesamtweg zu diesem Knoten</li>
+<li>beim Auswählen des nächsten Besuchskandidaten Wahl des Knotens mit dem kürzesten Gesamtweg</li>
+<li>Erweiterung zum <a href="https://de.wikipedia.org/w/index.php?title=A*-Algorithmus&amp;oldid=258638060">A*-Algorithmus</a> mittels Ergänzung um eine Heuristik, die beschreibt, wie nahe gefundene Knoten am Ziel sind (damit je nach Situation enorme Effizienzsteigerung möglich, siehe z.B. <a href="https://factorio.com/blog/post/fff-317">dieser Blogpost der Factorio-Entwickler</a>)</li>
+</ul>
+</li>
+<li>
+<p>im Gespräch erwähnt: <a href="https://wissenschaftspodcasts.de/wisspodcast/wisspodweihnacht-3-das-haus-vom-niko-hae-mit-geschichten-aus-der-mathematik/">#WissPodWeihnacht 3: Das Haus vom Niko…hä?!? mit Geschichten aus der Mathematik</a></p>
+</li>
+</ul></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>
