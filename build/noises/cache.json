@@ -7581,6 +7581,46 @@
           "title": "A*-Algorithmus"
         }
       ]
+    },
+    "stp:088-die-schluesseltechnologie-kochshow": {
+      "length_secs": 2365,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-088-die-schluesseltechnologie-kochshow.mp3",
+          "size_bytes": 38176230
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-088-die-schluesseltechnologie-kochshow.ogg",
+          "size_bytes": 23751667
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-088-die-schluesseltechnologie-kochshow.opus",
+          "size_bytes": 14390681
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 242,
+          "title": "Intro und Insider aus Regionalmagazinen"
+        },
+        {
+          "start_secs": 242,
+          "end_secs": 1083,
+          "title": "ttimeless' Rezeptsammlung"
+        },
+        {
+          "start_secs": 1083,
+          "end_secs": 2365.299,
+          "title": "Xyrills arkane C-Kochbücher"
+        }
+      ]
     }
   }
 }

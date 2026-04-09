@@ -1511,3 +1511,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 88
+    slug: 088-die-schluesseltechnologie-kochshow
+    title: "Die Schlüsseltechnologie-Kochshow"
+    pubtime: 1775769300 # 2026-04-09
+
+    markdown:
+      description: |
+        Heute mal eine eher kurze Folge. Darin geht es ums Kochen und ähnliche Dinge und wie man sie verbinden könnte (oder auch nicht).
+      shownotes: true # in file
+
+    music: *music-like-stp-000

@@ -27,6 +27,63 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP088: Die Schlüsseltechnologie-Kochshow</itunes:title>
+    <itunes:episode>88</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP088: Die Schlüsseltechnologie-Kochshow</title>
+    <link>https://schluesseltechnologie-podcast.de/088-die-schluesseltechnologie-kochshow</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Heute mal eine eher kurze Folge. Darin geht es ums Kochen und ähnliche Dinge und wie man sie verbinden könnte (oder auch nicht).</itunes:summary>
+    <description>Heute mal eine eher kurze Folge. Darin geht es ums Kochen und ähnliche Dinge und wie man sie verbinden könnte (oder auch nicht).</description>
+    <content:encoded>&lt;p&gt;Heute mal eine eher kurze Folge. Darin geht es ums Kochen und ähnliche Dinge und wie man sie verbinden könnte (oder auch nicht).&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;ttimeless kocht eines seiner geTeXten Rezepte:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dl.xyrillian.de/noises/stp-088-shownotes/main.tex&#34;&gt;Präambel in einer Masterdatei&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rezepte in einzelnen Dateien
+&lt;ul&gt;
+&lt;li&gt;Hier das &lt;a href=&#34;https://dl.xyrillian.de/noises/stp-088-shownotes/hummus.tex&#34;&gt;Hummusrezept&lt;/a&gt; wie von Andong auf &lt;a href=&#34;https://www.youtube.com/mynameisandong&#34;&gt;seinem Youtube-Kanal&lt;/a&gt; vorgestellt: &lt;a href=&#34;https://www.youtube.com/watch?v=IRECUDMZteA&#34;&gt;Can I Recreate the World&#39;s Smoothest Hummus?&lt;/a&gt;, dazu gibt es &lt;a href=&#34;https://dl.xyrillian.de/noises/stp-088-shownotes/pita.tex&#34;&gt;das passende Pita&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dl.xyrillian.de/noises/stp-088-shownotes/main.pdf&#34;&gt;Gesamtergebnis als PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Xyrill kocht ein C&#43;&#43;-Programm mit make(1):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grundproblem: im Kompilierungsmodell von C/C&#43;&#43; entsteht ein Programm in mehreren Schritten
+&lt;ul&gt;
+&lt;li&gt;jede einzelne Quellcode-Datei wird einzeln vom &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Compiler&amp;amp;oldid=258395815&#34;&gt;Compiler&lt;/a&gt; in eine Objektdatei übersetzt&lt;/li&gt;
+&lt;li&gt;am Ende werden alle Objektdateien vom &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Linker_(Computerprogramm)&amp;amp;oldid=239659784&#34;&gt;Linker&lt;/a&gt; zu einer ausführbaren Programmdatei verknüpft&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/majewsky/xmpp-bridge&#34;&gt;als Beispiel ein kleines, vollständiges C-Programm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vorteile von Makefiles
+&lt;ul&gt;
+&lt;li&gt;Universalsprache zum Dokumentieren von Prozessen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Nachteile/Beschränkungen
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sapcc/keppel/blob/3107ae252039710e02ff06a25e0e55a2084f9487/Makefile#L114-L116&#34;&gt;tw. arkane Syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/q/3480950&#34;&gt;(fast?) turingvollständig&lt;/a&gt;, vgl. &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Ninja_(build_system)&amp;amp;oldid=1327454812&#34;&gt;Ninja&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;(unter anderem dadurch) vergleichsweise ineffizient, vgl. &lt;a href=&#34;https://gittup.org/tup/&#34;&gt;Tup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;moderne Programmiersprachen verwenden andere Kompilierkonzepte, meist fokussiert um Module aus mehreren Quelldateien&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Insider aus Regionalmagazinen"  />
+          <chapter start="00:04:02" title="ttimeless&#39; Rezeptsammlung"  />
+          <chapter start="00:18:03" title="Xyrills arkane C-Kochbücher"  />
+      </chapters>
+      <enclosure length="38176230" url="https://dl.xyrillian.de/noises/stp-088-die-schluesseltechnologie-kochshow.mp3" type="audio/mpeg"/>
+      <enclosure length="23751667" url="https://dl.xyrillian.de/noises/stp-088-die-schluesseltechnologie-kochshow.ogg" type="audio/ogg"/>
+      <enclosure length="14390681" url="https://dl.xyrillian.de/noises/stp-088-die-schluesseltechnologie-kochshow.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/088-die-schluesseltechnologie-kochshow/</guid>
+    <pubDate>Thu, 09 Apr 2026 21:15:00 GMT</pubDate>
+    <itunes:duration>39:25</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP087: Graphen von Null bis Dijkstra</itunes:title>
     <itunes:episode>87</itunes:episode>
     <itunes:season>1</itunes:season>
