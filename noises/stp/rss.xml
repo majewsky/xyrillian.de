@@ -27,6 +27,88 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP089: Frühgeschichte der künstlichen Intelligenz</itunes:title>
+    <itunes:episode>89</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP089: Frühgeschichte der künstlichen Intelligenz</title>
+    <link>https://schluesseltechnologie-podcast.de/089-fruehgeschichte-der-kuenstlichen-intelligenz</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Scheinbar ist die sogenannte KI etwas, was nicht ganz so schnell wieder weg geht. Daher fangen wir in dieser Episode damit an, etwas genauer zu erklähren, was es damit auf sich hat. Im ersten Teil dieser Reihe geht es um die entferntere Geschichte, die zu dem geführt hat, was wir heute sehen.</itunes:summary>
+    <description>Scheinbar ist die sogenannte KI etwas, was nicht ganz so schnell wieder weg geht. Daher fangen wir in dieser Episode damit an, etwas genauer zu erklähren, was es damit auf sich hat. Im ersten Teil dieser Reihe geht es um die entferntere Geschichte, die zu dem geführt hat, was wir heute sehen.</description>
+    <content:encoded>&lt;p&gt;Scheinbar ist die sogenannte KI etwas, was nicht ganz so schnell wieder weg geht. Daher fangen wir in dieser Episode damit an, etwas genauer zu erklähren, was es damit auf sich hat. Im ersten Teil dieser Reihe geht es um die entferntere Geschichte, die zu dem geführt hat, was wir heute sehen.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Der Einfachheit halber wird im gesamten Text &amp;quot;künstliche Intelligenz&amp;quot; als KI und &amp;quot;maschinelles Lernen&amp;quot; als ML abgekürzt.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;KI kann vieles heißen, siehe die Breite von Meilensteinen in Wikipedias &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Timeline_of_artificial_intelligence&amp;amp;oldid=1338511120&#34;&gt;Timeline of AI&lt;/a&gt;; ein paar Picks als initiale Motivation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Jhd. v. Chr.: Aristoteles beschreibt den &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Syllogismus&amp;amp;oldid=264056251&#34;&gt;Syllogismus&lt;/a&gt; als Methode formalen, mechanistischen Denkens&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;heutzutage Teil der &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Aussagenlogik&amp;amp;oldid=261655354&#34;&gt;Aussagenlogik&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;12./13. Jhd: Ramon Llull legt sein Hauptwerk &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ars_generalis_ultima&amp;amp;oldid=230192647&#34;&gt;Ars generalis ultima&lt;/a&gt; vor, das erläutert, wie man durch mechanisches Kombinieren von Begriffen mittels einer von ihm erdachten &amp;quot;logischen Maschine&amp;quot; zu Erkenntnissen gelangt
+&lt;ul&gt;
+&lt;li&gt;Llull war sowohl Logiker als auch Theologe: &amp;quot;Die Große Kunst war Llull seinen Memoiren zufolge [...] &#39;von Gott offenbart&#39; worden. Er wurde von da an auch &lt;em&gt;Doctor illuminatus&lt;/em&gt; genannt.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;1679: Leibniz stützt sich auf Llulls Arbeit und entwickelt ein &amp;quot;Alphabet der menschlichen Kognition&amp;quot;, mit dem Argumente nach festen Regeln mechanistisch ableitbar sein sollen&lt;/li&gt;
+&lt;li&gt;aber auch 1676: Leibniz leitet als Teil seiner Grundlagenforschung der Analysis die &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kettenregel&amp;amp;oldid=262295780&#34;&gt;Kettenregel&lt;/a&gt; her
+&lt;ul&gt;
+&lt;li&gt;theoretische Grundlage für das Training mehrschichtiger ML-Systeme&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;damit durch Leibniz wichtige Vorarbeit für beide wesentlichen Lager der KI-Forschung, gemäß &lt;a href=&#34;https://garymarcus.substack.com/p/how-o3-and-grok-4-accidentally-vindicated&#34;&gt;Einteilung von KI-Forscher Gary Marcus&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;symbolische Tradition&lt;/strong&gt; (seit dem Mittelalter, s.o.): &amp;quot;In diesem Ansatz stehen Symbole und Variablen für Abstraktionen; mathematische und logische Funktionen machen den Kern aus. [Symbolische] Systeme repräsentieren Wissen im Allgemeinen explizit, oft in Datenbanken, und verwenden klassische Programmiersprachen (oder sind komplett in diesen verfasst).&amp;quot;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;konnektionistische Tradition&lt;/strong&gt; (seit 1940/1950): &amp;quot;[Konnektivistische] Systeme sind statistisch, sehr lose von bestimmten Aspekten des Gehirns inspiriert (z.B. sind &#39;Knoten&#39; in neuralen Netzwerken als Abstraktion von Neuronen gedacht), und für gewöhnlich auf großen Datensätzen trainiert. Große Sprachmodelle (LLM) entwuchsen dieser Tradition.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Marcus skizziert die Geschichte der KI-Forschung als eine Geschichte der Spannung zwischen diesen Denkschulen&lt;/li&gt;
+&lt;li&gt;Xyrill beobachtet, dass dieser Dualismus zu seinen Beobachtungen über den Dualismus der menschlichen Intelligenz kongruent ist (vgl. System 1/2 in Daniel Kahnemans &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Schnelles_Denken,_langsames_Denken&amp;amp;oldid=263318467&#34;&gt;&amp;quot;Schnelles Denken, langsames Denken&amp;quot;&lt;/a&gt;; aber Vorsicht bzgl. Replizierbarkeit)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1956: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Dartmouth_Conference&amp;amp;oldid=260015104&#34;&gt;Dartmouth Conference&lt;/a&gt;, ein zweimonatiges Sommerseminar zu KI&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nicht die erste wissenschaftliche Aktivität zu KI mit Computern, aber historischer Einfluss durch die hohe Konzentration wichtiger Vertreter des Feldes (analog zu den &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Solvay-Konferenz&amp;amp;oldid=262539409#F%C3%BCnfte_Solvay-Konferenz_f%C3%BCr_Physik_(1927)&#34;&gt;Solvay-Konferenzen&lt;/a&gt; in der Physik)&lt;/li&gt;
+&lt;li&gt;allein der erste Absatz des Förderantrags umreißt auch aus heutiger Sicht akkurat das ganze Feld (siehe Link unter &amp;quot;Durchführung&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Personen auf der Konferenz (Auswahl)
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=John_McCarthy&amp;amp;oldid=257311799&#34;&gt;John McCarthy&lt;/a&gt;: Erfinder der Programmiersprache LISP&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Marvin_Minsky&amp;amp;oldid=262803200&#34;&gt;Marvin Minsky&lt;/a&gt;: Vordenker der Robotik, Miterfinder der Programmiersprache Logo (Caveat: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=List_of_people_named_in_the_Epstein_files&amp;amp;oldid=1338609760#Marvin_Minsky&#34;&gt;Verbindung zu Epstein&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Nathaniel_Rochester&amp;amp;oldid=168638080&#34;&gt;Nathaniel Rochester&lt;/a&gt;: 1955 bei IBM Experimente mit Neuronalen Netzwerken, Mustererkennung, Spielprogrammen, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Claude_Shannon&amp;amp;oldid=262891829&#34;&gt;Claude Shannon&lt;/a&gt;: Begründer der Informationstheorie; 1950 Konstruktion einer Robotermaus, die ein Labyrinth durchschreiten konnte&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Ray_Solomonoff&amp;amp;oldid=253965240&#34;&gt;Ray Solomonoff&lt;/a&gt;: präsentierte auf der Konferenz ein Programm, dass &amp;quot;arithmetische Formeln durch Beispiele ohne eingreifende Aufsicht&amp;quot; lernen konnte&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Oliver_Selfridge&amp;amp;oldid=241297481&#34;&gt;Oliver Selfridge&lt;/a&gt;: schlug 1958 eine Struktur für KI-Systeme als Netzwerk von Agenten (&amp;quot;Dämonen&amp;quot;) vor, mit unterschiedlichen Arten von Agenten (&amp;quot;Feature Demons&amp;quot; für Mustererkennung, &amp;quot;Cognitive Demons&amp;quot; für Informationszusammenführung, &amp;quot;Decision Demons&amp;quot; für Entscheidungen)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Allen_Newell&amp;amp;oldid=244394638&#34;&gt;Allen Newell&lt;/a&gt; und &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Herbert_A._Simon&amp;amp;oldid=251945141&#34;&gt;Herbert A. Simon&lt;/a&gt;: 1956 Entwicklung eines Logiksystems, das im Stande war, die 38 Theoreme aus Bertrand Russells &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Principia_Mathematica&amp;amp;oldid=261288620&#34;&gt;Principia Mathematica&lt;/a&gt; zu beweisen (vgl. moderne Theorem-Löser wie &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Rocq&amp;amp;oldid=261645440&#34;&gt;Rocq&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und die Unausweichlichkeit von KI"  />
+          <chapter start="00:04:11" title="Heutiger Fahrplan"  />
+          <chapter start="00:05:40" title="Timeline of AI"  />
+          <chapter start="00:16:29" title="Derailing: Zahlendefinition"  />
+          <chapter start="00:26:15" title="Zurück zu Leibniz"  />
+          <chapter start="00:29:03" title="Gary Marcus"  />
+          <chapter start="00:43:47" title="Dartmouth Conference"  />
+      </chapters>
+      <enclosure length="54786406" url="https://dl.xyrillian.de/noises/stp-089-fruehgeschichte-der-kuenstlichen-intelligenz.mp3" type="audio/mpeg"/>
+      <enclosure length="33614260" url="https://dl.xyrillian.de/noises/stp-089-fruehgeschichte-der-kuenstlichen-intelligenz.ogg" type="audio/ogg"/>
+      <enclosure length="20449196" url="https://dl.xyrillian.de/noises/stp-089-fruehgeschichte-der-kuenstlichen-intelligenz.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/089-fruehgeschichte-der-kuenstlichen-intelligenz/</guid>
+    <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+    <itunes:duration>56:43</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP088: Die Schlüsseltechnologie-Kochshow</itunes:title>
     <itunes:episode>88</itunes:episode>
     <itunes:season>1</itunes:season>

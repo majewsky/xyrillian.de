@@ -1,0 +1,28 @@
+Der Einfachheit halber wird im gesamten Text "künstliche Intelligenz" als KI und "maschinelles Lernen" als ML abgekürzt.
+
+- KI kann vieles heißen, siehe die Breite von Meilensteinen in Wikipedias [Timeline of AI](https://en.wikipedia.org/w/index.php?title=Timeline_of_artificial_intelligence&oldid=1338511120); ein paar Picks als initiale Motivation
+    - 4. Jhd. v. Chr.: Aristoteles beschreibt den [Syllogismus](https://de.wikipedia.org/w/index.php?title=Syllogismus&oldid=264056251) als Methode formalen, mechanistischen Denkens 
+        - heutzutage Teil der [Aussagenlogik](https://de.wikipedia.org/w/index.php?title=Aussagenlogik&oldid=261655354)
+    - 12./13. Jhd: Ramon Llull legt sein Hauptwerk [Ars generalis ultima](https://de.wikipedia.org/w/index.php?title=Ars_generalis_ultima&oldid=230192647) vor, das erläutert, wie man durch mechanisches Kombinieren von Begriffen mittels einer von ihm erdachten "logischen Maschine" zu Erkenntnissen gelangt
+        - Llull war sowohl Logiker als auch Theologe: "Die Große Kunst war Llull seinen Memoiren zufolge \[...\] 'von Gott offenbart' worden. Er wurde von da an auch *Doctor illuminatus* genannt."
+    - 1679: Leibniz stützt sich auf Llulls Arbeit und entwickelt ein "Alphabet der menschlichen Kognition", mit dem Argumente nach festen Regeln mechanistisch ableitbar sein sollen
+    - aber auch 1676: Leibniz leitet als Teil seiner Grundlagenforschung der Analysis die [Kettenregel](https://de.wikipedia.org/w/index.php?title=Kettenregel&oldid=262295780) her
+        - theoretische Grundlage für das Training mehrschichtiger ML-Systeme
+
+- damit durch Leibniz wichtige Vorarbeit für beide wesentlichen Lager der KI-Forschung, gemäß [Einteilung von KI-Forscher Gary Marcus](https://garymarcus.substack.com/p/how-o3-and-grok-4-accidentally-vindicated)
+    - **symbolische Tradition** (seit dem Mittelalter, s.o.): "In diesem Ansatz stehen Symbole und Variablen für Abstraktionen; mathematische und logische Funktionen machen den Kern aus. \[Symbolische\] Systeme repräsentieren Wissen im Allgemeinen explizit, oft in Datenbanken, und verwenden klassische Programmiersprachen (oder sind komplett in diesen verfasst)."
+    - **konnektionistische Tradition** (seit 1940/1950): "\[Konnektivistische\] Systeme sind statistisch, sehr lose von bestimmten Aspekten des Gehirns inspiriert (z.B. sind 'Knoten' in neuralen Netzwerken als Abstraktion von Neuronen gedacht), und für gewöhnlich auf großen Datensätzen trainiert. Große Sprachmodelle (LLM) entwuchsen dieser Tradition."
+    - Marcus skizziert die Geschichte der KI-Forschung als eine Geschichte der Spannung zwischen diesen Denkschulen
+    - Xyrill beobachtet, dass dieser Dualismus zu seinen Beobachtungen über den Dualismus der menschlichen Intelligenz kongruent ist (vgl. System 1/2 in Daniel Kahnemans ["Schnelles Denken, langsames Denken"](https://de.wikipedia.org/w/index.php?title=Schnelles_Denken,_langsames_Denken&oldid=263318467); aber Vorsicht bzgl. Replizierbarkeit)
+
+- 1956: [Dartmouth Conference](https://de.wikipedia.org/w/index.php?title=Dartmouth_Conference&oldid=260015104), ein zweimonatiges Sommerseminar zu KI
+    - nicht die erste wissenschaftliche Aktivität zu KI mit Computern, aber historischer Einfluss durch die hohe Konzentration wichtiger Vertreter des Feldes (analog zu den [Solvay-Konferenzen](https://de.wikipedia.org/w/index.php?title=Solvay-Konferenz&oldid=262539409#F%C3%BCnfte_Solvay-Konferenz_f%C3%BCr_Physik_(1927)) in der Physik)
+    - allein der erste Absatz des Förderantrags umreißt auch aus heutiger Sicht akkurat das ganze Feld (siehe Link unter "Durchführung")
+    - Personen auf der Konferenz (Auswahl)
+        - [John McCarthy](https://de.wikipedia.org/w/index.php?title=John_McCarthy&oldid=257311799): Erfinder der Programmiersprache LISP
+        - [Marvin Minsky](https://de.wikipedia.org/w/index.php?title=Marvin_Minsky&oldid=262803200): Vordenker der Robotik, Miterfinder der Programmiersprache Logo (Caveat: [Verbindung zu Epstein](https://en.wikipedia.org/w/index.php?title=List_of_people_named_in_the_Epstein_files&oldid=1338609760#Marvin_Minsky))
+        - [Nathaniel Rochester](https://de.wikipedia.org/w/index.php?title=Nathaniel_Rochester&oldid=168638080): 1955 bei IBM Experimente mit Neuronalen Netzwerken, Mustererkennung, Spielprogrammen, etc.
+        - [Claude Shannon](https://de.wikipedia.org/w/index.php?title=Claude_Shannon&oldid=262891829): Begründer der Informationstheorie; 1950 Konstruktion einer Robotermaus, die ein Labyrinth durchschreiten konnte
+        - [Ray Solomonoff](https://de.wikipedia.org/w/index.php?title=Ray_Solomonoff&oldid=253965240): präsentierte auf der Konferenz ein Programm, dass "arithmetische Formeln durch Beispiele ohne eingreifende Aufsicht" lernen konnte
+        - [Oliver Selfridge](https://de.wikipedia.org/w/index.php?title=Oliver_Selfridge&oldid=241297481): schlug 1958 eine Struktur für KI-Systeme als Netzwerk von Agenten ("Dämonen") vor, mit unterschiedlichen Arten von Agenten ("Feature Demons" für Mustererkennung, "Cognitive Demons" für Informationszusammenführung, "Decision Demons" für Entscheidungen)
+        - [Allen Newell](https://de.wikipedia.org/w/index.php?title=Allen_Newell&oldid=244394638) und [Herbert A. Simon](https://de.wikipedia.org/w/index.php?title=Herbert_A._Simon&oldid=251945141): 1956 Entwicklung eines Logiksystems, das im Stande war, die 38 Theoreme aus Bertrand Russells [Principia Mathematica](https://de.wikipedia.org/w/index.php?title=Principia_Mathematica&oldid=261288620) zu beweisen (vgl. moderne Theorem-Löser wie [Rocq](https://de.wikipedia.org/w/index.php?title=Rocq&oldid=261645440))

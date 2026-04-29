@@ -7621,6 +7621,66 @@
           "title": "Xyrills arkane C-Kochbücher"
         }
       ]
+    },
+    "stp:089-fruehgeschichte-der-kuenstlichen-intelligenz": {
+      "length_secs": 3403,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-089-fruehgeschichte-der-kuenstlichen-intelligenz.mp3",
+          "size_bytes": 54786406
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-089-fruehgeschichte-der-kuenstlichen-intelligenz.ogg",
+          "size_bytes": 33614260
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-089-fruehgeschichte-der-kuenstlichen-intelligenz.opus",
+          "size_bytes": 20449196
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 251,
+          "title": "Intro und die Unausweichlichkeit von KI"
+        },
+        {
+          "start_secs": 251,
+          "end_secs": 340,
+          "title": "Heutiger Fahrplan"
+        },
+        {
+          "start_secs": 340,
+          "end_secs": 989,
+          "title": "Timeline of AI"
+        },
+        {
+          "start_secs": 989,
+          "end_secs": 1575,
+          "title": "Derailing: Zahlendefinition"
+        },
+        {
+          "start_secs": 1575,
+          "end_secs": 1743,
+          "title": "Zurück zu Leibniz"
+        },
+        {
+          "start_secs": 1743,
+          "end_secs": 2627,
+          "title": "Gary Marcus"
+        },
+        {
+          "start_secs": 2627,
+          "end_secs": 3403.438,
+          "title": "Dartmouth Conference"
+        }
+      ]
     }
   }
 }

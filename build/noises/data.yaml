@@ -1524,3 +1524,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 89
+    slug: 089-fruehgeschichte-der-kuenstlichen-intelligenz
+    title: Frühgeschichte der künstlichen Intelligenz
+    pubtime: 1777507200 # 2026-04-30
+
+    markdown:
+      description: |
+        Scheinbar ist die sogenannte KI etwas, was nicht ganz so schnell wieder weg geht. Daher fangen wir in dieser Episode damit an, etwas genauer zu erklähren, was es damit auf sich hat. Im ersten Teil dieser Reihe geht es um die entferntere Geschichte, die zu dem geführt hat, was wir heute sehen.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
