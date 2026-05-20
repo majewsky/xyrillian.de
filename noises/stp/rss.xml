@@ -27,6 +27,121 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP090: Maschinelles Lernen vor der Jahrtausendwende</itunes:title>
+    <itunes:episode>90</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP090: Maschinelles Lernen vor der Jahrtausendwende</title>
+    <link>https://schluesseltechnologie-podcast.de/090-maschinelles-lernen-vor-der-jahrtausendwende</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Bevor wir dann wirklich zu dem kommen, was wir heute unter KI verstehen, geht es heut noch mal um die nun nicht mehr ganz so graue Vorzeit. Immerhin beginnen wir jetzt damit, Neuronen zu kitzeln und Liegestütze machen zu lassen. Nebenbei steuert Xyrill noch wertvolle Erziehungstipps bei.</itunes:summary>
+    <description>Bevor wir dann wirklich zu dem kommen, was wir heute unter KI verstehen, geht es heut noch mal um die nun nicht mehr ganz so graue Vorzeit. Immerhin beginnen wir jetzt damit, Neuronen zu kitzeln und Liegestütze machen zu lassen. Nebenbei steuert Xyrill noch wertvolle Erziehungstipps bei.</description>
+    <content:encoded>&lt;p&gt;Bevor wir dann wirklich zu dem kommen, was wir heute unter KI verstehen, geht es heut noch mal um die nun nicht mehr ganz so graue Vorzeit. Immerhin beginnen wir jetzt damit, Neuronen zu kitzeln und Liegestütze machen zu lassen. Nebenbei steuert Xyrill noch wertvolle Erziehungstipps bei.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1943: mathematische Modellierung von Neuronen durch den Neurophysiologen Warren McCulloch und den Logiker Walter Pitts&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bestandteile: mehrere Eingänge &lt;code&gt;x_1&lt;/code&gt; bis &lt;code&gt;x_n&lt;/code&gt; und ein Ausgang &lt;code&gt;y&lt;/code&gt; mit Logiksignalen (entweder 0 oder 1)&lt;/li&gt;
+&lt;li&gt;Inferenz-Funktion: &lt;code&gt;y = (∑_i w_i * x_i &#43; b) &amp;gt; 0&lt;/code&gt; mit Gewichten &lt;code&gt;w_i&lt;/code&gt; und Bias &lt;code&gt;b&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;damit Teilung des Raumes der Eingabewerte in zwei Hälften entlang einer Gerade bzw. Hyperebene (&lt;a href=&#34;https://commons.wikimedia.org/w/index.php?title=File:Perceptron_example.svg&amp;amp;oldid=720595526&#34;&gt;Beispiel&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Berechnung der Gewichte: Präsentation von Eingabewerten mit bekannten erwarteten Ausgabewerten (&lt;em&gt;Supervised Learning&lt;/em&gt;, überwachtes Lernen)
+&lt;ul&gt;
+&lt;li&gt;bei jeder falschen Inferenz (&lt;code&gt;y&lt;/code&gt; erwartet, aber &lt;code&gt;y&#39;&lt;/code&gt; erhalten) Update der Gewichte gemäß &lt;code&gt;w_i -&amp;gt; w_i &#43; r * (y - y&#39;) * x_i&lt;/code&gt; mit Lernrate &lt;code&gt;r&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Lernen des Bias wie ein Gewicht &lt;code&gt;w_0&lt;/code&gt; mit &lt;code&gt;x_0 = 1&lt;/code&gt; für alle Trainingsdatensätze&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://playground.tensorflow.org/#activation=tanh&amp;amp;batchSize=10&amp;amp;dataset=gauss&amp;amp;regDataset=reg-plane&amp;amp;learningRate=0.03&amp;amp;regularizationRate=0&amp;amp;noise=0&amp;amp;networkShape=1&amp;amp;seed=0.75229&amp;amp;showTestData=false&amp;amp;discretize=true&amp;amp;percTrainData=50&amp;amp;x=true&amp;amp;y=true&amp;amp;xTimesY=false&amp;amp;xSquared=false&amp;amp;ySquared=false&amp;amp;cosX=false&amp;amp;sinX=false&amp;amp;cosY=false&amp;amp;sinY=false&amp;amp;collectStats=false&amp;amp;problem=classification&amp;amp;initZero=false&amp;amp;hideText=false&#34;&gt;Praxisbeispiel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;damit jede binäre Unterscheidung lernbar, die durch eine lineare Schwelle ausgedrückt werden kann
+&lt;ul&gt;
+&lt;li&gt;Problem: verrauschte Daten -&amp;gt; nichtbinäre Ausgaben notwendig&lt;/li&gt;
+&lt;li&gt;Problem: andere Arten binärer Funktionen, z.B. &lt;code&gt;y = x_1 XOR x_2&lt;/code&gt; -&amp;gt; Verkettung mehrerer Neuronen notwendig&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1957: Verschaltung mehrerer &amp;quot;Neuronen&amp;quot; zu einem &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Perzeptron&amp;amp;oldid=254547808&#34;&gt;Perzeptron&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mehrstufige Verkettung von Neuronen erlaubt Lernen komplexerer Funktionen, z.B. erst Erkennung spezifischer Teile und dann in Folgeschritten Zusammensetzung zu einem großen Ganzen&lt;/li&gt;
+&lt;li&gt;Problem: Wenn während des Trainings fehlerhafte Ausgaben produziert werden, wo muss man dann Gewichte anpassen?&lt;/li&gt;
+&lt;li&gt;Idee: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Backpropagation&amp;amp;oldid=260573637&#34;&gt;Fehlerrückführung (Backpropagation)&lt;/a&gt;; wenn am Ende ein Fehler rauskommt, muss dieser anteilig auf frühere Neuronen zurückattributiert und dort zum Training genutzt werden
+&lt;ul&gt;
+&lt;li&gt;hierfür Anwendung der Kettenregel (siehe STP089), z.B. in einem 2-Layer-Perzeptron&lt;/li&gt;
+&lt;li&gt;Kettenregel geht nur auf ableitbaren Funktionen, deswegen nicht mehr binäres Ausgabesignal, sondern eine geglättete Stufenfunktion wie die &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Sigmoidfunktion&amp;amp;oldid=244852374&#34;&gt;Sigmoidfunktion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;z.B. Signale &lt;code&gt;y3&lt;/code&gt; der dritten Ebene sind eine Funktion der Signale &lt;code&gt;y2&lt;/code&gt; der zweiten Ebene, und so weiter&lt;/li&gt;
+&lt;li&gt;Ableitung z.B. von &lt;code&gt;y3(y2(y1(x)))&lt;/code&gt; ist &lt;code&gt;dy3/dx = dy3/dy2 * dy2/dx&lt;/code&gt;; ausgehend vom Fehler &lt;code&gt;Δy3&lt;/code&gt; des Ergebnisses Training der Gewichte &lt;code&gt;w3&lt;/code&gt; und Ermittlung eines Fehlers &lt;code&gt;Δy2&lt;/code&gt; für die nächste Ebene&lt;/li&gt;
+&lt;li&gt;Achtung: das ist eine extreme Verkürzung aus didaktischen Gründen; tatsächlich wird nicht dividiert, sondern das Anwenden des Gradient-Operators auf die Loss-Funktion führt zu einer Vertauschung der Multiplikationsreihenfolge, was partielle Rückwärtsevaluierung ermöglicht&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Randbemerkung 1: hier beginnt das Meme, dass maschinelles Lernen nur ein Haufen Matrixmultiplikationen ist (vgl. &lt;a href=&#34;https://xkcd.com/1838/&#34;&gt;XKCD 1838&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Randbemerkung 2: geglättete Stufenfunktionen erlauben eine Variation in der Stärke bzw. Breite der Glättung (&lt;strong&gt;Temperatur&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1990er-2010er: maschinelle Übersetzung natürlicher Sprache mit statistischen Modellen, die keine neuralen Netzwerke sind (Quelle: Xyrills Vorlesungsnotizen von 2016; passenderweise dasselbe Jahr, indem Google Translate auf neurale Netzwerke umstieg)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;diverse miteinander kombinierbare Modelle zur Beurteilung der Wahrscheinlichkeit gegebener Sätze in einer einzelnen Sprache (&lt;strong&gt;Sprachmodell&lt;/strong&gt;) bzw. der Wahrscheinlichkeit, dass zwei Sätze in verschiedenen Sprachen Übersetzungen voneinander sind (&lt;strong&gt;Übersetzungsmodell&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Kombination von Sprachmodell und Übersetzungsmodell gemäß des &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Noisy_channel_model&amp;amp;oldid=1321257997&#34;&gt;Noisy-Channel-Modell&lt;/a&gt;:
+&lt;ul&gt;
+&lt;li&gt;z.B. gegeben einem deutschen Satz &lt;code&gt;D&lt;/code&gt; Suche nach dem wahrscheinlichsten englischen Satz &lt;code&gt;E&lt;/code&gt;: &lt;code&gt;P(E|D) = P(E) * P(D|E) / P(D)&lt;/code&gt; (Satz von Bayes), &lt;code&gt;P(E)&lt;/code&gt; gemäß Sprachmodell und &lt;code&gt;P(E|D)&lt;/code&gt; gemäß Übersetzungsmodell und &lt;code&gt;P(D)&lt;/code&gt; irrelevanter konstanter Faktor&lt;/li&gt;
+&lt;li&gt;stochastische Suche nach E: z.B. Start mit leerem Satz, schrittweise Erweiterung um je ein Wort aus allen möglichen englischen Wörtern, Verwerfen der schlechtestbewerteten Optionen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bsp. eines Sprachmodells: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Markow-Kette&amp;amp;oldid=263480080&#34;&gt;Markow-Kette&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;sukzessiver Aufbau eines Satzes durch Raten des nächsten Wortes (vgl. Autocomplete)&lt;/li&gt;
+&lt;li&gt;Training bestimmt aus einem gegebenen Textkorpus die Wahrscheinlichkeiten von bestimmten Wortsequenzen&lt;/li&gt;
+&lt;li&gt;einfachster Fall: Bigramm-Modell, z.B. &lt;code&gt;P(Ich bin groß) = P(ɛ, Ich) * P(Ich, bin) * P(bin, groß) * P(groß, ɛ)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Erweiterung: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Hidden_Markov_Model&amp;amp;oldid=261153405&#34;&gt;Hidden Markov Model&lt;/a&gt; mit einer versteckten Zustandsmaschine, die Wortarten versteht; z.B. &lt;code&gt;P(Ich bin groß) = P(ɛ, Pronomen) * P(Pronomen, Ich) * P(Pronomen, Verb) * P(Verb, bin) * P(Verb, Adjektiv) * P(Adjektiv, groß) * P(Adjektiv, ɛ)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Abwägung: größerer Lookback erhöht die Kohärenz, führt aber schnell zu Overfitting&lt;/li&gt;
+&lt;li&gt;Fun Fact: dazu hat Xyrill &lt;a href=&#34;https://github.com/majewsky/bachelor-thesis&#34;&gt;eine Abschlussarbeit geschrieben&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bsp. eines Übersetzungsmodells: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=IBM_alignment_models&amp;amp;oldid=1329126044&#34;&gt;IBM alignment models&lt;/a&gt;, hier der Einfachheit halber nur Modell 1
+&lt;ul&gt;
+&lt;li&gt;Training resultiert hauptsächlich in einer Wahrscheinlichkeitstabelle von Wortkorrespondenzpaaren&lt;/li&gt;
+&lt;li&gt;z.B. &lt;code&gt;P(Ich bin groß, I am big) = P(Ich, I) * P(bin, am) * P(groß, big) &#43; (andere verschwindende Beiträge)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Problem: versteht nicht grammatikalisch korrekte Wortreihenfolge, z.B. &lt;code&gt;P(Ich bin groß, I am big) = P(Ich bin groß, I big am)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Problem: versteht nicht Hilfswörter, die in der anderen Sprache keine Entsprechung haben&lt;/li&gt;
+&lt;li&gt;Probleme mitigierbar durch Kombination mit Sprachmodell wie oben beschrieben&lt;/li&gt;
+&lt;li&gt;Erweiterung durch Modell 2 bis 6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1980er: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Expertensystem&amp;amp;oldid=263912192&#34;&gt;Expertensysteme&lt;/a&gt;, beispielhaft an der Programmiersprache &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Prolog_(Programmiersprache)&amp;amp;oldid=258454365&#34;&gt;Prolog&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Expertensystem: &amp;quot;ein Programm, das Menschen bei der Lösung komplexer Probleme wie ein Experte unterstützen kann, indem es Handlungsempfehlungen aus einer Wissensbasis ableitet&amp;quot;, bzw. kürzer &amp;quot;eine logische Entscheidungsmaschine&amp;quot;&lt;/li&gt;
+&lt;li&gt;Prolog: Programmiersprache, die nicht primär auf Zahlen oder Speicherbereichen arbeitet, sondern auf Fakten und Ableitungsregeln (siehe Beispiele im verlinkten Artikel)&lt;/li&gt;
+&lt;li&gt;Einschätzung: Prolog-artige Sprachen sind ein nützliches Paradigma für sehr spezifische Anwendungsfälle, aber die explizite Kodierung von Wissen läuft erfahrungsgemäß schnell in ontologische Probleme&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:42" title="Vorbemerkungen, Fahrplan für diese und kommende Folgen"  />
+          <chapter start="00:04:00" title="Mathematische Modellierung von Neuronen"  />
+          <chapter start="00:36:27" title="Verschaltung mehrerer Neuronen"  />
+          <chapter start="00:42:26" title="Fehlerrückführung (Backpropagation)"  />
+          <chapter start="01:01:53" title="Maschinelle Übersetzung"  />
+          <chapter start="01:05:44" title="Noisy-Channel-Modell"  />
+          <chapter start="01:11:52" title="Markow-Kette"  />
+          <chapter start="01:19:01" title="IBM alignment models"  />
+          <chapter start="01:23:24" title="Expertensystem Prolog"  />
+      </chapters>
+      <enclosure length="92773483" url="https://dl.xyrillian.de/noises/stp-090-maschinelles-lernen-vor-der-jahrtausendwende.mp3" type="audio/mpeg"/>
+      <enclosure length="55759868" url="https://dl.xyrillian.de/noises/stp-090-maschinelles-lernen-vor-der-jahrtausendwende.ogg" type="audio/ogg"/>
+      <enclosure length="33865583" url="https://dl.xyrillian.de/noises/stp-090-maschinelles-lernen-vor-der-jahrtausendwende.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/090-maschinelles-lernen-vor-der-jahrtausendwende/</guid>
+    <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
+    <itunes:duration>96:17</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP089: Frühgeschichte der künstlichen Intelligenz</itunes:title>
     <itunes:episode>89</itunes:episode>
     <itunes:season>1</itunes:season>

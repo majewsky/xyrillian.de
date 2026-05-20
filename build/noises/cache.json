@@ -7681,6 +7681,81 @@
           "title": "Dartmouth Conference"
         }
       ]
+    },
+    "stp:090-maschinelles-lernen-vor-der-jahrtausendwende": {
+      "length_secs": 5777,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-090-maschinelles-lernen-vor-der-jahrtausendwende.mp3",
+          "size_bytes": 92773483
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-090-maschinelles-lernen-vor-der-jahrtausendwende.ogg",
+          "size_bytes": 55759868
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-090-maschinelles-lernen-vor-der-jahrtausendwende.opus",
+          "size_bytes": 33865583
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 102,
+          "title": "Intro"
+        },
+        {
+          "start_secs": 102,
+          "end_secs": 240,
+          "title": "Vorbemerkungen, Fahrplan für diese und kommende Folgen"
+        },
+        {
+          "start_secs": 240,
+          "end_secs": 2187,
+          "title": "Mathematische Modellierung von Neuronen"
+        },
+        {
+          "start_secs": 2187,
+          "end_secs": 2546,
+          "title": "Verschaltung mehrerer Neuronen"
+        },
+        {
+          "start_secs": 2546,
+          "end_secs": 3713,
+          "title": "Fehlerrückführung (Backpropagation)"
+        },
+        {
+          "start_secs": 3713,
+          "end_secs": 3944,
+          "title": "Maschinelle Übersetzung"
+        },
+        {
+          "start_secs": 3944,
+          "end_secs": 4312,
+          "title": "Noisy-Channel-Modell"
+        },
+        {
+          "start_secs": 4312,
+          "end_secs": 4741,
+          "title": "Markow-Kette"
+        },
+        {
+          "start_secs": 4741,
+          "end_secs": 5004,
+          "title": "IBM alignment models"
+        },
+        {
+          "start_secs": 5004,
+          "end_secs": 5777.596,
+          "title": "Expertensystem Prolog"
+        }
+      ]
     }
   }
 }

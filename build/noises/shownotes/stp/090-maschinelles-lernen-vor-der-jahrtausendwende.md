@@ -1,0 +1,49 @@
+- 1943: mathematische Modellierung von Neuronen durch den Neurophysiologen Warren McCulloch und den Logiker Walter Pitts
+    - Bestandteile: mehrere Eingänge `x_1` bis `x_n` und ein Ausgang `y` mit Logiksignalen (entweder 0 oder 1)
+    - Inferenz-Funktion: `y = (∑_i w_i * x_i + b) > 0` mit Gewichten `w_i` und Bias `b`
+        - damit Teilung des Raumes der Eingabewerte in zwei Hälften entlang einer Gerade bzw. Hyperebene ([Beispiel](https://commons.wikimedia.org/w/index.php?title=File:Perceptron_example.svg&oldid=720595526))
+    - Berechnung der Gewichte: Präsentation von Eingabewerten mit bekannten erwarteten Ausgabewerten (*Supervised Learning*, überwachtes Lernen)
+        - bei jeder falschen Inferenz (`y` erwartet, aber `y'` erhalten) Update der Gewichte gemäß `w_i -> w_i + r * (y - y') * x_i` mit Lernrate `r`
+        - Lernen des Bias wie ein Gewicht `w_0` mit `x_0 = 1` für alle Trainingsdatensätze
+        - [Praxisbeispiel](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=gauss&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=1&seed=0.75229&showTestData=false&discretize=true&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
+    - damit jede binäre Unterscheidung lernbar, die durch eine lineare Schwelle ausgedrückt werden kann
+        - Problem: verrauschte Daten -> nichtbinäre Ausgaben notwendig
+        - Problem: andere Arten binärer Funktionen, z.B. `y = x_1 XOR x_2` -> Verkettung mehrerer Neuronen notwendig
+
+- 1957: Verschaltung mehrerer "Neuronen" zu einem [Perzeptron](https://de.wikipedia.org/w/index.php?title=Perzeptron&oldid=254547808)
+    - mehrstufige Verkettung von Neuronen erlaubt Lernen komplexerer Funktionen, z.B. erst Erkennung spezifischer Teile und dann in Folgeschritten Zusammensetzung zu einem großen Ganzen
+    - Problem: Wenn während des Trainings fehlerhafte Ausgaben produziert werden, wo muss man dann Gewichte anpassen?
+    - Idee: [Fehlerrückführung (Backpropagation)](https://de.wikipedia.org/w/index.php?title=Backpropagation&oldid=260573637); wenn am Ende ein Fehler rauskommt, muss dieser anteilig auf frühere Neuronen zurückattributiert und dort zum Training genutzt werden
+        - hierfür Anwendung der Kettenregel (siehe STP089), z.B. in einem 2-Layer-Perzeptron
+        - Kettenregel geht nur auf ableitbaren Funktionen, deswegen nicht mehr binäres Ausgabesignal, sondern eine geglättete Stufenfunktion wie die [Sigmoidfunktion](https://de.wikipedia.org/w/index.php?title=Sigmoidfunktion&oldid=244852374)
+        - z.B. Signale `y3` der dritten Ebene sind eine Funktion der Signale `y2` der zweiten Ebene, und so weiter
+        - Ableitung z.B. von `y3(y2(y1(x)))` ist `dy3/dx = dy3/dy2 * dy2/dx`; ausgehend vom Fehler `Δy3` des Ergebnisses Training der Gewichte `w3` und Ermittlung eines Fehlers `Δy2` für die nächste Ebene
+        - Achtung: das ist eine extreme Verkürzung aus didaktischen Gründen; tatsächlich wird nicht dividiert, sondern das Anwenden des Gradient-Operators auf die Loss-Funktion führt zu einer Vertauschung der Multiplikationsreihenfolge, was partielle Rückwärtsevaluierung ermöglicht
+    - Randbemerkung 1: hier beginnt das Meme, dass maschinelles Lernen nur ein Haufen Matrixmultiplikationen ist (vgl. [XKCD 1838](https://xkcd.com/1838/))
+    - Randbemerkung 2: geglättete Stufenfunktionen erlauben eine Variation in der Stärke bzw. Breite der Glättung (**Temperatur**)
+
+- 1990er-2010er: maschinelle Übersetzung natürlicher Sprache mit statistischen Modellen, die keine neuralen Netzwerke sind (Quelle: Xyrills Vorlesungsnotizen von 2016; passenderweise dasselbe Jahr, indem Google Translate auf neurale Netzwerke umstieg)
+    - diverse miteinander kombinierbare Modelle zur Beurteilung der Wahrscheinlichkeit gegebener Sätze in einer einzelnen Sprache (**Sprachmodell**) bzw. der Wahrscheinlichkeit, dass zwei Sätze in verschiedenen Sprachen Übersetzungen voneinander sind (**Übersetzungsmodell**)
+    - Kombination von Sprachmodell und Übersetzungsmodell gemäß des [Noisy-Channel-Modell](https://en.wikipedia.org/w/index.php?title=Noisy_channel_model&oldid=1321257997):
+        - z.B. gegeben einem deutschen Satz `D` Suche nach dem wahrscheinlichsten englischen Satz `E`: `P(E|D) = P(E) * P(D|E) / P(D)` (Satz von Bayes), `P(E)` gemäß Sprachmodell und `P(E|D)` gemäß Übersetzungsmodell und `P(D)` irrelevanter konstanter Faktor
+        - stochastische Suche nach E: z.B. Start mit leerem Satz, schrittweise Erweiterung um je ein Wort aus allen möglichen englischen Wörtern, Verwerfen der schlechtestbewerteten Optionen
+    - Bsp. eines Sprachmodells: [Markow-Kette](https://de.wikipedia.org/w/index.php?title=Markow-Kette&oldid=263480080)
+        - sukzessiver Aufbau eines Satzes durch Raten des nächsten Wortes (vgl. Autocomplete)
+        - Training bestimmt aus einem gegebenen Textkorpus die Wahrscheinlichkeiten von bestimmten Wortsequenzen
+        - einfachster Fall: Bigramm-Modell, z.B. `P(Ich bin groß) = P(ɛ, Ich) * P(Ich, bin) * P(bin, groß) * P(groß, ɛ)`
+        - Erweiterung: [Hidden Markov Model](https://de.wikipedia.org/w/index.php?title=Hidden_Markov_Model&oldid=261153405) mit einer versteckten Zustandsmaschine, die Wortarten versteht; z.B. `P(Ich bin groß) = P(ɛ, Pronomen) * P(Pronomen, Ich) * P(Pronomen, Verb) * P(Verb, bin) * P(Verb, Adjektiv) * P(Adjektiv, groß) * P(Adjektiv, ɛ)`
+        - Abwägung: größerer Lookback erhöht die Kohärenz, führt aber schnell zu Overfitting
+        - Fun Fact: dazu hat Xyrill [eine Abschlussarbeit geschrieben](https://github.com/majewsky/bachelor-thesis)
+    - Bsp. eines Übersetzungsmodells: [IBM alignment models](https://en.wikipedia.org/w/index.php?title=IBM_alignment_models&oldid=1329126044), hier der Einfachheit halber nur Modell 1
+        - Training resultiert hauptsächlich in einer Wahrscheinlichkeitstabelle von Wortkorrespondenzpaaren
+        - z.B. `P(Ich bin groß, I am big) = P(Ich, I) * P(bin, am) * P(groß, big) + (andere verschwindende Beiträge)`
+        - Problem: versteht nicht grammatikalisch korrekte Wortreihenfolge, z.B. `P(Ich bin groß, I am big) = P(Ich bin groß, I big am)`
+        - Problem: versteht nicht Hilfswörter, die in der anderen Sprache keine Entsprechung haben
+        - Probleme mitigierbar durch Kombination mit Sprachmodell wie oben beschrieben
+        - Erweiterung durch Modell 2 bis 6
+
+- 1980er: [Expertensysteme](https://de.wikipedia.org/w/index.php?title=Expertensystem&oldid=263912192), beispielhaft an der Programmiersprache [Prolog](https://de.wikipedia.org/w/index.php?title=Prolog_(Programmiersprache)&oldid=258454365)
+    - Expertensystem: "ein Programm, das Menschen bei der Lösung komplexer Probleme wie ein Experte unterstützen kann, indem es Handlungsempfehlungen aus einer Wissensbasis ableitet", bzw. kürzer "eine logische Entscheidungsmaschine"
+    - Prolog: Programmiersprache, die nicht primär auf Zahlen oder Speicherbereichen arbeitet, sondern auf Fakten und Ableitungsregeln (siehe Beispiele im verlinkten Artikel)
+    - Einschätzung: Prolog-artige Sprachen sind ein nützliches Paradigma für sehr spezifische Anwendungsfälle, aber die explizite Kodierung von Wissen läuft erfahrungsgemäß schnell in ontologische Probleme
+

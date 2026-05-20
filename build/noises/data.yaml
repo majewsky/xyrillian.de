@@ -1537,3 +1537,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 90
+    slug: 090-maschinelles-lernen-vor-der-jahrtausendwende
+    title: Maschinelles Lernen vor der Jahrtausendwende
+    pubtime: 1779321600 # 2026-05-21
+
+    markdown:
+      description: |
+        Bevor wir dann wirklich zu dem kommen, was wir heute unter KI verstehen, geht es heut noch mal um die nun nicht mehr ganz so graue Vorzeit. Immerhin beginnen wir jetzt damit, Neuronen zu kitzeln und Liegestütze machen zu lassen. Nebenbei steuert Xyrill noch wertvolle Erziehungstipps bei.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
