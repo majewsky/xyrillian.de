@@ -7756,6 +7756,76 @@
           "title": "Expertensystem Prolog"
         }
       ]
+    },
+    "stp:091-der-siegeszug-der-ki-konnektionisten-teil-1": {
+      "length_secs": 4391,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-091-der-siegeszug-der-ki-konnektionisten-teil-1.mp3",
+          "size_bytes": 70601892
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-091-der-siegeszug-der-ki-konnektionisten-teil-1.ogg",
+          "size_bytes": 43612995
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-091-der-siegeszug-der-ki-konnektionisten-teil-1.opus",
+          "size_bytes": 26213543
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 110,
+          "title": "Intro"
+        },
+        {
+          "start_secs": 110,
+          "end_secs": 261,
+          "title": "KI-Winter"
+        },
+        {
+          "start_secs": 261,
+          "end_secs": 537,
+          "title": "KI bei NPCs"
+        },
+        {
+          "start_secs": 537,
+          "end_secs": 776,
+          "title": "Zurück zum Winter"
+        },
+        {
+          "start_secs": 776,
+          "end_secs": 1076,
+          "title": "Rekurrente neurale Netzwerke"
+        },
+        {
+          "start_secs": 1076,
+          "end_secs": 1962,
+          "title": "seq2seq"
+        },
+        {
+          "start_secs": 1962,
+          "end_secs": 2667,
+          "title": "Attention"
+        },
+        {
+          "start_secs": 2667,
+          "end_secs": 3628,
+          "title": "Transformer"
+        },
+        {
+          "start_secs": 3628,
+          "end_secs": 4391.881,
+          "title": "Abendgedanken"
+        }
+      ]
     }
   }
 }

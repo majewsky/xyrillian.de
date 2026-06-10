@@ -27,6 +27,122 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP091: Der Siegeszug der KI-Konnektionisten (Teil 1)</itunes:title>
+    <itunes:episode>91</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP091: Der Siegeszug der KI-Konnektionisten (Teil 1)</title>
+    <link>https://schluesseltechnologie-podcast.de/091-der-siegeszug-der-ki-konnektionisten-teil-1</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Einige haben sich schon gefragt, wann denn nun die KI-Serie anfängt. Nun ja. Nachdem wir die letzten Male die Grundlagen besprochen haben, geht es nun im Sinne des aktuellen Zeitgeistes wirklich um KI. Zuerst im Bezug auf Text.</itunes:summary>
+    <description>Einige haben sich schon gefragt, wann denn nun die KI-Serie anfängt. Nun ja. Nachdem wir die letzten Male die Grundlagen besprochen haben, geht es nun im Sinne des aktuellen Zeitgeistes wirklich um KI. Zuerst im Bezug auf Text.</description>
+    <content:encoded>&lt;p&gt;Einige haben sich schon gefragt, wann denn nun die KI-Serie anfängt. Nun ja. Nachdem wir die letzten Male die Grundlagen besprochen haben, geht es nun im Sinne des aktuellen Zeitgeistes wirklich um KI. Zuerst im Bezug auf Text.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;Damit wir uns nicht komplett verzetteln, beschränken wir uns in diesem Zweiteiler auf alle Entwicklungen, die zu den aktuellen Buzzword-Technologien geführt haben: Transformer und Diffusionsmodelle.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=KI-Winter&amp;amp;oldid=261879950&#34;&gt;KI-Winter&lt;/a&gt;: Flaute in der KI-Forschung nach dem Scheitern eines bestimmten Ansatzes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;frühe 1970er: erster KI-Winter nach Problemen mit dem Skalieren von Perzeptronen (Scheitern konnektionistischer Ansätze)&lt;/li&gt;
+&lt;li&gt;späte 1980er: zweiter KI-Winter nach allgemeiner Ernüchterung über Expertensysteme (Scheitern symbolischer Ansätze)&lt;/li&gt;
+&lt;li&gt;danach neuer Aufwind für konnektionistische Ansätze durch neue Optimierungen und Moore&#39;s Law (&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Neural_scaling_law&amp;amp;oldid=1338998332&#34;&gt;Skalierungshypothese&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Rekurrentes_neuronales_Netz&amp;amp;oldid=257632743&#34;&gt;Rekurrente neurale Netzwerke (Recurrent Neural Network, RNN)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grundproblem: Wie geht man mit zeitlich geordneten Daten um, die sich entlang des Zeitstrahls kausal beeinflussen (z.B. Sprache, Aktienkurse)?&lt;/li&gt;
+&lt;li&gt;Idee: neurales Netzwerk verarbeitet immer die Eingaben aus einem Zeitschritt und gibt zusätzlich zur Ausgabe einen internen Zustand aus, der beim nächsten Zeitschritt zur Eingabe wird&lt;/li&gt;
+&lt;li&gt;Problem: Wie trainiert man das? Backpropagation funktioniert nicht, wenn Signale zu früheren Layern rückwärts geschickt werden
+&lt;ul&gt;
+&lt;li&gt;frühe Ansätze hatten Probleme mit hohem Trainingsaufwand, weil Backpropagation in Schleifen laufen muss&lt;/li&gt;
+&lt;li&gt;hier aus Zeitgründen nur der Ansatz, der heutzutage die größte Bedeutung hat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2014: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Seq2seq&amp;amp;oldid=1326493865&#34;&gt;seq2seq&lt;/a&gt; zum Übersetzen natürlicher Sprache&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zwei separate aufeinanderfolgende Schritte
+&lt;ul&gt;
+&lt;li&gt;Encoder: Lesen jeweils eines Eingabesymbols (&lt;strong&gt;Token&lt;/strong&gt;); hierbei keine Ausgabe, sondern nur Aktualisierung eines internen Zustands&lt;/li&gt;
+&lt;li&gt;Decoder: Extraktion eines Ausgabetokens aus dem internen Zustand unter Präsentation des zuletzt generierten Tokens, dabei ebenfalls Aktualisierung des internen Zustandes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Abwägung
+&lt;ul&gt;
+&lt;li&gt;Vorteil: damit keine Probleme mit rückwärts laufenden Signalen, Training mit Backpropagation möglich&lt;/li&gt;
+&lt;li&gt;Nachteil: interner Zustand muss die gesamte Eingabe darstellen können, bei langen Eingabesequenzen &amp;quot;vergisst&amp;quot; der interne Zustand Teile der Eingabe&lt;/li&gt;
+&lt;li&gt;im Gespräch erwähnt: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Hutter_Prize&amp;amp;oldid=1326108826&#34;&gt;Hutter Prize&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lösung: &lt;a href=&#34;https://youtube.com/watch?v=eMlx5fFNoYc&#34;&gt;Attention&lt;/a&gt;; im Falle von seq2seq:
+&lt;ul&gt;
+&lt;li&gt;interner Zustand nach jedem Encoding wird gemerkt&lt;/li&gt;
+&lt;li&gt;Decoding aus dem aktuellsten internen Zustand (wie zuvor) ergibt ein vorläufiges Ergebnis, das mit einem Satz trainierbarer Gewichte in eine &lt;strong&gt;Query&lt;/strong&gt; (Abfrage) überführt wird (anschauliche Interpretation z.B. &amp;quot;Wir generieren jetzt das Adjektiv, das vor &#39;Garten&#39; steht. Wer weiß was?&amp;quot;)&lt;/li&gt;
+&lt;li&gt;analog dazu werden die gemerkten internen Zustände des Encodings mit einem anderen Satz trainierbarer Gewichte in einen &lt;strong&gt;Key&lt;/strong&gt; (Schlüssel) überführt (anschauliche Interpretation z.B. &amp;quot;Ich bin ein Adjektiv.&amp;quot;)&lt;/li&gt;
+&lt;li&gt;...und außerdem mit einem dritten Satz trainierbarer Gewichte in einen &lt;strong&gt;Value&lt;/strong&gt; (Wert) (anschauliche Interpretation z.B. &amp;quot;Das zuletzt gesehene Adjektiv ist &#39;groß&#39;.&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Values, bei denen Query und Key gut aufeinanderpassen, werden mit Gewichtung aufaddiert zu einem &lt;strong&gt;Kontext&lt;/strong&gt;: &lt;code&gt;C = softmax(Q * K^T) * V&lt;/code&gt; mit &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Softmax-Funktion&amp;amp;oldid=263971912&#34;&gt;Softmax-Funktion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;tatsächliches Ausgabezeichen aus Kombination des Kontext mit dem ursprünglichen Ergebnis des Decoding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2017: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Transformer_%28Maschinelles_Lernen%29&amp;amp;oldid=260701397&#34;&gt;Transformer&lt;/a&gt; verwerfen die rekurrente Struktur und arbeiten nur mit Attention, um die Parallelisierbarkeit zu verbessern (daher der berühmte Paper-Name &amp;quot;Attention is &lt;em&gt;all&lt;/em&gt; you need&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jedes Eingabesymbol (&lt;strong&gt;Token&lt;/strong&gt;) wird in ein &lt;strong&gt;Embedding&lt;/strong&gt; überführt, einen hochdimensionalen Vektor (z.B. GPT-3: je nach Modellvariante zwischen 768 und 12288 Dimensionen)
+&lt;ul&gt;
+&lt;li&gt;Ziel des Embedding: Darstellung von Konzepten in einem Vektorraum (&lt;a href=&#34;https://commons.wikimedia.org/wiki/File:Word_embedding_illustration.svg&#34;&gt;Beispiel&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;bei autoregressiver Texterzeugung (autoregressiv = &amp;quot;aus sich selbst heraus&amp;quot;):
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Self-Attention&lt;/strong&gt; auf den Embeddings der bis jetzt vorliegenden Tokenfolge (eventuell begrenzt durch das &lt;strong&gt;Context Window&lt;/strong&gt;), Resultat ist ein aktualisierter Embedding-Vektor&lt;/li&gt;
+&lt;li&gt;aber: Attention ist eine lineare Funktion und kann nicht als universeller Funktionsapproximator fungieren&lt;/li&gt;
+&lt;li&gt;deswegen dahinter ein klassisches dicht verschaltetes Feed-Forward-Netzwerk, in dem die überwältigende Masse der trainierbaren Gewichte sitzt&lt;/li&gt;
+&lt;li&gt;Ergebnis: der finale Embedding-Vektor, der in ein Token zurückübersetzt wird&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;bei Texterzeugung anhand einer separaten Eingabesequenz (z.B. maschinelle Übersetzung, Spracherkennung, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Retrieval-Augmented_Generation&amp;amp;oldid=264408330&#34;&gt;RAG&lt;/a&gt;) außerdem &lt;strong&gt;Cross-Attention&lt;/strong&gt; zum Transfer von Informationen aus der Eingabesequenz in den Dekoder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Abendgedanken aus &lt;a href=&#34;https://www.youtube.com/watch?v=ShusuVq32hc&#34;&gt;&amp;quot;Large Language Models, Model Collapse and the Conservation of Information&amp;quot;&lt;/a&gt;: Es ist überraschend, wieviele Probleme sich auf &amp;quot;das nächste Wort vorhersagen&amp;quot; reduzieren lassen (vgl. Meldungen der Form &amp;quot;Goldmedaille in der Matheolympiade&amp;quot;). Aber:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;LLMs wägen nicht ab, sie verarbeiten.
+&lt;ul&gt;
+&lt;li&gt;statistische Aussagen auf Basis von Embeddings, nicht mehr und nicht weniger&lt;/li&gt;
+&lt;li&gt;ungeeignet für symbolische Aufgaben wie Arithmetik&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LLMs überlegen nicht, sie rationalisieren.
+&lt;ul&gt;
+&lt;li&gt;die statistische Natur der Sache ist gut für &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Induktion_%28Philosophie%29&amp;amp;oldid=261188485&#34;&gt;Induktion&lt;/a&gt;, aber schlecht für Deduktion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LLMs können nicht endlose Informationen erzeugen.&lt;/li&gt;
+&lt;/ol&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:01:50" title="KI-Winter"  />
+          <chapter start="00:04:21" title="KI bei NPCs"  />
+          <chapter start="00:08:57" title="Zurück zum Winter"  />
+          <chapter start="00:12:56" title="Rekurrente neurale Netzwerke"  />
+          <chapter start="00:17:56" title="seq2seq"  />
+          <chapter start="00:32:42" title="Attention"  />
+          <chapter start="00:44:27" title="Transformer"  />
+          <chapter start="01:00:28" title="Abendgedanken"  />
+      </chapters>
+      <enclosure length="70601892" url="https://dl.xyrillian.de/noises/stp-091-der-siegeszug-der-ki-konnektionisten-teil-1.mp3" type="audio/mpeg"/>
+      <enclosure length="43612995" url="https://dl.xyrillian.de/noises/stp-091-der-siegeszug-der-ki-konnektionisten-teil-1.ogg" type="audio/ogg"/>
+      <enclosure length="26213543" url="https://dl.xyrillian.de/noises/stp-091-der-siegeszug-der-ki-konnektionisten-teil-1.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/091-der-siegeszug-der-ki-konnektionisten-teil-1/</guid>
+    <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+    <itunes:duration>73:11</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP090: Maschinelles Lernen vor der Jahrtausendwende</itunes:title>
     <itunes:episode>90</itunes:episode>
     <itunes:season>1</itunes:season>

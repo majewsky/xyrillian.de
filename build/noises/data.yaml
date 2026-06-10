@@ -1550,3 +1550,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 91
+    slug: 091-der-siegeszug-der-ki-konnektionisten-teil-1
+    title: Der Siegeszug der KI-Konnektionisten (Teil 1)
+    pubtime: 1781136000 # 2026-06-11
+
+    markdown:
+      description: |
+        Einige haben sich schon gefragt, wann denn nun die KI-Serie anfängt. Nun ja. Nachdem wir die letzten Male die Grundlagen besprochen haben, geht es nun im Sinne des aktuellen Zeitgeistes wirklich um KI. Zuerst im Bezug auf Text.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
