@@ -1563,3 +1563,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 92
+    slug: 092-der-siegeszug-der-ki-konnektionisten-teil-2
+    title: Der Siegeszug der KI-Konnektionisten (Teil 2)
+    pubtime: 1782950400 # 2026-07-02
+
+    markdown:
+      description: |
+        Letzte Folge der Reihe. Heute mit Bilderzeugungsmodellen und der Erklärung, warum die später drankommen, obwohl sie eher da waren (zumindest in der breiten Nutzung). Außerdem noch mit ein paar abschleßenden Gedanken am Ende dieser Serie.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

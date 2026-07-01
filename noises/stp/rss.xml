@@ -27,6 +27,107 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP092: Der Siegeszug der KI-Konnektionisten (Teil 2)</itunes:title>
+    <itunes:episode>92</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP092: Der Siegeszug der KI-Konnektionisten (Teil 2)</title>
+    <link>https://schluesseltechnologie-podcast.de/092-der-siegeszug-der-ki-konnektionisten-teil-2</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Letzte Folge der Reihe. Heute mit Bilderzeugungsmodellen und der Erklärung, warum die später drankommen, obwohl sie eher da waren (zumindest in der breiten Nutzung). Außerdem noch mit ein paar abschleßenden Gedanken am Ende dieser Serie.</itunes:summary>
+    <description>Letzte Folge der Reihe. Heute mit Bilderzeugungsmodellen und der Erklärung, warum die später drankommen, obwohl sie eher da waren (zumindest in der breiten Nutzung). Außerdem noch mit ein paar abschleßenden Gedanken am Ende dieser Serie.</description>
+    <content:encoded>&lt;p&gt;Letzte Folge der Reihe. Heute mit Bilderzeugungsmodellen und der Erklärung, warum die später drankommen, obwohl sie eher da waren (zumindest in der breiten Nutzung). Außerdem noch mit ein paar abschleßenden Gedanken am Ende dieser Serie.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Nochmal zurück zum ersten KI-Winter (siehe STP091): Warum skalieren reine Perzeptrone schlecht? Bsp. Bildererkennung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bild in Thumbnail-Größe (z.B. 256 Pixel im Quadrat, 3 Farbkanäle) besteht aus &lt;code&gt;256 * 256 * 3 = 196608&lt;/code&gt; Einzelwerten&lt;/li&gt;
+&lt;li&gt;Abbildung im ersten Layer des Perzeptrons auf z.B. 1000 Neuronen würde das Training von 196 Millionen Gewichten erfordern, und das ist nur der erste Layer!&lt;/li&gt;
+&lt;li&gt;so viele Gewichte können nur mit sehr vielen Eingabedaten sinnvoll trainiert werden -&amp;gt; enormer Rechenaufwand für Training und Inferenz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Convolutional_Neural_Network&amp;amp;oldid=264196705&#34;&gt;Faltende neurale Netzwerke (Convolutional Neural Network, CNN, ConvNet)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee 1: pro Layer nicht einfach alle Eingabewerte mit allen Ausgabeneuronen verknüpfen, sondern eine bestimmte Struktur vorgeben (und alle nicht dazu passenden Verbindungen verbieten), um die Menge von Gewichten zu reduzieren&lt;/li&gt;
+&lt;li&gt;Idee 2: Mustererkennung basiert auf Merkmalen (&lt;em&gt;Features&lt;/em&gt;), die unabhängig von ihrer genauen Position im Bild immer gleich erkannt werden sollen&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Faltungslayer&lt;/strong&gt; (&lt;em&gt;Convolution Layer&lt;/em&gt;): aus einer Eingabe mit &lt;code&gt;N * N&lt;/code&gt; Werten fasst jedes Feature-Neuron eine Teilregion der Größe &lt;code&gt;K * K&lt;/code&gt; zusammen (z.B. K = 11: 121 Gewichte pro Neuron); Anzahl von Ausgabeneuronen basierend auf der gewünschten Anzahl &lt;code&gt;F&lt;/code&gt; unterschiedlicher Features entweder &lt;code&gt;N * N * F&lt;/code&gt; (bei Abtastrate 1) oder geringer (bei weniger dichter Abtastung)
+&lt;ul&gt;
+&lt;li&gt;alle Neuronen desselben Features verwenden dieselben Gewichte -&amp;gt; enorme Reduktion des Trainings- und Inferenzaufwands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zusammenfassungslayer&lt;/strong&gt; (&lt;em&gt;Pooling Layer&lt;/em&gt;): Reduktion einer Eingabe mit &lt;code&gt;N * N * F&lt;/code&gt; Werten in z.B. &lt;code&gt;N/2 * N/2 * F&lt;/code&gt; Werte durch Zusammenfassen von nichtüberlappenden Regionen (z.B. &lt;code&gt;2x2&lt;/code&gt;)
+&lt;ul&gt;
+&lt;li&gt;hier keine trainierbaren Gewichte, sondern Vorauswahl einer Zusammenfassungsfunktion wie &lt;code&gt;max&lt;/code&gt; oder &lt;code&gt;avg&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;am Ende meist einige Ebenen klassische Perzeptron-Layer mit voll trainierbaren Gewichten zwischen allen Neuronen&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Convolutional_neural_network&amp;amp;oldid=1337481938#/media/File:Comparison_image_neural_networks.svg&#34;&gt;Beispiel: Architekturen früher Bilderkennungssysteme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tuning-Entscheidungen: Anordnung der Layer, Anzahl der Features, Faltungsgrößen, Abtastraten, Aktivierungsfunktion (heute meist &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Rectifier_%28neuronale_Netzwerke%29&amp;amp;oldid=245277150&#34;&gt;ReLU&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ab 2015: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Diffusion_model&amp;amp;oldid=1337976238&#34;&gt;Diffusionsmodelle&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;grundsätzlicher Ansatz: durch den Datenraum gerichtete Diffusion von Daten von einem Startpunkt zu einem höherwertigen Endpunkt
+&lt;ul&gt;
+&lt;li&gt;während des Trainings fängt man mit hochwertigen Daten an und fügt immer mehr Rauschen hinzu, wodurch die Daten von ihrem Ausgangszustand &amp;quot;wegdiffundieren&amp;quot;&lt;/li&gt;
+&lt;li&gt;Modell wird darin trainiert, diesen Diffusionsprozess umzukehren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;im Bereich der Bildverarbeitung z.B. &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Super-resolution_imaging&amp;amp;oldid=1327501054&#34;&gt;Super-resolution imaging&lt;/a&gt; (mit einem niedrig aufgelösten Bild als Startpunkt) oder Bilderzeugung (mit reinem Rauschen als Startpunkt)
+&lt;ul&gt;
+&lt;li&gt;Problem: Wenn man mit nur Rauschen anfängt, wie entscheidet man, wo man hin will?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2021: &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Contrastive_Language-Image_Pre-training&amp;amp;oldid=1338246766&#34;&gt;CLIP (Contrastive Language-Image Pre-Training)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Trainingsdatensatz: Bilder mit möglichst akkuraten Textbeschreibungen ihrer Inhalte&lt;/li&gt;
+&lt;li&gt;gleichzeitiges Training von zwei Encoder-Transformern, die einmal Bilder und einmal Textbeschreibungen in Embeddings übersetzen&lt;/li&gt;
+&lt;li&gt;Training der Encoder versucht, die Ähnlichkeit der Embeddings zwischen passenden Bildern und Textbeschreibungen zu maximieren und zwischen unpassenden Paaren zu minimieren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bilderzeugung aus Diffusion: Text-Encoder übersetzt den Prompt in ein Embedding, Diffusionsmodell denoised damit ein initial komplett verrauschtes Bild in das Ausgabebild
+&lt;ul&gt;
+&lt;li&gt;beim Training des Diffusionsmodells muss zu den Trainingsbildern das Embedding der entsprechenden Beschreibung präsentiert werden&lt;/li&gt;
+&lt;li&gt;mögliche Realisierung: Diffusionsmodell als Transformer mit Self-Attention innerhalb des Bildes und Cross-Attention zum Embedding der Textbeschreibung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Videotipp: &lt;a href=&#34;https://www.youtube.com/watch?v=iv-5mZ_9CPY&#34;&gt;3Blue1Brown zu Diffusionsmodellen&lt;/a&gt;; dort zum Beispiel zur Kodierung von &amp;quot;Negative Prompts&amp;quot; (z.B. &amp;quot;no extra fingers&amp;quot;, &amp;quot;no JPEG compression residue&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Der gespielte O-Ton ist aus &lt;a href=&#34;https://www.deutschlandfunk.de/10-jahre-openai-wie-chatgpt-mit-ki-die-welt-veraendert-100.html&#34;&gt;Deutschlandfunk Hintergrund: &amp;quot;10 Jahre OpenAI: Wie ChatGPT mit KI die Welt verändert&amp;quot;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Xyrills Abendgedanken: Nach dieser Ausarbeitung verstehe ich jetzt, warum die Konnektionisten Transformer als den Durchbruch schlechthin und als Allheilmittel einsetzen. Aber, nochmal aus &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Induktion_(Philosophie)&amp;amp;oldid=261188485&#34;&gt;Gary Marcus&#39;s Blogartikel&lt;/a&gt;, der in STP089 referenziert war:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Für immer gefangen im Land der Korrelationen, können neurale Netzwerke niemals (egal, wie viel Daten oder Rechenleistung ihnen zur Verfügung stehen) in der Lage sein, kausale Beziehungen zu verstehen -- warum Dinge so sind, wie sie sind -- und daraus folgend kausale Schlussfolgerungen zu ziehen. Dieser kritische Teil der menschlichen Kognition ist, warum Menschen nur einmal die Straßenverkehrsregeln in einer Stadt lernen müssen, um dann in vielen anderen Städten sicher fahren zu können, argumentiert Marcus. Teslas Autopilot hingegen kann Milliarden von Kilometern an Fahrten aufzeichnen und trotzdem crashen, wenn er in ein unbekanntes Szenario gerät oder mit ein paar strategisch plazierten Aufklebern überlistet wird. Marcus plädiert dafür, stattdessen Konnektionismus und Symbolismus miteinander zu verbinden.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Und weiter:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Viele der Fortschritte heutiger KI-Modelle resultieren wahrscheinlich aus der Ausweitung des Einsatzes symbolischer Werkzeuge, und nicht aus mehr Skalierung. Riesige Infrastruktur-Investitionen wie Stargate basieren wahrscheinlich auf falschen Annahmen darüber, was tatsächlich den Fortschritt vorantreibt.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Als Schlusswort dieselbe Kritik an der Skalierungshypothese, aber weniger technisch ausgedrückt, &lt;a href=&#34;https://emptywheel.net/what-we-talk-about-when-we-talk-about-ai-part-one/&#34;&gt;von Quinn Norton in &amp;quot;What we talk about when we talk about AI&amp;quot;&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Menschen sind anders. Trotz der Entlehnung von Nomenklatur aus der Biologie haben die neuralen Netzwerke, die im Training von KI verwendet werden, keine Neuronen der menschlichen Art. Der Unterschied ist erkennbar. Wir lernen Sprache, Lesen und Schreiben anhand eines winzigen Datensatzes, und dieser Prozess umfasst Mimikry, Gefühle, Kognition und Liebe. Da mag auch statistische Gewichtung vorkommen, aber wenn dem so ist, dann haben wir den entsprechenden Mechanismus noch nicht in unserem Verstand und unseren Gehirnen gefunden. Es erscheint unwahrscheinlich, dass es dort in einer ähnlichen Form existieren würde, da diese KI-Systeme so viel mehr Informationen und Rechenleistung aufwenden müssen, um zu tun, was ein Erstsemesterstudent mit ein bisschen Motivation hinbekommt. Motivation ist unser Problem, aber es ist niemals ein Problem für KI-Systeme. Sie machen immer weiter, bis ihre Befehle einen Endpunkt erreichen, und dann erstarren sie. KI-Systeme sind leblos zu Beginn, leblos währenddessen, und leblos am Ende.&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:05:02" title="Kurze Anmerkung zur Folge der Episoden"  />
+          <chapter start="00:05:50" title="Zurück zum ersten KI-Winter"  />
+          <chapter start="00:08:22" title="Faltende neurale Netzwerke"  />
+          <chapter start="00:22:26" title="Diffusionsmodelle"  />
+          <chapter start="00:35:48" title="Contrastive Language-Image Pre-Training"  />
+          <chapter start="00:43:41" title="Abendgedanken"  />
+      </chapters>
+      <enclosure length="50122745" url="https://dl.xyrillian.de/noises/stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.mp3" type="audio/mpeg"/>
+      <enclosure length="30401210" url="https://dl.xyrillian.de/noises/stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.ogg" type="audio/ogg"/>
+      <enclosure length="18552276" url="https://dl.xyrillian.de/noises/stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/092-der-siegeszug-der-ki-konnektionisten-teil-2/</guid>
+    <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+    <itunes:duration>51:51</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP091: Der Siegeszug der KI-Konnektionisten (Teil 1)</itunes:title>
     <itunes:episode>91</itunes:episode>
     <itunes:season>1</itunes:season>

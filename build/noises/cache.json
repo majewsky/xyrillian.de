@@ -7826,6 +7826,66 @@
           "title": "Abendgedanken"
         }
       ]
+    },
+    "stp:092-der-siegeszug-der-ki-konnektionisten-teil-2": {
+      "length_secs": 3111,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.mp3",
+          "size_bytes": 50122745
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.ogg",
+          "size_bytes": 30401210
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.opus",
+          "size_bytes": 18552276
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 302,
+          "title": "Intro"
+        },
+        {
+          "start_secs": 302,
+          "end_secs": 350,
+          "title": "Kurze Anmerkung zur Folge der Episoden"
+        },
+        {
+          "start_secs": 350,
+          "end_secs": 502,
+          "title": "Zurück zum ersten KI-Winter"
+        },
+        {
+          "start_secs": 502,
+          "end_secs": 1346,
+          "title": "Faltende neurale Netzwerke"
+        },
+        {
+          "start_secs": 1346,
+          "end_secs": 2148,
+          "title": "Diffusionsmodelle"
+        },
+        {
+          "start_secs": 2148,
+          "end_secs": 2621,
+          "title": "Contrastive Language-Image Pre-Training"
+        },
+        {
+          "start_secs": 2621,
+          "end_secs": 3111.954,
+          "title": "Abendgedanken"
+        }
+      ]
     }
   }
 }

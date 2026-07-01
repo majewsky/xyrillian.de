@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Der Siegeszug der KI-Konnektionisten (Teil 2) - Xyrillian Noises</title>
+  <link rel="stylesheet" href="/res/xyrillian.css" />
+</head>
+<body class="noises episode-stp has-nav-top-card">
+  <nav class="top-card">
+    <div>
+      <a href="/noises/">
+        <img class="sitelogo" src="/res/logo-noises.svg" alt="Xyrillian Noises Hörfunkproduktion">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <a class="coverart" href="/noises/stp/">
+      <img src="/res/cover-stp.svg" alt="Cover-Art für: Schlüsseltechnologie">
+    </a>
+    <h2><a href="/noises/stp">Schlüsseltechnologie</a> #92 vom 2. Juli 2026</h2>
+    <h1>Der Siegeszug der KI-Konnektionisten (Teil 2)</h1>
+      <p>Letzte Folge der Reihe. Heute mit Bilderzeugungsmodellen und der Erklärung, warum die später drankommen, obwohl sie eher da waren (zumindest in der breiten Nutzung). Außerdem noch mit ein paar abschleßenden Gedanken am Ende dieser Serie.</p>
+      <p><strong>Länge:</strong> 51:51 Minuten</p>
+  </header>
+    <audio controls preload="none">
+        <source src="/dl/stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.mp3" type="audio/mpeg">
+        <source src="/dl/stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.ogg" type="audio/ogg">
+        <source src="/dl/stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.opus" type="audio/opus">
+      <div class="audio-not-supported">
+        <span>Webplayer nicht vom Browser unterstützt</span>
+      </div>
+    </audio>
+    <div id="chapters">
+      <div class="chapter" data-start="0" data-end="302">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">00:00</span>
+        <span class="chapter-title">Intro</span>
+      </div>
+      <div class="chapter" data-start="302" data-end="350">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">05:02</span>
+        <span class="chapter-title">Kurze Anmerkung zur Folge der Episoden</span>
+      </div>
+      <div class="chapter" data-start="350" data-end="502">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">05:50</span>
+        <span class="chapter-title">Zurück zum ersten KI-Winter</span>
+      </div>
+      <div class="chapter" data-start="502" data-end="1346">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">08:22</span>
+        <span class="chapter-title">Faltende neurale Netzwerke</span>
+      </div>
+      <div class="chapter" data-start="1346" data-end="2148">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">22:26</span>
+        <span class="chapter-title">Diffusionsmodelle</span>
+      </div>
+      <div class="chapter" data-start="2148" data-end="2621">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">35:48</span>
+        <span class="chapter-title">Contrastive Language-Image Pre-Training</span>
+      </div>
+      <div class="chapter" data-start="2621" data-end="3111.954">
+        <div class="chapter-progress"><div class="chapter-progress-filler">&nbsp;</div></div>
+        <span class="chapter-start" title="Zur Kapitelmarke springen">43:41</span>
+        <span class="chapter-title">Abendgedanken</span>
+      </div>
+    </div>
+    <section>
+      <h3>Download</h3>
+      <ul>
+          <li><a href="/dl/stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.mp3">MP3</a> (47,8 MiB)</li>
+          <li><a href="/dl/stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.ogg">Ogg Vorbis</a> (29,0 MiB)</li>
+          <li><a href="/dl/stp-092-der-siegeszug-der-ki-konnektionisten-teil-2.opus">Opus</a> (17,7 MiB)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Shownotes</h3>
+      <p><ul>
+<li>
+<p>Nochmal zurück zum ersten KI-Winter (siehe STP091): Warum skalieren reine Perzeptrone schlecht? Bsp. Bildererkennung</p>
+<ul>
+<li>Bild in Thumbnail-Größe (z.B. 256 Pixel im Quadrat, 3 Farbkanäle) besteht aus <code>256 * 256 * 3 = 196608</code> Einzelwerten</li>
+<li>Abbildung im ersten Layer des Perzeptrons auf z.B. 1000 Neuronen würde das Training von 196 Millionen Gewichten erfordern, und das ist nur der erste Layer!</li>
+<li>so viele Gewichte können nur mit sehr vielen Eingabedaten sinnvoll trainiert werden -&gt; enormer Rechenaufwand für Training und Inferenz</li>
+</ul>
+</li>
+<li>
+<p><a href="https://de.wikipedia.org/w/index.php?title=Convolutional_Neural_Network&amp;oldid=264196705">Faltende neurale Netzwerke (Convolutional Neural Network, CNN, ConvNet)</a></p>
+<ul>
+<li>Idee 1: pro Layer nicht einfach alle Eingabewerte mit allen Ausgabeneuronen verknüpfen, sondern eine bestimmte Struktur vorgeben (und alle nicht dazu passenden Verbindungen verbieten), um die Menge von Gewichten zu reduzieren</li>
+<li>Idee 2: Mustererkennung basiert auf Merkmalen (<em>Features</em>), die unabhängig von ihrer genauen Position im Bild immer gleich erkannt werden sollen</li>
+<li><strong>Faltungslayer</strong> (<em>Convolution Layer</em>): aus einer Eingabe mit <code>N * N</code> Werten fasst jedes Feature-Neuron eine Teilregion der Größe <code>K * K</code> zusammen (z.B. K = 11: 121 Gewichte pro Neuron); Anzahl von Ausgabeneuronen basierend auf der gewünschten Anzahl <code>F</code> unterschiedlicher Features entweder <code>N * N * F</code> (bei Abtastrate 1) oder geringer (bei weniger dichter Abtastung)
+<ul>
+<li>alle Neuronen desselben Features verwenden dieselben Gewichte -&gt; enorme Reduktion des Trainings- und Inferenzaufwands</li>
+</ul>
+</li>
+<li><strong>Zusammenfassungslayer</strong> (<em>Pooling Layer</em>): Reduktion einer Eingabe mit <code>N * N * F</code> Werten in z.B. <code>N/2 * N/2 * F</code> Werte durch Zusammenfassen von nichtüberlappenden Regionen (z.B. <code>2x2</code>)
+<ul>
+<li>hier keine trainierbaren Gewichte, sondern Vorauswahl einer Zusammenfassungsfunktion wie <code>max</code> oder <code>avg</code></li>
+</ul>
+</li>
+<li>am Ende meist einige Ebenen klassische Perzeptron-Layer mit voll trainierbaren Gewichten zwischen allen Neuronen</li>
+<li><a href="https://en.wikipedia.org/w/index.php?title=Convolutional_neural_network&amp;oldid=1337481938#/media/File:Comparison_image_neural_networks.svg">Beispiel: Architekturen früher Bilderkennungssysteme</a></li>
+<li>Tuning-Entscheidungen: Anordnung der Layer, Anzahl der Features, Faltungsgrößen, Abtastraten, Aktivierungsfunktion (heute meist <a href="https://de.wikipedia.org/w/index.php?title=Rectifier_%28neuronale_Netzwerke%29&amp;oldid=245277150">ReLU</a>)</li>
+</ul>
+</li>
+<li>
+<p>ab 2015: <a href="https://en.wikipedia.org/w/index.php?title=Diffusion_model&amp;oldid=1337976238">Diffusionsmodelle</a></p>
+<ul>
+<li>grundsätzlicher Ansatz: durch den Datenraum gerichtete Diffusion von Daten von einem Startpunkt zu einem höherwertigen Endpunkt
+<ul>
+<li>während des Trainings fängt man mit hochwertigen Daten an und fügt immer mehr Rauschen hinzu, wodurch die Daten von ihrem Ausgangszustand &quot;wegdiffundieren&quot;</li>
+<li>Modell wird darin trainiert, diesen Diffusionsprozess umzukehren</li>
+</ul>
+</li>
+<li>im Bereich der Bildverarbeitung z.B. <a href="https://en.wikipedia.org/w/index.php?title=Super-resolution_imaging&amp;oldid=1327501054">Super-resolution imaging</a> (mit einem niedrig aufgelösten Bild als Startpunkt) oder Bilderzeugung (mit reinem Rauschen als Startpunkt)
+<ul>
+<li>Problem: Wenn man mit nur Rauschen anfängt, wie entscheidet man, wo man hin will?</li>
+</ul>
+</li>
+<li>2021: <a href="https://en.wikipedia.org/w/index.php?title=Contrastive_Language-Image_Pre-training&amp;oldid=1338246766">CLIP (Contrastive Language-Image Pre-Training)</a>
+<ul>
+<li>Trainingsdatensatz: Bilder mit möglichst akkuraten Textbeschreibungen ihrer Inhalte</li>
+<li>gleichzeitiges Training von zwei Encoder-Transformern, die einmal Bilder und einmal Textbeschreibungen in Embeddings übersetzen</li>
+<li>Training der Encoder versucht, die Ähnlichkeit der Embeddings zwischen passenden Bildern und Textbeschreibungen zu maximieren und zwischen unpassenden Paaren zu minimieren</li>
+</ul>
+</li>
+<li>Bilderzeugung aus Diffusion: Text-Encoder übersetzt den Prompt in ein Embedding, Diffusionsmodell denoised damit ein initial komplett verrauschtes Bild in das Ausgabebild
+<ul>
+<li>beim Training des Diffusionsmodells muss zu den Trainingsbildern das Embedding der entsprechenden Beschreibung präsentiert werden</li>
+<li>mögliche Realisierung: Diffusionsmodell als Transformer mit Self-Attention innerhalb des Bildes und Cross-Attention zum Embedding der Textbeschreibung</li>
+</ul>
+</li>
+<li>Videotipp: <a href="https://www.youtube.com/watch?v=iv-5mZ_9CPY">3Blue1Brown zu Diffusionsmodellen</a>; dort zum Beispiel zur Kodierung von &quot;Negative Prompts&quot; (z.B. &quot;no extra fingers&quot;, &quot;no JPEG compression residue&quot;)</li>
+</ul>
+</li>
+</ul>
+<p>Der gespielte O-Ton ist aus <a href="https://www.deutschlandfunk.de/10-jahre-openai-wie-chatgpt-mit-ki-die-welt-veraendert-100.html">Deutschlandfunk Hintergrund: &quot;10 Jahre OpenAI: Wie ChatGPT mit KI die Welt verändert&quot;</a>.</p>
+<p>Xyrills Abendgedanken: Nach dieser Ausarbeitung verstehe ich jetzt, warum die Konnektionisten Transformer als den Durchbruch schlechthin und als Allheilmittel einsetzen. Aber, nochmal aus <a href="https://de.wikipedia.org/w/index.php?title=Induktion_(Philosophie)&amp;oldid=261188485">Gary Marcus's Blogartikel</a>, der in STP089 referenziert war:</p>
+<blockquote>
+<p>Für immer gefangen im Land der Korrelationen, können neurale Netzwerke niemals (egal, wie viel Daten oder Rechenleistung ihnen zur Verfügung stehen) in der Lage sein, kausale Beziehungen zu verstehen -- warum Dinge so sind, wie sie sind -- und daraus folgend kausale Schlussfolgerungen zu ziehen. Dieser kritische Teil der menschlichen Kognition ist, warum Menschen nur einmal die Straßenverkehrsregeln in einer Stadt lernen müssen, um dann in vielen anderen Städten sicher fahren zu können, argumentiert Marcus. Teslas Autopilot hingegen kann Milliarden von Kilometern an Fahrten aufzeichnen und trotzdem crashen, wenn er in ein unbekanntes Szenario gerät oder mit ein paar strategisch plazierten Aufklebern überlistet wird. Marcus plädiert dafür, stattdessen Konnektionismus und Symbolismus miteinander zu verbinden.</p>
+</blockquote>
+<p>Und weiter:</p>
+<blockquote>
+<p>Viele der Fortschritte heutiger KI-Modelle resultieren wahrscheinlich aus der Ausweitung des Einsatzes symbolischer Werkzeuge, und nicht aus mehr Skalierung. Riesige Infrastruktur-Investitionen wie Stargate basieren wahrscheinlich auf falschen Annahmen darüber, was tatsächlich den Fortschritt vorantreibt.</p>
+</blockquote>
+<p>Als Schlusswort dieselbe Kritik an der Skalierungshypothese, aber weniger technisch ausgedrückt, <a href="https://emptywheel.net/what-we-talk-about-when-we-talk-about-ai-part-one/">von Quinn Norton in &quot;What we talk about when we talk about AI&quot;</a>:</p>
+<blockquote>
+<p>Menschen sind anders. Trotz der Entlehnung von Nomenklatur aus der Biologie haben die neuralen Netzwerke, die im Training von KI verwendet werden, keine Neuronen der menschlichen Art. Der Unterschied ist erkennbar. Wir lernen Sprache, Lesen und Schreiben anhand eines winzigen Datensatzes, und dieser Prozess umfasst Mimikry, Gefühle, Kognition und Liebe. Da mag auch statistische Gewichtung vorkommen, aber wenn dem so ist, dann haben wir den entsprechenden Mechanismus noch nicht in unserem Verstand und unseren Gehirnen gefunden. Es erscheint unwahrscheinlich, dass es dort in einer ähnlichen Form existieren würde, da diese KI-Systeme so viel mehr Informationen und Rechenleistung aufwenden müssen, um zu tun, was ein Erstsemesterstudent mit ein bisschen Motivation hinbekommt. Motivation ist unser Problem, aber es ist niemals ein Problem für KI-Systeme. Sie machen immer weiter, bis ihre Befehle einen Endpunkt erreichen, und dann erstarren sie. KI-Systeme sind leblos zu Beginn, leblos währenddessen, und leblos am Ende.</p>
+</blockquote></p>
+    </section>
+    <section>
+      <h3>Audioquellen<span>&nbsp;in Abspielreihenfolge (soweit nicht gemeinfrei)</span></h3>
+      <ul>
+          <li><a href="https://freesound.org/people/MastersDisaster/sounds/218115/">MastersDisaster: &quot;Switch ON - Livingroom (Sample)&quot;</a></li>
+          <li><a href="https://freesound.org/people/Garuda1982/sounds/538915/">Garuda1982: &quot;Switch on the fluorescent tube sound effect&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=n8Yo-wD-QTo&amp;t=129s">Konrad Zuse: &quot;HR-Fernsehbericht von 1958&quot;</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jbrMBOF61e0&amp;t=9s">Donald Knuth: &quot;Lehrveranstaltung von 1981&quot;</a></li>
+      </ul>
+    </section>
+
+  <footer class="legal">
+    <a href="/legal/de/">Impressum/Datenschutz</a>
+  </footer>
+  <script async src="/res/chapter-marks.js"></script>
+</body>
+</html>
