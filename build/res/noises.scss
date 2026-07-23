@@ -133,6 +133,11 @@ body.noises {
     h3 + * {
       margin-top: 0;
     }
+
+    &.shownotes img {
+      /* images embedded in Markdown should not be wider than the container */
+      max-width: 100%;
+    }
   }
 
   & > audio {

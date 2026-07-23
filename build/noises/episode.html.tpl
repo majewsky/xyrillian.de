@@ -69,7 +69,7 @@
     </section>
   {{- end }}
   {{- if $file.HTML.ShowNotes }}
-    <section>
+    <section class="shownotes">
       <h3>Shownotes</h3>
       <p>{{- $file.HTML.ShowNotes }}</p>
     </section>

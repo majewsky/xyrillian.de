@@ -7886,6 +7886,86 @@
           "title": "Abendgedanken"
         }
       ]
+    },
+    "stp:093-leime-x-damals-tm": {
+      "length_secs": 7709,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-093-leime-x-damals-tm.mp3",
+          "size_bytes": 123684266
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-093-leime-x-damals-tm.ogg",
+          "size_bytes": 71344408
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-093-leime-x-damals-tm.opus",
+          "size_bytes": 44298923
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 364,
+          "title": "Vorwort und Intro"
+        },
+        {
+          "start_secs": 364,
+          "end_secs": 520,
+          "title": "Härten und Trocknen"
+        },
+        {
+          "start_secs": 520,
+          "end_secs": 681,
+          "title": "Eignung als Bindemittel"
+        },
+        {
+          "start_secs": 681,
+          "end_secs": 1052,
+          "title": "Mineralische Bindemittel"
+        },
+        {
+          "start_secs": 1052,
+          "end_secs": 1811,
+          "title": "Öle, fett oder ätherisch"
+        },
+        {
+          "start_secs": 1811,
+          "end_secs": 2579,
+          "title": "Harze"
+        },
+        {
+          "start_secs": 2579,
+          "end_secs": 2865,
+          "title": "Wachse"
+        },
+        {
+          "start_secs": 2865,
+          "end_secs": 3293,
+          "title": "Seifen"
+        },
+        {
+          "start_secs": 3293,
+          "end_secs": 3948,
+          "title": "Pflanzliche Leime"
+        },
+        {
+          "start_secs": 3948,
+          "end_secs": 6108,
+          "title": "Tierische Leime"
+        },
+        {
+          "start_secs": 6108,
+          "end_secs": 7709.531,
+          "title": "Ajuvos Anekdoten"
+        }
+      ]
     }
   }
 }

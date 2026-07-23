@@ -1576,3 +1576,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 93
+    slug: 093-leime-x-damals-tm
+    title: Historische Bindemittel
+    pubtime: 1784835000 # 2026-07-23
+
+    markdown:
+      description: |
+        Es wurde in der vorangegangenen Holzfolge angedroht und hier ist sie nun: die Folge über Leime. Allerdings natürlich nicht vollständig, sondern eher mit verstärkem Bezug zu vergangenen Techniken und Technologien. Wie passend, dass Ajuvo und [Damals™](https://damals-tm-podcast.de/) mit dabei ist.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
