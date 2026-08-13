@@ -1589,3 +1589,17 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 94
+    slug: 094-vertrauenswuerdiger-code
+    title: Vertrauenswürdiger Code
+    pubtime: 1786650300 # 2026-08-13
+
+    markdown:
+      description: |
+        Der Vertrauende macht Aspekte seines Wohlergehens und seiner Sicherheit vom Verhalten des Kooperationspartners abhängig, sagt die Wikipedia. Der vertrauen wir ja bekanntlich. Was könnte man aber tun, wenn der Kooperationspartner nicht menschlich und somit schwierig einzuschätzen ist?
+        Ihr könnt jedenfalls sicher sein, dass auf diesem Kanal nur von uns notarisierte Inhalte verbreitet werden.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

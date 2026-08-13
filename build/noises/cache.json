@@ -7966,6 +7966,76 @@
           "title": "Ajuvos Anekdoten"
         }
       ]
+    },
+    "stp:094-vertrauenswuerdiger-code": {
+      "length_secs": 3627,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-094-vertrauenswuerdiger-code.mp3",
+          "size_bytes": 58456215
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-094-vertrauenswuerdiger-code.ogg",
+          "size_bytes": 37692770
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-094-vertrauenswuerdiger-code.opus",
+          "size_bytes": 22035696
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 126,
+          "title": "Intro"
+        },
+        {
+          "start_secs": 126,
+          "end_secs": 965,
+          "title": "Prolog"
+        },
+        {
+          "start_secs": 965,
+          "end_secs": 1737,
+          "title": "Code Signing"
+        },
+        {
+          "start_secs": 1737,
+          "end_secs": 1949,
+          "title": "Kompromittierte Ausführungsumgebung"
+        },
+        {
+          "start_secs": 1949,
+          "end_secs": 2191,
+          "title": "Vorteile von Code Signing"
+        },
+        {
+          "start_secs": 2191,
+          "end_secs": 2753,
+          "title": "Nachteile von Code Signing"
+        },
+        {
+          "start_secs": 2753,
+          "end_secs": 3047,
+          "title": "Trusted Computing Base (TCB)"
+        },
+        {
+          "start_secs": 3047,
+          "end_secs": 3332,
+          "title": "Portunus"
+        },
+        {
+          "start_secs": 3332,
+          "end_secs": 3627.483,
+          "title": "Videoempfehlung"
+        }
+      ]
     }
   }
 }

@@ -27,6 +27,102 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP094: Vertrauenswürdiger Code</itunes:title>
+    <itunes:episode>94</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP094: Vertrauenswürdiger Code</title>
+    <link>https://schluesseltechnologie-podcast.de/094-vertrauenswuerdiger-code</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Der Vertrauende macht Aspekte seines Wohlergehens und seiner Sicherheit vom Verhalten des Kooperationspartners abhängig, sagt die Wikipedia. Der vertrauen wir ja bekanntlich. Was könnte man aber tun, wenn der Kooperationspartner nicht menschlich und somit schwierig einzuschätzen ist?
+Ihr könnt jedenfalls sicher sein, dass auf diesem Kanal nur von uns notarisierte Inhalte verbreitet werden.</itunes:summary>
+    <description>Der Vertrauende macht Aspekte seines Wohlergehens und seiner Sicherheit vom Verhalten des Kooperationspartners abhängig, sagt die Wikipedia. Der vertrauen wir ja bekanntlich. Was könnte man aber tun, wenn der Kooperationspartner nicht menschlich und somit schwierig einzuschätzen ist?
+Ihr könnt jedenfalls sicher sein, dass auf diesem Kanal nur von uns notarisierte Inhalte verbreitet werden.</description>
+    <content:encoded>&lt;p&gt;Der Vertrauende macht Aspekte seines Wohlergehens und seiner Sicherheit vom Verhalten des Kooperationspartners abhängig, sagt die Wikipedia. Der vertrauen wir ja bekanntlich. Was könnte man aber tun, wenn der Kooperationspartner nicht menschlich und somit schwierig einzuschätzen ist?
+Ihr könnt jedenfalls sicher sein, dass auf diesem Kanal nur von uns notarisierte Inhalte verbreitet werden.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Prolog: in der IT-Sicherheit meist der Angreifer im Vorteil, weil vielfache Wiederholung bzw. Fächerung von Angriffen vergleichsweise einfach ist und am Ende nur einer durchkommen muss&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;offensive Verteidigung (&amp;quot;Hackback&amp;quot;) problematisch aufgrund schwieriger Attributierung (&lt;a href=&#34;https://media.ccc.de/v/35c3-9716-du_kannst_alles_hacken_du_darfst_dich_nur_nicht_erwischen_lassen&#34;&gt;wenn der Angreifer keine offensichtlichen Fehler macht&lt;/a&gt;), also defensive Strategien notwendig&lt;/li&gt;
+&lt;li&gt;bisher zur Angriffsseite: STP049 Schadcode, STP051 Ablauf eines IT-Angriffs&lt;/li&gt;
+&lt;li&gt;bisher zur Verteidigungsseite: STP023 Virtualisierung (und darin Sandboxing), STP038 Software-Tests, STP078/080 Common Weakness Enumeration&lt;/li&gt;
+&lt;li&gt;heute heben wir wieder den Schild anstelle des Schwertes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Code_signing&amp;amp;oldid=1345047115&#34;&gt;Code Signing&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee: nur Code aus vertrauenswürdigen Quellen ausführen&lt;/li&gt;
+&lt;li&gt;vgl. STP048: Vertrauen klassischerweise durch eine PKI nach X.509 (analog zu Transportverschlüsselung TLS bei Webseiten)&lt;/li&gt;
+&lt;li&gt;als Wurzelzertifikatsautorität tritt der Plattformbetreiber auf, z.B. der App-Store-Betreiber oder bei Kerneltreibern der Betriebssystem-Hersteller&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Seitenleiste: die entsprechenden Signaturschlüssel sind sicherheitskritisch und werden heutzutage meist in &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Hardware-Sicherheitsmodul&amp;amp;oldid=253958830&#34;&gt;HSM (Hardware-Sicherheitsmodulen)&lt;/a&gt; aufbewahrt&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Problem: Was bringt eine signierte Programmdatei, wenn die Ausführungsumgebung schon kompromittiert ist?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Idee: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Unified_Extensible_Firmware_Interface&amp;amp;oldid=265805867#Secure_Boot&#34;&gt;Secure Boot&lt;/a&gt; und vergleichbare Technologien&lt;/li&gt;
+&lt;li&gt;schon der Prozessor selber kann beim Start Code-Signaturen prüfen, ab dann Code Signing auf allen Ebenen über das Betriebssystem bis zum Anwendungsprogramm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vorteile von Code Signing und Secure Boot:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;verhindert bestimmte Einschlesungspfade für Malware (z.B. wenn man &amp;quot;libreoffice download&amp;quot; sucht und nicht die offizielle LibreOffice-Webseite findet, sondern eine legitim wirkende Virenschleuder)&lt;/li&gt;
+&lt;li&gt;verhindert bestimmte Methoden für Lateral Movement und Persistierung (selbst wenn ein Prozess kompromittiert ist, kann er nicht zum Beispiel neue Programmdateien mit Malware auf die Platte schreiben und ausführen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nachteile von Code Signing und Secure Boot:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;kein perfekter Schutz (aber was ist das schon)&lt;/li&gt;
+&lt;li&gt;Ablauf des signierenden Zertifikats könnte ansonsten unveränderte Systeme funktionsunfähig machen -&amp;gt; deswegen bei Code Signing meist nur Prüfung auf &amp;quot;Signatur vor Ablauf&amp;quot;, nicht auf &amp;quot;aktuelle Zeit vor Ablauf&amp;quot;&lt;/li&gt;
+&lt;li&gt;erlaubt Willkür seitens der Geräte- bzw. Betriebssystemhersteller (siehe z.B. Entfernung von ICEBlock aus dem iOS-App-Store)&lt;/li&gt;
+&lt;li&gt;zieht Eigentümerschaft am Gerät in Zweifel; vgl. &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Jay_Freeman&amp;amp;oldid=1336519424&#34;&gt;Jay Freemans&lt;/a&gt; Diktum von &amp;quot;Felony Contempt of Business Model&amp;quot; (&amp;quot;verbrecherische Missachtung des Geschäftsmodells&amp;quot;) zur Beschreibung des Effektes von DMCA Section 1201 und vergleichbaren Gesetzen (in Dtl. &lt;a href=&#34;https://www.gesetze-im-internet.de/urhg/__95a.html&#34;&gt;§ 95a UrhG&lt;/a&gt;), welches die Umgehung von &amp;quot;wirksamen technischen Maßnahmen&amp;quot; zum Schutz von Urheberrechten kriminalisiert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ganz anderer Ansatz: Reduktion der &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Trusted_computing_base&amp;amp;oldid=1345500081&#34;&gt;Trusted Computing Base (TCB)&lt;/a&gt; (&amp;quot;vertrauenswürdige Rechenbasis&amp;quot; bzw. eher &amp;quot;der man vertrauen muss&amp;quot;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TCB: &amp;quot;die Gesamtmenge an Hardware und Software, die für den sicheren Betrieb eines Systems essentiell sind&amp;quot;&lt;/li&gt;
+&lt;li&gt;nicht ganz dasselbe wie &amp;quot;weniger Programmcode = weniger Programmierfehler&amp;quot;&lt;/li&gt;
+&lt;li&gt;z.B. bei Sandboxing ist nur die Sandbox selber Teil der PCB; Code innerhalb der Sandbox sollte dann (hoffentlich!) auch im Fehler- oder Infektionsfall keinen Schaden anrichten können&lt;/li&gt;
+&lt;li&gt;praktisches Beispiel: in meinem LDAP-Server &lt;a href=&#34;https://github.com/majewsky/portunus&#34;&gt;Portunus&lt;/a&gt; gibt es einen Teil, der mit Root-Rechten ausgeführt werden muss; dort habe ich mal &lt;a href=&#34;https://github.com/majewsky/portunus/commit/411a8bb2fa0a1ecfe2325f2f543514667f5c5bda&#34;&gt;reguläre Ausdrücke (vgl. STP021) durch explizite Parser ersetzt&lt;/a&gt;, weil das Entfernen der Regex-Bibliothek &lt;a href=&#34;https://github.com/majewsky/portunus/commit/e783db98f5e290534c58365e51c108ce1aeaf457&#34;&gt;das Root-Binary um 10-15% verkleinert hat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Randbemerkung: TCB-Reduktion ist auch, warum ich lieber 100 Zeilen Code selber schreibe, als eine Bibliothek zu importieren, die die eine Sache macht, die ich brauche... und dann noch zig andere Sachen mit unzähligen weiteren Abhängigkeiten (&lt;a href=&#34;https://i.programmerhumor.io/2025/08/fe73cb25f8fb3c7790677b292f7f84a3ac75b728e693972784203f6e1bc6d34e.png&#34;&gt;Symbolbild&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Videoempfehlung für diese Art, über Software nachzudenken: &lt;a href=&#34;https://media.ccc.de/v/36c3-10608-das_nutzlich-unbedenklich_spektrum&#34;&gt;Fefe über &amp;quot;Das Nützlich-Unbedenklich-Spektrum&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in den Lektionen einiger Überlapp mit &amp;quot;Vom Mythos des Mann-Monats&amp;quot; (vgl. STP068/STP074/082)&lt;/li&gt;
+&lt;li&gt;aber mit deprimierendem Einschlag: &amp;quot;Angenommen, jemand findet einen Weg, besser mit Komplexität umzugehen. Was passiert dann? Schreiben wir dann alle die alte Software neu, aber besser? Nein! Wir schreiben dann neue, noch größere Software. Wieder am Limit dessen, was mit den neuen Methoden machbar ist.&amp;quot; (Der Talk ist von 2019. Jede Parallele zu Coding-Agenten ist rein zufällig.)&lt;/li&gt;
+&lt;li&gt;Xyrills Favorit: die Wortprägung &amp;quot;Bugwelle&amp;quot; für die immer größer werdende Flut von Bugreports, die ein langlaufendes Softwareprojekt vor sich herschiebt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:02:06" title="Prolog"  />
+          <chapter start="00:16:05" title="Code Signing"  />
+          <chapter start="00:28:57" title="Kompromittierte Ausführungsumgebung"  />
+          <chapter start="00:32:29" title="Vorteile von Code Signing"  />
+          <chapter start="00:36:31" title="Nachteile von Code Signing"  />
+          <chapter start="00:45:53" title="Trusted Computing Base (TCB)"  />
+          <chapter start="00:50:47" title="Portunus"  />
+          <chapter start="00:55:32" title="Videoempfehlung"  />
+      </chapters>
+      <enclosure length="58456215" url="https://dl.xyrillian.de/noises/stp-094-vertrauenswuerdiger-code.mp3" type="audio/mpeg"/>
+      <enclosure length="37692770" url="https://dl.xyrillian.de/noises/stp-094-vertrauenswuerdiger-code.ogg" type="audio/ogg"/>
+      <enclosure length="22035696" url="https://dl.xyrillian.de/noises/stp-094-vertrauenswuerdiger-code.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/094-vertrauenswuerdiger-code/</guid>
+    <pubDate>Thu, 13 Aug 2026 19:45:00 GMT</pubDate>
+    <itunes:duration>60:27</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP093: Historische Bindemittel</itunes:title>
     <itunes:episode>93</itunes:episode>
     <itunes:season>1</itunes:season>
