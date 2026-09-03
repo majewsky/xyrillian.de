@@ -27,6 +27,94 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP095: Datenbank-Schemadesign</itunes:title>
+    <itunes:episode>95</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP095: Datenbank-Schemadesign</title>
+    <link>https://schluesseltechnologie-podcast.de/095-datenbank-schema-design</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Es hat nur 83 Folgen gedauert, bis wir wieder auf das Thema kommen. Diesmal soll es nun um Überlegungen zur tatsächlichen Umsetzung von Datenbanken gehen, und auch Tücken im Detail kommen zur Sprache.</itunes:summary>
+    <description>Es hat nur 83 Folgen gedauert, bis wir wieder auf das Thema kommen. Diesmal soll es nun um Überlegungen zur tatsächlichen Umsetzung von Datenbanken gehen, und auch Tücken im Detail kommen zur Sprache.</description>
+    <content:encoded>&lt;p&gt;Es hat nur 83 Folgen gedauert, bis wir wieder auf das Thema kommen. Diesmal soll es nun um Überlegungen zur tatsächlichen Umsetzung von Datenbanken gehen, und auch Tücken im Detail kommen zur Sprache.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rückbezug STP012: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Relationale_Datenbank&amp;amp;oldid=262381831&#34;&gt;relationale Datenbanken (RDBMS)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RDBMS sind &lt;strong&gt;tabellenbasiert&lt;/strong&gt;: gleichartige Objekte als &lt;strong&gt;Zeilen&lt;/strong&gt; in &lt;strong&gt;Tabellen&lt;/strong&gt; abgelegt, deren &lt;strong&gt;Spalten&lt;/strong&gt; im Voraus definiert sind -&amp;gt; Zeilen werden auch &lt;strong&gt;Records&lt;/strong&gt; (Datensätze) genannt&lt;/li&gt;
+&lt;li&gt;Rückbezug STP071/072: Tabelle ist eine Liste von Datensätzen, Datensatz ist ein Produkttyp (siehe STP072) von Einzelwerten pro Spalte&lt;/li&gt;
+&lt;li&gt;RDBMS sind &lt;strong&gt;relational&lt;/strong&gt;: Kreuzreferenzen zwischen Tabellen (z.B. Datensatz für Mitarbeiter enthält eine Abteilungsnummer, damit eine Referenz in den entsprechenden Datensatz der Abteilung)&lt;/li&gt;
+&lt;li&gt;wie in STP012 schon erwähnt: der Entwurf eines guten Datenbankschemas ist eine Kunst (vgl. den Abendgedanken in STP072: Datenstrukturen und Datenfluss als Fundament des Programmentwurfs)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Normalisierung_(Datenbank)&amp;amp;oldid=264921953&#34;&gt;Normalisierung&lt;/a&gt;: Strukturierung von Datenbankschemata in einer Art und Weise, die Redundanzen reduziert&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ziel: keine redundante Speicherung von Informationen (um Platz zu sparen, und um Inkonsistenzen zu vermeiden)&lt;/li&gt;
+&lt;li&gt;der theoretische Kanon kennt eine Reihe zunehmend strikterer Normalformen: 1NF -&amp;gt; 2NF -&amp;gt; 3NF -&amp;gt; BCNF -&amp;gt; 4NF -&amp;gt; 5NF&lt;/li&gt;
+&lt;li&gt;Diskussion anhand der Beispiele aus dem verlinkten Wikipedia-Artikel&lt;/li&gt;
+&lt;li&gt;übergreifendes Motiv: sollte man sich mal klar machen, aber Xyrill wird (anders als der Wikipedia-Artikel) an einigen Stellen Gegenrede leisten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;erste Normalform (1NF): einzelne Tabellenspalten dürfen nur atomare Werte enthalten, keine strukturierten Datensätze&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;siehe Beispiel: Tabelle &amp;quot;CD-Lieder&amp;quot; mit Spalte &amp;quot;Album&amp;quot;, die sowohl Künstler als auch Albumtitel enthält -&amp;gt; in zwei Spalten aufteilen&lt;/li&gt;
+&lt;li&gt;außerdem: Spalte &amp;quot;Titelliste&amp;quot; enthält eine Liste von Titelnamen -&amp;gt; aufteilen in Spalten &amp;quot;Track&amp;quot; und &amp;quot;Titel&amp;quot;, ein Datensatz pro Titel&lt;/li&gt;
+&lt;li&gt;Begründung in der reinen Lehre: Abfragen nach Teilwerten eines nichtatomaren Attributes werden erschwert&lt;/li&gt;
+&lt;li&gt;Xyrills Gegenreden:
+&lt;ul&gt;
+&lt;li&gt;moderne Datenbanken ermöglichen auch ergonomischen Zugriff in strukturierte Spalten (vgl. z.B. &lt;a href=&#34;https://www.postgresql.org/docs/18/functions-json.html&#34;&gt;der JSON-Spaltentyp in PostgreSQL&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Denormalisierung kann das Leben einfacher machen, wenn man keine strukturierte Abfrage in die Spalte hinein benötigt (Beispiel: GC-Policies in Keppel)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Xyrills Anekdote: unerwartete Probleme mit numerischen IDs beim Umstieg von MaxDB auf PostgreSQL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;zweite Normalform (2NF): 1NF &#43; keine Spalte außerhalb eines Schlüsselkandidaten hängt funktional von einer echten Teilmenge des Schlüsselkandidaten ab&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hierbei &lt;strong&gt;Schlüsselkandidat&lt;/strong&gt;: ein Satz von Spalten, deren Werte Datensätze eindeutig identifizieren (z.B. bei der Tabelle &amp;quot;CD-Lieder&amp;quot; die Spalten &amp;quot;CD-ID&amp;quot; und &amp;quot;Track&amp;quot;) -&amp;gt; beim Schemadesign wird hieraus (meist) ein Kandidat zum &lt;strong&gt;Primärschlüssel&lt;/strong&gt; gewählt (Beispiel: in Dateisystemen ist der vollständige Pfad ein Schlüsselkandidat, aber in der Praxis ist meist die Inode-Nummer der bevorzugte Schlüssel)&lt;/li&gt;
+&lt;li&gt;siehe Beispiel: Tabelle &amp;quot;CD-Lieder&amp;quot; mit Spalte &amp;quot;CD-ID&amp;quot; und &amp;quot;Track&amp;quot;, aber Spalten mit Informationen zum Album (z.B. &amp;quot;Interpret&amp;quot; und &amp;quot;Albumtitel&amp;quot;) hängen nur von der CD-ID ab, nicht vom Track&lt;/li&gt;
+&lt;li&gt;damit unnötige Duplikation in diesen Spalten zwischen Datensätzen betreffend dieselbe CD, sowie Risiko von Inkonsistenz zwischen diesen Datensätzen&lt;/li&gt;
+&lt;li&gt;Lösung: Aufspaltung in zwei Tabellen &amp;quot;CDs&amp;quot; und &amp;quot;Lieder&amp;quot;, letzteres mit Bezug auf die CD-ID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dritte Normalform (3NF): 2NF &#43; keine Nichtschlüsselspalten hängen untereinander funktional ab&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;siehe Beispiel: Tabelle &amp;quot;CD&amp;quot; mit Spalten &amp;quot;Interpret&amp;quot; und &amp;quot;Gründungsjahr&amp;quot;, aber das Gründungsjahr hängt vom Interpreten ab -&amp;gt; wiederum unnötige Duplikation und Risiko von Inkonsistenzen&lt;/li&gt;
+&lt;li&gt;Lösung: Abspaltung in eine separate Tabelle &amp;quot;Künstler&amp;quot;, möglicherweise unter Einführung eines neuen synthetischen Schlüssels&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;weitere Normalformen: Boyce-Codd-Normalform (BCNF), 4. Normalform (4NF), 5. Normalform (5NF)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Xyrills Gegenrede: die Beispiel werden zunehmend esoterisch und es sieht danach aus, dass hier vor allem akademische Probleme gelöst werden&lt;/li&gt;
+&lt;li&gt;ttimeless&#39;s Gegenrede: nicht die Kreativität der Nutzer:innen unterschätzen&lt;/li&gt;
+&lt;li&gt;vielleicht als allgemeines Prinzip: beim Design immer erst einen Primärschlüssel wählen und sich dann bei jedem neuen Attribut fragen, zu welchem Schlüssel dieses gehört -&amp;gt; wenn keine eindeutige Antwort möglich, ist wohl eine neue Tabelle erforderlich (z.B. häufig für M:N-Relationen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro und Einstieg"  />
+          <chapter start="00:03:49" title="Rekapitulation: Relationale Datenbanken"  />
+          <chapter start="00:17:07" title="Normalisierung"  />
+          <chapter start="00:18:21" title="Erste Normalform"  />
+          <chapter start="00:37:41" title="Zweite Normalform"  />
+          <chapter start="00:50:19" title="Dritte Normalform"  />
+          <chapter start="00:53:50" title="Weitere Normalformen"  />
+          <chapter start="01:00:14" title="Fraktale Komplexität am Beispiel von Kontonummern"  />
+      </chapters>
+      <enclosure length="61980932" url="https://dl.xyrillian.de/noises/stp-095-datenbank-schema-design.mp3" type="audio/mpeg"/>
+      <enclosure length="38579477" url="https://dl.xyrillian.de/noises/stp-095-datenbank-schema-design.ogg" type="audio/ogg"/>
+      <enclosure length="22928439" url="https://dl.xyrillian.de/noises/stp-095-datenbank-schema-design.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/095-datenbank-schema-design/</guid>
+    <pubDate>Thu, 03 Sep 2026 18:15:00 GMT</pubDate>
+    <itunes:duration>64:07</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP094: Vertrauenswürdiger Code</itunes:title>
     <itunes:episode>94</itunes:episode>
     <itunes:season>1</itunes:season>

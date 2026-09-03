@@ -8036,6 +8036,71 @@
           "title": "Videoempfehlung"
         }
       ]
+    },
+    "stp:095-datenbank-schema-design": {
+      "length_secs": 3847,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-095-datenbank-schema-design.mp3",
+          "size_bytes": 61980932
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-095-datenbank-schema-design.ogg",
+          "size_bytes": 38579477
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-095-datenbank-schema-design.opus",
+          "size_bytes": 22928439
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 229,
+          "title": "Intro und Einstieg"
+        },
+        {
+          "start_secs": 229,
+          "end_secs": 1027,
+          "title": "Rekapitulation: Relationale Datenbanken"
+        },
+        {
+          "start_secs": 1027,
+          "end_secs": 1101,
+          "title": "Normalisierung"
+        },
+        {
+          "start_secs": 1101,
+          "end_secs": 2261,
+          "title": "Erste Normalform"
+        },
+        {
+          "start_secs": 2261,
+          "end_secs": 3019,
+          "title": "Zweite Normalform"
+        },
+        {
+          "start_secs": 3019,
+          "end_secs": 3230,
+          "title": "Dritte Normalform"
+        },
+        {
+          "start_secs": 3230,
+          "end_secs": 3614,
+          "title": "Weitere Normalformen"
+        },
+        {
+          "start_secs": 3614,
+          "end_secs": 3847.782,
+          "title": "Fraktale Komplexität am Beispiel von Kontonummern"
+        }
+      ]
     }
   }
 }

@@ -1603,3 +1603,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 95
+    slug: 095-datenbank-schema-design
+    title: Datenbank-Schemadesign
+    pubtime: 1788459300 # 2026-09-03
+
+    markdown:
+      description: |
+        Es hat nur 83 Folgen gedauert, bis wir wieder auf das Thema kommen. Diesmal soll es nun um Überlegungen zur tatsächlichen Umsetzung von Datenbanken gehen, und auch Tücken im Detail kommen zur Sprache.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
