@@ -1616,3 +1616,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 96
+    slug: 096-hackerethik
+    title: Hackerethik
+    pubtime: 1790211300 # 2026-09-24 aus Tokyo
+
+    markdown:
+      description: |
+        Für diese Folge klettern wir weit nach oben in den Elfenbeinturm, fast bis zum Magnolienpavillon. Dort haben wir eine ausreichend gute Sicht auf das heutige Thema.
+      shownotes: true # in file
+
+    music: *music-like-stp-000

@@ -27,6 +27,114 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP096: Hackerethik</itunes:title>
+    <itunes:episode>96</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP096: Hackerethik</title>
+    <link>https://schluesseltechnologie-podcast.de/096-hackerethik</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Für diese Folge klettern wir weit nach oben in den Elfenbeinturm, fast bis zum Magnolienpavillon. Dort haben wir eine ausreichend gute Sicht auf das heutige Thema.</itunes:summary>
+    <description>Für diese Folge klettern wir weit nach oben in den Elfenbeinturm, fast bis zum Magnolienpavillon. Dort haben wir eine ausreichend gute Sicht auf das heutige Thema.</description>
+    <content:encoded>&lt;p&gt;Für diese Folge klettern wir weit nach oben in den Elfenbeinturm, fast bis zum Magnolienpavillon. Dort haben wir eine ausreichend gute Sicht auf das heutige Thema.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Einstiegsfrage: Was macht man, wenn man von Computern Ahnung hat und in einem Computersystem eine Sicherheitslücke findet?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blackhat-Antwort: ausnutzen, um Geld oder Macht zu erlangen (was natürlich strafbar ist)&lt;/li&gt;
+&lt;li&gt;Whitehat-Antwort: melden, damit die Sicherheitslücke geschlossen wird (entweder als &amp;quot;Full Disclosure&amp;quot; oder &amp;quot;Responsible Disclosure&amp;quot;)
+&lt;ul&gt;
+&lt;li&gt;ist idiotischerweise auch strafbar, siehe &lt;a href=&#34;https://www.gesetze-im-internet.de/stgb/__202a.html&#34;&gt;§ 202a&lt;/a&gt; und &lt;a href=&#34;https://www.gesetze-im-internet.de/stgb/__202b.html&#34;&gt;§ 202b StGB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;offenbar sind Tätigkeiten in der IT-Sicherheit mit ethischen Fragen verknüpft... und nicht nur da&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vgl. Einfluss von Social-Media-Algorithmen auf Meinungsbildung&lt;/li&gt;
+&lt;li&gt;vgl. &amp;quot;Psychose&amp;quot; durch Chatbots&lt;/li&gt;
+&lt;li&gt;vgl. automatisierte Todesurteile durch Kampfdrohnen&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1984: erste Formulierung einer konsistenten Hackerethik durch den US-Journalisten Stephen Levy, hier in der durch den CCC propagierten Phrasierung&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Der Zugang zu Computern und allem, was einem zeigen kann, wie diese Welt funktioniert, sollte unbegrenzt und vollständig sein.&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;vgl. STP050: &amp;quot;Hacker&amp;quot; ist konzeptionell nicht auf Computertechnik beschränkt&lt;/li&gt;
+&lt;li&gt;Fürsprache für das Informationszeitalter, und Gegenrede gegen künstliche Knappheit des Immaterialgüterrechtes (siehe STP040)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;Alle Informationen müssen frei sein.&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;vgl. Open-Source-Lizenzen (siehe STP040)&lt;/li&gt;
+&lt;li&gt;vgl. Informationsfreiheits-/Transparenzgesetze&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;Mißtraue Autoritäten – fördere Dezentralisierung.&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;vgl. STP056 zu (De-)Zentralisierung&lt;/li&gt;
+&lt;li&gt;Hacker als Menschen, die nicht gut durch Autorität lernen, sondern eher trotz Autorität&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;Beurteile einen Hacker nach dem, was er tut, und nicht nach üblichen Kriterien wie Aussehen, Alter, Spezies, Geschlecht oder gesellschaftlicher Stellung.&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;vgl. die Neigung von Hackern, sich mit Nicknames statt bürgerlichem Namen zu identifizieren&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;Man kann mit einem Computer Kunst und Schönheit schaffen.&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;vgl. Programmieren als künstlerische Tätigkeit&lt;/li&gt;
+&lt;li&gt;vgl. Computerkunst, &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Demoszene&amp;amp;oldid=265880823&#34;&gt;Demoszene&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;Computer können dein Leben zum Besseren verändern.&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;in der ausführlicheren Erklärung bei Wikipedia: &amp;quot;[Hacker] sind der Überzeugung, dass jeder von Computern profitiert, und wenn jeder mit Computern so umgehen würde, wie sie es tun, die Hackerethik die Welt zum Besseren wenden kann.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1989: infolge des &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=KGB-Hack&amp;amp;oldid=244952222&#34;&gt;KGB-Hack&lt;/a&gt; Erweiterung der Hackerethik durch den CCC um zwei Zusatzpunkte&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Mülle nicht in den Daten anderer Leute.&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;Öffentliche Daten nützen, private Daten schützen.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2001: &lt;a href=&#34;https://www.freie-gesellschaft.de/wiki/Hackerethik&#34;&gt;Reflektion der Hackerethik&lt;/a&gt; durch den finnischen Philosophen Pekka Himanen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hackerethik als Gegenentwurf zur &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Arbeitsethik&amp;amp;oldid=266317852#Protestantische_Arbeitsethik&#34;&gt;Protestantischen Arbeitsethik&lt;/a&gt;, von Himanen definiert als: &amp;quot;Arbeit muss als gottgewollter Lebenszweck betrachtet werden, sie muss so gut wie möglich verrichtet werden und Arbeit muss als Pflicht gelten, die man erledigt, weil sie erledigt werden muss&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;Hackerethik hingegen zentriert um leidenschaftliches kreatives Handeln mit gesellschaftlichem Mehrwert&lt;/li&gt;
+&lt;li&gt;Austausch und Freiheit mehren den gemeinsamen Wohlstand&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Himanen sieht einen Bezug zu der platonischen Lehre, in der &amp;quot;sich wahre Erkenntnis plötzlich ergibt und nur dann, wenn man zusammenlebt und oft und familiär miteinander kommuniziert&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Intro"  />
+          <chapter start="00:04:35" title="Lücke gefunden. Was tun?"  />
+          <chapter start="00:20:13" title="Ethik in der IT"  />
+          <chapter start="00:23:29" title="Erste Fassung der Hackerethik von 1984"  />
+          <chapter start="00:58:20" title="Erweiterung der Hackerethik von 1989"  />
+          <chapter start="01:06:13" title="Reflektion der Hackerethik"  />
+          <chapter start="01:14:42" title="KGB-Hack"  />
+      </chapters>
+      <enclosure length="77600034" url="https://dl.xyrillian.de/noises/stp-096-hackerethik.mp3" type="audio/mpeg"/>
+      <enclosure length="47532703" url="https://dl.xyrillian.de/noises/stp-096-hackerethik.ogg" type="audio/ogg"/>
+      <enclosure length="28768725" url="https://dl.xyrillian.de/noises/stp-096-hackerethik.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/096-hackerethik/</guid>
+    <pubDate>Thu, 24 Sep 2026 00:55:00 GMT</pubDate>
+    <itunes:duration>80:24</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP095: Datenbank-Schemadesign</itunes:title>
     <itunes:episode>95</itunes:episode>
     <itunes:season>1</itunes:season>

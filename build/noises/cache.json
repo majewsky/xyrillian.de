@@ -8101,6 +8101,66 @@
           "title": "Fraktale Komplexität am Beispiel von Kontonummern"
         }
       ]
+    },
+    "stp:096-hackerethik": {
+      "length_secs": 4824,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-096-hackerethik.mp3",
+          "size_bytes": 77600034
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-096-hackerethik.ogg",
+          "size_bytes": 47532703
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-096-hackerethik.opus",
+          "size_bytes": 28768725
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 275,
+          "title": "Intro"
+        },
+        {
+          "start_secs": 275,
+          "end_secs": 1213,
+          "title": "Lücke gefunden. Was tun?"
+        },
+        {
+          "start_secs": 1213,
+          "end_secs": 1409,
+          "title": "Ethik in der IT"
+        },
+        {
+          "start_secs": 1409,
+          "end_secs": 3500,
+          "title": "Erste Fassung der Hackerethik von 1984"
+        },
+        {
+          "start_secs": 3500,
+          "end_secs": 3973,
+          "title": "Erweiterung der Hackerethik von 1989"
+        },
+        {
+          "start_secs": 3973,
+          "end_secs": 4482,
+          "title": "Reflektion der Hackerethik"
+        },
+        {
+          "start_secs": 4482,
+          "end_secs": 4824,
+          "title": "KGB-Hack"
+        }
+      ]
     }
   }
 }
