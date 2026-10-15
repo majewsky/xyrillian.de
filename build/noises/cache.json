@@ -8161,6 +8161,91 @@
           "title": "KGB-Hack"
         }
       ]
+    },
+    "stp:097-proxying": {
+      "length_secs": 3952,
+      "downloads": [
+        {
+          "format": "MP3",
+          "mime_type": "audio/mpeg",
+          "filename": "stp-097-proxying.mp3",
+          "size_bytes": 63658431
+        },
+        {
+          "format": "Ogg Vorbis",
+          "mime_type": "audio/ogg",
+          "filename": "stp-097-proxying.ogg",
+          "size_bytes": 38143206
+        },
+        {
+          "format": "Opus",
+          "mime_type": "audio/opus",
+          "filename": "stp-097-proxying.opus",
+          "size_bytes": 23351881
+        }
+      ],
+      "chapters": [
+        {
+          "start_secs": 0,
+          "end_secs": 147,
+          "title": "Post Post Post"
+        },
+        {
+          "start_secs": 147,
+          "end_secs": 261,
+          "title": "Erster Martin"
+        },
+        {
+          "start_secs": 261,
+          "end_secs": 406,
+          "title": "Falk"
+        },
+        {
+          "start_secs": 406,
+          "end_secs": 601.46,
+          "title": "Zweiter Martin"
+        },
+        {
+          "start_secs": 601.46,
+          "end_secs": 943,
+          "title": "Intro und Derailing"
+        },
+        {
+          "start_secs": 943,
+          "end_secs": 1036,
+          "title": "Warum?"
+        },
+        {
+          "start_secs": 1036,
+          "end_secs": 1474,
+          "title": "Der Proxy an sich"
+        },
+        {
+          "start_secs": 1474,
+          "end_secs": 2624,
+          "title": "Reverse Proxy"
+        },
+        {
+          "start_secs": 2624,
+          "end_secs": 2753,
+          "title": "Derailing: Telefone und Taschendiebstahl"
+        },
+        {
+          "start_secs": 2753,
+          "end_secs": 3054,
+          "title": "DDOS-Schutz"
+        },
+        {
+          "start_secs": 3054,
+          "end_secs": 3377,
+          "title": "Forward Proxy"
+        },
+        {
+          "start_secs": 3377,
+          "end_secs": 3952.631,
+          "title": "Umgehung von Zugangsbeschränkung"
+        }
+      ]
     }
   }
 }

@@ -27,6 +27,66 @@
   <itunes:explicit>no</itunes:explicit>
   <item>
     <itunes:episodeType>full</itunes:episodeType>
+    <itunes:title>STP097: Proxying</itunes:title>
+    <itunes:episode>97</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <title>STP097: Proxying</title>
+    <link>https://schluesseltechnologie-podcast.de/097-proxying</link>
+    <itunes:author>Xyrillian Noises</itunes:author>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:summary>Ein eigentlich überholtes Thema, das auch schon früher an der Reihe hätte sein können. Wird kaum noch verwendet und wenn, dann in umgekehrter Richtung, als man anfänglich annimmt. Allerdings eine gute Grundlage für das, was in der nächsten Folge ansteht.</itunes:summary>
+    <description>Ein eigentlich überholtes Thema, das auch schon früher an der Reihe hätte sein können. Wird kaum noch verwendet und wenn, dann in umgekehrter Richtung, als man anfänglich annimmt. Allerdings eine gute Grundlage für das, was in der nächsten Folge ansteht.</description>
+    <content:encoded>&lt;p&gt;Ein eigentlich überholtes Thema, das auch schon früher an der Reihe hätte sein können. Wird kaum noch verwendet und wenn, dann in umgekehrter Richtung, als man anfänglich annimmt. Allerdings eine gute Grundlage für das, was in der nächsten Folge ansteht.&lt;/p&gt;&lt;h2&gt;Shownotes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Proxy_(Rechnernetz)&amp;amp;oldid=267567396&#34;&gt;Proxy&lt;/a&gt;: ein Vermittler zwischen Client und Server&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;von engl. &lt;em&gt;proxy representative&lt;/em&gt; (Stellvertreter), &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Kognat&amp;amp;oldid=264251978&#34;&gt;Kognat&lt;/a&gt; zur Prokurist:in via lat. &lt;em&gt;procurator&lt;/em&gt; (Stellvertreter, Besorger, Verwalter)&lt;/li&gt;
+&lt;li&gt;vgl. Kellner als Proxy zwischen den Gästen und der Küche&lt;/li&gt;
+&lt;li&gt;vgl. Callcenter-Mitarbeiter als Proxy zwischen dem Kunden und der Firma&lt;/li&gt;
+&lt;li&gt;im Netzwerksinne ein Vermittler nicht auf Netzwerkebene (wie ein Router auf Layer 3, vgl. STP005), sondern auf Applikationsebene&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;im engeren Sinne verwaltet ein Proxy Anfragen eines Clients an mehrere Server, aber heute vielleicht am weitesten verbreitet: &lt;a href=&#34;https://de.wikipedia.org/w/index.php?title=Reverse_Proxy&amp;amp;oldid=261820436&#34;&gt;Reverse Proxy&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;steht vor einem Server und stellt die Schnittstelle nach außen dar&lt;/li&gt;
+&lt;li&gt;Anwendungsfälle: Lastverteilung, Caching, Authentifizierung/Authorisierung (siehe STP039), DDoS-Schutz, TLS-Terminierung (siehe STP052) bzw. Vermittlung zwischen TLS nach außen und mTLS nach innen (Wikipedia ist nostalgisch und redet hier noch von &amp;quot;Beschleunigungshardware&amp;quot; für SSL)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hingegen der vom Client bestellte Vermittler: Anwendungsfälle für Forward Proxies (insb. im Kontext von HTTP)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sicherheitsgrenze in Firmen- oder anderen geschützten Netzwerken: heute kaum noch verbreitet aufgrund der weiten Verbreitung von TLS (stattdessen eher DNS-Level-Filterung, oder halt TLS-MitM-Proxying mit In-House-CA; evtl. Einsatz auf Servern, die nur mit wohldefinierten Zielen reden dürfen, aber nicht mit z.B. C&amp;amp;C-Servern von Botnets)&lt;/li&gt;
+&lt;li&gt;Umgehung von Zugangsbeschränkungen (Ratelimits oder Geoblocking): heute eher mit VPN (siehe STP098)&lt;/li&gt;
+&lt;li&gt;Anonymität: heute eher mit Tor (siehe STP098)&lt;/li&gt;
+&lt;li&gt;Verbindungspersistenz: früher bei IRC relevant, heutzutage (siehe STP022) ist Chat einfach nicht mehr dezentral (bestenfalls noch föderiert)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      <chapters xmlns="http://podlove.de/simple-chapters">
+          <chapter start="00:00:00" title="Post Post Post"  />
+          <chapter start="00:02:27" title="Erster Martin"  />
+          <chapter start="00:04:21" title="Falk"  />
+          <chapter start="00:06:46" title="Zweiter Martin"  />
+          <chapter start="00:10:01" title="Intro und Derailing"  />
+          <chapter start="00:15:43" title="Warum?"  />
+          <chapter start="00:17:16" title="Der Proxy an sich"  />
+          <chapter start="00:24:34" title="Reverse Proxy"  />
+          <chapter start="00:43:44" title="Derailing: Telefone und Taschendiebstahl"  />
+          <chapter start="00:45:53" title="DDOS-Schutz"  />
+          <chapter start="00:50:54" title="Forward Proxy"  />
+          <chapter start="00:56:17" title="Umgehung von Zugangsbeschränkung"  />
+      </chapters>
+      <enclosure length="63658431" url="https://dl.xyrillian.de/noises/stp-097-proxying.mp3" type="audio/mpeg"/>
+      <enclosure length="38143206" url="https://dl.xyrillian.de/noises/stp-097-proxying.ogg" type="audio/ogg"/>
+      <enclosure length="23351881" url="https://dl.xyrillian.de/noises/stp-097-proxying.opus" type="audio/opus"/>
+    <guid>https://xyrillian.de/id/stp/097-proxying/</guid>
+    <pubDate>Thu, 15 Oct 2026 19:15:00 GMT</pubDate>
+    <itunes:duration>65:52</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+  </item>
+  <item>
+    <itunes:episodeType>full</itunes:episodeType>
     <itunes:title>STP096: Hackerethik</itunes:title>
     <itunes:episode>96</itunes:episode>
     <itunes:season>1</itunes:season>

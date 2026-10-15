@@ -1629,3 +1629,16 @@ files:
       shownotes: true # in file
 
     music: *music-like-stp-000
+
+  - show: stp
+    episode: 97
+    slug: 097-proxying
+    title: Proxying
+    pubtime: 1792091700 # 2026-10-15
+
+    markdown:
+      description: |
+        Ein eigentlich überholtes Thema, das auch schon früher an der Reihe hätte sein können. Wird kaum noch verwendet und wenn, dann in umgekehrter Richtung, als man anfänglich annimmt. Allerdings eine gute Grundlage für das, was in der nächsten Folge ansteht.
+      shownotes: true # in file
+
+    music: *music-like-stp-000
